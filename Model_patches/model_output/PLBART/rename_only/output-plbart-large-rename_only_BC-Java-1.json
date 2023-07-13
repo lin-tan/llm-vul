@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-11,1",
+    "output": [
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber [ ] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[]{ ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[ ] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[] { ((ASN1WholeNumber)S.acquireItemAt(0).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[2] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[6] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte [ ] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+        "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[]{ ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "compile_success",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber [ ] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "compile_success",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[]{ ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "compile_success",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[ ] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "compile_success",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[] { ((ASN1WholeNumber)S.acquireItemAt(0).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "uncompilable",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[] { ((ASN1Integer)s.getObjectAt(0).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "compile_success",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[2] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "uncompilable",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[2] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[6] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "uncompilable",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[6] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte [ ] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[] { ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "compile_success",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        },
+        {
+            "patch": "private LargeWholeNumber[] derDecrypt( byte[] encryption) throws IOException { ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption); return new LargeWholeNumber[]{ ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent(), ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent() }; }",
+            "correctness": "compile_success",
+            "translated": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); return new BigInteger[] { ((ASN1Integer)s.getObjectAt(0)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue(), ((ASN1Integer)s.getObjectAt(1)).getValue() }; }"
+        }
+    ]
+}

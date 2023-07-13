@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "Write(remoteAddr!= null? remoteAddr: \"&nbsp; \");",
+        "String s2 = remoteAddr!= null? remoteAddr: \"&nbsp; \";",
+        "s2 = remoteAddr!= null? remoteAddr: \"&nbsp; \";",
+        "write(remoteAddr!= null? remoteAddr: \"&nbsp; \");",
+        "|| remoteAddr!= null? remoteAddr: \"&nbsp; \";",
+        "Write(remoteAddr!= null? \"&nbsp; \";",
+        "Write(remoteAddr!= null? \"&nbsp; \");",
+        "s2 = remoteAddr!= null? remoteAddr: \"&nbsp; \";",
+        "write(remoteAddr!= null? \"&nbsp; \");",
+        "write(remoteAddr!= null? remoteAddr: \"&nbsp; \");"
+    ],
+    "validation_result": [
+        {
+            "patch": "Write(remoteAddr!= null? remoteAddr: \"&nbsp; \");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s2 = remoteAddr!= null? remoteAddr: \"&nbsp; \";",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "s2 = remoteAddr!= null? remoteAddr: \"&nbsp; \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "write(remoteAddr!= null? remoteAddr: \"&nbsp; \");",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "|| remoteAddr!= null? remoteAddr: \"&nbsp; \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Write(remoteAddr!= null? \"&nbsp; \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Write(remoteAddr!= null? \"&nbsp; \");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "s2 = remoteAddr!= null? remoteAddr: \"&nbsp; \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "write(remoteAddr!= null? \"&nbsp; \");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "write(remoteAddr!= null? remoteAddr: \"&nbsp; \");",
+            "correctness": "compile_success"
+        }
+    ]
+}

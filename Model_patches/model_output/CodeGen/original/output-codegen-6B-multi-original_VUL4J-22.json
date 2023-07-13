@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }\n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }\n\n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }\n\n  public static String getServletPath(HttpServletRequest request) {\n    String servletPath = (String) request.getAttribute(INCLUDE_SERVLET_PATH_ATTRIBUTE);\n    if (servletPath == null) {\n      servletPath = request.getServletPath();\n    }\n    return servletPath;\n  }\n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }\n\n  public static String getServletPath(HttpServletRequest request) {\n    String servletPath = (String) request.getAttribute(INCLUDE_SERVLET_PATH_ATTRIBUTE);\n    if (servletPath == null) {\n        servletPath = request.getServletPath();\n    }\n    return servletPath;\n  }\n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }\n\n  public static void setContextPath(HttpServletRequest request, String contextPath) {\n    request.setAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE, contextPath);\n  }\n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n}\n\n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n}\n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }\n  \n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }\n\n  public static void setContextPath(HttpServletRequest request, String contextPath) {\n    request.setAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE, contextPath);\n  }\n\n}\n",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }\n\n  public static String getRequestURI(HttpServletRequest request) {\n    String requestURI = (String) request.getAttribute(INCLUDE_REQUEST_URI_ATTRIBUTE);\n    if (requestURI == null) {\n      requestURI = request.getRequestURI();\n    }\n    return requestURI;\n  }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }",
+            "correctness": "compile_success"
+        }
+    ]
+}

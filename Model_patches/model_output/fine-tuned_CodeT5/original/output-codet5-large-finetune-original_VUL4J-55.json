@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>                if (f.redoAdjustmentIfModified) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>                if (!f.redoAdjustmentIfModified)\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>                if (f.redoAdjustmentIfModified)\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>                if (f.redoAdjustmentIfModified) {\n                    cal.clear();\n</s>",
+        "<pad><s>                if (f.redoAdjustmentIfModified && cur!= next)\n</s></s></s></s>",
+        "<pad><s>                if (f.redoAdjustmentIfModified()) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>                if (this.redoAdjustmentIfModified)\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>                if (f.isModified())\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "                if (f.redoAdjustmentIfModified) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "                if (!f.redoAdjustmentIfModified)\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "                if (f.redoAdjustmentIfModified)\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "                if (f.redoAdjustmentIfModified) {\n                    cal.clear();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "                if (f.redoAdjustmentIfModified && cur!= next)\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "                if (f.redoAdjustmentIfModified()) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "                if (this.redoAdjustmentIfModified)\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "                if (f.isModified())\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

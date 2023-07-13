@@ -1,0 +1,65 @@
+{
+    "id": 45,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1696,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl(ledgerId,ledgerId,entryId),new AsyncCallbacks.ReadEntryCallback(){\n public void readEntryFailed(  ManagedLedgerException  exception,  Object  ctx){\nasyncResponse.resume(new RestException(exception),new RestException(){\n public void readEntryComplete(if (entry != null ){\nentry.release(generateResponseWithEntry(exception));\n}\n){\nif (entry != null ){\nentry.release();\n}\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.183,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl.ReadEntryCallback(ledgerId,entryId),new AsyncCallbacks.ReadEntryCallback(){\n public void readEntryFailed(  Object   ){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Object   ){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Entry   ){\ntry{\nasyncResponse.resume(generateResponseWithEntry(entry));\n}\ncatch ( IOException exception) {\nasyncResponse.resume(new RestException(exception));\n}\n}\n});\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2627,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl.ReadEntryCallback(){\n public void readEntryFailed(  ManagedLedgerException  exception,  ManagedLedgerException  exception,  ManagedLedgerException  exception){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Object  entry){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(){\ntry{\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Object  entry){\n}\n});\n}\n}\n});\ntry{\nasyncResponse.resume(generateResponseWithEntry(entry),null);\n}\ncatch ( IOException exception) {\n}\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1559,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl.ReadEntryCallback(ledgerId,ledgerId),new AsyncCallbacks(){\n public void readEntryFailed(  ManagedLedgerException  exception){\nasyncResponse.resume(new RestException(exception));\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Entry  entry,  Object  entry,  Object  ctx){\ntry{\nasyncResponse.resume(generateResponseWithEntry(entry));\n}\ncatch ( IOException exception) {\nasyncResponse.resume(new RestException(exception));\n}\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1811,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl(ledgerId,ledgerId,entryId),new AsyncCallbacks.ReadEntryCallback(){\n public void readEntryFailed(  ManagedLedgerException  exception){\nasyncResponse.resume(new RestException(exception),new RestException(){\n public void readEntryComplete(  Object  ctx){\ntry{\nasyncResponse.resume(generateResponseWithEntry(exception));\n}\ncatch ( IOException exception) {\nasyncResponse.resume();\n}\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1831,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl.ReadEntryCallback(ledgerId,entryId),new AsyncCallbacks(){\n public void readEntryFailed(  ManagedLedgerException  exception){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  ManagedLedgerException   ){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Entry   ){\ntry{\nasyncResponse.resume(generateResponseWithEntry(entry),null,generateResponseWithEntry(entry));\n}\ncatch ( IOException exception) {\nasyncResponse.resume();\n}\n}\n});\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.263,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl.ReadEntryCallback(){\n public void readEntryFailed(  ManagedLedgerException  exception){\nledger.asyncReadEntry(new AsyncCallbacks(){\n public void readEntryFailed(  Object  ctx){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Object  entry){\ntry{\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Object  entry){\ntry{\nasyncResponse.resume(generateResponseWithEntry(entry,entry));\n}\ncatch ( IOException exception) {\n}\n}\n});\n}\n}\n});\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1839,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl(ledgerId,ledgerId,entryId),new AsyncCallbacks.ReadEntryCallback(){\n public void readEntryFailed(  ManagedLedgerException  exception,  Object  ctx){\nasyncResponse.resume(new RestException(exception),new RestException(){\n public void readEntryComplete(if (entry != null ){\nentry.release(generateResponseWithEntry(entry));\n}\n){\nif (entry != null ){\nentry.release();\n}\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.1867,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl.ReadEntryCallback(ledgerId,entryId),new AsyncCallbacks(){\n public void readEntryFailed(  ManagedLedgerException  exception){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  ManagedLedgerException   ){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Entry   ){\ntry{\nasyncResponse.resume(generateResponseWithEntry(entry),null,null);\n}\ncatch ( IOException exception) {\nasyncResponse.resume();\n}\n}\n});\n}\n});\n}\n});\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.263,
+            "fix_type": "general",
+            "patch": "ledger.asyncReadEntry(new PositionImpl.ReadEntryCallback(){\n public void readEntryFailed(  ManagedLedgerException  exception,  ManagedLedgerException  exception,  ManagedLedgerException  exception){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Object  entry){\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Object  entry){\ntry{\nasyncResponse.resume(new RestException(){\n public void readEntryComplete(  Object  entry){\ntry{\nasyncResponse.resume(generateResponseWithEntry(entry));\n}\ncatch ( IOException exception) {\n}\n}\n});\n}\n}\n});\n}\n});\n}\n});\n"
+        }
+    ]
+}

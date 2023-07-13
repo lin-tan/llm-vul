@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-5,5",
+    "output": [
+        "void changeTo(Calendar z, int m) { this. m = m ; }",
+        "void changeTo(Calendar z, int m) { z. setTimeInMillis ( m ) ; }",
+        "void changeTo(Calendar z, int m) { calendar = z ; }",
+        "void changeTo(Calendar z, int m) { this. calendar = z ; }",
+        "void changeTo(Calendar z, int m) { z. setM ( m ) ; }",
+        "void changeTo(Calendar z, int m) { z.setTimeInMillis ( m ) ; }",
+        "void changeTo(Calendar z, int m) { z. setTimeInMillis ( m * 1000L ) ; }",
+        "void changeTo(Calendar z, int m) { z. setTimeInMillis ( m * 1000 ) ; }",
+        "void changeTo(Calendar z, int m) { calendar. setTimeInMillis ( z. getTimeInMillis()); }",
+        "void changeTo(Calendar z, int m) { calendar. setTimeInMillis ( z.getTimeInMillis()); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "void changeTo(Calendar z, int m) { this. m = m ; }",
+            "correctness": "uncompilable",
+            "translated": "void setTo(Calendar c, int i) { this. i = i ; }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { z. setTimeInMillis ( m ) ; }",
+            "correctness": "test_timeout",
+            "translated": "void setTo(Calendar c, int i) { c. setTimeInMillis ( i ) ; }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { calendar = z ; }",
+            "correctness": "uncompilable",
+            "translated": "void setTo(Calendar c, int i) { calendar = c ; }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { this. calendar = z ; }",
+            "correctness": "uncompilable",
+            "translated": "void setTo(Calendar c, int i) { this. calendar = c ; }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { z. setM ( m ) ; }",
+            "correctness": "uncompilable",
+            "translated": "void setTo(Calendar c, int i) { c. setM ( i ) ; }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { z.setTimeInMillis ( m ) ; }",
+            "correctness": "test_timeout",
+            "translated": "void setTo(Calendar c, int i) { c. setTimeInMillis ( i ) ; }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { z. setTimeInMillis ( m * 1000L ) ; }",
+            "correctness": "test_timeout",
+            "translated": "void setTo(Calendar c, int i) { c. setTimeInMillis ( i * 1000L ) ; }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { z. setTimeInMillis ( m * 1000 ) ; }",
+            "correctness": "test_timeout",
+            "translated": "void setTo(Calendar c, int i) { c. setTimeInMillis ( i * 1000 ) ; }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { calendar. setTimeInMillis ( z. getTimeInMillis()); }",
+            "correctness": "uncompilable",
+            "translated": "void setTo(Calendar c, int i) { calendar. setTimeInMillis ( c. getTimeInMillis()); }"
+        },
+        {
+            "patch": "void changeTo(Calendar z, int m) { calendar. setTimeInMillis ( z.getTimeInMillis()); }",
+            "correctness": "uncompilable",
+            "translated": "void setTo(Calendar c, int i) { calendar. setTimeInMillis ( c. getTimeInMillis()); }"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);",
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES);",
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);",
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);",
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);",
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);",
+        "XMLInputFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+        "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES);"
+    ],
+    "validation_result": [
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "XMLInputFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

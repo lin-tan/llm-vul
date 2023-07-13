@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "docBuilder = docBuilderFactory.newInstance();",
+        "docBuilder = docBuilderFactory.newInstance();",
+        "docBuilder = docBuilderFactory.newDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newDocumentBuilder(true);",
+        "docBuilder = docBuilderFactory.newProcessingDocumentBuilder();",
+        "docBuilderFactory = docBuilderFactory.newInstance();",
+        "docBuilder = docBuilderFactory.newDocumentBuilder(false);",
+        "docBuilder = docBuilderFactory.newInternalDocumentBuilder();",
+        "docBuilder = docBuilderFactory.getDocumentBuilder();",
+        "DocumentBuilder docBuilder = docBuilderFactory.newInstance();"
+    ],
+    "validation_result": [
+        {
+            "patch": "docBuilder = docBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newProcessingDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilderFactory = docBuilderFactory.newInstance();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder(false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newInternalDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.getDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

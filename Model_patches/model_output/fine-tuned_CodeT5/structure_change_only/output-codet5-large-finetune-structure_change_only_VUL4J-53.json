@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    c.set(field, i);\n</s></s></s>",
+        "<pad><s>    c.set(field, i - offset);\n</s>",
+        "<pad><s>    c.set(field, i-offset);\n</s>",
+        "<pad><s>    c.set(field, offset + i);\n</s>",
+        "<pad><s>    c.set(field, i + offset);\n</s>",
+        "<pad><s>    c.set(this.field, i);\n</s>",
+        "<pad><s>    c.set(field, offset);\n</s></s></s>",
+        "<pad><s>    c.set(getField(), i);\n</s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    c.set(field, i);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, i);\n"
+        },
+        {
+            "patch": "    c.set(field, i - offset);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, i - offset);\n"
+        },
+        {
+            "patch": "    c.set(field, i-offset);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, i - offset);\n"
+        },
+        {
+            "patch": "    c.set(field, offset + i);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, offset + i);\n"
+        },
+        {
+            "patch": "    c.set(field, i + offset);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, i + offset);\n"
+        },
+        {
+            "patch": "    c.set(this.field, i);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(this.field, i);\n"
+        },
+        {
+            "patch": "    c.set(field, offset);\n",
+            "correctness": "test_timeout",
+            "translated": "    c.set(field, offset);\n"
+        },
+        {
+            "patch": "    c.set(getField(), i);\n",
+            "correctness": "uncompilable",
+            "translated": "    c.set(getField(), i);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

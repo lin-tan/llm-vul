@@ -1,0 +1,37 @@
+{
+    "VUL4J-46-116-117": {
+        "src": "xml CaMeL In = XML CaMeL Input CaMeL Factory . new CaMeL Instance ( ) ;",
+        "patches": [
+            {
+                "patch": "_cfgNameForTextElement = nameForTextElem ;"
+            },
+            {
+                "patch": "xmlIn = xmlIn ; } else { xmlIn = xmlIn ;"
+            },
+            {
+                "patch": "xmlIn = xmlIn.newInstance( ) ;"
+            },
+            {
+                "patch": "xmlIn = null ; }_xmlParserFeatures = xgFeatures ;"
+            },
+            {
+                "patch": "System.err.println( ' ') ; throw new RuntimeException( ' ') ;"
+            },
+            {
+                "patch": "System.err.println( ' || ch == ') ; throw new RuntimeException( ' || ch == ') ;"
+            },
+            {
+                "patch": "System.err.println( '\\r') ; throw new RuntimeException( '\\r') ;"
+            },
+            {
+                "patch": "System.err.println( '\\n') ; throw new RuntimeException( '\\n') ;"
+            },
+            {
+                "patch": "System.err.println( '\\t') ; throw new RuntimeException( '\\t') ;"
+            },
+            {
+                "patch": "xmlIn = xmlIn ; if( xmlIn == null ) {"
+            }
+        ]
+    }
+}

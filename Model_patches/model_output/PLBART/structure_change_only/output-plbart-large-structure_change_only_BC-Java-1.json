@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-15,5",
+    "output": [
+        "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+        "private BigInteger[] derDecode( byte [ ] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+        "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+        "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); DEREncodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+        "private BigInteger[] derDecode ( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+        "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Primitive object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+        "private BigInteger[] derDecode ( byte [ ] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+        "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0, 0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+        "private BigInteger[] derDecode( byte [ ] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1}; }",
+        "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private BigInteger[] derDecode( byte [ ] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); DEREncodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode ( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Primitive object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode ( byte [ ] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0, 0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode( byte [ ] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1}; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private BigInteger[] derDecode( byte[] encoding) throws IOException { ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding); ASN1Encodable object0 = s.getObjectAt(0); ASN1Encodable object1 = s.getObjectAt(1); BigInteger bigInteger0 = ((ASN1Integer) object0).getValue(); BigInteger bigInteger1 = ((ASN1Integer) object1).getValue(); return new BigInteger[]{ bigInteger0, bigInteger1 }; }",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "2,2-20,2",
+    "output": [
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\n\t\t\n\t\t",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\n\t\t\n\t",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\t\n\t\t\n\t",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\n\n\t\t",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n\t\n\n\n\n\t\t\t\n\t\n\t\t\n\t\t\n\t\t",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\t\n\n\t\t",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\n\n\t\tif",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\t\n\n\t",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\n\n\n\t",
+        "\n\tif(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n\t\n\n\n\n\t\t\t\n\t\n\t\t\t\t\n\n\t"
+    ],
+    "validation_result": [
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n//\n\n\n\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n//\n\n\n\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n//\n\n\n\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n//\n\n\n\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n//\n\n\n\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\n\n//\n\n\n\n\t\t//\n\t\n\t\t\t\n\n\t\tif",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n//\n\n\n\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\n//\n\n\n\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(cStr.contains(\"%\") ){}\n\tif(cStr.contains(\"%%\")){\n\t\n\tif(cStr.contains(\"%%\")){",
+            "correctness": "uncompilable"
+        }
+    ]
+}

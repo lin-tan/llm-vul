@@ -1,0 +1,66 @@
+{
+    "output": [
+        "for (terminalColon = titleTerminal; terminalColon < range - 1; terminalColon++) {",
+        "for (int terminalColon = titleTerminal; terminalColon < range; terminalColon++) {",
+        "for (terminalColon = titleTerminal; terminalColon < range; terminalColon++) {",
+        "for (terminalColon = titleTerminal + 1; terminalColon < range; terminalColon++) {",
+        "for (terminalColon = titleTerminal; terminalColon < range + 1; terminalColon++) {",
+        "for (terminalColon = titleBeginning; terminalColon < range; terminalColon++) {",
+        "for (terminalColon = 0; terminalColon < range; terminalColon++) {",
+        "for (terminalColon = titleTerminal; terminalColon < range - 1; terminalColon ++) {",
+        "for (int i = 0; i < range; i++) {",
+        "for (int i = titleTerminal; i < range; i++) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "for (terminalColon = titleTerminal; terminalColon < range - 1; terminalColon++) {",
+            "correctness": "compile_success",
+            "translated": "for (colonEnd = nameEnd; colonEnd < length - 1; colonEnd++) {"
+        },
+        {
+            "patch": "for (int terminalColon = titleTerminal; terminalColon < range; terminalColon++) {",
+            "correctness": "uncompilable",
+            "translated": "for (int colonEnd = nameEnd; colonEnd < length; colonEnd++) {"
+        },
+        {
+            "patch": "for (terminalColon = titleTerminal; terminalColon < range; terminalColon++) {",
+            "correctness": "compile_success",
+            "translated": "for (colonEnd = nameEnd; colonEnd < length; colonEnd++) {"
+        },
+        {
+            "patch": "for (terminalColon = titleTerminal + 1; terminalColon < range; terminalColon++) {",
+            "correctness": "compile_success",
+            "translated": "for (colonEnd = nameEnd + 1; colonEnd < length; colonEnd++) {"
+        },
+        {
+            "patch": "for (terminalColon = titleTerminal; terminalColon < range + 1; terminalColon++) {",
+            "correctness": "compile_success",
+            "translated": "for (colonEnd = nameEnd; colonEnd < length + 1; colonEnd++) {"
+        },
+        {
+            "patch": "for (terminalColon = titleBeginning; terminalColon < range; terminalColon++) {",
+            "correctness": "compile_success",
+            "translated": "for (colonEnd = nameStart; colonEnd < length; colonEnd++) {"
+        },
+        {
+            "patch": "for (terminalColon = 0; terminalColon < range; terminalColon++) {",
+            "correctness": "compile_success",
+            "translated": "for (colonEnd = 0; colonEnd < length; colonEnd++) {"
+        },
+        {
+            "patch": "for (terminalColon = titleTerminal; terminalColon < range - 1; terminalColon ++) {",
+            "correctness": "compile_success",
+            "translated": "for (colonEnd = nameEnd; colonEnd < length - 1; colonEnd++) {"
+        },
+        {
+            "patch": "for (int i = 0; i < range; i++) {",
+            "correctness": "uncompilable",
+            "translated": "for (int i = 0; i < length; i++) {"
+        },
+        {
+            "patch": "for (int i = titleTerminal; i < range; i++) {",
+            "correctness": "uncompilable",
+            "translated": "for (int i = nameEnd; i < length; i++) {"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>                if (a.remakeAdaptationWhenAltered) {\n</s></s>",
+        "<pad><s>                if (!a.remakeAdaptationWhenAltered)\n</s></s></s>",
+        "<pad><s>                if (a.remakeAdaptationWhenAltered)\n</s></s></s>",
+        "<pad><s>                if (a.remakeAdaptationWhenAltered(this))\n</s>",
+        "<pad><s>                if (a.remakeAdaptationWhenAltered()) {\n</s></s>",
+        "<pad><s>                if (a.getRemakeAdaptationWhenAltered())\n</s></s>",
+        "<pad><s>                if (a.removeAdaptationWhenAltered)\n</s></s></s></s>",
+        "<pad><s>                if (a.remakeAdaptationWhenAltered(calendar))\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "                if (a.remakeAdaptationWhenAltered) {\n",
+            "correctness": "uncompilable",
+            "translated": "                if (f.redoAdjustmentIfModified) {\n"
+        },
+        {
+            "patch": "                if (!a.remakeAdaptationWhenAltered)\n",
+            "correctness": "test_success",
+            "translated": "                if (!f.redoAdjustmentIfModified)\n"
+        },
+        {
+            "patch": "                if (a.remakeAdaptationWhenAltered)\n",
+            "correctness": "compile_success",
+            "translated": "                if (f.redoAdjustmentIfModified)\n"
+        },
+        {
+            "patch": "                if (a.remakeAdaptationWhenAltered(this))\n",
+            "correctness": "uncompilable",
+            "translated": "                if (f.redoAdjustmentIfModified(this))\n"
+        },
+        {
+            "patch": "                if (a.remakeAdaptationWhenAltered()) {\n",
+            "correctness": "uncompilable",
+            "translated": "                if (f.redoAdjustmentIfModified()) {\n"
+        },
+        {
+            "patch": "                if (a.getRemakeAdaptationWhenAltered())\n",
+            "correctness": "uncompilable",
+            "translated": "                if (f.getRemakeAdaptationWhenAltered())\n"
+        },
+        {
+            "patch": "                if (a.removeAdaptationWhenAltered)\n",
+            "correctness": "uncompilable",
+            "translated": "                if (f.removeAdaptationWhenAltered)\n"
+        },
+        {
+            "patch": "                if (a.remakeAdaptationWhenAltered(calendar))\n",
+            "correctness": "uncompilable",
+            "translated": "                if (f.redoAdjustmentIfModified(cal))\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    if ( targetFile.exists() )\n    {\n</s></s></s></s>",
+        "<pad><s>    try (FileOutputStream outputStream = new FileOutputStream( targetFile ) ) {\n</s>",
+        "<pad><s>    if ( targetFile.exists() )\n</s></s></s></s></s></s></s>",
+        "<pad><s>    if ( targetFile.exists() ) {\n</s></s></s></s></s></s>",
+        "<pad><s>    if (!targetFile.exists() )\n</s></s></s></s></s>",
+        "<pad><s>    if ( targetFile!= null )\n    {\n</s></s></s></s></s>",
+        "<pad><s>    try (FileOutputStream outputStream = new FileOutputStream( targetFile) ) {\n</s>",
+        "<pad><s>    try (FileOutputStream outputStream = new FileOutputStream( targetFile ) ){\n</s>",
+        "<pad><s>    if (!targetFile.exists() ) {\n</s></s></s></s>",
+        "<pad><s>    if ( targetFile!= null )\n</s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if ( targetFile.exists() )\n    {\n",
+            "correctness": "uncompilable",
+            "translated": "    if ( f.exists() )\n    {\n"
+        },
+        {
+            "patch": "    try (FileOutputStream outputStream = new FileOutputStream( targetFile ) ) {\n",
+            "correctness": "compile_success",
+            "translated": "    try (FileOutputStream outputStream = new FileOutputStream( f)) {\n"
+        },
+        {
+            "patch": "    if ( targetFile.exists() )\n",
+            "correctness": "uncompilable",
+            "translated": "    if ( f.exists() )\n"
+        },
+        {
+            "patch": "    if ( targetFile.exists() ) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if ( f.exists() )\n    {\n"
+        },
+        {
+            "patch": "    if (!targetFile.exists() )\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!f.exists() )\n"
+        },
+        {
+            "patch": "    if ( targetFile!= null )\n    {\n",
+            "correctness": "uncompilable",
+            "translated": "    if ( f!= null )\n    {\n"
+        },
+        {
+            "patch": "    try (FileOutputStream outputStream = new FileOutputStream( targetFile) ) {\n",
+            "correctness": "compile_success",
+            "translated": "    try (FileOutputStream outputStream = new FileOutputStream( f)) {\n"
+        },
+        {
+            "patch": "    try (FileOutputStream outputStream = new FileOutputStream( targetFile ) ){\n",
+            "correctness": "compile_success",
+            "translated": "    try (FileOutputStream outputStream = new FileOutputStream( f)) {\n"
+        },
+        {
+            "patch": "    if (!targetFile.exists() ) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!f.exists() ) {\n"
+        },
+        {
+            "patch": "    if ( targetFile!= null )\n",
+            "correctness": "uncompilable",
+            "translated": "    if ( f!= null )\n"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "s.asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        ".asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber)), new AsyncCallbacks.ReadEntryCallback() {",
+        "yncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "nes.asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "Archives.asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "asyncItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "ply.asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {"
+    ],
+    "validation_result": [
+        {
+            "patch": "asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "s.asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "s.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": ".asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": ".asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber)), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "asyncReadEntry(new PositionImpl(ledgerId, entryId)), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "yncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "yncPeruseItem(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "nes.asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "nes.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "Archives.asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "Archives.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "asyncItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "asyncItem(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "ply.asyncPeruseItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "ply.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        }
+    ]
+}

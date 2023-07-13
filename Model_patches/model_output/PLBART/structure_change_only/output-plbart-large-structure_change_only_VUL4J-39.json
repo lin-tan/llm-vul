@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-20,5",
+    "output": [
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } sb = sb.length() > 0? sb.append(\", \"):sb; return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb = sb.length() > 0?sb.append(\", \"):sb; } return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb =sb.length() > 0?sb.append(\", \"):sb; } return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb =sb.length() > 0?sb.append(\"clientId=\"):sb; } return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb = sb.length() > 0?sb.append(\"clientId=\"):sb; } return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } if (message!= null) { sb.append(\"message=\").append(message); } return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } if (message!= null) { sb.append(\"message=\").append(message).append(\"):sb; } return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); } return sb.toString(); }",
+        "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"remoteAddress=\"); } return sb.toString(); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } return sb.toString(); }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } sb = sb.length() > 0? sb.append(\", \"):sb; return sb.toString(); }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb = sb.length() > 0?sb.append(\", \"):sb; } return sb.toString(); }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb =sb.length() > 0?sb.append(\", \"):sb; } return sb.toString(); }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb =sb.length() > 0?sb.append(\"clientId=\"):sb; } return sb.toString(); }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb = sb.length() > 0?sb.append(\"clientId=\"):sb; } return sb.toString(); }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } if (message!= null) { sb.append(\"message=\").append(message); } return sb.toString(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } if (message!= null) { sb.append(\"message=\").append(message).append(\"):sb; } return sb.toString(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); } return sb.toString(); }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "@Override public String toString() { StringBuilder sb = new StringBuilder(); sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb; if (clientId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"clientId=\"); sb.append(clientId); } else { sb =sb.length() > 0?sb.append(\", \"):sb; sb.append(\"remoteAddress=\"); } return sb.toString(); }",
+            "correctness": "test_timeout"
+        }
+    ]
+}

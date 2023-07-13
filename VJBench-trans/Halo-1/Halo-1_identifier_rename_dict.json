@@ -1,0 +1,14 @@
+{
+    "method": {
+        "checkDirectoryTraversal": "examinePathManipulation",
+        "setErrorData": "specifyErrorInformation"
+    },
+    "variable": {
+        "normalizedParentPath": "normalizedBasePath",
+        "parentPath": "basePath",
+        "pathToCheck": "examinePath"
+    },
+    "class": {
+        "ForbiddenException": "ProhibitedException"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-20-537-539": {
+        "src": "COS CaMeL Number cos CaMeL Number = ( COS CaMeL Number ) get CaMeL Object ( i ) ; retval [ i ] = cos CaMeL Number . float CaMeL Value ( ) ;",
+        "patches": [
+            {
+                "patch": "COSNumber cosNumber =( COSNumber ) getObject( i ) ; retval [ i ] = cosNumber.floatValue( ) ;"
+            },
+            {
+                "patch": "COSNumber cosNumber =( COSNumber ) getObject( i ) ; retval [ i ] = cosNumber.floatValue( ) ; i ++ ;"
+            },
+            {
+                "patch": "COSNumber cosNumber = getObject( i ) ; retval [ i ] = cosNumber.floatValue( ) ;"
+            },
+            {
+                "patch": "COSNumber cosNumber =( COSNumber ) getObject( i ) ; retval [ i ] = cosNumber.floatValue( ) ; i ++ ; return retval ;"
+            },
+            {
+                "patch": "COSNumber cosNumber =( COSNumber ) getObject( i ) ; retval [ i ] =( COSNumber ) getObject( i ) ;"
+            },
+            {
+                "patch": "COSNumber cosNumber = getObject( i ) ; retval [ i ] = cosNumber.floatValue( ) ; i ++ ;"
+            },
+            {
+                "patch": "retval [ i ] =( float ) getObject( i ) ; retval [ i ] =( float ) getObject( i ) ;"
+            },
+            {
+                "patch": "COSNumber cosNumber =( COSNumber ) getObject( i ) ; retval [ i ] = cosNumber.floatValue( ) ; i ++ ; } return retval ;"
+            },
+            {
+                "patch": "COSNumber cosNumber =( COSNumber ) getObject( i ) ; retval [ i ] = cosNumber.floatValue( ) ; }"
+            },
+            {
+                "patch": "float [ ] cos =( float [ ] ) getObject( i ) ; retval [ i ] = cos [ i ] ; i ++ ;"
+            }
+        ]
+    }
+}

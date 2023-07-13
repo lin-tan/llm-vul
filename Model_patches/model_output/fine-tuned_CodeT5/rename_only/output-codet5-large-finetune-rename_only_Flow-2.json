@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    templet = templet.replace(\"{{path}}\", path);\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n</s></s></s></s></s></s>",
+        "<pad><s>    templet = templet.replace(\"{{path}}\", way);\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n</s></s></s></s></s></s>",
+        "<pad><s>    templet = templet.replace(\"{path}}\", way);\n    templet = templet.replace(\"{additionalInfo}}\", extraInformation);\n</s></s></s></s></s></s>",
+        "<pad><s>    templet = templet.replace(\"{{way}}\", way);\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n</s></s></s></s></s></s>",
+        "<pad><s>    templet = templet.replace(\"{{path}}\", \"String_Node_Str\");\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n</s>",
+        "<pad><s>    templet = templet.replace(\"{{path}}\", \"String_Node_Str\" + way + \"String_Node_Str\" + extraInformation);\n</s></s></s></s></s>",
+        "<pad><s>    templet = templet.replace(\"{{path}}\", attribute.getPath());\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n</s></s></s>",
+        "<pad><s>    templet = templet.replace(\"{{path}}\", way + \"String_Node_Str\" + extraInformation);\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    templet = templet.replace(\"{{path}}\", path);\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n",
+            "correctness": "test_success",
+            "translated": "    template = template.replace(\"{{path}}\", path);\n    template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n"
+        },
+        {
+            "patch": "    templet = templet.replace(\"{{path}}\", way);\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n",
+            "correctness": "test_success",
+            "translated": "    template = template.replace(\"{{path}}\", path);\n    template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n"
+        },
+        {
+            "patch": "    templet = templet.replace(\"{path}}\", way);\n    templet = templet.replace(\"{additionalInfo}}\", extraInformation);\n",
+            "correctness": "test_success",
+            "translated": "    template = template.replace(\"{path}}\", path);\n    template = template.replace(\"{additionalInfo}}\", additionalInfo);\n"
+        },
+        {
+            "patch": "    templet = templet.replace(\"{{way}}\", way);\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n",
+            "correctness": "test_success",
+            "translated": "    template = template.replace(\"{{path}}\", path);\n    template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n"
+        },
+        {
+            "patch": "    templet = templet.replace(\"{{path}}\", \"String_Node_Str\");\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n",
+            "correctness": "test_success",
+            "translated": "    template = template.replace(\"{{path}}\", \"String_Node_Str\");\n    template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n"
+        },
+        {
+            "patch": "    templet = templet.replace(\"{{path}}\", \"String_Node_Str\" + way + \"String_Node_Str\" + extraInformation);\n",
+            "correctness": "test_success",
+            "translated": "    template = template.replace(\"{{path}}\", \"String_Node_Str\" + path + \"String_Node_Str\" + additionalInfo);\n"
+        },
+        {
+            "patch": "    templet = templet.replace(\"{{path}}\", attribute.getPath());\n    templet = templet.replace(\"{{additionalInfo}}\", extraInformation);\n",
+            "correctness": "uncompilable",
+            "translated": "    template = template.replace(\"{{path}}\", parameter.getPath());\n    template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n"
+        },
+        {
+            "patch": "    templet = templet.replace(\"{{path}}\", way + \"String_Node_Str\" + extraInformation);\n",
+            "correctness": "test_success",
+            "translated": "    template = template.replace(\"{{path}}\", path + \"String_Node_Str\" + additionalInfo);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

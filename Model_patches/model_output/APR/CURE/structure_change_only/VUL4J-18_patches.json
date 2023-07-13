@@ -1,0 +1,37 @@
+{
+    "VUL4J-18-273-275": {
+        "src": "String path CaMeL Info = request . get CaMeL Path CaMeL Info ( ) ; return path CaMeL Info ;",
+        "patches": [
+            {
+                "patch": "String pathInfo = request.getAttribute( '/') ; if( pathInfo == null ) return null ; return pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( 'http://issues.apache.org/bugzilla/show_bug.cgi?id=39278') ; if( pathInfo == null ) return null ; return pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( '+') ; if( pathInfo == null ) return null ; return pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( 'page') ; if( pathInfo == null ) return null ; return pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( '') ; if( pathInfo == null ) return null ; return pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( '/') ; return pathInfo == null ? null : pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( 'http://issues.apache.org/bugzilla/show_bug.cgi?id=39278') ; return pathInfo == null ? null : pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( '+') ; return pathInfo == null ? null : pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( 'page') ; return pathInfo == null ? null : pathInfo ;"
+            },
+            {
+                "patch": "String pathInfo = request.getAttribute( '') ; return pathInfo == null ? null : pathInfo ;"
+            }
+        ]
+    }
+}

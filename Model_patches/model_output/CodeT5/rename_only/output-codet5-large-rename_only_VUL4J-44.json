@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-14,1",
+    "output": [
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( exempt )//\t//\t\t\t\t\t\t\n\t",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n//\n\tif( charString == null )\n\tif( exempt )//\t//\t\t\t\t\t\t\n\t",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( charString == null )////\t\t\t\t\t\t\n",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( charString == null )//\t\t\t\t\t\t\t\n",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\tif( charString == null )//////\t\t\t\t\t\t\n",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\tif( charString == null )//////\t//\t\t\t\t\n",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( charString == null )////\t\t//\t\t\t\n",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( charString == null )////\t//\t\t\t\t\n",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( exempt )////\t//\t\n\n\t\n\n\t",
+        "\n\tif(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\tif( charString == null )//////\t//\t//\t\t\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( exempt )//\t//",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\n\tif( immune )//\t//"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n//\n\tif( charString == null )\n\tif( exempt )//\t//",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n//\n\tif( cStr == null )\n\tif( immune )//\t//"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( charString == null )////",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\n\tif( cStr == null )////"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( charString == null )//",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\n\tif( cStr == null )//"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\tif( charString == null )//////",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\tif( cStr == null )//////"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\tif( charString == null )//////\t//",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\tif( cStr == null )//////\t//"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( charString == null )////\t\t//",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\tif( cStr == null )//////"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( charString == null )////\t//",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\tif( cStr == null )//////"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\n\tif( exempt )////\t//",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\n\tif( immune )////\t//"
+        },
+        {
+            "patch": "if(exempt == null)\n\tif(charString == null)\n\n\n\tif(charString == null)\t\n\t\n\n\n\n\n.\n\tif( charString == null )\n\tif( charString == null )\n\tif( charString == null )//\n\tif( charString == null )//////\t//\t//",
+            "correctness": "uncompilable",
+            "translated": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\n\n\n\n.\n\tif( cStr == null )\n\tif( cStr == null )\n\tif( cStr == null )//\n\tif( cStr == null )//////\t//\t//"
+        }
+    ]
+}

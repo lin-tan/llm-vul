@@ -1,0 +1,66 @@
+{
+    "output": [
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i - offset);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    c.set(this.field, i);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    c.set(this.field, i - offset);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i + offset);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    c.set(this.field, i - this.offset);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    int n = i + offset;\n    c.set(field, n);\n<|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, (i - offset));\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    int n = i;\n    c.set(field, n - offset);\n<|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    int n = i-offset;\n    c.set(field, n);\n// buggy lines end\n}\n// fixed lines:\n    int n = i;\n    c.set(field, n);\n<|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    c.set(field, i);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, i);\n"
+        },
+        {
+            "patch": "    c.set(field, i - offset);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, i - offset);\n"
+        },
+        {
+            "patch": "    c.set(this.field, i);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(this.field, i);\n"
+        },
+        {
+            "patch": "    c.set(this.field, i - offset);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(this.field, i - offset);\n"
+        },
+        {
+            "patch": "    c.set(field, i + offset);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, i + offset);\n"
+        },
+        {
+            "patch": "    c.set(this.field, i - this.offset);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(this.field, i - this.offset);\n"
+        },
+        {
+            "patch": "    int n = i + offset;\n    c.set(field, n);\n",
+            "correctness": "compile_success",
+            "translated": "    int n = i + offset;\n    c.set(field, n);\n"
+        },
+        {
+            "patch": "    c.set(field, (i - offset));\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, (i - offset));\n"
+        },
+        {
+            "patch": "    int n = i;\n    c.set(field, n - offset);\n",
+            "correctness": "compile_success",
+            "translated": "    int n = i;\n    c.set(field, n - offset);\n"
+        },
+        {
+            "patch": "    int n = i;\n    c.set(field, n);\n",
+            "correctness": "compile_success",
+            "translated": "    int n = i;\n    c.set(field, n);\n"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "String pathInfo = request.getRequestURI();",
+        "String pathInfo = request.getRequestURL().toString();",
+        "String pathInfo = request.getRequestURI().toString();",
+        "String pathInfo = request.getPathInfo();",
+        "String pathInfo = request.getContextPathInfo();",
+        "String pathInfo = request.getPageInfo();",
+        "String pathInfo = request.getClientPathInfo();",
+        "String pathInfo = request.getServletPathInfo();",
+        "String pathInfo = request.getContextPath();",
+        "String pathInfo = request.getFullPathInfo();"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pathInfo = request.getRequestURI();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getRequestURL().toString();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getRequestURI().toString();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getPathInfo();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getContextPathInfo();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getPageInfo();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getClientPathInfo();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getServletPathInfo();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getContextPath();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getFullPathInfo();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

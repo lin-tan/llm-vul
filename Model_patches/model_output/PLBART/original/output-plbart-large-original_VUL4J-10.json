@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-16,1",
+    "output": [
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); FileOutputStream output = new FileOutputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); FileInputStream output = new FileInputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); OutputStream output = new FileOutputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectOutputStream output = new ObjectOutputStream(); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); InputStream output = new BufferedInputStream(in.getInputStream()); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); cachedContent = in.readUTF(); }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); cachedContent = in.readObject(); }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); FileOutputStream output = new FileOutputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null ; }",
+        "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); FileOutputStream output = new FileOutputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; DEDENT"
+    ],
+    "validation_result": [
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); FileOutputStream output = new FileOutputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); FileInputStream output = new FileInputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); OutputStream output = new FileOutputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectOutputStream output = new ObjectOutputStream(); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); InputStream output = new BufferedInputStream(in.getInputStream()); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); cachedContent = in.readUTF(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); cachedContent = in.readObject(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); FileOutputStream output = new FileOutputStream(dfosFile); if (cachedContent!= null) { output.write(cachedContent); } else { FileInputStream input = new FileInputStream(dfosFile); IOUtils.copy(input, output); dfosFile.delete(); dfosFile = null; } output.close(); cachedContent = null ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        }
+    ]
+}

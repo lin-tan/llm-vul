@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "null.add( \"notify\")",
+        "nl.add( \"notify\")",
+        ".add( \"notifyAll\")",
+        ".add( \"hashCode\")",
+        ".add( \"notifyAll\")",
+        ".add( \"error\")",
+        ".add( \"warnings\")",
+        "nl.add( \"notify \")",
+        "nl().add( \"notify\")",
+        ".add( \"notifyAll \")"
+    ],
+    "validation_result": [
+        {
+            "patch": "null.add( \"notify\")",
+            "correctness": "uncompilable",
+            "translated": "null.add( \"notify\")"
+        },
+        {
+            "patch": "nl.add( \"notify\")",
+            "correctness": "uncompilable",
+            "translated": "nl.add( \"notify\")"
+        },
+        {
+            "patch": ".add( \"notifyAll\")",
+            "correctness": "compile_success",
+            "translated": ".add( \"notifyAll\")"
+        },
+        {
+            "patch": ".add( \"hashCode\")",
+            "correctness": "compile_success",
+            "translated": ".add( \"hashCode\")"
+        },
+        {
+            "patch": ".add( \"notifyAll\")",
+            "correctness": "compile_success",
+            "translated": ".add( \"notifyAll\")"
+        },
+        {
+            "patch": ".add( \"error\")",
+            "correctness": "compile_success",
+            "translated": ".add( \"error\")"
+        },
+        {
+            "patch": ".add( \"warnings\")",
+            "correctness": "compile_success",
+            "translated": ".add( \"warnings\")"
+        },
+        {
+            "patch": "nl.add( \"notify \")",
+            "correctness": "uncompilable",
+            "translated": "nl.add( \"notify\")"
+        },
+        {
+            "patch": "nl().add( \"notify\")",
+            "correctness": "uncompilable",
+            "translated": "nl().add( \"notify\")"
+        },
+        {
+            "patch": ".add( \"notifyAll \")",
+            "correctness": "compile_success",
+            "translated": ".add( \"notifyAll\")"
+        }
+    ]
+}

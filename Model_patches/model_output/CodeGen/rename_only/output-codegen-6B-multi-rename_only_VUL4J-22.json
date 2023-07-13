@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-12,1",
+    "output": [
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }\n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }\n\n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n}\n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n}\n\n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }\n\n  public static void setContextPath(HttpServletRequest r, String contextPath) {\n    r.setAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY, contextPath);\n  }\n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }\n  \n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }\n\n  public static void setContextPath(HttpServletRequest r, String circumstancePath) {\n    r.setAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY, circumstancePath);\n  }\n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }\n\n  public static void setContextPath(HttpServletRequest r, String contextPath) {\n    r.setAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY, contextPath);\n  }\n\n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }\n\n  public static void setContextPath(HttpServletRequest r, String circumstancePath) {\n    r.setAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY, circumstancePath);\n  }\n\n}\n",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n}",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n}",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n  }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n    return circumstancePath;\n}",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n    return contextPath;\n  }"
+        }
+    ]
+}

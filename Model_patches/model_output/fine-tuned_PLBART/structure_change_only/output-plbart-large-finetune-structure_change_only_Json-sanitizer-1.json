@@ -1,0 +1,56 @@
+{
+    "output": [
+        "else if (ch == '\\\\') {",
+        "else if(ch == '\\\\') {",
+        "else if (ch == '\\\\'){",
+        "} else if (ch == '\\\\') {",
+        "else if (ch == '\"') {",
+        "} else if(ch == '\\\\') {",
+        "else if (isHexAt(i)) {",
+        "else if(ch == '\\\\'){",
+        "if (ch == '\\\\') {",
+        "continue;"
+    ],
+    "validation_result": [
+        {
+            "patch": "else if (ch == '\\\\') {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else if(ch == '\\\\') {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else if (ch == '\\\\'){",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else if (ch == '\\\\') {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else if (ch == '\"') {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else if(ch == '\\\\') {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else if (isHexAt(i)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else if(ch == '\\\\'){",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == '\\\\') {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "continue;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+        "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }",
+        ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+        "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING); }",
+        ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }",
+        "Smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+        "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_FAILURE, true); }",
+        "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \"); }",
+        "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \", x); }",
+        "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_WARNING, true); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }"
+        },
+        {
+            "patch": "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }"
+        },
+        {
+            "patch": ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+            "correctness": "uncompilable",
+            "translated": ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }"
+        },
+        {
+            "patch": "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING); }",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING); }"
+        },
+        {
+            "patch": ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }",
+            "correctness": "uncompilable",
+            "translated": ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }"
+        },
+        {
+            "patch": "Smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+            "correctness": "uncompilable",
+            "translated": "Smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }"
+        },
+        {
+            "patch": "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_FAILURE, true); }",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_FAILURE, true); }"
+        },
+        {
+            "patch": "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \"); }",
+            "correctness": "uncompilable",
+            "translated": "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \"); }"
+        },
+        {
+            "patch": "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \", x); }",
+            "correctness": "uncompilable",
+            "translated": "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \", e); }"
+        },
+        {
+            "patch": "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_WARNING, true); }",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_WARNING, true); }"
+        }
+    ]
+}

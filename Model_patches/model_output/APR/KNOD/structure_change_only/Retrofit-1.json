@@ -1,0 +1,65 @@
+{
+    "id": 43,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -1.5759,
+            "fix_type": "general",
+            "patch": "super(\"\");\n"
+        },
+        {
+            "rank": 2,
+            "score": -1.5759,
+            "fix_type": "general",
+            "patch": "super(\"0\");\n"
+        },
+        {
+            "rank": 3,
+            "score": -1.7077,
+            "fix_type": "general",
+            "patch": "super(\"\");\n"
+        },
+        {
+            "rank": 4,
+            "score": -1.7383,
+            "fix_type": "general",
+            "patch": "super(null);\n"
+        },
+        {
+            "rank": 5,
+            "score": -1.7811,
+            "fix_type": "general",
+            "patch": "super(data);\n"
+        },
+        {
+            "rank": 6,
+            "score": -1.8792,
+            "fix_type": "general",
+            "patch": "context.getEncoded();\n"
+        },
+        {
+            "rank": 7,
+            "score": -1.8792,
+            "fix_type": "general",
+            "patch": "context.size();\n"
+        },
+        {
+            "rank": 8,
+            "score": -1.8881,
+            "fix_type": "general",
+            "patch": "super(key);\n"
+        },
+        {
+            "rank": 9,
+            "score": -1.9001,
+            "fix_type": "general",
+            "patch": "super(n);\n"
+        },
+        {
+            "rank": 10,
+            "score": -1.9258,
+            "fix_type": "general",
+            "patch": "super(l);\n"
+        }
+    ]
+}

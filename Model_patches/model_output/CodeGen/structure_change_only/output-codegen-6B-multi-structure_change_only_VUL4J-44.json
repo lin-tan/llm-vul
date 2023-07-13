@@ -1,0 +1,57 @@
+{
+    "function range": "2,2-20,2",
+    "output": [
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn encodeCharacter(immune, cStr);\n}\n\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn \"\";\n\t\t}\n\t}\n\treturn cStr;\n}\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++) {\n\t\tif (cStr.equals(String.valueOf(immune[i]))) {\n\t\t\treturn \"\";\n\t\t}\n\t}\n\treturn cStr;\n}\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++) {\n\t\tif (cStr.equals(String.valueOf(immune[i]))) {\n\t\t\treturn null;\n\t\t}\n\t}\n\treturn cStr;\n}\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn null;\n\t\t}\n\t}\n\treturn cStr;\n}\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn \"\";\n\t\t}\n\t}\n\treturn cStr;\n}\n\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++) {\n\t\tif (cStr.equals(String.valueOf(immune[i]))) {\n\t\t\treturn null;\n\t\t}\n\t}\n\treturn cStr;\n}\n\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn null;\n\t\t}\n\t}\n\treturn cStr;\n}\n\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn cStr;\n\t\t}\n\t}\n\treturn cStr;\n}\n}\n",
+        "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++) {\n\t\tif (cStr.equals(String.valueOf(immune[i]))) {\n\t\t\treturn cStr;\n\t\t}\n\t}\n\treturn cStr;\n}\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn encodeCharacter(immune, cStr);\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn \"\";\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++) {\n\t\tif (cStr.equals(String.valueOf(immune[i]))) {\n\t\t\treturn \"\";\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++) {\n\t\tif (cStr.equals(String.valueOf(immune[i]))) {\n\t\t\treturn null;\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn null;\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn \"\";\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++) {\n\t\tif (cStr.equals(String.valueOf(immune[i]))) {\n\t\t\treturn null;\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn null;\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++)\n\t{\n\t\tif (cStr.equals(String.valueOf(immune[i])))\n\t\t{\n\t\t\treturn cStr;\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\tfor (int i = 0; i < immune.length; i++) {\n\t\tif (cStr.equals(String.valueOf(immune[i]))) {\n\t\t\treturn cStr;\n\t\t}\n\t}\n\treturn cStr;\n}",
+            "correctness": "compile_success"
+        }
+    ]
+}

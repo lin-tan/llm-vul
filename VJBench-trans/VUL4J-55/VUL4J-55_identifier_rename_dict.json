@@ -1,0 +1,26 @@
+{
+    "method": {
+        "clear": "empty",
+        "setTo": "changeTO",
+        "ceil": "roundUp",
+        "first": "initial",
+        "rollUp": "Increment"
+    },
+    "variable": {
+        "next": "following",
+        "cur": "now",
+        "f": "a",
+        "twoYearsFuture": "futurityTwoYears",
+        "redoAdjustmentIfModified": "remakeAdaptationWhenAltered",
+        "OUTER": "EXTERIOR",
+        "l": "b",
+        "lowerField": "lowerAttribute",
+        "cal": "calendar",
+        "": ""
+    },
+    "class": {
+        "CalendarField": "CalendarAttribute",
+        "RareOrImpossibleDateException": "UnusualOrUnrealisticTimeException",
+        "": ""
+    }
+}

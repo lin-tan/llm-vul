@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n           return url;",
+        "\n          return url;",
+        "\n         return url;",
+        "\n           return url;",
+        "\n           return url;public\n           return url;\n   }",
+        "\n           return url;public\n          return url;\n   }",
+        "\n           return url;\n",
+        "\n          return url;",
+        "\n         return url;",
+        "\n         return url;\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return url;public\n           return url;\n   }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return url;public\n          return url;\n   }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        }
+    ]
+}

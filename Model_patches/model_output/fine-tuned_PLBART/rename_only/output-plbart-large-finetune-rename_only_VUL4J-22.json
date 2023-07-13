@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (\"String_Node_Str\".equals(circumstancePath)) {",
+        "if (!\"String_Node_Str\".equals(circumstancePath)) {",
+        "if (circumstancePath.equals(\"String_Node_Str\")) {",
+        "if (circumstancePath == null || circumstancePath.isEmpty()) {",
+        "if (circumstancePath == null) {",
+        "if (\"\\\\\".equals(circumstancePath)) {",
+        "if (circumstancePath.isEmpty()) {",
+        "if (circumstancePath == null || circumstancePath.length() == 0) {",
+        "if (\"\".equals(circumstancePath) || circumstancePath.isEmpty()) {",
+        "if (circumstancePath.length() == 0) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (\"String_Node_Str\".equals(circumstancePath)) {",
+            "correctness": "uncompilable",
+            "translated": "if (\"String_Node_Str\".equals(contextPath)) {"
+        },
+        {
+            "patch": "if (!\"String_Node_Str\".equals(circumstancePath)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!\"String_Node_Str\".equals(contextPath)) {"
+        },
+        {
+            "patch": "if (circumstancePath.equals(\"String_Node_Str\")) {",
+            "correctness": "uncompilable",
+            "translated": "if (contextPath.equals(\"String_Node_Str\")) {"
+        },
+        {
+            "patch": "if (circumstancePath == null || circumstancePath.isEmpty()) {",
+            "correctness": "uncompilable",
+            "translated": "if (contextPath == null || contextPath.isEmpty()) {"
+        },
+        {
+            "patch": "if (circumstancePath == null) {",
+            "correctness": "uncompilable",
+            "translated": "if (contextPath == null) {"
+        },
+        {
+            "patch": "if (\"\\\\\".equals(circumstancePath)) {",
+            "correctness": "uncompilable",
+            "translated": "if (\"\\\\\".equals(contextPath)) {"
+        },
+        {
+            "patch": "if (circumstancePath.isEmpty()) {",
+            "correctness": "uncompilable",
+            "translated": "if (contextPath.isEmpty()) {"
+        },
+        {
+            "patch": "if (circumstancePath == null || circumstancePath.length() == 0) {",
+            "correctness": "uncompilable",
+            "translated": "if (contextPath == null || contextPath.length() == 0) {"
+        },
+        {
+            "patch": "if (\"\".equals(circumstancePath) || circumstancePath.isEmpty()) {",
+            "correctness": "uncompilable",
+            "translated": "if (\"\".equals(contextPath) || contextPath.isEmpty()) {"
+        },
+        {
+            "patch": "if (circumstancePath.length() == 0) {",
+            "correctness": "uncompilable",
+            "translated": "if (contextPath.length() == 0) {"
+        }
+    ]
+}

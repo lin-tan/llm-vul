@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (!(item instanceof Job)) {",
+        "if (step.getWait()) {",
+        "if (!step.getWait()) {",
+        "if (!(item instanceof Job) && step.getWait()) {",
+        "if (step.getWait() && item instanceof Job) {",
+        "if (item instanceof Job && step.getWait()) {",
+        "if (item instanceof Job &&!(item instanceof Job)) {",
+        "if (step.getWait() && (item instanceof Job)) {",
+        "if (!step.getWait() && item instanceof Job) {",
+        "if (step.getWait() &&!(item instanceof Job))"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(item instanceof Job)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (step.getWait()) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (!step.getWait()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(item instanceof Job) && step.getWait()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (step.getWait() && item instanceof Job) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (item instanceof Job && step.getWait()) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (item instanceof Job &&!(item instanceof Job)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (step.getWait() && (item instanceof Job)) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (!step.getWait() && item instanceof Job) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (step.getWait() &&!(item instanceof Job))",
+            "correctness": "uncompilable"
+        }
+    ]
+}

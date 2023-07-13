@@ -1,0 +1,67 @@
+{
+    "function range": "2,2-20,2",
+    "output": [
+        "\n\tif( exempt!= null ){\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\n\t",
+        "\n\tif( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t}",
+        "\n\tif( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\n",
+        "\n\tif( exempt!= null ){\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t}\n",
+        "\n\tif( exempt!= null ){\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t\n\n\t}",
+        "\n\tif( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t\n\n\t",
+        "\n\tif( exempt!= null ){\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\n\t}\n",
+        "\n\tif( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\n\t}",
+        "\n\tif( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\n\t\t\n\t",
+        "\n\tif( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\t}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if( exempt!= null ){\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){"
+        },
+        {
+            "patch": "if( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t}",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\n\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t}"
+        },
+        {
+            "patch": "if( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){"
+        },
+        {
+            "patch": "if( exempt!= null ){\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t}",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\n\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t}"
+        },
+        {
+            "patch": "if( exempt!= null ){\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\t\n\n\t}",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\n\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t}"
+        },
+        {
+            "patch": "if( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){"
+        },
+        {
+            "patch": "if( exempt!= null ){\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\n\t}",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\n\t}"
+        },
+        {
+            "patch": "if( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\n\t}",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\n\t}"
+        },
+        {
+            "patch": "if( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\n\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{"
+        },
+        {
+            "patch": "if( exempt!= null ){\n\t\n\tString\n\tif( exempt.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( exempt.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\t}",
+            "correctness": "uncompilable",
+            "translated": "if( immune!= null ){\t\n\tString\n\tif( immune.length > 0 ){\n\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\n\tif( immune.length > 0 ){\n\t\n\n\n\t\n\t\t\n\t\t\n\t\t{\t\t\t\n\t}"
+        }
+    ]
+}

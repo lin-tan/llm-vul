@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-27,5",
+    "output": [
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}",
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}",
+        "\n\n   \n   \n    component.attachMember(html.acquireComponent());\n    return HttpServletResponse.SC_OK;\n}\n\n\n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}",
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {\n   \n   \n\n   ",
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {\n   \n   \n\n    return",
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n    return 0;\n",
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    if (",
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    com.",
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {\n   \n   \n\n    if",
+        "\n    if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    return super"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}"
+        },
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}"
+        },
+        {
+            "patch": "component.attachMember(html.acquireComponent());\n    return HttpServletResponse.SC_OK;\n}\n\n\n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}",
+            "correctness": "uncompilable",
+            "translated": "element.appendChild(html.getElement());\n    return HttpServletResponse.SC_OK;\n}\n\n\n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n}"
+        },
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {"
+        },
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {\n   \n   \n\n    return",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {\n   \n   \n\n    return"
+        },
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n    return 0;",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n    return 0;"
+        },
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    if ("
+        },
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    com.",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    com."
+        },
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {\n   \n   \n\n    if",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n\n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n(\n       ) {\n   \n   \n\n    if"
+        },
+        {
+            "patch": "if (templet == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    return super",
+            "correctness": "uncompilable",
+            "translated": "if (template == null) return HttpServletResponse.SC_NOT_FOUND;.\n   \n    return HttpServletResponse.SC_OK;\n\n   \n   \n   \n   \n   \n   \n   \n   \n   \n\n\n\n   \n\n\n\n    return HttpServletResponse.SC_OK;\n\n   \n    public\n() {\n   \n   \n\n    return super"
+        }
+    ]
+}

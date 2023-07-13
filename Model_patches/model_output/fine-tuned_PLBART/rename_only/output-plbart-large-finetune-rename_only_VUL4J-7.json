@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return 0;",
+        "throw new EOFException();",
+        "return x;",
+        "return -1;",
+        "throw new IOException();",
+        "return false;",
+        "return;",
+        "return -2;",
+        "x = -1;",
+        "return 1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return 0;",
+            "correctness": "compile_success",
+            "translated": "return 0;"
+        },
+        {
+            "patch": "throw new EOFException();",
+            "correctness": "compile_success",
+            "translated": "throw new EOFException();"
+        },
+        {
+            "patch": "return x;",
+            "correctness": "compile_success",
+            "translated": "return l;"
+        },
+        {
+            "patch": "return -1;",
+            "correctness": "compile_success",
+            "translated": "return -1;"
+        },
+        {
+            "patch": "throw new IOException();",
+            "correctness": "compile_success",
+            "translated": "throw new IOException();"
+        },
+        {
+            "patch": "return false;",
+            "correctness": "uncompilable",
+            "translated": "return false;"
+        },
+        {
+            "patch": "return;",
+            "correctness": "uncompilable",
+            "translated": "return;"
+        },
+        {
+            "patch": "return -2;",
+            "correctness": "compile_success",
+            "translated": "return -2;"
+        },
+        {
+            "patch": "x = -1;",
+            "correctness": "uncompilable",
+            "translated": "l = -1;"
+        },
+        {
+            "patch": "return 1;",
+            "correctness": "compile_success",
+            "translated": "return 1;"
+        }
+    ]
+}

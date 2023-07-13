@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n        ledger.read(new EntryReader() {\n           \n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+        "\n        ledger.read(new EntryReader() {\n            public\n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+        "\n        ledger.read(new EntryReader() {\n           \n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n           \n\n    }",
+        "\n        ledger.read(new EntryReader() {\n           \n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n    }",
+        "\n        ledger.read(new EntryReader() {\n            public\n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n           \n\n    }",
+        "\n        ledger.read(new EntryReader() {\n            public\n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n    }",
+        "\n        ledger.readEntries(new EntryReader() {\n           \n            public void\n        ledger.readEntries(new EntryReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+        "\n        ledger.read(new ManagedLedgerReader() {\n           \n            public void\n        ledger.read(new ManagedLedgerReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+        "\n        ledger.readEntries(new EntryReader() {\n            public\n            public void\n        ledger.readEntries(new EntryReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+        "\n        ledger.read(new EntryReader() {\n           \n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n    }\n    }"
+    ],
+    "validation_result": [
+        {
+            "patch": "ledger.read(new EntryReader() {\n           \n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.read(new EntryReader() {\n            public\n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.read(new EntryReader() {\n           \n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n           \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.read(new EntryReader() {\n           \n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.read(new EntryReader() {\n            public\n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n           \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.read(new EntryReader() {\n            public\n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.readEntries(new EntryReader() {\n           \n            public void\n        ledger.readEntries(new EntryReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.read(new ManagedLedgerReader() {\n           \n            public void\n        ledger.read(new ManagedLedgerReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.readEntries(new EntryReader() {\n            public\n            public void\n        ledger.readEntries(new EntryReader() {\n           \n           \n            public void\n           \n       \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.read(new EntryReader() {\n           \n            public void\n        ledger.read(new EntryReader() {\n           \n           \n            public void\n           \n       \n    }\n    }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

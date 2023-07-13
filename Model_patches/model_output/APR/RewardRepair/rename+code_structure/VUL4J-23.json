@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "Encode.forJavaScriptSource(dataProvider);",
+        "if( dataProvider!= null ) return Encode.forJavaScriptSource(dataProvider);",
+        "//$NON-NLS-1$ return Encode.forJavaScriptSource(dataProvider);",
+        "if (dataProvider!= null) return Encode.forJavaScriptSource(dataProvider);",
+        "Encode.forJavaScriptSource(dataProvider);",
+        "@Override public String JavaScriptSourceEncoding() { return Encode.forJavaScriptSource(dataProvider); }",
+        "JavaScriptSource scriptSource = Encode.forJavaScriptSource(dataProvider); return scriptSource;",
+        "null = Encode.forJavaScriptSource(dataProvider);",
+        "JavaScriptSource javaScriptSource = Encode.forJavaScriptSource(dataProvider); return javaScriptSource;",
+        "return Encode.forJavaScriptSource(dataProvider);"
+    ],
+    "validation_result": [
+        {
+            "patch": "Encode.forJavaScriptSource(dataProvider);",
+            "correctness": "compile_success",
+            "translated": "Encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "if( dataProvider!= null ) return Encode.forJavaScriptSource(dataProvider);",
+            "correctness": "compile_success",
+            "translated": "if( source!= null ) return Encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "//$NON-NLS-1$ return Encode.forJavaScriptSource(dataProvider);",
+            "correctness": "compile_success",
+            "translated": "//$NON-NLS-1$ return Encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "if (dataProvider!= null) return Encode.forJavaScriptSource(dataProvider);",
+            "correctness": "compile_success",
+            "translated": "if( source!= null ) return Encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "Encode.forJavaScriptSource(dataProvider);",
+            "correctness": "compile_success",
+            "translated": "Encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "@Override public String JavaScriptSourceEncoding() { return Encode.forJavaScriptSource(dataProvider); }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String JavaScriptSourceEncoding() { return Encode.forJavaScriptSource(source); }"
+        },
+        {
+            "patch": "JavaScriptSource scriptSource = Encode.forJavaScriptSource(dataProvider); return scriptSource;",
+            "correctness": "uncompilable",
+            "translated": "JavaScriptSource scriptSource = Encode.forJavaScriptSource(source); return scriptSource;"
+        },
+        {
+            "patch": "null = Encode.forJavaScriptSource(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "null = Encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "JavaScriptSource javaScriptSource = Encode.forJavaScriptSource(dataProvider); return javaScriptSource;",
+            "correctness": "uncompilable",
+            "translated": "JavaScriptSource javaScriptSource = Encode.forJavaScriptSource(source); return javaScriptSource;"
+        },
+        {
+            "patch": "return Encode.forJavaScriptSource(dataProvider);",
+            "correctness": "compile_success",
+            "translated": "return Encode.forJavaScriptSource(source);"
+        }
+    ]
+}

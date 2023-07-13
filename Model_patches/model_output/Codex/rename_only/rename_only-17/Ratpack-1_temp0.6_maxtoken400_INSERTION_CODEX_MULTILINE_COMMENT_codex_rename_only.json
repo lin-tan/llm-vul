@@ -1,0 +1,929 @@
+{
+    "id": "cmpl-8HPNKMHVDUdxY4RA8iUlS4spBXNan",
+    "object": "text_completion",
+    "created": 1699159810,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "  HttpHeaders heading = new DefaultHttpHeaders();\n  heading.set(HttpHeaderNames.SERVER, \"Netty\");\n  heading.set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " H",
+                    "ttp",
+                    "Head",
+                    "ers",
+                    " heading",
+                    " =",
+                    " new",
+                    " Default",
+                    "Http",
+                    "Head",
+                    "ers",
+                    "();",
+                    "\n",
+                    " ",
+                    " heading",
+                    ".",
+                    "set",
+                    "(",
+                    "Http",
+                    "Header",
+                    "Names",
+                    ".",
+                    "SER",
+                    "VER",
+                    ",",
+                    " \"",
+                    "Net",
+                    "ty",
+                    "\");",
+                    "\n",
+                    " ",
+                    " heading",
+                    ".",
+                    "set",
+                    "(",
+                    "Http",
+                    "Header",
+                    "Names",
+                    ".",
+                    "CON",
+                    "N",
+                    "ECTION",
+                    ",",
+                    " H",
+                    "ttp",
+                    "Header",
+                    "Values",
+                    ".",
+                    "K",
+                    "EEP",
+                    "_",
+                    "AL",
+                    "IVE",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.93829453,
+                    -0.00048191354,
+                    -0.02300836,
+                    -0.042689912,
+                    -0.015296593,
+                    -0.00235885,
+                    -0.046607986,
+                    -0.060718805,
+                    -0.013418931,
+                    -0.0040871785,
+                    -3.7266083e-05,
+                    -0.54950607,
+                    -0.036074318,
+                    -0.9378588,
+                    -0.6110733,
+                    -0.0064851497,
+                    -0.40191835,
+                    -0.14101289,
+                    -0.18880294,
+                    -0.04649952,
+                    -0.0070199454,
+                    -0.00022987355,
+                    -0.8782219,
+                    -0.00022754945,
+                    -0.0016865203,
+                    -2.1313398,
+                    -2.4497175,
+                    -0.09502599,
+                    -0.68455446,
+                    -0.010755376,
+                    -0.7751529,
+                    -0.7412313,
+                    -0.0015576212,
+                    -0.029121883,
+                    -0.07242478,
+                    -0.031547885,
+                    -0.0023206742,
+                    -0.00094686385,
+                    -0.00010820183,
+                    -2.0280352,
+                    -0.0012255172,
+                    -2.7133337e-05,
+                    -0.0006219424,
+                    -0.29988566,
+                    -0.00016519109,
+                    -0.054913655,
+                    -0.021653986,
+                    -8.852958e-05,
+                    -0.38393116,
+                    -0.00025968134,
+                    -0.0018275535,
+                    -8.435633e-05,
+                    -9.606849e-06,
+                    -0.0020734875,
+                    -0.008611058
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ttp": -0.00048191354
+                    },
+                    {
+                        "Head": -0.02300836
+                    },
+                    {
+                        "ers": -0.042689912
+                    },
+                    {
+                        " heading": -0.015296593
+                    },
+                    {
+                        " =": -0.00235885
+                    },
+                    {
+                        " new": -0.046607986
+                    },
+                    {
+                        " Default": -0.060718805
+                    },
+                    {
+                        "Http": -0.013418931
+                    },
+                    {
+                        "Head": -0.0040871785
+                    },
+                    {
+                        "ers": -3.7266083e-05
+                    },
+                    {
+                        "();": -0.54950607
+                    },
+                    {
+                        "\n": -0.036074318
+                    },
+                    {
+                        "<|endoftext|>": -0.5030453
+                    },
+                    {
+                        " heading": -0.6110733
+                    },
+                    {
+                        ".": -0.0064851497
+                    },
+                    {
+                        "set": -0.40191835
+                    },
+                    {
+                        "(": -0.14101289
+                    },
+                    {
+                        "Http": -0.18880294
+                    },
+                    {
+                        "Header": -0.04649952
+                    },
+                    {
+                        "Names": -0.0070199454
+                    },
+                    {
+                        ".": -0.00022987355
+                    },
+                    {
+                        "SER": -0.8782219
+                    },
+                    {
+                        "VER": -0.00022754945
+                    },
+                    {
+                        ",": -0.0016865203
+                    },
+                    {
+                        " app": -0.9725862
+                    },
+                    {
+                        "Net": -2.4497175
+                    },
+                    {
+                        "ty": -0.09502599
+                    },
+                    {
+                        "\");": -0.68455446
+                    },
+                    {
+                        "\n": -0.010755376
+                    },
+                    {
+                        "<|endoftext|>": -0.62075007
+                    },
+                    {
+                        " heading": -0.7412313
+                    },
+                    {
+                        ".": -0.0015576212
+                    },
+                    {
+                        "set": -0.029121883
+                    },
+                    {
+                        "(": -0.07242478
+                    },
+                    {
+                        "Http": -0.031547885
+                    },
+                    {
+                        "Header": -0.0023206742
+                    },
+                    {
+                        "Names": -0.00094686385
+                    },
+                    {
+                        ".": -0.00010820183
+                    },
+                    {
+                        "D": -0.27716738
+                    },
+                    {
+                        "N": -0.0012255172
+                    },
+                    {
+                        "ECTION": -2.7133337e-05
+                    },
+                    {
+                        ",": -0.0006219424
+                    },
+                    {
+                        " H": -0.29988566
+                    },
+                    {
+                        "ttp": -0.00016519109
+                    },
+                    {
+                        "Header": -0.054913655
+                    },
+                    {
+                        "Values": -0.021653986
+                    },
+                    {
+                        ".": -8.852958e-05
+                    },
+                    {
+                        "K": -0.38393116
+                    },
+                    {
+                        "EEP": -0.00025968134
+                    },
+                    {
+                        "_": -0.0018275535
+                    },
+                    {
+                        "AL": -8.435633e-05
+                    },
+                    {
+                        "IVE": -9.606849e-06
+                    },
+                    {
+                        ");": -0.0020734875
+                    },
+                    {
+                        "\n": -0.008611058
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3860,
+                    3863,
+                    3867,
+                    3870,
+                    3878,
+                    3880,
+                    3884,
+                    3892,
+                    3896,
+                    3900,
+                    3903,
+                    3906,
+                    3907,
+                    3908,
+                    3916,
+                    3917,
+                    3920,
+                    3921,
+                    3925,
+                    3931,
+                    3936,
+                    3937,
+                    3940,
+                    3943,
+                    3944,
+                    3946,
+                    3949,
+                    3951,
+                    3954,
+                    3955,
+                    3956,
+                    3964,
+                    3965,
+                    3968,
+                    3969,
+                    3973,
+                    3979,
+                    3984,
+                    3985,
+                    3988,
+                    3989,
+                    3995,
+                    3996,
+                    3998,
+                    4001,
+                    4007,
+                    4013,
+                    4014,
+                    4015,
+                    4018,
+                    4019,
+                    4021,
+                    4024,
+                    4026
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings(httpQuery.headers());\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " Head",
+                    "ings",
+                    " heading",
+                    " =",
+                    " new",
+                    " Network",
+                    "Library",
+                    "Head",
+                    "ing",
+                    "Support",
+                    "e",
+                    "Head",
+                    "ings",
+                    "(",
+                    "http",
+                    "Query",
+                    ".",
+                    "headers",
+                    "());",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.9882071,
+                    -0.012454829,
+                    -0.06866376,
+                    -0.0039571933,
+                    -0.029688817,
+                    -0.358768,
+                    -0.0044257427,
+                    -0.008823305,
+                    -0.011363838,
+                    -0.4043285,
+                    -0.015555545,
+                    -0.024000261,
+                    -0.0013229182,
+                    -0.4666831,
+                    -1.6700575,
+                    -0.005638533,
+                    -0.008868403,
+                    -0.006401643,
+                    -0.0451189,
+                    -0.02300787
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ings": -0.012454829
+                    },
+                    {
+                        " heading": -0.06866376
+                    },
+                    {
+                        " =": -0.0039571933
+                    },
+                    {
+                        " new": -0.029688817
+                    },
+                    {
+                        " Network": -0.358768
+                    },
+                    {
+                        "Library": -0.0044257427
+                    },
+                    {
+                        "Head": -0.008823305
+                    },
+                    {
+                        "ing": -0.011363838
+                    },
+                    {
+                        "Support": -0.4043285
+                    },
+                    {
+                        "e": -0.015555545
+                    },
+                    {
+                        "Head": -0.024000261
+                    },
+                    {
+                        "ings": -0.0013229182
+                    },
+                    {
+                        "(": -0.4666831
+                    },
+                    {
+                        "false": -0.5218366
+                    },
+                    {
+                        "Query": -0.005638533
+                    },
+                    {
+                        ".": -0.008868403
+                    },
+                    {
+                        "headers": -0.006401643
+                    },
+                    {
+                        "());": -0.0451189
+                    },
+                    {
+                        "\n": -0.02300787
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3863,
+                    3867,
+                    3875,
+                    3877,
+                    3881,
+                    3889,
+                    3896,
+                    3900,
+                    3903,
+                    3910,
+                    3911,
+                    3915,
+                    3919,
+                    3920,
+                    3924,
+                    3929,
+                    3930,
+                    3937,
+                    3941
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings();\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " Head",
+                    "ings",
+                    " heading",
+                    " =",
+                    " new",
+                    " Network",
+                    "Library",
+                    "Head",
+                    "ing",
+                    "Support",
+                    "e",
+                    "Head",
+                    "ings",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.9882071,
+                    -0.012454829,
+                    -0.06866376,
+                    -0.0039571933,
+                    -0.029688817,
+                    -0.358768,
+                    -0.0044257427,
+                    -0.008823305,
+                    -0.011363838,
+                    -0.4043285,
+                    -0.015555545,
+                    -0.024000261,
+                    -0.0013229182,
+                    -1.0205703,
+                    -0.028761365
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ings": -0.012454829
+                    },
+                    {
+                        " heading": -0.06866376
+                    },
+                    {
+                        " =": -0.0039571933
+                    },
+                    {
+                        " new": -0.029688817
+                    },
+                    {
+                        " Network": -0.358768
+                    },
+                    {
+                        "Library": -0.0044257427
+                    },
+                    {
+                        "Head": -0.008823305
+                    },
+                    {
+                        "ing": -0.011363838
+                    },
+                    {
+                        "Support": -0.4043285
+                    },
+                    {
+                        "e": -0.015555545
+                    },
+                    {
+                        "Head": -0.024000261
+                    },
+                    {
+                        "ings": -0.0013229182
+                    },
+                    {
+                        "(": -0.4666831
+                    },
+                    {
+                        "\n": -0.028761365
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3863,
+                    3867,
+                    3875,
+                    3877,
+                    3881,
+                    3889,
+                    3896,
+                    3900,
+                    3903,
+                    3910,
+                    3911,
+                    3915,
+                    3919,
+                    3922
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings();\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " Head",
+                    "ings",
+                    " heading",
+                    " =",
+                    " new",
+                    " Network",
+                    "Library",
+                    "Head",
+                    "ing",
+                    "Support",
+                    "e",
+                    "Head",
+                    "ings",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.9882071,
+                    -0.012454829,
+                    -0.06866376,
+                    -0.0039571933,
+                    -0.029688817,
+                    -0.358768,
+                    -0.0044257427,
+                    -0.008823305,
+                    -0.011363838,
+                    -0.4043285,
+                    -0.015555545,
+                    -0.024000261,
+                    -0.0013229182,
+                    -1.0205703,
+                    -0.028761365
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ings": -0.012454829
+                    },
+                    {
+                        " heading": -0.06866376
+                    },
+                    {
+                        " =": -0.0039571933
+                    },
+                    {
+                        " new": -0.029688817
+                    },
+                    {
+                        " Network": -0.358768
+                    },
+                    {
+                        "Library": -0.0044257427
+                    },
+                    {
+                        "Head": -0.008823305
+                    },
+                    {
+                        "ing": -0.011363838
+                    },
+                    {
+                        "Support": -0.4043285
+                    },
+                    {
+                        "e": -0.015555545
+                    },
+                    {
+                        "Head": -0.024000261
+                    },
+                    {
+                        "ings": -0.0013229182
+                    },
+                    {
+                        "(": -0.4666831
+                    },
+                    {
+                        "\n": -0.028761365
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3863,
+                    3867,
+                    3875,
+                    3877,
+                    3881,
+                    3889,
+                    3896,
+                    3900,
+                    3903,
+                    3910,
+                    3911,
+                    3915,
+                    3919,
+                    3922
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1076,
+        "completion_tokens": 113,
+        "total_tokens": 1189
+    },
+    "validation_result": [
+        {
+            "patch": "  HttpHeaders heading = new DefaultHttpHeaders();\n  heading.set(HttpHeaderNames.SERVER, \"Netty\");\n  heading.set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);\n",
+            "correctness": "compile_success",
+            "translated": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n  nettyHeaders.set(HttpHeaderNames.SERVER, \"Netty\");\n  nettyHeaders.set(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings(httpQuery.headers());\n",
+            "correctness": "uncompilable",
+            "translated": "  Headers nettyHeaders = new NettyHeadersBackedHeaders(nettyRequest.headers());\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings();\n",
+            "correctness": "uncompilable",
+            "translated": "  Headers nettyHeaders = new NettyHeadersBackedHeaders(); \n"
+        },
+        {
+            "patch": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings();\n",
+            "correctness": "uncompilable",
+            "translated": "  Headers nettyHeaders = new NettyHeadersBackedHeaders(); \n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-18-280-281": {
+        "src": "return r . get CaMeL Path CaMeL Info ( ) ;",
+        "patches": [
+            {
+                "patch": "return( r == null ) ? null :( String ) r.getAttribute( 'Wiki.jsp') ;"
+            },
+            {
+                "patch": "return( r == null ) ? null :( String ) r.getAttribute( ', ') ;"
+            },
+            {
+                "patch": "return( r == null ) ? null :( String ) r.getAttribute( 'PageInfo.jsp') ;"
+            },
+            {
+                "patch": "return( r == null ) ? null :( String ) r.getAttribute( '/') ;"
+            },
+            {
+                "patch": "return( r == null ) ? null :( String ) r.getAttribute( 'http://issues.apache.org/bugzilla/show_bug.cgi?id=39278') ;"
+            },
+            {
+                "patch": "if( r != null ) { return r ; } else { return null ; }"
+            },
+            {
+                "patch": "if( r == null ) { throw new IllegalArgumentException( 'Wiki.jsp') ; }"
+            },
+            {
+                "patch": "if( r == null ) { throw new IllegalArgumentException( ', ') ; }"
+            },
+            {
+                "patch": "if( r == null ) { throw new IllegalArgumentException( 'PageInfo.jsp') ; }"
+            },
+            {
+                "patch": "if( r == null ) { throw new IllegalArgumentException( '/') ; }"
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(attribute, m);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(attribute, m - position);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(attribute, m-position);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(attribute, m-1);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(position, m);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(attribute, position);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    int n = m-1;\n    z.set(attribute, n);\n<|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(attribute, (m - position));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(attribute, position - m);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void changeTo(Calendar z, int m) {\n// buggy lines start:\n    int n = m-position;\n    z.set(attribute, n);\n// buggy lines end\n}\n// fixed lines:\n    z.set(attribute, m);\n    position++;\n<|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    z.set(attribute, m);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, i);\n"
+        },
+        {
+            "patch": "    z.set(attribute, m - position);\n",
+            "correctness": "test_success",
+            "translated": "    c.set(field, i - offset);\n"
+        },
+        {
+            "patch": "    z.set(attribute, m-position);\n",
+            "correctness": "test_success",
+            "translated": "    c.set(field, i - offset);\n"
+        },
+        {
+            "patch": "    z.set(attribute, m-1);\n",
+            "correctness": "test_timeout",
+            "translated": "    c.set(field, i-1);\n"
+        },
+        {
+            "patch": "    z.set(position, m);\n",
+            "correctness": "test_timeout",
+            "translated": "    c.set(offset, i);\n"
+        },
+        {
+            "patch": "    z.set(attribute, position);\n",
+            "correctness": "test_timeout",
+            "translated": "    c.set(field, offset);\n"
+        },
+        {
+            "patch": "    int n = m-1;\n    z.set(attribute, n);\n",
+            "correctness": "test_timeout",
+            "translated": "    int n = i-1;\n    c.set(field, n);\n"
+        },
+        {
+            "patch": "    z.set(attribute, (m - position));\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field, (i - offset));\n"
+        },
+        {
+            "patch": "    z.set(attribute, position - m);\n",
+            "correctness": "test_timeout",
+            "translated": "    c.set(field, offset - i);\n"
+        },
+        {
+            "patch": "    z.set(attribute, m);\n    position++;\n",
+            "correctness": "uncompilable",
+            "translated": "    c.set(field, i);\n    offset++;\n"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "2,4-21,4",
+    "output": [
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c < '0' || c > '9') { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!='') { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c =='') { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (!Character.isLetterOrDigit(c)) { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!= 'A' && c!= 'Z') { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c < '0' || c > '9' ) { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if(!Character.isLetterOrDigit(c)) { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!='' && c!='\\n') { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!= 'A' && c!= 'Z' && c!= 'a' && c!= 'z') { return false; } } return true; } return false; }",
+        "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!= 'A' && c!= 'Z' && c!= 'a' && c!= 'Z') { return false; } } return true; } return false; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c < '0' || c > '9') { return false; } } return true; } return false; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!='') { return false; } } return true; } return false; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c =='') { return false; } } return true; } return false; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (!Character.isLetterOrDigit(c)) { return false; } } return true; } return false; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!= 'A' && c!= 'Z') { return false; } } return true; } return false; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c < '0' || c > '9' ) { return false; } } return true; } return false; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if(!Character.isLetterOrDigit(c)) { return false; } } return true; } return false; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!='' && c!='\\n') { return false; } } return true; } return false; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!= 'A' && c!= 'Z' && c!= 'a' && c!= 'z') { return false; } } return true; } return false; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str) { if (str!= null && str.length()!= 0){ int i =0; while(i < str.length()) { char c = str.charAt(i); i++; if (c!= 'A' && c!= 'Z' && c!= 'a' && c!= 'Z') { return false; } } return true; } return false; }",
+            "correctness": "compile_success"
+        }
+    ]
+}

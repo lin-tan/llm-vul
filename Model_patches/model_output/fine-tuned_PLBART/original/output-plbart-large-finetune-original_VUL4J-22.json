@@ -1,0 +1,56 @@
+{
+    "output": [
+        "return decodeRequestString(request, contextPath);",
+        "return decodeRequestString(request, contextPath);",
+        "return encodeRequestString(request, contextPath);",
+        ". return decodeRequestString(request, contextPath);",
+        "return decodeRequestString(contextPath, request);",
+        "return decodeRequestString(request);",
+        "contextPath = decodeRequestString(request, contextPath);",
+        "return decodePath(request, contextPath);",
+        "return request.getContextPath();",
+        "return contextPath;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return decodeRequestString(request, contextPath);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return decodeRequestString(request, contextPath);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return encodeRequestString(request, contextPath);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ". return decodeRequestString(request, contextPath);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return decodeRequestString(contextPath, request);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return decodeRequestString(request);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "contextPath = decodeRequestString(request, contextPath);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return decodePath(request, contextPath);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return request.getContextPath();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return contextPath;",
+            "correctness": "compile_success"
+        }
+    ]
+}

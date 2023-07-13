@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (sessionIdentification!= null) { s =s.length() > 0?s.append(' '); s.append(' '); }",
+        "if (sessionIdentification!= null) { s =s.length() > 0?s.append('/'); s.append('/'); }",
+        "if (sessionIdentification!= null) { s =s.length() > 0?s.append( \"sessionId= \").append(sessionIdentification); }",
+        "if (sessionIdentification!= null) { s =s.length() > 0?s.append(':'); s.append(':'); }",
+        "if (s == null) { s =s.length() > 0?s.append(' '); s.append(' '); }",
+        "if (sessionIdentification!= null) { s =s.length() > 0?s.append(' '); s.append(' '); }",
+        "if (sessionIdentification!= null) { s =s.length() > 0?s.append('.'); s.append('.'); }",
+        "if (s == null) { s =s.length() > 0?s.append( \"sessionId= \"); s.append(sessionIdentification); }",
+        "if (sessionIdentification!= null) { s =s.length() > 0?s.append( \"/ \"); s.append( \"/ \"); }",
+        "if (sessionIdentification == null) { s =s.length() > 0?s.append(' '); s.append(' '); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (sessionIdentification!= null) { s =s.length() > 0?s.append(' '); s.append(' '); }",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId!= null) { sb =sb.length() > 0?sb.append(' '); sb.append(' '); }"
+        },
+        {
+            "patch": "if (sessionIdentification!= null) { s =s.length() > 0?s.append('/'); s.append('/'); }",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId!= null) { sb =sb.length() > 0?sb.append('/'); sb.append('/'); }"
+        },
+        {
+            "patch": "if (sessionIdentification!= null) { s =s.length() > 0?s.append( \"sessionId= \").append(sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId!= null) { sb =sb.length() > 0?sb.append( \"sessionId= \").append(sessionId); }"
+        },
+        {
+            "patch": "if (sessionIdentification!= null) { s =s.length() > 0?s.append(':'); s.append(':'); }",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId!= null) { sb =sb.length() > 0?sb.append(':'); sb.append(':'); }"
+        },
+        {
+            "patch": "if (s == null) { s =s.length() > 0?s.append(' '); s.append(' '); }",
+            "correctness": "uncompilable",
+            "translated": "if (sb == null) { sb =sb.length() > 0?sb.append(' '); sb.append(' '); }"
+        },
+        {
+            "patch": "if (sessionIdentification!= null) { s =s.length() > 0?s.append(' '); s.append(' '); }",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId!= null) { sb =sb.length() > 0?sb.append(' '); sb.append(' '); }"
+        },
+        {
+            "patch": "if (sessionIdentification!= null) { s =s.length() > 0?s.append('.'); s.append('.'); }",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId!= null) { sb =sb.length() > 0?sb.append('.'); sb.append('.'); }"
+        },
+        {
+            "patch": "if (s == null) { s =s.length() > 0?s.append( \"sessionId= \"); s.append(sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "if (sb == null) { sb =sb.length() > 0?sb.append( \"sessionId= \"); sb.append(sessionId); }"
+        },
+        {
+            "patch": "if (sessionIdentification!= null) { s =s.length() > 0?s.append( \"/ \"); s.append( \"/ \"); }",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId!= null) { sb =sb.length() > 0?sb.append( \"/ \"); sb.append( \"/ \"); }"
+        },
+        {
+            "patch": "if (sessionIdentification == null) { s =s.length() > 0?s.append(' '); s.append(' '); }",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId == null) { sb =sb.length() > 0?sb.append(' '); sb.append(' '); }"
+        }
+    ]
+}

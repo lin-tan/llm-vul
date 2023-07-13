@@ -1,0 +1,65 @@
+{
+    "id": 34,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2029,
+            "fix_type": "general",
+            "patch": "examinePath.startsWith(basePath.normalize())"
+        },
+        {
+            "rank": 2,
+            "score": -0.4546,
+            "fix_type": "insert",
+            "patch": "if (examinePath == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.6114,
+            "fix_type": "insert",
+            "patch": "Assert.notNull(examinePath,\"Path to check must not be null\");\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.6283,
+            "fix_type": "insert",
+            "patch": "Assert.isEmpty(examinePath);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.6283,
+            "fix_type": "insert",
+            "patch": "Assert.deleteFolder(examinePath);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.37,
+            "fix_type": "general",
+            "patch": "examinePath.startsWith(basePath)"
+        },
+        {
+            "rank": 7,
+            "score": -0.667,
+            "fix_type": "insert",
+            "patch": "Assert.notNull(examinePath,\"Parent path must not be null\");\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.3889,
+            "fix_type": "general",
+            "patch": "!examinePath.startsWith(basePath.normalize())"
+        },
+        {
+            "rank": 9,
+            "score": -0.4949,
+            "fix_type": "general",
+            "patch": "examinePath.startsWith().startsWith(basePath.normalize())"
+        },
+        {
+            "rank": 10,
+            "score": -0.543,
+            "fix_type": "general",
+            "patch": "basePath.startsWith(basePath.normalize())"
+        }
+    ]
+}

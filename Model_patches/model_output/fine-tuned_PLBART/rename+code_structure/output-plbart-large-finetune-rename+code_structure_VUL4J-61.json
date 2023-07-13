@@ -1,0 +1,66 @@
+{
+    "output": [
+        "doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+        "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream, null);",
+        "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(new InputSource(inputStream));",
+        "final Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+        "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream).getDocument();",
+        "try (Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream)) {",
+        "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+        "document = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+        "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream, true);",
+        "try { Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);"
+    ],
+    "validation_result": [
+        {
+            "patch": "doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable",
+            "translated": "doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+        },
+        {
+            "patch": "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream, null);",
+            "correctness": "test_timeout",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);"
+        },
+        {
+            "patch": "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(new InputSource(inputStream));",
+            "correctness": "uncompilable",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(new InputSource(inputStream));"
+        },
+        {
+            "patch": "final Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "test_timeout",
+            "translated": "final Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+        },
+        {
+            "patch": "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream).getDocument();",
+            "correctness": "uncompilable",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream).getDocument();"
+        },
+        {
+            "patch": "try (Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream)) {",
+            "correctness": "uncompilable",
+            "translated": "try (Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream)) {"
+        },
+        {
+            "patch": "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "test_timeout",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+        },
+        {
+            "patch": "document = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable",
+            "translated": "document = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+        },
+        {
+            "patch": "Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream, true);",
+            "correctness": "uncompilable",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, true);"
+        },
+        {
+            "patch": "try { Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable",
+            "translated": "try { Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+        }
+    ]
+}

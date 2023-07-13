@@ -1,0 +1,65 @@
+{
+    "id": 18,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.7683,
+            "fix_type": "general",
+            "patch": "sb.append(\", \");\n"
+        },
+        {
+            "rank": 2,
+            "score": -5.3578,
+            "fix_type": "general",
+            "patch": ""
+        },
+        {
+            "rank": 3,
+            "score": -1.5794,
+            "fix_type": "general",
+            "patch": "sb.size();\n"
+        },
+        {
+            "rank": 4,
+            "score": -1.5794,
+            "fix_type": "general",
+            "patch": "sb.close();\n"
+        },
+        {
+            "rank": 5,
+            "score": -5.8979,
+            "fix_type": "general",
+            "patch": "break;\n"
+        },
+        {
+            "rank": 6,
+            "score": -1.1055,
+            "fix_type": "general",
+            "patch": "sb.append(\"\");\n"
+        },
+        {
+            "rank": 7,
+            "score": -1.1055,
+            "fix_type": "general",
+            "patch": "sb.append(\"0\");\n"
+        },
+        {
+            "rank": 8,
+            "score": -2.0503,
+            "fix_type": "general",
+            "patch": "toString();\n"
+        },
+        {
+            "rank": 9,
+            "score": -6.2016,
+            "fix_type": "general",
+            "patch": "continue  ;\n"
+        },
+        {
+            "rank": 10,
+            "score": -6.0121,
+            "fix_type": "general",
+            "patch": "append"
+        }
+    ]
+}

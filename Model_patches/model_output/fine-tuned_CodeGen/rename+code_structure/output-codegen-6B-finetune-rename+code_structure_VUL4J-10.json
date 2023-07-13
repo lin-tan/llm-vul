@@ -1,0 +1,66 @@
+{
+    "output": [
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    outputStream = acquireOutDataSequence();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    final OutputStream production = acquireOutDataSequence();\n<|endoftext|><|endoftext|><|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    out = acquireOutDataSequence();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    OutputStream production = null;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    outDataSequence = acquireOutDataSequence();\n<|endoftext|><|endoftext|><|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    OutputStream production = getOutDataSequence();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    OutputStream production = acquireOutDataStream();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    OutputStream production = acquireOutDataSequence(outputStream);\n<|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n    OutputStream production = acquireOutDataSequence(serializer);\n<|endoftext|>",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n// buggy lines start:\n    OutputStream production = acquireOutDataSequence();\n// buggy lines end\n    if (savedData == null) {\n        IOUtils.copy(new FileInputStream(serializationFile), production);\n        serializationFile.delete();\n        serializationFile = null;\n    } else {\n        production.write(savedData);\n    }\n    production.close();\n    savedData = null;\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    outputStream = acquireOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    outputStream = getOutputStream();\n"
+        },
+        {
+            "patch": "    final OutputStream production = acquireOutDataSequence();\n",
+            "correctness": "compile_success",
+            "translated": "    final OutputStream output = getOutputStream();\n"
+        },
+        {
+            "patch": "    out = acquireOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    out = getOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream production = null;\n",
+            "correctness": "compile_success",
+            "translated": "    OutputStream output = null;\n"
+        },
+        {
+            "patch": "    outDataSequence = acquireOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    outDataSequence = getOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream production = getOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutDataSequence();\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = acquireOutDataStream();\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(outputStream);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(outputStream);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(serializer);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(serializer);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    if (reply == null) {\n        reply = content;\n    }\n</s>",
+        "<pad><s>    reply = null;\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (reply == null)\n        reply = content;\n</s></s></s></s></s>",
+        "<pad><s>    assert (reply!= null);\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    checkReply(reply, reason);\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (reply == null) {\n    }\n</s></s></s></s></s></s></s>",
+        "<pad><s>    checkReply(reply, interchange);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    checkReply(reply);\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (reply == null) {\n        reply = content;\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    if (answer == null) {\n        answer = body;\n    }\n"
+        },
+        {
+            "patch": "    reply = null;\n",
+            "correctness": "test_timeout",
+            "translated": "    answer = null;\n"
+        },
+        {
+            "patch": "    if (reply == null)\n        reply = content;\n",
+            "correctness": "compile_success",
+            "translated": "    if (answer == null)\n        answer = body;\n"
+        },
+        {
+            "patch": "    assert (reply!= null);\n",
+            "correctness": "compile_success",
+            "translated": "    assert (answer!= null);\n"
+        },
+        {
+            "patch": "    checkReply(reply, reason);\n",
+            "correctness": "uncompilable",
+            "translated": "    checkReply(answer, cause);\n"
+        },
+        {
+            "patch": "    if (reply == null) {\n    }\n",
+            "correctness": "test_timeout",
+            "translated": "    if (answer == null) {\n    }\n"
+        },
+        {
+            "patch": "    checkReply(reply, interchange);\n",
+            "correctness": "uncompilable",
+            "translated": "    checkReply(answer, exchange);\n"
+        },
+        {
+            "patch": "    checkReply(reply);\n",
+            "correctness": "uncompilable",
+            "translated": "    checkReply(answer);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

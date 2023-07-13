@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-10,5",
+    "output": [
+        "\n    return contextPath;@Overridestatic public String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\npublic static String\ngetContextPath(HttpServletRequest request) {\n\n\n   \n\n\n\n\n    return\n\n\n    return contextPath;",
+        "\n    return contextPath;@Overridestatic public String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\npublic static String\ngetContextPath(HttpServletRequest request) {\n\n\n   \n\n\n\n    contextPath =\n    return contextPath;\n\n",
+        "\n    return contextPath;@Overridepublic static String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\npublic static String\ngetContextPath(HttpServletRequest request) {\n\n\n   \n\n\n\n    contextPath =\n    return contextPath;\n\n",
+        "\n    return contextPath;@Overridestatic public String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\n",
+        "\n    return contextPath;@Overridepublic String\ngetContextPath() {\n    return contextPath;\n\n",
+        "\n    return contextPath;@Overridepublic static String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\n",
+        "\n    return contextPath;@SuppressWarnings(\"unchecked\")static public String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\n",
+        "\n    return contextPath;@SuppressWarnings(\"unchecked\")public static String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\n",
+        "\n    return contextPath;@Overridepublic static String getContextPath(HttpServletRequest request) {\n    return contextPath;\n\n",
+        "\n    return contextPath;@Overridepublic String getContextPath() {\n    return contextPath;\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return contextPath;@Overridestatic public String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\npublic static String\ngetContextPath(HttpServletRequest request) {\n\n\n   \n\n\n\n\n    return\n\n\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@Overridestatic public String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\npublic static String\ngetContextPath(HttpServletRequest request) {\n\n\n   \n\n\n\n    contextPath =\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@Overridepublic static String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;\n\npublic static String\ngetContextPath(HttpServletRequest request) {\n\n\n   \n\n\n\n    contextPath =\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@Overridestatic public String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@Overridepublic String\ngetContextPath() {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@Overridepublic static String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@SuppressWarnings(\"unchecked\")static public String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@SuppressWarnings(\"unchecked\")public static String\ngetContextPath(HttpServletRequest request) {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@Overridepublic static String getContextPath(HttpServletRequest request) {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;@Overridepublic String getContextPath() {\n    return contextPath;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

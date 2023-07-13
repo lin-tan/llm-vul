@@ -1,0 +1,65 @@
+{
+    "id": 33,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0255,
+            "fix_type": "general",
+            "patch": " protected Collection<UIComponent> whole(){\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.141,
+            "fix_type": "general",
+            "patch": " protected Collection<UIComponent,UIComponent> whole(){\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2884,
+            "fix_type": "general",
+            "patch": " protected Collection<? extends UIComponent> whole(){\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1759,
+            "fix_type": "general",
+            "patch": " protected Collection<Collection> whole(){\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2644,
+            "fix_type": "general",
+            "patch": " protected Collection<UIComponent> whole() throws whole{\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3015,
+            "fix_type": "general",
+            "patch": " protected UIComponent<UIComponent> whole(){\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2719,
+            "fix_type": "general",
+            "patch": " protected Collection<UIComponent<UIComponent>> whole(){\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.3448,
+            "fix_type": "general",
+            "patch": " protected Collection<UIComponent> whole() throws protected{\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.359,
+            "fix_type": "general",
+            "patch": " protected Collection<UIComponent<UIComponent>>  (){\nreturn uiComponents;\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.3972,
+            "fix_type": "general",
+            "patch": " protected Collection<UIComponent> whole(){\nreturn acquireUIComponent();\n}\n"
+        }
+    ]
+}

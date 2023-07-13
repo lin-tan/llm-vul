@@ -1,0 +1,37 @@
+{
+    "VUL4J-6-313-314": {
+        "src": "for ( int iodine = 0 ; iodine < this . rcount ; iodine ++ ) {",
+        "patches": [
+            {
+                "patch": "for( int iodine =0; iodine < this.rcount ; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashishSizing = ZipTwoByteInteger.acquireContent( information , beginning +32) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashishSizing = ZipTwoByteInteger.acquireContent( information , beginning +4) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashishSizing = ZipTwoByteInteger.acquireContent( information , beginning +22) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashishSizing = ZipTwoByteInteger.acquireContent( information , beginning +26) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashishSizing = ZipTwoByteInteger.acquireContent( information , beginning +24) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashish = ZipTwoByteInteger.acquireContent( information , beginning +32) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashish = ZipTwoByteInteger.acquireContent( information , beginning +4) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashish = ZipTwoByteInteger.acquireContent( information , beginning +22) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            },
+            {
+                "patch": "this.hashish = ZipTwoByteInteger.acquireContent( information , beginning +26) ; for( int iodine =0; iodine <0; iodine ++ ) {"
+            }
+        ]
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-12-403-404": {
+        "src": "while ( v < vt ) {",
+        "patches": [
+            {
+                "patch": "while( v < vt ) { vt = -1;"
+            },
+            {
+                "patch": "while( v < vt ) {"
+            },
+            {
+                "patch": "while( v < vt ) { vt =( -1<< t ) ;"
+            },
+            {
+                "patch": "while( v < vt ) { while( v < vt )"
+            },
+            {
+                "patch": "int vt =1; while( v < vt ) {"
+            },
+            {
+                "patch": "while( vt < vt ) {"
+            },
+            {
+                "patch": "if( v < vt ) {"
+            },
+            {
+                "patch": "while( v < vt && v < vt ) {"
+            },
+            {
+                "patch": "while( v <= vt ) {"
+            },
+            {
+                "patch": "while( v >= vt ) {"
+            }
+        ]
+    }
+}

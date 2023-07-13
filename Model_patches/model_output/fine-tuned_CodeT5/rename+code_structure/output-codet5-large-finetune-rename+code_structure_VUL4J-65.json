@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    for(int position = 1;f.exists();position++){\n</s>",
+        "<pad><s>    for(int position = 0;f.exists();position++){\n</s>",
+        "<pad><s>    for(int position = 3;f.exists();position++){\n</s>",
+        "<pad><s>    for(int position = 2;f.exists();position++){\n</s>",
+        "<pad><s>    int position = 1;\n    while(f.exists()){\n</s>",
+        "<pad><s>    for(int position = 1; f.exists(); position++){\n</s>",
+        "<pad><s>    int position = 2;\n    while(f.exists()){\n</s>",
+        "<pad><s>    if(f.exists()){\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    for(int position = 1;f.exists();position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 1;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for(int position = 0;f.exists();position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 0;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for(int position = 3;f.exists();position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 3;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for(int position = 2;f.exists();position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 2;file.exists();index++){\n"
+        },
+        {
+            "patch": "    int position = 1;\n    while(f.exists()){\n",
+            "correctness": "compile_success",
+            "translated": "    int index = 1;\n    while(file.exists()){\n"
+        },
+        {
+            "patch": "    for(int position = 1; f.exists(); position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 1;file.exists();index++){\n"
+        },
+        {
+            "patch": "    int position = 2;\n    while(f.exists()){\n",
+            "correctness": "compile_success",
+            "translated": "    int index = 2;\n    while(file.exists()){\n"
+        },
+        {
+            "patch": "    if(f.exists()){\n",
+            "correctness": "uncompilable",
+            "translated": "    if(file.exists()){\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

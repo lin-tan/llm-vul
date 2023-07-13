@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-7,1",
+    "output": [
+        "private int extend(int v, final int t) { v += t ; return v; }",
+        "private int extend(int v, final int t) { v += t ; return v; }",
+        "private int extend(int v, final int t) { v = v + t ; return v; }",
+        "private int extend(int v, final int t) { v = v + t ; return v; }",
+        "private int extend(int v, final int t) { v *= t ; return v; }",
+        "private int extend(int v, final int t) { v -= t ; return v; }",
+        "private int extend(int v, final int t) { v -= t ; return v; }",
+        "private int extend(int v, final int t) { v += t - 1 ; return v; }",
+        "private int extend(int v, final int t) { if ( v < t ) return t ; return v; }",
+        "private int extend(int v, final int t) { if ( v < t ) return t; return v; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "private int extend(int v, final int t) { v += t ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { v += t ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { v = v + t ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { v = v + t ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { v *= t ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { v -= t ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { v -= t ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { v += t - 1 ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { if ( v < t ) return t ; return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { if ( v < t ) return t; return v; }",
+            "correctness": "test_success"
+        }
+    ]
+}

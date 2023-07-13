@@ -1,0 +1,65 @@
+{
+    "id": 15,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0682,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification != null ){\nif (s.length() > 0 ){\ns.append(\", \");\n}\ns.append(\"sessionIdentification=\").append(sessionIdentification);\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1223,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification != null ){\nif (s.length() > 0 ){\ns.append(\", \");\ns.append(\"sessionIdentification=\").append(sessionIdentification);\n}\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1273,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification != null ){\nif (s.length() > 0 ){\ns.append(\", \").append(sessionIdentification);\n}\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1249,
+            "fix_type": "general",
+            "patch": "if (s.length() > 0 ){\nif (s.length() > 0 ){\ns.append(\", \");\n}\ns.append(\"sessionIdentification=\").append(sessionIdentification);\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1275,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification != null ){\nif (s.length() > 0 ){\ns.append(\", \");\ns.append(\", \").append(sessionIdentification);\n}\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1684,
+            "fix_type": "general",
+            "patch": "if (UNKNOWN != null ){\nif (s.length() > 0 ){\ns.append(\", \");\n}\ns.append(\"sessionIdentification=\");\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.1684,
+            "fix_type": "general",
+            "patch": "if (addNew != null ){\nif (s.length() > 0 ){\ns.append(\", \");\n}\ns.append(\"sessionIdentification=\");\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1804,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification != null ){\nif (s.length() > 0 ){\ns.append(\", \");\n}\ns.append(\"sessionIdentification=\");\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2252,
+            "fix_type": "general",
+            "patch": "if (s.length() != null ){\nif (s.length() > 0 ){\ns.append(\", \");\n}\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.1428,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification != null ){\nif (s.length() > 0 ){\ns.append(\", \");\n}\ns.append(\", \").append(sessionIdentification);\n}\n"
+        }
+    ]
+}

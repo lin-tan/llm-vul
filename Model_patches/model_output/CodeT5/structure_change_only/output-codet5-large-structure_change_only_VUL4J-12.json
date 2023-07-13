@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-7,1",
+    "output": [
+        "\n    v += t;\n\n\n    v += t;\n\n    v += t;",
+        "\n    v += t;\n\n\n    v += t;\n\n",
+        "\n    v += t;\n\n\n\n\n    v += t;",
+        "\n    v += t;\n\n\n    v += t;\n\n    v |= t;",
+        "\n    v += t;\n\n\n    v += t;\n\n    v +=t;",
+        "\n    v = v + t;\n\n\n    v += t;\n\n    v += t;",
+        "\n    v += t;\n\n\n    v += t;\n\n    v %= t;",
+        "\n    v += t;\n\n\n    v += t;\n\n    v+=t;",
+        "\n    v += t;\n\n\n    v +=t;\n\n    v += t;",
+        "\n    v |= t;\n\n\n    v |= t;\n\n    v |= t;"
+    ],
+    "validation_result": [
+        {
+            "patch": "v += t;\n\n\n    v += t;\n\n    v += t;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "v += t;\n\n\n    v += t;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "v += t;\n\n\n\n\n    v += t;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "v += t;\n\n\n    v += t;\n\n    v |= t;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "v += t;\n\n\n    v += t;\n\n    v +=t;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "v = v + t;\n\n\n    v += t;\n\n    v += t;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "v += t;\n\n\n    v += t;\n\n    v %= t;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "v += t;\n\n\n    v += t;\n\n    v+=t;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "v += t;\n\n\n    v +=t;\n\n    v += t;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "v |= t;\n\n\n    v |= t;\n\n    v |= t;",
+            "correctness": "test_success"
+        }
+    ]
+}

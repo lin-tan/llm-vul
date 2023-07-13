@@ -1,0 +1,65 @@
+{
+    "id": 7,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.4516,
+            "fix_type": "general",
+            "patch": "{\n  int l = 6 * res.length();\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -5.0437,
+            "fix_type": "general",
+            "patch": "{\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -3.8322,
+            "fix_type": "general",
+            "patch": "++;\n"
+        },
+        {
+            "rank": 4,
+            "score": -6.5632,
+            "fix_type": "general",
+            "patch": ""
+        },
+        {
+            "rank": 5,
+            "score": -7.1021,
+            "fix_type": "general",
+            "patch": "continue  ;\n"
+        },
+        {
+            "rank": 6,
+            "score": -2.2183,
+            "fix_type": "general",
+            "patch": "return 6;\n"
+        },
+        {
+            "rank": 7,
+            "score": -7.5521,
+            "fix_type": "general",
+            "patch": "break;\n"
+        },
+        {
+            "rank": 8,
+            "score": -6.8683,
+            "fix_type": "general",
+            "patch": "0"
+        },
+        {
+            "rank": 9,
+            "score": -8.0982,
+            "fix_type": "general",
+            "patch": "return;\n"
+        },
+        {
+            "rank": 10,
+            "score": -5.0701,
+            "fix_type": "general",
+            "patch": "{\n}\n"
+        }
+    ]
+}

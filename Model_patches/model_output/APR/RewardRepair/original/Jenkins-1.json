@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "// for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+        "//for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+        "//For (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+        "for (NodeMonitor monitor : NodeMonitor.this) r.put(monitor.getClass().getName(),monitor.data(this));",
+        "for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(getMonitor().getClass().getName(),monitor.data(this));",
+        "// for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(), monitor.data(this));",
+        "for (NodeMonitor monitor : NodeMonitor.values()) r.put(monitor.getClass().getName(),monitor.data(this));",
+        "/* for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+        "for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(getMonitor().getClass().getName(), monitor.data(this));",
+        "for (String monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));"
+    ],
+    "validation_result": [
+        {
+            "patch": "// for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "//for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "//For (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (NodeMonitor monitor : NodeMonitor.this) r.put(monitor.getClass().getName(),monitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(getMonitor().getClass().getName(),monitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "// for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(), monitor.data(this));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (NodeMonitor monitor : NodeMonitor.values()) r.put(monitor.getClass().getName(),monitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "/* for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(getMonitor().getClass().getName(), monitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for (String monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(),monitor.data(this));",
+            "correctness": "uncompilable"
+        }
+    ]
+}

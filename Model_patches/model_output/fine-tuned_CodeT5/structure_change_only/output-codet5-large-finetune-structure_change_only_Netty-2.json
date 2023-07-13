@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    int colonStart;\n</s></s></s></s>",
+        "<pad><s>    int colonEnd;\n</s></s></s></s>",
+        "<pad><s>    int colonEnd = -1;\n</s>",
+        "<pad><s>    int colonEnd = nameEnd;\n</s>",
+        "<pad><s>    int colonStart, colonEnd;\n</s>",
+        "<pad><s>    final int colonEnd;\n</s></s></s>",
+        "<pad><s>    int colonEnd, valueStart;\n</s>",
+        "<pad><s>    int colonEnd, valueEnd;\n</s>",
+        "<pad><s>    int valueEnd;\n</s></s></s></s>",
+        "<pad><s>    int nameEnd;\n</s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    int colonStart;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    int colonEnd;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int colonEnd = -1;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int colonEnd = nameEnd;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int colonStart, colonEnd;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    final int colonEnd;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    int colonEnd, valueStart;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    int colonEnd, valueEnd;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    int valueEnd;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    int nameEnd;\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return new SAXSource(subscriber, inDataProvider);",
+        "} else { LOG.warn(\"String_Node_Str\");",
+        "} else { sproducer = SAXParserFactory.newInstance();",
+        "} else {",
+        "} catch (Exception e) {",
+        "} catch (Exception x) {",
+        "}",
+        "return null;",
+        "} }",
+        "});"
+    ],
+    "validation_result": [
+        {
+            "patch": "return new SAXSource(subscriber, inDataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return new SAXSource(xmlReader, inputSource);"
+        },
+        {
+            "patch": "} else { LOG.warn(\"String_Node_Str\");",
+            "correctness": "uncompilable",
+            "translated": "} else { LOG.warn(\"String_Node_Str\");"
+        },
+        {
+            "patch": "} else { sproducer = SAXParserFactory.newInstance();",
+            "correctness": "uncompilable",
+            "translated": "} else { sfactory = SAXParserFactory.newInstance();"
+        },
+        {
+            "patch": "} else {",
+            "correctness": "uncompilable",
+            "translated": "} else {"
+        },
+        {
+            "patch": "} catch (Exception e) {",
+            "correctness": "uncompilable",
+            "translated": "} catch (Exception e) {"
+        },
+        {
+            "patch": "} catch (Exception x) {",
+            "correctness": "uncompilable",
+            "translated": "} catch (Exception e) {"
+        },
+        {
+            "patch": "}",
+            "correctness": "compile_success",
+            "translated": "}"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "uncompilable",
+            "translated": "return null;"
+        },
+        {
+            "patch": "} }",
+            "correctness": "uncompilable",
+            "translated": "} }"
+        },
+        {
+            "patch": "});",
+            "correctness": "uncompilable",
+            "translated": "});"
+        }
+    ]
+}

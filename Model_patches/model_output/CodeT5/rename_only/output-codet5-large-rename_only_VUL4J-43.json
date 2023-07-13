@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-15,1",
+    "output": [
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (\n\t\t\t",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (!\n\t\t\t",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t ////\n\t\t\t",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //////\t\t\t",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\n\n\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t ////\n\t\t\t\t //\t",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (DataInputStream =\n\t\t\n\n\n\t\n\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t ////\n\t\t\t\t //\t",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t////\n\t\t\t",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (\n\t //\t",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (\n\t\t\n",
+        "\n\tif (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (!\n //\t\t"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif ("
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (!",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (!"
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t ////",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t ////"
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //////",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //////"
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\n\n\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t ////\n\t\t\t\t //",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\n\n\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t ////\n\t\t\t\t //"
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (DataInputStream =\n\t\t\n\n\n\t\n\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t ////\n\t\t\t\t //",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (DataInputStream =\n\t\t\n\n\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t ////\n\t\t\t\t //"
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t////",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t ////"
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (\n\t //",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (\n\t //"
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif ("
+        },
+        {
+            "patch": "if (item.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (item.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\n\tif (item.isDirectory()) {\t //\n\tif (!\n //",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory()) {\n\t\n\t\tif (!\n\n\tif (entry.isDirectory()) {\t\n\t\ttry (InputStream =\n\t\t\n\telse {\n\t\t\n\t\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (!\n //"
+        }
+    ]
+}

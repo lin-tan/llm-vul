@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-11,1",
+    "output": [
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { approve(content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { approve(content); } catch (Exception e) { attachAttributeError(attributeTitle, item); } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(item, content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(content, item); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approveAttribute(attributeTitle, content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approveAttributeContent(attributeTitle, content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(content, item); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); throw e; } }",
+        "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(item, content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); throw e; } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { approve(content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+            "correctness": "compile_success",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { validate(value); } catch (ValidationException e) { addFieldError(fieldName, object); } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+            "correctness": "compile_success",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { this.validate(value); } catch (ValidationException e) { addFieldError(fieldName, object); } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+            "correctness": "compile_success",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { this.validate(value); } catch (ValidationException e) { addFieldError(fieldName, object); } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { approve(content); } catch (Exception e) { attachAttributeError(attributeTitle, item); } }",
+            "correctness": "compile_success",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { validate(value); } catch (Exception e) { addFieldError(fieldName, object); } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(item, content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+            "correctness": "uncompilable",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { this.validate(object, value); } catch (ValidationException e) { addFieldError(fieldName, object); } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(content, item); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+            "correctness": "uncompilable",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { this.validate(value, object); } catch (ValidationException e) { addFieldError(fieldName, object); } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approveAttribute(attributeTitle, content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+            "correctness": "uncompilable",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { this.approveAttribute(fieldName, value); } catch (ValidationException e) { addFieldError(fieldName, object); } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approveAttributeContent(attributeTitle, content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); } }",
+            "correctness": "uncompilable",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { this.approveAttributeContent(fieldName, value); } catch (ValidationException e) { addFieldError(fieldName, object); } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(content, item); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); throw e; } }",
+            "correctness": "uncompilable",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { this.validate(value, object); } catch (ValidationException e) { addFieldError(fieldName, object); throw e; } }"
+        },
+        {
+            "patch": "public void approve(Object item) throws ValidationException { String attributeTitle = acquireAttributeTitle(); Object content = this.acquireAttributeContent(attributeTitle, item); if (content == null || content.toString().length() == 0) { return; } try { this.approve(item, content); } catch (ValidationException e) { attachAttributeError(attributeTitle, item); throw e; } }",
+            "correctness": "uncompilable",
+            "translated": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } try { this.validate(object, value); } catch (ValidationException e) { addFieldError(fieldName, object); throw e; } }"
+        }
+    ]
+}

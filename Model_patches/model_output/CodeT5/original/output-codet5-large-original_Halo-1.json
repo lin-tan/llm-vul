@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n//\n\n\n\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n //\n\n\n\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n\n//\n\n\n\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n\n\n\n\n\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n//\n\n\n    if (true) {\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n //\n\n\n    if (true) {\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n\n\n\n\n    if (true) {\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n        //\n//\n\n\n\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n\n//) {\n\n\n\n",
+        "\n    if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n//\n\n\n    if (true) {\n//"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n\n//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n//\n\n\n    if (true) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n //\n\n\n    if (true) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n\n\n\n\n    if (true) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n        //\n//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n\n//) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (parentPath.equals(pathToCheck)) {\n    if (true) {\n\n    if (true) {\n\n//\n\n\n    if (true) {\n//",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "break;\n",
+  "t.transition(Data);\n",
+  "t.advanceTransition(Data);\n",
+  "t.error(Data);\n",
+  "t.eofError(Data);\n",
+  "t.eofError(this);\n",
+  "",
+  "break;\nbreak;\n",
+  "t.transition(AttributeValue_unquoted);\n",
+  "t.transition(c);\n"
+]

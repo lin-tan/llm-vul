@@ -1,0 +1,66 @@
+{
+    "output": [
+        "ASN1Encodable object0 = s.getObjectAt(0);",
+        "ASN1Encodable object0 = s.getObjectAt(1);",
+        "ASN1Encodable object0 = s.getObjectAt(2);",
+        "ASN1Encodable object0 = s.getObjectAt(3);",
+        "ASN1Encodable object0 = s.getObjectAt(0).getValue();",
+        "ASN1Encodable object0 = s.getObjectAt(1).getValue();",
+        "ASN1Encodable object0 = s.getObjectAt(0);",
+        "ASN1Encodable object0 = s.getObjectAt(0xFF);",
+        "ASN1Primitive object0 = s.getObjectAt(0);",
+        "Object object0 = s.getObjectAt(0);"
+    ],
+    "validation_result": [
+        {
+            "patch": "ASN1Encodable object0 = s.getObjectAt(0);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = s.getObjectAt(1);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(1);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = s.getObjectAt(2);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(2);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = s.getObjectAt(3);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(3);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = s.getObjectAt(0).getValue();",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0).getValue();"
+        },
+        {
+            "patch": "ASN1Encodable object0 = s.getObjectAt(1).getValue();",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(1).getValue();"
+        },
+        {
+            "patch": "ASN1Encodable object0 = s.getObjectAt(0);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = s.getObjectAt(0xFF);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0xFF);"
+        },
+        {
+            "patch": "ASN1Primitive object0 = s.getObjectAt(0);",
+            "correctness": "uncompilable",
+            "translated": "ASN1Primitive object0 = s.getObjectAt(0);"
+        },
+        {
+            "patch": "Object object0 = s.getObjectAt(0);",
+            "correctness": "compile_success",
+            "translated": "Object object0 = s.getObjectAt(0);"
+        }
+    ]
+}

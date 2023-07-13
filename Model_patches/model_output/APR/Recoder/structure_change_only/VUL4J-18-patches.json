@@ -1,0 +1,12 @@
+[
+  "String pathInfo = request.getForwardPage();\n",
+  "if((request == null)){\nreturn null;}",
+  "request.getPathInfo();\n",
+  "final String pathInfo = request.getPathInfo();\n",
+  "if((request != null)){\n",
+  "String pathInfo = request.getPathInfo(\"null\");\n",
+  "String<?> pathInfo = request.getPathInfo();\n",
+  "String pathInfo = request.getPathInfo(request.getPathInfo());\n",
+  "String pathInfo = request.getPathInfo(false);\n",
+  "String pathInfo = request.getPathInfo();\n"
+]

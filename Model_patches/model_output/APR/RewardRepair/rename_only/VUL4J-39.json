@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "null s.append( \"sessionId= \").append(sessionIdentification); }",
+        "s.append( \"sessionId= \").append(sessionIdentification); }",
+        "null s.append( \"sessionId \").append(sessionIdentification); }",
+        "s.append( \"sessionId= \").append(sessionIdentification); }",
+        "null s.append( \"sessionId= \").append(sessionIdentification);",
+        "s.append( \"sessionId \").append(sessionIdentification); }",
+        "if (s.length() > 0) { s.append(','); }",
+        "null s.append( \"sessionId= \" + sessionIdentification); }",
+        "s.append( \"sessionId= \" \").append(sessionIdentification); }",
+        "s.append( \"sessionId= \").append(sessionIdentification);"
+    ],
+    "validation_result": [
+        {
+            "patch": "null s.append( \"sessionId= \").append(sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "null sb.append( \"sessionId= \").append(sessionId); }"
+        },
+        {
+            "patch": "s.append( \"sessionId= \").append(sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "sb.append( \"sessionId= \").append(sessionId); }"
+        },
+        {
+            "patch": "null s.append( \"sessionId \").append(sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "null sb.append( \"sessionId \").append(sessionId); }"
+        },
+        {
+            "patch": "s.append( \"sessionId= \").append(sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "sb.append( \"sessionId= \").append(sessionId); }"
+        },
+        {
+            "patch": "null s.append( \"sessionId= \").append(sessionIdentification);",
+            "correctness": "uncompilable",
+            "translated": "null sb.append( \"sessionId= \").append(sessionId);"
+        },
+        {
+            "patch": "s.append( \"sessionId \").append(sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "sb.append( \"sessionId \").append(sessionId); }"
+        },
+        {
+            "patch": "if (s.length() > 0) { s.append(','); }",
+            "correctness": "test_timeout",
+            "translated": "if (sb.length() > 0) { sb.append(','); }"
+        },
+        {
+            "patch": "null s.append( \"sessionId= \" + sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "null sb.append( \"sessionId= \" + sessionId); }"
+        },
+        {
+            "patch": "s.append( \"sessionId= \" \").append(sessionIdentification); }",
+            "correctness": "uncompilable",
+            "translated": "sb.append( \"sessionId= \" \").append(sessionId); }"
+        },
+        {
+            "patch": "s.append( \"sessionId= \").append(sessionIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb.append( \"sessionId= \").append(sessionId);"
+        }
+    ]
+}

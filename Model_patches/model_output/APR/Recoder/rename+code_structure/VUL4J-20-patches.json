@@ -1,0 +1,12 @@
+[
+  "COSNumeral cosNumber = (COSNumeral)acquireItem(j);\n",
+  "COSNumeral cosNumber = (COSNumeral)get(j);\n",
+  "COSNumeral cosNumber = (COSNumeral)remove(j);\n",
+  "COSNumeral cosNumber = acquireItem(j);\n",
+  "clear();\n",
+  "COSNumeral cosNumber = (COSNumeral)acquireItem(result);\n",
+  "final COSNumeral cosNumber = (COSNumeral)acquireItem(j);\n",
+  "if((j instanceof COSNumeral)){\n",
+  "acquireItem(j);\n",
+  "COSNumeral cosNumber = (COSNumeral)acquireItem(cosNumber);\n"
+]

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n      (\n            break;\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n   if\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n      (\n            break;\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n if (\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n   if\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (; i < str.length();\n            break;\n\n\n        \n\n\n\n  \n   if (!\n   }\n\n   if (\n   if (\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '!':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n   if\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (; i < str.length();\n            break;\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n  \n if (\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n if (\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++)\n   {\n     \n\n\n     \n   for (;\n            break;\n\n            break;\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n if (\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++)\n   {\n     \n\n\n     \n   for (;\n            return false;\n\n            break;\n        \n\n\n            return false;\n  \n   if (!\n   }\n  \n if (\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (; i < str.length();\n            break;\n\n\n        \n\n\n            break;\n  \n   if (!\n   }\n\n  \n if (\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n      (\n            break;\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n   if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n      (\n            break;\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n   if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (; i < str.length();\n            break;\n\n\n        \n\n\n\n  \n   if (!\n   }\n\n   if (\n   if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '!':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n   if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (; i < str.length();\n            break;\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n  \n if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++)\n   {\n     \n\n\n     \n   for (;\n            break;\n\n            break;\n        \n\n\n            return false;\n  \n   if (!\n   }\n\n  \n if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++)\n   {\n     \n\n\n     \n   for (;\n            return false;\n\n            break;\n        \n\n\n            return false;\n  \n   if (!\n   }\n  \n if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (; i < str.length();\n            break;\n\n\n        \n\n\n            break;\n  \n   if (!\n   }\n\n  \n if (",
+            "correctness": "uncompilable"
+        }
+    ]
+}

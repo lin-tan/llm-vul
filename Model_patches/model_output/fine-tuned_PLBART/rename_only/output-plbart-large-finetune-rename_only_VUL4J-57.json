@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (!(point instanceof Occupation)) {",
+        "if (measure.acquireDelay() &&!(point instanceof Occupation)) {",
+        "if (measure.acquireDelay()) {",
+        "if (!measure.acquireDelay() &&!(point instanceof Occupation)) {",
+        "if (measure.acquireDelay() && (point instanceof Occupation)) {",
+        "if (measure.acquireDelay() || (point instanceof Occupation)) {",
+        "if (!measure.acquireDelay()) {",
+        "if (measure.acquireDelay() && (!(point instanceof Occupation))) {",
+        "if (!(point instanceof Occupation) && measure.acquireDelay()) {",
+        "if (!(point instanceof Occupation))) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(point instanceof Occupation)) {",
+            "correctness": "compile_success",
+            "translated": "if (!(item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() &&!(point instanceof Occupation)) {",
+            "correctness": "compile_success",
+            "translated": "if (step.getWait() &&!(item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay()) {",
+            "correctness": "test_timeout",
+            "translated": "if (step.getWait()) {"
+        },
+        {
+            "patch": "if (!measure.acquireDelay() &&!(point instanceof Occupation)) {",
+            "correctness": "compile_success",
+            "translated": "if (!step.getWait() &&!(item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() && (point instanceof Occupation)) {",
+            "correctness": "test_timeout",
+            "translated": "if (step.getWait() && (item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() || (point instanceof Occupation)) {",
+            "correctness": "test_timeout",
+            "translated": "if (step.getWait() || (item instanceof Job)) {"
+        },
+        {
+            "patch": "if (!measure.acquireDelay()) {",
+            "correctness": "compile_success",
+            "translated": "if (!step.getWait()) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() && (!(point instanceof Occupation))) {",
+            "correctness": "compile_success",
+            "translated": "if (step.getWait() && (!(item instanceof Job))) {"
+        },
+        {
+            "patch": "if (!(point instanceof Occupation) && measure.acquireDelay()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(item instanceof Job) && step.getWait()) {"
+        },
+        {
+            "patch": "if (!(point instanceof Occupation))) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(item instanceof Job))) {"
+        }
+    ]
+}

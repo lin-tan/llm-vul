@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (dbUserName.equalsIgnoreCase(requestUserName)) {",
+        "if (dbUserName!= null && dbUserName.equals(requestUserName)) {",
+        "if (dbUserName.equals(requestUserName) || dbUserName.equals(requestUserName)) {",
+        "if (dbUserName.equals(requestUserName) || dbEmail.equals(requestEmail)) {",
+        "if (dbUserName.equals(requestUserName) && dbEmail.equals(requestEmail)) {",
+        "if (dbUserName.equals(requestUserName.trim())) {",
+        "if (dbUserName.equals(requestUserName) || dbUserName.equalsIgnoreCase(requestUserName)) {",
+        "if (dbUserName.equals(requestUserName.toLowerCase())) {",
+        "if (dbUserName.equals(requestUserName) || requestUserName.equals(dbUserName)) {",
+        "if (!dbUserName.equals(requestUserName)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (dbUserName.equalsIgnoreCase(requestUserName)) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName.equalsIgnoreCase(requestUserName)) {"
+        },
+        {
+            "patch": "if (dbUserName!= null && dbUserName.equals(requestUserName)) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName!= null && dbUserName.equals(requestUserName)) {"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName) || dbUserName.equals(requestUserName)) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName.equals(requestUserName) || dbUserName.equals(requestUserName)) {"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName) || dbEmail.equals(requestEmail)) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName.equals(requestUserName) || dbEmail.equals(requestEmail)) {"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName) && dbEmail.equals(requestEmail)) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName.equals(requestUserName) && dbEmail.equals(requestEmail)) {"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName.trim())) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName.equals(requestUserName.trim())) {"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName) || dbUserName.equalsIgnoreCase(requestUserName)) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName.equals(requestUserName) || dbUserName.equalsIgnoreCase(requestUserName)) {"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName.toLowerCase())) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName.equals(requestUserName.toLowerCase())) {"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName) || requestUserName.equals(dbUserName)) {",
+            "correctness": "test_timeout",
+            "translated": "if (dbUserName.equals(requestUserName) || requestUserName.equals(dbUserName)) {"
+        },
+        {
+            "patch": "if (!dbUserName.equals(requestUserName)) {",
+            "correctness": "test_timeout",
+            "translated": "if (!dbUserName.equals(requestUserName)) {"
+        }
+    ]
+}

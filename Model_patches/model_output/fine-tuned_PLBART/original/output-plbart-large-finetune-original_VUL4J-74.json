@@ -1,0 +1,56 @@
+{
+    "output": [
+        "rnd.nextBytes(new byte[1]);",
+        "rnd.nextBytes(seed.getBytes(StandardCharsets.UTF_8));",
+        "rnd.nextBytes(new byte[0]);",
+        "rnd.nextBytes(seed.getInputStream());",
+        "rnd.nextBytes(seedBytes);",
+        "rnd.nextBytes(seed);",
+        "rnd.nextBytes(seed.getBytes());",
+        "rnd.nextBytes(byteArray);",
+        "rnd.nextBytes(randomBytes);",
+        "rnd.setSeed(seed);"
+    ],
+    "validation_result": [
+        {
+            "patch": "rnd.nextBytes(new byte[1]);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "rnd.nextBytes(seed.getBytes(StandardCharsets.UTF_8));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[0]);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "rnd.nextBytes(seed.getInputStream());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.nextBytes(seedBytes);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.nextBytes(seed);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.nextBytes(seed.getBytes());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.nextBytes(byteArray);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.nextBytes(randomBytes);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

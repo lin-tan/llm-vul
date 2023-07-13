@@ -1,0 +1,12 @@
+[
+  "if((ADD_NEW != null)){",
+  "if((origin != null)){",
+  "if((sessionId != null)){",
+  "if((clientId != null)){",
+  "sb = ((sb.length() > 0))?sb.append(\"null\"):sb;\n",
+  "sb.append(\"null\");\n",
+  "sb.append(sessionId);\n",
+  "if((sb != null)){",
+  "if((sessionId == null)){",
+  "sb.append(clientId);\n"
+]

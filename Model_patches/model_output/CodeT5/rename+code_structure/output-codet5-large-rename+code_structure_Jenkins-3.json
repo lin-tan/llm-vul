@@ -1,0 +1,66 @@
+{
+    "output": [
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n               \n\n           \n\n\n\n           \n\n\n\n   \n\n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n               \n\n           \n\n\n\n          \n\n\n\n   \n\n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n               \n\n           \n\n\n\n           \n\n\n\n\n       \n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views; \n                }\n               \n\n           \n\n\n\n           \n\n\n    }\n   \n\n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views; \n                }\n               \n\n           \n\n\n\n          \n\n\n    }\n   \n\n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n               \n\n       \n\n\n\n           \n\n\n\n   \n\n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n               \n\n       \n\n\n\n          \n\n\n\n   \n\n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n               \n\n           \n\n\n\n          \n\n\n\n\n       \n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n               \n\n       \n\n\n\n           \n\n\n\n\n       \n\n       ",
+        "\n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n               \n\n       \n\n\n\n          \n\n\n\n\n       \n\n       "
+    ],
+    "validation_result": [
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views.values(); \n                }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views.values(); \n                }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views.values(); \n                }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views; \n                }\n               \n\n           \n\n\n\n           \n\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views; \n                }\n               \n\n           \n\n\n\n           \n\n\n    }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views; \n                }\n               \n\n           \n\n\n\n          \n\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views; \n                }\n               \n\n           \n\n\n\n           \n\n\n    }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views.values(); \n                }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views.values(); \n                }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views.values(); \n                }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views.values(); \n                }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<UIComponent> whole() { \n                    return views.values(); \n                }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n       \n                protected Collection<View> all() { \n                    return views.values(); \n                }"
+        }
+    ]
+}

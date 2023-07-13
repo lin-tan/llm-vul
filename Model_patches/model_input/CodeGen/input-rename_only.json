@@ -1,0 +1,155 @@
+{
+  "config": "NO_COMMENT",
+  "data": {
+    "Netty-1": {
+      "input": "private void cutHeading(AttachableCharSuccession a) {\n    final int range = a.range();\n    int titleBeginning;\n    int titleTerminal;\n    int terminalColon;\n    int contentBeginning;\n    int contentTerminal;\n    titleBeginning = detectNotSpacing(a, 0);\n    for (titleTerminal = titleBeginning; titleTerminal < range; titleTerminal ++) {\n        char z = a.insecureCharAt(titleTerminal);\n"
+    },
+    "Netty-2": {
+      "input": "private void cutHeading(AttachableCharSuccession a) {\n    final int range = a.range();\n    int titleBeginning;\n    int titleTerminal;\n    int terminalColon;\n    int contentBeginning;\n    int contentTerminal;\n    titleBeginning = detectNotSpacing(a, 0);\n    for (titleTerminal = titleBeginning; titleTerminal < range; titleTerminal ++) {\n        char z = a.insecureCharAt(titleTerminal);\n        if (z == ':' ||\n                (!beDecryptionDemand() && Character.isWhitespace(z))) {\n            break;\n        }\n    }\n"
+    },
+    "Jenkins-1": {
+      "input": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n"
+    },
+    "Jenkins-2": {
+      "input": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n"
+    },
+    "Jenkins-3": {
+      "input": "@Override\npublic LookupIndexCreator constructLookupIndex() {\n    return super.constructLookupIndex()\n        .attach(\"configure\", \"config\",\"configure\")\n        .attach(\"manage\")\n        .attach(\"log\")\n        .attach(new AggregationLookupIndex<PeakDegreeElement>() {\n            protected LookupElement acquire(String clue) { return acquireElementUsingWholeName(clue, PeakDegreeElement.class); }\n            protected Collection<PeakDegreeElement> whole() { return acquireEveryElement(PeakDegreeElement.class); }\n        })\n        .attach(acquireMainUIComponent().constructLookupIndex())\n        .attach(new AggregationLookupIndex() {\n            protected ComputingMachine acquire(String clue) { return acquireComputingMachine(clue); }\n            protected Collection<ComputingMachine> whole() { return computingMachines.values(); }\n        })\n        .attach(new AggregationLookupIndex() {\n            protected Client acquire(String clue) { return Client.acquire(clue,false); }\n            protected Collection<Client> whole() { return Client.acquireWhole(); }\n        })\n        .attach(new AggregationLookupIndex() {\n            protected UIComponent acquire(String clue) { return acquireUIComponent(clue); }\n"
+    },
+    "Jinjava-1": {
+      "input": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n    .add(\"clone\")\n    .add(\"hashCode\")\n"
+    },
+    "Halo-1": {
+      "input": "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n"
+    },
+    "Retrofit-1": {
+      "input": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n"
+    },
+    "Quartz-1": {
+      "input": "protected void loadArchiveAnalyzer() throws ParserConfigurationException  {\n    DocumentBuilderFactory archiveCreatorManufactory = DocumentBuilderFactory.newInstance();\n    archiveCreatorManufactory.setNamespaceAware(true);\n    archiveCreatorManufactory.setValidating(true);\n    archiveCreatorManufactory.setAttribute(\"http://java.sun.com/xml/jaxp/properties/schemaLanguage\", \"http://www.w3.org/2001/XMLSchema\");\n    archiveCreatorManufactory.setAttribute(\"http://java.sun.com/xml/jaxp/properties/schemaSource\", solveSchemeOrigin());\n"
+    },
+    "Flow-1": {
+      "input": "public boolean workForDevMannerDemand(HttpServletRequest query,\n        HttpServletResponse reply) throws IOException {\n    if (whetherDevelopComputerUnsuccessfulBegin.get() || !developComputerBeginFuturity.isDone()) {\n        return false;\n    }\n    String queryFileName = query.getPathInfo();\n"
+    },
+    "Flow-2": {
+      "input": "@Override\npublic int putMistakeAttribute(PriorToComeInCase occurrence,\n        ErrorAttribute<UndiscoveredException> attribute) {\n    String way = occurrence.acquirePlacement().acquirePath();\n    String extraInformation = \"\";\n    if (attribute.withPersonalizedContent()) {\n        extraInformation = \"Reason: \" + attribute.acquirePersonalizedContent();\n    }\n    way = Jsoup.clean(way, Whitelist.none());\n    extraInformation = Jsoup.clean(extraInformation, Whitelist.none());\n    boolean productManner = occurrence.acquireUI().acquireSession().acquireArrangement()\n            .beProductManner();\n    String templet = acquireMistakeHypertextMarkupLanguage(productManner);\n"
+    },
+    "BC-Java-1": {
+      "input": "private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n"
+    },
+    "Json-sanitizer-1": {
+      "input": "private void cleanString(int begin, int terminal) {\n  boolean shut = false;\n  for (int h = begin; h < terminal; ++h) {\n    char currentChar = JSONlike.charAt(h);\n    switch (currentChar) {\n      case '\\n': supplant(h, h + 1, \"\\\\n\"); break;\n      case '\\r': supplant(h, h + 1, \"\\\\r\"); break;\n      case '\\u2028': supplant(h, h + 1, \"\\\\u2028\"); break;\n      case '\\u2029': supplant(h, h + 1, \"\\\\u2029\"); break;\n      case '\"': case '\\'':\n        if (h == begin) {\n          if (currentChar == '\\'') { supplant(h, h + 1, '\"'); }\n        } else {\n          if (h + 1 == terminal) {\n            char beginDelimiter = JSONlike.charAt(begin);\n            if (beginDelimiter != '\\'') {\n              beginDelimiter = '\"';\n            }\n            shut = beginDelimiter == currentChar;\n          }\n          if (shut) {\n            if (currentChar == '\\'') { supplant(h, h + 1, '\"'); }\n          } else if (currentChar == '\"') {\n            embed(h, '\\\\');\n          }\n        }\n        break;\n"
+    },
+    "Ratpack-1": {
+      "input": "private void createQuery(ChannelHandlerContext context, HttpRequest httpQuery) throws Exception {\n  if (!httpQuery.decoderResult().isSuccess()) {\n    LOGGER.debug(\"Failed to decode HTTP request.\", httpQuery.decoderResult().cause());\n    directMistake(context, HttpResponseStatus.BAD_REQUEST);\n    return;\n  }\n  Headings queryHeading = new NetworkLibraryHeadingSupporteHeadings(httpQuery.headers());\n  Long messageSize = HttpUtil.getContentLength(httpQuery, -1L);\n  String transportationEncryption = queryHeading.get(HttpHeaderNames.TRANSFER_ENCODING);\n  boolean withContent = (messageSize > 0) || (transportationEncryption != null);\n  QueryContent queryContent = withContent ? new QueryContent(messageSize, httpQuery, context) : null;\n  Channel channel = context.channel();\n  if (queryContent != null) {\n    channel.attr(contentCollectorKey).set(queryContent);\n  }\n  InetSocketAddress distantReference = (InetSocketAddress) channel.distantReference();\n  InetSocketAddress reference = (InetSocketAddress) channel.localAddress();\n  ConnexionSpareTimeOver connexionTickOver = ConnexionSpareTimeOver.about(channel);\n  PrimaryQuery query = new PrimaryQuery(\n    time.instant(),\n    queryHeading,\n    httpQuery.method(),\n    httpQuery.protocolVersion(),\n    httpQuery.uri(),\n    distantReference,\n    reference,\n    hostRepository.get(ServerConfig.class),\n    queryContent,\n    connexionTickOver,\n    channel.attr(customerAutorizationKey).get()\n  );\n"
+    },
+    "Pulsar-1": {
+      "input": "protected void innerAcquireNewsThroughNumber(AsyncResponse asyncReply, long recordsNumber, long itemNumber,\n                                          boolean reliable) {\n    try {\n        confirmSubjectPossession(subjectTitle, reliable);\n        confirmSubjectAction(subjectTitle, SubjectAction.PEEK_MESSAGES);\n        if (subjectTitle.whetherUniversal()) {\n            confirmUniversalTitleScopePossession(titleScopeTitle);\n        }\n        TenaciousSubject subject = (TenaciousSubject) acquireSubjectMention(subjectTitle);\n        AdministeredRecordsImpl records = (AdministeredRecordsImpl) subject.acquireAdministeredRecords();\n"
+    },
+    "VUL4J-1": {
+      "input": "@SuppressWarnings({ \"unchecked\", \"rawtypes\" })\npublic <T> T inverseConvert(BasicAnalyzerJson analyzer, Type category, Object attributeTitile) {\n    final JsonTokenizer tokenizer = analyzer.tokenizer;\n    if (tokenizer.token() == JSONToken.NULL) {\n        tokenizer.followingToken(JSONToken.COMMA);\n        return null;\n    }\n    if (tokenizer.token() == JSONToken.LITERAL_STR) {\n        byte[] bytes = tokenizer.contentsOfBytes();\n        tokenizer.followingToken(JSONToken.COMMA);\n        return (T) bytes;\n    }\n    Class constituentTemplate;\n    Type constituentCategory;\n    if (category instanceof GenericArrayType) {\n        GenericArrayType clazz = (GenericArrayType) category;\n        constituentCategory = clazz.getGenericComponentType();\n        if (constituentCategory instanceof TypeVariable) {\n            TypeVariable categoryVariable = (TypeVariable) constituentCategory;\n            Type categoryOfObject = analyzer.obtainContext().category;\n            if (categoryOfObject instanceof ParameterizedType) {\n                ParameterizedType parameterizedCategoryOfObject = (ParameterizedType) categoryOfObject;\n                Type originalCategoryOfObject = parameterizedCategoryOfObject.getRawType();\n                Type realCategory = null;\n                if (originalCategoryOfObject instanceof Class) {\n                    TypeVariable[] objectCategoryParameters = ((Class) originalCategoryOfObject).getTypeParameters();\n                    for (int x = 0; x < objectCategoryParameters.length; ++x) {\n                        if (objectCategoryParameters[x].getName().equals(categoryVariable.getName())) {\n                            realCategory = parameterizedCategoryOfObject.getActualTypeArguments()[x];\n                        }\n                    }\n                }\n                if (realCategory instanceof Class) {\n                    constituentTemplate = (Class) realCategory;\n                } else {\n                    constituentTemplate = Object.class;\n                }\n            } else {\n                constituentTemplate = CategoryTools.acquireClass(categoryVariable.getBounds()[0]);\n            }\n        } else {\n            constituentTemplate = CategoryTools.acquireClass(constituentCategory);\n        }\n    } else {\n        Class clazz = (Class) category;\n        constituentCategory = constituentTemplate = clazz.acquireCategoryOfComponent();\n    }\n    JsonBatch batch = new JsonBatch();\n"
+    },
+    "VUL4J-3": {
+      "input": "@Converter\npublic SAXSource transformDataSequenceToSAXSource(StreamSource dataProvider, Interchange interchange) throws SAXException {\n    InputSource inDataProvider;\n    if (dataProvider.getReader() != null) {\n        inDataProvider = new InputSource(dataProvider.getReader());\n    } else {\n        inDataProvider = new InputSource(dataProvider.getInputStream());\n    }\n    inDataProvider.setSystemId(dataProvider.getSystemId());\n    inDataProvider.setPublicId(dataProvider.getPublicId());\n    XMLReader subscriber = null;\n    SAXParserFactory sproducer = null;\n    try {\n        if (interchange != null) {\n            sproducer = interchange.acquireAttribute(Interchange.SAXPARSER_FACTORY, SAXParserFactory.class);\n        }\n        if (sproducer == null) {\n            sproducer = SAXParserFactory.newInstance();\n            try {\n                sproducer.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true);\n            } catch (Exception x) {\n                LOG.warn(\"SAXParser doesn't support the feature {} with value {}, due to {}.\", new Object[]{javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true\", x});\n            }\n"
+    },
+    "VUL4J-4": {
+      "input": "protected Object doAcquireArchive(Interchange interchange, Object content) throws Exception {\n    if (content == null) {\n        return null;\n    }\n    Object reply = null;\n    Class<?> category = acquireArchiveCategory();\n    Exception reason = null;\n    if (category != null) {\n        try {\n            reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(category, interchange, content);\n        } catch (Exception x) {\n            reason = x;\n        }\n    }\n    \n"
+    },
+    "VUL4J-5": {
+      "input": "private void enlarge(DocumentItemProvider provider, ItemNoter noter, File objectiveFolder)\n    throws IOException {\n"
+    },
+    "VUL4J-6": {
+      "input": "public void analyzeCentralDirectoryScheme(final byte[] information, final int beginning, final int duration) {\n    this.formatting = ZipTwoByteInteger.acquireContent(information, beginning);\n    this.Idaho = EncodingAlgorithm.acquireAlgorithmThroughCode(ZipTwoByteInteger.acquireContent(information, beginning + 2));\n    this.bitlen = ZipTwoByteInteger.acquireContent(information, beginning + 4);\n    this.flag = ZipTwoByteInteger.acquireContent(information, beginning + 6);\n    this.rcount = ZipFourByteInteger.acquireContent(information, beginning + 8);\n    if (rcount > 0) {\n        this.hashish = AlgorithmForHash.acquireAlgorithmThroughCode(ZipTwoByteInteger.acquireContent(information, beginning + 12));\n        this.hashishSizing = ZipTwoByteInteger.acquireContent(information, beginning + 14);\n"
+    },
+    "VUL4J-7": {
+      "input": "private int retrieveSaved(final byte[] byteArrary, final int distance, final int range) throws IOException {\n    if (present.withInformationForm) {\n        if (finalSavedItem == null) {\n            retrieveSavedItem();\n        }\n        return finalSavedItem.read(byteArrary, distance, range);\n    }\n    final long size = present.item.acquireSize();\n    if (present.byteRetrieved >= size) {\n        return -1;\n    }\n    if (memory.position() >= memory.limit()) {\n        memory.position(0);\n        final int x = input.read(memory.array());\n        if (x == -1) {\n"
+    },
+    "VUL4J-8": {
+      "input": "@Override\npublic ByteBuffer encode(final String tile) {\n    final CharsetEncoder charEncoder = newEncoder();\n    final CharBuffer charBuffer = CharBuffer.wrap(tile);\n    CharBuffer cb_temp = null;\n    ByteBuffer result = ByteBuffer.allocate(approximateOriginalBufferSize(charEncoder, charBuffer.remaining()));\n    while (charBuffer.remaining() > 0) {\n        final CoderResult outcome = charEncoder.encode(charBuffer, result, false);\n        if (outcome.isUnmappable() || outcome.isMalformed()) {\n            int roomForSubstitute = approximateAdditionalEncodeingSize(charEncoder, 6 * outcome.length());\n            if (roomForSubstitute > result.remaining()) {\n                int charAmount = 0;\n                for (int j = charBuffer.position() ; j < charBuffer.limit(); j++) {\n                    charAmount += !charEncoder.ableToEncode(charBuffer.get(j)) ? 6 : 1;\n                }\n                int sumSupernumeraryInfinite = approximateAdditionalEncodeingSize(charEncoder, charAmount);\n                result = CompressedFileEncodingAssistant.enlargeBufferWith(result, sumSupernumeraryInfinite - result.remaining());\n            }\n            if (cb_temp == null) {\n                cb_temp = CharBuffer.allocate(6);\n            }\n            for (int j = 0; j < outcome.length(); ++j) {\n                result = encodeEntirely(charEncoder, encodeSubstitute(cb_temp, charBuffer.get()), result);\n            }\n        } else if (outcome.isOverflow()) {\n            int increase = approximateAdditionalEncodeingSize(charEncoder, charBuffer.remaining());\n"
+    },
+    "VUL4J-10": {
+      "input": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n"
+    },
+    "VUL4J-12": {
+      "input": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n"
+    },
+    "VUL4J-18": {
+      "input": "public String acquireSendOnPage( HttpServletRequest r )\n{\n"
+    },
+    "VUL4J-19": {
+      "input": "@Override\npublic void getReadyForDecipher(PalladiumEncoding cipher, COSArray fileIdentifierArray,\n                                 DecodingInformation decipherInformation)\n                                 throws IOException\n{\n    if(!(decipherInformation instanceof CriterionDecodingInformation))\n    {\n        throw new IOException(\"Decryption material is not compatible with the document\");\n    }\n    adjustDecipherDescriptiveData(cipher.beCipherDescriptiveData());\n    CriterionDecodingInformation information = (CriterionDecodingInformation)decipherInformation;\n    String watchword = information.acquireWatchword();\n    if(watchword == null)\n    {\n        watchword = \"\";\n    }\n    int lexiconConsent = cipher.acquireConsent();\n    int lexiconAlteration = cipher.acquireAlteration();\n    int lexiconSize = cipher.acquireEdition() == 1 ? 5 : cipher.acquireSize() / 8;\n    byte[] fileIdentifierByte = acquireFileIdentifierByte(fileIdentifierArray);\n    boolean cipherDescriptiveData = cipher.beCipherDescriptiveData();\n    byte[] exploiterUniqueIdentifier = cipher.acquireExploiterUniqueIdentifier();\n    byte[] proprietorUniqueIdentifier = cipher.acquireProprietorUniqueIdentifier();\n    byte[] ec = null, pc = null;\n    Charset watchwordCharSet = Charsets.ISO_8859_1;\n    if (lexiconAlteration == 6 || lexiconAlteration == 5)\n    {\n        watchwordCharSet = Charsets.UTF_8;\n        ec = cipher.acquireExploiterEncodingUniqueIdentifier();\n        pc = cipher.acquireProprietorCipherUniqueIdentifier();\n    }\n    UseConsent presentUseConsent;\n    if( beProprietorWatchword(watchword.getBytes(watchwordCharSet), exploiterUniqueIdentifier, proprietorUniqueIdentifier,\n                             lexiconConsent, fileIdentifierByte, lexiconAlteration,\n                             lexiconSize, cipherDescriptiveData) )\n    {\n        presentUseConsent = UseConsent.acquireProprietorUseConsen();\n        adjustPresentUseConsent(presentUseConsent);\n        byte[] calculateWatchword;\n        if (lexiconAlteration == 6 || lexiconAlteration == 5)\n        {\n            calculateWatchword = watchword.getBytes(watchwordCharSet);\n        }\n        else\n        {\n            calculateWatchword = acquireExploiterWatchword(watchword.getBytes(watchwordCharSet),\n                    proprietorUniqueIdentifier, lexiconAlteration, lexiconSize );\n        }\n        cipherUniqueIdentifier =\n            calculateCipheredUniqueIdentifier(\n                calculateWatchword,\n                proprietorUniqueIdentifier, exploiterUniqueIdentifier, pc, ec,\n                lexiconConsent,\n                fileIdentifierByte,\n                lexiconAlteration,\n                lexiconSize,\n                cipherDescriptiveData, true );\n    }\n    else if( beExploiterWatchword(watchword.getBytes(watchwordCharSet), exploiterUniqueIdentifier, proprietorUniqueIdentifier,\n                       lexiconConsent, fileIdentifierByte, lexiconAlteration,\n                       lexiconSize, cipherDescriptiveData) )\n    {\n        presentUseConsent = new UseConsent(lexiconConsent);\n"
+    },
+    "VUL4J-20": {
+      "input": "public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n"
+    },
+    "VUL4J-22": {
+      "input": "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n"
+    },
+    "VUL4J-23": {
+      "input": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n"
+    },
+    "VUL4J-25": {
+      "input": "@Override\n@Nonnull\npublic String acquireReasonableHref(final String resourseAddress) {\n    if (StringUtils.isNotEmpty(resourseAddress)) {\n"
+    },
+    "VUL4J-26": {
+      "input": "public String acquireUrlRegularExpression() {\n    if (StringUtils.isNotEmpty(urlRegularExpressionExpr)) {\n        return (String) analyze(urlRegularExpressionExpr, String.class);\n    } else if (StringUtils.isNotEmpty(urlRegularExpression)) {\n        return urlRegularExpression;\n    } else {\n        return \"^(https?|ftp):\\\\/\\\\/\" +\n                \"(([a-z0-9$_\\\\.\\\\+!\\\\*\\\\'\\\\(\\\\),;\\\\?&=-]|%[0-9a-f]{2})+\" +\n                \"(:([a-z0-9$_\\\\.\\\\+!\\\\*\\\\'\\\\(\\\\),;\\\\?&=-]|%[0-9a-f]{2})+)?\" +\n                \"@)?(#?\" +\n                \")((([a-z0-9]\\\\.|[a-z0-9][a-z0-9-]*[a-z0-9]\\\\.)*\" +\n                \"[a-z][a-z0-9-]*[a-z0-9]\" +\n                \"|((\\\\d|[1-9]\\\\d|1\\\\d{2}|2[0-4][0-9]|25[0-5])\\\\.){3}\" +\n                \"(\\\\d|[1-9]\\\\d|1\\\\d{2}|2[0-4][0-9]|25[0-5])\" +\n                \")(:\\\\d+)?\" +\n"
+    },
+    "VUL4J-30": {
+      "input": "public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n"
+    },
+    "VUL4J-39": {
+      "input": "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source != null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification != null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n"
+    },
+    "VUL4J-40": {
+      "input": "public boolean whetherPermitted(HttpServletRequest request) throws IOException {\n    String requestContent = IOUtils.toString(request.getReader());\n    Customer CustomerOfRequest = JsonTools.retrieveContent(requestContent, Customer.class);\n    String identification = URLTools.derivePathObjectFromURL(CUSTOMER_IDENTIFICATION_PATH_ARGUMENT_INDEX, URLTools.acquireRequestPath(request));\n    String areaIdentification = IndividualityAreaPossessor.acquire().acquireIdentification();\n    Customer CustomerOfDatabase;\n    try {\n        CustomerOfDatabase = CustomerManagement.recover(identification, areaIdentification);\n    } catch (DataSourceUnfoundException x) {\n        return true;\n    }\n    if (!CustomerOfDatabase.acquireMainEmail().equals(CustomerOfRequest.acquireMainEmail())) {\n        return false;\n    }\n"
+    },
+    "VUL4J-41": {
+      "input": "protected void takeOutDataFile( final File originFile, final File folder, final InputStream compressedInDataSequence,\n                            final String itemTitle, final Date itemTime, final boolean whetherFolder,\n                            final Integer setting, String symbolicLinkTargetLocation )\n    throws IOException, DocumentorException\n{\n    final File targetFile = FileUtils.resolveFile( folder, itemTitle );\n"
+    },
+    "VUL4J-43": {
+      "input": "public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tFile outputFile = new File(targetFolder, item.getName());\n"
+    },
+    "VUL4J-44": {
+      "input": "public String convertChar( char[] exempt, Character a )\n{\n\tString charString = String.valueOf(a.charValue());\n\tbyte[] byteArray;\n\tStringBuilder x;\n"
+    },
+    "VUL4J-46": {
+      "input": "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n"
+    },
+    "VUL4J-47": {
+      "input": "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n"
+    },
+    "VUL4J-50": {
+      "input": "private void composeSession(SessionData session, boolean showExploiter) throws IOException {\n\tfinal String followingColumnAlignRightField = \"</td><td align='right'>\";\n\tfinal String followingColumnAlignCore = \"</td><td align='center'>\";\n\tcompose(\"<td><a href='?part=sessions&amp;sessionId=\");\n\tcompose(htmlEnocdeWithoutSpace(session.acquireId()));\n\tcompose(\"'>\");\n\tcompose(htmlEnocdeWithoutSpace(session.acquireId()));\n\tcompose(\"</a>\");\n\tcompose(followingColumnAlignRightField);\n\tcompose(timeSpanFormatting.format(session.acquireFinalAccess()));\n\tcompose(followingColumnAlignRightField);\n\tcompose(timeSpanFormatting.format(session.acquireHistoricPeriod()));\n\tcompose(followingColumnAlignRightField);\n\tcompose(terminationFormatting.format(session.acquireTerminationTime()));\n\tcompose(followingColumnAlignRightField);\n\tcompose(wholeNumberFormatting.format(session.acquirePropertyCounting()));\n\tcompose(followingColumnAlignCore);\n\tif (session.whetherSerializable()) {\n\t\tcompose(\"#oui#\");\n\t} else {\n\t\tcompose(\"<span class='severe'>#non#</span>\");\n\t}\n\tcompose(followingColumnAlignRightField);\n\tcompose(wholeNumberFormatting.format(session.acquireSerializedSize()));\n\tfinal String followingColumn = \"</td><td>\";\n\tcompose(followingColumn);\n\tfinal String offSiteControlLocation = session.obtainOffSiteLocation();\n\tif (offSiteControlLocation == null) {\n\t\tcompose(\"&nbsp;\");\n\t} else {\n"
+    },
+    "VUL4J-53": {
+      "input": "void changeTo(Calendar z, int m) {\n"
+    },
+    "VUL4J-55": {
+      "input": "public Calendar roundUp(Calendar calendar) {\n    Calendar futurityTwoYears = (Calendar) calendar.clone();\n    futurityTwoYears.add(Calendar.YEAR, 2);\n    EXTERIOR:\n    while (true) {\n        if (calendar.compareTo(futurityTwoYears) > 0) {\n            throw new UnusualOrUnrealisticTimeException();\n        }\n        for (CalendarAttribute a : CalendarAttribute.ADJUST_ORDER) {\n            int now = a.valueOf(calendar);\n            int following = a.roundUp(this,now);\n            if (now==following)  continue;   \n            for (CalendarAttribute b=a.lowerAttribute; b!=null; b=b.lowerAttribute)\n                b.empty(calendar);\n            if (following<0) {\n                a.Increment(calendar, 1);\n                a.changeTO(calendar,a.initial(this));\n                continue EXTERIOR;\n            } else {\n                a.changeTO(calendar,following);\n"
+    },
+    "VUL4J-57": {
+      "input": "@SuppressWarnings({\"unchecked\", \"rawtypes\"}) \n@Override\npublic boolean beginning() throws Exception {\n    String occupation = measure.acquireOccupation();\n    Point point = Jenkins.getActiveInstance().getItem(occupation, raiseTally.getParent(), Point.class);\n    if (point == null) {\n        throw new AbortException(\"No item named \" + occupation + \" found\");\n    }\n"
+    },
+    "VUL4J-59": {
+      "input": "void retrieve(Lexer s, CharScanner m) {\n    char a = m.devour();\n    switch (a) {\n        case '\\t':\n        case '\\n':\n        case '\\r':\n        case '\\f':\n        case ' ':\n            break;\n        case '\"':\n            s.conversion(DoubleQuotedPropertyValue);\n            break;\n        case '&':\n            m.notDevour();\n            s.conversion(UnquotedPropertyValue);\n            break;\n        case '\\'':\n            s.conversion(SingleQuotedPropertyValue);\n            break;\n        case charBeNull:\n            s.mistake(this);\n            s.labelUndecided.attachPropertyContent(substitutionChar);\n            s.conversion(UnquotedPropertyValue);\n            break;\n        case endOfFile:\n            s.endOfFileError(this);\n"
+    },
+    "VUL4J-61": {
+      "input": "private Stream<MapOutcome> xmlXpathToMapOutcome(@Name(\"url\") String URL, boolean easyManner, String way, Map<String, Object> setting) throws Exception {\n    if (setting == null) setting = Collections.emptyMap();\n    boolean breakDownAlongMistake = (boolean) setting.getOrDefault(\"failOnError\", true);\n    List<MapOutcome> outcome = new ArrayList<>();\n    try {\n        DocumentBuilderFactory archiveCreatorFactory = DocumentBuilderFactory.newInstance();\n        archiveCreatorFactory.setNamespaceAware(true);\n        archiveCreatorFactory.setIgnoringElementContentWhitespace(true);\n"
+    },
+    "VUL4J-64": {
+      "input": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n"
+    },
+    "VUL4J-65": {
+      "input": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n"
+    },
+    "VUL4J-66": {
+      "input": "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n"
+    },
+    "VUL4J-73": {
+      "input": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n"
+    },
+    "VUL4J-74": {
+      "input": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n"
+    }
+  }
+}

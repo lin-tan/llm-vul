@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "templet = templet.replace( \" { { path } } \", extraInformation);",
+        "templet = templet.replace( \" { { path } } \", way);",
+        "templet = templet.replace( \" { { path } } \", method);",
+        "templet = templet.replace( \" { { route } } \", extraInformation);",
+        "templet = templet.replace( \" { { path } } \", path);",
+        "templet = templet.replace( \" { { path } } \", occurrence);",
+        "templet = templet.replace( \" { { route } } \", way);",
+        "templet = templet.replace( \" { { path } } \", route);",
+        "templet = templet.replace( \" { { path } } \", pattern);",
+        "templet = templet.replace( \" { { path } } \", false);"
+    ],
+    "validation_result": [
+        {
+            "patch": "templet = templet.replace( \" { { path } } \", extraInformation);",
+            "correctness": "test_success",
+            "translated": "template = template.replace( \" { { path } } \", additionalInfo);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { path } } \", way);",
+            "correctness": "test_success",
+            "translated": "template = template.replace( \" { { path } } \", path);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { path } } \", method);",
+            "correctness": "uncompilable",
+            "translated": "template = template.replace( \" { { path } } \", method);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { route } } \", extraInformation);",
+            "correctness": "test_success",
+            "translated": "template = template.replace( \" { { route } } \", additionalInfo);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { path } } \", path);",
+            "correctness": "test_success",
+            "translated": "template = template.replace( \" { { path } } \", path);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { path } } \", occurrence);",
+            "correctness": "uncompilable",
+            "translated": "template = template.replace( \" { { path } } \", event);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { route } } \", way);",
+            "correctness": "test_success",
+            "translated": "template = template.replace( \" { { route } } \", path);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { path } } \", route);",
+            "correctness": "uncompilable",
+            "translated": "template = template.replace( \" { { path } } \", route);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { path } } \", pattern);",
+            "correctness": "uncompilable",
+            "translated": "template = template.replace( \" { { path } } \", pattern);"
+        },
+        {
+            "patch": "templet = templet.replace( \" { { path } } \", false);",
+            "correctness": "uncompilable",
+            "translated": "template = template.replace( \" { { path } } \", false);"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        if (Character.isWhitespace(z)) {\n</s></s></s></s></s></s>",
+        "<pad><s>        if (z == ':' ||!Character.isWhitespace(z)) {\n</s>",
+        "<pad><s>        if (z == ':') {\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        if (Character.isWhitespace(z) || z == ':') {\n</s>",
+        "<pad><s>        if (!Character.isWhitespace(z)) {\n</s></s></s></s></s></s>",
+        "<pad><s>        if (z == ':' || Character.isWhitespace(z)) {\n</s></s>",
+        "<pad><s>        if (z == ':' &&!Character.isWhitespace(z)) {\n</s>",
+        "<pad><s>        if (Character.isWhitespace(z))\n</s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        if (Character.isWhitespace(z)) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (Character.isWhitespace(ch)) {\n"
+        },
+        {
+            "patch": "        if (z == ':' ||!Character.isWhitespace(z)) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (ch == ':' ||!Character.isWhitespace(ch)) {\n"
+        },
+        {
+            "patch": "        if (z == ':') {\n",
+            "correctness": "compile_success",
+            "translated": "        if (ch == ':') {\n"
+        },
+        {
+            "patch": "        if (Character.isWhitespace(z) || z == ':') {\n",
+            "correctness": "compile_success",
+            "translated": "        if (Character.isWhitespace(ch) || ch == ':') {\n"
+        },
+        {
+            "patch": "        if (!Character.isWhitespace(z)) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (!Character.isWhitespace(ch)) {\n"
+        },
+        {
+            "patch": "        if (z == ':' || Character.isWhitespace(z)) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (ch == ':' || Character.isWhitespace(ch)) {\n"
+        },
+        {
+            "patch": "        if (z == ':' &&!Character.isWhitespace(z)) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (ch == ':' &&!Character.isWhitespace(ch)) {\n"
+        },
+        {
+            "patch": "        if (Character.isWhitespace(z))\n",
+            "correctness": "uncompilable",
+            "translated": "        if (Character.isWhitespace(ch))\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+        "archiveCreator = archiveCreatorMill.newInstance();",
+        "archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+        "archiveCreator = archiveCreatorMill.newInstance();",
+        "ArchiveCreator = archiveCreatorMill.newDocumentBuilder();",
+        "archiveCreator = archiveCreatorMill.newDocumentBuilder(true);",
+        "archiveCreator = archiveCreatorMill.newProjectBuilder();",
+        "archiveCreator = archiveCreatorMill.newProjectBuilder();",
+        "archiveCreator = archiveCreatorMill.newDocumentBuilder(this);",
+        "archiveCreator = archiveCreatorMill.newSchemaDocumentBuilder();"
+    ],
+    "validation_result": [
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+            "correctness": "compile_success",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newInstance();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newInstance();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+            "correctness": "compile_success",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newInstance();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newInstance();"
+        },
+        {
+            "patch": "ArchiveCreator = archiveCreatorMill.newDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "ArchiveCreator = docBuilderFactory.newDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newDocumentBuilder(true);",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder(true);"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newProjectBuilder();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newProjectBuilder();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newProjectBuilder();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newProjectBuilder();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newDocumentBuilder(this);",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder(this);"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorMill.newSchemaDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newSchemaDocumentBuilder();"
+        }
+    ]
+}

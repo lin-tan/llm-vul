@@ -1,0 +1,37 @@
+{
+    "VUL4J-1009-35-36": {
+        "src": "this . category = category ;",
+        "patches": [
+            {
+                "patch": "this.category = category ;"
+            },
+            {
+                "patch": "if( category == null ) return null ; this.category = category ;"
+            },
+            {
+                "patch": "this.category = category ; this.category = category ; this.category = category ;"
+            },
+            {
+                "patch": "this.category = category ; this.category = category ;"
+            },
+            {
+                "patch": "this.category = category ; category = category ;"
+            },
+            {
+                "patch": "this.category = setting ;"
+            },
+            {
+                "patch": "if( this.category != null ) { this.category = category ;"
+            },
+            {
+                "patch": "this.category = category ; this.category = category ; if( category != null )"
+            },
+            {
+                "patch": "if( category != null , null ) {"
+            },
+            {
+                "patch": "if( category != null ) this.category = category ;"
+            }
+        ]
+    }
+}

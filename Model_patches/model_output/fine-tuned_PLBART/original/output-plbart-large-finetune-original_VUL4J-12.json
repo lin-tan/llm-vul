@@ -1,0 +1,56 @@
+{
+    "output": [
+        "while (v < vt && t > 0) {",
+        "while (v >= vt) {",
+        "while (v <= vt) {",
+        "while (v < vt) {",
+        "while (v < vt && t!= 0) {",
+        "while (v > vt) {",
+        "if (v < vt) {",
+        "while (v < vt && t > 1) {",
+        "while (v < vt && t >= 0) {",
+        "while (v < vt && v < 0) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "while (v < vt && t > 0) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "while (v >= vt) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "while (v <= vt) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "while (v < vt) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "while (v < vt && t!= 0) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "while (v > vt) {",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (v < vt) {",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "while (v < vt && t > 1) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "while (v < vt && t >= 0) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "while (v < vt && v < 0) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

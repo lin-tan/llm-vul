@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        for (int i = 0; i < rcount; i++) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>        for (int i = 0; i < this.rcount - 1; i++) {\n</s></s></s></s>",
+        "<pad><s>        for (final int i = 0; i < this.rcount; i++) {\n</s></s></s></s></s>",
+        "<pad><s>        for (int i = 0; i < this.rcount / this.hashSize; i++) {\n</s>",
+        "<pad><s>        for (int i = 0; i < this.rcount * this.hashSize; i++) {\n</s>",
+        "<pad><s>        for (int i = 0; i < this.rcount + this.hashSize; i++) {\n</s>",
+        "<pad><s>        for (int i = 0; i < rcount; i += this.hashSize) {\n</s></s></s>",
+        "<pad><s>        for (int i = 0; i < length; i++) {\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        for (int i = 0; i < this.rcount; i += this.hashSize) {\n</s>",
+        "<pad><s>        for (int i = 0; i < this.rcount; i++) {\n</s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        for (int i = 0; i < rcount; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < this.rcount - 1; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (final int i = 0; i < this.rcount; i++) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        for (int i = 0; i < this.rcount / this.hashSize; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < this.rcount * this.hashSize; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < this.rcount + this.hashSize; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < rcount; i += this.hashSize) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < length; i++) {\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < this.rcount; i += this.hashSize) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < this.rcount; i++) {\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

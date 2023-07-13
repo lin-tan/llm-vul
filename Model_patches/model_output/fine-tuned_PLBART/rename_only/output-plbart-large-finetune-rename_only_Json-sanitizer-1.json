@@ -1,0 +1,66 @@
+{
+    "output": [
+        "case '/': if (h > begin && h + 2 < terminal) { supplant(h, h + 1, '\"'); } break;",
+        "case ']': if (h > begin && h + 2 < terminal) { supplant(h, h + 1, '\"');",
+        "case '\\\\':",
+        "case '\\\\': if (h > begin && h + 2 < terminal) {",
+        "case '/': if (h > begin && h + 2 < terminal) {",
+        "case '/':",
+        "case '\\\\' :",
+        "case '/': break;",
+        "case ']' :",
+        "case '\"':"
+    ],
+    "validation_result": [
+        {
+            "patch": "case '/': if (h > begin && h + 2 < terminal) { supplant(h, h + 1, '\"'); } break;",
+            "correctness": "compile_success",
+            "translated": "case '/': if (i > start && i + 2 < end) { replace(i, i + 1, '\"'); } break;"
+        },
+        {
+            "patch": "case ']': if (h > begin && h + 2 < terminal) { supplant(h, h + 1, '\"');",
+            "correctness": "uncompilable",
+            "translated": "case ']': if (i > start && i + 2 < end) { replace(i, i + 1, '\"');"
+        },
+        {
+            "patch": "case '\\\\':",
+            "correctness": "uncompilable",
+            "translated": "case '\\\\':"
+        },
+        {
+            "patch": "case '\\\\': if (h > begin && h + 2 < terminal) {",
+            "correctness": "uncompilable",
+            "translated": "case '\\\\': if (i > start && i + 2 < end) {"
+        },
+        {
+            "patch": "case '/': if (h > begin && h + 2 < terminal) {",
+            "correctness": "uncompilable",
+            "translated": "case '/': if (i > start && i + 2 < end) {"
+        },
+        {
+            "patch": "case '/':",
+            "correctness": "compile_success",
+            "translated": "case '/':"
+        },
+        {
+            "patch": "case '\\\\' :",
+            "correctness": "uncompilable",
+            "translated": "case '\\\\':"
+        },
+        {
+            "patch": "case '/': break;",
+            "correctness": "compile_success",
+            "translated": "case '/': break;"
+        },
+        {
+            "patch": "case ']' :",
+            "correctness": "uncompilable",
+            "translated": "case ']' :"
+        },
+        {
+            "patch": "case '\"':",
+            "correctness": "uncompilable",
+            "translated": "case '\"':"
+        }
+    ]
+}

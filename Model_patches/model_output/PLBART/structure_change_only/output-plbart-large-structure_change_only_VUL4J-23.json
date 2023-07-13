@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-8,1",
+    "output": [
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString( dataProvider); } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return StringEscapeUtils. escapeJavaScript ( dataProvider ) ; } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString( dataProvider ) ; } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return dataProvider ; } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString(dataProvider); } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return StringEscapeUtils. escapeHtml4 ( dataProvider ) ; } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return dataProvider + \" ; \" ; } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString( dataProvider ); } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return StringEscapeUtils. unescapeHtml4 ( dataProvider ) ; } return null; }",
+        "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString ( dataProvider ) ; } return null; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString( dataProvider); } return null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return StringEscapeUtils. escapeJavaScript ( dataProvider ) ; } return null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString( dataProvider ) ; } return null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return dataProvider ; } return null; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString(dataProvider); } return null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return StringEscapeUtils. escapeHtml4 ( dataProvider ) ; } return null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return dataProvider + \" ; \" ; } return null; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString( dataProvider ); } return null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return StringEscapeUtils. unescapeHtml4 ( dataProvider ) ; } return null; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String dataProvider) { if( dataProvider!= null ){ return super. encodeForJSString ( dataProvider ) ; } return null; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

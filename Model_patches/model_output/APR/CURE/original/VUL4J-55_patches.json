@@ -1,0 +1,37 @@
+{
+    "VUL4J-55-359-360": {
+        "src": "if ( f . redo CaMeL Adjustment CaMeL If CaMeL Modified )",
+        "patches": [
+            {
+                "patch": "if( f.redoAdjustmentIfModified )"
+            },
+            {
+                "patch": "if( next <0) { f.setTo( cal , next ) ;"
+            },
+            {
+                "patch": "if( f.redoAdjustmentIfModified ) {"
+            },
+            {
+                "patch": "if( f.redoAdjustmentIfModified( ) ) continue ; } }"
+            },
+            {
+                "patch": "if( f.redoAdjustmentIfModified( ) ) break ; } }"
+            },
+            {
+                "patch": "} if( f.redoAdjustmentIfModified )"
+            },
+            {
+                "patch": "if( next <0) { f.rollUp( cal ,1) ;"
+            },
+            {
+                "patch": "if( f.redoAdjustmentIfModified( ) ) continue ; }"
+            },
+            {
+                "patch": "if( f.redoAdjustmentIfModified( ) )"
+            },
+            {
+                "patch": "if( cal.redoAdjustmentIfModified )"
+            }
+        ]
+    }
+}

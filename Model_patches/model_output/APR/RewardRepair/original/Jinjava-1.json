@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "nl.add( \"notify\")",
+        "null.add( \"notify\")",
+        ".add( \"notifyAll\")",
+        ".add( \"hashCode\")",
+        ".add( \"messageNotify\")",
+        ".add( \"error\")",
+        "null = null;",
+        "nl.add( \"notify \")",
+        ".add( \"notify \")",
+        ".add( \"notifyAll\")"
+    ],
+    "validation_result": [
+        {
+            "patch": "nl.add( \"notify\")",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "null.add( \"notify\")",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".add( \"notifyAll\")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"hashCode\")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"messageNotify\")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"error\")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "null = null;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "nl.add( \"notify \")",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".add( \"notify \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"notifyAll\")",
+            "correctness": "compile_success"
+        }
+    ]
+}

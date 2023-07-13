@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-15,1",
+    "output": [
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+        "public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (outputFile.exists()) { outputFile.delete(); } if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.getParentFile().mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.getParentFile().mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.getName().endsWith(\".zip\")) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (outputFile.exists()) { outputFile.delete(); } if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence (input, outputFile); } } }",
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.getParentFile().mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } catch (IOException e) { e.printStackTrace(); } } }",
+        "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.getParentFile().mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } catch (IOException e) { e.printStackTrace(); } } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (entry.isDirectory()) { outFile.mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } }"
+        },
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (entry.isDirectory()) { outFile.mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } }"
+        },
+        {
+            "patch": "public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (entry.isDirectory()) { outFile.mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } }"
+        },
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (outputFile.exists()) { outputFile.delete(); } if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (outFile.exists()) { outFile.delete(); } if (entry.isDirectory()) { outFile.mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } }"
+        },
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.getParentFile().mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (entry.isDirectory()) { outFile.getParentFile().mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } }"
+        },
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.getParentFile().mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (entry.isDirectory()) { outFile.getParentFile().mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } }"
+        },
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.getName().endsWith(\".zip\")) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (entry.getName().endsWith(\".zip\")) { outFile.mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } }"
+        },
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (outputFile.exists()) { outputFile.delete(); } if (item.isDirectory()) { outputFile.mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence (input, outputFile); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (outFile.exists()) { outFile.delete(); } if (entry.isDirectory()) { outFile.mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } }"
+        },
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.getParentFile().mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } catch (IOException e) { e.printStackTrace(); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (entry.isDirectory()) { outFile.getParentFile().mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } catch (IOException e) { e.printStackTrace(); } } }"
+        },
+        {
+            "patch": "public static void saveItem (ZipFile compressedFile, ZipEntry item, File targetFolder) throws IOException { File outputFile = new File(targetFolder, item.getName()); if (item.isDirectory()) { outputFile.getParentFile().mkdirs(); } else { outputFile.getParentFile().mkdirs(); try (InputStream input = compressedFile.getInputStream(item)) { InputOutputUtility.saveDataSequence(input, outputFile); } catch (IOException e) { e.printStackTrace(); } } }",
+            "correctness": "compile_success",
+            "translated": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { File outFile = new File(destDir, entry.getName()); if (entry.isDirectory()) { outFile.getParentFile().mkdirs(); } else { outFile.getParentFile().mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } catch (IOException e) { e.printStackTrace(); } } }"
+        }
+    ]
+}

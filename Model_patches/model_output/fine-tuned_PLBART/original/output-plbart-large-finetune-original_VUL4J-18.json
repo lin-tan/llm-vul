@@ -1,0 +1,56 @@
+{
+    "output": [
+        "return request.getRequestURI();",
+        "return \"String_Node_Str\";",
+        "return request.getContextPath();",
+        "return request.getPathInfo().toLowerCase();",
+        "return request.getPathInfo().toString();",
+        "return request.getServletPath();",
+        "return request.getPathInfo();",
+        "return getForwardPage(request);",
+        "return request.getURI();",
+        "return request.getAbsolutePath();"
+    ],
+    "validation_result": [
+        {
+            "patch": "return request.getRequestURI();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return \"String_Node_Str\";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return request.getContextPath();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return request.getPathInfo().toLowerCase();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return request.getPathInfo().toString();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return request.getServletPath();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return request.getPathInfo();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return getForwardPage(request);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return request.getURI();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return request.getAbsolutePath();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

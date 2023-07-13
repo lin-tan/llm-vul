@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-29,1",
+    "output": [
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null &&!resourseAddress.isEmpty()) { return resourseAddress; } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null &&!resourseAddress.equals(\"\")) { return resourseAddress; } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } else { return \"http://www.google.com/search?q=\" + resourseAddress; } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress == null || resourseAddress.isEmpty()) { return null; } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null && StringUtils.isNotEmpty(resourseAddress.trim())) { return resourseAddress; } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null &&!resourseAddress.trim().isEmpty()) { return resourseAddress; } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null && StringUtils.isNotEmpty(resourseAddress.trim())) { return resourseAddress.trim(); } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null && StringUtils.isNotEmpty(resourseAddress.trim())) { return resourseAddress ; } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null &&!resourseAddress.equals(\"\")) { return \"http://www.google.com\"; } return \"\"; }",
+        "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } return \"http://www.google.com/search?q=\" + resourseAddress + \"&hl=en&ie=UTF-8&oe=UTF-8\"; return \"\"; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null &&!resourseAddress.isEmpty()) { return resourseAddress; } return \"\"; }",
+            "correctness": "compile_success",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null &&!url.isEmpty()) { return url; } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null &&!resourseAddress.equals(\"\")) { return resourseAddress; } return \"\"; }",
+            "correctness": "compile_success",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null &&!url.equals(\"\")) { return url; } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } else { return \"http://www.google.com/search?q=\" + resourseAddress; } return \"\"; }",
+            "correctness": "uncompilable",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } else { return \"http://www.google.com/search?q=\" + url; } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress == null || resourseAddress.isEmpty()) { return null; } return \"\"; }",
+            "correctness": "compile_success",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url == null || url.isEmpty()) { return null; } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null && StringUtils.isNotEmpty(resourseAddress.trim())) { return resourseAddress; } return \"\"; }",
+            "correctness": "compile_success",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null && StringUtils.isNotEmpty(url.trim())) { return url; } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null &&!resourseAddress.trim().isEmpty()) { return resourseAddress; } return \"\"; }",
+            "correctness": "compile_success",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null &&!url.trim().isEmpty()) { return url; } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null && StringUtils.isNotEmpty(resourseAddress.trim())) { return resourseAddress.trim(); } return \"\"; }",
+            "correctness": "compile_success",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null && StringUtils.isNotEmpty(url.trim())) { return url.trim(); } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null && StringUtils.isNotEmpty(resourseAddress.trim())) { return resourseAddress ; } return \"\"; }",
+            "correctness": "compile_success",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null && StringUtils.isNotEmpty(url.trim())) { return url; } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } if (resourseAddress!= null &&!resourseAddress.equals(\"\")) { return \"http://www.google.com\"; } return \"\"; }",
+            "correctness": "compile_success",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null &&!url.equals(\"\")) { return \"http://www.google.com\"; } return \"\"; }"
+        },
+        {
+            "patch": "@Override @Nonnull public String acquireReasonableHref(final String resourseAddress) { if (!StringUtils.isNotEmpty(resourseAddress)) { return \"\"; } return \"http://www.google.com/search?q=\" + resourseAddress + \"&hl=en&ie=UTF-8&oe=UTF-8\"; return \"\"; }",
+            "correctness": "uncompilable",
+            "translated": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } return \"http://www.google.com/search?q=\" + url + \"&hl=en&ie=UTF-8&oe=UTF-8\"; return \"\"; }"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\tif (item.isDirectory() &&!outputFile.exists()) {\n</s></s>",
+        "<pad><s>\tif (item.isDirectory() &&!outputFile.isDirectory()) {\n</s>",
+        "<pad><s>\tif (item.getSize() == 0) {\n</s></s></s></s></s></s>",
+        "<pad><s>\tif (item.isDirectory() &&!outputFile.mkdirs()) {\n</s>",
+        "<pad><s>\tif (item.isDirectory())\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tif (item == null || item.isDirectory()) {\n</s></s></s></s></s>",
+        "<pad><s>\tif (compressedFile.isDirectory()) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>\tif (item.isDirectory()) {\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tif (!item.isDirectory()) {\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif (item.isDirectory() &&!outputFile.exists()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory() &&!outFile.exists()) {\n"
+        },
+        {
+            "patch": "\tif (item.isDirectory() &&!outputFile.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory() &&!outFile.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (item.getSize() == 0) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.getSize() == 0) {\n"
+        },
+        {
+            "patch": "\tif (item.isDirectory() &&!outputFile.mkdirs()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory() &&!outFile.mkdirs()) {\n"
+        },
+        {
+            "patch": "\tif (item.isDirectory())\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (entry.isDirectory())\n"
+        },
+        {
+            "patch": "\tif (item == null || item.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry == null || entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (compressedFile.isDirectory()) {\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (zipFile.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (item.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (!item.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "String s2 = \" < span class='severe'>#non# < /span> \";",
+        "s2 = offSiteControlLocation!= null? offSiteControlLocation: \"&nbsp; \";",
+        "String s2 = offSiteControlLocation!= null? \"&nbsp; \";",
+        "|| offSiteControlLocation!= null? offSiteControlLocation: \"&nbsp; \";",
+        "s2 = \" < span class='severe'>#non# < /span>&nbsp; \";",
+        "s2 = \" < span class='severe'>#non# < /span> \";",
+        "s2 = offSiteControlLocation!= null? \"&nbsp; \";",
+        "s2 = \" < span class='severe'>#non# < /span> < /span> \";",
+        "if (offSiteControlLocation!= null) { String s2 = \"&nbsp; \";",
+        "// offSiteControlLocation!= null? offSiteControlLocation: \"&nbsp; \";"
+    ],
+    "validation_result": [
+        {
+            "patch": "String s2 = \" < span class='severe'>#non# < /span> \";",
+            "correctness": "test_success",
+            "translated": "String s2 = \" < span class='severe'>#non# < /span> \";"
+        },
+        {
+            "patch": "s2 = offSiteControlLocation!= null? offSiteControlLocation: \"&nbsp; \";",
+            "correctness": "uncompilable",
+            "translated": "s2 = remoteAddr!= null? remoteAddr: \"&nbsp; \";"
+        },
+        {
+            "patch": "String s2 = offSiteControlLocation!= null? \"&nbsp; \";",
+            "correctness": "uncompilable",
+            "translated": "String s2 = remoteAddr!= null? \"&nbsp; \";"
+        },
+        {
+            "patch": "|| offSiteControlLocation!= null? offSiteControlLocation: \"&nbsp; \";",
+            "correctness": "uncompilable",
+            "translated": "|| remoteAddr!= null? remoteAddr: \"&nbsp; \";"
+        },
+        {
+            "patch": "s2 = \" < span class='severe'>#non# < /span>&nbsp; \";",
+            "correctness": "uncompilable",
+            "translated": "s2 = \" < span class='severe'>#non# < /span>&nbsp; \";"
+        },
+        {
+            "patch": "s2 = \" < span class='severe'>#non# < /span> \";",
+            "correctness": "uncompilable",
+            "translated": "s2 = \" < span class='severe'>#non# < /span> \";"
+        },
+        {
+            "patch": "s2 = offSiteControlLocation!= null? \"&nbsp; \";",
+            "correctness": "uncompilable",
+            "translated": "s2 = remoteAddr!= null? \"&nbsp; \";"
+        },
+        {
+            "patch": "s2 = \" < span class='severe'>#non# < /span> < /span> \";",
+            "correctness": "uncompilable",
+            "translated": "s2 = \" < span class='severe'>#non# < /span> < /span> \";"
+        },
+        {
+            "patch": "if (offSiteControlLocation!= null) { String s2 = \"&nbsp; \";",
+            "correctness": "uncompilable",
+            "translated": "if (remoteAddr!= null) { String s2 = \"&nbsp; \";"
+        },
+        {
+            "patch": "// offSiteControlLocation!= null? offSiteControlLocation: \"&nbsp; \";",
+            "correctness": "test_success",
+            "translated": "// remoteAddr!= null? remoteAddr: \"&nbsp; \";"
+        }
+    ]
+}

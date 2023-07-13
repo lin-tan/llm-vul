@@ -1,0 +1,67 @@
+{
+    "function range": "2,2-8,2",
+    "output": [
+        "\n\tString watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t?\n\n   ",
+        "\n\tString watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordA =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t?\n\n   ",
+        "\n\tString watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t?\n\t\n",
+        "\n\tString watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n?\n\n    }",
+        "\n\tString watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t?\n\n\n",
+        "\n\tString watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.\n\n =.\n\n\n;\n\twatchwordB =\n\n\tString watchwordA = encipheredWatchword;\n: watchwordB;\n\twatchwordA =?\n:\n\t?\n\n    }",
+        "\n\tString watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\n =\n\n   ",
+        "\n\tString watchwordA = encipheredWatchword;\n\tString watchwordB = unprocessedWatchword; if(\n\n\n\nEncipherTools.\n\n =.\n\n\n;\n\twatchwordB =\n\n\tString watchwordA = encipheredWatchword;\n: watchwordB;\n\twatchwordA =;\n\n =\n\t?\n\n    }",
+        "\n\tString watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t:\n\n   ",
+        "\n\tString watchwordA = encipheredWatchword;\n\tString watchwordB = unprocessedWatchword; if(\n\n\n\nEncipherTools.\n\n =.\n\n\n;\n\twatchwordB =\n\n\tString watchwordA = encipheredWatchword;\n: watchwordB;\n\twatchwordA =;\n\t\n =\n\t?\n\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "String watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t?",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass, pass2 = rawPass;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.equals(pass1, pass2) &&\n\n =.\n\n\n;\n\tpass2 =\n\n\n: pass2;\n\tpass1 =?\n =\n\t?"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordA =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t?",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass, pass2 = rawPass;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.equals(pass1, pass2) &&\n\n =.\n\n\n;\n\tpass1 =\n\n\n: pass2;\n\tpass1 =?\n =\n\t?"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t?",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass, pass2 = rawPass;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.equals(pass1, pass2) &&\n\n =.\n\n\n;\n\tpass2 =\n\n\n: pass2;\n\tpass1 =?\n =\n\t?"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n?\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass, pass2 = rawPass;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.equals(pass1, pass2) &&\n\n =.\n\n\n;\n\tpass2 =\n\n\n: pass2;\n\tpass1 =?\n =\n?\n\n    }"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t?",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass, pass2 = rawPass;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.equals(pass1, pass2) &&\n\n =.\n\n\n;\n\tpass2 =\n\n\n: pass2;\n\tpass1 =?\n =\n\t?"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.\n\n =.\n\n\n;\n\twatchwordB =\n\n\tString watchwordA = encipheredWatchword;\n: watchwordB;\n\twatchwordA =?\n:\n\t?\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass, pass2 = rawPass;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.\n\n =.\n\n\n;\n\tpass2 =\n\n\tString pass1 = encPass;\n: pass2;\n\tpass1 =?\n:\n\t?\n\n    }"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\n =",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass, pass2 = rawPass;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.equals(pass1, pass2) &&\n\n =.\n\n\n;\n\tpass2 =\n\n\n: pass2;\n\tpass1 =?\n =\n\n ="
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword;\n\tString watchwordB = unprocessedWatchword; if(\n\n\n\nEncipherTools.\n\n =.\n\n\n;\n\twatchwordB =\n\n\tString watchwordA = encipheredWatchword;\n: watchwordB;\n\twatchwordA =;\n\n =\n\t?\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass;\n\tString pass2 = rawPass; if(\n\n\n\nEncipherTools.\n\n =.\n\n\n;\n\tpass2 =\n\n\tString pass1 = encPass;\n: pass2;\n\tpass1 =;\n\n =\n\t?\n\n    }"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword, watchwordB = unprocessedWatchword;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.isEqualTo(watchwordA, watchwordB) &&\n\n =.\n\n\n;\n\twatchwordB =\n\n\n: watchwordB;\n\twatchwordA =?\n =\n\t:",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass, pass2 = rawPass;\n\tCaseInsensitive &&\n\n\n?\nEncipherTools.equals(pass1, pass2) &&\n\n =.\n\n\n;\n\tpass2 =\n\n\n: pass2;\n\tpass1 =?\n =\n\t:"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword;\n\tString watchwordB = unprocessedWatchword; if(\n\n\n\nEncipherTools.\n\n =.\n\n\n;\n\twatchwordB =\n\n\tString watchwordA = encipheredWatchword;\n: watchwordB;\n\twatchwordA =;\n\t\n =\n\t?",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass;\n\tString pass2 = rawPass; if(\n\n\n\nEncipherTools.\n\n =.\n\n\n;\n\tpass2 =\n\n\tString pass1 = encPass;\n: pass2;\n\tpass1 =;\n\t\n =\n\t?"
+        }
+    ]
+}

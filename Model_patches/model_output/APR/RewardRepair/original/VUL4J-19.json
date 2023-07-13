@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "SetCurrentAccessPermission(currentAccessPermission);",
+        ".setCurrentAccessPermission(currentAccessPermission);",
+        "CurrentAccessPermission(currentAccessPermission);",
+        "setCurrentAccessPermission(currentAccessPermission);",
+        "CurrentAccessPermission = currentAccessPermission;",
+        "nativeSetCurrentAccessPermission(currentAccessPermission);",
+        "n.setCurrentAccessPermission(currentAccessPermission);",
+        "this.currentAccessPermission = currentAccessPermission;",
+        "this.setCurrentAccessPermission(currentAccessPermission);",
+        "currentAccessPermission = new AccessPermission(currentAccessPermission);"
+    ],
+    "validation_result": [
+        {
+            "patch": "SetCurrentAccessPermission(currentAccessPermission);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".setCurrentAccessPermission(currentAccessPermission);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "CurrentAccessPermission(currentAccessPermission);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(currentAccessPermission);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "CurrentAccessPermission = currentAccessPermission;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "nativeSetCurrentAccessPermission(currentAccessPermission);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "n.setCurrentAccessPermission(currentAccessPermission);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.currentAccessPermission = currentAccessPermission;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.setCurrentAccessPermission(currentAccessPermission);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "currentAccessPermission = new AccessPermission(currentAccessPermission);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

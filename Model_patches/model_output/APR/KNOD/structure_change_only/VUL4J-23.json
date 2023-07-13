@@ -1,0 +1,65 @@
+{
+    "id": 14,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.6308,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(dataProvider.getContext());\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.6308,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(dataProvider.getFieldName());\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.6795,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(dataProvider.trim());\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.6212,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(type);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.7969,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(dataProvider.getName());\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.7182,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(context);\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.8478,
+            "fix_type": "general",
+            "patch": "return Encode.getMessage(dataProvider.getContext());\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.8478,
+            "fix_type": "general",
+            "patch": "return Encode.escape(dataProvider.getContext());\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.8708,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(dataProvider.toLowerCase());\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.8969,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(dataProvider.toString());\n"
+        }
+    ]
+}

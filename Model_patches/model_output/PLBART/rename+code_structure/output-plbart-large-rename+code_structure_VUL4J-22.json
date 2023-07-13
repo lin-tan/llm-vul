@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-10,5",
+    "output": [
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath() : circumstancePath; }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? \" \" : circumstancePath; }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath ; }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath; }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath ( ) : circumstancePath; }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath() : circumstancePath; }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? \" / \" : circumstancePath; }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath!= null? circumstancePath : r.getContextPath(); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath() : circumstancePath; }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath() : circumstancePath ; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath() : circumstancePath; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath == null? request.getContextPath() : contextPath; }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? \" \" : circumstancePath; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath == null? \" \" : contextPath; }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath ; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath ; }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath ; }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath ( ) : circumstancePath; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath == null? request.getContextPath() : contextPath; }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath() : circumstancePath; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath == null? request.getContextPath() : contextPath; }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? \" / \" : circumstancePath; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath == null? \" / \" : contextPath; }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath!= null? circumstancePath : r.getContextPath(); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath!= null? contextPath : request.getContextPath(); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath() : circumstancePath; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath == null? request.getContextPath() : contextPath; }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); circumstancePath = circumstancePath == null? r.getContextPath(): circumstancePath; return circumstancePath == null? r.getContextPath() : circumstancePath ; }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); contextPath = contextPath == null? request.getContextPath(): contextPath; return contextPath == null? request.getContextPath() : contextPath; }"
+        }
+    ]
+}

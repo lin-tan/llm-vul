@@ -1,0 +1,37 @@
+{
+    "VUL4J-10012-62-66": {
+        "src": "template = template . replace ( $STRING$ , path ) ; template = template . replace ( $STRING$ , additional CaMeL Info ) ; String routes = get CaMeL Routes ( event ) ; template = template . contains ( $STRING$ ) ? template . replace ( $STRING$ , routes ) : template ;",
+        "patches": [
+            {
+                "patch": "VaadinSession session = ui.getSession( ) ; DeploymentConfiguration config = session.getConfiguration( ) ; boolean productionMode = config.isProductionMode( ) ; String template = getErrorHtml( productionMode ) ; template = template.replace( 'RouteNotFoundError_prod.html', path ) ; template = template.replace( 'RouteNotFoundError_prod.html', additionalInfo ) ;"
+            },
+            {
+                "patch": "VaadinSession session = ui.getSession( ) ; DeploymentConfiguration config = session.getConfiguration( ) ; boolean productionMode = config.isProductionMode( ) ; String template = getErrorHtml( productionMode ) ; template = template.replace( 'href', path ) ; template = template.replace( 'href', additionalInfo ) ;"
+            },
+            {
+                "patch": "VaadinSession session = ui.getSession( ) ; DeploymentConfiguration config = session.getConfiguration( ) ; boolean productionMode = config.isProductionMode( ) ; String template = getErrorHtml( productionMode ) ; template = template.replace( ' (requires parameter)', path ) ; template = template.replace( ' (requires parameter)', additionalInfo ) ;"
+            },
+            {
+                "patch": "VaadinSession session = ui.getSession( ) ; DeploymentConfiguration config = session.getConfiguration( ) ; boolean productionMode = config.isProductionMode( ) ; String template = getErrorHtml( productionMode ) ; template = template.replace( ' (supports optional parameter)', path ) ; template = template.replace( ' (supports optional parameter)', additionalInfo ) ;"
+            },
+            {
+                "patch": "VaadinSession session = ui.getSession( ) ; DeploymentConfiguration config = session.getConfiguration( ) ; boolean productionMode = config.isProductionMode( ) ; String template = getErrorHtml( productionMode ) ; template = template.replace( ':', path ) ; template = template.replace( ':', additionalInfo ) ;"
+            },
+            {
+                "patch": "template = template.replace( 'RouteNotFoundError_prod.html', additionalInfo ) ; String routes = getRoutes( event ) ; template = template.contains( 'RouteNotFoundError_prod.html') ? template.replace( 'RouteNotFoundError_prod.html', routes ) : template ; String routes = getRoutes( event ) ; template = template.contains( 'RouteNotFoundError_prod.html') ? template.replace( 'RouteNotFoundError_prod.html', routes ) : template ;"
+            },
+            {
+                "patch": "template = template.replace( 'href', additionalInfo ) ; String routes = getRoutes( event ) ; template = template.contains( 'href') ? template.replace( 'href', routes ) : template ; String routes = getRoutes( event ) ; template = template.contains( 'href') ? template.replace( 'href', routes ) : template ;"
+            },
+            {
+                "patch": "template = template.replace( ' (requires parameter)', additionalInfo ) ; String routes = getRoutes( event ) ; template = template.contains( ' (requires parameter)') ? template.replace( ' (requires parameter)', routes ) : template ; String routes = getRoutes( event ) ; template = template.contains( ' (requires parameter)') ? template.replace( ' (requires parameter)', routes ) : template ;"
+            },
+            {
+                "patch": "template = template.replace( ' (supports optional parameter)', additionalInfo ) ; String routes = getRoutes( event ) ; template = template.contains( ' (supports optional parameter)') ? template.replace( ' (supports optional parameter)', routes ) : template ; String routes = getRoutes( event ) ; template = template.contains( ' (supports optional parameter)') ? template.replace( ' (supports optional parameter)', routes ) : template ;"
+            },
+            {
+                "patch": "template = template.replace( ':', additionalInfo ) ; String routes = getRoutes( event ) ; template = template.contains( ':') ? template.replace( ':', routes ) : template ; String routes = getRoutes( event ) ; template = template.contains( ':') ? template.replace( ':', routes ) : template ;"
+            }
+        ]
+    }
+}

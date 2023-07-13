@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    do {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    for(int index = 1;file.exists();index++){\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    for (int index = 1; file.exists(); index++) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    while(file.exists()){\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    for (int index = 2;file.exists();index++) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    for (int index = 2;file.exists();index++){\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    boolean exists = file.exists();\n    for(int index = 2;exists;index++){\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    boolean exist = file.exists();\n    for(int index = 2;exist;index++){\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    boolean exists = file.exists();\n    for(int index = 2;exists;index++){\n        exists = file.exists();\n<|endofmask|>",
+        "<|endoftext|>static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    name = q > 0? name.substring(0, q):name;\n    int dot = name.indexOf('.');\n    String prefix;\n    String suffix;\n    if(dot >= 0){\n        prefix  =  name.substring(0, dot);\n        suffix = name.substring(dot);\n    }else{\n        prefix = name;\n        suffix = \"\";\n    }\n    File file = new File(dir, name);\n// buggy lines start:\n    for(int index = 2;file.exists();index++){\n// buggy lines end\n        file = new File(dir, prefix + \"-\" + index + suffix);\n    }\n    File parentFile = file.getParentFile();\n    parentFile.mkdirs();\n    return file;\n}\n// fixed lines:\n    boolean exist = file.exists();\n    for(int index = 2;exist;index++){\n        exist = file.exists();\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    do {\n",
+            "correctness": "uncompilable",
+            "translated": "    do {\n"
+        },
+        {
+            "patch": "    for(int index = 1;file.exists();index++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 1;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for (int index = 1; file.exists(); index++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 1;file.exists();index++){\n"
+        },
+        {
+            "patch": "    while(file.exists()){\n",
+            "correctness": "uncompilable",
+            "translated": "    while(file.exists()){\n"
+        },
+        {
+            "patch": "    for (int index = 2;file.exists();index++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for (int index = 2;file.exists();index++) {\n"
+        },
+        {
+            "patch": "    for (int index = 2;file.exists();index++){\n",
+            "correctness": "compile_success",
+            "translated": "    for (int index = 2;file.exists();index++) {\n"
+        },
+        {
+            "patch": "    boolean exists = file.exists();\n    for(int index = 2;exists;index++){\n",
+            "correctness": "test_timeout",
+            "translated": "    boolean exists = file.exists();\n    for(int index = 2;exists;index++){\n"
+        },
+        {
+            "patch": "    boolean exist = file.exists();\n    for(int index = 2;exist;index++){\n",
+            "correctness": "test_timeout",
+            "translated": "    boolean exist = file.exists();\n    for(int index = 2;exist;index++){\n"
+        },
+        {
+            "patch": "    boolean exists = file.exists();\n    for(int index = 2;exists;index++){\n        exists = file.exists();\n",
+            "correctness": "compile_success",
+            "translated": "    boolean exists = file.exists();\n    for(int index = 2;exists;index++){\n        exists = file.exists();\n"
+        },
+        {
+            "patch": "    boolean exist = file.exists();\n    for(int index = 2;exist;index++){\n        exist = file.exists();\n",
+            "correctness": "compile_success",
+            "translated": "    boolean exist = file.exists();\n    for(int index = 2;exist;index++){\n        exist = file.exists();\n"
+        }
+    ]
+}

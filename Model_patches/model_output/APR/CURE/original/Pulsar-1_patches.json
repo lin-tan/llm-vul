@@ -1,0 +1,37 @@
+{
+    "VUL4J-10016-2303-2304": {
+        "src": "ledger . async CaMeL Read CaMeL Entry ( new Position CaMeL Impl ( ledger CaMeL Id , entry CaMeL Id ) , new Async CaMeL Callbacks . Read CaMeL Entry CaMeL Callback ( ) {",
+        "patches": [
+            {
+                "patch": "if( ledger == null ) { asyncResponse.resume( ) ; } PersistentTopic topic =( PersistentTopic ) getTopicReference( topicName ) ;"
+            },
+            {
+                "patch": "if( ledger != null ) { validateGlobalNamespaceOwnership( namespaceName ) ;"
+            },
+            {
+                "patch": "ledger.asyncReadEntry( new Runnable( ) { public void run( ) { ledger.asyncReadEntry( new Runnable( ) {"
+            },
+            {
+                "patch": "if( ledger != null ) { PersistentTopic topic =( PersistentTopic ) getTopicReference( topicName ) ; asyncResponse.resume( ) ;"
+            },
+            {
+                "patch": "ledger.asyncReadEntry( ledgerId , entryId ) ; ledger.asyncReadEntry( ledgerId , entryId ) ;"
+            },
+            {
+                "patch": "if( ledger != null ) { asyncResponse.resume( generateResponseWithEntry( entryId ) ) ;"
+            },
+            {
+                "patch": "final PersistentTopic topic =( PersistentTopic ) getTopicReference( topicName ) ;"
+            },
+            {
+                "patch": "if( ledger != null ) { ledger.asyncReadEntry( new Integer( ledger.getId( ) ) , entryId ) ;"
+            },
+            {
+                "patch": "if( ledger != null ) { ledger.asyncReadEntry( new Runnable( ) { public void run( ) {"
+            },
+            {
+                "patch": "if( topic != null ) { validateGlobalNamespaceOwnership( namespaceName ) ;"
+            }
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "id": 24,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.8479,
+            "fix_type": "insert",
+            "patch": "xmlIn.name();\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.8479,
+            "fix_type": "insert",
+            "patch": "xmlIn.get();\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.6416,
+            "fix_type": "general",
+            "patch": "xmlIn.setProperty(XMLInputFactory.WARNING,Boolean.width);\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.6644,
+            "fix_type": "general",
+            "patch": "xmlIn.get(Boolean.width,Boolean.height);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.6644,
+            "fix_type": "general",
+            "patch": "xmlIn.add(Boolean.width,Boolean.height);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.692,
+            "fix_type": "general",
+            "patch": "xmlIn.get(Boolean.height,Boolean.height);\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.692,
+            "fix_type": "general",
+            "patch": "xmlIn.add(Boolean.height,Boolean.height);\n"
+        },
+        {
+            "rank": 8,
+            "score": -1.3142,
+            "fix_type": "general",
+            "patch": "xmlIn.name();\n"
+        },
+        {
+            "rank": 9,
+            "score": -1.3142,
+            "fix_type": "general",
+            "patch": "xmlIn.get();\n"
+        },
+        {
+            "rank": 10,
+            "score": -1.3153,
+            "fix_type": "general",
+            "patch": "xmlIn.setProperty();\n"
+        }
+    ]
+}

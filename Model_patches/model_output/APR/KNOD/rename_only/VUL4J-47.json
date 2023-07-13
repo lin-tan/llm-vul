@@ -1,0 +1,47 @@
+{
+    "id": 21,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.8215,
+            "fix_type": "general",
+            "patch": "xmlInput.setProperty(Boolean.nextToken());\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.8215,
+            "fix_type": "general",
+            "patch": "xmlInput.setProperty(Boolean.close());\n"
+        },
+        {
+            "rank": 3,
+            "score": -1.3306,
+            "fix_type": "general",
+            "patch": "xmlInput.setProperty();\n"
+        },
+        {
+            "rank": 4,
+            "score": -5.5573,
+            "fix_type": "general",
+            "patch": "return;\n"
+        },
+        {
+            "rank": 5,
+            "score": -5.9136,
+            "fix_type": "general",
+            "patch": "break;\n"
+        },
+        {
+            "rank": 6,
+            "score": -6.0533,
+            "fix_type": "general",
+            "patch": "continue  ;\n"
+        },
+        {
+            "rank": 7,
+            "score": -6.1966,
+            "fix_type": "general",
+            "patch": ""
+        }
+    ]
+}

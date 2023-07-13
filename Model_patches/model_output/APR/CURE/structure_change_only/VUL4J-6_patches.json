@@ -1,0 +1,37 @@
+{
+    "VUL4J-6-311-312": {
+        "src": "int i = 0 ;",
+        "patches": [
+            {
+                "patch": "int zv32= ZipShort.getValue( data , offset +32) ;"
+            },
+            {
+                "patch": "int zv4= ZipShort.getValue( data , offset +4) ;"
+            },
+            {
+                "patch": "int zv22= ZipShort.getValue( data , offset +22) ;"
+            },
+            {
+                "patch": "int zv26= ZipShort.getValue( data , offset +26) ;"
+            },
+            {
+                "patch": "int zv24= ZipShort.getValue( data , offset +24) ;"
+            },
+            {
+                "patch": "int i =0; int i =0;"
+            },
+            {
+                "patch": "int i =0; while( i <0)"
+            },
+            {
+                "patch": "int i ;"
+            },
+            {
+                "patch": "while( i < this.rcount ) { i ++ ;"
+            },
+            {
+                "patch": "final int i =0; if( i >0;"
+            }
+        ]
+    }
+}

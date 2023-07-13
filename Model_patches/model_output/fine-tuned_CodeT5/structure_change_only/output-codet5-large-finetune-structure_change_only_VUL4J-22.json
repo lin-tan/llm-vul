@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return decodeRequestString(request, contextPath);\n</s></s></s></s></s></s></s>",
+        "<pad><s>    return contextPath;\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return contextPath == null? null : decodeRequestString(request, contextPath);\n</s>",
+        "<pad><s>    return decodeRequestString(request, contextPath, true);\n</s></s></s></s></s>",
+        "<pad><s>    return contextPath == null? \"String_Node_Str\" : contextPath;\n</s>",
+        "<pad><s>    return decodeContextPath(request, contextPath);\n</s></s></s></s></s></s></s>",
+        "<pad><s>    return decode(request, contextPath);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return getContextPath(request, contextPath);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return decodeRequestString(request, contextPath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return contextPath;\n",
+            "correctness": "compile_success",
+            "translated": "    return contextPath;\n"
+        },
+        {
+            "patch": "    return contextPath == null? null : decodeRequestString(request, contextPath);\n",
+            "correctness": "compile_success",
+            "translated": "    return contextPath == null? null : decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decodeRequestString(request, contextPath, true);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request, contextPath, true);\n"
+        },
+        {
+            "patch": "    return contextPath == null? \"String_Node_Str\" : contextPath;\n",
+            "correctness": "compile_success",
+            "translated": "    return contextPath == null? \"String_Node_Str\" : contextPath;\n"
+        },
+        {
+            "patch": "    return decodeContextPath(request, contextPath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeContextPath(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decode(request, contextPath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decode(request, contextPath);\n"
+        },
+        {
+            "patch": "    return getContextPath(request, contextPath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return getContextPath(request, contextPath);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

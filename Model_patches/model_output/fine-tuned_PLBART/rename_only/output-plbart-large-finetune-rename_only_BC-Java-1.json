@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return new LargeWholeNumber[S.getLength()];",
+        "return new LargeWholeNumber[S.size()];",
+        "return new LargeWholeNumber[S.acquireItemCount()];",
+        "return new LargeWholeNumber[S.getSize()];",
+        "return new LargeWholeNumber[S.getItemCount()];",
+        "return new LargeWholeNumber[2];",
+        "return new LargeWholeNumber[256];",
+        "return S.acquireItems();",
+        "return S;",
+        "return null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return new LargeWholeNumber[S.getLength()];",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[s.getLength()];"
+        },
+        {
+            "patch": "return new LargeWholeNumber[S.size()];",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[s.size()];"
+        },
+        {
+            "patch": "return new LargeWholeNumber[S.acquireItemCount()];",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[s.acquireItemCount()];"
+        },
+        {
+            "patch": "return new LargeWholeNumber[S.getSize()];",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[s.getSize()];"
+        },
+        {
+            "patch": "return new LargeWholeNumber[S.getItemCount()];",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[s.getItemCount()];"
+        },
+        {
+            "patch": "return new LargeWholeNumber[2];",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[2];"
+        },
+        {
+            "patch": "return new LargeWholeNumber[256];",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[256];"
+        },
+        {
+            "patch": "return S.acquireItems();",
+            "correctness": "uncompilable",
+            "translated": "return s.acquireItems();"
+        },
+        {
+            "patch": "return S;",
+            "correctness": "uncompilable",
+            "translated": "return s;"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "uncompilable",
+            "translated": "return null;"
+        }
+    ]
+}

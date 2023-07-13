@@ -1,0 +1,12 @@
+[
+  "return request.getForwardPage();",
+  "return request;",
+  "return request.add();",
+  "if((request == null)){\nreturn null;}",
+  "return this.request;",
+  "return null;",
+  "return request.debug();",
+  "return request.getPathInfo(\"null\");",
+  "return request.get();",
+  "if((request != null)){\n"
+]

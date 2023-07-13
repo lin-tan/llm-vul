@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-17,1",
+    "output": [
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    return f;\n}\n\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        f.mkdirs();\n    }\n    return f;\n}\n\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        f.mkdirs();\n    }\n    return f;\n}\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return f;\n}\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return f;\n}\n\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    try {\n        f.createNewFile();\n    } catch (IOException e) {\n        e.printStackTrace();\n    }\n    return f;\n}\n\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return f;\n}\n\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return f;\n}\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n        }\n    }\n    return f;\n}\n\n}\n",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        f.getParentFile().mkdirs();\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n        }\n    }\n    return f;\n}\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        f.mkdirs();\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        file.mkdirs();\n    }\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        f.mkdirs();\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        file.mkdirs();\n    }\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    try {\n        f.createNewFile();\n    } catch (IOException e) {\n        e.printStackTrace();\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    try {\n        file.createNewFile();\n    } catch (IOException e) {\n        e.printStackTrace();\n    }\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n        }\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n        }\n    }\n    return file;\n}"
+        },
+        {
+            "patch": "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    if (m > 0) {\n        titile = titile.substring(0, m);\n    }\n    File f = new File(folder, titile);\n    if (!f.exists()) {\n        f.getParentFile().mkdirs();\n        try {\n            f.createNewFile();\n        } catch (IOException e) {\n        }\n    }\n    return f;\n}",
+            "correctness": "compile_success",
+            "translated": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        file.getParentFile().mkdirs();\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n        }\n    }\n    return file;\n}"
+        }
+    ]
+}

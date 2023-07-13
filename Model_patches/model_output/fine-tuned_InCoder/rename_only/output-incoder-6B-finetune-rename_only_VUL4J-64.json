@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(inDataSequence);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, true));\n<|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence), null);\n<|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(swatheBeginningOfStringDetachingInDataSequence(inDataSequence));\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(swatheBeginingOfDataSequence(inDataSequence));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence());\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(dataSequence);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(swatheBeginingOfString(inDataSequence));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException {\n    XMLInputFactory producer = XMLInputFactory.newInstance();\n    producer.setProperty(XMLInputFactory.IS_COALESCING, true);\n    producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n// buggy lines end\n}\n// fixed lines:\n    return producer.createXMLStreamReader(inDataSequence, true);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return producer.createXMLStreamReader(inDataSequence);\n",
+            "correctness": "compile_success",
+            "translated": "    return factory.createXMLStreamReader(inputStream);\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, true));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence), null);\n",
+            "correctness": "compile_success",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), null);\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n",
+            "correctness": "compile_success",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginningOfStringDetachingInDataSequence(inDataSequence));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(swatheBeginningOfStringDetachingInDataSequence(inputStream));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfDataSequence(inDataSequence));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(swatheBeginingOfDataSequence(inputStream));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence());\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream());\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(dataSequence);\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(dataSequence);\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfString(inDataSequence));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(swatheBeginingOfString(inputStream));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(inDataSequence, true);\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(inputStream, true);\n"
+        }
+    ]
+}

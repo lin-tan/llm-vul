@@ -1,0 +1,12 @@
+[
+  "",
+  "return;\n",
+  "formalizePerm(presentUseConsent);\n",
+  "formalizePerm(cipher, lexiconConsent, cipherDescriptiveData);\n",
+  "presentUseConsent = new UseConsent(lexiconConsent);\n",
+  "calculateWatchword = watchword.getBytes(watchwordCharSet);\n",
+  "adjustPresentUseConsent(presentUseConsent);\n",
+  "presentUseConsent = UseConsent.acquireProprietorUseConsen();\n",
+  "adjustPresentUseConsent();\n",
+  "adjustPresentUseConsent(calculateWatchword);\n"
+]

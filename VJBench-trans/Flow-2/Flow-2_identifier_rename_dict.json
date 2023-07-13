@@ -1,0 +1,35 @@
+{
+    "method": {
+        "appendChild": "attachMember",
+        "getLocation": "acquirePlacement",
+        "isProductionMode": "beProductManner",
+        "hasCustomMessage": "withPersonalizedContent",
+        "getCustomMessage": "acquirePersonalizedContent",
+        "getUI": "acquireUI",
+        "getErrorHtml": "acquireMistakeHypertextMarkupLanguage",
+        "setErrorParameter": "putMistakeAttribute",
+        "getRoutes": "acquireWays",
+        "getConfiguration": "acquireArrangement",
+        "getElement": "acquireComponent",
+        "getPath": "acquirePath",
+        "getSession": "acquireSession"
+    },
+    "variable": {
+        "template": "templet",
+        "path": "way",
+        "productionMode": "productManner",
+        "parameter": "attribute",
+        "additionalInfo": "extraInformation",
+        "event": "occurrence",
+        "element": "component"
+
+    },
+    "class": {
+        "NotFoundException": "UndiscoveredException",
+        "Html": "HypertextMarkupLanguage",
+        "ErrorParameter": "ErrorAttribute",
+        "BeforeEnterEvent": "PriorToComeInCase",
+        "Element": "Component_",
+        "com.vaadin.flow.dom.Element":"com.vaadin.flow.dom.Component_"
+    }
+}

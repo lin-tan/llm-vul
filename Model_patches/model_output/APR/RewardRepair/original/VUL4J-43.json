@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (!entry.isDirectory()) {",
+        "if (!entry.isDirectory()) {",
+        "if (entry.isDirectory() && destDir!= null) {",
+        "if (entry.isDirectory() &&!destDir.exists()) {",
+        "if (entry!= null && entry.isDirectory()) {",
+        "if (entry.isDirectory() && destDir!= null) {",
+        "if (entry == null || entry.isDirectory()) {",
+        "if (entry.isDirectory() &&!destDir.exists()) {",
+        "if (entry.isDirectory() &&!entry.isDirectory()) {",
+        "if (entry!= null && entry.isDirectory()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry.isDirectory() && destDir!= null) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry.isDirectory() &&!destDir.exists()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry!= null && entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry.isDirectory() && destDir!= null) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry == null || entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry.isDirectory() &&!destDir.exists()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry.isDirectory() &&!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry!= null && entry.isDirectory()) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n                protected Collection<View> all() { return views.values(); } }@Override\n   \n\n   \n   \n           .add(new);\n    }",
+        "\n                protected Collection<View> all() { return views.values(); } }\n@Override\n   \n\n   \n   \n           .add(new);\n    }",
+        "\n                protected Collection<View> all() { return views.values(); }\n@Override\n   \n\n   \n   \n           .add(new);\n    }",
+        "\n                protected Collection<View> all() { return views.values(); } }@Deprecated\n   \n\n   \n   \n           .add(new);\n    }",
+        "\n                protected Collection<View> all() { return views.values(); } }@JsonIgnore\n   \n\n   \n   \n           .add(new);\n    }",
+        "\n                protected Collection<View> all() { return views.values(); } }\n@Deprecated\n   \n\n   \n   \n           .add(new);\n    }",
+        "\n                protected Collection<View> all() { return views.values(); } }@Override\n   \n\n   ",
+        "\n                protected Collection<View> all() { return views.values(); } }@Override\n   \n\n   \n   \n           .add(new);\n\n    }",
+        "\n                protected Collection<View> all() { return views.values(); } }@Override\n   \n    \n   \n   \n           .add(new);\n    }",
+        "\n                protected Collection<View> all() { return views.values(); }\n@Override\n   \n\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "protected Collection<View> all() { return views.values(); } }@Override\n   \n\n   \n   \n           .add(new);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); } }\n@Override\n   \n\n   \n   \n           .add(new);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); }\n@Override\n   \n\n   \n   \n           .add(new);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); } }@Deprecated\n   \n\n   \n   \n           .add(new);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); } }@JsonIgnore\n   \n\n   \n   \n           .add(new);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); } }\n@Deprecated\n   \n\n   \n   \n           .add(new);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); } }@Override",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); } }@Override\n   \n\n   \n   \n           .add(new);\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); } }@Override\n   \n    \n   \n   \n           .add(new);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values(); }\n@Override",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-50-163-165": {
+        "src": "String s $NUMBER$ = off CaMeL Site CaMeL Control CaMeL Location != null ? off CaMeL Site CaMeL Control CaMeL Location : $STRING$ ; compose ( s $NUMBER$ ) ;",
+        "patches": [
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : '</td>'; compose( s16) ; compose( followingColumnAlignRightField ) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : '</td><td>'; compose( s16) ; compose( followingColumnAlignRightField ) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : 'right'; compose( s16) ; compose( followingColumnAlignRightField ) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : \"</td><td align='right'>\"; compose( s16) ; compose( followingColumnAlignRightField ) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : \"<span class='severe'>#non#</span>\"; compose( s16) ; compose( followingColumnAlignRightField ) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : '</td>'; compose( s16) ; compose( s16) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : '</td><td>'; compose( s16) ; compose( s16) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : 'right'; compose( s16) ; compose( s16) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : \"</td><td align='right'>\"; compose( s16) ; compose( s16) ;"
+            },
+            {
+                "patch": "String s16= offSiteControlLocation != null ? offSiteControlLocation : \"<span class='severe'>#non#</span>\"; compose( s16) ; compose( s16) ;"
+            }
+        ]
+    }
+}

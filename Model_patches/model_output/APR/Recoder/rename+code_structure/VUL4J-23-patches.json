@@ -1,0 +1,12 @@
+[
+  "return Encode.JavaScriptStringEncoding(source);",
+  "return source;",
+  "return Encode.add(source);",
+  "return forJavaScriptSource(source);",
+  "return Encode.debug(source);",
+  "return (String)Encode.forJavaScriptSource(source);",
+  "return Encode.max(source);",
+  "return Encode.forJavaScriptSource(source, null);",
+  "return Encode.forJavaScriptSource(source, false);",
+  "return Encode.forJavaScriptSource(source);"
+]

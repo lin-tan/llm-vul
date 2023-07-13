@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "LOGGER.error( \"Unable to decode url: { }. \", url);",
+        "@Override @Override @Override @Override @Override @Nonnull",
+        "@Override @Override @Override @Override @Nonnull",
+        "LOGGER.error( \"Unable to decode url: { }. \", url); }",
+        "@Override @Override @Override @Override @Override @Nonnull",
+        "String encodedUrl = StringEscapeUtils.unescapeXml(url);",
+        "@Override @Override @Override @Override @Nonnull",
+        "@Override @Override @Override @Nonnull",
+        "@Override @Override @Override @Override @Override @Override",
+        "LOGGER.error( \"Unable to decode url { }. \", url);"
+    ],
+    "validation_result": [
+        {
+            "patch": "LOGGER.error( \"Unable to decode url: { }. \", url);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Override @Override @Override @Override @Nonnull",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override @Override @Override @Override @Nonnull",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "LOGGER.error( \"Unable to decode url: { }. \", url); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override @Override @Override @Override @Override @Nonnull",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String encodedUrl = StringEscapeUtils.unescapeXml(url);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Override @Override @Override @Nonnull",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override @Override @Override @Nonnull",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override @Override @Override @Override @Override @Override",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "LOGGER.error( \"Unable to decode url { }. \", url);",
+            "correctness": "compile_success"
+        }
+    ]
+}

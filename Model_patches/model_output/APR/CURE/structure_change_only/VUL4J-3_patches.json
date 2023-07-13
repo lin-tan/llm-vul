@@ -1,0 +1,37 @@
+{
+    "VUL4J-3-594-595": {
+        "src": "sfactory . set CaMeL Namespace CaMeL Aware ( true ) ;",
+        "patches": [
+            {
+                "patch": "sfactory = exchange.getXMLReader( ) ; } else { sfactory = exchange.getXMLReader( ) ;"
+            },
+            {
+                "patch": "sfactory = exchange.getXMLReader( ) ; } else { sfactory = null ; }"
+            },
+            {
+                "patch": "if( sfactory != null ) { sfactory.setFeature( Exchange.SAXPARSER_FACTORY , true ) ;"
+            },
+            {
+                "patch": "sfactory.setFeature( Exchange.SAXPARSER_FACTORY , true ) ;"
+            },
+            {
+                "patch": "if( sfactory == null ) { sfactory = exchange.getXMLReader( ) ;"
+            },
+            {
+                "patch": "if( sfactory == null ) { throw new IllegalArgumentException( ', new Object[]{javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, ') ; }"
+            },
+            {
+                "patch": "if( sfactory == null ) { throw new IllegalArgumentException( 'true') ; }"
+            },
+            {
+                "patch": "if( sfactory == null ) { throw new IllegalArgumentException( \"TransformerFactory doesn't support the feature {} with value {}, due to {}.\") ; }"
+            },
+            {
+                "patch": "if( sfactory == null ) { throw new IllegalArgumentException( 'http://apache.org/xml/properties/security-manager') ; }"
+            },
+            {
+                "patch": "if( sfactory == null ) { throw new IllegalArgumentException( \"DocumentBuilderFactory doesn't support the attribute {}, due to {}.\") ; }"
+            }
+        ]
+    }
+}

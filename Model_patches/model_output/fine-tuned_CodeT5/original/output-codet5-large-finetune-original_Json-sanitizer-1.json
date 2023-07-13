@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    }\n    if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) {\n        insert(i, '\\\\');\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>      case '>':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32)\n            && 'c' == (jsonish.charAt(i + 2) | 32)) {\n            insert(i, '\\\\');\n        }\n</s>",
+        "<pad><s>    }\n    if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32)\n        && 'c' == (jsonish.charAt(i + 2) | 32)) {\n        insert(i, '\\\\');\n</s></s></s></s></s></s>",
+        "<pad><s>      case '>':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) {\n            insert(i, '\\\\');\n        }\n</s></s></s>",
+        "<pad><s>        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) {\n            insert(i, '\\\\');\n        }\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32)\n            && 'c' == (jsonish.charAt(i + 2) | 32)) {\n            insert(i, '\\\\');\n        }\n</s></s></s></s></s></s>",
+        "<pad><s>    }\n    switch (ch) {\n    case '/':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) {\n        }\n</s>",
+        "<pad><s>        insert(i, '\\\\');\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    }\n    if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) {\n        insert(i, '\\\\');\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "      case '>':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32)\n            && 'c' == (jsonish.charAt(i + 2) | 32)) {\n            insert(i, '\\\\');\n        }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    }\n    if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32)\n        && 'c' == (jsonish.charAt(i + 2) | 32)) {\n        insert(i, '\\\\');\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "      case '>':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) {\n            insert(i, '\\\\');\n        }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) {\n            insert(i, '\\\\');\n        }\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32)\n            && 'c' == (jsonish.charAt(i + 2) | 32)) {\n            insert(i, '\\\\');\n        }\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    }\n    switch (ch) {\n    case '/':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) {\n        }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        insert(i, '\\\\');\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

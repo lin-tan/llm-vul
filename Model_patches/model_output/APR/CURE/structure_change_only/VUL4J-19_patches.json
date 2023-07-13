@@ -1,0 +1,37 @@
+{
+    "VUL4J-19-210-211": {
+        "src": "set CaMeL Current CaMeL Access CaMeL Permission ( new Access CaMeL Permission ( dic CaMeL Permissions ) ) ;",
+        "patches": [
+            {
+                "patch": "setCurrentAccessPermission( new AccessPermission( dicPermissions ) ) ;"
+            },
+            {
+                "patch": "setCurrentAccessPermission( new AccessPermission( dicPermissions , userKey , ownerKey , dicRevision , dicLength , encryptMetadata , false ) ) ;"
+            },
+            {
+                "patch": "setCurrentAccessPermission( new AccessPermission( dicPermissions ) ) ; }"
+            },
+            {
+                "patch": "setCurrentAccessPermission( new AccessPermission( dicPermissions , userKey , ownerKey , dicRevision , dicLength , encryptMetadata ) ) ;"
+            },
+            {
+                "patch": "setCurrentAccessPermission( AccessPermission.getOwnerAccessPermission( ) ) ;"
+            },
+            {
+                "patch": "if( ! isUserPassword( password.getBytes( passwordCharset ) ) ) { throw new InvalidPasswordException( 'JCE unlimited strength jurisdiction policy files are not installed') ;"
+            },
+            {
+                "patch": "if( ! isUserPassword( password.getBytes( passwordCharset ) ) ) { throw new InvalidPasswordException( 'AES') ;"
+            },
+            {
+                "patch": "if( ! isUserPassword( password.getBytes( passwordCharset ) ) ) { throw new InvalidPasswordException( 'SHA-256') ;"
+            },
+            {
+                "patch": "if( ! isUserPassword( password.getBytes( passwordCharset ) ) ) { throw new InvalidPasswordException( '3') ;"
+            },
+            {
+                "patch": "if( ! isUserPassword( password.getBytes( passwordCharset ) ) ) { throw new InvalidPasswordException( 'AES/CBC/NoPadding') ;"
+            }
+        ]
+    }
+}

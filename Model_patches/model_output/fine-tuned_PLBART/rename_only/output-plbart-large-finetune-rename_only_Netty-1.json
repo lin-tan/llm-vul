@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (z == ':' ||!Character.isWhitespace(z)) {",
+        "if (z == ':' || Character.isWhitespace(z)) {",
+        "if (z == ':' || Character.isISOControl(z)) {",
+        "if (z == ':' && Character.isWhitespace(z)) {",
+        "if (z == ':' &&!Character.isWhitespace(z)) {",
+        "if (z == ':' || Character.isWhitespace(z))",
+        "if (Character.isWhitespace(z)) {",
+        "if (z == ':' || isWhitespace(z)) {",
+        "if (!Character.isWhitespace(z)) {",
+        "if (z == ':') {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (z == ':' ||!Character.isWhitespace(z)) {",
+            "correctness": "compile_success",
+            "translated": "if (ch == ':' ||!Character.isWhitespace(ch)) {"
+        },
+        {
+            "patch": "if (z == ':' || Character.isWhitespace(z)) {",
+            "correctness": "compile_success",
+            "translated": "if (ch == ':' || Character.isWhitespace(ch)) {"
+        },
+        {
+            "patch": "if (z == ':' || Character.isISOControl(z)) {",
+            "correctness": "compile_success",
+            "translated": "if (ch == ':' || Character.isISOControl(ch)) {"
+        },
+        {
+            "patch": "if (z == ':' && Character.isWhitespace(z)) {",
+            "correctness": "compile_success",
+            "translated": "if (ch == ':' && Character.isWhitespace(ch)) {"
+        },
+        {
+            "patch": "if (z == ':' &&!Character.isWhitespace(z)) {",
+            "correctness": "compile_success",
+            "translated": "if (ch == ':' &&!Character.isWhitespace(ch)) {"
+        },
+        {
+            "patch": "if (z == ':' || Character.isWhitespace(z))",
+            "correctness": "uncompilable",
+            "translated": "if (ch == ':' || Character.isWhitespace(ch))"
+        },
+        {
+            "patch": "if (Character.isWhitespace(z)) {",
+            "correctness": "compile_success",
+            "translated": "if (Character.isWhitespace(ch)) {"
+        },
+        {
+            "patch": "if (z == ':' || isWhitespace(z)) {",
+            "correctness": "uncompilable",
+            "translated": "if (ch == ':' || isWhitespace(ch)) {"
+        },
+        {
+            "patch": "if (!Character.isWhitespace(z)) {",
+            "correctness": "compile_success",
+            "translated": "if (!Character.isWhitespace(ch)) {"
+        },
+        {
+            "patch": "if (z == ':') {",
+            "correctness": "compile_success",
+            "translated": "if (ch == ':') {"
+        }
+    ]
+}

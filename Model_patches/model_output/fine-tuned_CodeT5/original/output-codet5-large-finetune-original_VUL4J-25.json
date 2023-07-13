@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>            return mangleNamespaces(url);\n</s></s></s></s></s>",
+        "<pad><s>            return xssFilter.getValidHref(url);\n</s>",
+        "<pad><s>            return decode(url);\n</s></s></s></s></s></s></s>",
+        "<pad><s>            return xssFilter.isValidHref(url);\n</s></s>",
+        "<pad><s>            return xssFilter.getValidUrl(url);\n</s>",
+        "<pad><s>            return xssFilter.getValidUri(url);\n</s>",
+        "<pad><s>            return decodeUrl(url);\n</s></s></s></s></s></s>",
+        "<pad><s>            return url;\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>            return encode(url);\n</s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            return mangleNamespaces(url);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return xssFilter.getValidHref(url);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return decode(url);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return xssFilter.isValidHref(url);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return xssFilter.getValidUrl(url);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return xssFilter.getValidUri(url);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return decodeUrl(url);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return url;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return encode(url);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        }
+    ]
+}

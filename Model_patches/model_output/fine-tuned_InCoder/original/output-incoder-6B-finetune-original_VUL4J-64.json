@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), null);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), \"String_Node_Str\");\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return wrapPrefixRemovingInputStream(factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), true);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(stream));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(inputStream);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    XMLStreamReader reader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n    return reader;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    XMLStreamReader reader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n    reader.next();\n    return reader;\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), null);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), \"String_Node_Str\");\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return wrapPrefixRemovingInputStream(factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(stream));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(inputStream);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    XMLStreamReader reader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n    return reader;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    XMLStreamReader reader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n    reader.next();\n    return reader;\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

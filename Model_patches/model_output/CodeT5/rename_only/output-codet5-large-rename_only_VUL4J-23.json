@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-5,1",
+    "output": [
+        "\n\treturn dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n return\n return\n\n\n",
+        "\n\treturn dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\nreturn\n return\n\n\n",
+        "\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n return\n return\n\n\n",
+        "\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\nreturn\n return\n\n\n",
+        "\n\treturn dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n\n { return\n\n\n",
+        "\n\treturn dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n\n  return dataProvider;\n\n\n  return dataProvider;",
+        "\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n\n  return dataProvider;\n\n\n  return dataProvider;",
+        "\n\treturn dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n\n { return\n return\n",
+        "\n\treturn dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n return\n return\n return\n",
+        "\n\treturn dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n\n {\n return\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n return\n return",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n  return\n  return source;\n\n return\n return"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\nreturn\n return",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n  return\n  return source;\n\n return\n return"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n return\n return",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n  return\n  return source;\n\n return\n return"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\nreturn\n return",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n  return\n  return source;\n\n return\n return"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n\n { return",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n  return\n  return source;\n\n\n { return"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n\n  return dataProvider;\n\n\n  return dataProvider;",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n\n  return source;\n\n\n  return source;"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n\n  return dataProvider;\n\n\n  return dataProvider;",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n\n  return source;\n\n\n  return source;"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n\n { return\n return",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n  return\n  return source;\n\n\n { return\n return"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n return\n return\n return",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n  return\n  return source;\n\n return\n return\n return"
+        },
+        {
+            "patch": "return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n \n  return dataProvider;\n  return dataProvider;\n \n \n  return dataProvider;\n  return dataProvider;\n  return dataProvider;\n \n  return dataProvider;\n  return\n  return dataProvider;\n\n\n {\n return",
+            "correctness": "uncompilable",
+            "translated": "return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n \n  return source;\n  return source;\n \n \n  return source;\n  return source;\n  return source;\n \n  return source;\n  return\n  return source;\n\n\n { return"
+        }
+    ]
+}

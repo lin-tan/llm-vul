@@ -1,0 +1,65 @@
+{
+    "id": 27,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0774,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getReflectionProvider());\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1512,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getReflectionProvider(),getReflectionProvider());\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2011,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getMapper());\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2149,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper());\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1735,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getReflectionProvider(),getMapper());\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.324,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new Token(getReflectionProvider(),getReflectionProvider());\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.324,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new CharacterReader(getReflectionProvider(),getReflectionProvider());\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2669,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getReflectionProvider(),getReflectionProvider());\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.3283,
+            "fix_type": "general",
+            "patch": "  Token robustCollectionConverter = new Token(getReflectionProvider(),getReflectionProvider());\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.3283,
+            "fix_type": "general",
+            "patch": "  CharacterReader robustCollectionConverter = new CharacterReader(getReflectionProvider(),getReflectionProvider());\n"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-1004-1075-1077": {
+        "src": "for ( Node CaMeL Monitor monitor : Node CaMeL Monitor . get CaMeL All ( ) ) r . put ( monitor . get CaMeL Class ( ) . get CaMeL Name ( ) , monitor . data ( this ) ) ;",
+        "patches": [
+            {
+                "patch": "for( NodeMonitor monitor : NodeMonitor.getAll( ) ) r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ;"
+            },
+            {
+                "patch": "for( NodeMonitor monitor : NodeMonitor.getAll( ) ) { r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ; } return r ;"
+            },
+            {
+                "patch": "for( NodeMonitor monitor : NodeMonitor.getAll( ) ) r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ; return r ; result = new HashMap < String , Object >( ) ;"
+            },
+            {
+                "patch": "for( NodeMonitor monitor : NodeMonitor.getAll( ) ) { r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ; }"
+            },
+            {
+                "patch": "for( NodeMonitor monitor : NodeMonitor.getAll( ) ) { r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ;"
+            },
+            {
+                "patch": "for( NodeMonitor monitor : NodeMonitor.getAll( ) ) r.put( monitor.getClass( ).getName( ) , monitor.data( ) ) ;"
+            },
+            {
+                "patch": "for( Node monitor : NodeMonitor.getAll( ) ) r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ;"
+            },
+            {
+                "patch": "for( NodeMonitor monitor : NodeMonitor.getAll( ) ) r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ; result = new HashMap < String , Object >( ) ;"
+            },
+            {
+                "patch": "for( NodeMonitor monitor : new HashMap < String , Object >( ) ) r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ;"
+            },
+            {
+                "patch": "for( final NodeMonitor monitor : NodeMonitor.getAll( ) ) r.put( monitor.getClass( ).getName( ) , monitor.data( this ) ) ;"
+            }
+        ]
+    }
+}

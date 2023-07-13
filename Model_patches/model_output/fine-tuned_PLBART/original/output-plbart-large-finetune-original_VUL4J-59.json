@@ -1,0 +1,56 @@
+{
+    "output": [
+        "t.transition(data);",
+        "t.transition(Data_escape);",
+        "t.error(this);",
+        "t.transition(EOL);",
+        "t.transition(Data_null);",
+        "t.emitTagPending();",
+        "t.transition(TagPending);",
+        "t.transition(Data_end);",
+        "t.transition(EOS);",
+        "t.transition();"
+    ],
+    "validation_result": [
+        {
+            "patch": "t.transition(data);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(Data_escape);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.error(this);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "t.transition(EOL);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(Data_null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.emitTagPending();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "t.transition(TagPending);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(Data_end);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(EOS);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

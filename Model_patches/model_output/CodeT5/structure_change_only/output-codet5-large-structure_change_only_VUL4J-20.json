@@ -1,0 +1,57 @@
+{
+    "function range": "3,5-15,5",
+    "output": [
+        "\n        retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n       \n\n\n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n       \n       \n        retval[i] = get( i );\n\n   \n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n       \n       \n        retval[i] = get( i );\n\n\n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n       \n\n   \n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n public\n   \n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n public float[]\n   \n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n\n\n\n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n public float[]\n\n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n\n\n   \n\n\n\n",
+        "\n        retval[i] = get( i );\n       \n\n       \n       \n        retval[i] = get( i );\n\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "retval[i] = get( i );\n       \n\n        retval[i] = get( i );",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n       \n       \n        retval[i] = get( i );",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n       \n       \n        retval[i] = get( i );",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n        retval[i] = get( i );",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n public",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n public float[]",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n        retval[i] = get( i );",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n        retval[i] = get( i );\n   \n public float[]",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n        retval[i] = get( i );",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get( i );\n       \n\n       \n       \n        retval[i] = get( i );",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-61-68-69": {
+        "src": "Document CaMeL Builder archive CaMeL Creator = archive CaMeL Creator CaMeL Mill . new CaMeL Document CaMeL Builder ( ) ;",
+        "patches": [
+            {
+                "patch": "boolean breakDownAlongMistake =( boolean ) setting.getOrDefault( 'NEXT_SIBLING', true ) ;"
+            },
+            {
+                "patch": "boolean breakDownAlongMistake =( boolean ) setting.getOrDefault( 'FIRST_CHILD_OF', true ) ;"
+            },
+            {
+                "patch": "boolean breakDownAlongMistake =( boolean ) setting.getOrDefault( 'IS_CHILD_OF', true ) ;"
+            },
+            {
+                "patch": "boolean breakDownAlongMistake =( boolean ) setting.getOrDefault( 'NEXT', true ) ;"
+            },
+            {
+                "patch": "boolean breakDownAlongMistake =( boolean ) setting.getOrDefault( 'non empty parents', true ) ;"
+            },
+            {
+                "patch": "Map < String , Object > setting =( Map ) setting.getOrDefault( 'NEXT_SIBLING', true ) ;"
+            },
+            {
+                "patch": "Map < String , Object > setting =( Map ) setting.getOrDefault( 'FIRST_CHILD_OF', true ) ;"
+            },
+            {
+                "patch": "Map < String , Object > setting =( Map ) setting.getOrDefault( 'IS_CHILD_OF', true ) ;"
+            },
+            {
+                "patch": "Map < String , Object > setting =( Map ) setting.getOrDefault( 'NEXT', true ) ;"
+            },
+            {
+                "patch": "Map < String , Object > setting =( Map ) setting.getOrDefault( 'non empty parents', true ) ;"
+            }
+        ]
+    }
+}

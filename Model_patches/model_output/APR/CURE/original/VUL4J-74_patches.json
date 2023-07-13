@@ -1,0 +1,37 @@
+{
+    "VUL4J-74-40-50": {
+        "src": "if ( seed != null ) { byte [ ] seed CaMeL Bytes = File CaMeL Copy CaMeL Utils . copy CaMeL To CaMeL Byte CaMeL Array ( seed . get CaMeL Input CaMeL Stream ( ) ) ; rnd . set CaMeL Seed ( seed CaMeL Bytes ) ; } else { rnd . next CaMeL Bytes ( new byte [ 1 ] ) ; }",
+        "patches": [
+            {
+                "patch": "if( seed != null ) { byte [ ] seedBytes = seed.getInputStream( ) ; rnd.setSeed( seedBytes ) ; } else { rnd.nextBytes( new byte [1] ) ; }"
+            },
+            {
+                "patch": "try { if( seed != null ) { byte [ ] seedBytes = new byte [1] ; rnd.setSeed( seedBytes ) ; rnd.setSeed( seedBytes ) ; } else { rnd.nextBytes( new byte [1] ) ; }"
+            },
+            {
+                "patch": "if( seed != null ) { byte [ ] seedBytes = new byte [1] ; rnd.setSeed( seedBytes ) ; rnd.setSeed( seedBytes ) ; } else { rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ; }"
+            },
+            {
+                "patch": "if( seed != null ) { byte [ ] seedBytes = seed.getInputStream( ) ; rnd.setSeed( seedBytes ) ; } else { rnd.nextBytes( new byte [1] ) ;"
+            },
+            {
+                "patch": "if( seed != null ) { byte [ ] seedBytes = seed.getInputStream( ) ; if( seedBytes == null ) { rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ; }"
+            },
+            {
+                "patch": "if( seed != null ) { SecureRandom rnd = SecureRandom.getInstance( algorithm ) ; if( seed != null ) { rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ;"
+            },
+            {
+                "patch": "if( seed != null ) { rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ; }"
+            },
+            {
+                "patch": "if( seed != null ) { rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ; } return rnd ;"
+            },
+            {
+                "patch": "if( seed != null ) { byte [ ] seedBytes = new byte [1] ; rnd.setSeed( seedBytes ) ; rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ; }"
+            },
+            {
+                "patch": "if( seed != null ) { byte [ ] seedBytes = seed.getInputStream( ) ; rnd.setSeed( seedBytes ) ; } else { rnd.nextBytes( new byte [1] ) ; } else { rnd.nextBytes( new byte [1] ) ; }"
+            }
+        ]
+    }
+}

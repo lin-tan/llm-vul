@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "= template.replace( \" { { path } } \", path);",
+        "template = template.replace( \" { { path } } \", path);",
+        "= template.replace( \" { { route } } \", additionalInfo);",
+        "= template.replace( \" { { route } } \", path);",
+        "= template.replace( \" { { path } } \", additionalInfo);",
+        "= template.replace( \" { { path } } \", getRoutes(event));",
+        "template = template.replace( \" { { route } } \", path);",
+        "= template.replace( \" { { route } } \", getRoutes(event));",
+        "= template.replace( \" { { routes } } \", additionalInfo);",
+        "template = template.replace( \" { { path } } \", getRoutes(event));"
+    ],
+    "validation_result": [
+        {
+            "patch": "= template.replace( \" { { path } } \", path);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace( \" { { path } } \", path);",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "= template.replace( \" { { route } } \", additionalInfo);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= template.replace( \" { { route } } \", path);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= template.replace( \" { { path } } \", additionalInfo);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= template.replace( \" { { path } } \", getRoutes(event));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace( \" { { route } } \", path);",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "= template.replace( \" { { route } } \", getRoutes(event));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= template.replace( \" { { routes } } \", additionalInfo);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace( \" { { path } } \", getRoutes(event));",
+            "correctness": "test_success"
+        }
+    ]
+}

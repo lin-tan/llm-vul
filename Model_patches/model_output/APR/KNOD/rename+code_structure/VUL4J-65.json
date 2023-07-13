@@ -1,0 +1,65 @@
+{
+    "id": 32,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0239,
+            "fix_type": "general",
+            "patch": "for (int position = 2;f.exists();position++)\n{\nf = new File(folder,beginning + \"-\" + position + postfix);\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1329,
+            "fix_type": "general",
+            "patch": "for (int position = 2;;position,position,position,position++)\n{\nf = new File(folder);\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5417,
+            "fix_type": "insert",
+            "patch": "  int logger = 0;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.0877,
+            "fix_type": "general",
+            "patch": "for (int position = 2;f.exists(),f.exists();position)\n{\nf = new File(folder,beginning + \"-\" + position + postfix);\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1333,
+            "fix_type": "general",
+            "patch": "for (int position = 2;;position,position,position,position)\n{\nf = new File(folder,beginning + \"-\" + position + postfix);\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5545,
+            "fix_type": "insert",
+            "patch": "if (postfix == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.1082,
+            "fix_type": "general",
+            "patch": "for (int position = 2;f.exists();)\n{\nf = new File(folder,beginning + \"-\" + position + postfix);\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.112,
+            "fix_type": "general",
+            "patch": "for (int position = 2;f.exists();position++)\n{\nf = new File(folder,beginning + \"\" + position + postfix);\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.112,
+            "fix_type": "general",
+            "patch": "for (int position = 2;f.exists();position++)\n{\nf = new File(folder,beginning + \"0\" + position + postfix);\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.1597,
+            "fix_type": "general",
+            "patch": "for (int position = 2;;position,position++)\n{\nf = new File(folder,beginning + \"-\" + position + postfix);\n}\n"
+        }
+    ]
+}

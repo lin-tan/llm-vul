@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (requestFilename!= null &&!HandlerHelper.isPathUnsafe(requestFilename)) {",
+        "if (requestFilename == null ||!HandlerHelper.isPathUnsafe(requestFilename)) {",
+        "if (requestFilename == null ||!HandlerHelper.isPathUnsafe(requestFilename)) {",
+        "if (requestFilename!=null &&!HandlerHelper.isPathUnsafe(requestFilename)) {",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename).find()) {",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename.toLowerCase())) {",
+        "if (requestFilename == null &&!HandlerHelper.isPathUnsafe(requestFilename)) {",
+        "if ((requestFilename == null) ||!HandlerHelper.isPathUnsafe(requestFilename)) {",
+        "if (requestFilename == null &&!HandlerHelper.isPathUnsafe(requestFilename)) {",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename.toLowerCase())) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (requestFilename!= null &&!HandlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename == null ||!HandlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename == null ||!HandlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename!=null &&!HandlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename).find()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename.toLowerCase())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename == null &&!HandlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if ((requestFilename == null) ||!HandlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename == null &&!HandlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename.toLowerCase())) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

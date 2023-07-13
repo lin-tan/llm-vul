@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "readPresentUseConsent(new UseConsent(lexiconConsent));",
+        "n = adjustPresentUseConsent(new UseConsent(lexiconConsent));",
+        "presentUseConsent(new UseConsent(lexiconConsent));",
+        "adjustPresentUseConsent(new UseConsent(lexiconConsent));",
+        "removePresentUseConsent(new UseConsent(lexiconConsent));",
+        "AdjustPresentUseConsent(new UseConsent(lexiconConsent));",
+        "applyPresentUseConsent(new UseConsent(lexiconConsent));",
+        "acquireUseConsent(new UseConsent(lexiconConsent));",
+        "acquireProprietorUseConsen();",
+        "removeUseConsent(new UseConsent(lexiconConsent));"
+    ],
+    "validation_result": [
+        {
+            "patch": "readPresentUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "readPresentUseConsent(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "n = adjustPresentUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "n = setCurrentAccessPermission(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "presentUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "currentAccessPermission(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "compile_success",
+            "translated": "setCurrentAccessPermission(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "removePresentUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "removePresentUseConsent(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "AdjustPresentUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "AdjustPresentUseConsent(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "applyPresentUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "applyPresentUseConsent(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "acquireUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "acquireUseConsent(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "acquireProprietorUseConsen();",
+            "correctness": "uncompilable",
+            "translated": "getOwnerAccessPermission();"
+        },
+        {
+            "patch": "removeUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "removeUseConsent(new AccessPermission(dicPermissions));"
+        }
+    ]
+}

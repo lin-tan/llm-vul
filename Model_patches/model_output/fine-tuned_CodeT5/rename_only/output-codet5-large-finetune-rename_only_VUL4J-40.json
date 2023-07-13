@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (CustomerOfDatabase.acquireCustomerTitle()!= null &&!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {\n</s>",
+        "<pad><s>    if (!CustomerOfDatabase.acquireCustomerTitle().equalsIgnoreCase(CustomerOfRequest.acquireCustomerTitle())) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (CustomerOfDatabase.acquireCustomerTitle() == null ||!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {\n</s>",
+        "<pad><s>    if (CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (!CustomerOfDatabase.acquireCustomerName().equals(CustomerOfRequest.acquireCustomerName())) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (!CustomerOfDatabase.acquireTitle().equals(CustomerOfRequest.acquireTitle())) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (CustomerOfDatabase.acquireCustomerTitle()!= CustomerOfRequest.acquireCustomerTitle()) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()))\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {\n",
+            "correctness": "test_timeout",
+            "translated": "    if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {\n"
+        },
+        {
+            "patch": "    if (CustomerOfDatabase.acquireCustomerTitle()!= null &&!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {\n",
+            "correctness": "test_timeout",
+            "translated": "    if (scimUserFromDb.getUserName()!= null &&!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {\n"
+        },
+        {
+            "patch": "    if (!CustomerOfDatabase.acquireCustomerTitle().equalsIgnoreCase(CustomerOfRequest.acquireCustomerTitle())) {\n",
+            "correctness": "test_timeout",
+            "translated": "    if (!scimUserFromDb.getUserName().equalsIgnoreCase(scimUserFromRequest.getUserName())) {\n"
+        },
+        {
+            "patch": "    if (CustomerOfDatabase.acquireCustomerTitle() == null ||!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {\n",
+            "correctness": "test_timeout",
+            "translated": "    if (scimUserFromDb.getUserName() == null ||!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {\n"
+        },
+        {
+            "patch": "    if (CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {\n",
+            "correctness": "test_timeout",
+            "translated": "    if (scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {\n"
+        },
+        {
+            "patch": "    if (!CustomerOfDatabase.acquireCustomerName().equals(CustomerOfRequest.acquireCustomerName())) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!scimUserFromDb.acquireCustomerName().equals(scimUserFromRequest.acquireCustomerName())) {\n"
+        },
+        {
+            "patch": "    if (!CustomerOfDatabase.acquireTitle().equals(CustomerOfRequest.acquireTitle())) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!scimUserFromDb.acquireTitle().equals(scimUserFromRequest.acquireTitle())) {\n"
+        },
+        {
+            "patch": "    if (CustomerOfDatabase.acquireCustomerTitle()!= CustomerOfRequest.acquireCustomerTitle()) {\n",
+            "correctness": "test_timeout",
+            "translated": "    if (scimUserFromDb.getUserName()!= scimUserFromRequest.getUserName()) {\n"
+        },
+        {
+            "patch": "    if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()))\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName()))\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

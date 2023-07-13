@@ -1,0 +1,65 @@
+{
+    "id": 2,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0131,
+            "fix_type": "general",
+            "patch": "smill.setNamespaceAware(true)"
+        },
+        {
+            "rank": 2,
+            "score": -0.4003,
+            "fix_type": "general",
+            "patch": "smill.setNamespaceAware(true,true)"
+        },
+        {
+            "rank": 3,
+            "score": -0.5695,
+            "fix_type": "insert",
+            "patch": "if (smill == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5915,
+            "fix_type": "general",
+            "patch": "smill.setNamespaceAware(\"SAXParser doesn't support the feature {} with value {}, due to {}.\")"
+        },
+        {
+            "rank": 5,
+            "score": -0.6855,
+            "fix_type": "general",
+            "patch": "smill.setNamespaceAware(true,null)"
+        },
+        {
+            "rank": 6,
+            "score": -0.7088,
+            "fix_type": "general",
+            "patch": "smill.setNamespaceAware(false)"
+        },
+        {
+            "rank": 7,
+            "score": -0.8513,
+            "fix_type": "general",
+            "patch": "smill.setNamespaceAware().setNamespaceAware(true)"
+        },
+        {
+            "rank": 8,
+            "score": -0.6407,
+            "fix_type": "general",
+            "patch": "smill.setNamespaceAware(\"Cannot create the SAXParser XMLReader, due to {}\")"
+        },
+        {
+            "rank": 9,
+            "score": -0.7516,
+            "fix_type": "general",
+            "patch": "smill.setNamespaceAware(true,interchange)"
+        },
+        {
+            "rank": 10,
+            "score": -0.6564,
+            "fix_type": "insert",
+            "patch": "defaultCharset = true;\n"
+        }
+    ]
+}

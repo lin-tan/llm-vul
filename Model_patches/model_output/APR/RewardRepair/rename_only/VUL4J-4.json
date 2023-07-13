@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "InputStream inputStream = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(InputStream.class, interchange, content);",
+        "InputStream inputStream = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(InputStream.class, interchange, content);",
+        "ref = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(InputStream.class, interchange, content);",
+        "if (reply == null && content instanceof String) { reply = new InputSource(new StringReader((String) content)); } }",
+        "if (reply == null) { if (content instanceof WrappedFile || content instanceof String) { reply = new InputSource(new StringReader((String) content)); } }",
+        "result = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(InputStream.class, interchange, content);",
+        "if (reply == null) { if (content instanceof String) { reply = new InputSource(new StringReader((String) content)); } }",
+        "if (reply == null) { return null; } } else if (content instanceof String) { reply = new InputSource(new StringReader((String) content)); } }",
+        "BeanExecution beanExecution = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(BeanExecution.class, interchange, content);",
+        "reply = new InputSource(new StringReader((String) content)); } } else if (content instanceof String) { reply = new InputSource(new StringReader((String) content));"
+    ],
+    "validation_result": [
+        {
+            "patch": "InputStream inputStream = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(InputStream.class, interchange, content);",
+            "correctness": "uncompilable",
+            "translated": "InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);"
+        },
+        {
+            "patch": "InputStream inputStream = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(InputStream.class, interchange, content);",
+            "correctness": "uncompilable",
+            "translated": "InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);"
+        },
+        {
+            "patch": "ref = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(InputStream.class, interchange, content);",
+            "correctness": "uncompilable",
+            "translated": "ref = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);"
+        },
+        {
+            "patch": "if (reply == null && content instanceof String) { reply = new InputSource(new StringReader((String) content)); } }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null && body instanceof String) { answer = new InputSource(new StringReader((String) body)); } }"
+        },
+        {
+            "patch": "if (reply == null) { if (content instanceof WrappedFile || content instanceof String) { reply = new InputSource(new StringReader((String) content)); } }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (body instanceof WrappedFile || body instanceof String) { answer = new InputSource(new StringReader((String) body)); } }"
+        },
+        {
+            "patch": "result = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(InputStream.class, interchange, content);",
+            "correctness": "uncompilable",
+            "translated": "result = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);"
+        },
+        {
+            "patch": "if (reply == null) { if (content instanceof String) { reply = new InputSource(new StringReader((String) content)); } }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (body instanceof String) { answer = new InputSource(new StringReader((String) body)); } }"
+        },
+        {
+            "patch": "if (reply == null) { return null; } } else if (content instanceof String) { reply = new InputSource(new StringReader((String) content)); } }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { return null; } } else if (body instanceof String) { answer = new InputSource(new StringReader((String) body)); } }"
+        },
+        {
+            "patch": "BeanExecution beanExecution = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(BeanExecution.class, interchange, content);",
+            "correctness": "uncompilable",
+            "translated": "BeanInvocation beanExecution = exchange.getContext().getTypeConverter().convertTo(BeanInvocation.class, exchange, body);"
+        },
+        {
+            "patch": "reply = new InputSource(new StringReader((String) content)); } } else if (content instanceof String) { reply = new InputSource(new StringReader((String) content));",
+            "correctness": "uncompilable",
+            "translated": "answer = new InputSource(new StringReader((String) body)); } } else if (body instanceof String) { answer = new InputSource(new StringReader((String) body));"
+        }
+    ]
+}

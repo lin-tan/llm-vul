@@ -1,0 +1,57 @@
+{
+    "function range": "2,2-19,2",
+    "output": [
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //\n\t",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //\n\t",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //\n\t\t",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //\n\t\n",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //\n",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile();\t\n\t",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //\n\t\t",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //\n\t\n",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //\n",
+        "\n\tif (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile();\t\n\t\t"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile(); //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!outFile.exists()) {\n\t\t\n\t\ttry {\n\t}\n\tif (!entry.isDirectory()) {\n\n\t\ttry\n\t\tcatch (IOException e) {}\n\t\n\n\tif (!entry.isDirectory()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n\t\n\n\nFile();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "NodeMonitor monitor = nodeMonitorList.get(i);\n",
+  "NodeMonitor monitor = r.get(i);\n",
+  "NodeMonitor monitor = monitor.get(i);\n",
+  "NodeMonitor monitor = nodeMonitorList.get(r);\n",
+  "NodeMonitor monitor = i.get(i);\n",
+  "NodeMonitor monitor = nodeMonitorList.get(monitor);\n",
+  "r.put(name, monitor.data(this));\n",
+  "i++;\n",
+  "nodeMonitorList.get(i);\n",
+  "if((i != null)){\n"
+]

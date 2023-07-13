@@ -1,0 +1,66 @@
+{
+    "output": [
+        "retval[i] = (float) getObject( i);",
+        "retval[i] = (COSNumber) getObject( i);",
+        "retval[i] = getObject( i).floatValue();",
+        "retval[i] = getCOSNumber( i);",
+        "retval[i] = getCOSNumber(i);",
+        "retval[i] = (float) getObject( i);",
+        "retval[i] = getCOSNumber(getObject( i));",
+        "retval[i] = (Float) getObject( i);",
+        "retval[i] = getObject( i);",
+        "retval[i] = getCOSNumber(i);"
+    ],
+    "validation_result": [
+        {
+            "patch": "retval[i] = (float) getObject( i);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (float) getObject( i);"
+        },
+        {
+            "patch": "retval[i] = (COSNumber) getObject( i);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (COSNumber) getObject( i);"
+        },
+        {
+            "patch": "retval[i] = getObject( i).floatValue();",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = getObject( i).floatValue();"
+        },
+        {
+            "patch": "retval[i] = getCOSNumber( i);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = getCOSNumber( i);"
+        },
+        {
+            "patch": "retval[i] = getCOSNumber(i);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = getCOSNumber( i);"
+        },
+        {
+            "patch": "retval[i] = (float) getObject( i);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (float) getObject( i);"
+        },
+        {
+            "patch": "retval[i] = getCOSNumber(getObject( i));",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = getCOSNumber(getObject( i));"
+        },
+        {
+            "patch": "retval[i] = (Float) getObject( i);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (Float) getObject( i);"
+        },
+        {
+            "patch": "retval[i] = getObject( i);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = getObject( i);"
+        },
+        {
+            "patch": "retval[i] = getCOSNumber(i);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = getCOSNumber( i);"
+        }
+    ]
+}

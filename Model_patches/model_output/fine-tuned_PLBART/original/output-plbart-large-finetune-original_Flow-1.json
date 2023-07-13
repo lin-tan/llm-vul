@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+        "if (isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+        "if (!isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().debug(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().warn(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+        "if (isUnsafePath(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+        "if (HandlerUtils.isPathUnsafe(requestFilename)) { getLogger().info(HandlerUtils.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+        "if (handlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().debug(\"String_Node_Str\", requestFilename);",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_PATTERN, requestFilename);"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().debug(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().warn(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (isUnsafePath(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (HandlerUtils.isPathUnsafe(requestFilename)) { getLogger().info(HandlerUtils.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (handlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().debug(\"String_Node_Str\", requestFilename);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_PATTERN, requestFilename);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

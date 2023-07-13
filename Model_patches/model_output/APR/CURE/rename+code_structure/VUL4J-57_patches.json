@@ -1,0 +1,37 @@
+{
+    "VUL4J-57-62-63": {
+        "src": "if ( ! measure . acquire CaMeL Delay ( ) || ( point instanceof Occupation ) ) {",
+        "patches": [
+            {
+                "patch": "if( ! measure.acquireDelay( ) ||( point != null && ! measure.acquireDelay( ) ) ) {"
+            },
+            {
+                "patch": "if( measure.acquireParameter( ) == null ) { if( ! measure.acquireParameter( ).isEmpty( ) ) {"
+            },
+            {
+                "patch": "if( ! measure.acquireDelay( ) || ! measure.acquireDelay( ) ) {"
+            },
+            {
+                "patch": "if( ! measure.acquireDelay( ) ||( ! measure.acquireDelay( ) || ! point.acquireDelay( ) ) ) {"
+            },
+            {
+                "patch": "if(( measure.acquireParameter( ) == null ) ||( point.acquireParameter( ).isEmpty( ) ) ) {"
+            },
+            {
+                "patch": "if(( point.acquireDelay( ) == null ) ||( point.acquireDelay( ) == null ) ) {"
+            },
+            {
+                "patch": "if( ! measure.acquireDelay( ) || ! point.acquireDelay( ) ) {"
+            },
+            {
+                "patch": "if( ! measure.acquireDelay( ) ) { if( ! measure.acquireDelay( ) ) {"
+            },
+            {
+                "patch": "if( ! measure.acquireDelay( ) ||( point.acquireParameter( ) == null ) ) {"
+            },
+            {
+                "patch": "if( ! measure.acquireDelay( ) ||( point != null && ! point.acquireDelay( ) ) ) {"
+            }
+        ]
+    }
+}

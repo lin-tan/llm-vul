@@ -1,0 +1,66 @@
+{
+    "output": [
+        "int terminalColon;",
+        "char terminalColon;",
+        "int terminalColon = 0;",
+        "int terminalColonBeginning;",
+        "final int terminalColon;",
+        "int terminalColon = -1;",
+        "int terminalColon = 1;",
+        "int termColon;",
+        "String terminalColon;",
+        "final int terminalColon = 0;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int terminalColon;",
+            "correctness": "compile_success",
+            "translated": "int colonEnd;"
+        },
+        {
+            "patch": "char terminalColon;",
+            "correctness": "uncompilable",
+            "translated": "char colonEnd;"
+        },
+        {
+            "patch": "int terminalColon = 0;",
+            "correctness": "compile_success",
+            "translated": "int colonEnd = 0;"
+        },
+        {
+            "patch": "int terminalColonBeginning;",
+            "correctness": "uncompilable",
+            "translated": "int terminalColonBeginning;"
+        },
+        {
+            "patch": "final int terminalColon;",
+            "correctness": "uncompilable",
+            "translated": "final int colonEnd;"
+        },
+        {
+            "patch": "int terminalColon = -1;",
+            "correctness": "compile_success",
+            "translated": "int colonEnd = -1;"
+        },
+        {
+            "patch": "int terminalColon = 1;",
+            "correctness": "compile_success",
+            "translated": "int colonEnd = 1;"
+        },
+        {
+            "patch": "int termColon;",
+            "correctness": "uncompilable",
+            "translated": "int termColon;"
+        },
+        {
+            "patch": "String terminalColon;",
+            "correctness": "uncompilable",
+            "translated": "String colonEnd;"
+        },
+        {
+            "patch": "final int terminalColon = 0;",
+            "correctness": "uncompilable",
+            "translated": "final int colonEnd = 0;"
+        }
+    ]
+}

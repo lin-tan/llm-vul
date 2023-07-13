@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = ((COSNumeral) acquireItem(j)).floatContent();\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = ((COSNumeral)acquireItem(j)).floatContent();\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = acquireItem(j).floatContent();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = (COSNumeral) acquireItem(j).floatContent();\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = ((COSNumeral)acquireItem()).floatContent();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = ((COSNumeral) acquireItem(j)).floatValue();\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = ((Number)acquireItem( j )).floatValue();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = ((COSNumeral)acquireItemDouble(j)).floatContent();\n<|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = ((COSNumeral)getItem()).floatContent();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] transformToFloatArray()\n{\n    float[] result = new float[length()];\n    for (int j = 0; j < length(); j++)\n    {\n// buggy lines start:\n        result[j] = ((COSNumeral)acquireItem( j )).floatContent();\n// buggy lines end\n    }\n    return result;\n}\n// fixed lines:\n        result[j] = ((COSNumeral)acquireItem(j)).floatValue();\n<|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        result[j] = ((COSNumeral) acquireItem(j)).floatContent();\n",
+            "correctness": "compile_success",
+            "translated": "        retval[i] = ((COSNumber) getObject(i)).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = ((COSNumeral)acquireItem(j)).floatContent();\n",
+            "correctness": "compile_success",
+            "translated": "        retval[i] = ((COSNumber) getObject(i)).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = acquireItem(j).floatContent();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = getObject(i).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = (COSNumeral) acquireItem(j).floatContent();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (COSNumber) getObject(i).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = ((COSNumeral)acquireItem()).floatContent();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = ((COSNumber)getObject()).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = ((COSNumeral) acquireItem(j)).floatValue();\n",
+            "correctness": "compile_success",
+            "translated": "        retval[i] = ((COSNumber) getObject(i)).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = ((Number)acquireItem( j )).floatValue();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = ((Number)getObject( i )).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = ((COSNumeral)acquireItemDouble(j)).floatContent();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = ((COSNumber)acquireItemDouble(i)).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = ((COSNumeral)getItem()).floatContent();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = ((COSNumber)getItem()).floatValue();\n"
+        },
+        {
+            "patch": "        result[j] = ((COSNumeral)acquireItem(j)).floatValue();\n",
+            "correctness": "compile_success",
+            "translated": "        retval[i] = ((COSNumber) getObject(i)).floatValue();\n"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\tif (item.isDirectory()) {\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tif (!item.getName().endsWith(\"String_Node_Str\")) {\n</s>",
+        "<pad><s>\tif (item!= null &&!item.isDirectory()) {\n</s></s></s></s></s>",
+        "<pad><s>\tif (!item.getName().equals(\"String_Node_Str\")) {\n</s></s>",
+        "<pad><s>\tif (!item.isDirectory() && item.getSize() > 0) {\n</s>",
+        "<pad><s>\tif (!item.isDirectory() &&!item.isFile()) {\n</s></s></s>",
+        "<pad><s>\tif (!item.getSize() == 0) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>\tif (!compressedFile.isDirectory()) {\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tif (!item.isDirectory())\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif (item.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (!item.getName().endsWith(\"String_Node_Str\")) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.getName().endsWith(\"String_Node_Str\")) {\n"
+        },
+        {
+            "patch": "\tif (item!= null &&!item.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry!= null &&!entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (!item.getName().equals(\"String_Node_Str\")) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.getName().equals(\"String_Node_Str\")) {\n"
+        },
+        {
+            "patch": "\tif (!item.isDirectory() && item.getSize() > 0) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.isDirectory() && entry.getSize() > 0) {\n"
+        },
+        {
+            "patch": "\tif (!item.isDirectory() &&!item.isFile()) {\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!entry.isDirectory() &&!entry.isFile()) {\n"
+        },
+        {
+            "patch": "\tif (!item.getSize() == 0) {\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!entry.getSize() == 0) {\n"
+        },
+        {
+            "patch": "\tif (!compressedFile.isDirectory()) {\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!zipFile.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (!item.isDirectory())\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!entry.isDirectory())\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

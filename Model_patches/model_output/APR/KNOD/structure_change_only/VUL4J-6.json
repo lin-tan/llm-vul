@@ -1,0 +1,65 @@
+{
+    "id": 5,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1316,
+            "fix_type": "general",
+            "patch": "  int i = 0;\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.4854,
+            "fix_type": "insert",
+            "patch": "this.format = 0;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4854,
+            "fix_type": "insert",
+            "patch": "this.centralData = 0;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.3259,
+            "fix_type": "general",
+            "patch": "  int i = 1;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.3528,
+            "fix_type": "general",
+            "patch": "  int i;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4154,
+            "fix_type": "general",
+            "patch": "this.format = true;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4154,
+            "fix_type": "general",
+            "patch": "this.centralData = true;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4928,
+            "fix_type": "insert",
+            "patch": "this.format = false;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4928,
+            "fix_type": "insert",
+            "patch": "this.centralData = false;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.3323,
+            "fix_type": "general",
+            "patch": "  int i = format.format;\n"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(UNENCODED_SET.contains(c)) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(UNENCODED_SET.contains(c)){\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(UNENCODED_SET.contains(c) == false){\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(c == null ||!UNENCODED_SET.contains(c)) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(c == null || UNENCODED_SET.contains(c)) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(UNENCODED_SET.contains(c))\n\t{\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(!UNENCODED_SET.contains(cStr)) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(UNENCODED_SET.contains(c)) {\n\t\treturn cStr;\n\t} else {\n<|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(UNENCODED_SET.contains(c)){ \n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n// buggy lines start:\n\tif(!UNENCODED_SET.contains(c)){\n// buggy lines end\n\t\tbyte[] bytes = toUtf8Bytes(cStr);\n\t\tStringBuilder sb = new StringBuilder(bytes.length * 3);\n\t\tint i =0;\n\t\twhile(i<bytes.length){\n\t\t\tsb.append('%');\n\t\t\tappendTwoUpperHex(sb, bytes[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn sb.toString();\n\t}\n\treturn cStr;\n}\n// fixed lines:\n\tif(UNENCODED_SET.contains(c))\n\t\treturn cStr;\n\telse{\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c)) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif(UNENCODED_SET.contains(c)) {\n"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(UNENCODED_SET.contains(c)) {\n"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c) == false){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(UNENCODED_SET.contains(c) == false){\n"
+        },
+        {
+            "patch": "\tif(c == null ||!UNENCODED_SET.contains(c)) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif(c == null ||!UNENCODED_SET.contains(c)) {\n"
+        },
+        {
+            "patch": "\tif(c == null || UNENCODED_SET.contains(c)) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif(c == null || UNENCODED_SET.contains(c)) {\n"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c))\n\t{\n",
+            "correctness": "compile_success",
+            "translated": "\tif(UNENCODED_SET.contains(c)) {\n"
+        },
+        {
+            "patch": "\tif(!UNENCODED_SET.contains(cStr)) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif(!UNENCODED_SET.contains(cStr)) {\n"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c)) {\n\t\treturn cStr;\n\t} else {\n",
+            "correctness": "uncompilable",
+            "translated": "\tif(UNENCODED_SET.contains(c)) {\n\t\treturn cStr;\n\t} else {\n"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c)){ \n",
+            "correctness": "compile_success",
+            "translated": "\tif(UNENCODED_SET.contains(c)) {\n"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c))\n\t\treturn cStr;\n\telse{\n",
+            "correctness": "uncompilable",
+            "translated": "\tif(UNENCODED_SET.contains(c))\n\t\treturn cStr;\n\telse{\n"
+        }
+    ]
+}

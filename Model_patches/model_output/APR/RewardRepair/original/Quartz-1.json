@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "docBuilder = docBuilderFactory.newInstance();",
+        "docBuilder = docBuilderFactory.newInstance().newDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newInstance().getDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newInstance();",
+        "docBuilder = docBuilderFactory.newInstance().createDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newDocumentBuilder(true);",
+        "docBuilder = docBuilderFactory.newProcessingDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newInstance().buildDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newInternalDocumentBuilder();"
+    ],
+    "validation_result": [
+        {
+            "patch": "docBuilder = docBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newInstance().newDocumentBuilder();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newInstance().getDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newInstance().createDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newProcessingDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newInstance().buildDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newInternalDocumentBuilder();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

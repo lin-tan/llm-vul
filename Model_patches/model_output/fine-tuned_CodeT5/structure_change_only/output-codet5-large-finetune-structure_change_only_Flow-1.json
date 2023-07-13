@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        if (HandlerHelper.isPathUnsafe(requestFilename)) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>        if (requestFilename!= null &&!HandlerHelper.isPathUnsafe(requestFilename)) {\n</s>",
+        "<pad><s>        if (!HandlerHelper.isPathUnsafe(requestFilename, true)) {\n</s></s></s></s></s>",
+        "<pad><s>        if (handlerHelper.isPathUnsafe(requestFilename)) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>        if (!HandlerHelper.isPathUnsafe(requestFilename, false)) {\n</s></s></s></s></s>",
+        "<pad><s>        if (HandlerHelper.isPathSafe(requestFilename)) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>        if (!isPathUnsafe(requestFilename)) {\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        if (!HandlerHelper.isPathUnsafe(requestFilename))\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        if (HandlerHelper.isPathUnsafe(requestFilename)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (requestFilename!= null &&!HandlerHelper.isPathUnsafe(requestFilename)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (!HandlerHelper.isPathUnsafe(requestFilename, true)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        if (handlerHelper.isPathUnsafe(requestFilename)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        if (!HandlerHelper.isPathUnsafe(requestFilename, false)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        if (HandlerHelper.isPathSafe(requestFilename)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        if (!isPathUnsafe(requestFilename)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        if (!HandlerHelper.isPathUnsafe(requestFilename))\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

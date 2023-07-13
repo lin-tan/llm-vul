@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return \" \";",
+        "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return \" \";",
+        "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath);",
+        "if (!contextPath.equals( \"/ \")) return decodeRequestString(request, contextPath); else return \" \";",
+        "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, \" \");",
+        "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath);",
+        "if (!contextPath.equals( \"/ \")) return decodeRequestString(request, contextPath); else return \" \";",
+        "if (! \"/ \".equalsIgnoreCase(contextPath)) return decodeRequestString(request, contextPath); else return \" \";",
+        "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return null;",
+        "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return \" \";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return \" \";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!contextPath.equals( \"/ \")) return decodeRequestString(request, contextPath); else return \" \";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, \" \");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!contextPath.equals( \"/ \")) return decodeRequestString(request, contextPath); else return \" \";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (! \"/ \".equalsIgnoreCase(contextPath)) return decodeRequestString(request, contextPath); else return \" \";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return null;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return null;",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, contextPath);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return contextPath;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, contextPath, true);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, contextPath, false);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, contextPath).trim();\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestPath(request, contextPath);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(context, contextPath);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return encodeRequestString(request, contextPath);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    if (contextPath == null) {\n        contextPath = request.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(contextPath)) {\n        contextPath = \"\";\n    }\n    return decodeRequestString(request, contextPath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, contextPath, request.getLocale());\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return decodeRequestString(request, contextPath);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return contextPath;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return decodeRequestString(request);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(request, contextPath, true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(request, contextPath, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(request, contextPath).trim();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return decodeRequestPath(request, contextPath);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(context, contextPath);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return encodeRequestString(request, contextPath);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(request, contextPath, request.getLocale());\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

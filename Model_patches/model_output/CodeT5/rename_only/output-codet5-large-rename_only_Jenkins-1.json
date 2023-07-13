@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-8,1",
+    "output": [
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n    return z;\n\nInline\n\n\n  }",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"version\", 1);\n\n\n    return z;\n\nInline\n\n\n  }",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"version\", 1);\n\n\n    return z;\n\nInline\n\n\n}",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n    return z;\n\nInline\n\n\n}",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"version\", 1);\n\n\n    return z;\n}",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n\nInline\n\n\n  }",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n\n\nInline\n\n\n  }",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n    return z;\n\nInline\n\n    \n  }",
+        "\n }"
+    ],
+    "validation_result": [
+        {
+            "patch": "}",
+            "correctness": "uncompilable",
+            "translated": "}"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n    return z;\n\nInline\n\n\n  }",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"version\", \"1.0\");\n    r.put(\"acquired\", true);\n\n\n    return r;\n\nInline\n\n\n  }"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"version\", 1);\n\n\n    return z;\n\nInline\n\n\n  }",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"version\", \"1.0\");\n    r.put(\"version\", 1);\n\n\n    return r;\n\nInline\n\n\n  }"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"version\", 1);\n\n\n    return z;\n\nInline\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"version\", \"1.0\");\n    r.put(\"version\", 1);\n\n\n    return r;\n\nInline\n\n\n  }"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n    return z;\n\nInline\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"version\", \"1.0\");\n    r.put(\"acquired\", true);\n\n\n    return r;\n\nInline\n\n\n  }"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"version\", 1);\n\n\n    return z;\n}",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"version\", \"1.0\");\n    r.put(\"version\", 1);\n\n\n    return r;\n}"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n\nInline\n\n\n  }",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"version\", \"1.0\");\n    r.put(\"acquired\", true);\n\n\n\nInline\n\n\n  }"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n\n\nInline\n\n\n  }",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"version\", \"1.0\");\n    r.put(\"acquired\", true);\n\n\n\nInline\n\n\n  }"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    z.put(\"type\", \"proctor\");\n    z.put(\"version\", \"1.0\");\n    z.put(\"acquired\", true);\n\n\n    return z;\n\nInline\n\n    \n  }",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n@AcquireProctorInformation\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"version\", \"1.0\");\n    r.put(\"acquired\", true);\n\n\n    return r;\n\nInline\n\n\n  }"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable",
+            "translated": "}"
+        }
+    ]
+}

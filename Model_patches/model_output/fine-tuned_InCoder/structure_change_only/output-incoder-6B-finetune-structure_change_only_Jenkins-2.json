@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return itemValues;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return viewableItems;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return Collections.unmodifiableCollection(itemValues);\n<|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return new ArrayList(itemValues);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return getViewableItems(itemValues);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return new ArrayList<>(itemValues);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return new ArrayList<TopLevelItem>(itemValues);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return Collections.unmodifiableList(itemValues);\n<|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return viewableItems.addAll(itemValues);\n<|endofmask|>",
+        "<|endoftext|>public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n// buggy lines start:\n    if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&\n       !(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {\n        Iterator<TopLevelItem> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            TopLevelItem item = iterator.next();\n            if (!item.hasPermission(Item.READ))\n                continue;\n            viewableItems.add(item);\n        }\n        return viewableItems;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return getViewableItems(itemValues, false);\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return itemValues;\n",
+            "correctness": "uncompilable",
+            "translated": "    return itemValues;\n"
+        },
+        {
+            "patch": "    return viewableItems;\n",
+            "correctness": "compile_success",
+            "translated": "    return viewableItems;\n"
+        },
+        {
+            "patch": "    return Collections.unmodifiableCollection(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return Collections.unmodifiableCollection(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList(itemValues);\n"
+        },
+        {
+            "patch": "    return getViewableItems(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return getViewableItems(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList<>(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<>(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList<TopLevelItem>(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<TopLevelItem>(itemValues);\n"
+        },
+        {
+            "patch": "    return Collections.unmodifiableList(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return Collections.unmodifiableList(itemValues);\n"
+        },
+        {
+            "patch": "    return viewableItems.addAll(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return viewableItems.addAll(itemValues);\n"
+        },
+        {
+            "patch": "    return getViewableItems(itemValues, false);\n",
+            "correctness": "uncompilable",
+            "translated": "    return getViewableItems(itemValues, false);\n"
+        }
+    ]
+}

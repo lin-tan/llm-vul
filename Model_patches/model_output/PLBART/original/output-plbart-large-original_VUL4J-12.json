@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-9,1",
+    "output": [
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt >= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt < 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); if (v < 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (v >= vt ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); if ( (v & vt) == vt ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); if ( (v & vt)!= vt ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); if ( (v & vt)!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (v < 0 && vt!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+        "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt >= 0 && vt < t) { vt = (-1 << t) + 1; v += vt; } return v; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt >= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt < 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); if (v < 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (v >= vt ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); if ( (v & vt) == vt ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); if ( (v & vt)!= vt ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); if ( (v & vt)!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (v < 0 && vt!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt >= 0 && vt < t) { vt = (-1 << t) + 1; v += vt; } return v; }",
+            "correctness": "test_success"
+        }
+    ]
+}

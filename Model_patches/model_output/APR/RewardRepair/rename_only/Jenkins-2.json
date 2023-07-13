@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < >(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < >(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < PeakDegreeElement>(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < Object>(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < PeakDegreeElement>(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < Integer>(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < ArrayDegreeElement>(elements.values()); }",
+        "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < Object>(elements.values()); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList(elements.values()); }",
+            "correctness": "test_success",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < >(elements.values()); }",
+            "correctness": "test_success",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList < >(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList(elements.values()); }",
+            "correctness": "test_success",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < >(elements.values()); }",
+            "correctness": "test_success",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList < >(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < PeakDegreeElement>(elements.values()); }",
+            "correctness": "test_success",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList < TopLevelItem>(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < Object>(elements.values()); }",
+            "correctness": "uncompilable",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList < Object>(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < PeakDegreeElement>(elements.values()); }",
+            "correctness": "test_success",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList < TopLevelItem>(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < Integer>(elements.values()); }",
+            "correctness": "uncompilable",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList < Integer>(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < ArrayDegreeElement>(elements.values()); }",
+            "correctness": "uncompilable",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList < ArrayDegreeElement>(items.values()); }"
+        },
+        {
+            "patch": "if (mandateScheme instanceof MandateScheme.Unguarded) { return new ArrayList < Object>(elements.values()); }",
+            "correctness": "uncompilable",
+            "translated": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList < Object>(items.values()); }"
+        }
+    ]
+}

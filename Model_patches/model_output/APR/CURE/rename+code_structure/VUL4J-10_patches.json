@@ -1,0 +1,37 @@
+{
+    "VUL4J-10-649-650": {
+        "src": "Output CaMeL Stream production = acquire CaMeL Out CaMeL Data CaMeL Sequence ( ) ;",
+        "patches": [
+            {
+                "patch": "OutputStream production = null ; OutputStream production = null ; OutputStream production = null ;"
+            },
+            {
+                "patch": "OutputStream production = new FileOutputStream( getClass( ).getResource( 'name=%s, StoreLocation=%s, size=%s bytes, isFormField=%s, FieldName=%s') ) ;"
+            },
+            {
+                "patch": "OutputStream production = new FileOutputStream( getClass( ).getResource( '00000000') ) ;"
+            },
+            {
+                "patch": "OutputStream production = new FileOutputStream( getClass( ).getResource( 'upload_%s_%s.tmp') ) ;"
+            },
+            {
+                "patch": "OutputStream production = new FileOutputStream( getClass( ).getResource( 'java.io.tmpdir') ) ;"
+            },
+            {
+                "patch": "OutputStream production = new FileOutputStream( getClass( ).getResource( 'Cannot write uploaded file to disk!') ) ;"
+            },
+            {
+                "patch": "OutputStream production = getInputStream( ) ;"
+            },
+            {
+                "patch": "inch.defaultReadObject( ) ;"
+            },
+            {
+                "patch": "if( inch [0] != null ) { inch.defaultReadObject( ) ;"
+            },
+            {
+                "patch": "if( production == null ) { throw new RuntimeException( 'name=%s, StoreLocation=%s, size=%s bytes, isFormField=%s, FieldName=%s') ; }"
+            }
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+        "if (!(value.getClass().equals(String.class)) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+        "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+        "if (!(value.getClass().equals(String.class)) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+        "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value))) {",
+        "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).find()) {",
+        "if (!(value.getClass().equals(String.class)) || Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+        "If (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+        "if (!(value.getClass().equals(String.class)) || (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches())) {",
+        "if (!(value.getClass().equals(Object.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value))) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).find()) {",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) || Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "If (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) || (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(Object.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

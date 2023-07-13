@@ -1,0 +1,12 @@
+[
+  "HttpHeaders nettyHeaders = new DefaultHttpHeaders(true);\n",
+  "HttpHeaders nettyHeaders = new DefaultHttpHeaders(\"null\");\n",
+  "HttpHeaders nettyHeaders = new DefaultHttpHeaders(null);\n",
+  "new DefaultHttpHeaders(false);\n",
+  "nettyHeaders = new DefaultHttpHeaders(false);\n",
+  "DefaultHttpHeaders nettyHeaders = new DefaultHttpHeaders(false);\n",
+  "HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n",
+  "final HttpHeaders nettyHeaders = new DefaultHttpHeaders(false);\n",
+  "HttpHeaders nettyHeaders = new DefaultHttpHeaders(false);\n",
+  "HttpHeaders nettyHeaders = new DefaultHttpHeaders(e);\n"
+]

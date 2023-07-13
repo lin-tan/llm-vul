@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-12,1",
+    "output": [
+        " else if (circumstancePath.length() == 0) { else {",
+        " else if (circumstancePath.equals(\"/\")) { else {",
+        " else {\n    if (circumstancePath == null) {",
+        " else if (circumstancePath.isEmpty()) { else {",
+        "\n    else if (circumstancePath.length() == 0) {\n    else {",
+        " else if (circumstancePath == \"/\") { else {",
+        " else if (circumstancePath == null) { else {",
+        " else if (circumstancePath == \"\") { else {",
+        "\n    if (circumstancePath == null) { else {",
+        "\n    else if (circumstancePath.length() == 0) { else {"
+    ],
+    "validation_result": [
+        {
+            "patch": "else if (circumstancePath.length() == 0) { else {",
+            "correctness": "uncompilable",
+            "translated": "else if (contextPath.length() == 0) { else {"
+        },
+        {
+            "patch": "else if (circumstancePath.equals(\"/\")) { else {",
+            "correctness": "uncompilable",
+            "translated": "else if (contextPath.equals(\"/\")) { else {"
+        },
+        {
+            "patch": "else {\n    if (circumstancePath == null) {",
+            "correctness": "uncompilable",
+            "translated": "else {\n    if (contextPath == null) {"
+        },
+        {
+            "patch": "else if (circumstancePath.isEmpty()) { else {",
+            "correctness": "uncompilable",
+            "translated": "else if (contextPath.isEmpty()) { else {"
+        },
+        {
+            "patch": "else if (circumstancePath.length() == 0) {\n    else {",
+            "correctness": "uncompilable",
+            "translated": "else if (contextPath.length() == 0) { else {"
+        },
+        {
+            "patch": "else if (circumstancePath == \"/\") { else {",
+            "correctness": "uncompilable",
+            "translated": "else if (contextPath == \"/\") { else {"
+        },
+        {
+            "patch": "else if (circumstancePath == null) { else {",
+            "correctness": "uncompilable",
+            "translated": "else if (contextPath == null) { else {"
+        },
+        {
+            "patch": "else if (circumstancePath == \"\") { else {",
+            "correctness": "uncompilable",
+            "translated": "else if (contextPath == \"\") { else {"
+        },
+        {
+            "patch": "if (circumstancePath == null) { else {",
+            "correctness": "uncompilable",
+            "translated": "if (contextPath == null) { else {"
+        },
+        {
+            "patch": "else if (circumstancePath.length() == 0) { else {",
+            "correctness": "uncompilable",
+            "translated": "else if (contextPath.length() == 0) { else {"
+        }
+    ]
+}

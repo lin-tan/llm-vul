@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return dataProvider;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScriptSource(dataProvider).toString();\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return \"String_Node_Str\";\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScript(dataProvider);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.toJavaScriptSource(dataProvider);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encoding.forJavaScriptSource(dataProvider);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        dataProvider = Encode.forJavaScriptSource(dataProvider);\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScriptSource(dataProvider, true);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScriptSource(dataProvider).encode();\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScriptSource(dataProvider, null);\n<|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        return dataProvider;\n",
+            "correctness": "compile_success",
+            "translated": "        return source;\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(dataProvider).toString();\n",
+            "correctness": "compile_success",
+            "translated": "        return Encode.forJavaScriptSource(source).toString();\n"
+        },
+        {
+            "patch": "        return \"String_Node_Str\";\n",
+            "correctness": "compile_success",
+            "translated": "        return \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScript(dataProvider);\n",
+            "correctness": "compile_success",
+            "translated": "        return Encode.forJavaScript(source);\n"
+        },
+        {
+            "patch": "        return Encode.toJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.toJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return Encoding.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encoding.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        dataProvider = Encode.forJavaScriptSource(dataProvider);\n",
+            "correctness": "compile_success",
+            "translated": "        source = Encode.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(dataProvider, true);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptSource(source, true);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(dataProvider).encode();\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptSource(source).encode();\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(dataProvider, null);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptSource(source, null);\n"
+        }
+    ]
+}

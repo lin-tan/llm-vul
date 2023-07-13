@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>\tString pass1 = encPass;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString pass1 = encPass == null? null : encPass + \"\";\n</s></s></s></s></s>",
+        "<pad><s>\tString pass1 = encPass == null? \"String_Node_Str\" : encPass;\n</s>",
+        "<pad><s>\tString pass1 = encPass.toLowerCase(Locale.ENGLISH);\n</s></s></s></s></s></s>",
+        "<pad><s>\tString pass1 = encPass.trim();\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString pass1 = encPass!= null? encPass + \"\" : null;\n</s></s></s></s></s>",
+        "<pad><s>\tString pass1 = PasswordEncoderUtils.encode(encPass);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString pass1 = encrypt(encPass);\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tString pass1 = encPass;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "\tString pass1 = encPass == null? null : encPass + \"\";\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "\tString pass1 = encPass == null? \"String_Node_Str\" : encPass;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "\tString pass1 = encPass.toLowerCase(Locale.ENGLISH);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tString pass1 = encPass.trim();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tString pass1 = encPass!= null? encPass + \"\" : null;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "\tString pass1 = PasswordEncoderUtils.encode(encPass);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tString pass1 = encrypt(encPass);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

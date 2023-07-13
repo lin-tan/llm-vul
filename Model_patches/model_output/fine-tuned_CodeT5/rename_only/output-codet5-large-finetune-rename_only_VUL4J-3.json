@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        } else {\n            sproducer = SAXParserFactory.newInstance();\n        }\n</s>",
+        "<pad><s>        }\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        } else\n            sproducer = SAXParserFactory.newInstance();\n</s></s></s></s></s>",
+        "<pad><s>        } else {\n            sproducer = sproducer.newInstance();\n        }\n</s>",
+        "<pad><s>        } else {\n            sproducer = new SAXParserFactory();\n        }\n</s></s></s>",
+        "<pad><s>        } else\n            sproducer = sproducerFactory.newInstance();\n</s></s></s></s>",
+        "<pad><s>        });\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        };\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        } else {\n            sproducer = SAXParserFactory.newInstance();\n        }\n",
+            "correctness": "compile_success",
+            "translated": "        } else {\n            sfactory = SAXParserFactory.newInstance();\n        }\n"
+        },
+        {
+            "patch": "        }\n",
+            "correctness": "compile_success",
+            "translated": "        }\n"
+        },
+        {
+            "patch": "        } else\n            sproducer = SAXParserFactory.newInstance();\n",
+            "correctness": "compile_success",
+            "translated": "        } else\n            sfactory = SAXParserFactory.newInstance();\n"
+        },
+        {
+            "patch": "        } else {\n            sproducer = sproducer.newInstance();\n        }\n",
+            "correctness": "compile_success",
+            "translated": "        } else {\n            sfactory = sfactory.newInstance();\n        }\n"
+        },
+        {
+            "patch": "        } else {\n            sproducer = new SAXParserFactory();\n        }\n",
+            "correctness": "uncompilable",
+            "translated": "        } else {\n            sfactory = new SAXParserFactory();\n        }\n"
+        },
+        {
+            "patch": "        } else\n            sproducer = sproducerFactory.newInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        } else\n            sfactory = sproducerFactory.newInstance();\n"
+        },
+        {
+            "patch": "        });\n",
+            "correctness": "uncompilable",
+            "translated": "        });\n"
+        },
+        {
+            "patch": "        };\n",
+            "correctness": "compile_success",
+            "translated": "        };\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

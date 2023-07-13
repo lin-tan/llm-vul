@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-20,1",
+    "output": [
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory (ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn ; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn ; _xmlOutputFactory = xmlOut; }",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected XmlFactory (ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn ; _xmlOutputFactory = xmlOut; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn ; _xmlOutputFactory = xmlOut; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures, XMLInputFactory xmlIn, XMLOutputFactory xmlOut, String nameForTextElem) { super(oc); _xmlParserFeatures = xpFeatures; _xmlGeneratorFeatures = xgFeatures; _cfgNameForTextElement = nameForTextElem; if (xmlIn == null) { xmlIn = XMLInputFactory.newInstance(); } if (xmlOut == null) { xmlOut = XMLOutputFactory.newInstance(); } _initFactories(xmlIn, xmlOut); _xmlInputFactory = xmlIn; _xmlOutputFactory = xmlOut; }",
+            "correctness": "compile_success"
+        }
+    ]
+}

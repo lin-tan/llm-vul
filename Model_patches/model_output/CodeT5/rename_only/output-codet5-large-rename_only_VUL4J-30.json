@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-11,1",
+    "output": [
+        " else {\n",
+        " else {);\n",
+        " else {\n        attachAttributeSuccess(attributeTitle, item);",
+        " else {\n        attachAttributeValue(attributeTitle, item);",
+        " else {, content);",
+        " else {);",
+        "\n    else {);\n",
+        " else {\n        return",
+        " else {, item);",
+        " else { return"
+    ],
+    "validation_result": [
+        {
+            "patch": "else {",
+            "correctness": "compile_success",
+            "translated": "else {"
+        },
+        {
+            "patch": "else {);",
+            "correctness": "uncompilable",
+            "translated": "else {);"
+        },
+        {
+            "patch": "else {\n        attachAttributeSuccess(attributeTitle, item);",
+            "correctness": "uncompilable",
+            "translated": "else {\n        attachAttributeSuccess(fieldName, object);"
+        },
+        {
+            "patch": "else {\n        attachAttributeValue(attributeTitle, item);",
+            "correctness": "uncompilable",
+            "translated": "else {\n        attachAttributeValue(fieldName, object);"
+        },
+        {
+            "patch": "else {, content);",
+            "correctness": "uncompilable",
+            "translated": "else {, value);"
+        },
+        {
+            "patch": "else {);",
+            "correctness": "uncompilable",
+            "translated": "else {);"
+        },
+        {
+            "patch": "else {);",
+            "correctness": "uncompilable",
+            "translated": "else {);"
+        },
+        {
+            "patch": "else {\n        return",
+            "correctness": "uncompilable",
+            "translated": "else {\n        return"
+        },
+        {
+            "patch": "else {, item);",
+            "correctness": "uncompilable",
+            "translated": "else {, object);"
+        },
+        {
+            "patch": "else { return",
+            "correctness": "uncompilable",
+            "translated": "else {\n        return"
+        }
+    ]
+}

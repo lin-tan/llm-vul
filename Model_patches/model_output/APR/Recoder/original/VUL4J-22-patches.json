@@ -1,0 +1,12 @@
+[
+  "if((contextPath == null)){\n",
+  "contextPath = \"null\";\n",
+  "contextPath = request.getContextPath();\n",
+  "break;\n",
+  "if(\"null\"){",
+  "return null;",
+  "if((contextPath == null)){\n",
+  "return contextPath;",
+  "return decodeRequestString(request, contextPath);",
+  "if(contextPath.equals(contextPath)){\n"
+]

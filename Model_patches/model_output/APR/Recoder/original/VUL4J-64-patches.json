@@ -1,0 +1,12 @@
+[
+  "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));",
+  "return factory.createXMLStreamReader(inputStream);",
+  "return factory.createXMLStreamReader(createXMLStreamReader(inputStream));",
+  "return factory.createXMLStreamReader(setProperty(inputStream));",
+  "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(factory));",
+  "return factory.setProperty(wrapPrefixRemovingInputStream(inputStream));",
+  "return wrapPrefixRemovingInputStream(inputStream);",
+  "return createXMLStreamReader(inputStream);",
+  "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream());",
+  "return factory.createXMLStreamReader(debug(inputStream));"
+]

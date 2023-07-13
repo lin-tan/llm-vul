@@ -1,0 +1,66 @@
+{
+    "output": [
+        "try (final FileInputStream inputStream = new FileInputStream(targetFile)) {",
+        "try (final FileInputStream input = new FileInputStream(targetFile)) {",
+        "try (final FileInputStream input = new FileInputStream( targetFile)) {",
+        "try (final InputStream input = new FileInputStream(targetFile)) {",
+        "try (final FileInputStream input = new FileInputStream(originFile)) {",
+        "try (final FileInputStream in = new FileInputStream(targetFile)) {",
+        "try (final InputStream input = new FileInputStream(originFile)) {",
+        "try {",
+        "try (InputStream input = new FileInputStream(targetFile)) {",
+        "try (final InputStream input = null) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "try (final FileInputStream inputStream = new FileInputStream(targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream inputStream = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "try (final FileInputStream input = new FileInputStream(targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream input = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "try (final FileInputStream input = new FileInputStream( targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream input = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "try (final InputStream input = new FileInputStream(targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final InputStream input = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "try (final FileInputStream input = new FileInputStream(originFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream input = new FileInputStream(srcF)) {"
+        },
+        {
+            "patch": "try (final FileInputStream in = new FileInputStream(targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream in = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "try (final InputStream input = new FileInputStream(originFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final InputStream input = new FileInputStream( srcF)) {"
+        },
+        {
+            "patch": "try {",
+            "correctness": "uncompilable",
+            "translated": "try {"
+        },
+        {
+            "patch": "try (InputStream input = new FileInputStream(targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (InputStream input = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "try (final InputStream input = null) {",
+            "correctness": "uncompilable",
+            "translated": "try (final InputStream input = null) {"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-27,5",
+    "output": [
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ();\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n\n",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n\n   \n   \n    return 0;\n\n",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n}",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ());\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n\n",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ();\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n ",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ();\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n\n   \n   \n    return 0;\n",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n  }",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ();\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n\n   \n   \n\n    event.get",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n\n ",
+        "\n\n   \n   \n\n   \n   \n   \n}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ();\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n\n   \n   \n    return 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ());\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ();\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ();\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n\n   \n   \n    return 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   ();\n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n\n   \n   \n\n    event.get",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\nfunction getErrorHtml(boolean productionMode) {\n    String path = location.getPath();\n    String additionalInfo = location.getAdditionalInfo();\n   \n\n\n   \n   \n\n\n\n   \n\n\n\n   \n  public\n  {\n   \n   \n   \n    return 0;\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

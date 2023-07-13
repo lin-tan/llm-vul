@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return dataProvider;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return encode(dataProvider);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encoding.forJavaScriptSource(dataProvider);\n<|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encoder.forJavaScriptSource(dataProvider);\n<|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return jsStringEncoding(dataProvider);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return \"String_Node_Str\" + dataProvider;\n<|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return JavascriptStringEncoding(dataProvider);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return \"String_Node_Str\";\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return dataProvider.toLowerCase();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    if( dataProvider!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        return dataProvider;\n",
+            "correctness": "compile_success",
+            "translated": "        return source;\n"
+        },
+        {
+            "patch": "        return encode(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return encode(source);\n"
+        },
+        {
+            "patch": "        return Encoding.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encoding.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return Encoder.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encoder.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return jsStringEncoding(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return jsStringEncoding(source);\n"
+        },
+        {
+            "patch": "        return \"String_Node_Str\" + dataProvider;\n",
+            "correctness": "compile_success",
+            "translated": "        return \"String_Node_Str\" + source;\n"
+        },
+        {
+            "patch": "        return JavascriptStringEncoding(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return JavascriptStringEncoding(source);\n"
+        },
+        {
+            "patch": "        return \"String_Node_Str\";\n",
+            "correctness": "compile_success",
+            "translated": "        return \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "        return dataProvider.toLowerCase();\n",
+            "correctness": "compile_success",
+            "translated": "        return source.toLowerCase();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        }
+    ]
+}

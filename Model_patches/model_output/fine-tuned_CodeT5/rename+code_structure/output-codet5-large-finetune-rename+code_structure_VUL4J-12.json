@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    s = enlarge(s, z);\n</s></s>",
+        "<pad><s>    s = (1 << z) + s;\n</s>",
+        "<pad><s>    enlarge(s, z);\n</s></s></s></s>",
+        "<pad><s>    s += (1 << z);\n</s></s></s></s>",
+        "<pad><s>    s = (1 << z) + 1;\n</s>",
+        "<pad><s>    s = (1 << (z - 1));\n</s>",
+        "<pad><s>    s = (1 << z);\n</s></s></s></s>",
+        "<pad><s>    s >>>= z;\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    s = enlarge(s, z);\n",
+            "correctness": "compile_success",
+            "translated": "    v = extend(v, t);\n"
+        },
+        {
+            "patch": "    s = (1 << z) + s;\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << t) + v;\n"
+        },
+        {
+            "patch": "    enlarge(s, z);\n",
+            "correctness": "compile_success",
+            "translated": "    extend(v, t);\n"
+        },
+        {
+            "patch": "    s += (1 << z);\n",
+            "correctness": "test_success",
+            "translated": "    v += (1 << t);\n"
+        },
+        {
+            "patch": "    s = (1 << z) + 1;\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << t) + 1;\n"
+        },
+        {
+            "patch": "    s = (1 << (z - 1));\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << (t - 1));\n"
+        },
+        {
+            "patch": "    s = (1 << z);\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << t);\n"
+        },
+        {
+            "patch": "    s >>>= z;\n",
+            "correctness": "test_success",
+            "translated": "    v >>>= t;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

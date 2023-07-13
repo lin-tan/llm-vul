@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-5,5",
+    "output": [
+        "\r\r__\r\r\r[\r\r\r\r\r\r\n\r\r\r\r\n\r\r\n\t\rCalendarCalendar\r\r\n\t\r\r\n\t\r\r\r\r\n\t\r\n\t\r\n\t\r\n\t",
+        "\r\r__\r\r\r[\r\r\r\r\r\r\n\r\r\r\r\n\r\r\n\t\rCalendarCalendar\r\r\n\t\r\r\n\t\r\r\r\r\n\t\r\n\t\r\n\t\r\n\r",
+        "\n____",
+        "\r\r",
+        "\n",
+        "\njj",
+        "\r",
+        "\n\n",
+        "\n____this",
+        "\r__"
+    ],
+    "validation_result": [
+        {
+            "patch": "__\r\r\r[\r\r\r\r\r\r\n\r\r\r\r\n\r\r\n\t\rCalendarCalendar",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "__\r\r\r[\r\r\r\r\r\r\n\r\r\r\r\n\r\r\n\t\rCalendarCalendar",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "____",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "jj",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "____this",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "__",
+            "correctness": "uncompilable"
+        }
+    ]
+}

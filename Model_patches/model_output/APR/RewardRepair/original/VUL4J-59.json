@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "t.transition(String.valueOf(data));",
+        "t.transition(Data);",
+        "t.transition(replacementChar);",
+        "t.transition(Integer.MAX_VALUE);",
+        "t.transition(AttributeValue_error);",
+        "t.transition(this);",
+        "t.transition(Locale.ENGLISH);",
+        "t.transition(Boolean.TRUE);",
+        "t.transition(String.valueOf(this));",
+        "t.transition(AttributeValue_default);"
+    ],
+    "validation_result": [
+        {
+            "patch": "t.transition(String.valueOf(data));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(Data);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "t.transition(replacementChar);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(Integer.MAX_VALUE);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(AttributeValue_error);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(this);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "t.transition(Locale.ENGLISH);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(Boolean.TRUE);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(String.valueOf(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(AttributeValue_default);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

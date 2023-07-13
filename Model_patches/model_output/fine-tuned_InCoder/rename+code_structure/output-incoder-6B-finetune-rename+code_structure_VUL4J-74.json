@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.nextBytes(new byte[1]);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.setSeed(source.getSeed());\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.setSeed(seed);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.setSeed(source);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.nextBytes(seed);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\treturn secureRandomInstance;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.setSeed(secureRandomSeed);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.setSeed(FileCopyUtils.copy(source));\n<|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.setSeed(new byte[] {});\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (source == null) {\n\t\tsecureRandomInstance.nextBytes(new byte[1]);\n\t}\n\telse {\n\t\tInputStream inputStream = source.getInputStream();\n\t\tsecureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n\t}\n// buggy lines end\n\treturn secureRandomInstance;\n}\n// fixed lines:\n\tsecureRandomInstance.setSeed(new byte[] { 0 });\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(new byte[1]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(new byte[1]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(source.getSeed());\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(seed.getSeed());\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(seed);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.setSeed(seed);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(source);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.setSeed(seed);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(seed);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(seed);\n"
+        },
+        {
+            "patch": "\treturn secureRandomInstance;\n",
+            "correctness": "uncompilable",
+            "translated": "\treturn rnd;\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(secureRandomSeed);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(secureRandomSeed);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(FileCopyUtils.copy(source));\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(FileCopyUtils.copy(seed));\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(new byte[] {});\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(new byte[] {});\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(new byte[] { 0 });\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(new byte[] { 0 });\n"
+        }
+    ]
+}

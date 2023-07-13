@@ -1,0 +1,37 @@
+{
+    "VUL4J-1004-1075-1077": {
+        "src": "for ( Vertex CaMeL Proctor proctor : Vertex CaMeL Proctor . acquire CaMeL Whole ( ) ) z . put ( proctor . get CaMeL Class ( ) . get CaMeL Name ( ) , proctor . information ( this ) ) ;",
+        "patches": [
+            {
+                "patch": "Map < String , Object > z = new HashMap < String , Object >( ) ; z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ; put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ; z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "public Map < String , Object > acquireProctorInformation( ) { Map < String , Object > z = new HashMap < String , Object >( ) ;"
+            },
+            {
+                "patch": "if( proctor != null ) z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "z.add( proctor.getClass( ).getName( ) ) ; z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "System.out.println( 'Build') ; z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "System.out.println( 'Connect') ; z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "System.out.println( 'Disconnect') ; z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "System.out.println( 'Create') ; z.put( proctor.getClass( ).getName( ) , proctor.information( this ) ) ;"
+            }
+        ]
+    }
+}

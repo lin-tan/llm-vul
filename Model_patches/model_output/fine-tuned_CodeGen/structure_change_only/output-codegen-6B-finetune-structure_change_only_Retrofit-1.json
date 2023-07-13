@@ -1,0 +1,66 @@
+{
+    "output": [
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.context = jaxbContext;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    setContext(context);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.jaxbContext = context;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.context = ctx;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.context = (T) context;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.context = (context == null)? null : context;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.context = context == null? null : context;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.context = JAXBContexts.newInstance(context);\n<|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.context = context == null? null : context.getContext();\n<|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n    this.context = JAXBContextUtils.getContext(context);\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    this.context = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "    this.context = jaxbContext;\n"
+        },
+        {
+            "patch": "    setContext(context);\n",
+            "correctness": "uncompilable",
+            "translated": "    setContext(context);\n"
+        },
+        {
+            "patch": "    this.jaxbContext = context;\n",
+            "correctness": "uncompilable",
+            "translated": "    this.jaxbContext = context;\n"
+        },
+        {
+            "patch": "    this.context = ctx;\n",
+            "correctness": "uncompilable",
+            "translated": "    this.context = ctx;\n"
+        },
+        {
+            "patch": "    this.context = (T) context;\n",
+            "correctness": "uncompilable",
+            "translated": "    this.context = (T) context;\n"
+        },
+        {
+            "patch": "    this.context = (context == null)? null : context;\n",
+            "correctness": "compile_success",
+            "translated": "    this.context = (context == null)? null : context;\n"
+        },
+        {
+            "patch": "    this.context = context == null? null : context;\n",
+            "correctness": "compile_success",
+            "translated": "    this.context = context == null? null : context;\n"
+        },
+        {
+            "patch": "    this.context = JAXBContexts.newInstance(context);\n",
+            "correctness": "uncompilable",
+            "translated": "    this.context = JAXBContexts.newInstance(context);\n"
+        },
+        {
+            "patch": "    this.context = context == null? null : context.getContext();\n",
+            "correctness": "uncompilable",
+            "translated": "    this.context = context == null? null : context.getContext();\n"
+        },
+        {
+            "patch": "    this.context = JAXBContextUtils.getContext(context);\n",
+            "correctness": "uncompilable",
+            "translated": "    this.context = JAXBContextUtils.getContext(context);\n"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "for(int index = 1;file.exists();index++) {",
+  "for(int index = 2;file.exists();file) {",
+  "if((file != null)){\n",
+  "prefix = name.substring(0, dot);\n",
+  "prefix = name;\n",
+  "suffix = name.substring(dot);\n",
+  "suffix = \"null\";\n",
+  "for(int index = -1;file.exists();index++) {",
+  "for(int index = 2;file.exists();index++) {",
+  "file = new File(dir, (((prefix + \"null\") + index) + suffix));\n"
+]

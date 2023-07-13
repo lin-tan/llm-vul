@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList(); }",
+        "if (items.values().isEmpty()) return new ArrayList < TopLevelItem>();",
+        "if (!items.isEmpty()) { return new ArrayList(items.values()); }",
+        "needsRefresh(items.values()) { return new ArrayList < TopLevelItem>(); }",
+        "if (!items.isEmpty()) { return new ArrayList < TopLevelItem>(); }",
+        "if (!items.isEmpty()) return new ArrayList(items.values());",
+        "if (items.isEmpty()) { return new ArrayList < TopLevelItem>(); }",
+        "if (!items.isEmpty()) { return new ArrayList < TopLevelItem>(); }",
+        "if (items.isEmpty()) { return new ArrayList < TopLevelItem>(); }",
+        "if (items.values()!= null) { return new ArrayList < TopLevelItem>(); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured) { return new ArrayList(); }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (items.values().isEmpty()) return new ArrayList < TopLevelItem>();",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (!items.isEmpty()) { return new ArrayList(items.values()); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "needsRefresh(items.values()) { return new ArrayList < TopLevelItem>(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!items.isEmpty()) { return new ArrayList < TopLevelItem>(); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!items.isEmpty()) return new ArrayList(items.values());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (items.isEmpty()) { return new ArrayList < TopLevelItem>(); }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (!items.isEmpty()) { return new ArrayList < TopLevelItem>(); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (items.isEmpty()) { return new ArrayList < TopLevelItem>(); }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (items.values()!= null) { return new ArrayList < TopLevelItem>(); }",
+            "correctness": "compile_success"
+        }
+    ]
+}

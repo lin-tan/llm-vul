@@ -1,0 +1,575 @@
+{
+    "id": "cmpl-8HPU51I1YRA1Gu21Yd3D0KQGiic8X",
+    "object": "text_completion",
+    "created": 1699160229,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "            return false;\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -0.27655596,
+                    -0.30502662,
+                    -0.0022412185,
+                    -0.069759235
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        " false": -0.30502662
+                    },
+                    {
+                        ";": -0.0022412185
+                    },
+                    {
+                        "\n": -0.069759235
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    688,
+                    694,
+                    695
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -0.27655596,
+                    -0.30502662,
+                    -0.0022412185,
+                    -0.069759235
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        " false": -0.30502662
+                    },
+                    {
+                        ";": -0.0022412185
+                    },
+                    {
+                        "\n": -0.069759235
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    688,
+                    694,
+                    695
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -0.27655596,
+                    -0.30502662,
+                    -0.0022412185,
+                    -0.069759235
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        " false": -0.30502662
+                    },
+                    {
+                        ";": -0.0022412185
+                    },
+                    {
+                        "\n": -0.069759235
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    688,
+                    694,
+                    695
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            break;\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " break",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -2.2455168,
+                    -0.004209457,
+                    -0.05809684
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        ";": -0.004209457
+                    },
+                    {
+                        "\n": -0.05809684
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    687,
+                    688
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        \t return false;\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "        ",
+                    "\t",
+                    " return",
+                    " false",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -1.7573016,
+                    -1.435476,
+                    -0.33042356,
+                    -0.8646719,
+                    -0.0058054267,
+                    -0.08566267
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " case": -1.015085
+                    },
+                    {
+                        " return": -0.33042356
+                    },
+                    {
+                        " true": -0.57788014
+                    },
+                    {
+                        ";": -0.0058054267
+                    },
+                    {
+                        "\n": -0.08566267
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    678,
+                    679,
+                    686,
+                    692,
+                    693
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -0.27655596,
+                    -0.30502662,
+                    -0.0022412185,
+                    -0.069759235
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        " false": -0.30502662
+                    },
+                    {
+                        ";": -0.0022412185
+                    },
+                    {
+                        "\n": -0.069759235
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    688,
+                    694,
+                    695
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -0.27655596,
+                    -0.30502662,
+                    -0.0022412185,
+                    -0.069759235
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        " false": -0.30502662
+                    },
+                    {
+                        ";": -0.0022412185
+                    },
+                    {
+                        "\n": -0.069759235
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    688,
+                    694,
+                    695
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -0.27655596,
+                    -0.30502662,
+                    -0.0022412185,
+                    -0.069759235
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        " false": -0.30502662
+                    },
+                    {
+                        ";": -0.0022412185
+                    },
+                    {
+                        "\n": -0.069759235
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    688,
+                    694,
+                    695
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -0.27655596,
+                    -0.30502662,
+                    -0.0022412185,
+                    -0.069759235
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        " false": -0.30502662
+                    },
+                    {
+                        ";": -0.0022412185
+                    },
+                    {
+                        "\n": -0.069759235
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    688,
+                    694,
+                    695
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return true;\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " true",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022725796,
+                    -0.43606097,
+                    -0.27655596,
+                    -1.3959452,
+                    -0.0026285185,
+                    -0.07434665
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022725796
+                    },
+                    {
+                        "           ": -0.43606097
+                    },
+                    {
+                        " return": -0.27655596
+                    },
+                    {
+                        " false": -0.30502662
+                    },
+                    {
+                        ";": -0.0026285185
+                    },
+                    {
+                        "\n": -0.07434665
+                    }
+                ],
+                "text_offset": [
+                    670,
+                    670,
+                    681,
+                    688,
+                    693,
+                    694
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 190,
+        "completion_tokens": 60,
+        "total_tokens": 250
+    },
+    "validation_result": [
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            break;\n",
+            "correctness": "compile_success",
+            "translated": "            break;\n"
+        },
+        {
+            "patch": "        \t return false;\n",
+            "correctness": "compile_success",
+            "translated": "        \t return false;\n"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            return true;\n",
+            "correctness": "compile_success",
+            "translated": "            return true;\n"
+        }
+    ]
+}

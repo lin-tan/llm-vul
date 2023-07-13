@@ -1,0 +1,56 @@
+{
+    "output": [
+        "return new BigInteger[s.size()];",
+        "return new BigInteger[] { s.getObjectAt(0) };",
+        "return s.toArray(new BigInteger[s.size()]);",
+        "return new BigInteger[s.getObjectCount()];",
+        "return new BigInteger[s.getObjectAt(0).size()];",
+        "return (BigInteger[]) s.getObjectAt(0);",
+        "return new BigInteger[2];",
+        "return new BigInteger[s.size()] {",
+        "return new BigInteger[size];",
+        "return s;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return new BigInteger[s.size()];",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[] { s.getObjectAt(0) };",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return s.toArray(new BigInteger[s.size()]);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[s.getObjectCount()];",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[s.getObjectAt(0).size()];",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return (BigInteger[]) s.getObjectAt(0);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[2];",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[s.size()] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[size];",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return s;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

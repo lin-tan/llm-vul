@@ -1,0 +1,66 @@
+{
+    "output": [
+        "compose(offSiteControlLocation);",
+        "compose(offSiteControlLocation, \"String_Node_Str\");",
+        "compose(offSiteControlLocation, false);",
+        "compose(offSiteControlLocation + \"String_Node_Str\");",
+        "compose(offSiteControlLocation.trim());",
+        "composeStraightly(offSiteControlLocation);",
+        "compose(offSiteControlLocation, true);",
+        "compose(offSiteControlLocation.replaceAll(\"\\\"\", \"\\\"\"));",
+        "compose(\"&nbsp;\");",
+        "compose(offSiteControlLocation.replaceAll(\"\", \"\"));"
+    ],
+    "validation_result": [
+        {
+            "patch": "compose(offSiteControlLocation);",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr);"
+        },
+        {
+            "patch": "compose(offSiteControlLocation, \"String_Node_Str\");",
+            "correctness": "uncompilable",
+            "translated": "write(remoteAddr, \"String_Node_Str\");"
+        },
+        {
+            "patch": "compose(offSiteControlLocation, false);",
+            "correctness": "uncompilable",
+            "translated": "write(remoteAddr, false);"
+        },
+        {
+            "patch": "compose(offSiteControlLocation + \"String_Node_Str\");",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr + \"String_Node_Str\");"
+        },
+        {
+            "patch": "compose(offSiteControlLocation.trim());",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr.trim());"
+        },
+        {
+            "patch": "composeStraightly(offSiteControlLocation);",
+            "correctness": "compile_success",
+            "translated": "writeDirectly(remoteAddr);"
+        },
+        {
+            "patch": "compose(offSiteControlLocation, true);",
+            "correctness": "uncompilable",
+            "translated": "write(remoteAddr, true);"
+        },
+        {
+            "patch": "compose(offSiteControlLocation.replaceAll(\"\\\"\", \"\\\"\"));",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr.replaceAll(\"\\\"\", \"\\\"\"));"
+        },
+        {
+            "patch": "compose(\"&nbsp;\");",
+            "correctness": "test_success",
+            "translated": "write(\"&nbsp;\");"
+        },
+        {
+            "patch": "compose(offSiteControlLocation.replaceAll(\"\", \"\"));",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr.replaceAll(\"\", \"\"));"
+        }
+    ]
+}

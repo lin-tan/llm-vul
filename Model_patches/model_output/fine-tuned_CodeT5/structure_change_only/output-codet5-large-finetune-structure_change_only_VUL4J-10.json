@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    final OutputStream output = getOutputStream();\n</s>",
+        "<pad><s>    OutputStream output = outputStream;\n</s></s>",
+        "<pad><s>    outputStream = getOutputStream();\n</s></s></s>",
+        "<pad><s>    output = getOutputStream();\n</s></s></s>",
+        "<pad><s>    OutputStream output = null;\n</s></s>",
+        "<pad><s>    OutputStream outputStream = getOutputStream();\n</s></s>",
+        "<pad><s>    OutputStream output = new ByteArrayOutputStream();\n</s>",
+        "<pad><s>    out = getOutputStream();\n</s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    final OutputStream output = getOutputStream();\n",
+            "correctness": "compile_success",
+            "translated": "    final OutputStream output = getOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream output = outputStream;\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = outputStream;\n"
+        },
+        {
+            "patch": "    outputStream = getOutputStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    outputStream = getOutputStream();\n"
+        },
+        {
+            "patch": "    output = getOutputStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    output = getOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream output = null;\n",
+            "correctness": "compile_success",
+            "translated": "    OutputStream output = null;\n"
+        },
+        {
+            "patch": "    OutputStream outputStream = getOutputStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream outputStream = getOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream output = new ByteArrayOutputStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = new ByteArrayOutputStream();\n"
+        },
+        {
+            "patch": "    out = getOutputStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    out = getOutputStream();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

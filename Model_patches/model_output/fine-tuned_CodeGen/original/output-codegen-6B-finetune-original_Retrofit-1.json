@@ -1,0 +1,56 @@
+{
+    "output": [
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.type = type.getSuperclass();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.type = type.getClass();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.jaxbType = type;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    setType(type);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.type = (T) type;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.setType(type);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.clazz = type;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.type = (T) type.getSuperclass();\n<|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.type = (T) type.getClass();\n<|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n    this.type = (type == null)? null : type;\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    this.type = type.getSuperclass();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    this.type = type.getClass();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    this.jaxbType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    setType(type);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    this.type = (T) type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    this.setType(type);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    this.clazz = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    this.type = (T) type.getSuperclass();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    this.type = (T) type.getClass();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    this.type = (type == null)? null : type;\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

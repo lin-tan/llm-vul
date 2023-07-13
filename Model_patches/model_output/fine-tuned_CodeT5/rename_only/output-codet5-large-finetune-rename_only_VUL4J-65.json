@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    int point = titile.lastIndexOf('.');\n</s></s>",
+        "<pad><s>    int point = f.getName().indexOf('.');\n</s></s></s>",
+        "<pad><s>    int point = f.getName().lastIndexOf('.');\n</s></s>",
+        "<pad><s>    int point = f.lastIndexOf('.');\n</s></s></s></s>",
+        "<pad><s>    int point = titile.indexOf('/');\n</s></s></s>",
+        "<pad><s>    int point = f.getPath().lastIndexOf('.');\n</s>",
+        "<pad><s>    int point = titile.indexOf('.', 1);\n</s>",
+        "<pad><s>    int point = titile.indexOf('-');\n</s></s></s>",
+        "<pad><s>    int point = f.indexOf('.');\n</s></s></s></s></s>",
+        "<pad><s>    int point = titile.indexOf('.', 2);\n</s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    int point = titile.lastIndexOf('.');\n",
+            "correctness": "compile_success",
+            "translated": "    int dot = name.lastIndexOf('.');\n"
+        },
+        {
+            "patch": "    int point = f.getName().indexOf('.');\n",
+            "correctness": "compile_success",
+            "translated": "    int dot = file.getName().indexOf('.');\n"
+        },
+        {
+            "patch": "    int point = f.getName().lastIndexOf('.');\n",
+            "correctness": "compile_success",
+            "translated": "    int dot = file.getName().lastIndexOf('.');\n"
+        },
+        {
+            "patch": "    int point = f.lastIndexOf('.');\n",
+            "correctness": "uncompilable",
+            "translated": "    int dot = file.lastIndexOf('.');\n"
+        },
+        {
+            "patch": "    int point = titile.indexOf('/');\n",
+            "correctness": "compile_success",
+            "translated": "    int dot = name.indexOf('/');\n"
+        },
+        {
+            "patch": "    int point = f.getPath().lastIndexOf('.');\n",
+            "correctness": "compile_success",
+            "translated": "    int dot = file.getPath().lastIndexOf('.');\n"
+        },
+        {
+            "patch": "    int point = titile.indexOf('.', 1);\n",
+            "correctness": "compile_success",
+            "translated": "    int dot = name.indexOf('.', 1);\n"
+        },
+        {
+            "patch": "    int point = titile.indexOf('-');\n",
+            "correctness": "compile_success",
+            "translated": "    int dot = name.indexOf('-');\n"
+        },
+        {
+            "patch": "    int point = f.indexOf('.');\n",
+            "correctness": "uncompilable",
+            "translated": "    int dot = file.indexOf('.');\n"
+        },
+        {
+            "patch": "    int point = titile.indexOf('.', 2);\n",
+            "correctness": "compile_success",
+            "translated": "    int dot = name.indexOf('.', 2);\n"
+        }
+    ]
+}

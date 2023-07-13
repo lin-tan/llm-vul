@@ -1,0 +1,65 @@
+{
+    "id": 30,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2242,
+            "fix_type": "general",
+            "patch": "  int dot = logger.indexOf('.');\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.5124,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3701,
+            "fix_type": "general",
+            "patch": "  int dot = name.substring('.');\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5198,
+            "fix_type": "insert",
+            "patch": "if (name == null || name == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.5454,
+            "fix_type": "insert",
+            "patch": "  int logger = name.substring();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5492,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\nreturn 1;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4141,
+            "fix_type": "general",
+            "patch": "  int dot = name.substring('.');\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4141,
+            "fix_type": "general",
+            "patch": "  int dot = name.substring('\\0');\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.5493,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\nname = new File();\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5567,
+            "fix_type": "insert",
+            "patch": "if (dot == null ){\nreturn null;\n}\n"
+        }
+    ]
+}

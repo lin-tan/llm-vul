@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-5,1",
+    "output": [
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaStringEncoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaStringDecoding(String dataProvider) {\n    return dataProvider;\n  }\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider) {\n    return dataProvider;\n  }\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return null;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider) {\n    return null;\n  }\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\npublic String JavaScriptStringDecoding(String dataProvider) {\n    return dataProvider;\n  }\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaScriptStringEscape(String dataProvider) {\n    return dataProvider;\n  }\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider) {\n    return dataProvider;\n  }\n\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider) {\n    return dataProvider;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider, String encoding) {\n    return dataProvider;\n  }\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return null;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider) {\n    return null;\n  }\n\n  @Override\n  public String JavaScriptStringDecoding(String dataProvider, String encoding) {\n    return null;\n  }\n}\n",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n\treturn dataProvider;\n}\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return null;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return null;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return dataProvider;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n    return null;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return null;\n  }"
+        },
+        {
+            "patch": "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n\treturn dataProvider;\n}",
+            "correctness": "compile_success",
+            "translated": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+        "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+        "DocumentBuilder archiveCreator = archiveCreatorMill.newInstance();",
+        "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder(true);",
+        "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder( \" \");",
+        "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder(null);",
+        "DocumentBuilder archiveCreator = archiveCreatorMill.getDocumentBuilder();",
+        "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder(false);",
+        "Builder archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+        "DocumentBuilder archiveCreator = archiveCreatorMill.createDocumentBuilder();"
+    ],
+    "validation_result": [
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+            "correctness": "test_timeout",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();"
+        },
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+            "correctness": "test_timeout",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();"
+        },
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.newInstance();",
+            "correctness": "uncompilable",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.newInstance();"
+        },
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder(true);",
+            "correctness": "uncompilable",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(true);"
+        },
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder( \" \");",
+            "correctness": "uncompilable",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder( \" \");"
+        },
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder(null);",
+            "correctness": "uncompilable",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(null);"
+        },
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.getDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.getDocumentBuilder();"
+        },
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder(false);",
+            "correctness": "uncompilable",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(false);"
+        },
+        {
+            "patch": "Builder archiveCreator = archiveCreatorMill.newDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "Builder documentBuilder = documentBuilderFactory.newDocumentBuilder();"
+        },
+        {
+            "patch": "DocumentBuilder archiveCreator = archiveCreatorMill.createDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "DocumentBuilder documentBuilder = documentBuilderFactory.createDocumentBuilder();"
+        }
+    ]
+}

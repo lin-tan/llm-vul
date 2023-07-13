@@ -1,0 +1,56 @@
+{
+    "output": [
+        "} else {",
+        "} else { out.limit(out.remaining());",
+        "} else if (res.isMalformed()) {",
+        "} else { out.limit(out.remaining() - 1);",
+        "} else if (!res.isMalformed()) {",
+        "} else { return null;",
+        "} else { }",
+        "}",
+        "} else",
+        "});"
+    ],
+    "validation_result": [
+        {
+            "patch": "} else {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else { out.limit(out.remaining());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else if (res.isMalformed()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else { out.limit(out.remaining() - 1);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else if (!res.isMalformed()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else { return null;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else { }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "} else",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "});",
+            "correctness": "uncompilable"
+        }
+    ]
+}

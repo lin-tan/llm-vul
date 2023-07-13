@@ -1,0 +1,56 @@
+{
+    "output": [
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i - offset);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(this.field, i - offset);\n<|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field,i);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(getField(),i - offset);\n<|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(this.field,i - offset);\n<|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i + offset);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(this, i - offset);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, (i - offset));\n<|endoftext|><|endoftext|>",
+        "void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field,i - offset);\n<|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    c.set(field, i - offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field, i);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(this.field, i - offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field,i);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(getField(),i - offset);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    c.set(this.field,i - offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field, i + offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(this, i - offset);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    c.set(field, (i - offset));\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field,i - offset);\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

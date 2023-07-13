@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "this.context = context;",
+        "this.context = context;",
+        "this.type = (Class < T>) type;",
+        "this.type = type;",
+        "this.type = (Class < T>) type;",
+        "this.type = type;",
+        "this.type = context.getType();",
+        "this.type = (Class < T>)type;",
+        "this.context.type = type;",
+        "null = null; this.type = type;"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.context = context;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = (Class < T>) type;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.type = type;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.type = (Class < T>) type;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.type = type;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.type = context.getType();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = (Class < T>)type;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.context.type = type;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "null = null; this.type = type;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

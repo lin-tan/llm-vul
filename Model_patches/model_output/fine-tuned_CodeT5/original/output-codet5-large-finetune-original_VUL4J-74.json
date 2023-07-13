@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>\trnd.setSeed(seed);\n</s></s></s></s>",
+        "<pad><s>\trnd.setSeed(seedBytes);\n</s></s></s>",
+        "<pad><s>\trnd.setSeed(seed.getInputStream());\n</s>",
+        "<pad><s>\trnd.nextBytes(new byte[1]);\n</s>",
+        "<pad><s>\trnd.nextBytes(new byte[0]);\n</s>",
+        "<pad><s>\trnd.setSeed((byte[]) seed);\n</s>",
+        "<pad><s>\trnd.setSeed((long) seed);\n</s></s>",
+        "<pad><s>\trnd.nextBytes(seedBytes);\n</s></s></s>",
+        "<pad><s>\tsetSeed(rnd);\n</s></s></s></s></s></s>",
+        "<pad><s>\trnd.init(seed);\n</s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\trnd.setSeed(seed);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(seedBytes);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(seed.getInputStream());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.nextBytes(new byte[1]);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "\trnd.nextBytes(new byte[0]);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "\trnd.setSeed((byte[]) seed);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed((long) seed);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.nextBytes(seedBytes);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tsetSeed(rnd);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.init(seed);\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

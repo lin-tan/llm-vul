@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-15,1",
+    "output": [
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return visibleElements;\n}",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return visibleElements;\n}",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n  }",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (!element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n    for (\n\n\n\n   \n}",
+        "\n\n\n\n\n\n\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return visibleElements;\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return visibleElements;\n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return visibleElements;\n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (!element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (!item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n    for (\n\n\n\n   \n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n    for (\n\n\n\n   \n}"
+        },
+        {
+            "patch": "for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n\n   \n\n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return visibleElements;\n}",
+            "correctness": "uncompilable",
+            "translated": "for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n   \n\n\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}"
+        }
+    ]
+}

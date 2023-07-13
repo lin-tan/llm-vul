@@ -1,0 +1,65 @@
+{
+    "id": 2,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.5529,
+            "fix_type": "insert",
+            "patch": "defaultCharset = true;\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.5529,
+            "fix_type": "insert",
+            "patch": "transformerFactory = true;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5575,
+            "fix_type": "insert",
+            "patch": "  SAXParser analyzer = null;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.6286,
+            "fix_type": "insert",
+            "patch": "  SAXParserFactory analyzer = null;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.655,
+            "fix_type": "insert",
+            "patch": "LOG.warn(\"SAXParser doesn't support the feature {} with value {}, due to {}.\");\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.6706,
+            "fix_type": "insert",
+            "patch": "  XMLReader analyzer = null;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.6815,
+            "fix_type": "insert",
+            "patch": "smill = null;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.6853,
+            "fix_type": "insert",
+            "patch": "defaultCharset = false;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.6853,
+            "fix_type": "insert",
+            "patch": "transformerFactory = false;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.6904,
+            "fix_type": "insert",
+            "patch": "subscriber = null;\n"
+        }
+    ]
+}

@@ -1,0 +1,59 @@
+{
+    "id": 15,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -5.3785,
+            "fix_type": "general",
+            "patch": "encodedUrl"
+        },
+        {
+            "rank": 2,
+            "score": -5.5473,
+            "fix_type": "general",
+            "patch": "return;\n"
+        },
+        {
+            "rank": 3,
+            "score": -1.7122,
+            "fix_type": "general",
+            "patch": "return encodedUrl.name();\n"
+        },
+        {
+            "rank": 4,
+            "score": -1.52,
+            "fix_type": "general",
+            "patch": "return name;\n"
+        },
+        {
+            "rank": 5,
+            "score": -1.5575,
+            "fix_type": "general",
+            "patch": "return \"\";\n"
+        },
+        {
+            "rank": 6,
+            "score": -2.0597,
+            "fix_type": "general",
+            "patch": "return null;\n"
+        },
+        {
+            "rank": 7,
+            "score": -6.446,
+            "fix_type": "general",
+            "patch": ""
+        },
+        {
+            "rank": 8,
+            "score": -6.8736,
+            "fix_type": "general",
+            "patch": "break;\n"
+        },
+        {
+            "rank": 9,
+            "score": -6.8906,
+            "fix_type": "general",
+            "patch": "continue  ;\n"
+        }
+    ]
+}

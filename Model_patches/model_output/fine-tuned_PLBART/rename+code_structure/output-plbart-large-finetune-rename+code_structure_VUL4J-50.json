@@ -1,0 +1,66 @@
+{
+    "output": [
+        "String s2 = offSiteControlLocation!= null? offSiteControlLocation : \"&nbsp;\"; compose(s2);",
+        "String s2 = offSiteControlLocation!= null? offSiteControlLocation:\"&nbsp;\"; compose(s2);",
+        "final String s2 = offSiteControlLocation!= null? offSiteControlLocation:\"&nbsp;\"; compose(s2);",
+        "String s1 = offSiteControlLocation!= null? offSiteControlLocation:\"&nbsp;\"; compose(s1);",
+        "String s2 = offSiteControlLocation!= null? offSiteControlLocation : \"\"; compose(s2);",
+        "String s2 = offSiteControlLocation;",
+        "compose(offSiteControlLocation);",
+        "String s2 = offSiteControlLocation!= null? offSiteControlLocation:\"&nbsp;\";",
+        "String s2 = offSiteControlLocation!= null? offSiteControlLocation : \"&nbsp;\";",
+        "composeStraightly(offSiteControlLocation);"
+    ],
+    "validation_result": [
+        {
+            "patch": "String s2 = offSiteControlLocation!= null? offSiteControlLocation : \"&nbsp;\"; compose(s2);",
+            "correctness": "compile_success",
+            "translated": "String s2 = remoteAddr!= null? remoteAddr : \"&nbsp;\"; write(s2);"
+        },
+        {
+            "patch": "String s2 = offSiteControlLocation!= null? offSiteControlLocation:\"&nbsp;\"; compose(s2);",
+            "correctness": "compile_success",
+            "translated": "String s2 = remoteAddr!= null? remoteAddr : \"&nbsp;\"; write(s2);"
+        },
+        {
+            "patch": "final String s2 = offSiteControlLocation!= null? offSiteControlLocation:\"&nbsp;\"; compose(s2);",
+            "correctness": "compile_success",
+            "translated": "final String s2 = remoteAddr!= null? remoteAddr:\"&nbsp;\"; write(s2);"
+        },
+        {
+            "patch": "String s1 = offSiteControlLocation!= null? offSiteControlLocation:\"&nbsp;\"; compose(s1);",
+            "correctness": "uncompilable",
+            "translated": "String s1 = remoteAddr!= null? remoteAddr:\"&nbsp;\"; write(s1);"
+        },
+        {
+            "patch": "String s2 = offSiteControlLocation!= null? offSiteControlLocation : \"\"; compose(s2);",
+            "correctness": "compile_success",
+            "translated": "String s2 = remoteAddr!= null? remoteAddr : \"\"; write(s2);"
+        },
+        {
+            "patch": "String s2 = offSiteControlLocation;",
+            "correctness": "test_success",
+            "translated": "String s2 = remoteAddr;"
+        },
+        {
+            "patch": "compose(offSiteControlLocation);",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr);"
+        },
+        {
+            "patch": "String s2 = offSiteControlLocation!= null? offSiteControlLocation:\"&nbsp;\";",
+            "correctness": "test_success",
+            "translated": "String s2 = remoteAddr!= null? remoteAddr:\"&nbsp;\";"
+        },
+        {
+            "patch": "String s2 = offSiteControlLocation!= null? offSiteControlLocation : \"&nbsp;\";",
+            "correctness": "test_success",
+            "translated": "String s2 = remoteAddr!= null? remoteAddr:\"&nbsp;\";"
+        },
+        {
+            "patch": "composeStraightly(offSiteControlLocation);",
+            "correctness": "compile_success",
+            "translated": "writeDirectly(remoteAddr);"
+        }
+    ]
+}

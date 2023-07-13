@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "return source == null? \" \" : Encode.forJavaScriptSource(source);",
+        "return source == null? null : Encode.forJSString(source);",
+        "return source == null? \"null \" : Encode.forJavaScriptSource(source);",
+        "return source == null? \"unknown \" : Encode.forJavaScriptSource(source);",
+        "return source == null? null : Encode.forJavaScriptSource(source, \"UTF-8 \");",
+        "return source!= null? Encode.forJavaScriptSource(source) : null;",
+        "return source!= null? Encode.forJavaScriptSource(source) : source;",
+        "return source == null? null : Encode.forJavaScriptSource(source.trim());",
+        "return source == null? null : Encode.forJavaScriptSource(source, true);",
+        "return source == null? null : Encode.forJavaScriptSource(source, false);"
+    ],
+    "validation_result": [
+        {
+            "patch": "return source == null? \" \" : Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return source == null? null : Encode.forJSString(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source == null? \"null \" : Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return source == null? \"unknown \" : Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return source == null? null : Encode.forJavaScriptSource(source, \"UTF-8 \");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source!= null? Encode.forJavaScriptSource(source) : null;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return source!= null? Encode.forJavaScriptSource(source) : source;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return source == null? null : Encode.forJavaScriptSource(source.trim());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return source == null? null : Encode.forJavaScriptSource(source, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source == null? null : Encode.forJavaScriptSource(source, false);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

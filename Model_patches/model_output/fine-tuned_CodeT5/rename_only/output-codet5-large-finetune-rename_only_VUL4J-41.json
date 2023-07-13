@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    try ( final OutputStream output = new FileOutputStream( targetFile ) )\n</s></s>",
+        "<pad><s>    try ( FileOutputStream outputStream = new FileOutputStream( targetFile ) )\n</s></s></s>",
+        "<pad><s>    try ( final OutputStream output = null )\n</s></s></s></s></s></s>",
+        "<pad><s>    if (!whetherOverwrite() && targetFile.exists() )\n</s>",
+        "<pad><s>    try ( OutputStream output = null )\n</s></s></s></s></s></s></s>",
+        "<pad><s>    try ( final OutputStream output = null;\n</s></s></s></s></s></s>",
+        "<pad><s>    try ( OutputStream output = null;\n</s></s></s></s></s></s></s>",
+        "<pad><s>    try\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    try ( final OutputStream output = new FileOutputStream( targetFile ) )\n",
+            "correctness": "uncompilable",
+            "translated": "    try ( final OutputStream out = new FileOutputStream( f ) )\n"
+        },
+        {
+            "patch": "    try ( FileOutputStream outputStream = new FileOutputStream( targetFile ) )\n",
+            "correctness": "compile_success",
+            "translated": "    try ( FileOutputStream outputStream = new FileOutputStream( f ) )\n"
+        },
+        {
+            "patch": "    try ( final OutputStream output = null )\n",
+            "correctness": "uncompilable",
+            "translated": "    try ( final OutputStream out = null )\n"
+        },
+        {
+            "patch": "    if (!whetherOverwrite() && targetFile.exists() )\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!isOverwrite() && f.exists() )\n"
+        },
+        {
+            "patch": "    try ( OutputStream output = null )\n",
+            "correctness": "uncompilable",
+            "translated": "    try ( OutputStream out = null )\n"
+        },
+        {
+            "patch": "    try ( final OutputStream output = null;\n",
+            "correctness": "uncompilable",
+            "translated": "    try ( final OutputStream out = null;\n"
+        },
+        {
+            "patch": "    try ( OutputStream output = null;\n",
+            "correctness": "uncompilable",
+            "translated": "    try ( OutputStream out = null;\n"
+        },
+        {
+            "patch": "    try\n",
+            "correctness": "compile_success",
+            "translated": "    try\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

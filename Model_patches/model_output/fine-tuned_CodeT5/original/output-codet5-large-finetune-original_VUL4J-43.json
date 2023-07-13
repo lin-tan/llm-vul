@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>\tif (entry.isDirectory())\n</s></s></s></s></s></s></s>",
+        "<pad><s>\tif (entry.isDirectory() && outFile.exists()) {\n</s>",
+        "<pad><s>\tif (entry.getSize() == 0) {\n</s></s></s>",
+        "<pad><s>\tif (entry.isDirectory()) {\n</s></s></s></s></s></s>",
+        "<pad><s>\tif (isDirectory(entry)) {\n</s></s></s></s></s></s>",
+        "<pad><s>\tif (zipFile.isDirectory()) {\n</s></s></s></s></s>",
+        "<pad><s>\tif (!entry.isDirectory()) {\n</s></s></s></s></s></s>",
+        "<pad><s>\tif (isDirectory) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif (entry.isDirectory())\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tif (entry.isDirectory() && outFile.exists()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tif (entry.getSize() == 0) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tif (entry.isDirectory()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tif (isDirectory(entry)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tif (zipFile.isDirectory()) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tif (!entry.isDirectory()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tif (isDirectory) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); } return new ArrayList < TopLevelItem>();",
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) {",
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); } else { return new ArrayList < TopLevelItem>(); }",
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return viewableItems; } return new ArrayList < TopLevelItem>();",
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(itemValues); } return new ArrayList < TopLevelItem>();",
+        "List < TopLevelItem> viewableItems = new ArrayList < TopLevelItem>(); Iterator < TopLevelItem> iterator = itemValues.iterator();",
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); }",
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>();",
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); } return new ArrayList < TopLevelItem>(itemValues);",
+        "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&!(authorizationStrategy instanceof AuthorizationStrategy)) { return new ArrayList < TopLevelItem>();"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); } return new ArrayList < TopLevelItem>();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); } else { return new ArrayList < TopLevelItem>(); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return viewableItems; } return new ArrayList < TopLevelItem>();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(itemValues); } return new ArrayList < TopLevelItem>();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "List < TopLevelItem> viewableItems = new ArrayList < TopLevelItem>(); Iterator < TopLevelItem> iterator = itemValues.iterator();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); } return new ArrayList < TopLevelItem>(itemValues);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&!(authorizationStrategy instanceof AuthorizationStrategy)) { return new ArrayList < TopLevelItem>();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

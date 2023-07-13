@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (contextPath!= null && \"/ \".equals(contextPath)) {",
+        "if (contextPath.equals( \"/ \")) {",
+        "if ( \"/ \".equals(contextPath)) {",
+        "if (contextPath.startsWith( \"/ \")) {",
+        "if (contextPath.contains( \"/ \")) {",
+        "if (contextPath == null || \"/ \".equals(contextPath)) {",
+        "if (contextPath!=null && \"/ \".equals(contextPath)) {",
+        "if (contextPath!= null && contextPath.length() > 0) {",
+        "if (contextPath!= null && contextPath.equals( \"/ \")) {",
+        "if (contextPath.endsWith( \"/ \")) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (contextPath!= null && \"/ \".equals(contextPath)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (contextPath.equals( \"/ \")) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( \"/ \".equals(contextPath)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (contextPath.startsWith( \"/ \")) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (contextPath.contains( \"/ \")) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (contextPath == null || \"/ \".equals(contextPath)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (contextPath!=null && \"/ \".equals(contextPath)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (contextPath!= null && contextPath.length() > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (contextPath!= null && contextPath.equals( \"/ \")) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (contextPath.endsWith( \"/ \")) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

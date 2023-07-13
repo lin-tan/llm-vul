@@ -1,0 +1,56 @@
+{
+    "output": [
+        "return true;",
+        "return false;",
+        "return null;",
+        "throw new IllegalArgumentException();",
+        "throw new UnsupportedOperationException();",
+        "return str.length() == 0;",
+        "throw new IllegalArgumentException(str);",
+        "throw new IllegalStateException();",
+        "break;",
+        "return;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return true;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return false;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "throw new IllegalArgumentException();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "throw new UnsupportedOperationException();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return str.length() == 0;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "throw new IllegalArgumentException(str);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "throw new IllegalStateException();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "break;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for(int position = 1;f.exists();position++){\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for(int position = 0;f.exists();position++){\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for(int position = 1;f.exists();position++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for(int position = 0;f.exists();position++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for(int position = 3;f.exists();position++){\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for (int position = 2; f.exists(); position++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for(int position = 3;f.exists();position++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for (int position = 2; f.exists(); position++){\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    for(int position = 1;f.exists();position++){\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "static public File apportionFile(File folder, String titile) {\n    int m = titile.indexOf('?');\n    titile = m > 0? titile.substring(0, m):titile;\n    int point = titile.indexOf('.');\n    String beginning;\n    String postfix;\n    if(point >= 0){\n        beginning  =  titile.substring(0, point);\n        postfix = titile.substring(point);\n    }else{\n        beginning = titile;\n        postfix = \"\";\n    }\n    File f = new File(folder, titile);\n// buggy lines start:\n    for(int position = 2;f.exists();position++){\n// buggy lines end\n        f = new File(folder, beginning + \"-\" + position + postfix);\n    }\n    File parentFile = f.getParentFile();\n    parentFile.mkdirs();\n    return f;\n}\n// fixed lines:\n    int position = 2;\n    while(f.exists() && position > 0){\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    for(int position = 1;f.exists();position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 1;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for(int position = 0;f.exists();position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 0;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for(int position = 1;f.exists();position++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 1;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for(int position = 0;f.exists();position++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 0;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for(int position = 3;f.exists();position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 3;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for (int position = 2; f.exists(); position++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for (int index = 2; file.exists(); index++) {\n"
+        },
+        {
+            "patch": "    for(int position = 3;f.exists();position++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 3;file.exists();index++){\n"
+        },
+        {
+            "patch": "    for (int position = 2; f.exists(); position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for (int index = 2; file.exists(); index++) {\n"
+        },
+        {
+            "patch": "    for(int position = 1;f.exists();position++){\n",
+            "correctness": "compile_success",
+            "translated": "    for(int index = 1;file.exists();index++){\n"
+        },
+        {
+            "patch": "    int position = 2;\n    while(f.exists() && position > 0){\n",
+            "correctness": "compile_success",
+            "translated": "    int index = 2;\n    while(file.exists() && index > 0){\n"
+        }
+    ]
+}

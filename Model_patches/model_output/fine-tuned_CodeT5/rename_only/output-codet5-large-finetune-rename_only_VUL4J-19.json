@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        adjustPresentUseConsent(presentUseConsent, cipher);\n</s>",
+        "<pad><s>        adjustPresentUseConsent(presentUseConsent, false);\n</s>",
+        "<pad><s>        adjustPresentUseConsent(presentUseConsent, true);\n</s>",
+        "<pad><s>        adjustPresentUseConsent(true, presentUseConsent);\n</s>",
+        "<pad><s>        adjustPresentUseConsent(presentUseConsent, null);\n</s>",
+        "<pad><s>        adjustPresentUseConsent(false, presentUseConsent);\n</s>",
+        "<pad><s>        adjustPresentUseConsent(presentUseConsent, algorithm);\n</s>",
+        "<pad><s>        adjustPresentUseConsent(null);\n</s></s></s></s></s>",
+        "<pad><s>        adjustPresentUseConsent(true);\n</s></s></s></s></s>",
+        "<pad><s>        adjustPresentUseConsent(false);\n</s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent, cipher);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission, encryption);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent, false);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission, false);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent, true);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission, true);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(true, presentUseConsent);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(true, currentAccessPermission);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent, null);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission, null);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(false, presentUseConsent);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(false, currentAccessPermission);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent, algorithm);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission, algorithm);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(null);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(null);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(true);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(true);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(false);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(false);\n"
+        }
+    ]
+}

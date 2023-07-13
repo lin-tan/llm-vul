@@ -1,0 +1,65 @@
+{
+    "id": 43,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.049,
+            "fix_type": "general",
+            "patch": "new BigInteger[None]{(ASN1Integer)s.getObjectAt(0).getValue(),(ASN1Integer)s.getObjectAt(1).getValue()}"
+        },
+        {
+            "rank": 2,
+            "score": -0.0815,
+            "fix_type": "general",
+            "patch": "new BigInteger[None]{s.getObjectAt(0),(ASN1Integer)s.getObjectAt(1).getValue()}"
+        },
+        {
+            "rank": 3,
+            "score": -0.1069,
+            "fix_type": "general",
+            "patch": "new BigInteger[None]{(ASN1Integer)s.getObjectAt(0),(ASN1Integer)s.getObjectAt(1).getValue()}"
+        },
+        {
+            "rank": 4,
+            "score": -0.2353,
+            "fix_type": "insert",
+            "patch": "if (s == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1193,
+            "fix_type": "general",
+            "patch": "new BigInteger[None]{(ASN1Integer)s.getObjectAt(0).getValue(),(ASN1Integer)s.getObjectAt(1).getObjectAt()}"
+        },
+        {
+            "rank": 6,
+            "score": -0.1227,
+            "fix_type": "general",
+            "patch": "new BigInteger[None]{(ASN1Integer)s.getObjectAt(0).getValue()}"
+        },
+        {
+            "rank": 7,
+            "score": -0.1733,
+            "fix_type": "general",
+            "patch": "{(BigInteger)s.getObjectAt(0),(ASN1Integer)s.getObjectAt(0),(ASN1Integer)s.getObjectAt()}"
+        },
+        {
+            "rank": 8,
+            "score": -0.3137,
+            "fix_type": "insert",
+            "patch": "if (s == null ){\nthrow new IOException(\"\");\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.3137,
+            "fix_type": "insert",
+            "patch": "if (s == null ){\nthrow new IOException(\"0\");\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.1408,
+            "fix_type": "general",
+            "patch": "new BigInteger[None]{(ASN1Integer)s.getObjectAt(0).getValue().getValue()}"
+        }
+    ]
+}

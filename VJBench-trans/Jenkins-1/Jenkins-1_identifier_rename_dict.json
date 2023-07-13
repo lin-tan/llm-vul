@@ -1,0 +1,17 @@
+{
+    "method": {
+        "getAll": "acquireWhole",
+        "data": "information",
+        "getMonitorData": "acquireProctorInformation",
+        "hasPermission": "withAuthority"
+    },
+    "variable": {
+        "r": "z",
+        "monitor": "proctor",
+        "nodeMonitorList": "vertexProctorList",
+        "monitorClass": "proctorClass"
+    },
+    "class": {
+        "NodeMonitor": "VertexProctor"
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "2,2-29,5",
+    "output": [
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       return url;\n   }\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       return url;\n   }\n\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       }\n       return \"http://\" + url;\n   }\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       }\n       return \"http://\" + url;\n   }\n\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\") || url.startsWith(\"ftp://\")) {\n           return url;\n       }\n       return \"http://\" + url;\n   }\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       } else {\n           return \"http://\" + url;\n       }\n   }\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\") || url.startsWith(\"ftp://\")) {\n           return url;\n       }\n       return \"http://\" + url;\n   }\n\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       }\n       if (url.startsWith(\"/\")) {\n           return \"http://\" + url;\n       }\n       return \"http://\" + url + \"/\";\n   }\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       }\n       if (url.startsWith(\"/\")) {\n           return \"http://\" + url;\n       }\n       return \"http://\" + url + \"/\";\n   }\n\n}\n",
+        "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (StringUtils.isEmpty(url)) {\n           return \"\";\n       }\n       return url;\n   }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       return url;\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       return url;\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       }\n       return \"http://\" + url;\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       }\n       return \"http://\" + url;\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\") || url.startsWith(\"ftp://\")) {\n           return url;\n       }\n       return \"http://\" + url;\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       } else {\n           return \"http://\" + url;\n       }\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\") || url.startsWith(\"ftp://\")) {\n           return url;\n       }\n       return \"http://\" + url;\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       }\n       if (url.startsWith(\"/\")) {\n           return \"http://\" + url;\n       }\n       return \"http://\" + url + \"/\";\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) {\n           return url;\n       }\n       if (url.startsWith(\"/\")) {\n           return \"http://\" + url;\n       }\n       return \"http://\" + url + \"/\";\n   }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\n   @Nonnull\n   public String getValidHref(final String url) {\n       if (!StringUtils.isNotEmpty(url)) {\n           return \"\";\n       }\n       if (StringUtils.isEmpty(url)) {\n           return \"\";\n       }\n       return url;\n   }",
+            "correctness": "compile_success"
+        }
+    ]
+}

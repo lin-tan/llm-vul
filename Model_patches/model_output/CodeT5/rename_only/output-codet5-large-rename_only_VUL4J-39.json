@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-21,1",
+    "output": [
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n   \n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public //",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public public",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public // }",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public /*",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public /* }",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n   \n\n\n\n    if (\n\n\n\n\n\n\n }\n    public public",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"customerIdentification=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public //",
+        "\n\n   \n\n   \n\n\n\n    if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n   \n\n\n\n    if (\n\n\n\n\n\n\n }\n    public // }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n   \n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n   \n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public //",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public //"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public public",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public public"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n   \n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public // }",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public // }"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public /*",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public /*"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public /* }",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public /* }"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n   \n\n\n\n    if (\n\n\n\n\n\n\n }\n    public public",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public public"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"customerIdentification=\").append(customerIdentification);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public //",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    return public //"
+        },
+        {
+            "patch": "if (source!= null) {\n        s.append(\", \");\n        s.append(source);\n    }\n    if (customerIdentification!= null) {\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n\n\n   \n\n\n\n    if (\n\n\n\n\n\n\n }\n    public // }",
+            "correctness": "uncompilable",
+            "translated": "if (origin!= null) {\n        sb.append(\", \");\n        sb.append(origin);\n    }\n    if (clientId!= null) {\n        sb.append(\"clientId=\").append(clientId);\n    }\n\n\n\n\n\n\n    if (\n\n\n\n\n\n\n }\n    public // }"
+        }
+    ]
+}

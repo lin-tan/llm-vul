@@ -1,0 +1,2014 @@
+[
+    {
+        "CVE_id": "CVE-2017-18349",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/com/alibaba/fastjson/serializer/ObjectArrayCodec.java",
+        "buggy_line": [
+            [
+                177
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                127,
+                180
+            ]
+        ],
+        "human_patch": "https://github.com/alibaba/fastjson/commit/f5903fa56497c00ed0703ac875b511f9bd5f1d8e",
+        "vul_id": "VUL4J-1",
+        "package_name": "com.alibaba.fastjson.serializer",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-5662",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "batik-dom/src/main/java/org/apache/batik/dom/util/SAXDocumentFactory.java",
+        "buggy_line": [
+            [
+                405
+            ],
+            [
+                449
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                400,
+                412
+            ],
+            [
+                414,
+                467
+            ]
+        ],
+        "human_patch": "https://github.com/apache/xmlgraphics-batik/commit/660ef628d637af636ea113243fe73f170ac43958",
+        "vul_id": "VUL4J-2"
+    },
+    {
+        "CVE_id": "CVE-2015-0263",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "camel-core/src/main/java/org/apache/camel/converter/jaxp/XmlConverter.java",
+        "buggy_line": [
+            [
+                599
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                574,
+                607
+            ]
+        ],
+        "human_patch": "https://github.com/apache/camel/commit/7d19340bcdb42f7aae584d9c5003ac4f7ddaee36",
+        "vul_id": "VUL4J-3",
+        "package_name": "org.apache.camel.converter.jaxp",
+        "source_dir": "camel-core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2015-0264",
+        "single_flie": "1",
+        "bug_type": "deletion",
+        "buggy_file": "camel-core/src/main/java/org/apache/camel/builder/xml/XPathBuilder.java",
+        "buggy_line": [
+            [
+                1116,
+                1134
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                1097,
+                1148
+            ]
+        ],
+        "human_patch": "https://github.com/apache/camel/commit/1df559649a96a1ca0368373387e542f46e4820da",
+        "vul_id": "VUL4J-4",
+        "package_name": "org.apache.camel.builder.xml",
+        "source_dir": "camel-core/src/main/java/"
+    },
+    {
+        "CVE_id": "APACHE-COMMONS-001",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/apache/commons/compress/archivers/examples/Expander.java",
+        "buggy_line": [
+            [
+                241
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                239,
+                264
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-compress/commit/a080293da69f3fe3d11d5214432e1469ee195870",
+        "vul_id": "VUL4J-5",
+        "package_name": "org.apache.commons.compress.archivers.examples",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1324",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/apache/commons/compress/archivers/zip/X0017_StrongEncryptionHeader.java",
+        "buggy_line": [
+            [
+                313
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                295,
+                319
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-compress/commit/2a2f1dc48e22a34ddb72321a4db211da91aa933b",
+        "vul_id": "VUL4J-6",
+        "package_name": "org.apache.commons.compress.archivers.zip",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-11771",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java",
+        "buggy_line": [
+            [
+                528
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                507,
+                544
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-compress/commit/a41ce6892cb0590b2e658704434ac0dbcb6834c8",
+        "vul_id": "VUL4J-7",
+        "package_name": "org.apache.commons.compress.archivers.zip",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2019-12402",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/apache/commons/compress/archivers/zip/NioZipEncoding.java",
+        "buggy_line": [
+            [
+                114
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                74,
+                124
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-compress/commit/4ad5d80a6272e007f64a6ac66829ca189a8093b9",
+        "vul_id": "VUL4J-8",
+        "package_name": "org.apache.commons.compress.archivers.zip",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2020-1953",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/apache/commons/configuration2/YAMLConfiguration.java",
+        "buggy_line": [
+            [
+                68
+            ],
+            [
+                83
+            ],
+            [
+                120
+            ],
+            [
+                135
+            ],
+            [
+                144
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                63,
+                76
+            ],
+            [
+                78,
+                91
+            ],
+            [
+                109,
+                128
+            ],
+            [
+                130,
+                143
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-configuration/commit/add7375cf37fd316d4838c6c56b054fc293b4641",
+        "vul_id": "VUL4J-9"
+    },
+    {
+        "CVE_id": "CVE-2013-2186",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/apache/commons/fileupload/disk/DiskFileItem.java",
+        "buggy_line": [
+            [
+                659
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                646,
+                671
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-fileupload/commit/163a6061fbc077d4b6e4787d26857c2baba495d1",
+        "vul_id": "VUL4J-10",
+        "package_name": "org.apache.commons.fileupload.disk",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2014-0050",
+        "single_flie": "0",
+        "human_patch": "https://github.com/apache/commons-fileupload/commit/c61ff05b3241cb14d989b67209e57aa71540417a",
+        "vul_id": "VUL4J-11"
+    },
+    {
+        "CVE_id": "CVE-2018-17202",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/apache/commons/imaging/formats/jpeg/decoder/JpegDecoder.java",
+        "buggy_line": [
+            [
+                403
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                400,
+                408
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-imaging/commit/6a79d35d6654d895d0a4b73b3a9282ec9aaeeb06",
+        "vul_id": "VUL4J-12",
+        "package_name": "org.apache.commons.imaging.formats.jpeg.decoder",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-17201",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/apache/commons/imaging/formats/rgbe/RgbeInfo.java",
+        "buggy_line": [
+            [
+                172
+            ],
+            [
+                179
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                171,
+                191
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-imaging/commit/f5574bfe285edd79207fe8c30f53cb0af06e26bb",
+        "vul_id": "VUL4J-13"
+    },
+    {
+        "CVE_id": "CVE-2021-29425",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/apache/commons/io/FilenameUtils.java",
+        "buggy_line": [
+            [
+                679
+            ],
+            [
+                1492
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                591,
+                683
+            ]
+        ],
+        "human_patch": "https://github.com/apache/commons-io/commit/2736b6fe0b3fa22ec8e2b4184897ecadb021fc78",
+        "vul_id": "VUL4J-14"
+    },
+    {
+        "CVE_id": "CVE-2016-8739",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "rt/rs/extensions/providers/src/main/java/org/apache/cxf/jaxrs/provider/atom/AbstractAtomProvider.java",
+        "buggy_line": [
+            [
+                92
+            ],
+            [
+                95
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                84,
+                97
+            ]
+        ],
+        "human_patch": "https://github.com/apache/cxf/commit/d9e2a6e7",
+        "vul_id": "VUL4J-15"
+    },
+    {
+        "CVE_id": "CVE-2015-5253",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "rt/rs/security/sso/saml/src/main/java/org/apache/cxf/rs/security/saml/sso/SAMLSSOResponseValidator.java",
+        "buggy_line": [
+            [
+                95
+            ],
+            [
+                117
+            ],
+            [
+                129
+            ],
+            [
+                143
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                65,
+                149
+            ]
+        ],
+        "human_patch": "https://github.com/apache/cxf/commit/845eccb6484b43ba02875c71e824db23ae4f20c0",
+        "vul_id": "VUL4J-16"
+    },
+    {
+        "CVE_id": "HTTPCLIENT-1803",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "httpclient/src/main/java/org/apache/http/client/utils/URIBuilder.java",
+        "buggy_line": [
+            [
+                496
+            ],
+            [
+                507
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                493,
+                508
+            ]
+        ],
+        "human_patch": "https://github.com/apache/httpcomponents-client/commit/0554271750599756d4946c0d7ba43d04b1a7b22",
+        "vul_id": "VUL4J-17"
+    },
+    {
+        "CVE_id": "CVE-2019-0225",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "jspwiki-main/src/main/java/org/apache/wiki/url/DefaultURLConstructor.java",
+        "buggy_line": [
+            [
+                280
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                271,
+                281
+            ]
+        ],
+        "human_patch": "https://github.com/apache/jspwiki/commit/88d89d6523802c044cfcb7930cba40d8eeb21da2",
+        "vul_id": "VUL4J-18",
+        "package_name": "org.apache.wiki.url",
+        "source_dir": "jspwiki-main/src/main/java/"
+    },
+    {
+        "CVE_id": "PDFBOX-3341",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java",
+        "buggy_line": [
+            [
+                240
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                155,
+                276
+            ]
+        ],
+        "human_patch": "https://github.com/bqcuong/vul4j/commit/c90825da4d28d7b1ae9b1484b9a010206be3dec5",
+        "vul_id": "VUL4J-19",
+        "package_name": "org.apache.pdfbox.pdmodel.encryption",
+        "source_dir": "pdfbox/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-11797",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "pdfbox/src/main/java/org/apache/pdfbox/cos/COSArray.java",
+        "buggy_line": [
+            [
+                539
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                529,
+                542
+            ]
+        ],
+        "human_patch": "https://github.com/apache/pdfbox/commit/f7dc8eed7df007c88421919932e2d4de44d2ae2",
+        "vul_id": "VUL4J-20",
+        "package_name": "org.apache.pdfbox.cos",
+        "source_dir": "pdfbox/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2014-8152",
+        "single_flie": "0",
+        "human_patch": "https://github.com/apache/santuario-java/commit/e50488044121cf01ffbc235ca53b9562031d69c5",
+        "vul_id": "VUL4J-21"
+    },
+    {
+        "CVE_id": "CVE-2016-6802",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "web/src/main/java/org/apache/shiro/web/util/WebUtils.java",
+        "buggy_line": [
+            [
+                251,
+                255
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                237,
+                256
+            ]
+        ],
+        "human_patch": "https://github.com/apache/shiro/commit/b15ab927709ca18ea4a02538be01919a19ab65af",
+        "vul_id": "VUL4J-22",
+        "package_name": "org.apache.shiro.web.util",
+        "source_dir": "web/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-5394",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "bundles/extensions/xss/src/main/java/org/apache/sling/xss/impl/XSSAPIImpl.java",
+        "buggy_line": [
+            [
+                432
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                427,
+                433
+            ]
+        ],
+        "human_patch": "https://github.com/apache/sling/commit/7d2365a248943071a44d8495655186e4f14ea294",
+        "vul_id": "VUL4J-23",
+        "package_name": "org.apache.sling.xss.impl",
+        "source_dir": "bundles/extensions/xss/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-6798",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "bundles/extensions/xss/src/main/java/org/apache/sling/xss/impl/XSSAPIImpl.java",
+        "buggy_line": [
+            [
+                67
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                62,
+                68
+            ]
+        ],
+        "human_patch": "https://github.com/apache/sling/commit/fb2719e8299fadddae62245482de112052a0e08c",
+        "vul_id": "VUL4J-24",
+        "package_name": "org.apache.sling.xss.impl",
+        "source_dir": "bundles/extensions/xss/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-15717",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/apache/sling/xss/impl/XSSAPIImpl.java",
+        "buggy_line": [
+            [
+                231,
+                258
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                224,
+                262
+            ]
+        ],
+        "human_patch": "https://github.com/apache/sling-org-apache-sling-xss/commit/ec6764d165abc4df8cffd8439761bb2228887db9",
+        "vul_id": "VUL4J-25",
+        "package_name": "org.apache.sling.xss.impl",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-4465",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/com/opensymphony/xwork2/validator/validators/URLValidator.java",
+        "buggy_line": [
+            [
+                84
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                63,
+                90
+            ]
+        ],
+        "human_patch": "https://github.com/apache/struts/commit/a0fdca138feec2c2e94eb75ca1f8b76678b4d152",
+        "vul_id": "VUL4J-26",
+        "package_name": "com.opensymphony.xwork2.validator.validators",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2014-0112",
+        "single_flie": "0",
+        "human_patch": "https://github.com/bqcuong/vul4j/compare/a2d0ecdcd3594c87265f483ecb3c202fec18937c..6315241719be167542962da436b38782ed730c62",
+        "vul_id": "VUL4J-27"
+    },
+    {
+        "CVE_id": "CVE-2014-0113",
+        "single_flie": "0",
+        "human_patch": "https://github.com/bqcuong/vul4j/compare/a2d0ecdcd3594c87265f483ecb3c202fec18937c..6315241719be167542962da436b38782ed730c62",
+        "vul_id": "VUL4J-28"
+    },
+    {
+        "CVE_id": "CVE-2014-0116",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/org/apache/struts2/interceptor/CookieInterceptor.java",
+        "buggy_line": [
+            [
+                178
+            ],
+            [
+                256,
+                259
+            ],
+            [
+                262
+            ],
+            [
+                302,
+                309
+            ],
+            [
+                312
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                249,
+                263
+            ],
+            [
+                295,
+                313
+            ]
+        ],
+        "human_patch": "https://github.com/bqcuong/vul4j/commit/1a668af7f1ffccea4a3b46d8d8c1fe1c7331ff02",
+        "vul_id": "VUL4J-29"
+    },
+    {
+        "CVE_id": "CVE-2016-8738",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/com/opensymphony/xwork2/validator/validators/URLValidator.java",
+        "buggy_line": [
+            [
+                58
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                48,
+                61
+            ]
+        ],
+        "human_patch": "https://github.com/apache/struts/commit/554b9dddb0fbd1e581ef577dd62a7c22955ad0f6",
+        "vul_id": "VUL4J-30",
+        "package_name": "com.opensymphony.xwork2.validator.validators",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-4436",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/org/apache/struts2/dispatcher/mapper/DefaultActionMapper.java",
+        "buggy_line": [
+            [
+                387,
+                398
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                377,
+                400
+            ]
+        ],
+        "human_patch": "https://github.com/apache/struts/commit/237432512df0e27013f7c7b9ab59fdce44ca34a5",
+        "vul_id": "VUL4J-31",
+        "package_name": "org.apache.struts2.dispatcher.mapper",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2015-1831",
+        "single_flie": "0",
+        "human_patch": "https://github.com/apache/struts/commit/d832747d647df343ed07a58b1b5e540a05a4d51b",
+        "vul_id": "VUL4J-32"
+    },
+    {
+        "CVE_id": "CVE-2016-3081",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/com/opensymphony/xwork2/ognl/OgnlUtil.java",
+        "buggy_line": [
+            [
+                290
+            ],
+            [
+                306
+            ],
+            [
+                363
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                275,
+                296
+            ],
+            [
+                298,
+                309
+            ],
+            [
+                361,
+                365
+            ]
+        ],
+        "human_patch": "https://github.com/apache/struts/commit/f238cf4f1091be19fbcfd086b042c86a1bcaa7fc",
+        "vul_id": "VUL4J-33"
+    },
+    {
+        "CVE_id": "CVE-2016-2162",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "core/src/main/java/com/opensymphony/xwork2/interceptor/I18nInterceptor.java",
+        "buggy_line": [
+            [
+                221
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                204,
+                222
+            ]
+        ],
+        "human_patch": "https://github.com/apache/struts/commit/fc2179cf1ac9fbfb61e3430fa88b641d87253327",
+        "vul_id": "VUL4J-34",
+        "package_name": "com.opensymphony.xwork2.interceptor",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2014-7809",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/org/apache/struts2/util/TokenHelper.java",
+        "buggy_line": [
+            [
+                54
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                33,
+                229
+            ]
+        ],
+        "human_patch": "https://github.com/apache/struts/commit/1f301038a751bf16e525607c3db513db835b2999",
+        "vul_id": "VUL4J-35"
+    },
+    {
+        "CVE_id": "CVE-2018-8017",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "tika-parsers/src/main/java/org/apache/tika/parser/iptc/IptcAnpaParser.java",
+        "buggy_line": [
+            [
+                446
+            ],
+            [
+                511
+            ],
+            [
+                578
+            ],
+            [
+                677
+            ],
+            [
+                716
+            ],
+            [
+                723
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                443,
+                694
+            ],
+            [
+                697,
+                768
+            ]
+        ],
+        "human_patch": "https://github.com/apache/tika/commit/8a6a9e1344f5b10ebfa1a189dc3c30d0da2b9d4",
+        "vul_id": "VUL4J-36"
+    },
+    {
+        "CVE_id": "CVE-2015-8581",
+        "single_flie": "0",
+        "human_patch": "https://github.com/apache/tomee/commit/58cdbbef9c77ab2b44870f9d606593b49cde76d9",
+        "vul_id": "VUL4J-37"
+    },
+    {
+        "CVE_id": "CVE-2014-4172",
+        "single_flie": "0",
+        "human_patch": "https://github.com/apereo/java-cas-client/commit/ab6cbdc3daa451b4fef89c0bd0f4e6568f3aa9ef",
+        "vul_id": "VUL4J-38"
+    },
+    {
+        "CVE_id": "CVE-2018-1192",
+        "single_flie": "1",
+        "bug_type": "deletion",
+        "buggy_file": "server/src/main/java/org/cloudfoundry/identity/uaa/authentication/UaaAuthenticationDetails.java",
+        "buggy_line": [
+            [
+                116,
+                121
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                104,
+                123
+            ]
+        ],
+        "human_patch": "https://github.com/cloudfoundry/uaa/commit/a61bfabbad22f646ecf1f00016b448b26a60daf",
+        "vul_id": "VUL4J-39",
+        "package_name": "org.cloudfoundry.identity.uaa.authentication",
+        "source_dir": "server/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2019-3775",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "server/src/main/java/org/cloudfoundry/identity/uaa/security/ScimUserSelfUpdateAllowed.java",
+        "buggy_line": [
+            [
+                41
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                23,
+                59
+            ]
+        ],
+        "human_patch": "https://github.com/cloudfoundry/uaa/commit/daeedbe499453b06856556f5e9f7e80d2d1ceb03",
+        "vul_id": "VUL4J-40",
+        "package_name": "org.cloudfoundry.identity.uaa.security",
+        "source_dir": "server/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1002200",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/codehaus/plexus/archiver/AbstractUnArchiver.java",
+        "buggy_line": [
+            [
+                311
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                303,
+                361
+            ]
+        ],
+        "human_patch": "https://github.com/codehaus-plexus/plexus-archiver/commit/58bc24e465c0842981692adbf6d75680298989de",
+        "vul_id": "VUL4J-41",
+        "package_name": "org.codehaus.plexus.archiver",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-1000487",
+        "single_flie": "0",
+        "human_patch": "https://github.com/codehaus-plexus/plexus-utils/commit/b38a1b3a4352303e4312b2bb601a0d7ec6e28f41",
+        "vul_id": "VUL4J-42"
+    },
+    {
+        "CVE_id": "CVE-2018-20227",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "util/src/main/java/org/eclipse/rdf4j/common/io/ZipUtil.java",
+        "buggy_line": [
+            [
+                95
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                78,
+                105
+            ]
+        ],
+        "human_patch": "https://github.com/eclipse/rdf4j/commit/df15a4d7a8f2789c043b27c9eafe1b30316cfa79",
+        "vul_id": "VUL4J-43",
+        "package_name": "org.eclipse.rdf4j.common.io",
+        "source_dir": "util/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2013-5960",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/owasp/esapi/codecs/PercentCodec.java",
+        "buggy_line": [
+            [
+                102
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                90,
+                110
+            ]
+        ],
+        "human_patch": "https://github.com/ESAPI/esapi-java-legacy/commit/b7cbc53f9cc967cf1a5a9463d8c6fef9ed6ef4f7",
+        "vul_id": "VUL4J-44",
+        "package_name": "org.owasp.esapi.codecs",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1000854",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "esigate-core/src/main/java/org/esigate/xml/XsltRenderer.java",
+        "buggy_line": [
+            [
+                91
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                89,
+                97
+            ]
+        ],
+        "human_patch": "https://github.com/esigate/esigate/commit/30cad23a8f282600c9b045e1af09f6f8a65357b1",
+        "vul_id": "VUL4J-45",
+        "package_name": "org.esigate.xml",
+        "source_dir": "esigate-core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-3720",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java",
+        "buggy_line": [
+            [
+                113
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                104,
+                121
+            ]
+        ],
+        "human_patch": "https://github.com/FasterXML/jackson-dataformat-xml/commit/f0f19a4c924d9db9a1e2830434061c8640092cc0",
+        "vul_id": "VUL4J-46",
+        "package_name": "com.fasterxml.jackson.dataformat.xml",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-7051",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/com/fasterxml/jackson/dataformat/xml/XmlFactory.java",
+        "buggy_line": [
+            [
+                115
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                104,
+                123
+            ]
+        ],
+        "human_patch": "https://github.com/FasterXML/jackson-dataformat-xml/commit/eeff2c312e9d4caa8c9f27b8f740c7529d00524a",
+        "vul_id": "VUL4J-47",
+        "package_name": "com.fasterxml.jackson.dataformat.xml",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1000531",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/primeframework/jwt/JWTDecoder.java",
+        "buggy_line": [
+            [
+                154,
+                156
+            ],
+            [
+                168
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                153,
+                187
+            ]
+        ],
+        "human_patch": "https://github.com/inversoft/prime-jwt/commit/abb0d479389a2509f939452a6767dc424bb5e6ba",
+        "vul_id": "VUL4J-48"
+    },
+    {
+        "CVE_id": "CVE-2018-1000125",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/primeframework/jwt/JWTDecoder.java",
+        "buggy_line": [
+            [
+                68,
+                70
+            ],
+            [
+                118,
+                120
+            ],
+            [
+                153
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                49,
+                82
+            ],
+            [
+                99,
+                133
+            ],
+            [
+                143,
+                172
+            ]
+        ],
+        "human_patch": "https://github.com/inversoft/prime-jwt/commit/0d94dcef0133d699f21d217e922564adbb83a227",
+        "vul_id": "VUL4J-49"
+    },
+    {
+        "CVE_id": "CVE-2013-4378",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "javamelody-core/src/main/java/net/bull/javamelody/HtmlSessionInformationsReport.java",
+        "buggy_line": [
+            [
+                162
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                131,
+                184
+            ]
+        ],
+        "human_patch": "https://github.com/javamelody/javamelody/commit/aacbc46151ff4ac1ca34ce0899c2a6113071c66e",
+        "vul_id": "VUL4J-50",
+        "package_name": "net.bull.javamelody",
+        "source_dir": "javamelody-core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1000054",
+        "single_flie": "0",
+        "buggy_file": "src/main/java/hudson/plugins/ccm/parser/CcmParser.java",
+        "buggy_line": [
+            [
+                87,
+                89
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                86,
+                107
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/ccm-plugin/commit/066cb43b4413b3490d822ec8b8a32072ebd213ca",
+        "vul_id": "VUL4J-51"
+    },
+    {
+        "CVE_id": "CVE-2018-1000865",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/kohsuke/groovy/sandbox/SandboxTransformer.java",
+        "buggy_line": [
+            [
+                140
+            ],
+            [
+                150
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                130,
+                148
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/groovy-sandbox/commit/0cd7ec12b7c56cfa3167d99c5f43147ce05449d3",
+        "vul_id": "VUL4J-52"
+    },
+    {
+        "CVE_id": "CVE-2018-1999044",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/hudson/scheduler/CronTab.java",
+        "buggy_line": [
+            [
+                207
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                206,
+                208
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/jenkins/commit/e5046911c57e60a1d6d8aca9b21bd9093b0f3763",
+        "vul_id": "VUL4J-53",
+        "package_name": "hudson.scheduler",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-1000355",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "core/src/main/java/hudson/util/XStream2.java",
+        "buggy_line": [
+            [
+                148
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                144,
+                173
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/jenkins/commit/701ea95a52afe53bee28f76a3f96eb0e578852e9",
+        "vul_id": "VUL4J-54",
+        "package_name": "hudson.util",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1000864",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "core/src/main/java/hudson/scheduler/CronTab.java",
+        "buggy_line": [
+            [
+                359
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                325,
+                365
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/jenkins/commit/73afa0ca786a87f05b5433e2e38f863826fcad17",
+        "vul_id": "VUL4J-55",
+        "package_name": "hudson.scheduler",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1000056",
+        "single_flie": "0",
+        "human_patch": "https://github.com/jenkinsci/junit-plugin/commit/15f39fc49d9f25bca872badb48e708a8bb815ea7",
+        "vul_id": "VUL4J-56"
+    },
+    {
+        "CVE_id": "CVE-2018-1000089",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/jenkinsci/plugins/workflow/support/steps/build/BuildTriggerStepExecution.java",
+        "buggy_line": [
+            [
+                66
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                58,
+                148
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/pipeline-build-step-plugin/commit/3dfefdec1f7b2a4ee0ef8902afdea720b1572cb3",
+        "vul_id": "VUL4J-57",
+        "package_name": "org.jenkinsci.plugins.workflow.support.steps.build",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1000111",
+        "single_flie": "0",
+        "human_patch": "https://github.com/jenkinsci/subversion-plugin/commit/25f6afbb02a5863f363b0a2f664ac717ace743b4",
+        "vul_id": "VUL4J-58"
+    },
+    {
+        "CVE_id": "CVE-2015-6748",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/jsoup/parser/TokeniserState.java",
+        "buggy_line": [
+            [
+                760
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                733,
+                778
+            ]
+        ],
+        "human_patch": "https://github.com/jhy/jsoup/commit/4edb78991f8d0bf87dafde5e01ccd8922065c9b2",
+        "vul_id": "VUL4J-59",
+        "package_name": "org.jsoup.parser",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-10006",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/org/owasp/validator/html/scan/MagicSAXFilter.java",
+        "buggy_line": [
+            [
+                274,
+                278
+            ],
+            [
+                355
+            ],
+            [
+                371
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                224,
+                389
+            ]
+        ],
+        "human_patch": "https://github.com/nahsra/antisamy/commit/7313931dc3c0d1377b010f07faef2063dd359a36",
+        "vul_id": "VUL4J-60"
+    },
+    {
+        "CVE_id": "CVE-2018-1000820",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/apoc/load/Xml.java",
+        "buggy_line": [
+            [
+                68
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                60,
+                105
+            ]
+        ],
+        "human_patch": "https://github.com/neo4j-contrib/neo4j-apoc-procedures/commit/45bc09c8bd7f17283e2a7e85ce3f02cb4be4fd1a",
+        "vul_id": "VUL4J-61",
+        "package_name": "apoc.load",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-18389",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "enterprise/security/src/main/java/org/neo4j/server/security/enterprise/auth/LdapRealm.java",
+        "buggy_line": [
+            [
+                235
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                211,
+                251
+            ]
+        ],
+        "human_patch": "https://github.com/neo4j/neo4j/commit/46de5d01ae2741ffe04c36270fc62c6d490f65c9",
+        "vul_id": "VUL4J-62",
+        "package_name": "org.neo4j.server.security.enterprise.auth",
+        "source_dir": "enterprise/security/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1000615",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "protocols/ovsdb/rfc/src/main/java/org/onosproject/ovsdb/rfc/utils/VersionUtil.java",
+        "buggy_line": [
+            [
+                53
+            ],
+            [
+                55,
+                66
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                46,
+                68
+            ]
+        ],
+        "human_patch": "https://github.com/opennetworkinglab/onos/commit/1a783729a1d7e0cd59d59a8dd3a73cdd6ac0f30d",
+        "vul_id": "VUL4J-63"
+    },
+    {
+        "CVE_id": "CVE-2018-20157",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "main/src/com/google/refine/importers/XmlImporter.java",
+        "buggy_line": [
+            [
+                325
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                320,
+                326
+            ]
+        ],
+        "human_patch": "https://github.com/OpenRefine/OpenRefine/commit/6a0d7d56e4ffb420316ce7849fde881344fbf881",
+        "vul_id": "VUL4J-64",
+        "package_name": "com.google.refine.importers",
+        "source_dir": "main/src/"
+    },
+    {
+        "CVE_id": "CVE-2018-19859",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "main/src/com/google/refine/importing/ImportingUtilities.java",
+        "buggy_line": [
+            [
+                445
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                437,
+                456
+            ]
+        ],
+        "human_patch": "https://github.com/OpenRefine/OpenRefine/commit/e243e73e4064de87a913946bd320fbbe246da656",
+        "vul_id": "VUL4J-65",
+        "package_name": "com.google.refine.importing",
+        "source_dir": "main/src/"
+    },
+    {
+        "CVE_id": "CVE-2020-1695",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "resteasy-core/src/main/java/org/jboss/resteasy/plugins/delegates/MediaTypeHeaderDelegate.java",
+        "buggy_line": [
+            [
+                52
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                32,
+                58
+            ]
+        ],
+        "human_patch": "https://github.com/resteasy/Resteasy/commit/acf15f2a8067f7e4cf5838342cecfa0b78a174fb",
+        "vul_id": "VUL4J-66",
+        "package_name": "org.jboss.resteasy.plugins.delegates",
+        "source_dir": "resteasy-core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1274",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/springframework/data/mapping/PropertyPath.java",
+        "buggy_line": [
+            [
+                324
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                312,
+                370
+            ]
+        ],
+        "human_patch": "https://github.com/spring-projects/spring-data-commons/commit/371f6590c509c72f8e600f3d05e110941607fba",
+        "vul_id": "VUL4J-67",
+        "package_name": "org.springframework.data.mapping",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-8046",
+        "single_flie": "0",
+        "human_patch": "https://github.com/spring-projects/spring-data-rest/commit/8f269e28fe8038a6c60f31a1c36cfda04795ab45",
+        "vul_id": "VUL4J-68"
+    },
+    {
+        "CVE_id": "CVE-2016-9878",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "spring-webmvc/src/main/java/org/springframework/web/servlet/ResourceServlet.java",
+        "buggy_line": [
+            [
+                279,
+                281
+            ],
+            [
+                285
+            ],
+            [
+                287
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                262,
+                290
+            ]
+        ],
+        "human_patch": "https://github.com/spring-projects/spring-framework/commit/e2d6e709c3c65a4951eb096843ee75d5200cfcad",
+        "vul_id": "VUL4J-69"
+    },
+    {
+        "CVE_id": "CVE-2018-15756",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "spring-web/src/main/java/org/springframework/http/HttpRange.java",
+        "buggy_line": [
+            [
+                62,
+                63
+            ],
+            [
+                65,
+                67
+            ],
+            [
+                70
+            ],
+            [
+                72
+            ],
+            [
+                137
+            ],
+            [
+                182
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                50,
+                72
+            ],
+            [
+                120,
+                142
+            ],
+            [
+                166,
+                183
+            ]
+        ],
+        "human_patch": "https://github.com/spring-projects/spring-framework/commit/423aa28ed584b4ff6e5bad218c09beef5e91951",
+        "vul_id": "VUL4J-70"
+    },
+    {
+        "CVE_id": "CVE-2018-1272",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "spring-core/src/main/java/org/springframework/util/MimeTypeUtils.java",
+        "buggy_line": [
+            [
+                49
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                33,
+                396
+            ]
+        ],
+        "human_patch": "https://github.com/spring-projects/spring-framework/commit/e02ff3a0da50744b0980d5d665fd242eedea767",
+        "vul_id": "VUL4J-71"
+    },
+    {
+        "CVE_id": "CVE-2018-15801",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "oauth2/oauth2-jose/src/main/java/org/springframework/security/oauth2/jwt/JwtIssuerValidator.java",
+        "buggy_line": [
+            [
+                40
+            ],
+            [
+                51
+            ],
+            [
+                66
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                42,
+                57
+            ],
+            [
+                59,
+                71
+            ]
+        ],
+        "human_patch": "https://github.com/spring-projects/spring-security/commit/c70b65c5df0e170a2d34d812b83db0b7bc71ea25",
+        "vul_id": "VUL4J-72"
+    },
+    {
+        "CVE_id": "CVE-2019-11272",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "core/src/main/java/org/springframework/security/authentication/encoding/PlaintextPasswordEncoder.java",
+        "buggy_line": [
+            [
+                54
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                53,
+                68
+            ]
+        ],
+        "human_patch": "https://github.com/spring-projects/spring-security/commit/b2d4fec3617c497c5a8eb9c7e5270e0c7db293ee",
+        "vul_id": "VUL4J-73",
+        "package_name": "org.springframework.security.authentication.encoding",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2019-3795",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/org/springframework/security/core/token/SecureRandomFactoryBean.java",
+        "buggy_line": [
+            [
+                40,
+                49
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                37,
+                52
+            ]
+        ],
+        "human_patch": "https://github.com/spring-projects/spring-security/commit/1304c958bf9c38940082f3ad1558d413ed82f2b",
+        "vul_id": "VUL4J-74",
+        "package_name": "org.springframework.security.core.token",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-4977",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "spring-security-oauth2/src/main/java/org/springframework/security/oauth2/provider/endpoint/SpelView.java",
+        "buggy_line": [
+            [
+                49,
+                50
+            ],
+            [
+                71
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                47,
+                58
+            ],
+            [
+                64,
+                74
+            ]
+        ],
+        "human_patch": "https://github.com/spring-projects/spring-security-oauth/commit/fff77d3fea477b566bcacfbfc95f85821a2bdc2d",
+        "vul_id": "VUL4J-75"
+    },
+    {
+        "CVE_id": "CVE-2018-1000850",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "retrofit/src/main/java/retrofit2/RequestBuilder.java",
+        "buggy_line": [
+            [
+                94
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                89,
+                95
+            ]
+        ],
+        "human_patch": "https://github.com/square/retrofit/commit/b9a7f6ad72073ddd40254c0058710e87a073047d",
+        "vul_id": "VUL4J-76",
+        "package_name": "retrofit2",
+        "source_dir": "retrofit/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-1000207",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "modules/swagger-parser/src/main/java/io/swagger/parser/util/DeserializationUtils.java",
+        "buggy_line": [
+            [
+                60
+            ],
+            [
+                65
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                59,
+                62
+            ],
+            [
+                64,
+                67
+            ]
+        ],
+        "human_patch": "https://github.com/swagger-api/swagger-parser/commit/4c6584306b40de9b2dfa9065c3a438cd918534af",
+        "vul_id": "VUL4J-77"
+    },
+    {
+        "CVE_id": "CVE-2019-10173",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "xstream/src/java/com/thoughtworks/xstream/XStream.java",
+        "buggy_line": [
+            [
+                341
+            ],
+            [
+                699
+            ],
+            [
+                714
+            ],
+            [
+                1482,
+                1483
+            ],
+            [
+                2362
+            ],
+            [
+                2541
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                693,
+                700
+            ],
+            [
+                702,
+                798
+            ],
+            [
+                1469,
+                1495
+            ],
+            [
+                2349,
+                2365
+            ],
+            [
+                2539,
+                2546
+            ]
+        ],
+        "human_patch": "https://github.com/x-stream/xstream/commit/f38a1da3ae9491930c2067c12cd2506738b21dab",
+        "vul_id": "VUL4J-78"
+    },
+    {
+        "CVE_id": "CVE-2018-1002201",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/org/zeroturnaround/zip/ZipUtil.java",
+        "buggy_line": [
+            [
+                1153
+            ],
+            [
+                1221
+            ],
+            [
+                1226
+            ],
+            [
+                1261
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                1149,
+                1172
+            ],
+            [
+                1195,
+                1230
+            ],
+            [
+                1249,
+                1274
+            ]
+        ],
+        "human_patch": "https://github.com/zeroturnaround/zt-zip/commit/759b72f33bc8f4d69f84f09fcb7f010ad45d6fff",
+        "vul_id": "VUL4J-79"
+    },
+    {
+        "CVE_id": "CVE-2019-16869",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "codec-http/src/main/java/io/netty/handler/codec/http/HttpObjectDecoder.java",
+        "buggy_line": [
+            [
+                731
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                720,
+                751
+            ]
+        ],
+        "human_patch": "https://github.com/netty/netty",
+        "vul_id": "VUL4J-1002",
+        "package_name": "io.netty.handler.codec.http",
+        "source_dir": "codec-http/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2019-20444",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "codec-http/src/main/java/io/netty/handler/codec/http/HttpObjectDecoder.java",
+        "buggy_line": [
+            [
+                750
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                720,
+                765
+            ]
+        ],
+        "human_patch": "https://github.com/netty/netty",
+        "vul_id": "VUL4J-1003",
+        "package_name": "io.netty.handler.codec.http",
+        "source_dir": "codec-http/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-2600",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/hudson/model/Computer.java",
+        "buggy_line": [
+            [
+                1075,
+                1076
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                1069,
+                1078
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/jenkins",
+        "vul_id": "VUL4J-1004",
+        "package_name": "hudson.model",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-2606",
+        "single_flie": "1",
+        "bug_type": "deletion",
+        "buggy_file": "core/src/main/java/jenkins/model/Jenkins.java",
+        "buggy_line": [
+            [
+                1482,
+                1485
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                1475,
+                1494
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/jenkins",
+        "vul_id": "VUL4J-1005",
+        "package_name": "jenkins.model",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2017-2609",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "core/src/main/java/jenkins/model/Jenkins.java",
+        "buggy_line": [
+            [
+                1890
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                1869,
+                1892
+            ]
+        ],
+        "human_patch": "https://github.com/jenkinsci/jenkins",
+        "vul_id": "VUL4J-1006",
+        "package_name": "jenkins.model",
+        "source_dir": "core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-18893",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "src/main/java/com/hubspot/jinjava/el/ext/JinjavaBeanELResolver.java",
+        "buggy_line": [
+            [
+                23
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                20,
+                26
+            ]
+        ],
+        "human_patch": "https://github.com/HubSpot/jinjava",
+        "vul_id": "VUL4J-1007",
+        "package_name": "com.hubspot.jinjava.el.ext",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2020-21522",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/run/halo/app/utils/FileUtils.java",
+        "buggy_line": [
+            [
+                299
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                289,
+                304
+            ]
+        ],
+        "human_patch": "https://github.com/halo-dev/halo",
+        "vul_id": "VUL4J-1008",
+        "package_name": "run.halo.app.utils",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2018-1000844",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "retrofit-converters/jaxb/src/main/java/retrofit2/converter/jaxb/JaxbResponseConverter.java",
+        "buggy_line": [
+            [
+                35
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                33,
+                36
+            ]
+        ],
+        "human_patch": "https://github.com/square/retrofit/pull/2735/files#diff-07278adeb7f754dfb9f9a80e8e0b51e7249cb2c9fdaf4b2b4fce494328859baeL35",
+        "vul_id": "VUL4J-1009",
+        "package_name": "retrofit2.converter.jaxb",
+        "source_dir": "retrofit-converters/jaxb/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2019-13990",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "quartz-core/src/main/java/org/quartz/xml/XMLSchedulingDataProcessor.java",
+        "buggy_line": [
+            [
+                177
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                162,
+                214
+            ]
+        ],
+        "human_patch": "https://github.com/quartz-scheduler/quartz",
+        "vul_id": "VUL4J-10010",
+        "package_name": "org.quartz.xml",
+        "source_dir": "quartz-core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2021-33604",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "flow-server/src/main/java/com/vaadin/flow/server/DevModeHandler.java",
+        "buggy_line": [
+            [
+                324
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                296,
+                385
+            ]
+        ],
+        "human_patch": "https://github.com/vaadin/flow",
+        "vul_id": "VUL4J-10011",
+        "package_name": "com.vaadin.flow.server",
+        "source_dir": "flow-server/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2021-31412",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "flow-server/src/main/java/com/vaadin/flow/router/RouteNotFoundError.java",
+        "buggy_line": [
+            [
+                61,
+                65
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                46,
+                69
+            ]
+        ],
+        "human_patch": "https://github.com/vaadin/flow/commit/e4cf42f11ce79a309025611295ffafac252ed247",
+        "vul_id": "VUL4J-10012",
+        "package_name": "com.vaadin.flow.router",
+        "source_dir": "flow-server/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2016-1000338",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "prov/src/main/java/org/bouncycastle/jcajce/provider/asymmetric/dsa/DSASigner.java",
+        "buggy_line": [
+            [
+                182
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                177,
+                186
+            ]
+        ],
+        "human_patch": "https://github.com/WuYff/bc-java-cve/commit/858c8077a0f65116b0d89682e88447757db72428",
+        "vul_id": "VUL4J-10013",
+        "package_name": "org.bouncycastle.jcajce.provider.asymmetric.dsa",
+        "source_dir": "prov/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2020-13973",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "src/main/java/com/google/json/JsonSanitizer.java",
+        "buggy_line": [
+            [
+                547,
+                554
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                511,
+                645
+            ]
+        ],
+        "human_patch": "https://github.com/WuYff/json-sanitizer-cve/commit/f3512bab078af3f5c533dacc2d410add8c0c1124#diff-96d69759b03a536a87b20188d1a5be4ddc950a0e01693d5bb859b4573969855bL552-L553",
+        "vul_id": "VUL4J-10014",
+        "package_name": "com.google.json",
+        "source_dir": "src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2019-17513",
+        "single_flie": "1",
+        "bug_type": "replace",
+        "buggy_file": "ratpack-core/src/main/java/ratpack/server/internal/NettyHandlerAdapter.java",
+        "buggy_line": [
+            [
+                159
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                117,
+                222
+            ]
+        ],
+        "human_patch": "https://github.com/ratpack/ratpack/commit/efb910d38a96494256f36675ef0e5061097dd77d",
+        "vul_id": "VUL4J-10015",
+        "package_name": "ratpack.server.internal",
+        "source_dir": "ratpack-core/src/main/java/"
+    },
+    {
+        "CVE_id": "CVE-2021-41571",
+        "single_flie": "1",
+        "bug_type": "insertion",
+        "buggy_file": "pulsar-broker/src/main/java/org/apache/pulsar/broker/admin/impl/PersistentTopicsBase.java",
+        "buggy_line": [
+            [
+                2303
+            ]
+        ],
+        "buggy_method_with_comment": [
+            [
+                2291,
+                2329
+            ]
+        ],
+        "human_patch": "https://github.com/apache/pulsar/commit/9bfb3dba7c13e8250e1002efdeb39eec56f7e2da",
+        "vul_id": "VUL4J-10016",
+        "package_name": "org.apache.pulsar.broker.admin.impl",
+        "source_dir": "pulsar-broker/src/main/java/"
+    }
+]

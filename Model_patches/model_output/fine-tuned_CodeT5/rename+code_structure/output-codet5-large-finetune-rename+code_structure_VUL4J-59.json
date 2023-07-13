@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>         s.releaseLabelUndecided();\n</s>",
+        "<pad><s>         s.conversion(UnquotedPropertyValue);\n</s>",
+        "<pad><s>         s.mistake(this);\n</s>",
+        "<pad><s>         m.notDevour();\n</s></s></s>",
+        "<pad><s>         s.conversion(EndOfFileError);\n</s>",
+        "<pad><s>        s.conversion(UnquotedPropertyValue);\n</s>",
+        "<pad><s>         s.conversion(EndOfFile);\n</s>",
+        "<pad><s>         s.endOfFile();\n</s></s></s>",
+        "<pad><s>         return;\n</s></s></s></s></s></s></s>",
+        "<pad><s>         \n</s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "         s.releaseLabelUndecided();\n",
+            "correctness": "compile_success",
+            "translated": "         t.emitTagPending();\n"
+        },
+        {
+            "patch": "         s.conversion(UnquotedPropertyValue);\n",
+            "correctness": "compile_success",
+            "translated": "         t.transition(AttributeValue_unquoted);\n"
+        },
+        {
+            "patch": "         s.mistake(this);\n",
+            "correctness": "compile_success",
+            "translated": "         t.error(this);\n"
+        },
+        {
+            "patch": "         m.notDevour();\n",
+            "correctness": "test_timeout",
+            "translated": "         r.unconsume();\n"
+        },
+        {
+            "patch": "         s.conversion(EndOfFileError);\n",
+            "correctness": "uncompilable",
+            "translated": "         t.transition(EndOfFileError);\n"
+        },
+        {
+            "patch": "        s.conversion(UnquotedPropertyValue);\n",
+            "correctness": "compile_success",
+            "translated": "         t.transition(AttributeValue_unquoted);\n"
+        },
+        {
+            "patch": "         s.conversion(EndOfFile);\n",
+            "correctness": "uncompilable",
+            "translated": "         t.transition(EndOfFile);\n"
+        },
+        {
+            "patch": "         s.endOfFile();\n",
+            "correctness": "uncompilable",
+            "translated": "         t.eof();\n"
+        },
+        {
+            "patch": "         return;\n",
+            "correctness": "uncompilable",
+            "translated": "         return;\n"
+        },
+        {
+            "patch": "         \n",
+            "correctness": "compile_success",
+            "translated": "\n"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "source = Encode.forJavaScriptSource(source);",
+        "return Encode.forJSString(source);",
+        "Encode.forJSString(source);",
+        "null = Encode.forJavaScriptSource(source);",
+        "+= Encode.forJavaScriptSource(source);",
+        "Encode.forJavaScriptSource(source);",
+        "= Encode.forJavaScriptSource(source);",
+        "source = Encode.forJavaScriptSource(source);",
+        "Encode.forJavaScriptSource(source);",
+        "Encode.forJSString(source);"
+    ],
+    "validation_result": [
+        {
+            "patch": "source = Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return Encode.forJSString(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Encode.forJSString(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "null = Encode.forJavaScriptSource(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "+= Encode.forJavaScriptSource(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "= Encode.forJavaScriptSource(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "source = Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Encode.forJSString(source);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

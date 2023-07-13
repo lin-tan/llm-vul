@@ -1,0 +1,23 @@
+{
+    "method": {
+        "_initFactories": "initializeManufactories",
+        "XmlFactory": "XmlManufactory"
+    },
+    "variable": {
+        "xmlOut": "xmlOutput",
+        "_xmlParserFeatures": "xmlParserCharacteristics",
+        "_xmlInputFactory": "xmlInputManufactory",
+        "_xmlOutputFactory": "xmlOutputManufactory",
+        "_cfgNameForTextElement": "textComponentCfgName",
+        "xgFeatures": "xgCharacteristics",
+        "xpFeatures": "xpCharacteristics",
+        "xmlIn": "xmlInput",
+        "_xmlGeneratorFeatures": "xmlCreatorCharacteristics",
+        "oc": "objcodec",
+        "nameForTextElem": "textComponentName",
+        "": ""
+    },
+    "class": {
+        "": ""
+    }
+}

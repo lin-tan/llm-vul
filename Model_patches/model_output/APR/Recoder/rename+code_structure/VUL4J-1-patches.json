@@ -1,0 +1,12 @@
+[
+  "analyzer.analyzeBatch(constituentTemplate, batch, realCategory);\n",
+  "analyzer.analyzeBatch(realCategory, batch, attributeTitile);\n",
+  "analyzer.analyzeBatch(constituentTemplate, batch, objectCategoryParameters);\n",
+  "analyzer.analyzeBatch(constituentTemplate, realCategory, attributeTitile);\n",
+  "analyzer.analyzeBatch(objectCategoryParameters, batch, attributeTitile);\n",
+  "analyzer.transformObjectBatch(constituentTemplate, batch, attributeTitile);\n",
+  "analyzer.analyzeBatch(constituentTemplate, objectCategoryParameters, attributeTitile);\n",
+  "analyzer.analyzeBatch(constituentTemplate, batch, parameterizedCategoryOfObject);\n",
+  "analyzer.analyzeBatch(constituentTemplate, batch, x);\n",
+  "CategoryTools.analyzeBatch(constituentTemplate, batch, attributeTitile);\n"
+]

@@ -1,0 +1,56 @@
+{
+    "output": [
+        " else {);\n",
+        " else {, value);\n",
+        " else {);\n       ",
+        " else {,",
+        " else {, value);",
+        " else {, object);\n",
+        " else {, object);",
+        " else {, value, object);",
+        " else {, value.toString());",
+        " else {, value);\n       "
+    ],
+    "validation_result": [
+        {
+            "patch": "else {);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {, value);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {,",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {, value);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {, object);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {, object);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {, value, object);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {, value.toString());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {, value);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

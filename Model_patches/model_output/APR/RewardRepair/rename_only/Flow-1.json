@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+        "If(OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,",
+        "if (OperatorAssistant.whetherPathInsecure(petitionFileName) || OpatorAssistant.whetherPathInsecure(petitionFileName)) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.GET_PATH_ERROR_INFORMATION_FORM,",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.INFORMATION_FORM,",
+        "if (OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { Logger.info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,",
+        "if (OperatorAssistant.whetherPathInsecure()) { getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.PATH_ERROR_INFORMATION_FORM,",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.GET_PATH_ERROR_INFORMATION_FORM,"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+            "correctness": "compile_success",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename)) {"
+        },
+        {
+            "patch": "If(OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,",
+            "correctness": "uncompilable",
+            "translated": "If(HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,"
+        },
+        {
+            "patch": "if (OperatorAssistant.whetherPathInsecure(petitionFileName) || OpatorAssistant.whetherPathInsecure(petitionFileName)) {",
+            "correctness": "uncompilable",
+            "translated": "if (HandlerHelper.isPathUnsafe(requestFilename) || OpatorAssistant.isPathUnsafe(requestFilename)) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.GET_PATH_ERROR_INFORMATION_FORM,",
+            "correctness": "uncompilable",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.GET_PATH_ERROR_INFORMATION_FORM,"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.INFORMATION_FORM,",
+            "correctness": "uncompilable",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.INFORMATION_FORM,"
+        },
+        {
+            "patch": "if (OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+            "correctness": "compile_success",
+            "translated": "if (HandlerHelper.isPathUnsafe(requestFilename)) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { Logger.info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,",
+            "correctness": "uncompilable",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { Logger.info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,"
+        },
+        {
+            "patch": "if (OperatorAssistant.whetherPathInsecure()) { getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,",
+            "correctness": "uncompilable",
+            "translated": "if (HandlerHelper.isPathUnsafe()) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.PATH_ERROR_INFORMATION_FORM,",
+            "correctness": "uncompilable",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.PATH_ERROR_INFORMATION_FORM,"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) { getLogger().info(OperatorAssistant.GET_PATH_ERROR_INFORMATION_FORM,",
+            "correctness": "uncompilable",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.GET_PATH_ERROR_INFORMATION_FORM,"
+        }
+    ]
+}

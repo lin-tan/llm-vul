@@ -1,0 +1,66 @@
+{
+    "output": [
+        "z.set(attribute, m);",
+        "int n = m - position; z.set(attribute, n);",
+        "int n = position - m; z.set(attribute, n);",
+        "int n = m + position; z.set(attribute, n);",
+        "z.set(attribute, m - position);",
+        "int n = position; z.set(attribute, n);",
+        "z.set(attribute, position);",
+        "m--; z.set(attribute, m);",
+        "z.set(attribute, position - m);",
+        "z.set(position, m);"
+    ],
+    "validation_result": [
+        {
+            "patch": "z.set(attribute, m);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i);"
+        },
+        {
+            "patch": "int n = m - position; z.set(attribute, n);",
+            "correctness": "compile_success",
+            "translated": "int n = i - offset; c.set(field, n);"
+        },
+        {
+            "patch": "int n = position - m; z.set(attribute, n);",
+            "correctness": "test_timeout",
+            "translated": "int n = offset - i; c.set(field, n);"
+        },
+        {
+            "patch": "int n = m + position; z.set(attribute, n);",
+            "correctness": "compile_success",
+            "translated": "int n = i + offset; c.set(field, n);"
+        },
+        {
+            "patch": "z.set(attribute, m - position);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i - offset);"
+        },
+        {
+            "patch": "int n = position; z.set(attribute, n);",
+            "correctness": "test_timeout",
+            "translated": "int n = offset; c.set(field, n);"
+        },
+        {
+            "patch": "z.set(attribute, position);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field, offset);"
+        },
+        {
+            "patch": "m--; z.set(attribute, m);",
+            "correctness": "test_timeout",
+            "translated": "i--; c.set(field, i);"
+        },
+        {
+            "patch": "z.set(attribute, position - m);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field, offset - i);"
+        },
+        {
+            "patch": "z.set(position, m);",
+            "correctness": "test_timeout",
+            "translated": "c.set(offset, i);"
+        }
+    ]
+}

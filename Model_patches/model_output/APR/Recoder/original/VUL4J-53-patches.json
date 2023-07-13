@@ -1,0 +1,12 @@
+[
+  "c.set((i - offset));\n",
+  "c.set(field, i);\n",
+  "c.set(field, (i - c));\n",
+  "c.set(field, (i - offset));\n",
+  "c.set((i - offset), field);\n",
+  "c.set((i - offset), 0);\n",
+  "c.set(field, (i + offset));\n",
+  "c.set((i - offset), i);\n",
+  "c.set(field, (i - i));\n",
+  "c.set((i - offset), (i - offset));\n"
+]

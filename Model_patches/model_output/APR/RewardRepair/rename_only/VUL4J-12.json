@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "while (s <= h) {",
+        "while (s < h) {",
+        "s += h; while (s < 0) {",
+        "s += h; while (s < 0) {",
+        "while (s < h) { s += h;",
+        "while (!s && s < h) {",
+        "while (!s.equals(h)) {",
+        "s += h; while (s <= h) {",
+        "s += h; while (s <= 0) {",
+        "s += h; while (s < s) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "while (s <= h) {",
+            "correctness": "test_timeout",
+            "translated": "while (v <= vt) {"
+        },
+        {
+            "patch": "while (s < h) {",
+            "correctness": "compile_success",
+            "translated": "while (v < vt) {"
+        },
+        {
+            "patch": "s += h; while (s < 0) {",
+            "correctness": "test_timeout",
+            "translated": "v += vt; while (v < 0) {"
+        },
+        {
+            "patch": "s += h; while (s < 0) {",
+            "correctness": "test_timeout",
+            "translated": "v += vt; while (v < 0) {"
+        },
+        {
+            "patch": "while (s < h) { s += h;",
+            "correctness": "compile_success",
+            "translated": "while (v < vt) { v += vt;"
+        },
+        {
+            "patch": "while (!s && s < h) {",
+            "correctness": "uncompilable",
+            "translated": "while (!v && v < vt) {"
+        },
+        {
+            "patch": "while (!s.equals(h)) {",
+            "correctness": "uncompilable",
+            "translated": "while (!v.equals(vt)) {"
+        },
+        {
+            "patch": "s += h; while (s <= h) {",
+            "correctness": "test_timeout",
+            "translated": "v += vt; while (v <= vt) {"
+        },
+        {
+            "patch": "s += h; while (s <= 0) {",
+            "correctness": "test_timeout",
+            "translated": "v += vt; while (v <= 0) {"
+        },
+        {
+            "patch": "s += h; while (s < s) {",
+            "correctness": "test_success",
+            "translated": "v += vt; while (v < v) {"
+        }
+    ]
+}

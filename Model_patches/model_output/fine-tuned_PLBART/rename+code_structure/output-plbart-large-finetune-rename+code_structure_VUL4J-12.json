@@ -1,0 +1,66 @@
+{
+    "output": [
+        "int h = (1 << (z - 1)); s += h;",
+        "for (int h = (1 << z); s < h; s += h) {",
+        "int h = (1 << (z - 1)) + 1;",
+        "s = enlarge(s, z);",
+        "s = (-1 << z) + 1;",
+        "s = (s << z) + 1;",
+        "int h = (1 << z) + 1;",
+        "s = s << z;",
+        "s += z;",
+        "s <<= z;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int h = (1 << (z - 1)); s += h;",
+            "correctness": "test_success",
+            "translated": "int vt = (1 << (t - 1)); v += vt;"
+        },
+        {
+            "patch": "for (int h = (1 << z); s < h; s += h) {",
+            "correctness": "uncompilable",
+            "translated": "for (int vt = (1 << t); v < vt; v += vt) {"
+        },
+        {
+            "patch": "int h = (1 << (z - 1)) + 1;",
+            "correctness": "test_success",
+            "translated": "int vt = (1 << (t - 1)) + 1;"
+        },
+        {
+            "patch": "s = enlarge(s, z);",
+            "correctness": "compile_success",
+            "translated": "v = extend(v, t);"
+        },
+        {
+            "patch": "s = (-1 << z) + 1;",
+            "correctness": "test_success",
+            "translated": "v = (-1 << t) + 1;"
+        },
+        {
+            "patch": "s = (s << z) + 1;",
+            "correctness": "test_success",
+            "translated": "v = (v << t) + 1;"
+        },
+        {
+            "patch": "int h = (1 << z) + 1;",
+            "correctness": "test_success",
+            "translated": "int vt = (1 << t) + 1;"
+        },
+        {
+            "patch": "s = s << z;",
+            "correctness": "test_success",
+            "translated": "v = v << t;"
+        },
+        {
+            "patch": "s += z;",
+            "correctness": "test_success",
+            "translated": "v += t;"
+        },
+        {
+            "patch": "s <<= z;",
+            "correctness": "test_success",
+            "translated": "v <<= t;"
+        }
+    ]
+}

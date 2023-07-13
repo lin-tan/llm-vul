@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "String targetDirPath = targetDirectory.getCanonicalPath();",
+        "String targetDirPath = targetDirectory.getCanonicalFile();",
+        "String targetDirPath = nextEntry.getCanonicalPath();",
+        "String targetDirPath = targetDirectory.getAbsolutePath();",
+        "String targetDirPath = targetDirectory.getCanonicalPath().trim();",
+        "File targetDirPath = targetDirectory.getCanonicalPath();",
+        "String targetDirPath = targetDirectory.getCanonicalPath() + \"/ \";",
+        "String targetDirPath = targetDirectory.getCanonicalFile().getParentFile();",
+        "String targetDirPath = targetDirectory.getPath();",
+        "File targetDirPath = targetDirectory.getCanonicalFile();"
+    ],
+    "validation_result": [
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalFile();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = nextEntry.getCanonicalPath();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getAbsolutePath();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath().trim();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "File targetDirPath = targetDirectory.getCanonicalPath();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath() + \"/ \";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalFile().getParentFile();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getPath();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "File targetDirPath = targetDirectory.getCanonicalFile();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

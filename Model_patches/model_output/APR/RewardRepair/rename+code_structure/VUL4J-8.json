@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (result == null) { return null; } }",
+        "cbr = charBuffer.remaining(); }",
+        "if (result == null) { return result; } }",
+        "if (roomForSubstitute > result.remaining()) { }",
+        "charBuffer = charBuffer.remaining(); }",
+        "if (!outcome.isUnmappable()) { } }",
+        "int cbr = charBuffer.remaining(); }",
+        "this.roomForSubstitute = result.remaining(); }",
+        "if (outcome.isUnmappable()) { } }",
+        "final CoderResult result = charBuffer.remaining(); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (result == null) { return null; } }",
+            "correctness": "compile_success",
+            "translated": "if (out == null) { return null; } }"
+        },
+        {
+            "patch": "cbr = charBuffer.remaining(); }",
+            "correctness": "compile_success",
+            "translated": "cbr = cb.remaining(); }"
+        },
+        {
+            "patch": "if (result == null) { return result; } }",
+            "correctness": "compile_success",
+            "translated": "if (out == null) { return out; } }"
+        },
+        {
+            "patch": "if (roomForSubstitute > result.remaining()) { }",
+            "correctness": "uncompilable",
+            "translated": "if (spaceForSurrogate > out.remaining()) { }"
+        },
+        {
+            "patch": "charBuffer = charBuffer.remaining(); }",
+            "correctness": "uncompilable",
+            "translated": "cb = cb.remaining(); }"
+        },
+        {
+            "patch": "if (!outcome.isUnmappable()) { } }",
+            "correctness": "compile_success",
+            "translated": "if (!res.isUnmappable()) { } }"
+        },
+        {
+            "patch": "int cbr = charBuffer.remaining(); }",
+            "correctness": "uncompilable",
+            "translated": "int cbr = cb.remaining(); }"
+        },
+        {
+            "patch": "this.roomForSubstitute = result.remaining(); }",
+            "correctness": "uncompilable",
+            "translated": "this.spaceForSurrogate = out.remaining(); }"
+        },
+        {
+            "patch": "if (outcome.isUnmappable()) { } }",
+            "correctness": "compile_success",
+            "translated": "if (res.isUnmappable()) { } }"
+        },
+        {
+            "patch": "final CoderResult result = charBuffer.remaining(); }",
+            "correctness": "uncompilable",
+            "translated": "final CoderResult out = cb.remaining(); }"
+        }
+    ]
+}

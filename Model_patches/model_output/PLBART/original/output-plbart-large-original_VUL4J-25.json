@@ -1,0 +1,57 @@
+{
+    "function range": "2,2-29,5",
+    "output": [
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return StringEscapeUtils. unescapeHtml4(url); } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return StringEscapeUtils.escapeHtml4(url); } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return StringEscapeUtils.unescapeHtml4(url); } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return url.substring(url.lastIndexOf('/') + 1 ) ; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return \"http://www.google.com/\" + url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return url.substring(0, url.lastIndexOf(\"/\")); } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return \"http://www.google.com/search?q=\" + url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return \"http://www.google.com/search?q=\" + url ; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return url.substring(url.lastIndexOf(\"/\") + 1); } return \"\"; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return StringEscapeUtils. unescapeHtml4(url); } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return StringEscapeUtils.escapeHtml4(url); } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return StringEscapeUtils.unescapeHtml4(url); } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return url.substring(url.lastIndexOf('/') + 1 ) ; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return \"http://www.google.com/\" + url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return url.substring(0, url.lastIndexOf(\"/\")); } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return \"http://www.google.com/search?q=\" + url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return \"http://www.google.com/search?q=\" + url ; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (StringUtils.isNotEmpty(url)) { return url.substring(url.lastIndexOf(\"/\") + 1); } return \"\"; }",
+            "correctness": "compile_success"
+        }
+    ]
+}

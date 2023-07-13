@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (ch!= ':' && Character.isWhitespace(ch)) {",
+        "if (ch!= ':' &&!Character.isWhitespace(ch)) {",
+        "if (ch!= ':' &&!Character.isWhitespace(ch) && nameEnd < length) {",
+        "if (ch!= ':' &&!Character.isWhitespace(ch) && ch!= '\\0') {",
+        "if (ch == ':' ||!Character.isWhitespace(ch)) {",
+        "if (ch!= ':' &&!Character.isWhitespace(ch) && ch!= ';') {",
+        "if (ch!= ':' &&!Character.isWhitespace(ch) && ch!= '\\\\') {",
+        "if (ch == ':' &&!Character.isWhitespace(ch)) {",
+        "if (ch!= ':' ||!Character.isWhitespace(ch)) {",
+        "if (!Character.isWhitespace(ch)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (ch!= ':' && Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch!= ':' &&!Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch!= ':' &&!Character.isWhitespace(ch) && nameEnd < length) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch!= ':' &&!Character.isWhitespace(ch) && ch!= '\\0') {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch == ':' ||!Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch!= ':' &&!Character.isWhitespace(ch) && ch!= ';') {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch!= ':' &&!Character.isWhitespace(ch) && ch!= '\\\\') {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch == ':' &&!Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch!= ':' ||!Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = 1 << (z - 1); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z - 1)); s <= h; s += h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z - 1)); s > h; s -= h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z - 1)); s >= h; s -= h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z - 1)); s > h; s += h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z);\n    }\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z + 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z - 1)); s < h; s -= h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z - 2)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|>",
+        "<|endoftext|>private int enlarge(int s, final int z) {\n// buggy lines start:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n// buggy lines end\n    return s;\n}\n// fixed lines:\n    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n<|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    for (int h = 1 << (z - 1); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (int vt = 1 << (t - 1); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z - 1)); s <= h; s += h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "test_timeout",
+            "translated": "    for (int vt = (1 << (t - 1)); v <= vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z - 1)); s > h; s -= h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "test_timeout",
+            "translated": "    for (int vt = (1 << (t - 1)); v > vt; v -= vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z - 1)); s >= h; s -= h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "test_timeout",
+            "translated": "    for (int vt = (1 << (t - 1)); v >= vt; v -= vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z - 1)); s > h; s += h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "test_success",
+            "translated": "    for (int vt = (1 << (t - 1)); v > vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z);\n    }\n",
+            "correctness": "test_success",
+            "translated": "    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t);\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z + 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (int vt = (1 << (t + 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z - 1)); s < h; s -= h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "test_success",
+            "translated": "    for (int vt = (1 << (t - 1)); v < vt; v -= vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z - 2)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "test_success",
+            "translated": "    for (int vt = (1 << (t - 2)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int h = (1 << (z - 1)); s < h; s += h) {\n        h = (-1 << z) + 1;\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        }
+    ]
+}

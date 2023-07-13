@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>            throw new EOFException();\n</s></s></s>",
+        "<pad><s>            return -1L;\n</s></s>",
+        "<pad><s>            return -2;\n</s></s></s>",
+        "<pad><s>            l = -1;\n</s></s>",
+        "<pad><s>            return -1;\n</s></s></s>",
+        "<pad><s>            return 0;\n</s></s></s></s>",
+        "<pad><s>            return l;\n</s></s></s></s>",
+        "<pad><s>            return -1, l;\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            throw new EOFException();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return -1L;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return -2;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            l = -1;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return -1;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return 0;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return l;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return -1, l;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  this.jaxbContext = context;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n}\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  this._context = context;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  this.context = JAXBContext.newInstance(type);\n<|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  context = context;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  this.context = jaxbContext;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  this.context = context;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  this.unmarshaller = unmarshaller;\n<|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  this.context = context.getSuperclass();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n// buggy lines start:\n  this.context = context;\n// buggy lines end\n}\n// fixed lines:\n  this.context = JAXBContext.getContext(type);\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  this.jaxbContext = context;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = context;\n"
+        },
+        {
+            "patch": "}\n",
+            "correctness": "uncompilable",
+            "translated": "}\n"
+        },
+        {
+            "patch": "  this._context = context;\n",
+            "correctness": "uncompilable",
+            "translated": "  this._context = context;\n"
+        },
+        {
+            "patch": "  this.context = JAXBContext.newInstance(type);\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = JAXBContext.newInstance(type);\n"
+        },
+        {
+            "patch": "  context = context;\n",
+            "correctness": "uncompilable",
+            "translated": "  context = context;\n"
+        },
+        {
+            "patch": "  this.context = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = jaxbContext;\n"
+        },
+        {
+            "patch": "  this.context = context;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.unmarshaller = unmarshaller;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.unmarshaller = unmarshaller;\n"
+        },
+        {
+            "patch": "  this.context = context.getSuperclass();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = context.getSuperclass();\n"
+        },
+        {
+            "patch": "  this.context = JAXBContext.getContext(type);\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = JAXBContext.getContext(type);\n"
+        }
+    ]
+}

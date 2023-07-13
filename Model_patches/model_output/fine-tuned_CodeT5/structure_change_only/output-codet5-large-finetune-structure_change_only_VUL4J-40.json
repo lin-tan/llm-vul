@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        if (dbUserName.equalsIgnoreCase(requestUserName)) {\n</s></s></s></s></s>",
+        "<pad><s>        if (dbUserName!= null && dbUserName.equals(requestUserName)) {\n</s>",
+        "<pad><s>        if (requestUserName!= null && dbUserName.equals(requestUserName)) {\n</s>",
+        "<pad><s>        if (StringUtils.equals(dbUserName, requestUserName)) {\n</s></s></s>",
+        "<pad><s>        if (requestUserName.equals(dbUserName)) {\n</s></s></s></s></s></s>",
+        "<pad><s>        if (dbUserName.equals(requestUserName)) {\n</s></s></s></s></s></s>",
+        "<pad><s>        if (!dbUserName.equals(requestUserName)) {\n</s></s></s></s></s></s>",
+        "<pad><s>        if (dbUserName.equals(requestUserName))\n</s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        if (dbUserName.equalsIgnoreCase(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName.equalsIgnoreCase(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (dbUserName!= null && dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName!= null && dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (requestUserName!= null && dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (requestUserName!= null && dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (StringUtils.equals(dbUserName, requestUserName)) {\n",
+            "correctness": "uncompilable",
+            "translated": "        if (StringUtils.equals(dbUserName, requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (requestUserName.equals(dbUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (requestUserName.equals(dbUserName)) {\n"
+        },
+        {
+            "patch": "        if (dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (!dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (dbUserName.equals(requestUserName))\n",
+            "correctness": "uncompilable",
+            "translated": "        if (dbUserName.equals(requestUserName))\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

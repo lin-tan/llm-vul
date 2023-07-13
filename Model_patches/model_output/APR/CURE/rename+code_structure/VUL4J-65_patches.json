@@ -1,0 +1,37 @@
+{
+    "VUL4J-65-455-456": {
+        "src": "for ( int position = $NUMBER$ ; f . exists ( ) ; position ++ ) {",
+        "patches": [
+            {
+                "patch": "for( int position =8; position ++ ) { f = new File( folder , beginning + 'UTF-8'+ position + postfix ) ;"
+            },
+            {
+                "patch": "for( int position =8; position ++ ) { f = new File( folder , beginning + ''+ position + postfix ) ;"
+            },
+            {
+                "patch": "for( int position =8; position ++ ) { f = new File( folder , beginning + ', '+ position + postfix ) ;"
+            },
+            {
+                "patch": "for( int position =8; position ++ ) { f = new File( folder , beginning + 'encoding'+ position + postfix ) ;"
+            },
+            {
+                "patch": "for( int position =8; position ++ ) { f = new File( folder , beginning + 'projectTags'+ position + postfix ) ;"
+            },
+            {
+                "patch": "for( int position =8; f.exists( ) ; position ++ ) {"
+            },
+            {
+                "patch": "for( int position =100; f.exists( ) ; position ++ ) {"
+            },
+            {
+                "patch": "for( int position =2; f.exists( ) ; position ++ ) {"
+            },
+            {
+                "patch": "for( int position =4; f.exists( ) ; position ++ ) {"
+            },
+            {
+                "patch": "for( int position =16; f.exists( ) ; position ++ ) {"
+            }
+        ]
+    }
+}

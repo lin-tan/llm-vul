@@ -1,0 +1,66 @@
+{
+    "output": [
+        "String s = value.toString();",
+        "String s = String.valueOf(value.toString());",
+        "String s = value!= null? value.toString() : null;",
+        "String s = value;",
+        "String s = value == null? null : value.toString();",
+        "String s = String.valueOf(value).trim();",
+        "String s = String.valueOf(value);",
+        "String s = getValueAsString(value);",
+        "String s = (String) value;",
+        "String s = value!= null? value.toString() : value;"
+    ],
+    "validation_result": [
+        {
+            "patch": "String s = value.toString();",
+            "correctness": "compile_success",
+            "translated": "String s = value.toString();"
+        },
+        {
+            "patch": "String s = String.valueOf(value.toString());",
+            "correctness": "compile_success",
+            "translated": "String s = String.valueOf(value.toString());"
+        },
+        {
+            "patch": "String s = value!= null? value.toString() : null;",
+            "correctness": "compile_success",
+            "translated": "String s = value!= null? value.toString() : null;"
+        },
+        {
+            "patch": "String s = value;",
+            "correctness": "uncompilable",
+            "translated": "String s = value;"
+        },
+        {
+            "patch": "String s = value == null? null : value.toString();",
+            "correctness": "compile_success",
+            "translated": "String s = value == null? null : value.toString();"
+        },
+        {
+            "patch": "String s = String.valueOf(value).trim();",
+            "correctness": "test_success",
+            "translated": "String s = String.valueOf(value).trim();"
+        },
+        {
+            "patch": "String s = String.valueOf(value);",
+            "correctness": "compile_success",
+            "translated": "String s = String.valueOf(value);"
+        },
+        {
+            "patch": "String s = getValueAsString(value);",
+            "correctness": "uncompilable",
+            "translated": "String s = getValueAsString(value);"
+        },
+        {
+            "patch": "String s = (String) value;",
+            "correctness": "compile_success",
+            "translated": "String s = (String) value;"
+        },
+        {
+            "patch": "String s = value!= null? value.toString() : value;",
+            "correctness": "uncompilable",
+            "translated": "String s = value!= null? value.toString() : value;"
+        }
+    ]
+}

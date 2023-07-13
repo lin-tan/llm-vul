@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, contextPath);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(contextPath);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return contextPath;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(contextPath, request);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, decodeRequestString(request, contextPath));\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, request.getContextPath());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestString(request, decode(contextPath));\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    return \"String_Node_Str\".equals(contextPath)? \"String_Node_Str\" : decodeRequestString(request, contextPath);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n// buggy lines start:\n    if (!\"/\".equals(contextPath)) \n        return decodeRequestString(request, contextPath);\n    else\n        return decodeRequestString(request, \"\");\n// buggy lines end\n}\n// fixed lines:\n    if (!\"/\".equals(contextPath)) {\n        contextPath = decodeRequestString(request, contextPath);\n    }\n    return contextPath;\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return decodeRequestString(request, contextPath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decodeRequestString(contextPath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(contextPath);\n"
+        },
+        {
+            "patch": "    return contextPath;\n",
+            "correctness": "compile_success",
+            "translated": "    return contextPath;\n"
+        },
+        {
+            "patch": "    return decodeRequestString(contextPath, request);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(contextPath, request);\n"
+        },
+        {
+            "patch": "    return decodeRequestString(request);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request);\n"
+        },
+        {
+            "patch": "    return decodeRequestString(request, decodeRequestString(request, contextPath));\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, decodeRequestString(request, contextPath));\n"
+        },
+        {
+            "patch": "    return decodeRequestString(request, request.getContextPath());\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, request.getContextPath());\n"
+        },
+        {
+            "patch": "    return decodeRequestString(request, decode(contextPath));\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request, decode(contextPath));\n"
+        },
+        {
+            "patch": "    return \"String_Node_Str\".equals(contextPath)? \"String_Node_Str\" : decodeRequestString(request, contextPath);\n",
+            "correctness": "compile_success",
+            "translated": "    return \"String_Node_Str\".equals(contextPath)? \"String_Node_Str\" : decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    if (!\"/\".equals(contextPath)) {\n        contextPath = decodeRequestString(request, contextPath);\n    }\n    return contextPath;\n",
+            "correctness": "compile_success",
+            "translated": "    if (!\"/\".equals(contextPath)) {\n        contextPath = decodeRequestString(request, contextPath);\n    }\n    return contextPath;\n"
+        }
+    ]
+}

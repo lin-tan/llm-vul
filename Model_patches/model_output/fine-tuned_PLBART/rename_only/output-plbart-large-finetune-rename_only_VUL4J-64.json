@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, false));",
+        "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, null));",
+        "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+        "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, true));",
+        "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence), null);",
+        "return producer.createXMLStreamReader(swatheBeginingOfStringInDataSequence(inDataSequence));",
+        "return producer.createXMLStreamReader(swatheBeginingOfStringDetachedInDataSequence(inDataSequence));",
+        "return producer.createXMLStreamReader(swatheBeginingOfString(inDataSequence));",
+        "return producer.createXMLStreamReader(swatheBeginingOfDataSequence(inDataSequence));",
+        "return producer.createXMLStreamReader(inDataSequence);"
+    ],
+    "validation_result": [
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, false));",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, false));"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, null));",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, null));"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+            "correctness": "compile_success",
+            "translated": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, true));",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence), null);",
+            "correctness": "compile_success",
+            "translated": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), null);"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfStringInDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(swatheBeginingOfStringInDataSequence(inputStream));"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfStringDetachedInDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(swatheBeginingOfStringDetachedInDataSequence(inputStream));"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfString(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(swatheBeginingOfString(inputStream));"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(swatheBeginingOfDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(swatheBeginingOfDataSequence(inputStream));"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(inDataSequence);",
+            "correctness": "compile_success",
+            "translated": "return factory.createXMLStreamReader(inputStream);"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\trnd.setSeed(seed);\n\n\n}",
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\trnd.setSeed(seed);\n\n\n}",
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\trnd.setSeed(seed);\n\n\n\n}",
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\trnd.setSeed(seed);\n\n\n\n}",
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\n\n\n}",
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\n\n\trnd.setSeed(seed);\n\n}",
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\n\n\n}",
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\trnd.setSeed(seed);\n\n\n}\n\nprivate static SecureRandom\n\n\n\n}",
+        "\n\trnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\trnd.setSeed(seed);\n\n}\n\nprivate static SecureRandom\n\n\n\n}",
+        "\n\trnd.setSeed(seed);\npublic() throws Exception {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\n\n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\trnd.setSeed(seed);\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\trnd.setSeed(seed);\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\trnd.setSeed(seed);\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\trnd.setSeed(seed);\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\n\n\trnd.setSeed(seed);\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\trnd.setSeed(seed);\n\n\n}\n\nprivate static SecureRandom\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic    {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\trnd.setSeed(seed);\n\n}\n\nprivate static SecureRandom\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "rnd.setSeed(seed);\npublic() throws Exception {\n\tString algorithm = \"SHA1\";\n\t\n\n\npublic\n\n\t\n\n\trnd.setSeed(seed);\n}\n\nprivate static SecureRandom\n\n\n\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

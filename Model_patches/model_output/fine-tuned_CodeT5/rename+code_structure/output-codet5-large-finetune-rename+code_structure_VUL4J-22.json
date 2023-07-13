@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return decryptRequestContent(r, circumstancePath);\n</s></s></s>",
+        "<pad><s>    return encryptRequestContent(r, circumstancePath);\n</s></s></s>",
+        "<pad><s>    return decipherRequestContent(r, circumstancePath);\n</s></s>",
+        "<pad><s>    return decryptRequestContent(r, circumstancePath, true);\n</s>",
+        "<pad><s>    return decryptRequestContent(r, circumstancePath, false);\n</s>",
+        "<pad><s>    return decryptRequestContent(r, circumstancePath, null);\n</s>",
+        "<pad><s>    return decodeRequestContent(r, circumstancePath);\n</s></s></s>",
+        "<pad><s>    return circumstancePath;\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return encryptRequestContent(r, circumstancePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return encryptRequestContent(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decipherRequestContent(r, circumstancePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decipherRequestContent(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath, true);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request, contextPath, true);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath, false);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request, contextPath, false);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath, null);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request, contextPath, null);\n"
+        },
+        {
+            "patch": "    return decodeRequestContent(r, circumstancePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestContent(request, contextPath);\n"
+        },
+        {
+            "patch": "    return circumstancePath;\n",
+            "correctness": "compile_success",
+            "translated": "    return contextPath;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

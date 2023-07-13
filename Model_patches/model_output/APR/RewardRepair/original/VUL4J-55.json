@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (!f.redoAdjustmentIfModified)",
+        "if (!f.redoAdjustmentIfModified)",
+        "if (f.redoAdjustmentIfModified || f.first(this))",
+        "if (f.redoAdjustmentIfModified())",
+        "if (f.redoAdjustmentIfModified())",
+        "if (f == null || f.redoAdjustmentIfModified)",
+        "if (f == null || f.redoAdjustmentIfModified)",
+        "if (this.redoAdjustmentIfModified)",
+        "if (f.redoAdjustmentIfModified) { }",
+        "if (f.redoAdjustmentIfModified) { }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!f.redoAdjustmentIfModified)",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (!f.redoAdjustmentIfModified)",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified || f.first(this))",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f == null || f.redoAdjustmentIfModified)",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (f == null || f.redoAdjustmentIfModified)",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (this.redoAdjustmentIfModified)",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified) { }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified) { }",
+            "correctness": "compile_success"
+        }
+    ]
+}

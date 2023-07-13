@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n}\n}\n",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n}\n\n}\n",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n}\n}\n",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n  }\n}\n",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n}\n}",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n}\n\n}\n",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n}\n\n}\n\n",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n  }\n}\n",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n}\n\n}\n\n",
+        "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n}\n\n}\n\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n}",
+            "correctness": "test_success",
+            "test_time": 154.34416699409485
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n}",
+            "correctness": "test_success",
+            "test_time": ""
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n}",
+            "correctness": "test_success",
+            "test_time": 150.87410140037537
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n  }",
+            "correctness": "test_success",
+            "test_time": ""
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n}",
+            "correctness": "test_success",
+            "test_time": ""
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n}",
+            "correctness": "test_success",
+            "test_time": ""
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    return sb.toString();\n}",
+            "correctness": "test_success",
+            "test_time": ""
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n  }",
+            "correctness": "test_success",
+            "test_time": ""
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n}",
+            "correctness": "test_success",
+            "test_time": ""
+        },
+        {
+            "patch": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    if (origin!= null) {\n        sb.append(\"remoteAddress=\").append(origin);\n    }\n    if (clientId!= null) {\n        if (sb.length() > 0) {\n            sb.append(\", \");\n        }\n        sb.append(\"clientId=\").append(clientId);\n    }\n    sb.append(\"]\");\n    return sb.toString();\n}",
+            "correctness": "test_success",
+            "test_time": ""
+        }
+    ]
+}

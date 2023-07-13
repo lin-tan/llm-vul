@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+        "sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId);",
+        "sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+        "sb = sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+        "sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId);",
+        "if (sessionId!= null) { sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \");",
+        "sb = sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId);",
+        "sb =sb.length() > 0?sb.append( \", \"):sb;",
+        "sb = sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+        "sb = sb.length() > 0?sb.append( \", \"): sb; sb.append( \"sessionId= \"); sb.append(sessionId); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sb = sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (sessionId!= null) { sb =sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sb = sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb =sb.length() > 0?sb.append( \", \"):sb;",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb = sb.length() > 0?sb.append( \", \"):sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sb = sb.length() > 0?sb.append( \", \"): sb; sb.append( \"sessionId= \"); sb.append(sessionId); }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (entry.isDirectory()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif(entry.isDirectory()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!entry.isDirectory()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tboolean isDirectory = entry.isDirectory();\n\tif (isDirectory) {\n<|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tboolean isDirectory = entry.isDirectory();\n\tif (!isDirectory) {\n<|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!entry.isDirectory() && entry.getSize() > 0) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!entry.isDirectory() && outFile.exists()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tboolean isDir = entry.isDirectory();\n\tif (isDir) {\n<|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!entry.getName().endsWith(\"String_Node_Str\")) {\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n// buggy lines start:\n\tif (!entry.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream in = zipFile.getInputStream(entry)) {\n\t\t\tIOUtil.writeStream(in, outFile);\n\t\t}\n\t}\n\telse {\n\t\toutFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tboolean isDir = entry.isDirectory();\n\tif (!isDir) {\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif (entry.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif(entry.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (!entry.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tboolean isDirectory = entry.isDirectory();\n\tif (isDirectory) {\n",
+            "correctness": "compile_success",
+            "translated": "\tboolean isDirectory = entry.isDirectory();\n\tif (isDirectory) {\n"
+        },
+        {
+            "patch": "\tboolean isDirectory = entry.isDirectory();\n\tif (!isDirectory) {\n",
+            "correctness": "compile_success",
+            "translated": "\tboolean isDirectory = entry.isDirectory();\n\tif (!isDirectory) {\n"
+        },
+        {
+            "patch": "\tif (!entry.isDirectory() && entry.getSize() > 0) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.isDirectory() && entry.getSize() > 0) {\n"
+        },
+        {
+            "patch": "\tif (!entry.isDirectory() && outFile.exists()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.isDirectory() && outFile.exists()) {\n"
+        },
+        {
+            "patch": "\tboolean isDir = entry.isDirectory();\n\tif (isDir) {\n",
+            "correctness": "compile_success",
+            "translated": "\tboolean isDir = entry.isDirectory();\n\tif (isDir) {\n"
+        },
+        {
+            "patch": "\tif (!entry.getName().endsWith(\"String_Node_Str\")) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.getName().endsWith(\"String_Node_Str\")) {\n"
+        },
+        {
+            "patch": "\tboolean isDir = entry.isDirectory();\n\tif (!isDir) {\n",
+            "correctness": "compile_success",
+            "translated": "\tboolean isDir = entry.isDirectory();\n\tif (!isDir) {\n"
+        }
+    ]
+}

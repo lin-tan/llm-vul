@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "null sb.append( \"sessionId= \").append(sessionId); }",
+        "sb.append( \"sessionId= \").append(sessionId); }",
+        "if (sb.length() > 0) { sb.append( \"sessionId= \" + sessionId); }",
+        "if (sb.length() > 0) { sb.append( \"sessionId= \" + sessionId); }",
+        "null if (sb.length() > 0) { sb.append(','); }",
+        "null sb.append( \"sessionId \").append(sessionId); }",
+        "if (sb.length() > 0) { sb.append( \"sessionId= \"); }",
+        "null if (sb.length() > 0) { sb.append( \"sessionId= \"); }",
+        "null if (sb.length() > 0) { sb.append( \" \"); }",
+        "if (sb.length() > 0) { sb.append( \"sessionId= \"); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "null sb.append( \"sessionId= \").append(sessionId); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sb.append( \"sessionId= \").append(sessionId); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (sb.length() > 0) { sb.append( \"sessionId= \" + sessionId); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (sb.length() > 0) { sb.append( \"sessionId= \" + sessionId); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "null if (sb.length() > 0) { sb.append(','); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "null sb.append( \"sessionId \").append(sessionId); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (sb.length() > 0) { sb.append( \"sessionId= \"); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "null if (sb.length() > 0) { sb.append( \"sessionId= \"); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "null if (sb.length() > 0) { sb.append( \" \"); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (sb.length() > 0) { sb.append( \"sessionId= \"); }",
+            "correctness": "compile_success"
+        }
+    ]
+}

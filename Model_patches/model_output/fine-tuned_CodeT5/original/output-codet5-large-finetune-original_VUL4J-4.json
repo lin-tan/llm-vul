@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    answer = (answer!= null? answer : body);\n</s>",
+        "<pad><s>    answer = null;\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    answer = getConvertedDocument(exchange, answer);\n</s></s>",
+        "<pad><s>    answer = normalize(answer);\n</s></s></s></s></s></s>",
+        "<pad><s>    answer = getDocument(exchange, body);\n</s></s></s></s>",
+        "<pad><s>    answer = checkNull(answer);\n</s></s></s></s></s>",
+        "<pad><s>    answer = convert(answer);\n</s></s></s></s></s></s>",
+        "<pad><s>    answer = getConvertedDocument(answer);\n</s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    answer = (answer!= null? answer : body);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    answer = null;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    answer = getConvertedDocument(exchange, answer);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    answer = normalize(answer);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    answer = getDocument(exchange, body);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    answer = checkNull(answer);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    answer = convert(answer);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    answer = getConvertedDocument(answer);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

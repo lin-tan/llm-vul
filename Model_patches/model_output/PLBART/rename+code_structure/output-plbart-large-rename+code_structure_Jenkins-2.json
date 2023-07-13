@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-18,1",
+    "output": [
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return new ArrayList<PeakDegreeElement>(itemValues); }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return (List<PeakDegreeElement>) itemValues; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return new ArrayList<>(itemValues); }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return new ArrayList<PeakDegreeElement>(itemValues ) ; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return new ArrayList<PeakDegreeElement>( itemValues ) ; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return Collections.unmodifiableList(itemValues); }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); Collections.sort(itemValues); return itemValues ; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); for (PeakDegreeElement element : itemValues) { } return items; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); for (PeakDegreeElement element : itemValues) { } return elements; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); for (PeakDegreeElement element : itemValues) { } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return new ArrayList<PeakDegreeElement>(itemValues); }",
+            "correctness": "compile_success",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); return new ArrayList<TopLevelItem>(itemValues); }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return (List<PeakDegreeElement>) itemValues; }",
+            "correctness": "compile_success",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); return (List<TopLevelItem>) itemValues; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return new ArrayList<>(itemValues); }",
+            "correctness": "compile_success",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); return new ArrayList<>(itemValues); }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return new ArrayList<PeakDegreeElement>(itemValues ) ; }",
+            "correctness": "compile_success",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); return new ArrayList<TopLevelItem>(itemValues); }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return new ArrayList<PeakDegreeElement>( itemValues ) ; }",
+            "correctness": "compile_success",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); return new ArrayList<TopLevelItem>(itemValues); }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); return Collections.unmodifiableList(itemValues); }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); return Collections.unmodifiableList(itemValues); }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); Collections.sort(itemValues); return itemValues ; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); Collections.sort(itemValues); return itemValues ; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); for (PeakDegreeElement element : itemValues) { } return items; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { } return items; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); for (PeakDegreeElement element : itemValues) { } return elements; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { } return items; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Collection<PeakDegreeElement> itemValues = elements.values(); for (PeakDegreeElement element : itemValues) { } }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { } }"
+        }
+    ]
+}

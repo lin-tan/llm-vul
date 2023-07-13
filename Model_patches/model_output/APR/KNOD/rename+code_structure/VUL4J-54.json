@@ -1,0 +1,65 @@
+{
+    "id": 27,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0737,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier());\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1342,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(acquirePlotter(),getMapperInjectionPoint());\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1342,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(acquirePlotter(),createDefaultConverter());\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5107,
+            "fix_type": "insert",
+            "patch": "getMapperInjectionPoint();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.5107,
+            "fix_type": "insert",
+            "patch": "createDefaultConverter();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.173,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(acquireContemplationSupplier(),acquireContemplationSupplier());\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2178,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(acquirePlotter(),acquirePlotter());\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2195,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapperInjectionPoint(),acquireContemplationSupplier());\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2195,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(createDefaultConverter(),acquireContemplationSupplier());\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2407,
+            "fix_type": "general",
+            "patch": "  RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(acquirePlotter());\n"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\tif(!NOT_ENCODE_COLLECTION.contains(charValue)){\n</s></s></s></s></s></s>",
+        "<pad><s>\tif(charValue!= 0 &&!NOT_ENCODE_COLLECTION.contains(a)){\n</s></s>",
+        "<pad><s>\tif(charString!= null &&!NOT_ENCODE_COLLECTION.contains(a)){\n</s></s>",
+        "<pad><s>\tif(NOT_ENCODE_COLLECTION.contains(charValue)){\n</s></s></s></s></s></s></s>",
+        "<pad><s>\tif(charValue > 0 &&!NOT_ENCODE_COLLECTION.contains(a)){\n</s></s>",
+        "<pad><s>\tif(charString!= null &&!NOT_ENCODE_COLLECTION.contains(charValue)){\n</s>",
+        "<pad><s>\tif(charValue!= 0 &&!NOT_ENCODE_COLLECTION.contains(charValue)){\n</s>",
+        "<pad><s>\tif (!NOT_ENCODE_COLLECTION.contains(charValue)){\n</s></s></s></s></s></s></s>",
+        "<pad><s>\tif(!NOT_ENCODE_COLLECTION.containsKey(a)){\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif(!NOT_ENCODE_COLLECTION.contains(charValue)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(!UNENCODED_SET.contains(charValue)){\n"
+        },
+        {
+            "patch": "\tif(charValue!= 0 &&!NOT_ENCODE_COLLECTION.contains(a)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(charValue!= 0 &&!UNENCODED_SET.contains(c)){\n"
+        },
+        {
+            "patch": "\tif(charString!= null &&!NOT_ENCODE_COLLECTION.contains(a)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(cStr!= null &&!UNENCODED_SET.contains(c)){\n"
+        },
+        {
+            "patch": "\tif(NOT_ENCODE_COLLECTION.contains(charValue)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(UNENCODED_SET.contains(charValue)){\n"
+        },
+        {
+            "patch": "\tif(charValue > 0 &&!NOT_ENCODE_COLLECTION.contains(a)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(charValue > 0 &&!UNENCODED_SET.contains(c)){\n"
+        },
+        {
+            "patch": "\tif(charString!= null &&!NOT_ENCODE_COLLECTION.contains(charValue)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(cStr!= null &&!UNENCODED_SET.contains(charValue)){\n"
+        },
+        {
+            "patch": "\tif(charValue!= 0 &&!NOT_ENCODE_COLLECTION.contains(charValue)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(charValue!= 0 &&!UNENCODED_SET.contains(charValue)){\n"
+        },
+        {
+            "patch": "\tif (!NOT_ENCODE_COLLECTION.contains(charValue)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif(!UNENCODED_SET.contains(charValue)){\n"
+        },
+        {
+            "patch": "\tif(!NOT_ENCODE_COLLECTION.containsKey(a)){\n",
+            "correctness": "uncompilable",
+            "translated": "\tif(!UNENCODED_SET.containsKey(c)){\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

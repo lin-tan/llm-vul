@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    if (!(item instanceof Job)) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (item instanceof Job) {\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (step.isWait() &&!(item instanceof Job)) {\n</s>",
+        "<pad><s>    if (step.getWait() &&!(item instanceof Job)) {\n</s>",
+        "<pad><s>    if (step.getWait() &&!(item instanceof Task)) {\n</s>",
+        "<pad><s>    if (step.getWait() && (item instanceof Job)) {\n</s></s>",
+        "<pad><s>    if (step.getWait() &&!(item instanceof Job))\n</s></s>",
+        "<pad><s>    if (step.getWait() && item instanceof Job) {\n</s></s></s>",
+        "<pad><s>    if (isWait() &&!(item instanceof Job)) {\n</s></s></s>",
+        "<pad><s>    if (step.getWait()) {\n</s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!(item instanceof Job)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (item instanceof Job) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (step.isWait() &&!(item instanceof Job)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (step.getWait() &&!(item instanceof Job)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (step.getWait() &&!(item instanceof Task)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (step.getWait() && (item instanceof Job)) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (step.getWait() &&!(item instanceof Job))\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (step.getWait() && item instanceof Job) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (isWait() &&!(item instanceof Job)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (step.getWait()) {\n",
+            "correctness": "test_timeout"
+        }
+    ]
+}

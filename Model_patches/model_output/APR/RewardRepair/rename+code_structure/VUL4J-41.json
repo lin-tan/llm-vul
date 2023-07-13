@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "try {",
+        "if ( targetFile!= null ) {",
+        "if ( targetFile.exists() ) {",
+        "if ( targetFile == null ) {",
+        "if (!targetFile.exists() ) {",
+        "if ( targetFile.isDirectory() ) {",
+        "try { if ( targetFile == null ) {",
+        "try { if ( targetFile.exists() ) {",
+        "try if ( targetFile!= null ) {",
+        "if ( targetFile.exists() ) try {"
+    ],
+    "validation_result": [
+        {
+            "patch": "try {",
+            "correctness": "compile_success",
+            "translated": "try {"
+        },
+        {
+            "patch": "if ( targetFile!= null ) {",
+            "correctness": "uncompilable",
+            "translated": "if ( f!= null ) {"
+        },
+        {
+            "patch": "if ( targetFile.exists() ) {",
+            "correctness": "uncompilable",
+            "translated": "if ( f.exists() ) {"
+        },
+        {
+            "patch": "if ( targetFile == null ) {",
+            "correctness": "uncompilable",
+            "translated": "if ( f == null ) {"
+        },
+        {
+            "patch": "if (!targetFile.exists() ) {",
+            "correctness": "uncompilable",
+            "translated": "if (!f.exists() ) {"
+        },
+        {
+            "patch": "if ( targetFile.isDirectory() ) {",
+            "correctness": "uncompilable",
+            "translated": "if ( f.isDirectory() ) {"
+        },
+        {
+            "patch": "try { if ( targetFile == null ) {",
+            "correctness": "uncompilable",
+            "translated": "try { if ( f == null ) {"
+        },
+        {
+            "patch": "try { if ( targetFile.exists() ) {",
+            "correctness": "uncompilable",
+            "translated": "try { if ( f.exists() ) {"
+        },
+        {
+            "patch": "try if ( targetFile!= null ) {",
+            "correctness": "uncompilable",
+            "translated": "try if ( f!= null ) {"
+        },
+        {
+            "patch": "if ( targetFile.exists() ) try {",
+            "correctness": "compile_success",
+            "translated": "if ( f.exists() ) try {"
+        }
+    ]
+}

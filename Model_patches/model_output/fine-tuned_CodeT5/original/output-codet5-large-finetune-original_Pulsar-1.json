@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {\n</s>",
+        "<pad><s>        ledger.asyncReadEntry(new PositionImpl(ledgerId, messageId), new AsyncCallbacks.ReadEntryCallback() {\n</s>",
+        "<pad><s>        ledger.asyncRead(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {\n</s></s>",
+        "<pad><s>        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback<Entry>() {\n</s></s>",
+        "<pad><s>        ledger.asyncRead(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadCallback() {\n</s></s></s>",
+        "<pad><s>        ledger.asyncReadEntry(new PositionImpl(ledgerId, id), new AsyncCallbacks.ReadEntryCallback() {\n</s></s>",
+        "<pad><s>        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback.ReadEntryCallback() {\n</s>",
+        "<pad><s>        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback() {\n</s></s></s></s></s>",
+        "<pad><s>        ledger.asyncReadMessage(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadMessageCallback() {\n</s>",
+        "<pad><s>        ledger.asyncReadEntry(position, new AsyncCallbacks.ReadEntryCallback() {\n</s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, messageId), new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ledger.asyncRead(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback<Entry>() {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ledger.asyncRead(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadCallback() {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, id), new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback.ReadEntryCallback() {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback() {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ledger.asyncReadMessage(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadMessageCallback() {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ledger.asyncReadEntry(position, new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-10,5",
+    "output": [
+        "\n    return circumstancePath;\nstatic\n    return circumstancePath;\n\n",
+        "\n    return circumstancePath;\nstatic public String\n    return circumstancePath;\n\nstatic String\n\n   \n    return circumstancePath;\n\n\n   \n    return circumstancePath;\n\n    return circumstancePath;",
+        "\n    return circumstancePath;\nstatic public String\n    return circumstancePath;\n\n",
+        "\n    return circumstancePath;\nstatic public String\n    return circumstancePath;\n\nstatic String\n\n   \n\n    return circumstancePath;\n\n   \n    return circumstancePath;\n\n    return circumstancePath;",
+        "\n    return circumstancePath;\nstatic public String\n    return circumstancePath;\n\nstatic String\n\n   \n    return circumstancePath;\n\n\n   \n    return circumstancePath;\n   \n    return circumstancePath;",
+        "\n    return circumstancePath;\nstatic public String\n    return circumstancePath;\n\nstatic String\n\n   \n\n    return circumstancePath;\n\n   \n    return circumstancePath;\n   \n    return circumstancePath;",
+        "\n    return circumstancePath;\nstatic public String\n\n    return circumstancePath;\n\n",
+        "\n    return circumstancePath;",
+        "\n    return circumstancePath;\nstatic\n    return circumstancePath;\n\n\n",
+        "\n    return circumstancePath;\nstatic\n    return circumstancePath;\n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "return circumstancePath;\nstatic\n    return circumstancePath;",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic\n    return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;\nstatic public String\n    return circumstancePath;\n\nstatic String\n\n   \n    return circumstancePath;\n\n\n   \n    return circumstancePath;\n\n    return circumstancePath;",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic public String\n    return contextPath;\n\nstatic String\n\n   \n    return contextPath;\n\n\n   \n    return contextPath;\n\n    return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;\nstatic public String\n    return circumstancePath;",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic public String\n    return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;\nstatic public String\n    return circumstancePath;\n\nstatic String\n\n   \n\n    return circumstancePath;\n\n   \n    return circumstancePath;\n\n    return circumstancePath;",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic public String\n    return contextPath;\n\nstatic String\n\n   \n    return contextPath;\n\n\n   \n    return contextPath;\n\n    return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;\nstatic public String\n    return circumstancePath;\n\nstatic String\n\n   \n    return circumstancePath;\n\n\n   \n    return circumstancePath;\n   \n    return circumstancePath;",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic public String\n    return contextPath;\n\nstatic String\n\n   \n    return contextPath;\n\n\n   \n    return contextPath;\n\n    return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;\nstatic public String\n    return circumstancePath;\n\nstatic String\n\n   \n\n    return circumstancePath;\n\n   \n    return circumstancePath;\n   \n    return circumstancePath;",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic public String\n    return contextPath;\n\nstatic String\n\n   \n    return contextPath;\n\n\n   \n    return contextPath;\n\n    return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;\nstatic public String\n\n    return circumstancePath;",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic public String\n    return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;",
+            "correctness": "compile_success",
+            "translated": "return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;\nstatic\n    return circumstancePath;",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic\n    return contextPath;"
+        },
+        {
+            "patch": "return circumstancePath;\nstatic\n    return circumstancePath;\n\n}",
+            "correctness": "uncompilable",
+            "translated": "return contextPath;\nstatic\n    return contextPath;\n\n}"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    for(NodeMonitor nodeMonitor : nodeMonitorList){\n        r.put( nodeMonitor.getName(), nodeMonitor.data(this));\n    }\n</s></s>",
+        "<pad><s>    for(NodeMonitor monitor : nodeMonitorList){\n        r.put( monitor.getName(),monitor.data(this));\n    }\n</s></s></s></s></s>",
+        "<pad><s>    r.put(\"String_Node_Monitor_Str\", nodeMonitorList.get(i).data(this));\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    r.putAll(nodeMonitorList);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    for(NodeMonitor nodeMonitor : nodeMonitorList){\n        r.put( nodeMonitor.name(), nodeMonitor.data(this));\n    }\n</s></s>",
+        "<pad><s>    r.put(\"String_Node_Monitor\", nodeMonitorList.get(i).data(this));\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    r.put(\"String_Node_Monitor_Str\", nodeMonitorList);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    NodeMonitor monitor = nodeMonitorList.get(i);\n    Class monitorClass = monitor.getClass();\n    String name = monitorClass.getName();\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    for(NodeMonitor nodeMonitor : nodeMonitorList){\n        r.put( nodeMonitor.getName(), nodeMonitor.data(this));\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    for(NodeMonitor nodeMonitor : nodeMonitorList){\n        r.put( nodeMonitor.getName(), nodeMonitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    for(NodeMonitor monitor : nodeMonitorList){\n        r.put( monitor.getName(),monitor.data(this));\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    for(NodeMonitor monitor : nodeMonitorList){\n        r.put( monitor.getName(),monitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    r.put(\"String_Node_Monitor_Str\", nodeMonitorList.get(i).data(this));\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Monitor_Str\", nodeMonitorList.get(i).data(this));\n"
+        },
+        {
+            "patch": "    r.putAll(nodeMonitorList);\n",
+            "correctness": "uncompilable",
+            "translated": "    r.putAll(nodeMonitorList);\n"
+        },
+        {
+            "patch": "    for(NodeMonitor nodeMonitor : nodeMonitorList){\n        r.put( nodeMonitor.name(), nodeMonitor.data(this));\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    for(NodeMonitor nodeMonitor : nodeMonitorList){\n        r.put( nodeMonitor.name(), nodeMonitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    r.put(\"String_Node_Monitor\", nodeMonitorList.get(i).data(this));\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Monitor\", nodeMonitorList.get(i).data(this));\n"
+        },
+        {
+            "patch": "    r.put(\"String_Node_Monitor_Str\", nodeMonitorList);\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Monitor_Str\", nodeMonitorList);\n"
+        },
+        {
+            "patch": "    NodeMonitor monitor = nodeMonitorList.get(i);\n    Class monitorClass = monitor.getClass();\n    String name = monitorClass.getName();\n",
+            "correctness": "compile_success",
+            "translated": "    NodeMonitor monitor = nodeMonitorList.get(i);\n    Class monitorClass = monitor.getClass();\n    String name = monitorClass.getName();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

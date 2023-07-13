@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    ASN1Encodable object0 = s.getObjectAt(0, false);\n</s>",
+        "<pad><s>    ASN1Encodable object0 = s.getObjectAt(0, true);\n</s>",
+        "<pad><s>    ASN1Encodable object0 = s.getObjectAt(0).getValue();\n</s>",
+        "<pad><s>    ASN1Encodable object0 = s.getObjectAt(0);\n</s></s></s>",
+        "<pad><s>    ASN1Encodable object0 = s.getObjectAt(0, 0);\n</s>",
+        "<pad><s>    ASN1Encodable object0 = s.getObjectAt(0).clone();\n</s>",
+        "<pad><s>    ASN1Encodable object0 = s.getObjectAt(0, null);\n</s>",
+        "<pad><s>    ASN1Object object0 = s.getObjectAt(0);\n</s></s></s></s>",
+        "<pad><s>    ASN1Encodable object0 = s.getObjectAt(1);\n</s></s></s>",
+        "<pad><s>    ASN1Encodable object0 = null;\n</s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0, false);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0, false);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0, true);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0, true);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0).getValue();\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0).getValue();\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0);\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0, 0);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0, 0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0).clone();\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0).clone();\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0, null);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0, null);\n"
+        },
+        {
+            "patch": "    ASN1Object object0 = s.getObjectAt(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Object object0 = s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(1);\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(1);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = null;\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Encodable object0 = null;\n"
+        }
+    ]
+}

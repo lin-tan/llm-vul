@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-28,1",
+    "output": [
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (\n\n           ",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (\n\n           ",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++) {\n     \n\n\n     \n   for (\n            break;\n\n            break;\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (\n\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (\n\n        ",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n\n  \n  \n      return true;\n  \n   if (\n      break;\n     ",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ( break;\n",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++) {\n     \n\n\n     \n   for (\n            return false;\n\n            break;\n        \n\n\n            break;\n  \n  \n   }\n\n  \n   if (\n\n",
+        "\n         case '!':\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (;\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (\n\n           ",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (\n\n        ",
+        "\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ( break;\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int i = 0; i < str.length(); i++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n       if ("
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ("
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++) {\n     \n\n\n     \n   for (\n            break;\n\n            break;\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int i = 0; i < str.length(); i++) {\n     \n\n\n     \n   for (\n            break;\n\n            break;\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ("
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int i = 0; i < str.length(); i++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n       if ("
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n\n  \n  \n      return true;\n  \n   if (\n      break;",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n\n  \n  \n      return true;\n  \n   if (\n      break;"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ( break;",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ( break;"
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++) {\n     \n\n\n     \n   for (\n            return false;\n\n            break;\n        \n\n\n            break;\n  \n  \n   }\n\n  \n   if (",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int i = 0; i < str.length(); i++) {\n     \n\n\n     \n   for (\n            return false;\n\n            break;\n        \n\n\n            break;\n  \n  \n   }\n\n  \n   if ("
+        },
+        {
+            "patch": "case '!':\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (;\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (",
+            "correctness": "uncompilable",
+            "translated": "case '!':\n            return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (;\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ("
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; m < a.length(); m++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if (",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n         case '#':\n            return false;\n  \n\n   for (; i < str.length(); i++) {\n     \n\n\n     \n   for (\n\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ("
+        },
+        {
+            "patch": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int m = 0; m < a.length(); m++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ( break;",
+            "correctness": "uncompilable",
+            "translated": "return false;\n@Override\npublic boolean isEmpty()\n{\n     \n\n  \n\n   for (int i = 0; i < str.length(); i++)\n   {\n     \n\n\n     \n   for (\n            break;\n\n\n        \n\n\n            return false;\n  \n  \n   }\n\n  \n   if ( break;"
+        }
+    ]
+}

@@ -1,0 +1,27 @@
+{
+    "method": {
+        "doGetDocument": "doAcquireArchive",
+        "getTypeConverter": "acquireCategoryTransformer",
+        "getDocumentType": "acquireArchiveCategory",
+        "convertTo": "transformTo",
+        "getContext": "acquireCircumstance",
+        "getArgs": "acquireParameters",
+        "": ""
+    },
+    "variable": {
+        "answer": "reply",
+        "e": "x",
+        "bi": "be",
+        "cause": "reason",
+        "exchange": "interchange",
+        "is": "inputStream",
+        "body": "content",
+        "type": "category",
+        "": ""
+    },
+    "class": {
+        "Exchange": "Interchange",
+        "BeanInvocation": "BeanExecution",
+        "NoTypeConversionAvailableException": "NoCategoryTransformationApplicableException"
+    }
+}

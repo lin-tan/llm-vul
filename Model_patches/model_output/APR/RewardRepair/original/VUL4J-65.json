@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "int dot = name.lastIndexOf('.');",
+        "int dot = name.indexOf('.');",
+        "null dot = name.indexOf('.');",
+        "int dot = file.lastIndexOf('.');",
+        "Integer dot = name.indexOf('.');",
+        "int dot = file.indexOf('.');",
+        "int dot = name.indexOf('?');",
+        "int dot = name.indexOf(':');",
+        "int dot = name.indexOf('/');",
+        "t dot = name.lastIndexOf('.');"
+    ],
+    "validation_result": [
+        {
+            "patch": "int dot = name.lastIndexOf('.');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "null dot = name.indexOf('.');",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = file.lastIndexOf('.');",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Integer dot = name.indexOf('.');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = file.indexOf('.');",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('?');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = name.indexOf(':');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = name.indexOf('/');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "t dot = name.lastIndexOf('.');",
+            "correctness": "uncompilable"
+        }
+    ]
+}

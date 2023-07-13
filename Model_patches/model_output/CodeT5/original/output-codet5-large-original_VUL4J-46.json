@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n\n\n       \n}",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n\n        xmlIn = XMLInputFactory.newInstance();\n\n       \n}",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n\n\n       \n}\n\n\n\n   \n\n    if ()\n\n}",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n\n        xmlIn = XMLInputFactory.newInstance();\n\n       \n}\n\n\n\n   \n\n    if ()\n\n}",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n        return this;\n\n       \n\n\n   \n    if ()\n\n   ",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n\n\n       \n}\n\n\n\n   \n\n    if ()\n\n\n",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n\n        xmlIn = XMLInputFactory.newInstance();\n\n       \n}\n\n\n\n   \n\n    if ()\n\n   ",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n        return this;\n\n       \n\n\n   \n    if ()\n\n}",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n\n\n       \n}\n\n\n\n   \n\n    if ()\n\n   ",
+        "\n        xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n\n        xmlIn = XMLInputFactory.newInstance();\n\n       \n}\n\n\n\n    public\n   \n   \n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n\n\n       \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n\n        xmlIn = XMLInputFactory.newInstance();\n\n       \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n\n\n       \n}\n\n\n\n   \n\n    if ()\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n\n        xmlIn = XMLInputFactory.newInstance();\n\n       \n}\n\n\n\n   \n\n    if ()\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n        return this;\n\n       \n\n\n   \n    if ()",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n\n\n       \n}\n\n\n\n   \n\n    if ()",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n\n        xmlIn = XMLInputFactory.newInstance();\n\n       \n}\n\n\n\n   \n\n    if ()",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n        return this;\n\n       \n\n\n   \n    if ()\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n        xmlIn = XMLInputFactory.newInstance();\n\n\n       \n}\n\n\n\n   \n\n    if ()",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n       \n\n\n\n\n\n\n\n\n\n\n\n\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn = XMLInputFactory.newInstance();\n    _\n\n        xmlIn = XMLInputFactory.newInstance();\n\n       \n}\n\n\n\n    public\n   \n   \n\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

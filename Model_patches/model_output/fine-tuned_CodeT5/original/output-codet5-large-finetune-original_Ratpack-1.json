@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>  HttpHeaders nettyHeaders = new DefaultHttpHeaders(true);\n</s></s></s>",
+        "<pad><s>  HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n</s></s></s></s></s>",
+        "<pad><s>  HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, false);\n</s>",
+        "<pad><s>  HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, true);\n</s>",
+        "<pad><s>  HttpHeaders nettyHeaders = new DefaultHttpHeaders(true, false);\n</s>",
+        "<pad><s>  DefaultHttpHeaders nettyHeaders = new DefaultHttpHeaders(false);\n</s>",
+        "<pad><s>  HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, null);\n</s>",
+        "<pad><s>  HttpHeaders nettyHeaders = new DefaultHttpHeaders(false);\n</s></s>",
+        "<pad><s>  HttpHeaders nettyHeaders = getDefaultHttpHeaders(false);\n</s></s></s></s>",
+        "<pad><s>  HttpHeaders nettyHeaders = getDefaultHttpHeaders();\n</s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders(true);\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders(true, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  DefaultHttpHeaders nettyHeaders = new DefaultHttpHeaders(false);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, null);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders(false);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "  HttpHeaders nettyHeaders = getDefaultHttpHeaders(false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  HttpHeaders nettyHeaders = getDefaultHttpHeaders();\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

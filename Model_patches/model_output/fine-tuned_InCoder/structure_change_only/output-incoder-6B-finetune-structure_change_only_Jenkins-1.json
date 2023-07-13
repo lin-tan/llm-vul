@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    r.put(\"String_Node_Str\", nodeMonitorList);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    for (NodeMonitor monitor : nodeMonitorList) {\n        r.put(monitor.getName(), monitor.data(this));\n    }\n<|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    r.put(\"String_Node_Str\", this);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    r.putAll(monitorData(this));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    r.putAll(nodeMonitorList);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    r.put(\"String_Node_Str\", monitorData(this));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    r.put(\"String_Node_Str\", nodeMonitorList.get(0));\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    r.put(\"String_Node_Str\", nodeMonitorList.size());\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    for (NodeMonitor monitor : nodeMonitorList) {\n        r.putAll(monitor.data(this));\n    }\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        NodeMonitor monitor = nodeMonitorList.get(i);\n        Class monitorClass = monitor.getClass();\n        String name  = monitorClass.getName();\n        r.put( name,monitor.data(this));\n        i++;\n    }\n// buggy lines end\n    return r;\n}\n// fixed lines:\n    r.put(\"String_Node_Str\", nodeMonitorList);\n    r.put(\"String_Node_Str\", this);\n<|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    r.put(\"String_Node_Str\", nodeMonitorList);\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList);\n"
+        },
+        {
+            "patch": "    for (NodeMonitor monitor : nodeMonitorList) {\n        r.put(monitor.getName(), monitor.data(this));\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    for (NodeMonitor monitor : nodeMonitorList) {\n        r.put(monitor.getName(), monitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    r.put(\"String_Node_Str\", this);\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", this);\n"
+        },
+        {
+            "patch": "    r.putAll(monitorData(this));\n",
+            "correctness": "uncompilable",
+            "translated": "    r.putAll(monitorData(this));\n"
+        },
+        {
+            "patch": "    r.putAll(nodeMonitorList);\n",
+            "correctness": "uncompilable",
+            "translated": "    r.putAll(nodeMonitorList);\n"
+        },
+        {
+            "patch": "    r.put(\"String_Node_Str\", monitorData(this));\n",
+            "correctness": "uncompilable",
+            "translated": "    r.put(\"String_Node_Str\", monitorData(this));\n"
+        },
+        {
+            "patch": "    r.put(\"String_Node_Str\", nodeMonitorList.get(0));\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList.get(0));\n"
+        },
+        {
+            "patch": "    r.put(\"String_Node_Str\", nodeMonitorList.size());\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList.size());\n"
+        },
+        {
+            "patch": "    for (NodeMonitor monitor : nodeMonitorList) {\n        r.putAll(monitor.data(this));\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    for (NodeMonitor monitor : nodeMonitorList) {\n        r.putAll(monitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    r.put(\"String_Node_Str\", nodeMonitorList);\n    r.put(\"String_Node_Str\", this);\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList);\n    r.put(\"String_Node_Str\", this);\n"
+        }
+    ]
+}

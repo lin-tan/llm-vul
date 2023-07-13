@@ -1,0 +1,12 @@
+[
+  "OutputStream output = getOutputStream();\n",
+  "delete();\n",
+  "finalize();\n",
+  "return;\n",
+  "getOutputStream();\n",
+  "final OutputStream output = getOutputStream();\n",
+  "IOUtils.delete();\n",
+  "IOUtils.finalize();\n",
+  "super.readObject();\n",
+  "OutputStream output = defaultReadObject();\n"
+]

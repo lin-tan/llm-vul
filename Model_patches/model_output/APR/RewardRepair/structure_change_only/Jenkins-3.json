@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "Collection < View> all() { return views; }",
+        "public Collection < View> all() { return views; }",
+        "private Collection < View> all() { return views; }",
+        "final Collection < View> all() { return views; }",
+        "Collection < View> all() { return getView(key); }",
+        "Collection < View> all() { return new Collection < View>(); }",
+        "Collection < View> all() { return (View) views; }",
+        "Set < View> all() { return views; }",
+        "/* protected Collection < View> all() { return views; } */",
+        "Collection < View> all() { return all(); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "Collection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public Collection < View> all() { return views; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private Collection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "final Collection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Collection < View> all() { return getView(key); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Collection < View> all() { return new Collection < View>(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Collection < View> all() { return (View) views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Set < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "/* protected Collection < View> all() { return views; } */",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Collection < View> all() { return all(); }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

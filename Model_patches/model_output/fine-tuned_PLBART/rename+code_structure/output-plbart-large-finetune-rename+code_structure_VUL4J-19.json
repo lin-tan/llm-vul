@@ -1,0 +1,66 @@
+{
+    "output": [
+        "adjustPresentUseConsent(new UseConsent(lexiconConsent));",
+        "adjustPresentUseConsent(new UseConsent(lexiconConsent, false));",
+        "adjustPresentUseConsent(new CriterionUseConsent(lexiconConsent));",
+        "adjustPresentUseConsent(new UseConsent(lexiconConsent, true));",
+        "adjustPresentUseConsent(new UseConsent(ec));",
+        "adjustPresentUseConsent(new UseConsent(lexiconAlteration));",
+        "adjustPresentUseConsent(newUseConsent(lexiconConsent));",
+        "adjustPresentUseConsent(new UseConsent(expliterUniqueIdentifier));",
+        "adjustPresentUseConsent(new UseConsent(lexiconConsent, null));",
+        "adjustPresentUseConsent(new UseConsent(lexiconConsent, cipher));"
+    ],
+    "validation_result": [
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(lexiconConsent));",
+            "correctness": "compile_success",
+            "translated": "setCurrentAccessPermission(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(lexiconConsent, false));",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(new AccessPermission(dicPermissions, false));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new CriterionUseConsent(lexiconConsent));",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(new CriterionUseConsent(dicPermissions));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(lexiconConsent, true));",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(new AccessPermission(dicPermissions, true));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(ec));",
+            "correctness": "compile_success",
+            "translated": "setCurrentAccessPermission(new AccessPermission(ue));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(lexiconAlteration));",
+            "correctness": "compile_success",
+            "translated": "setCurrentAccessPermission(new AccessPermission(dicRevision));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(newUseConsent(lexiconConsent));",
+            "correctness": "compile_success",
+            "translated": "setCurrentAccessPermission(new AccessPermission(dicPermissions));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(expliterUniqueIdentifier));",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(new AccessPermission(expliterUniqueIdentifier));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(lexiconConsent, null));",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(new AccessPermission(dicPermissions, null));"
+        },
+        {
+            "patch": "adjustPresentUseConsent(new UseConsent(lexiconConsent, cipher));",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(new AccessPermission(dicPermissions, encryption));"
+        }
+    ]
+}

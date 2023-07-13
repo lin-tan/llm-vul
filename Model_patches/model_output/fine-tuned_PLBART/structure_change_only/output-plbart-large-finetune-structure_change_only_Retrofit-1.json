@@ -1,0 +1,66 @@
+{
+    "output": [
+        "this.context = JAXBContext.newInstance(type);",
+        "this.context = (JAXBContext) context;",
+        "this.context = context.getJAXBContext();",
+        "this.context = context.createUnmarshaller();",
+        "this.context = newJAXBContext(type);",
+        "this.context = context.getUnmarshaller();",
+        "this.context = jaxbContext;",
+        "this.context = new JAXBContext(context);",
+        "this.jaxbContext = context;",
+        "this.type = type;"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.context = JAXBContext.newInstance(type);",
+            "correctness": "uncompilable",
+            "translated": "this.context = JAXBContext.newInstance(type);"
+        },
+        {
+            "patch": "this.context = (JAXBContext) context;",
+            "correctness": "compile_success",
+            "translated": "this.context = (JAXBContext) context;"
+        },
+        {
+            "patch": "this.context = context.getJAXBContext();",
+            "correctness": "uncompilable",
+            "translated": "this.context = context.getJAXBContext();"
+        },
+        {
+            "patch": "this.context = context.createUnmarshaller();",
+            "correctness": "uncompilable",
+            "translated": "this.context = context.createUnmarshaller();"
+        },
+        {
+            "patch": "this.context = newJAXBContext(type);",
+            "correctness": "uncompilable",
+            "translated": "this.context = newJAXBContext(type);"
+        },
+        {
+            "patch": "this.context = context.getUnmarshaller();",
+            "correctness": "uncompilable",
+            "translated": "this.context = context.getUnmarshaller();"
+        },
+        {
+            "patch": "this.context = jaxbContext;",
+            "correctness": "uncompilable",
+            "translated": "this.context = jaxbContext;"
+        },
+        {
+            "patch": "this.context = new JAXBContext(context);",
+            "correctness": "uncompilable",
+            "translated": "this.context = new JAXBContext(context);"
+        },
+        {
+            "patch": "this.jaxbContext = context;",
+            "correctness": "uncompilable",
+            "translated": "this.jaxbContext = context;"
+        },
+        {
+            "patch": "this.type = type;",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;"
+        }
+    ]
+}

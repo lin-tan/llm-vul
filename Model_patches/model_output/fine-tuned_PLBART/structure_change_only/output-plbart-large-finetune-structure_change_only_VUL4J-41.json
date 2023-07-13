@@ -1,0 +1,56 @@
+{
+    "output": [
+        "try (final FileInputStream in = new FileInputStream(f)) {",
+        "try (final FileInputStream in = new FileInputStream( f)) {",
+        "try(final FileInputStream in = new FileInputStream(f)) {",
+        "try (final InputStream in = new FileInputStream( f)) {",
+        "try(final FileInputStream in = new FileInputStream( f)) {",
+        "try (InputStream in = new FileInputStream( f)) {",
+        "try (InputStream in = new FileInputStream(f)) {",
+        "try(InputStream in = new FileInputStream(f)) {",
+        "if (isOverwrite()) {",
+        "while (true) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "try (final FileInputStream in = new FileInputStream(f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (final FileInputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try(final FileInputStream in = new FileInputStream(f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (final InputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try(final FileInputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (InputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (InputStream in = new FileInputStream(f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try(InputStream in = new FileInputStream(f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (isOverwrite()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "while (true) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

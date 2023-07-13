@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n  return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\nreturn source;\n\n\n\n\n",
+        "\n  return source;\n\n\n  return source;\n  return\n  return encode(source, this, true);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;\n\n\n\n\n   ",
+        "\n  return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source\n\n\n\n",
+        "\n  return source;\n\n\n  return source;\n  return\n  return encode(source, this, false);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;\n\n\n\n\n   ",
+        "\n  return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\nreturn\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source\n\n\n\n\n",
+        "\n  return source;\n\n\n  return source;\n  return\n  return encode(source, this.charset);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;\n\n\n\n\n   ",
+        "\n  return source;\n\n\n  return source;\n  return\n  return encode(source, this.encoding);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;\n\n\n\n\n   ",
+        "\n  return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\nreturn\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;\n\n\n\n",
+        "\n  return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\nreturn\n  return source;\n\n  return source;\n  return\n  return source;\n\nreturn source;\n\n\n\n\n   ",
+        "\n  return source;\n\n\n  return source;\n  return\n  return encode(source, this, true);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\nreturn source;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return encode(source, this, true);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return encode(source, this, false);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\nreturn\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return encode(source, this.charset);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return encode(source, this.encoding);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\nreturn\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return source.replace('\\\\', '/') + '/';\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\nreturn\n  return source;\n\n  return source;\n  return\n  return source;\n\nreturn source;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;\n\n\n  return source;\n  return\n  return encode(source, this, true);\n\n  return source;\n\n  return source;\n  return source;\n\n\n  return source;\n  return\n  return source;\n\n  return source;\n  return\n  return source;\n\n\n  return source;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-13,5",
+    "output": [
+        "\n\n    if (!basePath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }",
+        "\n\n    if (!basePath.toFile().canRead()) {\n       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }",
+        "\n    if (!basePath.toFile().canRead()) {       \n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n    else {\n\n       \n        e.\n\n\n\n       \n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n  }",
+        "\n\n    if (!basePath.toFile().canRead()) {\n       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n\n    if (!basePath.toFile().canRead()) {\n       \n\n\n\n        +\n  }",
+        "\n\n    if (!basePath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n\n    if (!basePath.toFile().canRead()) {\n       \n\n\n\n        +\n  }",
+        "\n    if (!basePath.toFile().canRead()) {       \n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n    else {\n\n       \n        e.\n\n\n\n       \n\n\n    if (!basePath.toFile().exists()) {\n\n        +\n  }",
+        "\n    if (!basePath.toFile().canRead()) {       \n\n\n    if (!basePath.toFile().canRead()) {\n\n        else {\n       \n\n    else {\n       e.\n\n\n\n       \n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n  }",
+        "\n\n    if (!basePath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n       .\n  }",
+        "\n\n    if (!basePath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n        +\n}",
+        "\n\n    if (!basePath.toFile().canRead()) {\n       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n        +\n    }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!basePath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {\n       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {       \n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n    else {\n\n       \n        e.\n\n\n\n       \n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n  }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n    else {\n\n       \n        e.\n\n\n\n       \n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {\n       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n\n    if (!basePath.toFile().canRead()) {\n       \n\n\n\n        +\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n\n    if (!basePath.toFile().canRead()) {\n       \n\n\n\n        +\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {       \n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n    else {\n\n       \n        e.\n\n\n\n       \n\n\n    if (!basePath.toFile().exists()) {\n\n        +\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n    else {\n\n       \n        e.\n\n\n\n       \n\n\n    if (!parentPath.toFile().exists()) {\n\n        +\n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {       \n\n\n    if (!basePath.toFile().canRead()) {\n\n        else {\n       \n\n    else {\n       e.\n\n\n\n       \n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n  }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n    if (!parentPath.toFile().canRead()) {\n\n        else {\n       \n\n    else {\n       e.\n\n\n\n       \n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n       .\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n\n       .\n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n        +\n}",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }"
+        },
+        {
+            "patch": "if (!basePath.toFile().canRead()) {\n       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!basePath.toFile().canRead()) {\n\n       \n\n\n\n        +\n    }",
+            "correctness": "uncompilable",
+            "translated": "if (!parentPath.toFile().canRead()) {       \n\n\n\n    {\n       \n    else {\n       \n\n    else {\n       \n        e.\n\n\n    if (!parentPath.toFile().canRead()) {\n\n       \n\n\n\n        +\n  }"
+        }
+    ]
+}

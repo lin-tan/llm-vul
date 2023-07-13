@@ -1,0 +1,65 @@
+{
+    "id": 7,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2832,
+            "fix_type": "general",
+            "patch": "{\n  int l = 6 * outcome.length();\n  int roomForAlternate = approximateAdditionalEncodeingSize(charEncoder,charEncoder);\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.4435,
+            "fix_type": "general",
+            "patch": "{\n  int l = 6 * outcome.length();\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5712,
+            "fix_type": "insert",
+            "patch": "charset = true;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5712,
+            "fix_type": "insert",
+            "patch": "useReplacement = true;\n"
+        },
+        {
+            "rank": 5,
+            "score": -1.8245,
+            "fix_type": "general",
+            "patch": "result++;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3165,
+            "fix_type": "general",
+            "patch": "{\n  int l = 6 * approximateAdditionalEncodeingSize();\n  int roomForAlternate = approximateAdditionalEncodeingSize(charEncoder,charEncoder);\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.6817,
+            "fix_type": "insert",
+            "patch": "charset = false;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.6817,
+            "fix_type": "insert",
+            "patch": "useReplacement = false;\n"
+        },
+        {
+            "rank": 9,
+            "score": -1.4906,
+            "fix_type": "general",
+            "patch": "return approximateAdditionalEncodeingSize(charEncoder);\n"
+        },
+        {
+            "rank": 10,
+            "score": -2.3509,
+            "fix_type": "general",
+            "patch": "charset;\n"
+        }
+    ]
+}

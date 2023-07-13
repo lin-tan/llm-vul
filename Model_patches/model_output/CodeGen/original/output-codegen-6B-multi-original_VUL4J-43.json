@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t} finally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}\n\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t}\n\tfinally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}\n\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t} finally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t}\n\tfinally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tin.close();\n\t\t}\n\t} finally {\n\t\tout.close();\n\t}\n}\n\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tin.close();\n\t\t}\n\t}\n\tfinally {\n\t\tout.close();\n\t}\n}\n\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tin.close();\n\t\t}\n\t} finally {\n\t\tout.close();\n\t}\n}\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tin.close();\n\t\t}\n\t}\n\tfinally {\n\t\tout.close();\n\t}\n}\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t}\n\tfinally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}\n\n\n}\n",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t} finally {\n\t\tout.close();\n\t}\n}\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t} finally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t}\n\tfinally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t} finally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t}\n\tfinally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tin.close();\n\t\t}\n\t} finally {\n\t\tout.close();\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tin.close();\n\t\t}\n\t}\n\tfinally {\n\t\tout.close();\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tin.close();\n\t\t}\n\t} finally {\n\t\tout.close();\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tin.close();\n\t\t}\n\t}\n\tfinally {\n\t\tout.close();\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t}\n\t\tfinally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t}\n\tfinally {\n\t\tIOUtils.closeQuietly(out);\n\t}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tFile outFile = new File(destDir, entry.getName());\n\toutFile.getParentFile().mkdirs();\n\tFileOutputStream out = new FileOutputStream(outFile);\n\ttry {\n\t\tInputStream in = zipFile.getInputStream(entry);\n\t\ttry {\n\t\t\tIOUtils.copy(in, out);\n\t\t} finally {\n\t\t\tIOUtils.closeQuietly(in);\n\t\t}\n\t} finally {\n\t\tout.close();\n\t}\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

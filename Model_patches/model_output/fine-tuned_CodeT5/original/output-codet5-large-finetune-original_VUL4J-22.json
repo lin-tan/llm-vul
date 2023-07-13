@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    return decodeRequestString(request, contextPath);\n</s></s></s></s>",
+        "<pad><s>    return contextPath;\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return decodeRequestString(request, contextPath, true);\n</s></s>",
+        "<pad><s>    return decodeRequestString(request, decode(contextPath));\n</s>",
+        "<pad><s>    return decodeRequestString(request, contextPath, false);\n</s></s>",
+        "<pad><s>    return decodeRequestString(contextPath);\n</s></s></s></s></s>",
+        "<pad><s>    return decodeContextPath(request, contextPath);\n</s></s></s></s>",
+        "<pad><s>    return decodeRequestString(request);\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return decodeRequestString(request, contextPath);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return contextPath;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return decodeRequestString(request, contextPath, true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(request, decode(contextPath));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(request, contextPath, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(contextPath);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeContextPath(request, contextPath);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return decodeRequestString(request);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

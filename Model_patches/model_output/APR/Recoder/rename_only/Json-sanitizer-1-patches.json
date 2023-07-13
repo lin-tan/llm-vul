@@ -1,0 +1,12 @@
+[
+  "if((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 32))) && (\"null\" >= (JSONlike.charAt((h + 2)) | 32)))){",
+  "if((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 0))) && (\"null\" == (JSONlike.charAt((h + 2)) | 32)))){",
+  "if((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 32))) && (\"null\" <= (JSONlike.charAt((h + 2)) | 32)))){",
+  "if((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 0)) | 32))) && (\"null\" == (JSONlike.charAt((h + 2)) | 32)))){",
+  "if(((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 32)))){\n",
+  "if(((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 32))) && (\"null\" == (JSONlike.charAt((h + 2)) | 32))) && (\"null\" == (JSONlike.charAt((h + 2)) | 32)))){\n",
+  "if((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 32))) && (\"null\" > (JSONlike.charAt((h + 2)) | 32)))){",
+  "if((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 32))) && (\"null\" == (JSONlike.charAt((h + 2)) | 32)))){",
+  "if((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1))))){\n",
+  "if((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 32))) && (\"null\" == (JSONlike.charAt((h + 0)) | 32)))){"
+]

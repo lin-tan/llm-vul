@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-11,1",
+    "output": [
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\tif (\n\n\n\tString watchwordA = watchwordA;\n\t\t\t\n\n\t\n\t\t\n\n    }",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\n\n\n\tString watchwordA = watchwordA;\n\t\t\t\n\n\t//\n\t\twatchword\n\n   ",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\tif (\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//\n\t\t\n",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\n\n\n\tString watchwordA = watchwordA;\n\t\t\t\n\n\t//\n\t\t\n",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\twatchword\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//\n\t\t\n\n    }",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\twatchword\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t\n\t\t\n\n    }",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\tif (\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//\n\t\t\n\n}",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\tif (\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//\n\twatchword\n\n    }",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\twatchword\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//\n\t\t\n",
+        "\n\tString watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\n\n\n\tString watchwordA = watchwordA;\n\t\t\t\n\n\t//\n\t\t\n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\tif (\n\n\n\tString watchwordA = watchwordA;\n\t\t\t\n\n\t\n\t\t\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\tif (\n\n\n\tString pass1 = pass1;\n\t\t\t\n\n\t\n\t\t\n\n    }"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\n\n\n\tString watchwordA = watchwordA;\n\t\t\t\n\n\t//\n\t\twatchword",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\t\n\n\n\tString pass1 = pass1;\n\t\t\t\n\n\t//\n\t\twatchword"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\tif (\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\tif (\n\n\n\tString pass1 = pass1; &&\t\n\n\t//"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\n\n\n\tString watchwordA = watchwordA;\n\t\t\t\n\n\t//",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\t\n\n\n\tString pass1 = pass1;\n\t\t\t\n\n\t//"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\twatchword\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//\n\t\t\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\t\twatchword\n\n\n\tString pass1 = pass1; &&\t\n\n\t//\n\t\t\n\n    }"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\twatchword\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t\n\t\t\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\t\twatchword\n\n\n\tString pass1 = pass1; &&\t\n\n\t\n\t\t\n\n    }"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\tif (\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//\n\t\t\n\n}",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\tif (\n\n\n\tString pass1 = pass1; &&\t\n\n\t//\n\t\t\n\n}"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\tif (\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//\n\twatchword\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\tif (\n\n\n\tString pass1 = pass1; &&\t\n\n\t//\n\twatchword\n\n    }"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\twatchword\n\n\n\tString watchwordA = watchwordA; &&\t\n\n\t//",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\t\twatchword\n\n\n\tString pass1 = pass1; &&\t\n\n\t//"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\n\t\n\n\n\tString watchwordA = watchwordA;\n\t\t\t\n\n\t//\n\t\t\n\n}",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; =\t\n\n\n\t\n\t\t\n\n..\n\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\n\t\n\n\n\tString pass1 = pass1;\n\t\t\t\n\n\t//\n\t\t\n\n}"
+        }
+    ]
+}

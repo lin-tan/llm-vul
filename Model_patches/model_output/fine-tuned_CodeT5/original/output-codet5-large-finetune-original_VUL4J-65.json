@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    int dot = name.lastIndexOf('.');\n</s></s></s>",
+        "<pad><s>    int dot = file.getName().lastIndexOf('.');\n</s>",
+        "<pad><s>    int dot = file.getName().indexOf('.');\n</s></s>",
+        "<pad><s>    int dot = name.indexOf('/');\n</s></s></s></s>",
+        "<pad><s>    int dot = name.indexOf('$');\n</s></s></s></s>",
+        "<pad><s>    int dot = name.toLowerCase().indexOf('.');\n</s>",
+        "<pad><s>    int dot = name.indexOf('.') + 1;\n</s>",
+        "<pad><s>    int dot = name.indexOf('.', 1);\n</s></s>",
+        "<pad><s>    int dot = name.indexOf('.');\n</s></s></s></s>",
+        "<pad><s>    int dot = path.lastIndexOf('.');\n</s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    int dot = name.lastIndexOf('.');\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = file.getName().lastIndexOf('.');\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = file.getName().indexOf('.');\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = name.indexOf('/');\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = name.indexOf('$');\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = name.toLowerCase().indexOf('.');\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = name.indexOf('.') + 1;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = name.indexOf('.', 1);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = name.indexOf('.');\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    int dot = path.lastIndexOf('.');\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

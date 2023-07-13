@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    for (terminalColon = titleTerminal + 1; terminalColon < range; terminalColon++) {\n</s>",
+        "<pad><s>    for (terminalColon = titleBeginning; terminalColon < range; terminalColon++) {\n</s></s>",
+        "<pad><s>    for (terminalColon = titleEnd; terminalColon < range; terminalColon++) {\n</s></s></s>",
+        "<pad><s>    for (terminalColon = titleTerminal; terminalColon < range - 1; terminalColon++) {\n</s>",
+        "<pad><s>    for (terminalColon = titleTerminal + 1; terminalColon <= range; terminalColon++) {\n</s>",
+        "<pad><s>    for (terminalColon = range - 1; terminalColon >= 0; terminalColon--) {\n</s>",
+        "<pad><s>    for (terminalColon = contentBeginning; terminalColon < range; terminalColon++) {\n</s></s>",
+        "<pad><s>    while (terminalColon < range) {\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    for (terminalColon = titleTerminal + 1; terminalColon < range; terminalColon++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for (colonEnd = nameEnd + 1; colonEnd < length; colonEnd++) {\n"
+        },
+        {
+            "patch": "    for (terminalColon = titleBeginning; terminalColon < range; terminalColon++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for (colonEnd = nameStart; colonEnd < length; colonEnd++) {\n"
+        },
+        {
+            "patch": "    for (terminalColon = titleEnd; terminalColon < range; terminalColon++) {\n",
+            "correctness": "uncompilable",
+            "translated": "    for (colonEnd = titleEnd; colonEnd < length; colonEnd++) {\n"
+        },
+        {
+            "patch": "    for (terminalColon = titleTerminal; terminalColon < range - 1; terminalColon++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for (colonEnd = nameEnd; colonEnd < length - 1; colonEnd++) {\n"
+        },
+        {
+            "patch": "    for (terminalColon = titleTerminal + 1; terminalColon <= range; terminalColon++) {\n",
+            "correctness": "compile_success",
+            "translated": "    for (colonEnd = nameEnd + 1; colonEnd <= length; colonEnd++) {\n"
+        },
+        {
+            "patch": "    for (terminalColon = range - 1; terminalColon >= 0; terminalColon--) {\n",
+            "correctness": "compile_success",
+            "translated": "    for (colonEnd = length - 1; colonEnd >= 0; colonEnd--) {\n"
+        },
+        {
+            "patch": "    for (terminalColon = contentBeginning; terminalColon < range; terminalColon++) {\n",
+            "correctness": "uncompilable",
+            "translated": "    for (colonEnd = valueStart; colonEnd < length; colonEnd++) {\n"
+        },
+        {
+            "patch": "    while (terminalColon < range) {\n",
+            "correctness": "uncompilable",
+            "translated": "    while (colonEnd < length) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

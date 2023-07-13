@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);",
+        "String watchwordA = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, false);",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData);",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, true);",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, true);",
+        "String watchwordA = unifyWatchwordAndRandomData(unprocessedWatchword, randomData);",
+        "String watchwordA = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, true);",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, null);"
+    ],
+    "validation_result": [
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, false);"
+        },
+        {
+            "patch": "String watchwordA = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = mergePasswordAndSalt(rawPass, salt, false);"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, false, false);"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt);"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, true);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, true);"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, true);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, false, true);"
+        },
+        {
+            "patch": "String watchwordA = unifyWatchwordAndRandomData(unprocessedWatchword, randomData);",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = mergePasswordAndSalt(rawPass, salt);"
+        },
+        {
+            "patch": "String watchwordA = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, true);",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = mergePasswordAndSalt(rawPass, salt, true);"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, false);"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, null);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, null);"
+        }
+    ]
+}

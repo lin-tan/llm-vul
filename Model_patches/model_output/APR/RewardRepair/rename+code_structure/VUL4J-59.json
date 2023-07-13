@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if(a== ''') s.conversion(Information);",
+        "if(m!=null) s.conversion(Information);",
+        "if(m!= null) s.conversion(Information);",
+        "if(a== 'r') s.conversion(Information);",
+        "if(! s.conversion()) s.conversion(Information);",
+        "s.conversion(Information);",
+        "if( s!= null ) s.conversion(Information);",
+        "if(m!= null) { s.conversion(Information); }",
+        "if(a== 'n') s.conversion(Information);",
+        "if(s!=null) s.conversion(Information);"
+    ],
+    "validation_result": [
+        {
+            "patch": "if(a== ''') s.conversion(Information);",
+            "correctness": "uncompilable",
+            "translated": "if(c== ''') t.transition(Data);"
+        },
+        {
+            "patch": "if(m!=null) s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "if(r!=null) t.transition(Data);"
+        },
+        {
+            "patch": "if(m!= null) s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "if(r!=null) t.transition(Data);"
+        },
+        {
+            "patch": "if(a== 'r') s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "if(c== 'r') t.transition(Data);"
+        },
+        {
+            "patch": "if(! s.conversion()) s.conversion(Information);",
+            "correctness": "uncompilable",
+            "translated": "if(! t.transition()) t.transition(Data);"
+        },
+        {
+            "patch": "s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "t.transition(Data);"
+        },
+        {
+            "patch": "if( s!= null ) s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "if( t!= null ) t.transition(Data);"
+        },
+        {
+            "patch": "if(m!= null) { s.conversion(Information); }",
+            "correctness": "compile_success",
+            "translated": "if(r!= null) { t.transition(Data); }"
+        },
+        {
+            "patch": "if(a== 'n') s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "if(c== 'n') t.transition(Data);"
+        },
+        {
+            "patch": "if(s!=null) s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "if( t!= null ) t.transition(Data);"
+        }
+    ]
+}

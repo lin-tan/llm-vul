@@ -1,0 +1,66 @@
+{
+    "output": [
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new);\n    }",
+        "\n                protected Collection<UIComponent> whole() { return uiComponents.values(); } }@Override\n   \n\n   \n   \n           .attach(new);\n    }",
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n\n           .attach(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .attach(..\n\n",
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n\n           .attach(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .attach(\"..\n\n",
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n\n           .attach(new\n               \n\n\n\n           .\n\n\n\n   \n   \n   \n           .attach(..\n\n",
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .attach(new..\n\n           ",
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .attach(new,.\n\n           ",
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n\n           .attach(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .attach(,,\n\n",
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .attach(new().\n\n           ",
+        "\n                protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .attach(new(\").\n\n           "
+    ],
+    "validation_result": [
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new);\n    }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new);\n    }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return uiComponents.values(); } }@Override\n   \n\n   \n   \n           .attach(new);\n    }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return views.values(); } }@Override\n   \n\n   \n   \n           .add(new);\n    }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n\n           .attach(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .attach(..",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new)\n           .add(new CollectionSearchIndex())\n           .add(new)\n\n           .add(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .add(.."
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n\n           .attach(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .attach(\"..",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new)\n           .add(new CollectionSearchIndex())\n           .add(new)\n\n           .add(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .add(\".."
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n\n           .attach(new\n               \n\n\n\n           .\n\n\n\n   \n   \n   \n           .attach(..",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new)\n           .add(new CollectionSearchIndex())\n           .add(new)\n\n           .add(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .add(.."
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .attach(new..",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new)\n           .add(new CollectionSearchIndex())\n           .add(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .add(new.."
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .attach(new,.",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new)\n           .add(new CollectionSearchIndex())\n           .add(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .add(new,."
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n\n           .attach(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .attach(,,",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new)\n           .add(new CollectionSearchIndex())\n           .add(new)\n\n           .add(new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \n           .add(,,"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .attach(new().",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new)\n           .add(new CollectionSearchIndex())\n           .add(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .add(new()."
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return components.values(); } }@Override\n   \n\n   \n   \n           .attach(new)\n           .attach(new AggregationLookupIndex())\n           .attach(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .attach(new(\").",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return components.values(); } }@Override\n   \n\n   \n   \n           .add(new)\n           .add(new CollectionSearchIndex())\n           .add(new)\n           (new\n           \n\n\n\n           .\n\n\n\n   \n   \n   \")\n           .add(new(\")."
+        }
+    ]
+}

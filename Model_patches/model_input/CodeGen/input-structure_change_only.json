@@ -1,0 +1,155 @@
+{
+  "config": "NO_COMMENT",
+  "data": {
+    "Netty-1": {
+      "input": "   private void splitHeader(AppendableCharSequence sb) {\n       final int length = sb.length();\n       int nameStart;\n       int nameEnd;\n      \n       nameStart = findNonWhitespace(sb, 0);\n       nameEnd = nameStart;\n       while( nameEnd < length) {\n           char ch = sb.charAtUnsafe(nameEnd);\n"
+    },
+    "Netty-2": {
+      "input": "   private void splitHeader(AppendableCharSequence sb) {\n       final int length = sb.length();\n       int nameStart;\n       int nameEnd;\n      \n       nameStart = findNonWhitespace(sb, 0);\n       nameEnd = nameStart;\n       while( nameEnd < length) {\n           char ch = sb.charAtUnsafe(nameEnd);\n           if (ch != ':' && (isDecodingRequest() || !Character.isWhitespace(ch))) {\n               nameEnd ++;\n           }else{\n               break;\n           }\n          \n       }\n"
+    },
+    "Jenkins-1": {
+      "input": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() { \n    List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll();\n    Map<String,Object> r = new HashMap<String, Object>();\n    int i = 0;\n"
+    },
+    "Jenkins-2": {
+      "input": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    Collection<TopLevelItem> itemValues = items.values();\n"
+    },
+    "Jenkins-3": {
+      "input": "   @Override\n   public SearchIndexBuilder makeSearchIndex() {\n       SearchIndexBuilder searchIndexBuilder = super.makeSearchIndex();\n       CollectionSearchIndex<TopLevelItem> collectionSearchIndexItem=new CollectionSearchIndex<TopLevelItem>() {\n               protected SearchItem get(String key) { \n                   return getItemByFullName(key, TopLevelItem.class); \n               }\n               protected Collection<TopLevelItem> all() { \n                   return getAllItems(TopLevelItem.class); \n               }\n       };\n       CollectionSearchIndex collectionSearchIndexComputer = new CollectionSearchIndex() {\n               protected Collection<Computer> all() { \n                   return computers.values(); \n               }\n               protected Computer get(String key) { \n                   return getComputer(key); \n               }\n       };\n       searchIndexBuilder.add(collectionSearchIndexItem);\n       searchIndexBuilder.add(\"configure\", \"config\",\"configure\");\n       View primaryView_ = getPrimaryView();\n       SearchIndexBuilder primaryViewSearchIndexBuilder = primaryView_.makeSearchIndex();\n       searchIndexBuilder.add(primaryViewSearchIndexBuilder);\n       searchIndexBuilder.add(collectionSearchIndexComputer); \n       searchIndexBuilder.add(\"manage\");\n       searchIndexBuilder.add(\"log\");\n        CollectionSearchIndex collectionSearchIndexView = new CollectionSearchIndex() {\n"
+    },
+    "Jinjava-1": {
+      "input": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n    .add(\"clone\")\n    .add(\"wait\")\n"
+    },
+    "Halo-1": {
+      "input": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    \n    Path normalizedParentPath = parentPath.normalize();\n"
+    },
+    "Retrofit-1": {
+      "input": "JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.type = type;\n"
+    },
+    "Quartz-1": {
+      "input": "   protected void initDocumentParser() throws ParserConfigurationException  {\n       Object source = resolveSchemaSource();\n       DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();\n       docBuilderFactory.setValidating(true);\n       docBuilderFactory.setNamespaceAware(true);\n       \n       docBuilderFactory.setAttribute(\"http://java.sun.com/xml/jaxp/properties/schemaLanguage\", \"http://www.w3.org/2001/XMLSchema\");\n       docBuilderFactory.setAttribute(\"http://java.sun.com/xml/jaxp/properties/schemaSource\", source);\n       \n"
+    },
+    "Flow-1": {
+      "input": "   public boolean serveDevModeRequest(HttpServletRequest request,\n           HttpServletResponse response) throws IOException {\n   \n       if ( !isDevServerFailedToStart.get() && devServerStartFuture.isDone()) {\n           String requestFilename = request.getPathInfo();\n"
+    },
+    "Flow-2": {
+      "input": "   @Override\n   public int setErrorParameter(BeforeEnterEvent event,\n           ErrorParameter<NotFoundException> parameter) {\n       \n       String additionalInfo = parameter.hasCustomMessage()? \"Reason: \" + parameter.getCustomMessage():\"\";\n       Location location = event.getLocation();\n       String path = location.getPath();\n       path = Jsoup.clean(path, Whitelist.none());\n       additionalInfo = Jsoup.clean(additionalInfo, Whitelist.none());\n       UI ui = event.getUI();\n       VaadinSession session = ui.getSession();\n       DeploymentConfiguration config = session.getConfiguration();\n       boolean productionMode = config.isProductionMode();\n       String template = getErrorHtml(productionMode);\n"
+    },
+    "BC-Java-1": {
+      "input": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n"
+    },
+    "Json-sanitizer-1": {
+      "input": " private void sanitizeString(int start, int end) {\n   boolean closed = false;\n   int i = start;\n   while ( i < end) {\n     char ch = jsonish.charAt(i);\n       if(ch== '\\u2028'){ replace(i, i + 1, \"\\\\u2028\"); }\n       else if( ch=='\"'|| ch== '\\''){\n         if (i != start) {\n           if (i + 1 == end) {\n             char startDelim = jsonish.charAt(start);\n             if (startDelim != '\\'') {\n               startDelim = '\"';\n             }\n             closed = startDelim == ch;\n           }\n           \n           if(!closed){\n             if(ch == '\"'){\n               insert(i, '\\\\');\n             }\n           }else{\n              if (ch == '\\'') { replace(i, i + 1, '\"'); }\n           }\n          \n         } else {\n           if (ch == '\\'') { replace(i, i + 1, '\"'); }\n         }\n       }\n"
+    },
+    "Ratpack-1": {
+      "input": "private void newRequest(ChannelHandlerContext ctx, HttpRequest nettyRequest) throws Exception {\n   DecoderResult decoderResult = nettyRequest.decoderResult();\n   if (decoderResult.isSuccess()) {\n     HttpHeaders httpHeaders = nettyRequest.headers();\n     Headers requestHeaders = new NettyHeadersBackedHeaders(httpHeaders);\n     Long contentLength = HttpUtil.getContentLength(nettyRequest, -1L);\n     boolean hasBody = (contentLength > 0) || (requestHeaders.get(HttpHeaderNames.TRANSFER_ENCODING) != null);\n     RequestBody requestBody;\n     if(!hasBody){\n       requestBody =  null;\n     }else{\n       requestBody  = new RequestBody(contentLength, nettyRequest, ctx);\n     }\n   \n     Channel channel = ctx.channel();\n     if (requestBody != null) {\n       channel.attr(BODY_ACCUMULATOR_KEY).set(requestBody);\n     }\n     X509Certificate clientCertificate = channel.attr(CLIENT_CERT_KEY).get();\n     Instant instant = clock.instant();\n     DefaultRequest request = new DefaultRequest(\n       instant,\n       requestHeaders,\n       nettyRequest.method(),\n       nettyRequest.protocolVersion(),\n       nettyRequest.uri(),\n       (InetSocketAddress) channel.remoteAddress(),\n       (InetSocketAddress) channel.localAddress(),\n       serverRegistry.get(ServerConfig.class),\n       requestBody,\n       ConnectionIdleTimeout.of(channel),\n       clientCertificate\n     );\n"
+    },
+    "Pulsar-1": {
+      "input": "   protected void internalGetMessageById(AsyncResponse asyncResponse, long ledgerId, long entryId,\n                                             boolean authoritative) {\n       try {\n           validateTopicOwnership(topicName, authoritative);\n           validateTopicOperation(topicName, TopicOperation.PEEK_MESSAGES);\n           if (topicName.isGlobal()) {\n               validateGlobalNamespaceOwnership(namespaceName);\n           }\n           AsyncCallbacks.ReadEntryCallback readEntryCallback = new AsyncCallbacks.ReadEntryCallback() {\n               @Override\n               public void readEntryComplete(Entry entry, Object ctx) {\n                   try {\n                       Response response = generateResponseWithEntry(entry);\n                       asyncResponse.resume(response);\n                   } catch (IOException exception) {\n                       RestException restException =  new RestException(exception);\n                       asyncResponse.resume(restException);\n                   } finally {\n                       if (entry == null) {\n                           return;\n                       }else{\n                           entry.release();\n                       }\n                   }\n               }\n               @Override\n               public void readEntryFailed(ManagedLedgerException exception, Object ctx) {\n                   RestException restException =  new RestException(exception);\n                   asyncResponse.resume(restException);\n               }\n           };\n           PositionImpl positionImpl = new PositionImpl(ledgerId, entryId);\n"
+    },
+    "VUL4J-1": {
+      "input": "   @SuppressWarnings({ \"unchecked\", \"rawtypes\" })\n   public <T> T deserialze(DefaultJSONParser parser, Type type, Object fieldName) {\n       final JSONLexer lexer = parser.lexer;\n       switch (lexer.token()) {\n           case JSONToken.LITERAL_STRING:\n               byte[] bytes = lexer.bytesValue();\n               lexer.nextToken(JSONToken.COMMA);\n               return (T) bytes;\n           case JSONToken.NULL:\n               lexer.nextToken(JSONToken.COMMA);\n               return null;\n           default:\n               break;\n       }\n       JSONArray array = new JSONArray();\n       Class componentClass;\n       Type componentType;\n       if (!(type instanceof GenericArrayType)) {\n           componentType =  ((Class) type).getComponentType();\n           componentClass = ((Class) type).getComponentType();\n       } else {\n           componentType = ((GenericArrayType) type).getGenericComponentType();\n           if (! (componentType instanceof TypeVariable)) {\n               componentClass = TypeUtils.getClass(componentType);\n           } else {\n                  \n               TypeVariable typeVar = (TypeVariable) componentType;\n               Type objType = parser.getContext().type;\n               if (!(objType instanceof ParameterizedType)) {\n                   Type type_ = typeVar.getBounds()[0];\n                   componentClass = TypeUtils.getClass(type_);\n             \n               } else {\n         \n                   ParameterizedType objParamType = (ParameterizedType) objType;\n                   Type objRawType = objParamType.getRawType();\n                   Type actualType = null;\n                   if (objRawType instanceof Class) {\n                       TypeVariable[] objTypeParams = ((Class) objRawType).getTypeParameters();\n                       int i = 0;\n                       while( i < objTypeParams.length) {\n                           String i_name = objTypeParams[i].getName();\n                           String typeVar_name = typeVar.getName();\n                           if (!i_name.equals(typeVar_name)) {\n                               i++;\n                              continue;\n                           }\n                           actualType = objParamType.getActualTypeArguments()[i];\n                           i++;\n                       }\n                   }\n                   \n                   componentClass = (actualType instanceof Class)? (Class) actualType:Object.class;\n               } \n           }\n       }\n"
+    },
+    "VUL4J-3": {
+      "input": "@Converter\npublic SAXSource toSAXSourceFromStream(StreamSource source, Exchange exchange) throws SAXException {\n    XMLReader xmlReader = null;\n    SAXParserFactory sfactory = null;\n    \n    try {\n        if (!(exchange == null)) {\n            sfactory = exchange.getProperty(Exchange.SAXPARSER_FACTORY, SAXParserFactory.class);\n        }\n\n        if (sfactory != null) {\n            sfactory.setNamespaceAware(true);\n            xmlReader = sfactory.newSAXParser().getXMLReader();\n        }else{\n            sfactory = SAXParserFactory.newInstance();\n            try {\n                sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true);\n            } catch (Exception e) {\n                LOG.warn(\"SAXParser doesn't support the feature {} with value {}, due to {}.\", new Object[]{javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true\", e});\n            }\n"
+    },
+    "VUL4J-4": {
+      "input": "protected Object doGetDocument(Exchange exchange, Object body) throws Exception {\n    if (body != null) {\n\n        Class<?> type = getDocumentType();\n        Exception cause = null;\n        Object answer = null;\n\n        if (type != null) {\n            try {\n                CamelContext context = exchange.getContext();\n                TypeConverter typeConverter = context.getTypeConverter();\n                answer = typeConverter.convertTo(type, exchange, body);\n            } catch (Exception e) {\n                cause = e;\n            }\n        }\n\n"
+    },
+    "VUL4J-5": {
+      "input": "   private void expand(ArchiveEntrySupplier supplier, EntryWriter writer, File targetDirectory)\n       throws IOException {\n       for (ArchiveEntry nextEntry = supplier.getNextReadableEntry(); nextEntry != null; nextEntry = supplier.getNextReadableEntry()) {\n           String name = nextEntry.getName();\n           File f = new File(targetDirectory, name);\n           String fpath = f.getCanonicalPath();\n           \n"
+    },
+    "VUL4J-6": {
+      "input": " public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n       this.rcount = ZipLong.getValue(data, offset + 8);\n       this.flags = ZipShort.getValue(data, offset + 6);\n       this.format = ZipShort.getValue(data, offset);\n       this.bitlen = ZipShort.getValue(data, offset + 4);\n       int zv2 = ZipShort.getValue(data, offset + 2);\n       this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n       if (rcount <= 0) {\n           return;\n       }\n       this.hashSize = ZipShort.getValue(data, offset + 14);\n       int zv12 =  ZipShort.getValue(data, offset + 12);\n       this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n"
+    },
+    "VUL4J-7": {
+      "input": "   private int readStored(final byte[] buffer, final int offset, final int length) throws IOException {\n       if (!current.hasDataDescriptor) {\n           \n           final long csize = current.entry.getSize();\n           if (current.bytesRead < csize) {\n               if (buf.position() >= buf.limit()) {\n                   buf.position(0);\n                   byte[] bufArray = buf.array();\n                   final int l = in.read(bufArray);\n                   if (l != -1) {\n                       buf.limit(l);\n                       count(l);\n                       current.bytesReadFromStream += l;\n                   }else{\n"
+    },
+    "VUL4J-8": {
+      "input": "@Override\npublic ByteBuffer encode(final String name) {\n    final CharBuffer cb = CharBuffer.wrap(name);\n    \n    int initial_cbr = cb.remaining();\n    final CharsetEncoder enc = newEncoder();\n    int size = estimateInitialBufferSize(enc, initial_cbr);\n    ByteBuffer out = ByteBuffer.allocate(size);\n    CharBuffer tmp = null;\n    \n    while (cb.remaining() > 0) {\n        final CoderResult res = enc.encode(cb, out, false);\n\n        if (!res.isUnmappable() && !res.isMalformed()) {\n\n            if (res.isOverflow()) {\n                int cbr = cb.remaining();\n                out = ZipEncodingHelper.growBufferBy(out, estimateIncrementalEncodingSize(enc, cbr));\n"
+    },
+    "VUL4J-10": {
+      "input": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n"
+    },
+    "VUL4J-12": {
+      "input": "private int extend(int v, final int t) {\n"
+    },
+    "VUL4J-18": {
+      "input": "public String getForwardPage( HttpServletRequest request )\n{\n"
+    },
+    "VUL4J-19": {
+      "input": "@Override\npublic void prepareForDecryption(PDEncryption encryption, COSArray documentIDArray,\n                                    DecryptionMaterial decryptionMaterial)\n                                    throws IOException\n{\n    if((decryptionMaterial instanceof StandardDecryptionMaterial))\n    {\n        \n        byte[] userKey = encryption.getUserKey();\n        byte[] ownerKey = encryption.getOwnerKey();\n\n        StandardDecryptionMaterial material = (StandardDecryptionMaterial)decryptionMaterial;\n        String password = material.getPassword();\n    \n        boolean encryptMetadata = encryption.isEncryptMetaData();\n        setDecryptMetadata(encryptMetadata);\n        \n        if(password == null){\n            password = \"\";\n        }\n\n        int dicLength = 0;\n        if(encryption.getVersion() != 1 ){\n            dicLength = encryption.getLength() / 8;\n        }else{\n            dicLength = 5;\n        } \n\n\n        byte[] documentIDBytes = getDocumentIDBytes(documentIDArray);    \n        int dicPermissions = encryption.getPermissions();\n        int dicRevision = encryption.getRevision();\n        byte[] ue = null;\n        byte[] oe = null;\n        Charset passwordCharset = Charsets.ISO_8859_1;\n\n        if (dicRevision == 6 || dicRevision == 5)\n        {\n            passwordCharset = Charsets.UTF_8;\n            ue = encryption.getUserEncryptionKey();\n            oe = encryption.getOwnerEncryptionKey();\n        }\n        \n        byte[] passwordByteArray = password.getBytes(passwordCharset);\n        if( !isOwnerPassword(passwordByteArray, userKey, ownerKey,\n            dicPermissions, documentIDBytes, dicRevision,\n            dicLength, encryptMetadata) )\n            {\n                if( !isUserPassword(passwordByteArray, userKey, ownerKey,\n                    dicPermissions, documentIDBytes, dicRevision,\n                    dicLength, encryptMetadata) )\n                {\n                    throw new InvalidPasswordException(\"Cannot decrypt PDF, the password is incorrect\");\n\n                } else \n                {\n"
+    },
+    "VUL4J-20": {
+      "input": "   public float[] toFloatArray()\n   {\n       int size = size();\n       float[] retval = new float[size];\n       int i = 0;\n       while( i < size )\n       {\n"
+    },
+    "VUL4J-22": {
+      "input": "public static String getContextPath(HttpServletRequest request) {\n    String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n    contextPath = contextPath == null? request.getContextPath(): contextPath;\n\n"
+    },
+    "VUL4J-23": {
+      "input": "@Override\npublic String encodeForJSString(String source) {\n    if( source != null ){\n"
+    },
+    "VUL4J-25": {
+      "input": "@Override\n@Nonnull\npublic String getValidHref(final String url) {\n    if (!StringUtils.isNotEmpty(url)) {\n        return \"\";\n    }\n\n"
+    },
+    "VUL4J-26": {
+      "input": "public String getUrlRegex() {\n  if (!StringUtils.isNotEmpty(urlRegexExpression)) {\n    if (!StringUtils.isNotEmpty(urlRegex)) {\n            return \"^(https?|ftp):\\\\/\\\\/\" +\n            \"(([a-z0-9$_\\\\.\\\\+!\\\\*\\\\'\\\\(\\\\),;\\\\?&=-]|%[0-9a-f]{2})+\" +\n            \"(:([a-z0-9$_\\\\.\\\\+!\\\\*\\\\'\\\\(\\\\),;\\\\?&=-]|%[0-9a-f]{2})+)?\" +\n            \"@)?(#?\" +\n            \")((([a-z0-9]\\\\.|[a-z0-9][a-z0-9-]*[a-z0-9]\\\\.)*\" +\n            \"[a-z][a-z0-9-]*[a-z0-9]\" +\n            \"|((\\\\d|[1-9]\\\\d|1\\\\d{2}|2[0-4][0-9]|25[0-5])\\\\.){3}\" +\n            \"(\\\\d|[1-9]\\\\d|1\\\\d{2}|2[0-4][0-9]|25[0-5])\" +\n            \")(:\\\\d+)?\" +\n"
+    },
+    "VUL4J-30": {
+      "input": "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value != null && value.toString().length() != 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n"
+    },
+    "VUL4J-39": {
+      "input": "@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n   \n    sb= origin != null? sb.append(\"remoteAddress=\").append(origin):sb;\n  \n    if (clientId != null) {\n        \n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n"
+    },
+    "VUL4J-40": {
+      "input": "   public boolean isAllowed(HttpServletRequest request) throws IOException {\n       BufferedReader reader = request.getReader();\n       ScimUser scimUserFromRequest = JsonUtils.readValue(IOUtils.toString(reader), ScimUser.class);\n       String pathInfo = UaaUrlUtils.getRequestPath(request);\n       IdentityZone zone = IdentityZoneHolder.get();\n       ScimUser scimUserFromDb;\n       try {\n           scimUserFromDb = scimUserProvisioning.retrieve(\n               UaaUrlUtils.extractPathVariableFromUrl(USER_ID_PATH_PARAMETER_INDEX, pathInfo), zone.getId());\n       } catch (ScimResourceNotFoundException e) {\n           return true;\n       }\n       String dbEmail = scimUserFromDb.getPrimaryEmail();\n       String requestEmail = scimUserFromRequest.getPrimaryEmail();\n       if (dbEmail.equals(requestEmail)) {\n           String dbUserName = scimUserFromDb.getUserName();\n           String requestUserName = scimUserFromRequest.getUserName();\n"
+    },
+    "VUL4J-41": {
+      "input": "   protected void extractFile( final File srcF, final File dir, final InputStream compressedInputStream,\n                               final String entryName, final Date entryDate, final boolean isDirectory,\n                               final Integer mode, String symlinkDestination )\n       throws IOException, ArchiverException\n   {\n      \n       final File f = FileUtils.resolveFile( dir, entryName );\n"
+    },
+    "VUL4J-43": {
+      "input": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir)\n\tthrows IOException\n{\n\tString entryName = entry.getName();\n\tFile outFile = new File(destDir,entryName);\n"
+    },
+    "VUL4J-44": {
+      "input": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n"
+    },
+    "VUL4J-46": {
+      "input": "   protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n           XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n           String nameForTextElem)\n   {\n       super(oc);\n       if (xmlOut == null) {\n           xmlOut =  XMLOutputFactory.newInstance();\n       }\n       _xmlGeneratorFeatures = xgFeatures;\n      \n       if (xmlIn == null) {\n"
+    },
+    "VUL4J-47": {
+      "input": "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    \n    _xmlGeneratorFeatures = xgFeatures;\n    \n    if (xmlIn == null) {\n        xmlIn = XMLInputFactory.newInstance();\n        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n"
+    },
+    "VUL4J-50": {
+      "input": "private void writeSession(SessionInformations session, boolean displayUser) throws IOException {\n\tfinal String sessionId = session.getId();\n\tfinal String remoteAddr = session.getRemoteAddr();\n\twrite(\"<td><a href='?part=sessions&amp;sessionId=\");\n\tString sessionIdHtmlEncode=htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\twrite(\"'>\");\n\twrite(sessionIdHtmlEncode);\n\twrite(\"</a>\");\n\tfinal String nextColumnAlignRight = \"</td><td align='right'>\";\n\twrite(nextColumnAlignRight);\n\tString lastAccess = durationFormat.format(session.getLastAccess());\n\tString age = durationFormat.format(session.getAge());\n\tString exprDate = expiryFormat.format(session.getExpirationDate());\n\tString attrCount = integerFormat.format(session.getAttributeCount());\n\tString serializedSize = integerFormat.format(session.getSerializedSize());\n\twrite(lastAccess);\n\twrite(nextColumnAlignRight);\n\twrite(age);\n\twrite(nextColumnAlignRight);\n\twrite(exprDate);\n\twrite(nextColumnAlignRight);\n\twrite(attrCount);\n\tfinal String nextColumnAlignCenter = \"</td><td align='center'>\";\n\tfinal String nextColumn = \"</td><td>\";\n\twrite(nextColumnAlignCenter);\n\tString s1 = !session.isSerializable()? \"<span class='severe'>#non#</span>\": \"#oui#\";\n\twrite(s1);\n\twrite(nextColumnAlignRight);\n\twrite(serializedSize);\n\twrite(nextColumn);\n"
+    },
+    "VUL4J-53": {
+      "input": "void setTo(Calendar c, int i) {\n"
+    },
+    "VUL4J-55": {
+      "input": "public Calendar ceil(Calendar cal) {\n    Calendar twoYearsFuture = (Calendar) cal.clone();\n    twoYearsFuture.add(Calendar.YEAR, 2);\n    OUTER:\n    while (true) {\n        if (cal.compareTo(twoYearsFuture) <= 0) {\n            int i =0;\n            while (i< CalendarField.ADJUST_ORDER.length) {\n                CalendarField f = CalendarField.ADJUST_ORDER[i++];\n                int cur = f.valueOf(cal);\n                int next = f.ceil(this,cur);\n                if (cur==next)  continue;   \n\n                CalendarField l=f.lowerField;\n                while (l!=null){\n                    l.clear(cal);\n                    l=l.lowerField;\n                }\n\n                if (next>=0) {\n                    f.setTo(cal,next);\n"
+    },
+    "VUL4J-57": {
+      "input": "@SuppressWarnings({\"unchecked\", \"rawtypes\"}) \n@Override\npublic boolean start() throws Exception {\n    String job = step.getJob();\n    Item item = Jenkins.getActiveInstance().getItem(job, invokingRun.getParent(), Item.class);\n    if (item != null) {\n"
+    },
+    "VUL4J-59": {
+      "input": "      void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n"
+    },
+    "VUL4J-61": {
+      "input": "   private Stream<MapResult> xmlXpathToMapResult(@Name(\"url\") String url, boolean simpleMode, String path, Map<String, Object> config) throws Exception {\n       config =  config == null? Collections.emptyMap():config;\n       boolean failOnError = (boolean) config.getOrDefault(\"failOnError\", true);\n       List<MapResult> result = new ArrayList<>();\n       try {\n           FileUtils.checkReadAllowed(url);\n           DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();\n           XPathFactory xPathFactory = XPathFactory.newInstance();\n           documentBuilderFactory.setIgnoringElementContentWhitespace(true);\n           documentBuilderFactory.setNamespaceAware(true);\n           if(StringUtils.isEmpty(path) ){\n               path =  \"/\" ;\n           }\n          \n           XPathExpression xPathExpression = xPathFactory.newXPath().compile(path);\n           InputStream inputStream = Util.openInputStream(url, (Map) config.getOrDefault( \"headers\", Collections.emptyMap() ) , null);\n"
+    },
+    "VUL4J-64": {
+      "input": "  final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n      XMLInputFactory factory = XMLInputFactory.newInstance();\n      factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n      factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n"
+    },
+    "VUL4J-65": {
+      "input": "   static public File allocateFile(File dir, String name) {\n       int q = name.indexOf('?');\n       name = q > 0? name.substring(0, q):name;\n   \n       int dot = name.indexOf('.');\n       String prefix;\n       String suffix;\n       if(dot >= 0){\n           prefix  =  name.substring(0, dot);\n           suffix = name.substring(dot);\n       }else{\n           prefix = name;\n           suffix = \"\";\n       }\n       \n       File file = new File(dir, name);\n"
+    },
+    "VUL4J-66": {
+      "input": "protected static boolean isValid(String str)\n{\n   if (str != null && str.length() != 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n"
+    },
+    "VUL4J-73": {
+      "input": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n"
+    },
+    "VUL4J-74": {
+      "input": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\n"
+    }
+  }
+}

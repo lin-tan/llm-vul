@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n\n\n   \n\n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{path}\", path);\n\n  public\n  public\n \n  public\n ",
+        "\n    template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n   \n\n   \n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{path}\", path);\n\n  public\n  public\n \n  public\n ",
+        "\n    template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n\n\n   \n\n   \n\n\n\n   \n    template = template.replace(\"{path}\", path).replace(\"{additionalInfo}\", additionalInfo);\n   \n\n  public\n  public\n \n  public\n ",
+        "\n    template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n\n\n   \n\n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{additionalInfo}\", additionalInfo);\n\n  public\n \n \n  public\n ",
+        "\n    template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n   \n\n   \n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{additionalInfo}\", additionalInfo);\n\n  public\n \n \n  public\n ",
+        "\n    template += path + additionalInfo;().removeChildren();\n\n   \n\n   \n   \n   \n\n   \n   \n\n   \n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{additionalInfo}\", additionalInfo);\n\n  public\n \n \n  public\n ",
+        "\n    template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n\n\n   \n\n   \n\n\n\n   \n    template = template.replace(\"{path}\", path).replace(\"{additionalInfo}\", additionalInfo);\n   \n\n  public\n  public\n \n  public\n \n ",
+        "\n().removeChildren();",
+        "\n().removeAllChildren();",
+        "\n().clearChildren();"
+    ],
+    "validation_result": [
+        {
+            "patch": "template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n\n\n   \n\n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{path}\", path);\n\n  public\n  public\n \n  public",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n   \n\n   \n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{path}\", path);\n\n  public\n  public\n \n  public",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n\n\n   \n\n   \n\n\n\n   \n    template = template.replace(\"{path}\", path).replace(\"{additionalInfo}\", additionalInfo);\n   \n\n  public\n  public\n \n  public",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n\n\n   \n\n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{additionalInfo}\", additionalInfo);\n\n  public\n \n \n  public",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n   \n\n   \n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{additionalInfo}\", additionalInfo);\n\n  public\n \n \n  public",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template += path + additionalInfo;().removeChildren();\n\n   \n\n   \n   \n   \n\n   \n   \n\n   \n   \n\n\n\n   \n    template = template.replace(\"{path}\", path);\n    template = template.replace(\"{additionalInfo}\", additionalInfo);\n\n  public\n \n \n  public",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template += path + additionalInfo;().removeAllChildren();\n   \n\n   \n   \n   \n\n   \n\n\n   \n\n   \n\n\n\n   \n    template = template.replace(\"{path}\", path).replace(\"{additionalInfo}\", additionalInfo);\n   \n\n  public\n  public\n \n  public",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "().removeChildren();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "().removeAllChildren();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "().clearChildren();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

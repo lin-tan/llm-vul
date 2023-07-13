@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n\n       \n    }",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n       \n\n\n\n       \n    }",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n\n\n       \n    }",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    OutputStream output = getOutputStream();\n\n       \n    }",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n   \n\n\n   \n   \n\n  }",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n   \n\n\n   \n   \n\n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n\n       \n\n  }",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n   \n\n\n   \n   \n\n}",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n   \n\n\n   \n   \n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n\n       \n\n  }",
+        "\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n  public void close() throws IOException {\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+    ],
+    "validation_result": [
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n\n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n       \n\n\n\n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n\n\n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    OutputStream output = getOutputStream();\n\n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n   \n\n\n   \n   \n\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n    if (dfosFile == null) {\n        return;\n    }\n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n   \n\n\n   \n   \n\n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n\n       \n\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n   \n\n\n   \n   \n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n   \n\n\n   \n   \n\n    ByteArrayOutputStream output = new ByteArrayOutputStream();\n\n       \n\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ByteArrayOutputStream output = new ByteArrayOutputStream();\n   \n   \n\n\n\n   \n\n  public void close() throws IOException {\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

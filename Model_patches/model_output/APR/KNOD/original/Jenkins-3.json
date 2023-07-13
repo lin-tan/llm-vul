@@ -1,0 +1,65 @@
+{
+    "id": 37,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0317,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all(){\nreturn views;\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1665,
+            "fix_type": "general",
+            "patch": " protected Collection<View,View> all(){\nreturn views;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2957,
+            "fix_type": "general",
+            "patch": " protected Collection<? extends View> all(){\nreturn views;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1589,
+            "fix_type": "general",
+            "patch": " protected Collection<Collection> all(){\nreturn views;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2757,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all() throws Jenkins{\nreturn views;\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.2757,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all() throws List{\nreturn views;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2819,
+            "fix_type": "general",
+            "patch": " protected Collection<View,Computer> all(){\nreturn views;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2863,
+            "fix_type": "general",
+            "patch": " protected Collection<View,? extends View>  (){\nreturn views;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2869,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all() throws all{\nreturn views;\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.342,
+            "fix_type": "general",
+            "patch": " protected View<View> all(){\nreturn views;\n}\n"
+        }
+    ]
+}

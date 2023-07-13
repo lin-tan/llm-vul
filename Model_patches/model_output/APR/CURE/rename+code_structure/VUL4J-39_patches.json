@@ -1,0 +1,37 @@
+{
+    "VUL4J-39-116-121": {
+        "src": "if ( session CaMeL Identification != null ) { s = s . length ( ) > 0 ? s . append ( $STRING$ ) : s ; s . append ( $STRING$ ) ; s . append ( session CaMeL Identification ) ; }",
+        "patches": [
+            {
+                "patch": "s = s.length( ) >0? s.append( 'sessionId=') : s.append( 'sessionId=') ; s.append( sessionIdentification ) ; s = s.length( ) >0? s.append( 'sessionId=') : s ;"
+            },
+            {
+                "patch": "s = s.length( ) >0? s.append( ', ') : s.append( ', ') ; s.append( sessionIdentification ) ; s = s.length( ) >0? s.append( ', ') : s ;"
+            },
+            {
+                "patch": "s = s.length( ) >0? s.append( 'clientId=') : s.append( 'clientId=') ; s.append( sessionIdentification ) ; s = s.length( ) >0? s.append( 'clientId=') : s ;"
+            },
+            {
+                "patch": "s = s.length( ) >0? s.append( 'remoteAddress=') : s.append( 'remoteAddress=') ; s.append( sessionIdentification ) ; s = s.length( ) >0? s.append( 'remoteAddress=') : s ;"
+            },
+            {
+                "patch": "s = s.length( ) >0? s.append( 'sessionIdentification') : s.append( 'sessionIdentification') ; s.append( sessionIdentification ) ; s = s.length( ) >0? s.append( 'sessionIdentification') : s ;"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { s = s.length( ) >0? s.append( 'sessionId=') : s ; s.append( 'sessionId=') ; s.append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { s = s.length( ) >0? s.append( ', ') : s ; s.append( ', ') ; s.append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { s = s.length( ) >0? s.append( 'clientId=') : s ; s.append( 'clientId=') ; s.append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { s = s.length( ) >0? s.append( 'remoteAddress=') : s ; s.append( 'remoteAddress=') ; s.append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { s = s.length( ) >0? s.append( 'sessionIdentification') : s ; s.append( 'sessionIdentification') ; s.append( sessionIdentification ) ; }"
+            }
+        ]
+    }
+}

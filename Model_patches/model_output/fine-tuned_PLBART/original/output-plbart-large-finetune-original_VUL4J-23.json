@@ -1,0 +1,56 @@
+{
+    "output": [
+        "return source == null? null : encodeForJavaScriptSource(source);",
+        "return source == null? null : Encoder.forJavaScriptSource(source);",
+        "return Encode.forJavaScriptSource(source);",
+        "return source == null? null : Encode.forJavaScript(source);",
+        "return source == null? null : Encode.forJavaScriptString(source);",
+        "return source == null? null : encodeForJavaScript(source);",
+        "return source == null? null : encodeJSString(source);",
+        "return encodeForJavaScriptSource(source);",
+        "return source;",
+        "return null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return source == null? null : encodeForJavaScriptSource(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source == null? null : Encoder.forJavaScriptSource(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return source == null? null : Encode.forJavaScript(source);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return source == null? null : Encode.forJavaScriptString(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source == null? null : encodeForJavaScript(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source == null? null : encodeJSString(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return encodeForJavaScriptSource(source);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return source;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "compile_success"
+        }
+    ]
+}

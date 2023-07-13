@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    if (isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n</s></s></s></s></s></s></s>",
+        "<pad><s>    if (!HandlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n</s></s></s></s>",
+        "<pad><s>    if (handlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(handlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n</s></s></s></s>",
+        "<pad><s>    if (HandlerHelper.isPathUnsafe(requestFilename, true)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n</s></s>",
+        "<pad><s>    if (handlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n</s></s></s></s>",
+        "<pad><s>    if (HandlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n</s></s></s></s>",
+        "<pad><s>    if (isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);\n</s></s></s></s>",
+        "<pad><s>    if (HandlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!HandlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (handlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(handlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (HandlerHelper.isPathUnsafe(requestFilename, true)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (handlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (HandlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (HandlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,29 @@
+{
+    "method": {
+        "isIgnorePermissions": "whetherDisregardConsent",
+        "getLogger": "acquireLogger",
+        "isOverwrite": "whetherOverwrite",
+        "chmod": "changeMode",
+        "extractFile": "takeOutDataFile"
+    },
+    "variable": {
+        "mode": "setting",
+        "compressedInputStream": "compressedInDataSequence",
+        "ex": "e",
+        "entryDate": "itemTime",
+        "f": "targetFile",
+        "dirF": "parentFile",
+        "srcF": "originFile",
+        "entryName": "itemTitle",
+        "dir": "folder",
+        "isDirectory": "whetherFolder",
+        "symlinkDestination": "symbolicLinkTargetLocation",
+        "out": "output",
+        "": ""
+    },
+    "class": {
+        "ArchiveEntryUtils": "DocumentItemUtility",
+        "ArchiverException": "DocumentorException",
+        "": ""
+    }
+}

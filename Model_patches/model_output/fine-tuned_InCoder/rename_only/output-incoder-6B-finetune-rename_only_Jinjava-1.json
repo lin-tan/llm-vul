@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n     .add(\"notifyAll\")\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n   .add(\"notifyAll\")\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n       .add(\"notifyAll\")\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n     .add(\"wait\")\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n     .add(\"toString\")\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n.add(\"notifyAll\")\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n     .build();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n   .add(\"wait\")\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"hashCode\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"notifyAll\")\n     .add(\"wait\")\n     .build();\n// fixed lines:\n   .add(\"notifyAll\")\n   .add(\"notify\")\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "     .add(\"notifyAll\")\n",
+            "correctness": "compile_success",
+            "translated": "     .add(\"notifyAll\")\n"
+        },
+        {
+            "patch": "   .add(\"notifyAll\")\n",
+            "correctness": "compile_success",
+            "translated": "     .add(\"notifyAll\")\n"
+        },
+        {
+            "patch": "       .add(\"notifyAll\")\n",
+            "correctness": "compile_success",
+            "translated": "     .add(\"notifyAll\")\n"
+        },
+        {
+            "patch": "     .add(\"wait\")\n",
+            "correctness": "compile_success",
+            "translated": "     .add(\"wait\")\n"
+        },
+        {
+            "patch": "     .add(\"toString\")\n",
+            "correctness": "compile_success",
+            "translated": "     .add(\"toString\")\n"
+        },
+        {
+            "patch": ".add(\"notifyAll\")\n",
+            "correctness": "compile_success",
+            "translated": "     .add(\"notifyAll\")\n"
+        },
+        {
+            "patch": "     .build();\n",
+            "correctness": "uncompilable",
+            "translated": "     .build();\n"
+        },
+        {
+            "patch": "   .add(\"wait\")\n",
+            "correctness": "compile_success",
+            "translated": "     .add(\"wait\")\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "   .add(\"notifyAll\")\n   .add(\"notify\")\n",
+            "correctness": "compile_success",
+            "translated": "   .add(\"notifyAll\")\n   .add(\"notify\")\n"
+        }
+    ]
+}

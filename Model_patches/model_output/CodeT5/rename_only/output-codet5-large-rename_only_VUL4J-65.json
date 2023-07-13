@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-17,1",
+    "output": [
+        "\n    int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n    f.getParentFile().mkdirs();\n\n;\n   \n   \n    int point = beginning.length();\n   \n   \n   \n\n",
+        "\n    int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n\n    return f;",
+        "\n    int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n    f.getParentFile().mkdirs();\n\n;\n   \n   \n    int point = 2;\n    String\n   \n   \n\n   ",
+        "\n    int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n    return f;\n",
+        "\n    int point = titile.indexOf('-');\n   \n   \n   \n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n\n    return f;",
+        "\n    int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n    f.getParentFile().mkdirs();\n\n;\n   \n   \n    int point = beginning.indexOf('-');\n   \n   \n\n",
+        "\n    int point = titile.indexOf('-');\n   \n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n    return f;\n}",
+        "\n    int point = titile.indexOf('-');\n   \n   \n   \n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n    return f;\n",
+        "\n    int point = titile.indexOf('-');\n   \n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n}",
+        "\n    int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n    f.getParentFile().mkdirs();\n\n;\n   \n   \n    int point = beginning.length();",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n    file.getParentFile().mkdirs();\n\n;\n   \n   \n    int dot = prefix.length();"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n\n    return f;",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n\n    return file;"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n    f.getParentFile().mkdirs();\n\n;\n   \n   \n    int point = 2;\n    String",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n    file.getParentFile().mkdirs();\n\n;\n   \n   \n    int dot = 2;\n    String"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n    return f;",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n\n    return file;"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n   \n   \n   \n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n\n    return f;",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n   \n   \n   \n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n\n    return file;"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n    f.getParentFile().mkdirs();\n\n;\n   \n   \n    int point = beginning.indexOf('-');",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n    file.getParentFile().mkdirs();\n\n;\n   \n   \n    int dot = prefix.indexOf('-');"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n   \n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n    return f;\n}",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n   \n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n    return file;\n}"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n   \n   \n   \n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n    return f;",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n   \n   \n   \n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n\n    return file;"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n   \n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n}",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n   \n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n}"
+        },
+        {
+            "patch": "int point = titile.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int point = titile.indexOf('-');\n   \n   \n    int point = titile.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n}",
+            "correctness": "uncompilable",
+            "translated": "int dot = name.indexOf('-');\n    String\n   \n\n   \n   \n   \n\n\n\n\n\n\n\n\n   \n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n;\n   \n   \n\n    String\n   \n   \n}"
+        }
+    ]
+}

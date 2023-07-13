@@ -1,0 +1,65 @@
+{
+    "id": 34,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1538,
+            "fix_type": "general",
+            "patch": "  String watchwordA = encipheredWatchword + \"\";\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1538,
+            "fix_type": "general",
+            "patch": "  String watchwordA = encipheredWatchword + \"0\";\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1554,
+            "fix_type": "general",
+            "patch": "  String watchwordA = encipheredWatchword + \"\";\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2469,
+            "fix_type": "insert",
+            "patch": "if (watchwordB == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.3158,
+            "fix_type": "insert",
+            "patch": "if (watchwordB == null ){\nthrow new PasswordEncoder(\"\");\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3158,
+            "fix_type": "insert",
+            "patch": "if (watchwordB == null ){\nthrow new Md4PasswordEncoder(\"\");\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2967,
+            "fix_type": "general",
+            "patch": "  String watchwordA = demergePasswordAndSalt(encipheredWatchword);\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2967,
+            "fix_type": "general",
+            "patch": "  String watchwordA = obtainPasswordAndSalt(encipheredWatchword);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.3209,
+            "fix_type": "insert",
+            "patch": "if (watchwordB == null )return false;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.3355,
+            "fix_type": "general",
+            "patch": "  PasswordEncoder watchwordA = encipheredWatchword + \"\";\n"
+        }
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "method": {
+        "openInputStream": "unlockInDataSequence",
+        "xmlXpathToMapResult": "xmlXpathToMapOutcome",
+        "handleNode": "manageNode",
+        "checkReadAllowed": "examineReadPermitted"
+    },
+    "variable": {
+        "documentBuilder": "archiveCreator",
+        "stack": "stack",
+        "path": "way",
+        "index": "position",
+        "documentBuilderFactory": "archiveCreatorFactory",
+        "failOnError": "breakDownAlongMistake",
+        "nodeList": "vertexListing",
+        "result": "outcome",
+        "simpleMode": "easyManner",
+        "headers": "heading",
+        "e": "x",
+        "i": "m",
+        "url": "URL",
+        "config": "setting",
+        "node_i":"node_m"
+    },
+    "class": {
+        "MapResult": "MapOutcome"
+    }
+}

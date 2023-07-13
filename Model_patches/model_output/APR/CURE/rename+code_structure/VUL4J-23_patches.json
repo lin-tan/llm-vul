@@ -1,0 +1,37 @@
+{
+    "VUL4J-23-430-431": {
+        "src": "return Encode . for CaMeL Java CaMeL Script CaMeL Source ( source ) ;",
+        "patches": [
+            {
+                "patch": "return source.substring(0, source.length( ) -1) ;"
+            },
+            {
+                "patch": "if( source != null ) { return source.toString( ) ;"
+            },
+            {
+                "patch": "if( source != null ) return source.toString( ) ; else return null ;"
+            },
+            {
+                "patch": "if( source != null ) { throw new IllegalArgumentException( '') ; }"
+            },
+            {
+                "patch": "if( source != null ) { throw new IllegalArgumentException( 'XML validation failed: ') ; }"
+            },
+            {
+                "patch": "if( source != null ) { throw new IllegalArgumentException( 'JSON validation failed: ') ; }"
+            },
+            {
+                "patch": "if( source != null ) { throw new IllegalArgumentException( '[') ; }"
+            },
+            {
+                "patch": "if( source != null ) { throw new IllegalArgumentException( '{') ; }"
+            },
+            {
+                "patch": "return source.toString( ) ;"
+            },
+            {
+                "patch": "if( source == null ) { return null ; } return null ;"
+            }
+        ]
+    }
+}

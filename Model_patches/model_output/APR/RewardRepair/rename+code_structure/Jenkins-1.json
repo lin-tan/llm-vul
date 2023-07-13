@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "z.put( nodeMonitorList.get(i));",
+        "z.put( name,proctor.information(this));",
+        "z.put( name, nodeMonitorList.get(i));",
+        "nodeMonitorList = new HashMap < String,Object>();",
+        "z.put( name,nodeMonitorList.get(i));",
+        "nodeMonitor = nodeMonitorList.get(i);",
+        "z.put( name,proctor.information(this)); i++;",
+        "z = new HashMap < String,Object>();",
+        "z.put( name, nodeMonitorList.info(this));",
+        "z.put( name,nodeMonitorList.get(0));"
+    ],
+    "validation_result": [
+        {
+            "patch": "z.put( nodeMonitorList.get(i));",
+            "correctness": "uncompilable",
+            "translated": "r.put( nodeMonitorList.get(i));"
+        },
+        {
+            "patch": "z.put( name,proctor.information(this));",
+            "correctness": "uncompilable",
+            "translated": "r.put( name,monitor.data(this));"
+        },
+        {
+            "patch": "z.put( name, nodeMonitorList.get(i));",
+            "correctness": "uncompilable",
+            "translated": "r.put( name, nodeMonitorList.get(i));"
+        },
+        {
+            "patch": "nodeMonitorList = new HashMap < String,Object>();",
+            "correctness": "uncompilable",
+            "translated": "nodeMonitorList = new HashMap < String,Object>();"
+        },
+        {
+            "patch": "z.put( name,nodeMonitorList.get(i));",
+            "correctness": "uncompilable",
+            "translated": "r.put( name, nodeMonitorList.get(i));"
+        },
+        {
+            "patch": "nodeMonitor = nodeMonitorList.get(i);",
+            "correctness": "uncompilable",
+            "translated": "nodeMonitor = nodeMonitorList.get(i);"
+        },
+        {
+            "patch": "z.put( name,proctor.information(this)); i++;",
+            "correctness": "uncompilable",
+            "translated": "r.put( name,monitor.data(this)); i++;"
+        },
+        {
+            "patch": "z = new HashMap < String,Object>();",
+            "correctness": "compile_success",
+            "translated": "r = new HashMap < String,Object>();"
+        },
+        {
+            "patch": "z.put( name, nodeMonitorList.info(this));",
+            "correctness": "uncompilable",
+            "translated": "r.put( name, nodeMonitorList.info(this));"
+        },
+        {
+            "patch": "z.put( name,nodeMonitorList.get(0));",
+            "correctness": "uncompilable",
+            "translated": "r.put( name,nodeMonitorList.get(0));"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public Collection<UIComponent> whole() { return uiComponents; }",
+        "protected Collection<UIComponent> whole() { return uiComponents; }",
+        "protected Collection<UIComponent> whole() { return new ArrayList<>();",
+        "protected Collection<UIComponent> whole();",
+        "returnWhole();",
+        "return whole();",
+        "return whole;",
+        "returnWhole;",
+        "returnWhole(); }",
+        "return whole; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public Collection<UIComponent> whole() { return uiComponents; }",
+            "correctness": "compile_success",
+            "translated": "public Collection<View> all() { return views; }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return uiComponents; }",
+            "correctness": "compile_success",
+            "translated": "protected Collection<View> all() { return views; }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return new ArrayList<>();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return new ArrayList<>();"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all();"
+        },
+        {
+            "patch": "returnWhole();",
+            "correctness": "uncompilable",
+            "translated": "returnWhole();"
+        },
+        {
+            "patch": "return whole();",
+            "correctness": "uncompilable",
+            "translated": "return all();"
+        },
+        {
+            "patch": "return whole;",
+            "correctness": "uncompilable",
+            "translated": "return all;"
+        },
+        {
+            "patch": "returnWhole;",
+            "correctness": "uncompilable",
+            "translated": "returnWhole;"
+        },
+        {
+            "patch": "returnWhole(); }",
+            "correctness": "uncompilable",
+            "translated": "returnWhole(); }"
+        },
+        {
+            "patch": "return whole; }",
+            "correctness": "uncompilable",
+            "translated": "return all; }"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (fpath!= null && fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+        "if (!fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+        "if (fpath == null || fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+        "if (targetDirectory == null || fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+        "if (fpath.startsWith(targetDirectory.getCanonicalPath()) &&!f.exists()) {",
+        "if (fpath == null || fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+        "if (!f.exists() && fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+        "if (fpath.equals(targetDirectory.getCanonicalPath())) {",
+        "if (fpath.startsWith(targetDirectory.getCanonicalPath()) && nextEntry!= null) {",
+        "if (fpath.startsWith(targetDirectory.getCanonicalFile())) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (fpath!= null && fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (fpath == null || fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (targetDirectory == null || fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (fpath.startsWith(targetDirectory.getCanonicalPath()) &&!f.exists()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (fpath == null || fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!f.exists() && fpath.startsWith(targetDirectory.getCanonicalPath())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (fpath.equals(targetDirectory.getCanonicalPath())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (fpath.startsWith(targetDirectory.getCanonicalPath()) && nextEntry!= null) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (fpath.startsWith(targetDirectory.getCanonicalFile())) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

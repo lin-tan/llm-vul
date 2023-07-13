@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        case '>':\n        if (h > begin && h + 2 < terminal && '<' == JSONlike.charAt(h - 1) && '>' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n</s>",
+        "<pad><s>      case '>':\n        if (h > begin && h + 2 < terminal && '<' == JSONlike.charAt(h - 1) && '>' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n</s>",
+        "<pad><s>        case '[':\n        if (h > begin && h + 2 < terminal && '[' == JSONlike.charAt(h - 1) && ']' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n</s>",
+        "<pad><s>      case '[':\n        if (h > begin && h + 2 < terminal && '[' == JSONlike.charAt(h - 1) && ']' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n</s>",
+        "<pad><s>        case '>':\n        if (h > begin && h + 2 < terminal && '<' == JSONlike.charAt(h - 1) && '>' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n            break;\n        }\n</s>",
+        "<pad><s>        case ']':\n        if (h > begin && h + 2 < terminal && ']' == JSONlike.charAt(h + 1) && ']' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>      case '>':\n        if (h > begin && h + 2 < terminal && '<' == JSONlike.charAt(h - 1) && '>' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n            break;\n        }\n</s>",
+        "<pad><s>      case ']':\n        if (h > begin && h + 2 < terminal && ']' == JSONlike.charAt(h + 1) && ']' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    }\n    switch (currentChar) {\n    case ']':\n        if (h + 2 < terminal && ']' == JSONlike.charAt(h + 1) && ']' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n</s></s></s></s></s></s></s>",
+        "<pad><s>        break;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        case '>':\n        if (h > begin && h + 2 < terminal && '<' == JSONlike.charAt(h - 1) && '>' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n",
+            "correctness": "compile_success",
+            "translated": "        case '>':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) && '>' == jsonish.charAt(i + 1) && '>' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n        }\n        break;\n"
+        },
+        {
+            "patch": "      case '>':\n        if (h > begin && h + 2 < terminal && '<' == JSONlike.charAt(h - 1) && '>' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n",
+            "correctness": "compile_success",
+            "translated": "        case '>':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) && '>' == jsonish.charAt(i + 1) && '>' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n        }\n        break;\n"
+        },
+        {
+            "patch": "        case '[':\n        if (h > begin && h + 2 < terminal && '[' == JSONlike.charAt(h - 1) && ']' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n",
+            "correctness": "compile_success",
+            "translated": "        case '[':\n        if (i > start && i + 2 < end && '[' == jsonish.charAt(i - 1) && ']' == jsonish.charAt(i + 1) && '>' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n        }\n        break;\n"
+        },
+        {
+            "patch": "      case '[':\n        if (h > begin && h + 2 < terminal && '[' == JSONlike.charAt(h - 1) && ']' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n",
+            "correctness": "compile_success",
+            "translated": "        case '[':\n        if (i > start && i + 2 < end && '[' == jsonish.charAt(i - 1) && ']' == jsonish.charAt(i + 1) && '>' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n        }\n        break;\n"
+        },
+        {
+            "patch": "        case '>':\n        if (h > begin && h + 2 < terminal && '<' == JSONlike.charAt(h - 1) && '>' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n            break;\n        }\n",
+            "correctness": "compile_success",
+            "translated": "        case '>':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) && '>' == jsonish.charAt(i + 1) && '>' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n            break;\n        }\n"
+        },
+        {
+            "patch": "        case ']':\n        if (h > begin && h + 2 < terminal && ']' == JSONlike.charAt(h + 1) && ']' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n",
+            "correctness": "uncompilable",
+            "translated": "        case ']':\n        if (i > start && i + 2 < end && ']' == jsonish.charAt(i + 1) && ']' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n        }\n        break;\n"
+        },
+        {
+            "patch": "      case '>':\n        if (h > begin && h + 2 < terminal && '<' == JSONlike.charAt(h - 1) && '>' == JSONlike.charAt(h + 1) && '>' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n            break;\n        }\n",
+            "correctness": "compile_success",
+            "translated": "        case '>':\n        if (i > start && i + 2 < end && '<' == jsonish.charAt(i - 1) && '>' == jsonish.charAt(i + 1) && '>' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n            break;\n        }\n"
+        },
+        {
+            "patch": "      case ']':\n        if (h > begin && h + 2 < terminal && ']' == JSONlike.charAt(h + 1) && ']' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n",
+            "correctness": "uncompilable",
+            "translated": "        case ']':\n        if (i > start && i + 2 < end && ']' == jsonish.charAt(i + 1) && ']' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n        }\n        break;\n"
+        },
+        {
+            "patch": "    }\n    switch (currentChar) {\n    case ']':\n        if (h + 2 < terminal && ']' == JSONlike.charAt(h + 1) && ']' == JSONlike.charAt(h + 2)) {\n            embed(h, '\\\\');\n        }\n        break;\n",
+            "correctness": "uncompilable",
+            "translated": "    }\n    switch (ch) {\n    case ']':\n        if (i + 2 < end && ']' == jsonish.charAt(i + 1) && ']' == jsonish.charAt(i + 2)) {\n            insert(i, '\\\\');\n        }\n        break;\n"
+        },
+        {
+            "patch": "        break;\n",
+            "correctness": "uncompilable",
+            "translated": "        break;\n"
+        }
+    ]
+}

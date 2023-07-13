@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n   \n\n   \n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n   \n\n   \n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n\n   \n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n\n}",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n\n}",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n  }",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n  }",
+        "\n    checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n   \n\n   \n\n\n\n   \n\n\n\n   \n    return viewableItems;\n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n   \n\n   \n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n   \n\n   \n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n\n   \n\n\n\n   \n\n\n\n   \n    return viewableItems;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\n\n\n\n   \n\n\n\n   \n    return viewableItems;\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "checkPermission(Item.READ);\n\n}\n\npublic List<TopLevelItem>\n\n\n\n   \n\n\npublic List<TopLevelItem>\n\n\n   \n\n   \n\n\n\n   \n\n\n\n   \n    return viewableItems;\n\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

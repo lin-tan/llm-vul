@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, null);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, factory);",
+        "in = wrapPrefixRemovingInputStream(inputStream);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream,true);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);"
+    ],
+    "validation_result": [
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, factory);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "in = wrapPrefixRemovingInputStream(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream,true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n  this.type = type;function,\n}function",
+        "\n  this.type = type;function",
+        "\n  this.type = type;function\n\n}",
+        "\n  this.type = type;function,\n}",
+        "\n  this.type = type;function,",
+        "\n  this.type = type;function,\n",
+        "\n  this.type = type;function, T)",
+        "\n  this.type = type;function,",
+        "\n  this.type = typefunction",
+        "\nfunction"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.type = type;function,\n}function",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type;function",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type;function\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type;function,\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type;function,",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type;function,",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type;function, T)",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type;function,",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = typefunction",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "function",
+            "correctness": "uncompilable"
+        }
+    ]
+}

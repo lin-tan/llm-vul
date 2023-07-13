@@ -1,0 +1,56 @@
+{
+    "output": [
+        "@Override\npublic String encodeForJSString(String source) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < source.length(); i++) {\n        char c = source.charAt(i);\n        switch (c) {\n            case '\"':\n                sb.append(\"\\\\\\\"\");\n                break;\n            case '\\\\':\n                sb.append(\"\\\\\\\\\");\n                break;\n            case '\\b':\n                sb.append(\"\\\\b\");\n                break;\n            case '\\f':\n                sb.append(\"\\\\f\");\n                break;\n            case '\\n':\n                sb.append(\"\\\\n\");\n                break;\n            case '\\r':\n                sb.append(\"\\\\r\");\n                break;\n            case '\\t':\n                sb.append(\"\\\\t\");\n                break;\n            default:\n                // Reference: http://www.unicode.org/versions/Unicode5.1.0/\n                if ((c >= '\\u0000' && c <= '\\u001F') || (c >= '\\u007F' && c <= '\\u009F') || (c >= '\\u2000' && c <= '\\u20FF')) {\n                    String ss = Integer.toHexString(c);\n                    sb.append(\"\\\\u\");\n                    for (int k = 0; k < 4 - ss.length(); k++) {\n                        sb.append('0');\n                    }\n                    sb.append(ss.toUpperCase());\n                } else {\n                    sb.append(c);\n                }\n        }\n    }\n    return sb.toString();\n}\n}\n",
+        "@Override\npublic String encodeForJSString(String source) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < source.length(); i++) {\n        char c = source.charAt(i);\n        switch (c) {\n            case '\"':\n                sb.append(\"\\\\\\\"\");\n                break;\n            case '\\\\':\n                sb.append(\"\\\\\\\\\");\n                break;\n            case '/':\n                sb.append(\"\\\\/\");\n                break;\n            case '\\b':\n                sb.append(\"\\\\b\");\n                break;\n            case '\\f':\n                sb.append(\"\\\\f\");\n                break;\n            case '\\n':\n                sb.append(\"\\\\n\");\n                break;\n            case '\\r':\n                sb.append(\"\\\\r\");\n                break;\n            case '\\t':\n                sb.append(\"\\\\t\");\n                break;\n            default:\n                if (c < '') {\n                    sb.append(\"\\\\u\" + String.format(\"%03x\", Integer.valueOf(c)));\n                } else {\n                sb.append(c);\n            }\n        }\n    }\n    return sb.toString();\n}\n}\n",
+        "@Override\npublic String encodeForJSString(String source) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < source.length(); i++) {\n        char c = source.charAt(i);\n        switch (c) {\n            case '\"':\n                sb.append(\"\\\\\\\"\");\n                break;\n            case '\\\\':\n                sb.append(\"\\\\\\\\\");\n                break;\n            case '/':\n                sb.append(\"\\\\/\");\n                break;\n            case '\\b':\n                sb.append(\"\\\\b\");\n                break;\n            case '\\f':\n                sb.append(\"\\\\f\");\n                break;\n            case '\\n':\n                sb.append(\"\\\\n\");\n                break;\n            case '\\r':\n                sb.append(\"\\\\r\");\n                break;\n            case '\\t':\n                sb.append(\"\\\\t\");\n                break;\n            default:\n                if (c < '') {\n                    sb.append(\"\\\\u\" + String.format(\"%03x\", Integer.valueOf(c)));\n                } else {\n                sb.append(c);\n            }\n        }\n    }\n    return sb.toString();\n}\n}",
+        "@Override\npublic String encodeForJSString(String source) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < source.length(); i++) {\n        char c = source.charAt(i);\n        switch (c) {\n            case '\\\\':\n                sb.append(\"\\\\\\\\\");\n                break;\n            case '\"':\n                sb.append(\"\\\\\\\"\");\n                break;\n            default:\n                sb.append(c);\n                break;\n        }\n    }\n    return sb.toString();\n}\n}\n",
+        "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }\n\n  @Override\n  public String decodeFromJSString(String source) {\n    return source;\n  }\n}\n",
+        "@Override\npublic String encodeForJSString(String source) {\n        return source;\n    }\n\n    @Override\n    public String decodeFromJSString(String source) {\n        return source;\n    }\n}\n",
+        "@Override\npublic String encodeForJSString(String source) {\n\treturn source;\n}\n\n@Override\npublic String decodeFromJSString(String source) {\n\treturn source;\n}\n\n}\n",
+        "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }\n\n  @Override\n  public String decodeFromJSString(String source) {\n    return source;\n  }\n\n}\n",
+        "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }\n}\n",
+        "@Override\npublic String encodeForJSString(String source) {\n        return source;\n    }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < source.length(); i++) {\n        char c = source.charAt(i);\n        switch (c) {\n            case '\"':\n                sb.append(\"\\\\\\\"\");\n                break;\n            case '\\\\':\n                sb.append(\"\\\\\\\\\");\n                break;\n            case '\\b':\n                sb.append(\"\\\\b\");\n                break;\n            case '\\f':\n                sb.append(\"\\\\f\");\n                break;\n            case '\\n':\n                sb.append(\"\\\\n\");\n                break;\n            case '\\r':\n                sb.append(\"\\\\r\");\n                break;\n            case '\\t':\n                sb.append(\"\\\\t\");\n                break;\n            default:\n                if ((c >= '\\u0000' && c <= '\\u001F') || (c >= '\\u007F' && c <= '\\u009F') || (c >= '\\u2000' && c <= '\\u20FF')) {\n                    String ss = Integer.toHexString(c);\n                    sb.append(\"\\\\u\");\n                    for (int k = 0; k < 4 - ss.length(); k++) {\n                        sb.append('0');\n                    }\n                    sb.append(ss.toUpperCase());\n                } else {\n                    sb.append(c);\n                }\n        }\n    }\n    return sb.toString();\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < source.length(); i++) {\n        char c = source.charAt(i);\n        switch (c) {\n            case '\"':\n                sb.append(\"\\\\\\\"\");\n                break;\n            case '\\\\':\n                sb.append(\"\\\\\\\\\");\n                break;\n            case '/':\n                sb.append(\"\\\\/\");\n                break;\n            case '\\b':\n                sb.append(\"\\\\b\");\n                break;\n            case '\\f':\n                sb.append(\"\\\\f\");\n                break;\n            case '\\n':\n                sb.append(\"\\\\n\");\n                break;\n            case '\\r':\n                sb.append(\"\\\\r\");\n                break;\n            case '\\t':\n                sb.append(\"\\\\t\");\n                break;\n            default:\n                if (c < '') {\n                    sb.append(\"\\\\u\" + String.format(\"%03x\", Integer.valueOf(c)));\n                } else {\n                sb.append(c);\n            }\n        }\n    }\n    return sb.toString();\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < source.length(); i++) {\n        char c = source.charAt(i);\n        switch (c) {\n            case '\"':\n                sb.append(\"\\\\\\\"\");\n                break;\n            case '\\\\':\n                sb.append(\"\\\\\\\\\");\n                break;\n            case '/':\n                sb.append(\"\\\\/\");\n                break;\n            case '\\b':\n                sb.append(\"\\\\b\");\n                break;\n            case '\\f':\n                sb.append(\"\\\\f\");\n                break;\n            case '\\n':\n                sb.append(\"\\\\n\");\n                break;\n            case '\\r':\n                sb.append(\"\\\\r\");\n                break;\n            case '\\t':\n                sb.append(\"\\\\t\");\n                break;\n            default:\n                if (c < '') {\n                    sb.append(\"\\\\u\" + String.format(\"%03x\", Integer.valueOf(c)));\n                } else {\n                sb.append(c);\n            }\n        }\n    }\n    return sb.toString();\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n    StringBuilder sb = new StringBuilder();\n    for (int i = 0; i < source.length(); i++) {\n        char c = source.charAt(i);\n        switch (c) {\n            case '\\\\':\n                sb.append(\"\\\\\\\\\");\n                break;\n            case '\"':\n                sb.append(\"\\\\\\\"\");\n                break;\n            default:\n                sb.append(c);\n                break;\n        }\n    }\n    return sb.toString();\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n        return source;\n    }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n\treturn source;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n    return source;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String source) {\n        return source;\n    }",
+            "correctness": "compile_success"
+        }
+    ]
+}

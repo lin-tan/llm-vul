@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-8,1",
+    "output": [
+        "\n        return dataProvider;\n",
+        "\n      return dataProvider;\n",
+        "\n        return dataProvider;\n   ",
+        "\n      return dataProvider;\n ",
+        "\n      return dataProvider;\n   ",
+        "\n       return dataProvider;\n",
+        "\n      return dataProvider;\n  }",
+        "\n        return dataProvider;\n ",
+        "\n        return dataProvider.trim();\n",
+        "\n      return dataProvider.trim();\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return dataProvider;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider;\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider.trim();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return dataProvider.trim();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

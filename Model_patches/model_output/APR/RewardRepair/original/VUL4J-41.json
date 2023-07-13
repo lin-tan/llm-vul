@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (!isOverwrite() && f.exists() )",
+        "try",
+        "if ( f == null ) { return; } try",
+        "if ( f!= null )",
+        "if ( isOverwrite() && f.exists() )",
+        "if ( isOverwrite() && f!= null )",
+        "if ( isDirectory && f!= null )",
+        "if (!isOverwrite() || f.exists() )",
+        "if ( isDirectory && f.exists() )",
+        "if ( f == null )"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!isOverwrite() && f.exists() )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if ( f == null ) { return; } try",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if ( f!= null )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( isOverwrite() && f.exists() )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( isOverwrite() && f!= null )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( isDirectory && f!= null )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isOverwrite() || f.exists() )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( isDirectory && f.exists() )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( f == null )",
+            "correctness": "uncompilable"
+        }
+    ]
+}

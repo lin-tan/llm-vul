@@ -1,0 +1,65 @@
+{
+    "id": 5,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.5204,
+            "fix_type": "general",
+            "patch": "return lfhBuf;\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.5204,
+            "fix_type": "general",
+            "patch": "return wordBuf;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5219,
+            "fix_type": "general",
+            "patch": "toRead += 0;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5479,
+            "fix_type": "insert",
+            "patch": "current.encoding = encoding;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.5479,
+            "fix_type": "insert",
+            "patch": "current.closed = closed;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5727,
+            "fix_type": "general",
+            "patch": "return 1;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.5532,
+            "fix_type": "general",
+            "patch": "return 1;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.5741,
+            "fix_type": "general",
+            "patch": "return toRead;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.5904,
+            "fix_type": "insert",
+            "patch": "buf.close();\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5904,
+            "fix_type": "insert",
+            "patch": "buf.getName();\n"
+        }
+    ]
+}

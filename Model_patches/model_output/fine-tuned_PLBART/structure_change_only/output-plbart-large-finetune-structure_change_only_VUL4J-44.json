@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (UNENCODED_SET.contains(c)) {",
+        "if (!UNENCODED_SET.contains(c)) {",
+        "if (UNENCODED_SET.contains(c))",
+        "if (!UNENCODED_SET.contains(c.toLowerCase())) {",
+        "if (!UNENCODED_SET.contains(c.toUpperCase())) {",
+        "if (!UNENCODED_SET.contains(c.toString())) {",
+        "if (!UNENCODED_SET.contains(c.charValue()))",
+        "if (!UNENCODED_SET.contains(c.toLowerCase()))",
+        "if (!UNENCODED_SET.contains(c.toUpperCase()))",
+        "if (!CHAR_SET.contains(c))"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (UNENCODED_SET.contains(c)) {",
+            "correctness": "compile_success",
+            "translated": "if (UNENCODED_SET.contains(c)) {"
+        },
+        {
+            "patch": "if (!UNENCODED_SET.contains(c)) {",
+            "correctness": "compile_success",
+            "translated": "if (!UNENCODED_SET.contains(c)) {"
+        },
+        {
+            "patch": "if (UNENCODED_SET.contains(c))",
+            "correctness": "uncompilable",
+            "translated": "if (UNENCODED_SET.contains(c))"
+        },
+        {
+            "patch": "if (!UNENCODED_SET.contains(c.toLowerCase())) {",
+            "correctness": "uncompilable",
+            "translated": "if (!UNENCODED_SET.contains(c.toLowerCase())) {"
+        },
+        {
+            "patch": "if (!UNENCODED_SET.contains(c.toUpperCase())) {",
+            "correctness": "uncompilable",
+            "translated": "if (!UNENCODED_SET.contains(c.toUpperCase())) {"
+        },
+        {
+            "patch": "if (!UNENCODED_SET.contains(c.toString())) {",
+            "correctness": "compile_success",
+            "translated": "if (!UNENCODED_SET.contains(c.toString())) {"
+        },
+        {
+            "patch": "if (!UNENCODED_SET.contains(c.charValue()))",
+            "correctness": "uncompilable",
+            "translated": "if (!UNENCODED_SET.contains(c.charValue()))"
+        },
+        {
+            "patch": "if (!UNENCODED_SET.contains(c.toLowerCase()))",
+            "correctness": "uncompilable",
+            "translated": "if (!UNENCODED_SET.contains(c.toLowerCase()))"
+        },
+        {
+            "patch": "if (!UNENCODED_SET.contains(c.toUpperCase()))",
+            "correctness": "uncompilable",
+            "translated": "if (!UNENCODED_SET.contains(c.toUpperCase()))"
+        },
+        {
+            "patch": "if (!CHAR_SET.contains(c))",
+            "correctness": "uncompilable",
+            "translated": "if (!CHAR_SET.contains(c))"
+        }
+    ]
+}

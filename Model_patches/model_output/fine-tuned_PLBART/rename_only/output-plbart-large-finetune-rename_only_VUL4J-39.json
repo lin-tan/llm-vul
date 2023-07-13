@@ -1,0 +1,66 @@
+{
+    "output": [
+        "s.append(\"sessionId=\").append(sessionIdentification);",
+        "s.append(\"sessionId=\").append(sessionId);",
+        "s.append(\"sessionId\").append(sessionIdentification);",
+        "s.append(\"clientId=\").append(customerIdentification);",
+        "s.append(\"clientId=\").append(clientId);",
+        "s.append(\"sessionId=\");",
+        "s.append(\"sessionId\" + sessionIdentification);",
+        "s.append(\"sessionId\");",
+        "s.append(\"sessionId=\"+sessionIdentification);",
+        "s.append(\"sessionId='\").append(sessionIdentification);"
+    ],
+    "validation_result": [
+        {
+            "patch": "s.append(\"sessionId=\").append(sessionIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId=\").append(sessionId);"
+        },
+        {
+            "patch": "s.append(\"sessionId=\").append(sessionId);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId=\").append(sessionId);"
+        },
+        {
+            "patch": "s.append(\"sessionId\").append(sessionIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId\").append(sessionId);"
+        },
+        {
+            "patch": "s.append(\"clientId=\").append(customerIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"clientId=\").append(clientId);"
+        },
+        {
+            "patch": "s.append(\"clientId=\").append(clientId);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"clientId=\").append(clientId);"
+        },
+        {
+            "patch": "s.append(\"sessionId=\");",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId=\");"
+        },
+        {
+            "patch": "s.append(\"sessionId\" + sessionIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId\" + sessionId);"
+        },
+        {
+            "patch": "s.append(\"sessionId\");",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId\");"
+        },
+        {
+            "patch": "s.append(\"sessionId=\"+sessionIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId=\"+sessionId);"
+        },
+        {
+            "patch": "s.append(\"sessionId='\").append(sessionIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId='\").append(sessionId);"
+        }
+    ]
+}

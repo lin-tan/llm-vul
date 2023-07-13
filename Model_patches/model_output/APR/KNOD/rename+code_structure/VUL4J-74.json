@@ -1,0 +1,65 @@
+{
+    "id": 35,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0449,
+            "fix_type": "general",
+            "patch": "if (source == null ){\nrnd.nextBytes(new byte[1]);\n}\nelse {\n  InputStream inputStream = source.getInputStream();\nrnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1391,
+            "fix_type": "general",
+            "patch": "if (source == null ){\nrnd.nextBytes(new byte[1]);\nrnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1815,
+            "fix_type": "general",
+            "patch": "if (source == null ){\n  InputStream inputStream = source.getInputStream();\nrnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1673,
+            "fix_type": "general",
+            "patch": "if (source == null )rnd.nextBytes(new byte[1]);\nelse {\n  InputStream inputStream = source.getInputStream();\nrnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1773,
+            "fix_type": "general",
+            "patch": "if (source == null ){\nrnd.nextBytes(new byte[1]);\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1848,
+            "fix_type": "general",
+            "patch": "if (source == null ){\nrnd.nextBytes(new byte[1]);\nsource.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2243,
+            "fix_type": "general",
+            "patch": "  InputStream inputStream = source.getInputStream();\nrnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1404,
+            "fix_type": "general",
+            "patch": "if (source != null ){\nrnd.nextBytes(new byte[1]);\n}\nelse {\n  InputStream inputStream = source.getInputStream();\nrnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2317,
+            "fix_type": "general",
+            "patch": "if (source == null ){\nrnd.nextBytes(new byte[1]);\n}\nelse {\n  InputStream inputStream = source.getInputStream(inputStream);\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.1853,
+            "fix_type": "general",
+            "patch": "if (source == null ){\nsource = source.getInputStream();\n}\nelse {\n  InputStream inputStream = source.getInputStream();\nrnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));\n}\n"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (!NOT_ENCODE_COLLECTION.contains(a)){\n<|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (NOT_ENCODE_COLLECTION.contains(a)){\n<|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (!NOT_ENCODE_COLLECTION.contains(a)) {\n<|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (NOT_ENCODE_COLLECTION.contains(a)) {\n<|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif(NOT_ENCODE_COLLECTION.contains(a)){\n<|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (!ENCODE_COLLECTION.contains(a)){\n<|endoftext|><|endoftext|><|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (!NOT_ENCODE_COLLECTION.contains(a))\n<|endoftext|><|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (!isEncodeCollection(a)){\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (!isEncodeCollection(a)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n// buggy lines start:\n\tif(!NOT_ENCODE_COLLECTION.contains(a)){\n// buggy lines end\n\t\tbyte[] byteArray = convertToUtf8Bytes(charString);\n\t\tStringBuilder x = new StringBuilder(byteArray.length * 3);\n\t\tint i =0;\n\t\twhile(i<byteArray.length){\n\t\t\tx.append('%');\n\t\t\tattachTwoUppercaseHexadecimal(x, byteArray[i]);\n\t\t\ti++;\n\t\t}\n\t\treturn x.toString();\n\t}\n\treturn charString;\n}\n// fixed lines:\n\tif (isEncodeCollection(a)){\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif (!NOT_ENCODE_COLLECTION.contains(a)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!UNENCODED_SET.contains(c)){\n"
+        },
+        {
+            "patch": "\tif (NOT_ENCODE_COLLECTION.contains(a)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif (UNENCODED_SET.contains(c)){\n"
+        },
+        {
+            "patch": "\tif (!NOT_ENCODE_COLLECTION.contains(a)) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!UNENCODED_SET.contains(c)){\n"
+        },
+        {
+            "patch": "\tif (NOT_ENCODE_COLLECTION.contains(a)) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (UNENCODED_SET.contains(c)){\n"
+        },
+        {
+            "patch": "\tif(NOT_ENCODE_COLLECTION.contains(a)){\n",
+            "correctness": "compile_success",
+            "translated": "\tif (UNENCODED_SET.contains(c)){\n"
+        },
+        {
+            "patch": "\tif (!ENCODE_COLLECTION.contains(a)){\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!ENCODE_COLLECTION.contains(c)){\n"
+        },
+        {
+            "patch": "\tif (!NOT_ENCODE_COLLECTION.contains(a))\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!UNENCODED_SET.contains(c))\n"
+        },
+        {
+            "patch": "\tif (!isEncodeCollection(a)){\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!isEncodeCollection(c)){\n"
+        },
+        {
+            "patch": "\tif (!isEncodeCollection(a)) {\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!isEncodeCollection(c)){\n"
+        },
+        {
+            "patch": "\tif (isEncodeCollection(a)){\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (isEncodeCollection(c)){\n"
+        }
+    ]
+}

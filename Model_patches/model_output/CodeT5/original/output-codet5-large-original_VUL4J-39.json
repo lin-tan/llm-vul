@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n }\n",
+        "\n\n   ",
+        "\n    sb.append(\"}\");\n",
+        "\n\n",
+        "\n    \n   ",
+        "\n    sb.append(\"}\");\n}",
+        "\n\n}\n",
+        "\n }",
+        "\n    \n}\n",
+        "\n }\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb.append(\"}\");",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb.append(\"}\");\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

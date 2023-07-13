@@ -1,0 +1,66 @@
+{
+    "output": [
+        "String pass1 = encPass; String pass2 = mergePasswordAndSalt(rawPass, salt, false);",
+        "String pass2 = mergePasswordAndSalt(encPass, salt, false); String pass1 = encPass;",
+        "String pass2 = mergePasswordAndSalt(encPass, rawPass, salt, false);",
+        "String pass1 = mergePasswordAndSalt(encPass, rawPass, salt, false);",
+        "String pass1 = encPass + \"String_Node_Str\";",
+        "String pass1 = mergePasswordAndSalt(encPass, salt, false);",
+        "String pass1 = encPass + \"\";",
+        "String pass1 = encPass;",
+        "String pass1 = encPass +\";",
+        "String pass2 = encPass + \"\";"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pass1 = encPass; String pass2 = mergePasswordAndSalt(rawPass, salt, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass; String pass2 = mergePasswordAndSalt(rawPass, salt, false);"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(encPass, salt, false); String pass1 = encPass;",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(encPass, salt, false); String pass1 = encPass;"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(encPass, rawPass, salt, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(encPass, rawPass, salt, false);"
+        },
+        {
+            "patch": "String pass1 = mergePasswordAndSalt(encPass, rawPass, salt, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = mergePasswordAndSalt(encPass, rawPass, salt, false);"
+        },
+        {
+            "patch": "String pass1 = encPass + \"String_Node_Str\";",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass + \"String_Node_Str\";"
+        },
+        {
+            "patch": "String pass1 = mergePasswordAndSalt(encPass, salt, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = mergePasswordAndSalt(encPass, salt, false);"
+        },
+        {
+            "patch": "String pass1 = encPass + \"\";",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass + \"\";"
+        },
+        {
+            "patch": "String pass1 = encPass;",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass;"
+        },
+        {
+            "patch": "String pass1 = encPass +\";",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass +\";"
+        },
+        {
+            "patch": "String pass2 = encPass + \"\";",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = encPass + \"\";"
+        }
+    ]
+}

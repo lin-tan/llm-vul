@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return itemValues;\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return new ArrayList<>(itemValues);\n</s></s></s></s></s></s></s>",
+        "<pad><s>    return new ArrayList<PeakDegreeElement>(itemValues);\n</s></s>",
+        "<pad><s>    return new ArrayList<PeakDegreeElement>();\n</s></s></s></s></s>",
+        "<pad><s>    return Collections.unmodifiableList(itemValues);\n</s></s></s></s></s>",
+        "<pad><s>    return itemValues.toArray(new PeakDegreeElement[0]);\n</s>",
+        "<pad><s>    return new ArrayList(itemValues);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    return new HashSet(itemValues);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return itemValues;\n",
+            "correctness": "uncompilable",
+            "translated": "    return itemValues;\n"
+        },
+        {
+            "patch": "    return new ArrayList<>(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<>(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList<PeakDegreeElement>(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<TopLevelItem>(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList<PeakDegreeElement>();\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<TopLevelItem>();\n"
+        },
+        {
+            "patch": "    return Collections.unmodifiableList(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return Collections.unmodifiableList(itemValues);\n"
+        },
+        {
+            "patch": "    return itemValues.toArray(new PeakDegreeElement[0]);\n",
+            "correctness": "uncompilable",
+            "translated": "    return itemValues.toArray(new TopLevelItem[0]);\n"
+        },
+        {
+            "patch": "    return new ArrayList(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList(itemValues);\n"
+        },
+        {
+            "patch": "    return new HashSet(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return new HashSet(itemValues);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

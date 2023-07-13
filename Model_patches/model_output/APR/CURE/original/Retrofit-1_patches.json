@@ -1,0 +1,37 @@
+{
+    "VUL4J-1009-35-36": {
+        "src": "this . type = type ;",
+        "patches": [
+            {
+                "patch": "this.type = type ;"
+            },
+            {
+                "patch": "if( type == null ) return null ; this.type = type ;"
+            },
+            {
+                "patch": "this.type = type ; this.type = type ; <UNK>"
+            },
+            {
+                "patch": "this.type = type ; if type = type ;"
+            },
+            {
+                "patch": "this.type = type ; this.type = type ;"
+            },
+            {
+                "patch": "this.type = name ;"
+            },
+            {
+                "patch": "this.type = type ; type = type ;"
+            },
+            {
+                "patch": "if( this.type != null ) { this.type = type ;"
+            },
+            {
+                "patch": "this.type = null ;"
+            },
+            {
+                "patch": "this.type = type ; synchronized( this ) { this.type = type ; <UNK>"
+            }
+        ]
+    }
+}

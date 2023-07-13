@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return source;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJSString(source);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return encode(source);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScriptSource(source, true);\n<|endoftext|><|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encoding.forJavaScriptSource(source);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScriptSource(source, false);\n<|endoftext|><|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScriptSource(source).toString();\n<|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return SourceMapUtils.encodeForJSString(source);\n<|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return Encode.forJavaScriptSource(source, this);\n<|endoftext|><|endoftext|>",
+        "@Override\npublic String encodeForJSString(String source) {\n    if( source!= null ){\n// buggy lines start:\n        return Encode.forJavaScriptSource(source);\n// buggy lines end\n    }\n    return null;\n}\n// fixed lines:\n        return source.toLowerCase();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        return source;\n",
+            "correctness": "compile_success",
+            "translated": "        return source;\n"
+        },
+        {
+            "patch": "        return Encode.forJSString(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJSString(source);\n"
+        },
+        {
+            "patch": "        return encode(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return encode(source);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(source, true);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptSource(source, true);\n"
+        },
+        {
+            "patch": "        return Encoding.forJavaScriptSource(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encoding.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(source, false);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptSource(source, false);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(source).toString();\n",
+            "correctness": "compile_success",
+            "translated": "        return Encode.forJavaScriptSource(source).toString();\n"
+        },
+        {
+            "patch": "        return SourceMapUtils.encodeForJSString(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return SourceMapUtils.encodeForJSString(source);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(source, this);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptSource(source, this);\n"
+        },
+        {
+            "patch": "        return source.toLowerCase();\n",
+            "correctness": "compile_success",
+            "translated": "        return source.toLowerCase();\n"
+        }
+    ]
+}

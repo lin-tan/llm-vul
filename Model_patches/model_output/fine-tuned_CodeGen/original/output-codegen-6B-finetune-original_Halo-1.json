@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (pathToCheck.startsWith(parentPath)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (pathToCheck.equals(parentPath.normalize())) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (pathToCheck.startsWith(parentPath.normalize()))\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (parentPath.equals(pathToCheck)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (parentPath.startsWith(pathToCheck.normalize())) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (pathToCheck.startsWith(parentPath.toString())) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (pathToCheck.normalize().startsWith(parentPath.normalize())) {\n<|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (pathToCheck.equals(parentPath)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n    if (!pathToCheck.startsWith(parentPath.normalize())) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n// buggy lines start:\n    if (pathToCheck.startsWith(parentPath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck);\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (pathToCheck.startsWith(parentPath)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (pathToCheck.equals(parentPath.normalize())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (pathToCheck.startsWith(parentPath.normalize()))\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (parentPath.equals(pathToCheck)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (parentPath.startsWith(pathToCheck.normalize())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (pathToCheck.startsWith(parentPath.toString())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (pathToCheck.normalize().startsWith(parentPath.normalize())) {\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    if (pathToCheck.equals(parentPath)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!pathToCheck.startsWith(parentPath.normalize())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

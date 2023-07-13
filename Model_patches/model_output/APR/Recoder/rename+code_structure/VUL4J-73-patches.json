@@ -1,0 +1,12 @@
+[
+  "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, true);\n",
+  "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword);\n",
+  "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n",
+  "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData);\n",
+  "String watchwordB = unifyWatchwordAndRandomData();\n",
+  "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, true);\n",
+  "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, unprocessedWatchword);\n",
+  "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, true, false);\n",
+  "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, false, true);\n",
+  "unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n"
+]

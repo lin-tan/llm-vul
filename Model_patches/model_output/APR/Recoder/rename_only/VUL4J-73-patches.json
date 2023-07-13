@@ -1,0 +1,12 @@
+[
+  "String watchwordA = ((encipheredWatchword + \"null\") + \"null\");\n",
+  "String watchwordA = (unprocessedWatchword + \"null\");\n",
+  "String watchwordA = ((encipheredWatchword + \"null\") + unprocessedWatchword);\n",
+  "String watchwordA = (((encipheredWatchword + \"null\") + \"null\") + \"null\");\n",
+  "String watchwordA = (randomData + \"null\");\n",
+  "String watchwordA = encipheredWatchword;\n",
+  "final String watchwordA = (encipheredWatchword + \"null\");\n",
+  "String watchwordA = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n",
+  "String watchwordA = (encipheredWatchword + \"null\");\n",
+  "String watchwordA = (encipheredWatchword + encipheredWatchword);\n"
+]

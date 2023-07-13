@@ -1,0 +1,12 @@
+[
+  "String targetDirPath = writer.getCanonicalPath();\n",
+  "if((writer == null)){\nreturn;\n}",
+  "return;\n",
+  "if((writer != null)){\n",
+  "String targetDirPath = targetDirectory.getCanonicalPath();\n",
+  "if((targetDirectory == null)){\nreturn;\n}",
+  "if((targetDirectory != null)){\n",
+  "String targetDirPath = supplier.getCanonicalPath();\n",
+  "String targetDirPath = targetDirPath.getCanonicalPath();\n",
+  "if((writer == null)){\n"
+]

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+        "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+        "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, contextPath); else return decryptRequestContent(r, \" \");",
+        "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, \" \"); else return decryptRequestContent(r, \" \");",
+        "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, contextPath); else return decryptRequestContent(r, \" \");",
+        "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, \" \"); else return decryptRequestContent(r, \" \");",
+        "if (! \" \".equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+        "if (!'/'.equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+        "if (! \" \".equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+        "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, \"/ \"); else return decryptRequestContent(r, \" \");"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, contextPath); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, \" \"); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, \" \"); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, contextPath); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, contextPath); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, \" \"); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, \" \"); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (! \" \".equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \" \".equals(contextPath)) return decodeRequestString(request, contextPath); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (!'/'.equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+            "correctness": "uncompilable",
+            "translated": "if (!'/'.equals(contextPath)) return decodeRequestString(request, contextPath); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (! \" \".equals(circumstancePath)) return decryptRequestContent(r, circumstancePath); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \" \".equals(contextPath)) return decodeRequestString(request, contextPath); else return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if (! \"/ \".equals(circumstancePath)) return decryptRequestContent(r, \"/ \"); else return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if (! \"/ \".equals(contextPath)) return decodeRequestString(request, \"/ \"); else return decodeRequestString(request, \" \");"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "return StringEscapeUtils.unescapeXml(url);",
+        "return url;",
+        "return mangleNamespaces(url);",
+        "return getValidHref(url);",
+        "return URLDecoder.decode(url, StandardCharsets.UTF_8);",
+        "String encodedUrl = mangleNamespaces(url); return encodedUrl;",
+        "return StringEscapeUtils.unescapeHtml(url);",
+        "return null;",
+        "return getValidHref(url, false);",
+        "return URLDecoder.decode(url);"
+    ],
+    "validation_result": [
+        {
+            "patch": "return StringEscapeUtils.unescapeXml(url);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return url;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return mangleNamespaces(url);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return getValidHref(url);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return URLDecoder.decode(url, StandardCharsets.UTF_8);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String encodedUrl = mangleNamespaces(url); return encodedUrl;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return StringEscapeUtils.unescapeHtml(url);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return getValidHref(url, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return URLDecoder.decode(url);",
+            "correctness": "compile_success"
+        }
+    ]
+}

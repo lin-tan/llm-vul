@@ -1,0 +1,28 @@
+{
+    "method": {
+        "readStoredEntry": "retrieveSavedItem",
+        "getSize": "acquireSize",
+        "readStored": "retrieveSaved",
+        "count": "calculate"
+    },
+    "variable": {
+        "current": "present",
+        "entry": "item",
+        "offset": "distance",
+        "toRead": "toRetrieve",
+        "in": "input",
+        "hasDataDescriptor": "withInformationForm",
+        "length": "range",
+        "csize": "size",
+        "l": "x",
+        "buf": "memory",
+        "bytesReadFromStream": "byteRetrievedFromDataSequence",
+        "lastStoredEntry": "finalSavedItem",
+        "bytesRead": "byteRetrieved",
+        "buffer": "byteArrary",
+        "": ""
+    },
+    "class": {
+        "": ""
+    }
+}

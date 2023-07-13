@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (answer == null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+        "if (answer == null) { answer = new InputSource(new StringReader((String) body)); } } else if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+        "if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); answer = new InputSource(is); } else if (body instanceof BeanInvocation) { BeanInvocation",
+        "if (answer == null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); answer = new InputSource(is); }",
+        "if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); answer = new InputSource(is); } else if (body instanceof BeanInvocation) { BeanInvocation bi = exchange.getContext()",
+        "if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+        "if (body instanceof String) { answer = new InputSource(new StringReader((String) body)); } } else if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+        "if (answer == null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); answer = new InputSource(is); } else if (body instanceof BeanInvocation",
+        "if (answer == null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); return null; } else if (body instanceof BeanInvocation) { BeanInvocation",
+        "if (answer!= null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (answer == null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { answer = new InputSource(new StringReader((String) body)); } } else if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); answer = new InputSource(is); } else if (body instanceof BeanInvocation) { BeanInvocation",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); answer = new InputSource(is); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); answer = new InputSource(is); } else if (body instanceof BeanInvocation) { BeanInvocation bi = exchange.getContext()",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (body instanceof String) { answer = new InputSource(new StringReader((String) body)); } } else if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); answer = new InputSource(is); } else if (body instanceof BeanInvocation",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body); return null; } else if (body instanceof BeanInvocation) { BeanInvocation",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer!= null) { if (body instanceof WrappedFile) { InputStream is = exchange.getContext().getTypeConverter().convertTo(InputStream.class, exchange, body);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

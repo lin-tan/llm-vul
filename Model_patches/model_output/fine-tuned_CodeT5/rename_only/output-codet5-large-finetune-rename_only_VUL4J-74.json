@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\tsecureRandomInstance.nextBytes(new byte[1]);\n</s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(new byte[0]);\n</s>",
+        "<pad><s>\tsecureRandomInstance.setSeed(seed);\n</s></s></s></s>",
+        "<pad><s>\tsecureRandomInstance.setSeed(source.getInputStream());\n</s>",
+        "<pad><s>\tsecureRandomInstance.setSeed(getSeed());\n</s></s></s>",
+        "<pad><s>\tsecureRandomInstance.setSeed(new byte[1]);\n</s>",
+        "<pad><s>\tsecureRandomInstance.setSeed(randomSeed);\n</s></s></s>",
+        "<pad><s>\tsecureRandomInstance.setSeed(source);\n</s></s></s></s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(new byte[2]);\n</s>",
+        "<pad><s>\tsecureRandomInstance.setSeed(new byte[0]);\n</s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(new byte[1]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(new byte[1]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(new byte[0]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(new byte[0]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(seed);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(seed);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(source.getInputStream());\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(seed.getInputStream());\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(getSeed());\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(getSeed());\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(new byte[1]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(new byte[1]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(randomSeed);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(randomSeed);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(source);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(seed);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(new byte[2]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(new byte[2]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.setSeed(new byte[0]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.setSeed(new byte[0]);\n"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+        ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }",
+        "sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING); }",
+        "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \", e); }",
+        "Helper.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+        "adapter.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+        "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \"); }",
+        "Helper.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }",
+        "provider.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+        "er.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }"
+    ],
+    "validation_result": [
+        {
+            "patch": ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \", e); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Helper.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "adapter.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, \"true \"); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Helper.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, false); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "provider.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "er.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true); }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

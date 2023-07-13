@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    final OutputStream production = acquireOutDataSequence();\n</s>",
+        "<pad><s>    production = acquireOutDataSequence();\n</s></s></s>",
+        "<pad><s>    outDataSequence = acquireOutDataSequence();\n</s>",
+        "<pad><s>    outputStream = acquireOutDataSequence();\n</s></s></s>",
+        "<pad><s>    ByteArrayOutputStream production = acquireOutDataSequence();\n</s></s>",
+        "<pad><s>    outSequence = acquireOutDataSequence();\n</s></s>",
+        "<pad><s>    OutputStream production = acquireDataSequence();\n</s></s></s>",
+        "<pad><s>    OutputStream production = outDataSequence.get();\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    final OutputStream production = acquireOutDataSequence();\n",
+            "correctness": "compile_success",
+            "translated": "    final OutputStream output = getOutputStream();\n"
+        },
+        {
+            "patch": "    production = acquireOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    output = getOutputStream();\n"
+        },
+        {
+            "patch": "    outDataSequence = acquireOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    outDataSequence = getOutputStream();\n"
+        },
+        {
+            "patch": "    outputStream = acquireOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    outputStream = getOutputStream();\n"
+        },
+        {
+            "patch": "    ByteArrayOutputStream production = acquireOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    ByteArrayOutputStream output = getOutputStream();\n"
+        },
+        {
+            "patch": "    outSequence = acquireOutDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    outSequence = getOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireDataSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = acquireDataSequence();\n"
+        },
+        {
+            "patch": "    OutputStream production = outDataSequence.get();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = outDataSequence.get();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

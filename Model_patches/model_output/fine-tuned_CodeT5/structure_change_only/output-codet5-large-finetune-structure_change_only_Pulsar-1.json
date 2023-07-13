@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())\n</s>",
+        "<pad><s>        ((ManagedLedgerImpl) ((TopicReference) getTopicReference(topicName)).getManagedLedger())\n</s>",
+        "<pad><s>        ((PersistentTopic) getTopicReference(topicName)).getManagedLedger()\n</s></s></s></s></s></s>",
+        "<pad><s>        ((ManagedLedgerImpl) getTopicReference(topicName).getManagedLedger())\n</s></s></s></s></s></s>",
+        "<pad><s>        ((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger()\n</s></s></s></s></s>",
+        "<pad><s>        ((ManagedLedgerImpl) topic.getManagedLedger())\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        ((ManagedLedgerImpl) ((PersistentTopic) topicReference).getManagedLedger())\n</s></s></s></s></s>",
+        "<pad><s>        ((ManagedLedgerImpl) topicReference.getManagedLedger())\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        ((ManagedLedgerImpl) ((TopicReference) getTopicReference(topicName)).getManagedLedger())\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ((PersistentTopic) getTopicReference(topicName)).getManagedLedger()\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ((ManagedLedgerImpl) getTopicReference(topicName).getManagedLedger())\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger()\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ((ManagedLedgerImpl) topic.getManagedLedger())\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ((ManagedLedgerImpl) ((PersistentTopic) topicReference).getManagedLedger())\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        ((ManagedLedgerImpl) topicReference.getManagedLedger())\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

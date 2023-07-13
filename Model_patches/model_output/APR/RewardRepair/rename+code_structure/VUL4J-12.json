@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "(int h = (1 < < (z - 1)));",
+        "(int h = (1 < < (z - 1))) + 1;",
+        "s += h;",
+        "(int h = (1 < < (z - 1)) + 1);",
+        "(-1 < < (z - 1));",
+        "s += (-1 < < (z - 1));",
+        "s += (-1 < < (z - 1)) + 1;",
+        "(int h = (1 < < (z - 1))) + h;",
+        "(-1 < < (z - 1)) + 1;",
+        "(int h = (1 < < (z - 1)) + 1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "(int h = (1 < < (z - 1)));",
+            "correctness": "uncompilable",
+            "translated": "(int vt = (1 < < (t - 1)));"
+        },
+        {
+            "patch": "(int h = (1 < < (z - 1))) + 1;",
+            "correctness": "uncompilable",
+            "translated": "(int vt = (1 < < (t - 1))) + 1;"
+        },
+        {
+            "patch": "s += h;",
+            "correctness": "uncompilable",
+            "translated": "v += vt;"
+        },
+        {
+            "patch": "(int h = (1 < < (z - 1)) + 1);",
+            "correctness": "uncompilable",
+            "translated": "(int vt = (1 < < (t - 1)) + 1);"
+        },
+        {
+            "patch": "(-1 < < (z - 1));",
+            "correctness": "uncompilable",
+            "translated": "(-1 < < (t - 1));"
+        },
+        {
+            "patch": "s += (-1 < < (z - 1));",
+            "correctness": "uncompilable",
+            "translated": "v += (-1 < < (t - 1));"
+        },
+        {
+            "patch": "s += (-1 < < (z - 1)) + 1;",
+            "correctness": "uncompilable",
+            "translated": "v += (-1 < < (t - 1)) + 1;"
+        },
+        {
+            "patch": "(int h = (1 < < (z - 1))) + h;",
+            "correctness": "uncompilable",
+            "translated": "(int vt = (1 < < (t - 1))) + vt;"
+        },
+        {
+            "patch": "(-1 < < (z - 1)) + 1;",
+            "correctness": "uncompilable",
+            "translated": "(-1 < < (t - 1)) + 1;"
+        },
+        {
+            "patch": "(int h = (1 < < (z - 1)) + 1;",
+            "correctness": "uncompilable",
+            "translated": "(int vt = (1 < < (t - 1)) + 1;"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,2-61,2",
+    "output": [
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\t(\n\tcompose(\"\");\n\t",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\n\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\t(\n\tcompose(\"\");\n\t",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\t\n\n\t(\n\tcompose(\"\");\n\t",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t}\n\n\t(\n\tcompose(\"\");\n\t",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\n\n((\n\n\n\n\tcompose(\n\n\n\n\t}\n\n\t(\n\tcompose(\"\");\n\t",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\tcompose(\"\n\t\n\n\tcompose",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\tcompose(\"\n\n\t\n(\"</",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\t(\n\t\n\n\tcompose(\"",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\n\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\tcompose(\"\n\n\t\n(\"</",
+        "\n\tcompose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\tcompose(\"\n\n\t\n(session"
+    ],
+    "validation_result": [
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\t(\n\tcompose(\"\");",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\"\");\n((\n\n\n\n\twrite(\n\n\n\n\t\n\n\n\t(\n\twrite(\"\");"
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\n\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\t(\n\tcompose(\"\");",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\n\n((\n\n\n\n\twrite(\n\n\n\n\t\n\n\n\t(\n\twrite(\"\");"
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\t\n\n\t(\n\tcompose(\"\");",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\"\");\n((\n\n\n\n\twrite(\n\n\n\n\t\n\n\n\t(\n\twrite(\"\");"
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t}\n\n\t(\n\tcompose(\"\");",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\"\");\n((\n\n\n\n\twrite(\n\n\n\n\t}\n\n\t(\n\twrite(\"\");"
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\n\n((\n\n\n\n\tcompose(\n\n\n\n\t}\n\n\t(\n\tcompose(\"\");",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\n\n((\n\n\n\n\twrite(\n\n\n\n\t}\n\n\t(\n\twrite(\"\");"
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\tcompose(\"\n\t\n\n\tcompose",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\"\");\n((\n\n\n\n\twrite(\n\n\n\n\t\n\n\n\twrite(\"\n\t\n\n\twrite"
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\tcompose(\"\n\n\t\n(\"</",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\"\");\n((\n\n\n\n\twrite(\n\n\n\n\t\n\n\n\twrite(\"\n\n\t\n(\"</"
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\t(\n\t\n\n\tcompose(\"",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\"\");\n((\n\n\n\n\twrite(\n\n\n\n\t\n\n\n\t(\n\t\n\n\twrite(\""
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\n\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\tcompose(\"\n\n\t\n(\"</",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\n\n((\n\n\n\n\twrite(\n\n\n\n\t\n\n\n\twrite(\"\n\n\t\n(\"</"
+        },
+        {
+            "patch": "compose(followingColumnAlignRightField);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEnocdeWithoutSpace(sessionId);\n\tcompose(sessionIdHtmlEncode);\n\t\n\n\t\n\t(offSiteControlLocation);\n\t((\"\");\n((\n\n\n\n\tcompose(\n\n\n\n\t\n\n\n\tcompose(\"\n\n\t\n(session",
+            "correctness": "uncompilable",
+            "translated": "write(nextColumnAlignRight);\n\t\n\tfinal String sessionIdHtmlEncode = htmlEncodeButNotSpace(sessionId);\n\twrite(sessionIdHtmlEncode);\n\t\n\n\t\n\t(remoteAddr);\n\t((\"\");\n((\n\n\n\n\twrite(\n\n\n\n\t\n\n\n\twrite(\"\n\n\t\n(session"
+        }
+    ]
+}

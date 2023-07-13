@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    if (!pathToCheck.startsWith(parentPath)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    if (!parentPath.equals(pathToCheck)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    if (!parentPath.startsWith(pathToCheck)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    if (!pathToCheck.startsWith(parentPath.normalize())) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    final Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n<|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    if (pathToCheck.startsWith(parentPath)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    if (!pathToCheck.equals(parentPath)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    Path normalizedPathToCheck = pathToCheck.normalize();\n    if (!parentPath.equals(normalizedPathToCheck)) {\n<|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    Path normalizedParentPath = parentPath.normalize(true);\n    if (!pathToCheck.startsWith(normalizedParentPath))\n<|endoftext|>",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) {\n    Assert.notNull(pathToCheck, \"Path to check must not be null\");\n    Assert.notNull(parentPath, \"Parent path must not be null\");\n// buggy lines start:\n    Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n// buggy lines end\n        ForbiddenException e =  new ForbiddenException(\"You do not have permission to access \" + pathToCheck);\n        e.setErrorData(pathToCheck);\n        throw e;\n    }\n}\n// fixed lines:\n    final Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.equals(normalizedParentPath)) {\n<|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!pathToCheck.startsWith(parentPath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.startsWith(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (!parentPath.equals(pathToCheck)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!parentPath.equals(pathToCheck)) {\n"
+        },
+        {
+            "patch": "    if (!parentPath.startsWith(pathToCheck)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!parentPath.startsWith(pathToCheck)) {\n"
+        },
+        {
+            "patch": "    if (!pathToCheck.startsWith(parentPath.normalize())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.startsWith(parentPath.normalize())) {\n"
+        },
+        {
+            "patch": "    final Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    final Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.startsWith(normalizedParentPath)) {\n"
+        },
+        {
+            "patch": "    if (pathToCheck.startsWith(parentPath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.startsWith(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (!pathToCheck.equals(parentPath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.equals(parentPath)) {\n"
+        },
+        {
+            "patch": "    Path normalizedPathToCheck = pathToCheck.normalize();\n    if (!parentPath.equals(normalizedPathToCheck)) {\n",
+            "correctness": "compile_success",
+            "translated": "    Path normalizedPathToCheck = pathToCheck.normalize();\n    if (!parentPath.equals(normalizedPathToCheck)) {\n"
+        },
+        {
+            "patch": "    Path normalizedParentPath = parentPath.normalize(true);\n    if (!pathToCheck.startsWith(normalizedParentPath))\n",
+            "correctness": "uncompilable",
+            "translated": "    Path normalizedParentPath = parentPath.normalize(true);\n    if (!pathToCheck.startsWith(normalizedParentPath))\n"
+        },
+        {
+            "patch": "    final Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.equals(normalizedParentPath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    final Path normalizedParentPath = parentPath.normalize();\n    if (!pathToCheck.equals(normalizedParentPath)) {\n"
+        }
+    ]
+}

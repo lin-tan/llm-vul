@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return new ArrayList(itemValues);",
+        "return new ArrayList<>(itemValues);",
+        "return new ArrayList<TopLevelItem>(itemValues);",
+        "return itemValues;",
+        "return new ArrayList(viewableItems);",
+        "return viewableItems;",
+        "return new ArrayList<>(viewableItems);",
+        "return Collections.unmodifiableList(itemValues);",
+        "return new ArrayList(items.values());",
+        "return new ArrayList<>();"
+    ],
+    "validation_result": [
+        {
+            "patch": "return new ArrayList(itemValues);",
+            "correctness": "compile_success",
+            "translated": "return new ArrayList(itemValues);"
+        },
+        {
+            "patch": "return new ArrayList<>(itemValues);",
+            "correctness": "compile_success",
+            "translated": "return new ArrayList<>(itemValues);"
+        },
+        {
+            "patch": "return new ArrayList<TopLevelItem>(itemValues);",
+            "correctness": "compile_success",
+            "translated": "return new ArrayList<TopLevelItem>(itemValues);"
+        },
+        {
+            "patch": "return itemValues;",
+            "correctness": "uncompilable",
+            "translated": "return itemValues;"
+        },
+        {
+            "patch": "return new ArrayList(viewableItems);",
+            "correctness": "compile_success",
+            "translated": "return new ArrayList(viewableItems);"
+        },
+        {
+            "patch": "return viewableItems;",
+            "correctness": "compile_success",
+            "translated": "return viewableItems;"
+        },
+        {
+            "patch": "return new ArrayList<>(viewableItems);",
+            "correctness": "compile_success",
+            "translated": "return new ArrayList<>(viewableItems);"
+        },
+        {
+            "patch": "return Collections.unmodifiableList(itemValues);",
+            "correctness": "uncompilable",
+            "translated": "return Collections.unmodifiableList(itemValues);"
+        },
+        {
+            "patch": "return new ArrayList(items.values());",
+            "correctness": "compile_success",
+            "translated": "return new ArrayList(items.values());"
+        },
+        {
+            "patch": "return new ArrayList<>();",
+            "correctness": "compile_success",
+            "translated": "return new ArrayList<>();"
+        }
+    ]
+}

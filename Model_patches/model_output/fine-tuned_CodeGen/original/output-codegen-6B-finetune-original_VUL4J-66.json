@@ -1,0 +1,56 @@
+{
+    "output": [
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return true;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            break;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            continue;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return valid;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            valid = false;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return false;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return isValid;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            throw new IllegalArgumentException();\n<|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean isValid(String str)\n{\n   if (str == null || str.length() == 0) return false;\n   for (int i = 0; i < str.length(); i++) {\n      switch (str.charAt(i))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return true;\n        }\n<|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            return true;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            break;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            continue;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return valid;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            valid = false;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return isValid;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            throw new IllegalArgumentException();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return true;\n        }\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

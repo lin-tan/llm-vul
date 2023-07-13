@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this.jaxbContext = setting;\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n}\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this.context = setting;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this.settings = setting;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this.setting = context;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this._setting = setting;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this.jaxbContext = jaxbContext;\n<|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this.setting = jaxbContext;\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this.setting = setting.getSettings();\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.category = category;\n// buggy lines start:\n  this.setting = setting;\n// buggy lines end\n}\n// fixed lines:\n  this.setting = setting.getProvider();\n<|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  this.jaxbContext = setting;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = context;\n"
+        },
+        {
+            "patch": "}\n",
+            "correctness": "uncompilable",
+            "translated": "}\n"
+        },
+        {
+            "patch": "  this.context = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.settings = setting;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.settings = context;\n"
+        },
+        {
+            "patch": "  this.setting = context;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this._setting = setting;\n",
+            "correctness": "uncompilable",
+            "translated": "  this._setting = context;\n"
+        },
+        {
+            "patch": "  this.jaxbContext = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = jaxbContext;\n"
+        },
+        {
+            "patch": "  this.setting = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = jaxbContext;\n"
+        },
+        {
+            "patch": "  this.setting = setting.getSettings();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = context.getSettings();\n"
+        },
+        {
+            "patch": "  this.setting = setting.getProvider();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = context.getProvider();\n"
+        }
+    ]
+}

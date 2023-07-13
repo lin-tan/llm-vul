@@ -1,0 +1,56 @@
+{
+    "output": [
+        "String pass1 = encPass;",
+        "String pass1 = encPass + \"String_Node_Str\";",
+        "String pass1 = encPass.trim();",
+        "String encPass1 = encPass + \"String_Node_Str\";",
+        "String pass1 = \"String_Node_Str\";",
+        "String pass1 = encPass.substring(0, encPass.length() - 1);",
+        "String pass1 = encPass.toString();",
+        "String pass1 = encPass + \"String_Node_Str\" + salt;",
+        "StringBuilder pass1 = new StringBuilder();",
+        "String pass1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pass1 = encPass;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "String pass1 = encPass + \"String_Node_Str\";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String pass1 = encPass.trim();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String encPass1 = encPass + \"String_Node_Str\";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = \"String_Node_Str\";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String pass1 = encPass.substring(0, encPass.length() - 1);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String pass1 = encPass.toString();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String pass1 = encPass + \"String_Node_Str\" + salt;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "StringBuilder pass1 = new StringBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

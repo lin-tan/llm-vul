@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return new ArrayList < PeakDegreeElement>(); } return new ArrayList < PeakDegreeElement>();",
+        "if (!(mandateScheme instanceof MandateScheme.Unguarded) &&!(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {",
+        "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return new ArrayList < PeakDegreeElement>(); }",
+        "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return visibleElements; } return new ArrayList < PeakDegreeElement>();",
+        "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return new ArrayList < PeakDegreeElement>(); } else { return new ArrayList < PeakDegreeElement>();",
+        "if (!(mandateScheme instanceof MandateScheme.Unguarded) &&!(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) { return visibleElements;",
+        "List < PeakDegreeElement> visibleElements = new ArrayList < PeakDegreeElement>(); Iterator < PeakDegreeElement> iterator = itemValues.iterator();",
+        "!(mandateScheme instanceof MandateScheme.Unguarded) &&!(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {",
+        "Iterator < PeakDegreeElement> iterator = itemValues.iterator(); if (!(mandateScheme instanceof MandateScheme.Unguarded)) continue;",
+        "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return visibleElements; } return new ArrayList < PeakDegreeElement>(itemValues);"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return new ArrayList < PeakDegreeElement>(); } return new ArrayList < PeakDegreeElement>();",
+            "correctness": "compile_success",
+            "translated": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); } return new ArrayList < TopLevelItem>();"
+        },
+        {
+            "patch": "if (!(mandateScheme instanceof MandateScheme.Unguarded) &&!(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&!(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {"
+        },
+        {
+            "patch": "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return new ArrayList < PeakDegreeElement>(); }",
+            "correctness": "uncompilable",
+            "translated": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); }"
+        },
+        {
+            "patch": "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return visibleElements; } return new ArrayList < PeakDegreeElement>();",
+            "correctness": "uncompilable",
+            "translated": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return viewableItems; } return new ArrayList < TopLevelItem>();"
+        },
+        {
+            "patch": "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return new ArrayList < PeakDegreeElement>(); } else { return new ArrayList < PeakDegreeElement>();",
+            "correctness": "uncompilable",
+            "translated": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return new ArrayList < TopLevelItem>(); } else { return new ArrayList < TopLevelItem>();"
+        },
+        {
+            "patch": "if (!(mandateScheme instanceof MandateScheme.Unguarded) &&!(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) { return visibleElements;",
+            "correctness": "uncompilable",
+            "translated": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&!(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) { return viewableItems;"
+        },
+        {
+            "patch": "List < PeakDegreeElement> visibleElements = new ArrayList < PeakDegreeElement>(); Iterator < PeakDegreeElement> iterator = itemValues.iterator();",
+            "correctness": "uncompilable",
+            "translated": "List < TopLevelItem> viewableItems = new ArrayList < TopLevelItem>(); Iterator < TopLevelItem> iterator = itemValues.iterator();"
+        },
+        {
+            "patch": "!(mandateScheme instanceof MandateScheme.Unguarded) &&!(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {",
+            "correctness": "uncompilable",
+            "translated": "!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured) &&!(authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)) {"
+        },
+        {
+            "patch": "Iterator < PeakDegreeElement> iterator = itemValues.iterator(); if (!(mandateScheme instanceof MandateScheme.Unguarded)) continue;",
+            "correctness": "uncompilable",
+            "translated": "Iterator < TopLevelItem> iterator = itemValues.iterator(); if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) continue;"
+        },
+        {
+            "patch": "if (!(mandateScheme instanceof MandateScheme.Unguarded)) { return visibleElements; } return new ArrayList < PeakDegreeElement>(itemValues);",
+            "correctness": "uncompilable",
+            "translated": "if (!(authorizationStrategy instanceof AuthorizationStrategy.Unsecured)) { return viewableItems; } return new ArrayList < TopLevelItem>(itemValues);"
+        }
+    ]
+}

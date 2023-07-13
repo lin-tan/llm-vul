@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(String.valueOf(value)).matches()) {\n</s></s></s>",
+        "<pad><s>    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex()).matcher(value.toString()).matches()) {\n</s>",
+        "<pad><s>    if (!(value.getClass().equals(String.class)) ||!pattern.matcher(String.valueOf(value)).matches()) {\n</s></s></s></s></s>",
+        "<pad><s>    if (!(value.getClass().equals(String.class)) ||!urlRegex.matcher(String.valueOf(value)).matches()) {\n</s></s></s></s>",
+        "<pad><s>    if (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value.toString()).matches()) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n</s></s></s></s></s>",
+        "<pad><s>    if (!(value.getClass().equals(String.class))) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (!(value instanceof String)) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex()).matcher(value.toString()).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!(value.getClass().equals(String.class)) ||!pattern.matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!(value.getClass().equals(String.class)) ||!urlRegex.matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value.toString()).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!(value.getClass().equals(String.class))) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!(value instanceof String)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

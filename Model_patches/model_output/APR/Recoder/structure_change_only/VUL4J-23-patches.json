@@ -1,0 +1,12 @@
+[
+  "return Encode.encodeForJSString(dataProvider);",
+  "return dataProvider;",
+  "return Encode.add(dataProvider);",
+  "return forJavaScriptSource(dataProvider);",
+  "return Encode.debug(dataProvider);",
+  "return (String)Encode.forJavaScriptSource(dataProvider);",
+  "return Encode.max(dataProvider);",
+  "return Encode.forJavaScriptSource(dataProvider, null);",
+  "return Encode.forJavaScriptSource(dataProvider, false);",
+  "return Encode.forJavaScriptSource(dataProvider);"
+]

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "= template.replace( \" { { route } } \", getRoutes(event));",
+        "= template.replace( \" { { routes } } \", getRoutes(event)); }",
+        "= template.replace( \" { { routes } } \", getRoutes(event));",
+        "= template.replace( \" { { route } } \", getRoutes(event)); }",
+        "template = template.replace( \" { { route } } \", getRoutes(event));",
+        "template = template.replace( \" { { routes } } \", getRoutes(event));",
+        "template = template.replace( \" { { path } } \", getRoutes(event));",
+        "= template.replace( \" { { path } } \", getRoutes(event));",
+        "template = template.replace( \" { { route } } \", getRoutes(event)); }",
+        "template = template.replace( \" { { route } } \", getRoutes(event));"
+    ],
+    "validation_result": [
+        {
+            "patch": "= template.replace( \" { { route } } \", getRoutes(event));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= template.replace( \" { { routes } } \", getRoutes(event)); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= template.replace( \" { { routes } } \", getRoutes(event));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= template.replace( \" { { route } } \", getRoutes(event)); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace( \" { { route } } \", getRoutes(event));",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "template = template.replace( \" { { routes } } \", getRoutes(event));",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "template = template.replace( \" { { path } } \", getRoutes(event));",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "= template.replace( \" { { path } } \", getRoutes(event));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace( \" { { route } } \", getRoutes(event)); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace( \" { { route } } \", getRoutes(event));",
+            "correctness": "test_success"
+        }
+    ]
+}

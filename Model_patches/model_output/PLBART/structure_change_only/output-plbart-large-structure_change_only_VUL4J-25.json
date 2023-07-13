@@ -1,0 +1,57 @@
+{
+    "function range": "2,2-29,5",
+    "output": [
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) { return url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\")) { return url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.contains(\"http://\")) { return url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null && url.startsWith(\"http://\")) { return url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (StringUtils.isNotBlank(url)) { return url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://www.google.com\")) { return url; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\")) { return url.substring(1); } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\")) { return url.substring(7); } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) { return url ; } return \"\"; }",
+        "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\")) { return url.substring(url.indexOf(\"http://\")); } return \"\"; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) { return url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\")) { return url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.contains(\"http://\")) { return url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url!= null && url.startsWith(\"http://\")) { return url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (StringUtils.isNotBlank(url)) { return url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://www.google.com\")) { return url; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\")) { return url.substring(1); } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\")) { return url.substring(7); } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\") || url.startsWith(\"https://\")) { return url ; } return \"\"; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override @Nonnull public String getValidHref(final String url) { if (!StringUtils.isNotEmpty(url)) { return \"\"; } if (url.startsWith(\"http://\")) { return url.substring(url.indexOf(\"http://\")); } return \"\"; }",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   ",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n\n    if (\n   \n   \n   \n   \n   \n   \n   ",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (\n\n       \n\n\n   \n   \n",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAllowed(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (\n\n       \n\n\n   \n   \n",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (\n\n   \n\n\n   \n   \n",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAllowed(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (\n\n   \n\n\n   \n   \n",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(request,\n\n\n\n\n    if(\n\n   \n   \n",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAllowed(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(request,\n\n\n\n\n    if(\n\n   \n   \n",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (\n\n       \n\n\n   \n\n   ",
+        "\n    if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAllowed(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (\n\n       \n\n\n   \n\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n\n    if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAllowed(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAllowed(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(request,\n\n\n\n\n    if(",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAllowed(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(request,\n\n\n\n\n    if(",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAuthorized(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isAllowed(requestFilename)) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n   \n    if (!isAllowed(\n   \n   \n   \n   \n   \n   \n   \n   \n\n   \n    if (forbidden) {\n        forbidden(\n\n\n    if (",
+            "correctness": "uncompilable"
+        }
+    ]
+}

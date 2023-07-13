@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "String pathInfo = r.getPathInfo();",
+        "String pathInfo = r.getSendOnPage();",
+        "String pathInfo = r.getRequestURI();",
+        "final String pathInfo = r.getPathInfo(); return pathInfo;",
+        "String pathInfo = r.getFile().getPathInfo();",
+        "String pathInfo = r.getPathInfo(); return pathInfo;",
+        "String pathInfo = \"/ \" + r.getPathInfo();",
+        "String pathInfo = r.getConfiguration().getPathInfo();",
+        "String pathInfo = r.getRequestURI().toString();",
+        "String pathInfo = r.getSendablePathInfo();"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pathInfo = r.getPathInfo();",
+            "correctness": "uncompilable",
+            "translated": "String pathInfo = request.getPathInfo();"
+        },
+        {
+            "patch": "String pathInfo = r.getSendOnPage();",
+            "correctness": "uncompilable",
+            "translated": "String pathInfo = request.getSendOnPage();"
+        },
+        {
+            "patch": "String pathInfo = r.getRequestURI();",
+            "correctness": "uncompilable",
+            "translated": "String pathInfo = request.getRequestURI();"
+        },
+        {
+            "patch": "final String pathInfo = r.getPathInfo(); return pathInfo;",
+            "correctness": "compile_success",
+            "translated": "final String pathInfo = request.getPathInfo(); return pathInfo;"
+        },
+        {
+            "patch": "String pathInfo = r.getFile().getPathInfo();",
+            "correctness": "uncompilable",
+            "translated": "String pathInfo = request.getFile().getPathInfo();"
+        },
+        {
+            "patch": "String pathInfo = r.getPathInfo(); return pathInfo;",
+            "correctness": "compile_success",
+            "translated": "String pathInfo = request.getPathInfo(); return pathInfo;"
+        },
+        {
+            "patch": "String pathInfo = \"/ \" + r.getPathInfo();",
+            "correctness": "uncompilable",
+            "translated": "String pathInfo = \"/ \" + request.getPathInfo();"
+        },
+        {
+            "patch": "String pathInfo = r.getConfiguration().getPathInfo();",
+            "correctness": "uncompilable",
+            "translated": "String pathInfo = request.getConfiguration().getPathInfo();"
+        },
+        {
+            "patch": "String pathInfo = r.getRequestURI().toString();",
+            "correctness": "uncompilable",
+            "translated": "String pathInfo = request.getRequestURI().toString();"
+        },
+        {
+            "patch": "String pathInfo = r.getSendablePathInfo();",
+            "correctness": "uncompilable",
+            "translated": "String pathInfo = request.getSendablePathInfo();"
+        }
+    ]
+}

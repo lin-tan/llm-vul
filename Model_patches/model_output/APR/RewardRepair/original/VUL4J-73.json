@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "String pass1 = encPass + \" \";",
+        "String pass1 = encPass;",
+        "String pass1 = encPass + \" \" \";",
+        "String pass1 = encPass + \": \" + salt;",
+        "String pass1 = encPass + \"n \";",
+        "String pass1 = encPass + \"; \";",
+        "String pass1 = encPass.trim() + \" \";",
+        "String pass1 = encPass + \"/ \";",
+        "String pass1 = encPass + \", \" + salt;",
+        "String pass1 = encPass + \" \" + salt;"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pass1 = encPass + \" \";",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String pass1 = encPass;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass + \" \" \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass + \": \" + salt;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass + \"n \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass + \"; \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass.trim() + \" \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass + \"/ \";",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass + \", \" + salt;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass + \" \" + salt;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

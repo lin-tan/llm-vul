@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        setCurrentAccessPermission(currentAccessPermission, true);\n</s></s></s>",
+        "<pad><s>        setCurrentAccessPermission(currentAccessPermission, false);\n</s></s></s>",
+        "<pad><s>        setCurrentAccessPermission(currentAccessPermission, null);\n</s></s></s>",
+        "<pad><s>        setCurrentAccessPermission(currentAccessPermission, encryption);\n</s></s></s>",
+        "<pad><s>        setCurrentAccessPermission(new AccessPermission(currentAccessPermission));\n</s>",
+        "<pad><s>        setCurrentAccessPermission(currentAccessPermission, documentIDArray);\n</s>",
+        "<pad><s>        setCurrentAccessPermission(currentAccessPermission, ownerKey);\n</s></s>",
+        "<pad><s>        setCurrentAccessPermission(currentAccessPermission, null, null);\n</s>",
+        "<pad><s>        setCurrentAccessPermission(currentAccessPermission);\n</s></s></s></s></s>",
+        "<pad><s>        setCurrentAccessPermission(null);\n</s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        setCurrentAccessPermission(currentAccessPermission, true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(currentAccessPermission, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(currentAccessPermission, null);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(currentAccessPermission, encryption);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(new AccessPermission(currentAccessPermission));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(currentAccessPermission, documentIDArray);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(currentAccessPermission, ownerKey);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(currentAccessPermission, null, null);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(currentAccessPermission);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        setCurrentAccessPermission(null);\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

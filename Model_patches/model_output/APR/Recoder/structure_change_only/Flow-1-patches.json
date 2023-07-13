@@ -1,0 +1,12 @@
+[
+  "if(!HandlerHelper.isPathUnsafe(requestFilename)){\n",
+  "if(HandlerHelper.isPathUnsafe(requestFilename)){\n",
+  "if(!HandlerHelper.isPathUnsafe(requestFilename)){",
+  "if(!isPathUnsafe(requestFilename)){\n",
+  "if((requestFilename != null)){\n",
+  "if(requestFilename){\n",
+  "if(isPathUnsafe(requestFilename)){\n",
+  "if(!requestFilename){\n",
+  "if(!HandlerHelper.isPathUnsafe(header)){\n",
+  "removeRunningDevServerPort();\n"
+]

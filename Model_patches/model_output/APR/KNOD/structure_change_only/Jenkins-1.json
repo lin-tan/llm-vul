@@ -1,0 +1,47 @@
+{
+    "id": 39,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -1.1801,
+            "fix_type": "general",
+            "patch": "while (nodeMonitorList.size())\n{\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -5.141,
+            "fix_type": "general",
+            "patch": ""
+        },
+        {
+            "rank": 3,
+            "score": -5.5149,
+            "fix_type": "general",
+            "patch": "break;\n"
+        },
+        {
+            "rank": 4,
+            "score": -5.8282,
+            "fix_type": "general",
+            "patch": "0"
+        },
+        {
+            "rank": 5,
+            "score": -5.8917,
+            "fix_type": "general",
+            "patch": "Converter"
+        },
+        {
+            "rank": 6,
+            "score": -5.8917,
+            "fix_type": "general",
+            "patch": "Factory"
+        },
+        {
+            "rank": 7,
+            "score": -6.0721,
+            "fix_type": "general",
+            "patch": "continue  ;\n"
+        }
+    ]
+}

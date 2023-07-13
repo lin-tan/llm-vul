@@ -1,0 +1,65 @@
+{
+    "id": 38,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2046,
+            "fix_type": "general",
+            "patch": "pathToCheck.startsWith(parentPath.normalize())"
+        },
+        {
+            "rank": 2,
+            "score": -0.4617,
+            "fix_type": "insert",
+            "patch": "if (pathToCheck == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5398,
+            "fix_type": "insert",
+            "patch": "if (pathToCheck == null ){\nthrow new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \");\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5898,
+            "fix_type": "insert",
+            "patch": "Assert.isEmpty(pathToCheck);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.5898,
+            "fix_type": "insert",
+            "patch": "Assert.deleteFolder(pathToCheck);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3635,
+            "fix_type": "general",
+            "patch": "pathToCheck.startsWith(parentPath)"
+        },
+        {
+            "rank": 7,
+            "score": -0.4267,
+            "fix_type": "general",
+            "patch": "!pathToCheck.startsWith(parentPath.normalize())"
+        },
+        {
+            "rank": 8,
+            "score": -0.4963,
+            "fix_type": "general",
+            "patch": "pathToCheck.startsWith(List.isEmpty(parentPath))"
+        },
+        {
+            "rank": 9,
+            "score": -0.4963,
+            "fix_type": "general",
+            "patch": "pathToCheck.startsWith(FileUtils.isEmpty(parentPath))"
+        },
+        {
+            "rank": 10,
+            "score": -0.5055,
+            "fix_type": "general",
+            "patch": "pathToCheck.startsWith().startsWith(parentPath.normalize())"
+        }
+    ]
+}

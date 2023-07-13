@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n        if (hashSize > 0) {               \n\n        if (hashSize > 0) {",
+        "\n        if (this.hashSize > 0) {               \n\n        if (hashSize > 0) {",
+        "\n        if (this.hashSize > 0) {               \n\n        if (this.hashSize > 0) {",
+        "\n        if (this.hashSize > 0) {           \n\n        if (this.hashSize > 0) {",
+        "\n        if (this.hashSize > 0) {           \n\n        if (hashSize > 0) {",
+        "\n        if (hashSize > 0) {\n\n\n        if (hashSize > 0) {",
+        "\n        if (this.hashSize > 0) {               \n   \n        if (hashSize > 0) {",
+        "\n        if (hashSize > 0) {               \n\n        if (hashSize > 0) {\n",
+        "\n        if (this.hashSize > 0) {               \n\n        if (hashSize > 0) {\n",
+        "\n        if (this.hashSize > 0) {               \n\n        if (this.hashAlg == HASH) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (hashSize > 0) {               \n\n        if (hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (this.hashSize > 0) {               \n\n        if (hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (this.hashSize > 0) {               \n\n        if (this.hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (this.hashSize > 0) {           \n\n        if (this.hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (this.hashSize > 0) {           \n\n        if (hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (hashSize > 0) {\n\n\n        if (hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (this.hashSize > 0) {               \n   \n        if (hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (hashSize > 0) {               \n\n        if (hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (this.hashSize > 0) {               \n\n        if (hashSize > 0) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (this.hashSize > 0) {               \n\n        if (this.hashAlg == HASH) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return request.getRequestURI();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return request.getContextPath();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return \"String_Node_Str\";\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return request.getPathInfo();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return null;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return request.getHeader(\"String_Node_Str\");\n<|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return getPathInfo(request);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return pathInfo;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return request.getForwardPage();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    String pathInfo = request.getPathInfo();\n    return pathInfo;\n// buggy lines end\n}\n// fixed lines:\n    return request.getContextPath() + request.getRequestURI();\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return request.getRequestURI();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getRequestURI();\n"
+        },
+        {
+            "patch": "    return request.getContextPath();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getContextPath();\n"
+        },
+        {
+            "patch": "    return \"String_Node_Str\";\n",
+            "correctness": "compile_success",
+            "translated": "    return \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "    return request.getPathInfo();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getPathInfo();\n"
+        },
+        {
+            "patch": "    return null;\n",
+            "correctness": "compile_success",
+            "translated": "    return null;\n"
+        },
+        {
+            "patch": "    return request.getHeader(\"String_Node_Str\");\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getHeader(\"String_Node_Str\");\n"
+        },
+        {
+            "patch": "    return getPathInfo(request);\n",
+            "correctness": "uncompilable",
+            "translated": "    return getPathInfo(request);\n"
+        },
+        {
+            "patch": "    return pathInfo;\n",
+            "correctness": "uncompilable",
+            "translated": "    return pathInfo;\n"
+        },
+        {
+            "patch": "    return request.getForwardPage();\n",
+            "correctness": "uncompilable",
+            "translated": "    return request.getForwardPage();\n"
+        },
+        {
+            "patch": "    return request.getContextPath() + request.getRequestURI();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getContextPath() + request.getRequestURI();\n"
+        }
+    ]
+}

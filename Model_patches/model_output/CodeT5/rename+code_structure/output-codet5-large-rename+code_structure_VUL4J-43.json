@@ -1,0 +1,67 @@
+{
+    "function range": "2,2-19,2",
+    "output": [
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t\n\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t\n\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t //\n\t\n\t\n\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t for\n\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t //\n\t\n\t\n\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t //\n\t\n\t for\n\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t\t\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t\t\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t if\t\n",
+        "\n\tif (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t if\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\t\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t //",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\t\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();\n\t\t //"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t for",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t for"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t //",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\t\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();\n\t\t //"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t //\n\t\n\t for",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();\n\t\t //\n\t\n\t for"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\t\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isFile()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\t\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t if",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t if"
+        },
+        {
+            "patch": "if (!outputFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (item.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (item.isFile()) {\n\t\t\n\t\n\n\tif (!item.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t if",
+            "correctness": "uncompilable",
+            "translated": "if (!outFile.exists()) {\n\t\t\n\t\t\n\t\n\tif (entry.isDirectory()) {\n\n\t\t\n\t\telse\n\t\t\n\n\tif (entry.isFile()) {\n\t\t\n\t\n\n\tif (!entry.isDirectory()) {\n for (\n\n\nFile();\n\t\t\t\n\t\n\t if"
+        }
+    ]
+}

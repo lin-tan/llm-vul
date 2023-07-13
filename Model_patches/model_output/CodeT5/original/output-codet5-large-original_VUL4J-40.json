@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if\n    if (requestBody == null) {\n   \n    if\n   \n   \n   ",
+        "\n    if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if\n    if (requestBody == null) {\n   \n    if\n   \n\n   ",
+        "\n    if (!scimUserFromDb.getName().equals(scimUserFromRequest.getName())) {    if\n    if else {\n   \n    if\n   \n   \n   \n\n\n   \n    catch (ScimResourceNotFoundException e) {\n    if (id == null) { else {\n// else {\n// else!=",
+        "\n    if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if else {\n   \n    if\n   \n   \n   ",
+        "\n    if (!scimUserFromDb.getName().equals(scimUserFromRequest.getName())) {    if\n    if else {\n   \n    if\n   \n   \n   \n   \n\n   \n catch (ScimResourceNotFoundException e) {\n    if (id == null) { else {\n// else {\n// else!=",
+        "\n    if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if else {\n   \n    if\n   \n   \n   \n   \n\n   \n catch (Exception e) {\n    if (id == null) { else {\n// else {\n// else!=",
+        "\n    if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if\n",
+        "\n    if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if\n    if (requestBody == null) {\n   \n    if\n   \n   \n   \n",
+        "\n    if (!scimUserFromDb.getEmail().equals(scimUserFromRequest.getEmail())) {    if\n    if\n",
+        "\n    if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if (\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if\n    if (requestBody == null) {\n   \n    if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if\n    if (requestBody == null) {\n   \n    if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getName().equals(scimUserFromRequest.getName())) {    if\n    if else {\n   \n    if\n   \n   \n   \n\n\n   \n    catch (ScimResourceNotFoundException e) {\n    if (id == null) { else {\n// else {\n// else!=",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if else {\n   \n    if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getName().equals(scimUserFromRequest.getName())) {    if\n    if else {\n   \n    if\n   \n   \n   \n   \n\n   \n catch (ScimResourceNotFoundException e) {\n    if (id == null) { else {\n// else {\n// else!=",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if else {\n   \n    if\n   \n   \n   \n   \n\n   \n catch (Exception e) {\n    if (id == null) { else {\n// else {\n// else!=",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if\n    if (requestBody == null) {\n   \n    if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getEmail().equals(scimUserFromRequest.getEmail())) {    if\n    if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getDisplayName().equals(scimUserFromRequest.getDisplayName())) {    if\n    if (",
+            "correctness": "uncompilable"
+        }
+    ]
+}

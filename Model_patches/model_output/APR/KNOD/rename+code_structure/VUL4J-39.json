@@ -1,0 +1,65 @@
+{
+    "id": 18,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1326,
+            "fix_type": "general",
+            "patch": "s = s.length() > 0 ? s.append(\", \") : s;\ns.append(\"sessionId=\");\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1461,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification == null ){\nreturn s.toString();\n}\nelse {\ns = s.length() > 0 ? s.append(\", \") : s;\ns.append(\"sessionId=\");\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1776,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification == null ){\nreturn s.toString();\ns = s.length() > 0 ? s.append(\", \") : s;\ns.append(\"sessionId=\");\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.244,
+            "fix_type": "general",
+            "patch": "s = s.toString();\ns.append(\"sessionId=\");\ns.append(sessionIdentification);\nreturn s.toString();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1513,
+            "fix_type": "general",
+            "patch": "s = s.length() == null ? s.append(\", \") : s;\ns.append(\"sessionId=\");\ns.append(sessionIdentification);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1556,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification == null ){\nreturn s.toString();\n}\nelse {\ns = s.append();\ns.append(\"sessionId=\");\ns.append(sessionIdentification);\nreturn s.toString();\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.1963,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification == null ){\nreturn s.toString();\ns = s.length() > 0 ? s.append(\", \") : s;\ns.append(sessionIdentification);\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1612,
+            "fix_type": "general",
+            "patch": "s = s.length() > 0 ? s.append(\", \") : s;\ns.append(\"sessionId=\");\ns.append(sessionIdentification);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.171,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification == null ){\nreturn s.toString();\n}\nelse {\ns = s.append();\ns.append(\"sessionId=\");\ns.append(\"sessionId=\");\nreturn s.toString();\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2091,
+            "fix_type": "general",
+            "patch": "if (sessionIdentification == null ){\nreturn s.toString();\ns = s.length() > 0 ? s.append(\", \") : s;\ns.append(\", \");\n}\n"
+        }
+    ]
+}

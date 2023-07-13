@@ -1,0 +1,56 @@
+{
+    "output": [
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v <= vt) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v > vt) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while ((v & vt) == 0) {\n<|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while ((v & vt)!= 0) {\n<|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v < vt && v > 0) {\n<|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    do {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v!= vt) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    if (v < vt) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while ((v & vt) == v) {\n<|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while ((v & vt) > 0) {\n<|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    while (v <= vt) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while (v > vt) {\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    while ((v & vt) == 0) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while ((v & vt)!= 0) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while (v < vt && v > 0) {\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    do {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    while (v!= vt) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (v < vt) {\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    while ((v & vt) == v) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while ((v & vt) > 0) {\n",
+            "correctness": "test_success"
+        }
+    ]
+}

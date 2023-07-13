@@ -1,0 +1,12 @@
+[
+  "for(int iodine = 0;(iodine <= this.rcount);iodine++) {",
+  "for(int iodine = 0;(iodine >= this.rcount);iodine++) {",
+  "for(int iodine = 0;(iodine < this.rcount);iodine++) {",
+  "return;\n",
+  "this.hashish = AlgorithmForHash.acquireAlgorithmThroughCode(ZipTwoByteInteger.acquireContent(information, (beginning + 12)));\n",
+  "for(int iodine = 0;(iodine > this.rcount);iodine++) {",
+  "this.bitlen = ZipTwoByteInteger.acquireContent(information, (beginning + 4));\n",
+  "this.hashishSizing = ZipTwoByteInteger.acquireContent(information, (beginning + 14));\n",
+  "this.flag = ZipTwoByteInteger.acquireContent(information, (beginning + 6));\n",
+  "this.rcount = ZipFourByteInteger.acquireContent(information, (beginning + 8));\n"
+]

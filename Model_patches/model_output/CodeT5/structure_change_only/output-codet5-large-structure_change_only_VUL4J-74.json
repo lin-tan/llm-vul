@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-13,2",
+    "output": [
+        "\n\n\t\t@SuppressWarnings(\"rawtypes\")\t\t\tthrows Exception {\n\t\tfinal\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t//",
+        "\n\n\t\t@SuppressWarnings(\"rawtypes\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}\n\telse {}",
+        "\n\n\t\t@SuppressWarnings(\"unused\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}\n\telse {}",
+        "\n\n\t\t@SuppressWarnings(\"unused\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}\n\telse\n\t{}",
+        "\n\n\t\t@SuppressWarnings(\"rawtypes\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}\n\telse\n\t{}",
+        "\n\n\t\t@SuppressWarnings(\"rawtypes\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}",
+        "\n\n\t\t@SuppressWarnings(\"rawtypes\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\tfinal\n\n\n\t}\n\telse {}",
+        "\n\n\t\t@SuppressWarnings(\"unused\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}",
+        "\n\n\t\t@SuppressWarnings(\"unused\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\tfinal\n\n\n\t}\n\telse {}",
+        "\n\n\t\t@SuppressWarnings(\"rawtypes\")\t\t\tthrows Exception {\n\t\tfinal\n\n\n\n\n\t\t\n\n\n\t\t//"
+    ],
+    "validation_result": [
+        {
+            "patch": "@SuppressWarnings(\"rawtypes\")\t\t\tthrows Exception {\n\t\tfinal\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"rawtypes\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}\n\telse {}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"unused\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}\n\telse {}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"unused\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}\n\telse\n\t{}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"rawtypes\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}\n\telse\n\t{}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"rawtypes\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"rawtypes\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\tfinal\n\n\n\t}\n\telse {}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"unused\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\t\n\n\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"unused\")\n\t{\n\t\tfinal\n\n\n\n\n\t{\n\t\tfinal\n\n\n\t}\n\telse {}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@SuppressWarnings(\"rawtypes\")\t\t\tthrows Exception {\n\t\tfinal\n\n\n\n\n\t\t\n\n\n\t\t//",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "sproducer.setNamespaceAware(false);",
+        "if (sproducer!= null) { sproducer.setNamespaceAware(true); }",
+        "sproducer.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);",
+        "sproducer.setNamespaceAware(true, true);",
+        "sproducer.setFeature(Feature.SECURE_PROCESSING, true);",
+        "sproducer.setNamespaceAware(true, false);",
+        "sproducer.setNamespaceAware(true, null);",
+        "sproducer = SAXParserFactory.newInstance();",
+        "subscriber.setNamespaceAware(true);",
+        "sproducer.setNamespaceAware(true ||!isSecureProcessing());"
+    ],
+    "validation_result": [
+        {
+            "patch": "sproducer.setNamespaceAware(false);",
+            "correctness": "compile_success",
+            "translated": "sfactory.setNamespaceAware(false);"
+        },
+        {
+            "patch": "if (sproducer!= null) { sproducer.setNamespaceAware(true); }",
+            "correctness": "compile_success",
+            "translated": "if (sfactory!= null) { sfactory.setNamespaceAware(true); }"
+        },
+        {
+            "patch": "sproducer.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setFeature(XMLConstants.FEATURE_SECURE_PROCESSING, true);"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true, true);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, true);"
+        },
+        {
+            "patch": "sproducer.setFeature(Feature.SECURE_PROCESSING, true);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setFeature(Feature.SECURE_PROCESSING, true);"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true, false);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, false);"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true, null);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, null);"
+        },
+        {
+            "patch": "sproducer = SAXParserFactory.newInstance();",
+            "correctness": "compile_success",
+            "translated": "sfactory = SAXParserFactory.newInstance();"
+        },
+        {
+            "patch": "subscriber.setNamespaceAware(true);",
+            "correctness": "uncompilable",
+            "translated": "xmlReader.setNamespaceAware(true);"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true ||!isSecureProcessing());",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true ||!isSecureProcessing());"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "int iodine = 0;",
+        "null iodine = 0;",
+        "iodine = 0;",
+        "int iodine = 1;",
+        "int iodine = -1;",
+        "int iodine = 0;",
+        "nt iodine = 0;",
+        "t iodine = 0;",
+        "int iodine = 1;",
+        "int iodine = -1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int iodine = 0;",
+            "correctness": "compile_success",
+            "translated": "int i = 0;"
+        },
+        {
+            "patch": "null iodine = 0;",
+            "correctness": "uncompilable",
+            "translated": "null i = 0;"
+        },
+        {
+            "patch": "iodine = 0;",
+            "correctness": "uncompilable",
+            "translated": "i = 0;"
+        },
+        {
+            "patch": "int iodine = 1;",
+            "correctness": "compile_success",
+            "translated": "int i = 1;"
+        },
+        {
+            "patch": "int iodine = -1;",
+            "correctness": "compile_success",
+            "translated": "int i = -1;"
+        },
+        {
+            "patch": "int iodine = 0;",
+            "correctness": "compile_success",
+            "translated": "int i = 0;"
+        },
+        {
+            "patch": "nt iodine = 0;",
+            "correctness": "uncompilable",
+            "translated": "nt i = 0;"
+        },
+        {
+            "patch": "t iodine = 0;",
+            "correctness": "uncompilable",
+            "translated": "t i = 0;"
+        },
+        {
+            "patch": "int iodine = 1;",
+            "correctness": "compile_success",
+            "translated": "int i = 1;"
+        },
+        {
+            "patch": "int iodine = -1;",
+            "correctness": "compile_success",
+            "translated": "int i = -1;"
+        }
+    ]
+}

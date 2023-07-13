@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "OutputStream production = acquireOutDataSequence();",
+        "InputStream production = acquireOutDataSequence();",
+        "OutputStream production = acquireOutDataSequence(int);",
+        "OutputStream production = acquireInDataSequence();",
+        "OutputStream production = acquireOutDataSequence(input);",
+        "OutputStream production = acquireOutDataSequence(in);",
+        "OutputStream production = acquireOutDataSequence(inputStream);",
+        "OutputStream production = acquireOutDataSequence(inner);",
+        "OutputStream production = acquireOutDataSequence(false);",
+        "OutputStream production = acquireOutDataSequence().close();"
+    ],
+    "validation_result": [
+        {
+            "patch": "OutputStream production = acquireOutDataSequence();",
+            "correctness": "compile_success",
+            "translated": "OutputStream output = getOutputStream();"
+        },
+        {
+            "patch": "InputStream production = acquireOutDataSequence();",
+            "correctness": "uncompilable",
+            "translated": "InputStream output = getOutputStream();"
+        },
+        {
+            "patch": "OutputStream production = acquireOutDataSequence(int);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(int);"
+        },
+        {
+            "patch": "OutputStream production = acquireInDataSequence();",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = acquireInDataSequence();"
+        },
+        {
+            "patch": "OutputStream production = acquireOutDataSequence(input);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(input);"
+        },
+        {
+            "patch": "OutputStream production = acquireOutDataSequence(in);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(input);"
+        },
+        {
+            "patch": "OutputStream production = acquireOutDataSequence(inputStream);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(inputStream);"
+        },
+        {
+            "patch": "OutputStream production = acquireOutDataSequence(inner);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(inner);"
+        },
+        {
+            "patch": "OutputStream production = acquireOutDataSequence(false);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(false);"
+        },
+        {
+            "patch": "OutputStream production = acquireOutDataSequence().close();",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream().close();"
+        }
+    ]
+}

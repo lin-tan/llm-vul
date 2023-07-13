@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    sb.append(\"String_Node_Str\");\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    sb =sb.length() > 0?sb.append(\", \"):sb;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    if (sessionId!= null)\n        sb.append(\"String_Node_Str\");\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    sb = sb.length() > 0? sb.append(\"String_Node_Str\") : sb;\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    appendSessionId(sb);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    sb = sb.length() > 0?sb.append(\", \"):sb;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    if (sessionId!= null)\n        sb.append(\"String_Node_Str\").append(sessionId);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    sb = sb.length() > 0?sb.append(\"String_Node_Str\"):sb;\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n    sb= origin!= null? sb.append(\"remoteAddress=\").append(origin):sb;\n    if (clientId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n// buggy lines start:\n    if (sessionId!= null) {\n        sb =sb.length() > 0?sb.append(\", \"):sb;\n        sb.append(\"sessionId=\");\n        sb.append(sessionId);\n    }\n// buggy lines end\n    return sb.toString();\n}\n// fixed lines:\n    sb = sb.length() > 0? sb.append(\"String_Node_Str\"): sb;\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    sb.append(\"String_Node_Str\");\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"String_Node_Str\");\n"
+        },
+        {
+            "patch": "    sb =sb.length() > 0?sb.append(\", \"):sb;\n",
+            "correctness": "test_timeout",
+            "translated": "    sb =sb.length() > 0?sb.append(\", \"):sb;\n"
+        },
+        {
+            "patch": "    if (sessionId!= null)\n        sb.append(\"String_Node_Str\");\n",
+            "correctness": "test_timeout",
+            "translated": "    if (sessionId!= null)\n        sb.append(\"String_Node_Str\");\n"
+        },
+        {
+            "patch": "    sb = sb.length() > 0? sb.append(\"String_Node_Str\") : sb;\n",
+            "correctness": "test_timeout",
+            "translated": "    sb = sb.length() > 0? sb.append(\"String_Node_Str\") : sb;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        },
+        {
+            "patch": "    appendSessionId(sb);\n",
+            "correctness": "uncompilable",
+            "translated": "    appendSessionId(sb);\n"
+        },
+        {
+            "patch": "    sb = sb.length() > 0?sb.append(\", \"):sb;\n",
+            "correctness": "test_timeout",
+            "translated": "    sb =sb.length() > 0?sb.append(\", \"):sb;\n"
+        },
+        {
+            "patch": "    if (sessionId!= null)\n        sb.append(\"String_Node_Str\").append(sessionId);\n",
+            "correctness": "test_timeout",
+            "translated": "    if (sessionId!= null)\n        sb.append(\"String_Node_Str\").append(sessionId);\n"
+        },
+        {
+            "patch": "    sb = sb.length() > 0?sb.append(\"String_Node_Str\"):sb;\n",
+            "correctness": "test_timeout",
+            "translated": "    sb = sb.length() > 0? sb.append(\"String_Node_Str\") : sb;\n"
+        },
+        {
+            "patch": "    sb = sb.length() > 0? sb.append(\"String_Node_Str\"): sb;\n",
+            "correctness": "test_timeout",
+            "translated": "    sb = sb.length() > 0? sb.append(\"String_Node_Str\") : sb;\n"
+        }
+    ]
+}

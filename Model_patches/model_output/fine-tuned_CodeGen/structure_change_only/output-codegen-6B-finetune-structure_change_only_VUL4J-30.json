@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = value.toString();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = (String) value;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = object.toString();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        s = String.valueOf(value);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = String.valueOf(value.toString());\n<|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = toString(value);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = \"String_Node_Str\";\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = String.valueOf(value).trim();\n<|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = \"String_Node_Str\" + value;\n<|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value!= null && value.toString().length()!= 0) {\n        Class value_class = value.getClass();\n        String urlRegex = getUrlRegex();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(value);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (value_class.equals(String.class) && m.matches()) {\n           return;\n        }\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n        String s = String.valueOf(urlRegex);\n<|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        String s = value.toString();\n",
+            "correctness": "compile_success",
+            "translated": "        String s = value.toString();\n"
+        },
+        {
+            "patch": "        String s = (String) value;\n",
+            "correctness": "compile_success",
+            "translated": "        String s = (String) value;\n"
+        },
+        {
+            "patch": "        String s = object.toString();\n",
+            "correctness": "compile_success",
+            "translated": "        String s = object.toString();\n"
+        },
+        {
+            "patch": "        s = String.valueOf(value);\n",
+            "correctness": "uncompilable",
+            "translated": "        s = String.valueOf(value);\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(value.toString());\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf(value.toString());\n"
+        },
+        {
+            "patch": "        String s = toString(value);\n",
+            "correctness": "uncompilable",
+            "translated": "        String s = toString(value);\n"
+        },
+        {
+            "patch": "        String s = \"String_Node_Str\";\n",
+            "correctness": "compile_success",
+            "translated": "        String s = \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(value).trim();\n",
+            "correctness": "test_success",
+            "translated": "        String s = String.valueOf(value).trim();\n"
+        },
+        {
+            "patch": "        String s = \"String_Node_Str\" + value;\n",
+            "correctness": "compile_success",
+            "translated": "        String s = \"String_Node_Str\" + value;\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(urlRegex);\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf(urlRegex);\n"
+        }
+    ]
+}

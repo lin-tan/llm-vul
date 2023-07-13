@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "LOGGER.error( \"Unable to decode url: { }. \", resourseAddress);",
+        "resourseAddress = URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());",
+        "URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());",
+        "// URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());",
+        "String encodeResourseAddress = mutilateTitleScope(encodeResourseAddress);",
+        "resourseAddressUnescaped = StringEscapeUtils.unescapeXml(resourseAddressUnescaped);",
+        "String resourseAddressUnescaped = StringEscapeUtils.unescapeXml(resourseAddressUnescaped);",
+        "resourseAddress = mutilateTitleScope(encodeResourseAddress);",
+        "String encodeResourseAddress = StringEscapeUtils.unescapeXml(encodeResourseAddress);",
+        "String encodeResourseAddress = StringEscapeUtils.unescapeXml(resourseAddress);"
+    ],
+    "validation_result": [
+        {
+            "patch": "LOGGER.error( \"Unable to decode url: { }. \", resourseAddress);",
+            "correctness": "compile_success",
+            "translated": "LOGGER.error( \"Unable to decode url: { }. \", url);"
+        },
+        {
+            "patch": "resourseAddress = URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());",
+            "correctness": "uncompilable",
+            "translated": "url = URLDecoder.decode(url, StandardCharsets.UTF_8.name());"
+        },
+        {
+            "patch": "URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());",
+            "correctness": "uncompilable",
+            "translated": "URLDecoder.decode(url, StandardCharsets.UTF_8.name());"
+        },
+        {
+            "patch": "// URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());",
+            "correctness": "compile_success",
+            "translated": "// URLDecoder.decode(url, StandardCharsets.UTF_8.name());"
+        },
+        {
+            "patch": "String encodeResourseAddress = mutilateTitleScope(encodeResourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "String encodedUrl = mangleNamespaces(encodedUrl);"
+        },
+        {
+            "patch": "resourseAddressUnescaped = StringEscapeUtils.unescapeXml(resourseAddressUnescaped);",
+            "correctness": "uncompilable",
+            "translated": "unescapedURL = StringEscapeUtils.unescapeXml(unescapedURL);"
+        },
+        {
+            "patch": "String resourseAddressUnescaped = StringEscapeUtils.unescapeXml(resourseAddressUnescaped);",
+            "correctness": "uncompilable",
+            "translated": "String unescapedURL = StringEscapeUtils.unescapeXml(unescapedURL);"
+        },
+        {
+            "patch": "resourseAddress = mutilateTitleScope(encodeResourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "url = mangleNamespaces(encodedUrl);"
+        },
+        {
+            "patch": "String encodeResourseAddress = StringEscapeUtils.unescapeXml(encodeResourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "String encodedUrl = StringEscapeUtils.unescapeXml(encodedUrl);"
+        },
+        {
+            "patch": "String encodeResourseAddress = StringEscapeUtils.unescapeXml(resourseAddress);",
+            "correctness": "compile_success",
+            "translated": "String encodedUrl = StringEscapeUtils.unescapeXml(url);"
+        }
+    ]
+}

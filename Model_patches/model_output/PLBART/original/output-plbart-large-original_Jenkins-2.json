@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-15,1",
+    "output": [
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return null; List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null) return null; List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) { return null; } List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return Collections.emptyList(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return Collections. emptyList(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String, TopLevelItem> items = this.getItems(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String, List<TopLevelItem>> items = this.getItems(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return null; List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems ; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return Collections.emptyList(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems ; }",
+        "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) { return null; } List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems ; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return null; List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null) return null; List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) { return null; } List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return Collections.emptyList(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return Collections. emptyList(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String, TopLevelItem> items = this.getItems(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String, List<TopLevelItem>> items = this.getItems(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return null; List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return Collections.emptyList(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems ; }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) { return null; } List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems ; }",
+            "correctness": "compile_success"
+        }
+    ]
+}

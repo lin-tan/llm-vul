@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>            out = ZipEncodingHelper.growBufferBy(out, increment, true);\n</s>",
+        "<pad><s>            out = ZipEncodingHelper.growBufferBy(out, increment, false);\n</s>",
+        "<pad><s>            out = ZipEncodingHelper.growBufferBy(out, increment * 2);\n</s>",
+        "<pad><s>            out = ZipEncodingHelper.growBufferBy(out, increment + 1);\n</s>",
+        "<pad><s>            out = ZipEncodingHelper.growBufferBy(out, increment + 4);\n</s>",
+        "<pad><s>            out = zipEncodingHelper.growBufferBy(out, increment);\n</s></s></s>",
+        "<pad><s>            out = ZipEncodingHelper.growBuffer(out, increment);\n</s></s></s></s>",
+        "<pad><s>            out.limit(out.position() + increment);\n</s></s></s></s></s></s></s>",
+        "<pad><s>            out.limit(increment);\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            out = ZipEncodingHelper.growBufferBy(out, increment, true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            out = ZipEncodingHelper.growBufferBy(out, increment, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            out = ZipEncodingHelper.growBufferBy(out, increment * 2);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            out = ZipEncodingHelper.growBufferBy(out, increment + 1);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            out = ZipEncodingHelper.growBufferBy(out, increment + 4);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            out = zipEncodingHelper.growBufferBy(out, increment);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            out = ZipEncodingHelper.growBuffer(out, increment);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            out.limit(out.position() + increment);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            out.limit(increment);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        }
+    ]
+}

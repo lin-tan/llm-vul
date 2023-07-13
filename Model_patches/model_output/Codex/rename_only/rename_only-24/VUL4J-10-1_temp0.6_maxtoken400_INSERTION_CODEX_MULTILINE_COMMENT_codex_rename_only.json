@@ -1,0 +1,4145 @@
+{
+    "id": "cmpl-8HPXzTr7xIhG5nxTcw51l7jhOyV8c",
+    "object": "text_completion",
+    "created": 1699160471,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(true);\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "true",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.88660055,
+                    -1.8818424,
+                    -0.040674336,
+                    -0.12160481
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "false": -1.7847648
+                    },
+                    {
+                        ");": -0.040674336
+                    },
+                    {
+                        "\n": -0.12160481
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    668,
+                    670
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(inputStream);\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "input",
+                    "Stream",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.88660055,
+                    -2.0036418,
+                    -0.0151410615,
+                    -0.2661648,
+                    -0.1513243
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "false": -1.7847648
+                    },
+                    {
+                        "Stream": -0.0151410615
+                    },
+                    {
+                        ");": -0.2661648
+                    },
+                    {
+                        "\n": -0.1513243
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    669,
+                    675,
+                    677
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence();\n    if (production == null) {\n        return;\n    }\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "();",
+                    "\n",
+                    "   ",
+                    " if",
+                    " (",
+                    "production",
+                    " ==",
+                    " null",
+                    ")",
+                    " {",
+                    "\n",
+                    "       ",
+                    " return",
+                    ";",
+                    "\n",
+                    "   ",
+                    " }",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.8639603,
+                    -0.10300697,
+                    -0.8096222,
+                    -1.0393628,
+                    -0.0498607,
+                    -0.72830385,
+                    -0.15597405,
+                    -0.005234846,
+                    -0.021464271,
+                    -0.119838476,
+                    -0.031100107,
+                    -0.0140540395,
+                    -2.3964615,
+                    -0.0075922604,
+                    -0.037669707,
+                    -0.002018535,
+                    -0.00079217425,
+                    -0.08876556
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "\n": -0.10300697
+                    },
+                    {
+                        "<|endoftext|>": -0.66764593
+                    },
+                    {
+                        " if": -1.0393628
+                    },
+                    {
+                        " (": -0.0498607
+                    },
+                    {
+                        "production": -0.72830385
+                    },
+                    {
+                        " ==": -0.15597405
+                    },
+                    {
+                        " null": -0.005234846
+                    },
+                    {
+                        ")": -0.021464271
+                    },
+                    {
+                        " {": -0.119838476
+                    },
+                    {
+                        "\n": -0.031100107
+                    },
+                    {
+                        "       ": -0.0140540395
+                    },
+                    {
+                        " saved": -1.3974314
+                    },
+                    {
+                        ";": -0.0075922604
+                    },
+                    {
+                        "\n": -0.037669707
+                    },
+                    {
+                        "   ": -0.002018535
+                    },
+                    {
+                        " }": -0.00079217425
+                    },
+                    {
+                        "\n": -0.08876556
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    666,
+                    667,
+                    670,
+                    673,
+                    675,
+                    685,
+                    688,
+                    693,
+                    694,
+                    696,
+                    697,
+                    704,
+                    711,
+                    712,
+                    713,
+                    716,
+                    718
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(true);\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "true",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.88660055,
+                    -1.8818424,
+                    -0.040674336,
+                    -0.12160481
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "false": -1.7847648
+                    },
+                    {
+                        ");": -0.040674336
+                    },
+                    {
+                        "\n": -0.12160481
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    668,
+                    670
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutItemSequence();\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Item",
+                    "Sequ",
+                    "ence",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -4.432934,
+                    -1.0618118,
+                    -0.0003125086,
+                    -0.08538459,
+                    -0.10517874
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "();": -1.0570309
+                    },
+                    {
+                        "ence": -0.0003125086
+                    },
+                    {
+                        "();": -0.08538459
+                    },
+                    {
+                        "\n": -0.10517874
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    666
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireProduction(false);\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Production",
+                    "(",
+                    "false",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -3.3253787,
+                    -1.2744774,
+                    -2.290957,
+                    -0.106875695,
+                    -0.10895607
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "();": -0.6173681
+                    },
+                    {
+                        "false": -2.290957
+                    },
+                    {
+                        ");": -0.106875695
+                    },
+                    {
+                        "\n": -0.10895607
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    658,
+                    659,
+                    664,
+                    666
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence();\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.8639603,
+                    -0.10300697
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "\n": -0.10300697
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    666
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    production = new ByteArrayOutputStream();\n    if (serializationFile != null) {\n        FileInputStream in = new FileInputStream(serializationFile);\n        IOUtils.copy(in, production);\n        serializationFile.delete();\n        serializationFile = null;\n    }\n    inputStream.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    outputStream.close();\n}\nprivate void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n    savedData = new byte[(int) inputStream.readLong()];\n    inputStream.readFully(savedData);\n    inputStream.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    byte[] data = production.toByteArray();\n    outputStream.writeLong(data.length);\n    outputStream.write(data);\n    outputStream.close();\n}\nprivate void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n    if (serializationFile != null) {\n        FileInputStream in = new FileInputStream(serializationFile);\n        production = new ByteArrayOutputStream();\n        IOUtils.copy(in, production);\n        serializationFile.delete();\n        serializationFile = null;\n    }\n    inputStream.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    outputStream.close();\n}\nprivate void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n    if (serializationFile != null) {\n        FileInputStream in = new FileInputStream(serializationFile);\n        production = new ByteArrayOutputStream();\n        IOUtils.copy(in, production);\n        serializationFile.delete();\n        serializationFile = null;\n    }\n    inputStream.close();\n}\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " production",
+                    " =",
+                    " new",
+                    " Byte",
+                    "Array",
+                    "Output",
+                    "Stream",
+                    "();",
+                    "\n",
+                    "   ",
+                    " if",
+                    " (",
+                    "serial",
+                    "ization",
+                    "File",
+                    " !=",
+                    " null",
+                    ")",
+                    " {",
+                    "\n",
+                    "       ",
+                    " File",
+                    "Input",
+                    "Stream",
+                    " in",
+                    " =",
+                    " new",
+                    " File",
+                    "Input",
+                    "Stream",
+                    "(",
+                    "serial",
+                    "ization",
+                    "File",
+                    ");",
+                    "\n",
+                    "       ",
+                    " I",
+                    "OU",
+                    "t",
+                    "ils",
+                    ".",
+                    "copy",
+                    "(",
+                    "in",
+                    ",",
+                    " production",
+                    ");",
+                    "\n",
+                    "       ",
+                    " serial",
+                    "ization",
+                    "File",
+                    ".",
+                    "delete",
+                    "();",
+                    "\n",
+                    "       ",
+                    " serial",
+                    "ization",
+                    "File",
+                    " =",
+                    " null",
+                    ";",
+                    "\n",
+                    "   ",
+                    " }",
+                    "\n",
+                    "   ",
+                    " input",
+                    "Stream",
+                    ".",
+                    "close",
+                    "();",
+                    "\n",
+                    "}",
+                    "\n",
+                    "private",
+                    " void",
+                    " write",
+                    "Item",
+                    "(",
+                    "Object",
+                    "Output",
+                    "Stream",
+                    " output",
+                    "Stream",
+                    ")",
+                    "\n",
+                    "       ",
+                    " throws",
+                    " IO",
+                    "Exception",
+                    " {",
+                    "\n",
+                    "   ",
+                    " output",
+                    "Stream",
+                    ".",
+                    "default",
+                    "Write",
+                    "Object",
+                    "();",
+                    "\n",
+                    "   ",
+                    " output",
+                    "Stream",
+                    ".",
+                    "close",
+                    "();",
+                    "\n",
+                    "}",
+                    "\n",
+                    "private",
+                    " void",
+                    " read",
+                    "Item",
+                    "(",
+                    "Object",
+                    "Input",
+                    "Stream",
+                    " input",
+                    "Stream",
+                    ")",
+                    "\n",
+                    "       ",
+                    " throws",
+                    " IO",
+                    "Exception",
+                    ",",
+                    " Class",
+                    "Not",
+                    "Found",
+                    "Exception",
+                    " {",
+                    "\n",
+                    "   ",
+                    " input",
+                    "Stream",
+                    ".",
+                    "default",
+                    "Read",
+                    "Object",
+                    "();",
+                    "\n",
+                    "   ",
+                    " saved",
+                    "Data",
+                    " =",
+                    " new",
+                    " byte",
+                    "[",
+                    "(",
+                    "int",
+                    ")",
+                    " input",
+                    "Stream",
+                    ".",
+                    "read",
+                    "Long",
+                    "()",
+                    "];",
+                    "\n",
+                    "   ",
+                    " input",
+                    "Stream",
+                    ".",
+                    "read",
+                    "F",
+                    "ully",
+                    "(",
+                    "s",
+                    "aved",
+                    "Data",
+                    ");",
+                    "\n",
+                    "   ",
+                    " input",
+                    "Stream",
+                    ".",
+                    "close",
+                    "();",
+                    "\n",
+                    "}",
+                    "\n",
+                    "private",
+                    " void",
+                    " write",
+                    "Item",
+                    "(",
+                    "Object",
+                    "Output",
+                    "Stream",
+                    " output",
+                    "Stream",
+                    ")",
+                    "\n",
+                    "       ",
+                    " throws",
+                    " IO",
+                    "Exception",
+                    " {",
+                    "\n",
+                    "   ",
+                    " output",
+                    "Stream",
+                    ".",
+                    "default",
+                    "Write",
+                    "Object",
+                    "();",
+                    "\n",
+                    "   ",
+                    " byte",
+                    "[]",
+                    " data",
+                    " =",
+                    " production",
+                    ".",
+                    "to",
+                    "Byte",
+                    "Array",
+                    "();",
+                    "\n",
+                    "   ",
+                    " output",
+                    "Stream",
+                    ".",
+                    "write",
+                    "Long",
+                    "(",
+                    "data",
+                    ".",
+                    "length",
+                    ");",
+                    "\n",
+                    "   ",
+                    " output",
+                    "Stream",
+                    ".",
+                    "write",
+                    "(",
+                    "data",
+                    ");",
+                    "\n",
+                    "   ",
+                    " output",
+                    "Stream",
+                    ".",
+                    "close",
+                    "();",
+                    "\n",
+                    "}",
+                    "\n",
+                    "private",
+                    " void",
+                    " read",
+                    "Item",
+                    "(",
+                    "Object",
+                    "Input",
+                    "Stream",
+                    " input",
+                    "Stream",
+                    ")",
+                    "\n",
+                    "       ",
+                    " throws",
+                    " IO",
+                    "Exception",
+                    ",",
+                    " Class",
+                    "Not",
+                    "Found",
+                    "Exception",
+                    " {",
+                    "\n",
+                    "   ",
+                    " input",
+                    "Stream",
+                    ".",
+                    "default",
+                    "Read",
+                    "Object",
+                    "();",
+                    "\n",
+                    "   ",
+                    " if",
+                    " (",
+                    "serial",
+                    "ization",
+                    "File",
+                    " !=",
+                    " null",
+                    ")",
+                    " {",
+                    "\n",
+                    "       ",
+                    " File",
+                    "Input",
+                    "Stream",
+                    " in",
+                    " =",
+                    " new",
+                    " File",
+                    "Input",
+                    "Stream",
+                    "(",
+                    "serial",
+                    "ization",
+                    "File",
+                    ");",
+                    "\n",
+                    "       ",
+                    " production",
+                    " =",
+                    " new",
+                    " Byte",
+                    "Array",
+                    "Output",
+                    "Stream",
+                    "();",
+                    "\n",
+                    "       ",
+                    " I",
+                    "OU",
+                    "t",
+                    "ils",
+                    ".",
+                    "copy",
+                    "(",
+                    "in",
+                    ",",
+                    " production",
+                    ");",
+                    "\n",
+                    "       ",
+                    " serial",
+                    "ization",
+                    "File",
+                    ".",
+                    "delete",
+                    "();",
+                    "\n",
+                    "       ",
+                    " serial",
+                    "ization",
+                    "File",
+                    " =",
+                    " null",
+                    ";",
+                    "\n",
+                    "   ",
+                    " }",
+                    "\n",
+                    "   ",
+                    " input",
+                    "Stream",
+                    ".",
+                    "close",
+                    "();",
+                    "\n",
+                    "}",
+                    "\n",
+                    "private",
+                    " void",
+                    " write",
+                    "Item",
+                    "(",
+                    "Object",
+                    "Output",
+                    "Stream",
+                    " output",
+                    "Stream",
+                    ")",
+                    "\n",
+                    "       ",
+                    " throws",
+                    " IO",
+                    "Exception",
+                    " {",
+                    "\n",
+                    "   ",
+                    " output",
+                    "Stream",
+                    ".",
+                    "default",
+                    "Write",
+                    "Object",
+                    "();",
+                    "\n",
+                    "   ",
+                    " output",
+                    "Stream",
+                    ".",
+                    "close",
+                    "();",
+                    "\n",
+                    "}",
+                    "\n",
+                    "private",
+                    " void",
+                    " read",
+                    "Item",
+                    "(",
+                    "Object",
+                    "Input",
+                    "Stream",
+                    " input",
+                    "Stream",
+                    ")",
+                    "\n",
+                    "       ",
+                    " throws",
+                    " IO",
+                    "Exception",
+                    ",",
+                    " Class",
+                    "Not",
+                    "Found",
+                    "Exception",
+                    " {",
+                    "\n",
+                    "   ",
+                    " input",
+                    "Stream",
+                    ".",
+                    "default",
+                    "Read",
+                    "Object",
+                    "();",
+                    "\n",
+                    "   ",
+                    " if",
+                    " (",
+                    "serial",
+                    "ization",
+                    "File",
+                    " !=",
+                    " null",
+                    ")",
+                    " {",
+                    "\n",
+                    "       ",
+                    " File",
+                    "Input",
+                    "Stream",
+                    " in",
+                    " =",
+                    " new",
+                    " File",
+                    "Input",
+                    "Stream",
+                    "(",
+                    "serial",
+                    "ization",
+                    "File",
+                    ");",
+                    "\n",
+                    "       ",
+                    " production",
+                    " =",
+                    " new",
+                    " Byte",
+                    "Array",
+                    "Output",
+                    "Stream",
+                    "();",
+                    "\n",
+                    "       ",
+                    " I",
+                    "OU",
+                    "t",
+                    "ils",
+                    ".",
+                    "copy",
+                    "(",
+                    "in",
+                    ",",
+                    " production",
+                    ");",
+                    "\n",
+                    "       ",
+                    " serial",
+                    "ization",
+                    "File",
+                    ".",
+                    "delete",
+                    "();",
+                    "\n",
+                    "       ",
+                    " serial",
+                    "ization",
+                    "File",
+                    " =",
+                    " null",
+                    ";",
+                    "\n",
+                    "   ",
+                    " }",
+                    "\n",
+                    "   ",
+                    " input",
+                    "Stream",
+                    ".",
+                    "close",
+                    "();",
+                    "\n",
+                    "}",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -5.477516,
+                    -0.039962728,
+                    -2.7379267,
+                    -1.0657909,
+                    -0.008321685,
+                    -0.0055205743,
+                    -0.00044547606,
+                    -0.09003785,
+                    -0.1047346,
+                    -0.8404231,
+                    -1.2555432,
+                    -0.038943533,
+                    -0.5266054,
+                    -0.002744346,
+                    -0.004078978,
+                    -0.31049612,
+                    -0.00035764647,
+                    -0.09750389,
+                    -0.03952364,
+                    -0.015116373,
+                    -0.0119151855,
+                    -1.1424266,
+                    -0.05949659,
+                    -5.1810483e-05,
+                    -0.04996684,
+                    -0.0036522301,
+                    -0.003293772,
+                    -0.000249787,
+                    -1.6045058e-05,
+                    -4.721163e-06,
+                    -0.0002476394,
+                    -0.0013788439,
+                    -5.7177684e-05,
+                    -4.7399757e-05,
+                    -0.0004878777,
+                    -0.002576707,
+                    -0.0016191732,
+                    -0.044655453,
+                    -8.892534e-06,
+                    -9.65175e-05,
+                    -9.012677e-06,
+                    -2.6298881e-05,
+                    -0.00031847187,
+                    -0.0018298241,
+                    -0.001686281,
+                    -0.00033510666,
+                    -0.024799194,
+                    -0.0006265925,
+                    -0.0044983663,
+                    -0.21245234,
+                    -0.34949222,
+                    -0.00015100244,
+                    -0.00013085242,
+                    -0.061873015,
+                    -0.00056903914,
+                    -0.000862803,
+                    -0.0025320696,
+                    -0.05070649,
+                    -0.009032286,
+                    -4.144026e-05,
+                    -1.6165199e-05,
+                    -0.00082647346,
+                    -0.00025956213,
+                    -5.8725527e-05,
+                    -0.005932831,
+                    -0.048246928,
+                    -0.0006107265,
+                    -0.26271164,
+                    -0.76300925,
+                    -1.4959286,
+                    -0.0010402352,
+                    -0.0046481234,
+                    -0.085763134,
+                    -0.0017014459,
+                    -0.015659798,
+                    -0.1630959,
+                    -0.0491812,
+                    -2.0929344,
+                    -0.030950088,
+                    -0.25592402,
+                    -0.050935462,
+                    -0.03144369,
+                    -0.0963918,
+                    -0.010130001,
+                    -0.0018015191,
+                    -0.14893635,
+                    -0.0089654075,
+                    -0.017446214,
+                    -0.35441467,
+                    -0.029569032,
+                    -0.00021514892,
+                    -0.0087421285,
+                    -0.00013669553,
+                    -0.23236215,
+                    -0.008734672,
+                    -0.014449933,
+                    -0.23927929,
+                    -0.00014027084,
+                    -0.00025694142,
+                    -0.045549866,
+                    -6.48061e-05,
+                    -1.1159372e-05,
+                    -0.00035001428,
+                    -0.020659098,
+                    -0.12611629,
+                    -1.1832911,
+                    -0.00014754539,
+                    -0.0003816121,
+                    -0.35992563,
+                    -0.0003642048,
+                    -0.025382452,
+                    -0.6245079,
+                    -0.031648587,
+                    -0.7228769,
+                    -0.27055168,
+                    -1.89112,
+                    -0.88138616,
+                    -0.28049746,
+                    -0.6986562,
+                    -0.031516824,
+                    -0.025054324,
+                    -0.061245523,
+                    -0.007926289,
+                    -0.048618685,
+                    -0.06847455,
+                    -0.03048752,
+                    -0.00025145593,
+                    -0.006915207,
+                    -3.4403198e-05,
+                    -0.016873203,
+                    -0.0013489996,
+                    -2.5941252e-05,
+                    -6.6619094e-07,
+                    -3.8103353e-05,
+                    -0.0060675684,
+                    -0.008221798,
+                    -0.008852227,
+                    -0.17927605,
+                    -0.00012012551,
+                    -0.00043796306,
+                    -0.006879196,
+                    -0.0011159552,
+                    -8.51908e-05,
+                    -0.00015755986,
+                    -0.020742586,
+                    -0.022830464,
+                    -2.9461691,
+                    -0.0019305066,
+                    -0.005359184,
+                    -1.5343953,
+                    -1.1091503,
+                    -0.013704711,
+                    -1.0274576,
+                    -0.005511104,
+                    -0.005633317,
+                    -0.9615501,
+                    -0.002907528,
+                    -0.0010450102,
+                    -0.10388797,
+                    -0.08768943,
+                    -0.00097639667,
+                    -0.0015440708,
+                    -0.012966802,
+                    -0.0025895562,
+                    -0.36716688,
+                    -0.00012989782,
+                    -0.00034047384,
+                    -0.0033000526,
+                    -0.25064084,
+                    -5.0778563e-06,
+                    -0.0005437528,
+                    -0.0025207754,
+                    -1.7236207e-05,
+                    -0.0001375281,
+                    -0.043833703,
+                    -0.010823759,
+                    -0.103335336,
+                    -0.13609448,
+                    -0.00013264055,
+                    -0.00011499579,
+                    -0.0009125599,
+                    -0.00013323847,
+                    -0.0040288847,
+                    -0.04504744,
+                    -0.0038810803,
+                    -0.05217546,
+                    -0.004303855,
+                    -0.015073046,
+                    -0.0016464569,
+                    -0.0010299757,
+                    -0.005818435,
+                    -0.0007458246,
+                    -5.0856816e-05,
+                    -0.0045566256,
+                    -0.00044464157,
+                    -0.0025424669,
+                    -0.016460054,
+                    -0.007691361,
+                    -0.00010045139,
+                    -0.0010303333,
+                    -4.2511267e-05,
+                    -0.012499067,
+                    -0.002287934,
+                    -0.0029045986,
+                    -0.07705428,
+                    -6.0276172e-05,
+                    -0.00067567825,
+                    -0.0025959502,
+                    -8.7457636e-05,
+                    -9.115311e-05,
+                    -0.00010796247,
+                    -0.010863529,
+                    -0.050113536,
+                    -2.1049964,
+                    -0.026061298,
+                    -0.54753596,
+                    -0.25023866,
+                    -0.45776632,
+                    -0.010068887,
+                    -0.023982676,
+                    -0.0013543123,
+                    -0.000117858675,
+                    -0.0008057133,
+                    -0.0093546575,
+                    -0.0016241884,
+                    -0.23324867,
+                    -0.00030570905,
+                    -0.00026481107,
+                    -0.00036384718,
+                    -0.0037209692,
+                    -0.008303712,
+                    -0.0054781404,
+                    -0.00048728072,
+                    -0.00023786427,
+                    -0.00032705773,
+                    -0.0044101747,
+                    -0.00034536046,
+                    -0.021489847,
+                    -3.9055147e-05,
+                    -3.2855354e-05,
+                    -0.0015092093,
+                    -0.0023102195,
+                    -0.007487042,
+                    -0.027489664,
+                    -0.0033649388,
+                    -0.014316479,
+                    -0.06489375,
+                    -8.507158e-05,
+                    -0.00021967979,
+                    -0.042236295,
+                    -0.00013180608,
+                    -0.0042732074,
+                    -0.32894972,
+                    -0.013831008,
+                    -0.47288013,
+                    -0.10241303,
+                    -1.3379917,
+                    -0.10187797,
+                    -0.04563184,
+                    -0.11203622,
+                    -0.0038071822,
+                    -0.0009990068,
+                    -0.01012374,
+                    -0.0010124915,
+                    -0.003084548,
+                    -0.028922834,
+                    -0.010736278,
+                    -0.0003195429,
+                    -0.006631361,
+                    -1.2708151e-05,
+                    -0.030610671,
+                    -0.0013400486,
+                    -5.5269407e-05,
+                    -2.0966954e-06,
+                    -4.370523e-05,
+                    -0.0051594106,
+                    -0.002766698,
+                    -0.006033986,
+                    -0.06890236,
+                    -0.00013025544,
+                    -0.00011106284,
+                    -0.005395857,
+                    -0.0003216896,
+                    -7.648668e-05,
+                    -0.00017520743,
+                    -0.00724272,
+                    -0.015024216,
+                    -1.8032317,
+                    -0.038972665,
+                    -0.54421103,
+                    -0.0041461913,
+                    -0.010044927,
+                    -0.55575866,
+                    -0.0004563306,
+                    -0.047154553,
+                    -0.0063023707,
+                    -0.0042508803,
+                    -0.0043337275,
+                    -1.2989154,
+                    -0.23016456,
+                    -5.8247755e-05,
+                    -0.037949562,
+                    -0.0027032848,
+                    -0.003079287,
+                    -0.0003024923,
+                    -9.628002e-05,
+                    -2.0935424e-05,
+                    -0.00026457265,
+                    -0.0018197318,
+                    -0.00012751458,
+                    -0.0001011657,
+                    -0.00050171156,
+                    -0.0020362155,
+                    -0.0020157902,
+                    -1.9319378,
+                    -0.48017368,
+                    -0.098302245,
+                    -0.18736714,
+                    -0.00080058357,
+                    -0.00142182,
+                    -0.00021574495,
+                    -0.02156695,
+                    -0.004537524,
+                    -0.0014206251,
+                    -0.016874962,
+                    -5.79217e-06,
+                    -3.6195077e-05,
+                    -6.3900848e-06,
+                    -7.11223e-05,
+                    -0.00010939391,
+                    -0.0005371935,
+                    -0.0017155951,
+                    -0.00018414622,
+                    -0.0035711722,
+                    -0.00040403462,
+                    -0.0027736917,
+                    -0.049615,
+                    -0.08235403,
+                    -7.314978e-05,
+                    -0.000118572985,
+                    -0.020493178,
+                    -0.00022051518,
+                    -0.00041232194,
+                    -0.0013299019,
+                    -0.0129721165,
+                    -0.003920689,
+                    -2.582111e-05,
+                    -4.4419543e-05,
+                    -0.001047873,
+                    -0.00014671094,
+                    -9.258174e-05,
+                    -0.0025916463,
+                    -0.04065962,
+                    -0.00034524407,
+                    -0.23845278,
+                    -0.08358825,
+                    -0.045168784,
+                    -4.29881e-05,
+                    -8.447461e-05,
+                    -0.00092067267,
+                    -8.018216e-05,
+                    -0.0014810939,
+                    -0.008551601,
+                    -0.0028431471,
+                    -0.035344426,
+                    -0.0036552807,
+                    -0.014300698,
+                    -0.0012637138,
+                    -0.00061311346,
+                    -0.0026433999,
+                    -0.00017639951,
+                    -3.4048382e-05,
+                    -0.0016080078,
+                    -0.00019344824,
+                    -0.0015662182,
+                    -0.0069014644,
+                    -0.0028249177,
+                    -8.948419e-05,
+                    -0.001497985,
+                    -1.1039229e-05,
+                    -0.00792737,
+                    -0.001838241,
+                    -0.0020467292,
+                    -0.04375511,
+                    -5.3837026e-05,
+                    -0.00021550842,
+                    -0.0011984879,
+                    -6.0395385e-05,
+                    -3.690939e-05,
+                    -4.680184e-05,
+                    -0.004114829,
+                    -0.018171227,
+                    -0.30350918,
+                    -3.5240468e-05,
+                    -0.0005729758,
+                    -0.014374285,
+                    -8.197403e-05,
+                    -0.0028790128,
+                    -0.07263101,
+                    -0.008288326,
+                    -0.2344719,
+                    -0.039933443,
+                    -0.28933448,
+                    -0.019142134,
+                    -0.010930836,
+                    -0.012488866,
+                    -0.0015761905,
+                    -0.00037851362,
+                    -0.0039721546,
+                    -0.0008806402,
+                    -0.0008013007,
+                    -0.012229923,
+                    -0.008820538,
+                    -0.00020274745,
+                    -0.0022600966,
+                    -6.8669196e-06,
+                    -0.004711599,
+                    -0.0008015373,
+                    -8.176345e-06,
+                    -9.055464e-07,
+                    -1.3542607e-05,
+                    -0.0020125632,
+                    -0.0013959743,
+                    -0.0030226076,
+                    -0.023580438,
+                    -4.9782993e-05,
+                    -0.0009515168,
+                    -0.0013353939,
+                    -0.00014623316,
+                    -3.166233e-05,
+                    -5.8845668e-05,
+                    -0.0065818634,
+                    -0.04491034,
+                    -1.2448261,
+                    -0.018667066,
+                    -0.44333735,
+                    -0.0015864583,
+                    -0.0031210193,
+                    -0.107877,
+                    -0.00032204814,
+                    -0.022450324,
+                    -0.002771899,
+                    -0.0021800485,
+                    -0.0041434392,
+                    -0.3725869,
+                    -0.0384088,
+                    -2.8445576e-05,
+                    -0.0031580913,
+                    -0.000740218,
+                    -0.001250644,
+                    -0.00015124086,
+                    -0.00024441796,
+                    -2.5744682e-06,
+                    -6.516092e-05,
+                    -0.00038602657,
+                    -1.9503042e-05,
+                    -3.7743856e-05,
+                    -0.00014003337,
+                    -0.0010198909,
+                    -0.0015278922,
+                    -0.31319916,
+                    -0.005790378,
+                    -0.008619896,
+                    -0.022771621,
+                    -0.0009436406,
+                    -0.00029641076,
+                    -4.430127e-05,
+                    -0.0016776229,
+                    -0.001170259,
+                    -0.0005821605,
+                    -0.011339002,
+                    -4.361666e-06,
+                    -8.638288e-05,
+                    -4.277735e-07,
+                    -4.2033495e-05,
+                    -0.00014265596,
+                    -0.00018390873,
+                    -0.00039652258,
+                    -5.7057543e-05,
+                    -0.0009082647,
+                    -0.00036289258,
+                    -0.0012063632,
+                    -0.029119002,
+                    -0.018618425,
+                    -4.573365e-05,
+                    -7.6964454e-05,
+                    -0.0020537158,
+                    -0.000524134,
+                    -0.00075298175,
+                    -0.0007085461,
+                    -0.010688019,
+                    -0.002313027,
+                    -1.306671e-05,
+                    -1.8310955e-05,
+                    -0.0003266982,
+                    -0.00026254423,
+                    -2.6298881e-05,
+                    -0.0010210839,
+                    -0.027139042,
+                    -0.0002229003,
+                    -0.04642285,
+                    -0.019258972,
+                    -0.058767803,
+                    -3.0707724e-05,
+                    -0.001219434,
+                    -0.00080738415,
+                    -5.550595e-05,
+                    -0.0031537865,
+                    -0.054443575,
+                    -0.0023707408
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        " =": -0.039962728
+                    },
+                    {
+                        " acquire": -0.15687577
+                    },
+                    {
+                        " Byte": -1.0657909
+                    },
+                    {
+                        "Array": -0.008321685
+                    },
+                    {
+                        "Output": -0.0055205743
+                    },
+                    {
+                        "Stream": -0.00044547606
+                    },
+                    {
+                        "();": -0.09003785
+                    },
+                    {
+                        "\n": -0.1047346
+                    },
+                    {
+                        "<|endoftext|>": -0.68015236
+                    },
+                    {
+                        " if": -1.2555432
+                    },
+                    {
+                        " (": -0.038943533
+                    },
+                    {
+                        "serial": -0.5266054
+                    },
+                    {
+                        "ization": -0.002744346
+                    },
+                    {
+                        "File": -0.004078978
+                    },
+                    {
+                        " !=": -0.31049612
+                    },
+                    {
+                        " null": -0.00035764647
+                    },
+                    {
+                        ")": -0.09750389
+                    },
+                    {
+                        " {": -0.03952364
+                    },
+                    {
+                        "\n": -0.015116373
+                    },
+                    {
+                        "       ": -0.0119151855
+                    },
+                    {
+                        " File": -1.1424266
+                    },
+                    {
+                        "Input": -0.05949659
+                    },
+                    {
+                        "Stream": -5.1810483e-05
+                    },
+                    {
+                        " in": -0.04996684
+                    },
+                    {
+                        " =": -0.0036522301
+                    },
+                    {
+                        " new": -0.003293772
+                    },
+                    {
+                        " File": -0.000249787
+                    },
+                    {
+                        "Input": -1.6045058e-05
+                    },
+                    {
+                        "Stream": -4.721163e-06
+                    },
+                    {
+                        "(": -0.0002476394
+                    },
+                    {
+                        "serial": -0.0013788439
+                    },
+                    {
+                        "ization": -5.7177684e-05
+                    },
+                    {
+                        "File": -4.7399757e-05
+                    },
+                    {
+                        ");": -0.0004878777
+                    },
+                    {
+                        "\n": -0.002576707
+                    },
+                    {
+                        "       ": -0.0016191732
+                    },
+                    {
+                        " I": -0.044655453
+                    },
+                    {
+                        "OU": -8.892534e-06
+                    },
+                    {
+                        "t": -9.65175e-05
+                    },
+                    {
+                        "ils": -9.012677e-06
+                    },
+                    {
+                        ".": -2.6298881e-05
+                    },
+                    {
+                        "copy": -0.00031847187
+                    },
+                    {
+                        "(": -0.0018298241
+                    },
+                    {
+                        "in": -0.001686281
+                    },
+                    {
+                        ",": -0.00033510666
+                    },
+                    {
+                        " production": -0.024799194
+                    },
+                    {
+                        ");": -0.0006265925
+                    },
+                    {
+                        "\n": -0.0044983663
+                    },
+                    {
+                        "       ": -0.21245234
+                    },
+                    {
+                        " serial": -0.34949222
+                    },
+                    {
+                        "ization": -0.00015100244
+                    },
+                    {
+                        "File": -0.00013085242
+                    },
+                    {
+                        ".": -0.061873015
+                    },
+                    {
+                        "delete": -0.00056903914
+                    },
+                    {
+                        "();": -0.000862803
+                    },
+                    {
+                        "\n": -0.0025320696
+                    },
+                    {
+                        "       ": -0.05070649
+                    },
+                    {
+                        " serial": -0.009032286
+                    },
+                    {
+                        "ization": -4.144026e-05
+                    },
+                    {
+                        "File": -1.6165199e-05
+                    },
+                    {
+                        " =": -0.00082647346
+                    },
+                    {
+                        " null": -0.00025956213
+                    },
+                    {
+                        ";": -5.8725527e-05
+                    },
+                    {
+                        "\n": -0.005932831
+                    },
+                    {
+                        "   ": -0.048246928
+                    },
+                    {
+                        " }": -0.0006107265
+                    },
+                    {
+                        "\n": -0.26271164
+                    },
+                    {
+                        "   ": -0.76300925
+                    },
+                    {
+                        " production": -1.2605159
+                    },
+                    {
+                        "Stream": -0.0010402352
+                    },
+                    {
+                        ".": -0.0046481234
+                    },
+                    {
+                        "close": -0.085763134
+                    },
+                    {
+                        "();": -0.0017014459
+                    },
+                    {
+                        "\n": -0.015659798
+                    },
+                    {
+                        "}": -0.1630959
+                    },
+                    {
+                        "\n": -0.0491812
+                    },
+                    {
+                        "\n": -0.22762777
+                    },
+                    {
+                        " void": -0.030950088
+                    },
+                    {
+                        " write": -0.25592402
+                    },
+                    {
+                        "Item": -0.050935462
+                    },
+                    {
+                        "(": -0.03144369
+                    },
+                    {
+                        "Object": -0.0963918
+                    },
+                    {
+                        "Output": -0.010130001
+                    },
+                    {
+                        "Stream": -0.0018015191
+                    },
+                    {
+                        " output": -0.14893635
+                    },
+                    {
+                        "Stream": -0.0089654075
+                    },
+                    {
+                        ")": -0.017446214
+                    },
+                    {
+                        "\n": -0.35441467
+                    },
+                    {
+                        "       ": -0.029569032
+                    },
+                    {
+                        " throws": -0.00021514892
+                    },
+                    {
+                        " IO": -0.0087421285
+                    },
+                    {
+                        "Exception": -0.00013669553
+                    },
+                    {
+                        " {": -0.23236215
+                    },
+                    {
+                        "\n": -0.008734672
+                    },
+                    {
+                        "   ": -0.014449933
+                    },
+                    {
+                        " output": -0.23927929
+                    },
+                    {
+                        "Stream": -0.00014027084
+                    },
+                    {
+                        ".": -0.00025694142
+                    },
+                    {
+                        "default": -0.045549866
+                    },
+                    {
+                        "Write": -6.48061e-05
+                    },
+                    {
+                        "Object": -1.1159372e-05
+                    },
+                    {
+                        "();": -0.00035001428
+                    },
+                    {
+                        "\n": -0.020659098
+                    },
+                    {
+                        "   ": -0.12611629
+                    },
+                    {
+                        " /*": -1.0543057
+                    },
+                    {
+                        "Stream": -0.00014754539
+                    },
+                    {
+                        ".": -0.0003816121
+                    },
+                    {
+                        "close": -0.35992563
+                    },
+                    {
+                        "();": -0.0003642048
+                    },
+                    {
+                        "\n": -0.025382452
+                    },
+                    {
+                        "}": -0.6245079
+                    },
+                    {
+                        "\n": -0.031648587
+                    },
+                    {
+                        "private": -0.7228769
+                    },
+                    {
+                        " void": -0.27055168
+                    },
+                    {
+                        " write": -1.4566518
+                    },
+                    {
+                        "Item": -0.88138616
+                    },
+                    {
+                        "(": -0.28049746
+                    },
+                    {
+                        "Object": -0.6986562
+                    },
+                    {
+                        "Input": -0.031516824
+                    },
+                    {
+                        "Stream": -0.025054324
+                    },
+                    {
+                        " input": -0.061245523
+                    },
+                    {
+                        "Stream": -0.007926289
+                    },
+                    {
+                        ")": -0.048618685
+                    },
+                    {
+                        "\n": -0.06847455
+                    },
+                    {
+                        "       ": -0.03048752
+                    },
+                    {
+                        " throws": -0.00025145593
+                    },
+                    {
+                        " IO": -0.006915207
+                    },
+                    {
+                        "Exception": -3.4403198e-05
+                    },
+                    {
+                        ",": -0.016873203
+                    },
+                    {
+                        " Class": -0.0013489996
+                    },
+                    {
+                        "Not": -2.5941252e-05
+                    },
+                    {
+                        "Found": -6.6619094e-07
+                    },
+                    {
+                        "Exception": -3.8103353e-05
+                    },
+                    {
+                        " {": -0.0060675684
+                    },
+                    {
+                        "\n": -0.008221798
+                    },
+                    {
+                        "   ": -0.008852227
+                    },
+                    {
+                        " input": -0.17927605
+                    },
+                    {
+                        "Stream": -0.00012012551
+                    },
+                    {
+                        ".": -0.00043796306
+                    },
+                    {
+                        "default": -0.006879196
+                    },
+                    {
+                        "Read": -0.0011159552
+                    },
+                    {
+                        "Object": -8.51908e-05
+                    },
+                    {
+                        "();": -0.00015755986
+                    },
+                    {
+                        "\n": -0.020742586
+                    },
+                    {
+                        "   ": -0.022830464
+                    },
+                    {
+                        " /*": -1.0793477
+                    },
+                    {
+                        "Data": -0.0019305066
+                    },
+                    {
+                        " =": -0.005359184
+                    },
+                    {
+                        " new": -1.5343953
+                    },
+                    {
+                        " Byte": -0.44300592
+                    },
+                    {
+                        "[": -0.013704711
+                    },
+                    {
+                        "(": -1.0274576
+                    },
+                    {
+                        "int": -0.005511104
+                    },
+                    {
+                        ")": -0.005633317
+                    },
+                    {
+                        " input": -0.9615501
+                    },
+                    {
+                        "Stream": -0.002907528
+                    },
+                    {
+                        ".": -0.0010450102
+                    },
+                    {
+                        "read": -0.10388797
+                    },
+                    {
+                        "Long": -0.08768943
+                    },
+                    {
+                        "()": -0.00097639667
+                    },
+                    {
+                        "];": -0.0015440708
+                    },
+                    {
+                        "\n": -0.012966802
+                    },
+                    {
+                        "   ": -0.0025895562
+                    },
+                    {
+                        " input": -0.36716688
+                    },
+                    {
+                        "Stream": -0.00012989782
+                    },
+                    {
+                        ".": -0.00034047384
+                    },
+                    {
+                        "read": -0.0033000526
+                    },
+                    {
+                        "F": -0.25064084
+                    },
+                    {
+                        "ully": -5.0778563e-06
+                    },
+                    {
+                        "(": -0.0005437528
+                    },
+                    {
+                        "s": -0.0025207754
+                    },
+                    {
+                        "aved": -1.7236207e-05
+                    },
+                    {
+                        "Data": -0.0001375281
+                    },
+                    {
+                        ");": -0.043833703
+                    },
+                    {
+                        "\n": -0.010823759
+                    },
+                    {
+                        "   ": -0.103335336
+                    },
+                    {
+                        " input": -0.13609448
+                    },
+                    {
+                        "Stream": -0.00013264055
+                    },
+                    {
+                        ".": -0.00011499579
+                    },
+                    {
+                        "close": -0.0009125599
+                    },
+                    {
+                        "();": -0.00013323847
+                    },
+                    {
+                        "\n": -0.0040288847
+                    },
+                    {
+                        "}": -0.04504744
+                    },
+                    {
+                        "\n": -0.0038810803
+                    },
+                    {
+                        "private": -0.05217546
+                    },
+                    {
+                        " void": -0.004303855
+                    },
+                    {
+                        " write": -0.015073046
+                    },
+                    {
+                        "Item": -0.0016464569
+                    },
+                    {
+                        "(": -0.0010299757
+                    },
+                    {
+                        "Object": -0.005818435
+                    },
+                    {
+                        "Output": -0.0007458246
+                    },
+                    {
+                        "Stream": -5.0856816e-05
+                    },
+                    {
+                        " output": -0.0045566256
+                    },
+                    {
+                        "Stream": -0.00044464157
+                    },
+                    {
+                        ")": -0.0025424669
+                    },
+                    {
+                        "\n": -0.016460054
+                    },
+                    {
+                        "       ": -0.007691361
+                    },
+                    {
+                        " throws": -0.00010045139
+                    },
+                    {
+                        " IO": -0.0010303333
+                    },
+                    {
+                        "Exception": -4.2511267e-05
+                    },
+                    {
+                        " {": -0.012499067
+                    },
+                    {
+                        "\n": -0.002287934
+                    },
+                    {
+                        "   ": -0.0029045986
+                    },
+                    {
+                        " output": -0.07705428
+                    },
+                    {
+                        "Stream": -6.0276172e-05
+                    },
+                    {
+                        ".": -0.00067567825
+                    },
+                    {
+                        "default": -0.0025959502
+                    },
+                    {
+                        "Write": -8.7457636e-05
+                    },
+                    {
+                        "Object": -9.115311e-05
+                    },
+                    {
+                        "();": -0.00010796247
+                    },
+                    {
+                        "\n": -0.010863529
+                    },
+                    {
+                        "   ": -0.050113536
+                    },
+                    {
+                        " output": -0.83542323
+                    },
+                    {
+                        "[]": -0.026061298
+                    },
+                    {
+                        " data": -0.54753596
+                    },
+                    {
+                        " =": -0.25023866
+                    },
+                    {
+                        " production": -0.45776632
+                    },
+                    {
+                        ".": -0.010068887
+                    },
+                    {
+                        "to": -0.023982676
+                    },
+                    {
+                        "Byte": -0.0013543123
+                    },
+                    {
+                        "Array": -0.000117858675
+                    },
+                    {
+                        "();": -0.0008057133
+                    },
+                    {
+                        "\n": -0.0093546575
+                    },
+                    {
+                        "   ": -0.0016241884
+                    },
+                    {
+                        " output": -0.23324867
+                    },
+                    {
+                        "Stream": -0.00030570905
+                    },
+                    {
+                        ".": -0.00026481107
+                    },
+                    {
+                        "write": -0.00036384718
+                    },
+                    {
+                        "Long": -0.0037209692
+                    },
+                    {
+                        "(": -0.008303712
+                    },
+                    {
+                        "data": -0.0054781404
+                    },
+                    {
+                        ".": -0.00048728072
+                    },
+                    {
+                        "length": -0.00023786427
+                    },
+                    {
+                        ");": -0.00032705773
+                    },
+                    {
+                        "\n": -0.0044101747
+                    },
+                    {
+                        "   ": -0.00034536046
+                    },
+                    {
+                        " output": -0.021489847
+                    },
+                    {
+                        "Stream": -3.9055147e-05
+                    },
+                    {
+                        ".": -3.2855354e-05
+                    },
+                    {
+                        "write": -0.0015092093
+                    },
+                    {
+                        "(": -0.0023102195
+                    },
+                    {
+                        "data": -0.007487042
+                    },
+                    {
+                        ");": -0.027489664
+                    },
+                    {
+                        "\n": -0.0033649388
+                    },
+                    {
+                        "   ": -0.014316479
+                    },
+                    {
+                        " output": -0.06489375
+                    },
+                    {
+                        "Stream": -8.507158e-05
+                    },
+                    {
+                        ".": -0.00021967979
+                    },
+                    {
+                        "close": -0.042236295
+                    },
+                    {
+                        "();": -0.00013180608
+                    },
+                    {
+                        "\n": -0.0042732074
+                    },
+                    {
+                        "}": -0.32894972
+                    },
+                    {
+                        "\n": -0.013831008
+                    },
+                    {
+                        "private": -0.47288013
+                    },
+                    {
+                        " void": -0.10241303
+                    },
+                    {
+                        " read": -1.3379917
+                    },
+                    {
+                        "Item": -0.10187797
+                    },
+                    {
+                        "(": -0.04563184
+                    },
+                    {
+                        "Object": -0.11203622
+                    },
+                    {
+                        "Input": -0.0038071822
+                    },
+                    {
+                        "Stream": -0.0009990068
+                    },
+                    {
+                        " input": -0.01012374
+                    },
+                    {
+                        "Stream": -0.0010124915
+                    },
+                    {
+                        ")": -0.003084548
+                    },
+                    {
+                        "\n": -0.028922834
+                    },
+                    {
+                        "       ": -0.010736278
+                    },
+                    {
+                        " throws": -0.0003195429
+                    },
+                    {
+                        " IO": -0.006631361
+                    },
+                    {
+                        "Exception": -1.2708151e-05
+                    },
+                    {
+                        ",": -0.030610671
+                    },
+                    {
+                        " Class": -0.0013400486
+                    },
+                    {
+                        "Not": -5.5269407e-05
+                    },
+                    {
+                        "Found": -2.0966954e-06
+                    },
+                    {
+                        "Exception": -4.370523e-05
+                    },
+                    {
+                        " {": -0.0051594106
+                    },
+                    {
+                        "\n": -0.002766698
+                    },
+                    {
+                        "   ": -0.006033986
+                    },
+                    {
+                        " input": -0.06890236
+                    },
+                    {
+                        "Stream": -0.00013025544
+                    },
+                    {
+                        ".": -0.00011106284
+                    },
+                    {
+                        "default": -0.005395857
+                    },
+                    {
+                        "Read": -0.0003216896
+                    },
+                    {
+                        "Object": -7.648668e-05
+                    },
+                    {
+                        "();": -0.00017520743
+                    },
+                    {
+                        "\n": -0.00724272
+                    },
+                    {
+                        "   ": -0.015024216
+                    },
+                    {
+                        " saved": -1.6285559
+                    },
+                    {
+                        " (": -0.038972665
+                    },
+                    {
+                        "serial": -0.54421103
+                    },
+                    {
+                        "ization": -0.0041461913
+                    },
+                    {
+                        "File": -0.010044927
+                    },
+                    {
+                        " !=": -0.55575866
+                    },
+                    {
+                        " null": -0.0004563306
+                    },
+                    {
+                        ")": -0.047154553
+                    },
+                    {
+                        " {": -0.0063023707
+                    },
+                    {
+                        "\n": -0.0042508803
+                    },
+                    {
+                        "       ": -0.0043337275
+                    },
+                    {
+                        " saved": -1.1596581
+                    },
+                    {
+                        "Input": -0.23016456
+                    },
+                    {
+                        "Stream": -5.8247755e-05
+                    },
+                    {
+                        " in": -0.037949562
+                    },
+                    {
+                        " =": -0.0027032848
+                    },
+                    {
+                        " new": -0.003079287
+                    },
+                    {
+                        " File": -0.0003024923
+                    },
+                    {
+                        "Input": -9.628002e-05
+                    },
+                    {
+                        "Stream": -2.0935424e-05
+                    },
+                    {
+                        "(": -0.00026457265
+                    },
+                    {
+                        "serial": -0.0018197318
+                    },
+                    {
+                        "ization": -0.00012751458
+                    },
+                    {
+                        "File": -0.0001011657
+                    },
+                    {
+                        ");": -0.00050171156
+                    },
+                    {
+                        "\n": -0.0020362155
+                    },
+                    {
+                        "       ": -0.0020157902
+                    },
+                    {
+                        " I": -0.58505124
+                    },
+                    {
+                        " =": -0.48017368
+                    },
+                    {
+                        " new": -0.098302245
+                    },
+                    {
+                        " Byte": -0.18736714
+                    },
+                    {
+                        "Array": -0.00080058357
+                    },
+                    {
+                        "Output": -0.00142182
+                    },
+                    {
+                        "Stream": -0.00021574495
+                    },
+                    {
+                        "();": -0.02156695
+                    },
+                    {
+                        "\n": -0.004537524
+                    },
+                    {
+                        "       ": -0.0014206251
+                    },
+                    {
+                        " I": -0.016874962
+                    },
+                    {
+                        "OU": -5.79217e-06
+                    },
+                    {
+                        "t": -3.6195077e-05
+                    },
+                    {
+                        "ils": -6.3900848e-06
+                    },
+                    {
+                        ".": -7.11223e-05
+                    },
+                    {
+                        "copy": -0.00010939391
+                    },
+                    {
+                        "(": -0.0005371935
+                    },
+                    {
+                        "in": -0.0017155951
+                    },
+                    {
+                        ",": -0.00018414622
+                    },
+                    {
+                        " production": -0.0035711722
+                    },
+                    {
+                        ");": -0.00040403462
+                    },
+                    {
+                        "\n": -0.0027736917
+                    },
+                    {
+                        "       ": -0.049615
+                    },
+                    {
+                        " serial": -0.08235403
+                    },
+                    {
+                        "ization": -7.314978e-05
+                    },
+                    {
+                        "File": -0.000118572985
+                    },
+                    {
+                        ".": -0.020493178
+                    },
+                    {
+                        "delete": -0.00022051518
+                    },
+                    {
+                        "();": -0.00041232194
+                    },
+                    {
+                        "\n": -0.0013299019
+                    },
+                    {
+                        "       ": -0.0129721165
+                    },
+                    {
+                        " serial": -0.003920689
+                    },
+                    {
+                        "ization": -2.582111e-05
+                    },
+                    {
+                        "File": -4.4419543e-05
+                    },
+                    {
+                        " =": -0.001047873
+                    },
+                    {
+                        " null": -0.00014671094
+                    },
+                    {
+                        ";": -9.258174e-05
+                    },
+                    {
+                        "\n": -0.0025916463
+                    },
+                    {
+                        "   ": -0.04065962
+                    },
+                    {
+                        " }": -0.00034524407
+                    },
+                    {
+                        "\n": -0.23845278
+                    },
+                    {
+                        "   ": -0.08358825
+                    },
+                    {
+                        " input": -0.045168784
+                    },
+                    {
+                        "Stream": -4.29881e-05
+                    },
+                    {
+                        ".": -8.447461e-05
+                    },
+                    {
+                        "close": -0.00092067267
+                    },
+                    {
+                        "();": -8.018216e-05
+                    },
+                    {
+                        "\n": -0.0014810939
+                    },
+                    {
+                        "}": -0.008551601
+                    },
+                    {
+                        "\n": -0.0028431471
+                    },
+                    {
+                        "private": -0.035344426
+                    },
+                    {
+                        " void": -0.0036552807
+                    },
+                    {
+                        " write": -0.014300698
+                    },
+                    {
+                        "Item": -0.0012637138
+                    },
+                    {
+                        "(": -0.00061311346
+                    },
+                    {
+                        "Object": -0.0026433999
+                    },
+                    {
+                        "Output": -0.00017639951
+                    },
+                    {
+                        "Stream": -3.4048382e-05
+                    },
+                    {
+                        " output": -0.0016080078
+                    },
+                    {
+                        "Stream": -0.00019344824
+                    },
+                    {
+                        ")": -0.0015662182
+                    },
+                    {
+                        "\n": -0.0069014644
+                    },
+                    {
+                        "       ": -0.0028249177
+                    },
+                    {
+                        " throws": -8.948419e-05
+                    },
+                    {
+                        " IO": -0.001497985
+                    },
+                    {
+                        "Exception": -1.1039229e-05
+                    },
+                    {
+                        " {": -0.00792737
+                    },
+                    {
+                        "\n": -0.001838241
+                    },
+                    {
+                        "   ": -0.0020467292
+                    },
+                    {
+                        " output": -0.04375511
+                    },
+                    {
+                        "Stream": -5.3837026e-05
+                    },
+                    {
+                        ".": -0.00021550842
+                    },
+                    {
+                        "default": -0.0011984879
+                    },
+                    {
+                        "Write": -6.0395385e-05
+                    },
+                    {
+                        "Object": -3.690939e-05
+                    },
+                    {
+                        "();": -4.680184e-05
+                    },
+                    {
+                        "\n": -0.004114829
+                    },
+                    {
+                        "   ": -0.018171227
+                    },
+                    {
+                        " output": -0.30350918
+                    },
+                    {
+                        "Stream": -3.5240468e-05
+                    },
+                    {
+                        ".": -0.0005729758
+                    },
+                    {
+                        "close": -0.014374285
+                    },
+                    {
+                        "();": -8.197403e-05
+                    },
+                    {
+                        "\n": -0.0028790128
+                    },
+                    {
+                        "}": -0.07263101
+                    },
+                    {
+                        "\n": -0.008288326
+                    },
+                    {
+                        "private": -0.2344719
+                    },
+                    {
+                        " void": -0.039933443
+                    },
+                    {
+                        " read": -0.28933448
+                    },
+                    {
+                        "Item": -0.019142134
+                    },
+                    {
+                        "(": -0.010930836
+                    },
+                    {
+                        "Object": -0.012488866
+                    },
+                    {
+                        "Input": -0.0015761905
+                    },
+                    {
+                        "Stream": -0.00037851362
+                    },
+                    {
+                        " input": -0.0039721546
+                    },
+                    {
+                        "Stream": -0.0008806402
+                    },
+                    {
+                        ")": -0.0008013007
+                    },
+                    {
+                        "\n": -0.012229923
+                    },
+                    {
+                        "       ": -0.008820538
+                    },
+                    {
+                        " throws": -0.00020274745
+                    },
+                    {
+                        " IO": -0.0022600966
+                    },
+                    {
+                        "Exception": -6.8669196e-06
+                    },
+                    {
+                        ",": -0.004711599
+                    },
+                    {
+                        " Class": -0.0008015373
+                    },
+                    {
+                        "Not": -8.176345e-06
+                    },
+                    {
+                        "Found": -9.055464e-07
+                    },
+                    {
+                        "Exception": -1.3542607e-05
+                    },
+                    {
+                        " {": -0.0020125632
+                    },
+                    {
+                        "\n": -0.0013959743
+                    },
+                    {
+                        "   ": -0.0030226076
+                    },
+                    {
+                        " input": -0.023580438
+                    },
+                    {
+                        "Stream": -4.9782993e-05
+                    },
+                    {
+                        ".": -0.0009515168
+                    },
+                    {
+                        "default": -0.0013353939
+                    },
+                    {
+                        "Read": -0.00014623316
+                    },
+                    {
+                        "Object": -3.166233e-05
+                    },
+                    {
+                        "();": -5.8845668e-05
+                    },
+                    {
+                        "\n": -0.0065818634
+                    },
+                    {
+                        "   ": -0.04491034
+                    },
+                    {
+                        " if": -1.2448261
+                    },
+                    {
+                        " (": -0.018667066
+                    },
+                    {
+                        "serial": -0.44333735
+                    },
+                    {
+                        "ization": -0.0015864583
+                    },
+                    {
+                        "File": -0.0031210193
+                    },
+                    {
+                        " !=": -0.107877
+                    },
+                    {
+                        " null": -0.00032204814
+                    },
+                    {
+                        ")": -0.022450324
+                    },
+                    {
+                        " {": -0.002771899
+                    },
+                    {
+                        "\n": -0.0021800485
+                    },
+                    {
+                        "       ": -0.0041434392
+                    },
+                    {
+                        " File": -0.3725869
+                    },
+                    {
+                        "Input": -0.0384088
+                    },
+                    {
+                        "Stream": -2.8445576e-05
+                    },
+                    {
+                        " in": -0.0031580913
+                    },
+                    {
+                        " =": -0.000740218
+                    },
+                    {
+                        " new": -0.001250644
+                    },
+                    {
+                        " File": -0.00015124086
+                    },
+                    {
+                        "Input": -0.00024441796
+                    },
+                    {
+                        "Stream": -2.5744682e-06
+                    },
+                    {
+                        "(": -6.516092e-05
+                    },
+                    {
+                        "serial": -0.00038602657
+                    },
+                    {
+                        "ization": -1.9503042e-05
+                    },
+                    {
+                        "File": -3.7743856e-05
+                    },
+                    {
+                        ");": -0.00014003337
+                    },
+                    {
+                        "\n": -0.0010198909
+                    },
+                    {
+                        "       ": -0.0015278922
+                    },
+                    {
+                        " production": -0.31319916
+                    },
+                    {
+                        " =": -0.005790378
+                    },
+                    {
+                        " new": -0.008619896
+                    },
+                    {
+                        " Byte": -0.022771621
+                    },
+                    {
+                        "Array": -0.0009436406
+                    },
+                    {
+                        "Output": -0.00029641076
+                    },
+                    {
+                        "Stream": -4.430127e-05
+                    },
+                    {
+                        "();": -0.0016776229
+                    },
+                    {
+                        "\n": -0.001170259
+                    },
+                    {
+                        "       ": -0.0005821605
+                    },
+                    {
+                        " I": -0.011339002
+                    },
+                    {
+                        "OU": -4.361666e-06
+                    },
+                    {
+                        "t": -8.638288e-05
+                    },
+                    {
+                        "ils": -4.277735e-07
+                    },
+                    {
+                        ".": -4.2033495e-05
+                    },
+                    {
+                        "copy": -0.00014265596
+                    },
+                    {
+                        "(": -0.00018390873
+                    },
+                    {
+                        "in": -0.00039652258
+                    },
+                    {
+                        ",": -5.7057543e-05
+                    },
+                    {
+                        " production": -0.0009082647
+                    },
+                    {
+                        ");": -0.00036289258
+                    },
+                    {
+                        "\n": -0.0012063632
+                    },
+                    {
+                        "       ": -0.029119002
+                    },
+                    {
+                        " serial": -0.018618425
+                    },
+                    {
+                        "ization": -4.573365e-05
+                    },
+                    {
+                        "File": -7.6964454e-05
+                    },
+                    {
+                        ".": -0.0020537158
+                    },
+                    {
+                        "delete": -0.000524134
+                    },
+                    {
+                        "();": -0.00075298175
+                    },
+                    {
+                        "\n": -0.0007085461
+                    },
+                    {
+                        "       ": -0.010688019
+                    },
+                    {
+                        " serial": -0.002313027
+                    },
+                    {
+                        "ization": -1.306671e-05
+                    },
+                    {
+                        "File": -1.8310955e-05
+                    },
+                    {
+                        " =": -0.0003266982
+                    },
+                    {
+                        " null": -0.00026254423
+                    },
+                    {
+                        ";": -2.6298881e-05
+                    },
+                    {
+                        "\n": -0.0010210839
+                    },
+                    {
+                        "   ": -0.027139042
+                    },
+                    {
+                        " }": -0.0002229003
+                    },
+                    {
+                        "\n": -0.04642285
+                    },
+                    {
+                        "   ": -0.019258972
+                    },
+                    {
+                        " input": -0.058767803
+                    },
+                    {
+                        "Stream": -3.0707724e-05
+                    },
+                    {
+                        ".": -0.001219434
+                    },
+                    {
+                        "close": -0.00080738415
+                    },
+                    {
+                        "();": -5.550595e-05
+                    },
+                    {
+                        "\n": -0.0031537865
+                    },
+                    {
+                        "}": -0.054443575
+                    },
+                    {
+                        "\n": -0.0023707408
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    625,
+                    627,
+                    631,
+                    636,
+                    641,
+                    647,
+                    653,
+                    656,
+                    657,
+                    660,
+                    663,
+                    665,
+                    671,
+                    678,
+                    682,
+                    685,
+                    690,
+                    691,
+                    693,
+                    694,
+                    701,
+                    706,
+                    711,
+                    717,
+                    720,
+                    722,
+                    726,
+                    731,
+                    736,
+                    742,
+                    743,
+                    749,
+                    756,
+                    760,
+                    762,
+                    763,
+                    770,
+                    772,
+                    774,
+                    775,
+                    778,
+                    779,
+                    783,
+                    784,
+                    786,
+                    787,
+                    798,
+                    800,
+                    801,
+                    808,
+                    815,
+                    822,
+                    826,
+                    827,
+                    833,
+                    836,
+                    837,
+                    844,
+                    851,
+                    858,
+                    862,
+                    864,
+                    869,
+                    870,
+                    871,
+                    874,
+                    876,
+                    877,
+                    880,
+                    886,
+                    892,
+                    893,
+                    898,
+                    901,
+                    902,
+                    903,
+                    904,
+                    911,
+                    916,
+                    922,
+                    926,
+                    927,
+                    933,
+                    939,
+                    945,
+                    952,
+                    958,
+                    959,
+                    960,
+                    967,
+                    974,
+                    977,
+                    986,
+                    988,
+                    989,
+                    992,
+                    999,
+                    1005,
+                    1006,
+                    1013,
+                    1018,
+                    1024,
+                    1027,
+                    1028,
+                    1031,
+                    1038,
+                    1044,
+                    1045,
+                    1050,
+                    1053,
+                    1054,
+                    1055,
+                    1056,
+                    1063,
+                    1068,
+                    1073,
+                    1077,
+                    1078,
+                    1084,
+                    1089,
+                    1095,
+                    1101,
+                    1107,
+                    1108,
+                    1109,
+                    1116,
+                    1123,
+                    1126,
+                    1135,
+                    1136,
+                    1142,
+                    1145,
+                    1150,
+                    1159,
+                    1161,
+                    1162,
+                    1165,
+                    1171,
+                    1177,
+                    1178,
+                    1185,
+                    1189,
+                    1195,
+                    1198,
+                    1199,
+                    1202,
+                    1208,
+                    1212,
+                    1214,
+                    1218,
+                    1223,
+                    1224,
+                    1225,
+                    1228,
+                    1229,
+                    1235,
+                    1241,
+                    1242,
+                    1246,
+                    1250,
+                    1252,
+                    1254,
+                    1255,
+                    1258,
+                    1264,
+                    1270,
+                    1271,
+                    1275,
+                    1276,
+                    1280,
+                    1281,
+                    1282,
+                    1286,
+                    1290,
+                    1292,
+                    1293,
+                    1296,
+                    1302,
+                    1308,
+                    1309,
+                    1314,
+                    1317,
+                    1318,
+                    1319,
+                    1320,
+                    1327,
+                    1332,
+                    1338,
+                    1342,
+                    1343,
+                    1349,
+                    1355,
+                    1361,
+                    1368,
+                    1374,
+                    1375,
+                    1376,
+                    1383,
+                    1390,
+                    1393,
+                    1402,
+                    1404,
+                    1405,
+                    1408,
+                    1415,
+                    1421,
+                    1422,
+                    1429,
+                    1434,
+                    1440,
+                    1443,
+                    1444,
+                    1447,
+                    1452,
+                    1454,
+                    1459,
+                    1461,
+                    1472,
+                    1473,
+                    1475,
+                    1479,
+                    1484,
+                    1487,
+                    1488,
+                    1491,
+                    1498,
+                    1504,
+                    1505,
+                    1510,
+                    1514,
+                    1515,
+                    1519,
+                    1520,
+                    1526,
+                    1528,
+                    1529,
+                    1532,
+                    1539,
+                    1545,
+                    1546,
+                    1551,
+                    1552,
+                    1556,
+                    1558,
+                    1559,
+                    1562,
+                    1569,
+                    1575,
+                    1576,
+                    1581,
+                    1584,
+                    1585,
+                    1586,
+                    1587,
+                    1594,
+                    1599,
+                    1604,
+                    1608,
+                    1609,
+                    1615,
+                    1620,
+                    1626,
+                    1632,
+                    1638,
+                    1639,
+                    1640,
+                    1647,
+                    1654,
+                    1657,
+                    1666,
+                    1667,
+                    1673,
+                    1676,
+                    1681,
+                    1690,
+                    1692,
+                    1693,
+                    1696,
+                    1702,
+                    1708,
+                    1709,
+                    1716,
+                    1720,
+                    1726,
+                    1729,
+                    1730,
+                    1733,
+                    1736,
+                    1738,
+                    1744,
+                    1751,
+                    1755,
+                    1758,
+                    1763,
+                    1764,
+                    1766,
+                    1767,
+                    1774,
+                    1779,
+                    1784,
+                    1790,
+                    1793,
+                    1795,
+                    1799,
+                    1804,
+                    1809,
+                    1815,
+                    1816,
+                    1822,
+                    1829,
+                    1833,
+                    1835,
+                    1836,
+                    1843,
+                    1854,
+                    1856,
+                    1860,
+                    1865,
+                    1870,
+                    1876,
+                    1882,
+                    1885,
+                    1886,
+                    1893,
+                    1895,
+                    1897,
+                    1898,
+                    1901,
+                    1902,
+                    1906,
+                    1907,
+                    1909,
+                    1910,
+                    1921,
+                    1923,
+                    1924,
+                    1931,
+                    1938,
+                    1945,
+                    1949,
+                    1950,
+                    1956,
+                    1959,
+                    1960,
+                    1967,
+                    1974,
+                    1981,
+                    1985,
+                    1987,
+                    1992,
+                    1993,
+                    1994,
+                    1997,
+                    1999,
+                    2000,
+                    2003,
+                    2009,
+                    2015,
+                    2016,
+                    2021,
+                    2024,
+                    2025,
+                    2026,
+                    2027,
+                    2034,
+                    2039,
+                    2045,
+                    2049,
+                    2050,
+                    2056,
+                    2062,
+                    2068,
+                    2075,
+                    2081,
+                    2082,
+                    2083,
+                    2090,
+                    2097,
+                    2100,
+                    2109,
+                    2111,
+                    2112,
+                    2115,
+                    2122,
+                    2128,
+                    2129,
+                    2136,
+                    2141,
+                    2147,
+                    2150,
+                    2151,
+                    2154,
+                    2161,
+                    2167,
+                    2168,
+                    2173,
+                    2176,
+                    2177,
+                    2178,
+                    2179,
+                    2186,
+                    2191,
+                    2196,
+                    2200,
+                    2201,
+                    2207,
+                    2212,
+                    2218,
+                    2224,
+                    2230,
+                    2231,
+                    2232,
+                    2239,
+                    2246,
+                    2249,
+                    2258,
+                    2259,
+                    2265,
+                    2268,
+                    2273,
+                    2282,
+                    2284,
+                    2285,
+                    2288,
+                    2294,
+                    2300,
+                    2301,
+                    2308,
+                    2312,
+                    2318,
+                    2321,
+                    2322,
+                    2325,
+                    2328,
+                    2330,
+                    2336,
+                    2343,
+                    2347,
+                    2350,
+                    2355,
+                    2356,
+                    2358,
+                    2359,
+                    2366,
+                    2371,
+                    2376,
+                    2382,
+                    2385,
+                    2387,
+                    2391,
+                    2396,
+                    2401,
+                    2407,
+                    2408,
+                    2414,
+                    2421,
+                    2425,
+                    2427,
+                    2428,
+                    2435,
+                    2446,
+                    2448,
+                    2452,
+                    2457,
+                    2462,
+                    2468,
+                    2474,
+                    2477,
+                    2478,
+                    2485,
+                    2487,
+                    2489,
+                    2490,
+                    2493,
+                    2494,
+                    2498,
+                    2499,
+                    2501,
+                    2502,
+                    2513,
+                    2515,
+                    2516,
+                    2523,
+                    2530,
+                    2537,
+                    2541,
+                    2542,
+                    2548,
+                    2551,
+                    2552,
+                    2559,
+                    2566,
+                    2573,
+                    2577,
+                    2579,
+                    2584,
+                    2585,
+                    2586,
+                    2589,
+                    2591,
+                    2592,
+                    2595,
+                    2601,
+                    2607,
+                    2608,
+                    2613,
+                    2616,
+                    2617,
+                    2618
+                ]
+            },
+            "finish_reason": "length"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(1);\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "1",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.88660055,
+                    -4.2283435,
+                    -0.09885216,
+                    -0.13062648
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "false": -1.7847648
+                    },
+                    {
+                        ");": -0.09885216
+                    },
+                    {
+                        "\n": -0.13062648
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    665,
+                    667
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(false);\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "false",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.88660055,
+                    -1.7847648,
+                    -0.04363481,
+                    -0.12339859
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "false": -1.7847648
+                    },
+                    {
+                        ");": -0.04363481
+                    },
+                    {
+                        "\n": -0.12339859
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    669,
+                    671
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 655,
+        "total_tokens": 808
+    },
+    "validation_result": [
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(true);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(true);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(inputStream);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(in);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence();\n    if (production == null) {\n        return;\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    OutputStream output = getOutputStream();\n    if (output == null) {\n        return;\n    }\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(true);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(true);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutItemSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = acquireOutItemSequence();\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireProduction(false);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = acquireProduction(false);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence();\n",
+            "correctness": "compile_success",
+            "translated": "    OutputStream output = getOutputStream();\n"
+        },
+        {
+            "patch": "    production = new ByteArrayOutputStream();\n    if (serializationFile != null) {\n        FileInputStream in = new FileInputStream(serializationFile);\n        IOUtils.copy(in, production);\n        serializationFile.delete();\n        serializationFile = null;\n    }\n    inputStream.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    outputStream.close();\n}\nprivate void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n    savedData = new byte[(int) inputStream.readLong()];\n    inputStream.readFully(savedData);\n    inputStream.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    byte[] data = production.toByteArray();\n    outputStream.writeLong(data.length);\n    outputStream.write(data);\n    outputStream.close();\n}\nprivate void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n    if (serializationFile != null) {\n        FileInputStream in = new FileInputStream(serializationFile);\n        production = new ByteArrayOutputStream();\n        IOUtils.copy(in, production);\n        serializationFile.delete();\n        serializationFile = null;\n    }\n    inputStream.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    outputStream.close();\n}\nprivate void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n    if (serializationFile != null) {\n        FileInputStream in = new FileInputStream(serializationFile);\n        production = new ByteArrayOutputStream();\n        IOUtils.copy(in, production);\n        serializationFile.delete();\n        serializationFile = null;\n    }\n    inputStream.close();\n}\n",
+            "correctness": "uncompilable",
+            "translated": "    output = new ByteArrayOutputStream();\n    if (dfosFile != null) {\n        FileInputStream input = new FileInputStream(dfosFile);\n        IOUtils.copy(input, output);\n        dfosFile.delete();\n        dfosFile = null;\n    }\n    in.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    outputStream.close();\n}\nprivate void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    cachedContent = new byte[(int) in.readLong()];\n    in.readFully(cachedContent);\n    in.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    byte[] data = output.toByteArray();\n    outputStream.writeLong(data.length);\n    outputStream.write(data);\n    outputStream.close();\n}\nprivate void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    if (dfosFile != null) {\n        FileInputStream input = new FileInputStream(dfosFile);\n        output = new ByteArrayOutputStream();\n        IOUtils.copy(input, output);\n        dfosFile.delete();\n        dfosFile = null;\n    }\n    in.close();\n}\nprivate void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n    outputStream.close();\n}\nprivate void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    if (dfosFile != null) {\n        FileInputStream input = new FileInputStream(dfosFile);\n        output = new ByteArrayOutputStream();\n        IOUtils.copy(input, output);\n        dfosFile.delete();\n        dfosFile = null;\n    }\n    in.close();\n}\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(1);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(1);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(false);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(false);\n"
+        }
+    ]
+}

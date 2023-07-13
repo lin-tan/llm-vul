@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "else if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.char",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)",
+        "else if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt",
+        "else if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charA",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) |",
+        "if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.char",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h,",
+        "if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt("
+    ],
+    "validation_result": [
+        {
+            "patch": "else if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.char",
+            "correctness": "uncompilable",
+            "translated": "else if(ch== '/') { if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.char"
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert("
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)"
+        },
+        {
+            "patch": "else if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt",
+            "correctness": "uncompilable",
+            "translated": "else if(ch== '/') { if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt"
+        },
+        {
+            "patch": "else if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charA",
+            "correctness": "uncompilable",
+            "translated": "else if(ch== '/') { if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charA"
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) |",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) |"
+        },
+        {
+            "patch": "if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.char",
+            "correctness": "uncompilable",
+            "translated": "if(ch== '/') { if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.char"
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h,",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert(i,"
+        },
+        {
+            "patch": "if(currentChar== '/') { if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(",
+            "correctness": "uncompilable",
+            "translated": "if(ch== '/') { if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt("
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt("
+        }
+    ]
+}

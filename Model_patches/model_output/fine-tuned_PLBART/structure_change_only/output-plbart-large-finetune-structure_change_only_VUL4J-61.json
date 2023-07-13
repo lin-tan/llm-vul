@@ -1,0 +1,56 @@
+{
+    "output": [
+        "doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(new InputSource(inputStream));",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream).getDocument();",
+        "final Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+        "document = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+        "try (Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream)) {",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(new ByteArrayInputStream(inputStream));",
+        "try { Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+    ],
+    "validation_result": [
+        {
+            "patch": "doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(new InputSource(inputStream));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream).getDocument();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "final Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "document = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(new ByteArrayInputStream(inputStream));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try { Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

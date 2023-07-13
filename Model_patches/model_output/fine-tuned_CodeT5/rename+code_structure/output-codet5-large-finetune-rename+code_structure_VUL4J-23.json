@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        return Encoding.forJavaScriptSource(dataProvider);\n</s></s></s>",
+        "<pad><s>        return Encode.forJavaScriptSource(dataProvider.trim());\n</s>",
+        "<pad><s>        return Encode.forJavaScriptSource(dataProvider, true);\n</s>",
+        "<pad><s>        return Encode.forJavaScriptSource(dataProvider, null);\n</s>",
+        "<pad><s>        return Encode.forJavaScriptSource(dataProvider).toString();\n</s>",
+        "<pad><s>        return encode.forJavaScriptSource(dataProvider);\n</s></s></s>",
+        "<pad><s>        return Encoder.forJavaScriptSource(dataProvider);\n</s></s></s>",
+        "<pad><s>        return encode(dataProvider);\n</s></s></s></s></s></s></s>",
+        "<pad><s>        return dataProvider;\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        return null;\n</s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        return Encoding.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encoding.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(dataProvider.trim());\n",
+            "correctness": "compile_success",
+            "translated": "        return Encode.forJavaScriptSource(source.trim());\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(dataProvider, true);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptSource(source, true);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(dataProvider, null);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptSource(source, null);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptSource(dataProvider).toString();\n",
+            "correctness": "compile_success",
+            "translated": "        return Encode.forJavaScriptSource(source).toString();\n"
+        },
+        {
+            "patch": "        return encode.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return encode.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return Encoder.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encoder.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return encode(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "        return encode(source);\n"
+        },
+        {
+            "patch": "        return dataProvider;\n",
+            "correctness": "compile_success",
+            "translated": "        return source;\n"
+        },
+        {
+            "patch": "        return null;\n",
+            "correctness": "compile_success",
+            "translated": "        return null;\n"
+        }
+    ]
+}

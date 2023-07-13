@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    c.set(field,i);\n</s></s></s></s></s>",
+        "<pad><s>    c.set(this.field,i-offset);\n</s>",
+        "<pad><s>    c.set(getField(),i-offset);\n</s></s>",
+        "<pad><s>    c.set(field,i-this.offset);\n</s>",
+        "<pad><s>    c.set(field,i + offset);\n</s></s></s>",
+        "<pad><s>    c.set(field,i+offset);\n</s></s></s>",
+        "<pad><s>    c.set(field, i);\n</s></s></s></s></s>",
+        "<pad><s>    c.set(field,i-offset);\n</s></s></s>",
+        "<pad><s>    c.set(field,i-offset.get());\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    c.set(field,i);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(this.field,i-offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(getField(),i-offset);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    c.set(field,i-this.offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field,i + offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field,i+offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field, i);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field,i-offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field,i-offset.get());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        }
+    ]
+}

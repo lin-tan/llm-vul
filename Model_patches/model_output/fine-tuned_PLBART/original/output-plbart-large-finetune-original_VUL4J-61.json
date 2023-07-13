@@ -1,0 +1,56 @@
+{
+    "output": [
+        "documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(false);",
+        "DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(true);",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+        "final DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+        "DocumentBuilder documentBuilder = getDocumentBuilderFactory().newDocumentBuilder();",
+        "DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.getDocumentBuilder();",
+        "DocumentBuilder documentBuilder = null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "final DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = getDocumentBuilderFactory().newDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.getDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = null;",
+            "correctness": "test_timeout"
+        }
+    ]
+}

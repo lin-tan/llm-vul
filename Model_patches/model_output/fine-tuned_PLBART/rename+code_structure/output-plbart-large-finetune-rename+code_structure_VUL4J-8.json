@@ -1,0 +1,66 @@
+{
+    "output": [
+        "} else {",
+        "} else if (outcome.isMalformed()) {",
+        "} else if (outcome.isOverflow()) {",
+        "} else if (!outcome.isMalformed()) {",
+        "} else { return result;",
+        "}",
+        "} else { }",
+        "} } else {",
+        "return result;",
+        "} else"
+    ],
+    "validation_result": [
+        {
+            "patch": "} else {",
+            "correctness": "uncompilable",
+            "translated": "} else {"
+        },
+        {
+            "patch": "} else if (outcome.isMalformed()) {",
+            "correctness": "uncompilable",
+            "translated": "} else if (res.isMalformed()) {"
+        },
+        {
+            "patch": "} else if (outcome.isOverflow()) {",
+            "correctness": "uncompilable",
+            "translated": "} else if (res.isOverflow()) {"
+        },
+        {
+            "patch": "} else if (!outcome.isMalformed()) {",
+            "correctness": "uncompilable",
+            "translated": "} else if (!res.isMalformed()) {"
+        },
+        {
+            "patch": "} else { return result;",
+            "correctness": "uncompilable",
+            "translated": "} else { return out;"
+        },
+        {
+            "patch": "}",
+            "correctness": "compile_success",
+            "translated": "}"
+        },
+        {
+            "patch": "} else { }",
+            "correctness": "compile_success",
+            "translated": "} else { }"
+        },
+        {
+            "patch": "} } else {",
+            "correctness": "uncompilable",
+            "translated": "} } else {"
+        },
+        {
+            "patch": "return result;",
+            "correctness": "uncompilable",
+            "translated": "return out;"
+        },
+        {
+            "patch": "} else",
+            "correctness": "uncompilable",
+            "translated": "} else"
+        }
+    ]
+}

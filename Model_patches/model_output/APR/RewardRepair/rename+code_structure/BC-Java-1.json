@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "ASN1Encodable object0 = S.acquireItemAt(1);",
+        "ASN1Encodable object0 = S.acquireItemAt(0);",
+        "ASN1Encodable object0 = S.acquireItemAt(2);",
+        "ASN1Encodable object0 = S.acquireItem();",
+        "ASN1Encodable object0 = new ASN1Encodable();",
+        "ASN1Encodable object0 = S.acquireItemAt(3);",
+        "ASN1Encodable object0 = S.acquireItem(encryption);",
+        "ASN1Encodable object0 = S.acquireItemAt(1);",
+        "ASN1Encodable object0 = S.acquireItemAt(4);",
+        "ASN1Encodable object0 = S.acquireItemAt(5);"
+    ],
+    "validation_result": [
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(1);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(1);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(2);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(2);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItem();",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.acquireItem();"
+        },
+        {
+            "patch": "ASN1Encodable object0 = new ASN1Encodable();",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = new ASN1Encodable();"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(3);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(3);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItem(encryption);",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.acquireItem(encoding);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(1);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(1);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(4);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(4);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(5);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(5);"
+        }
+    ]
+}

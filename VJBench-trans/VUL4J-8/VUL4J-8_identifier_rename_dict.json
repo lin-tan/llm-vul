@@ -1,0 +1,28 @@
+{
+    "method": {
+        "estimateInitialBufferSize": "approximateOriginalBufferSize",
+        "encodeFully": "encodeEntirely",
+        "growBufferBy": "enlargeBufferWith",
+        "estimateIncrementalEncodingSize": "approximateAdditionalEncodeingSize",
+        "encodeSurrogate": "encodeSubstitute",
+        "canEncode": "ableToEncode"
+    },
+    "variable": {
+        "totalExtraSpace": "sumSupernumeraryInfinite",
+        "res": "outcome",
+        "charCount": "charAmount",
+        "tmp": "cb_temp",
+        "name": "tile",
+        "i": "j",
+        "increment": "increase",
+        "spaceForSurrogate": "roomForSubstitute",
+        "enc": "charEncoder",
+        "cb": "charBuffer",
+        "out": "result",
+        "encodeSurrogateCharBuffer": "encodeSubstituteCharBuffer"
+    },
+    "class": {
+        "ZipEncodingHelper": "CompressedFileEncodingAssistant",
+        "": ""
+    }
+}

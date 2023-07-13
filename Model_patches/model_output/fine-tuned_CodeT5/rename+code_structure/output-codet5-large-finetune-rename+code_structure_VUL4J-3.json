@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>            sproducer.setNamespaceAware(false);\n</s></s></s>",
+        "<pad><s>            sproducer.setNamespaceAware(true, false);\n</s>",
+        "<pad><s>            sproducer.setNamespaceAware(true, true);\n</s>",
+        "<pad><s>            sproducer.setNamespaceAware(namespaceAware);\n</s></s>",
+        "<pad><s>            sproducer.setNamespaceAware(true, null);\n</s>",
+        "<pad><s>            sproducer.setNamespaceAware(isNamespaceAware);\n</s>",
+        "<pad><s>            sproducer.setNamespaceAware(null);\n</s></s></s>",
+        "<pad><s>            sproducer.setValidating(false);\n</s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            sproducer.setNamespaceAware(false);\n",
+            "correctness": "compile_success",
+            "translated": "            sfactory.setNamespaceAware(false);\n"
+        },
+        {
+            "patch": "            sproducer.setNamespaceAware(true, false);\n",
+            "correctness": "uncompilable",
+            "translated": "            sfactory.setNamespaceAware(true, false);\n"
+        },
+        {
+            "patch": "            sproducer.setNamespaceAware(true, true);\n",
+            "correctness": "uncompilable",
+            "translated": "            sfactory.setNamespaceAware(true, true);\n"
+        },
+        {
+            "patch": "            sproducer.setNamespaceAware(namespaceAware);\n",
+            "correctness": "uncompilable",
+            "translated": "            sfactory.setNamespaceAware(namespaceAware);\n"
+        },
+        {
+            "patch": "            sproducer.setNamespaceAware(true, null);\n",
+            "correctness": "uncompilable",
+            "translated": "            sfactory.setNamespaceAware(true, null);\n"
+        },
+        {
+            "patch": "            sproducer.setNamespaceAware(isNamespaceAware);\n",
+            "correctness": "uncompilable",
+            "translated": "            sfactory.setNamespaceAware(isNamespaceAware);\n"
+        },
+        {
+            "patch": "            sproducer.setNamespaceAware(null);\n",
+            "correctness": "uncompilable",
+            "translated": "            sfactory.setNamespaceAware(null);\n"
+        },
+        {
+            "patch": "            sproducer.setValidating(false);\n",
+            "correctness": "compile_success",
+            "translated": "            sfactory.setValidating(false);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

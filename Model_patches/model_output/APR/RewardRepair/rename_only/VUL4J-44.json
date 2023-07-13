@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if(NOT_ENCODE_COLLECTION.contains(charString))",
+        "if(NOT_ENCODE_COLLECTION.contains(a.charValue()))",
+        "if(NOT_ENCODE_COLLECTION.contains(charString))",
+        "if(NOT_ENCODE_COLLECTION.indexOf(a) >= 0)",
+        "if(!NOT_ENCODE_COLLECTION.contains(a))",
+        "if(NOT_ENCODE_COLLECTION.equals(a))",
+        "if(NOT_ENCODE_COLLECTION.contains(a.charValue()))",
+        "if(NOT_ENCODE_COLLECTION.contains((char) a))",
+        "if(NOT_ENCODE_COLLECTION.equals(charString))",
+        "if(NOT_ENCODE_COLLECTION.indexOf(a) < 0)"
+    ],
+    "validation_result": [
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.contains(charString))",
+            "correctness": "compile_success",
+            "translated": "if(UNENCODED_SET.contains(cStr))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.contains(a.charValue()))",
+            "correctness": "compile_success",
+            "translated": "if(UNENCODED_SET.contains(c.charValue()))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.contains(charString))",
+            "correctness": "compile_success",
+            "translated": "if(UNENCODED_SET.contains(cStr))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.indexOf(a) >= 0)",
+            "correctness": "uncompilable",
+            "translated": "if(UNENCODED_SET.indexOf(c) >= 0)"
+        },
+        {
+            "patch": "if(!NOT_ENCODE_COLLECTION.contains(a))",
+            "correctness": "compile_success",
+            "translated": "if(!UNENCODED_SET.contains(c))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.equals(a))",
+            "correctness": "compile_success",
+            "translated": "if(UNENCODED_SET.equals(c))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.contains(a.charValue()))",
+            "correctness": "compile_success",
+            "translated": "if(UNENCODED_SET.contains(c.charValue()))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.contains((char) a))",
+            "correctness": "compile_success",
+            "translated": "if(UNENCODED_SET.contains((char) c))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.equals(charString))",
+            "correctness": "compile_success",
+            "translated": "if(UNENCODED_SET.equals(cStr))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.indexOf(a) < 0)",
+            "correctness": "uncompilable",
+            "translated": "if(UNENCODED_SET.indexOf(c) < 0)"
+        }
+    ]
+}

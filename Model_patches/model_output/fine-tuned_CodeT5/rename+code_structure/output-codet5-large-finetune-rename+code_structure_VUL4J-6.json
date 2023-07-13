@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>      int iodine = this.rcount;\n</s></s>",
+        "<pad><s>      int iodine = -1;\n</s></s></s></s>",
+        "<pad><s>      int iodine = 1;\n</s></s></s></s></s>",
+        "<pad><s>      int iodine = 0;\n</s></s></s></s></s>",
+        "<pad><s>      int iodine = 0, joule;\n</s>",
+        "<pad><s>    int iodine = 0;\n</s></s></s></s></s>",
+        "<pad><s>      int joule = 0;\n</s></s></s></s></s>",
+        "<pad><s>      int iodine = this.Idaho;\n</s>",
+        "<pad><s>      int iodin = 0;\n</s></s></s></s></s>",
+        "<pad><s>      int iodine = duration;\n</s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "      int iodine = this.rcount;\n",
+            "correctness": "uncompilable",
+            "translated": "      int i = this.rcount;\n"
+        },
+        {
+            "patch": "      int iodine = -1;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = -1;\n"
+        },
+        {
+            "patch": "      int iodine = 1;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = 1;\n"
+        },
+        {
+            "patch": "      int iodine = 0;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = 0;\n"
+        },
+        {
+            "patch": "      int iodine = 0, joule;\n",
+            "correctness": "uncompilable",
+            "translated": "      int i = 0, j;\n"
+        },
+        {
+            "patch": "    int iodine = 0;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = 0;\n"
+        },
+        {
+            "patch": "      int joule = 0;\n",
+            "correctness": "uncompilable",
+            "translated": "      int j = 0;\n"
+        },
+        {
+            "patch": "      int iodine = this.Idaho;\n",
+            "correctness": "uncompilable",
+            "translated": "      int i = this.algId;\n"
+        },
+        {
+            "patch": "      int iodin = 0;\n",
+            "correctness": "uncompilable",
+            "translated": "      int iodin = 0;\n"
+        },
+        {
+            "patch": "      int iodine = duration;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = length;\n"
+        }
+    ]
+}

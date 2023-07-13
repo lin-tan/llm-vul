@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (!f.redoAdjustmentIfModified)",
+        "if (f!= null && f.redoAdjustmentIfModified)",
+        "if (f.redoAdjustmentIfModified && next>=0)",
+        "if (f!=null && f.redoAdjustmentIfModified)",
+        "if (!f.redoAdjustmentIfModified)",
+        "if (f.redoAdjustmentIfModified())",
+        "if (f.redoAdjustmentIfModified && next>0)",
+        "if (f.redoAdjustmentIfModified) { }",
+        "if (f.redoAdjustmentIfModified && f!= null)",
+        "if (f.redoAdjustmentIfModified || f.isVisible())"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!f.redoAdjustmentIfModified)",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (f!= null && f.redoAdjustmentIfModified)",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified && next>=0)",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (f!=null && f.redoAdjustmentIfModified)",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!f.redoAdjustmentIfModified)",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified && next>0)",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified) { }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified && f!= null)",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified || f.isVisible())",
+            "correctness": "uncompilable"
+        }
+    ]
+}

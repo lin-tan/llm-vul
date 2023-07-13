@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-16,1",
+    "output": [
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(new FileOutputStream(serializationFile)); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); InputStream production = (InputStream) inputStream; if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(); production.defaultWriteObject(); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectInputStream production = new ObjectInputStream(inputStream); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); savedData = inputStream.readObject(); }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(new FileOutputStream(serializationFile)); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close (); savedData = null; }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(new FileOutputStream(serializationFile)); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null ; }",
+        "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(new FileOutputStream(serializationFile)); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData =null; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(new FileOutputStream(serializationFile)); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(dfosFile)); if (cachedContent == null) { IOUtils.copy(new FileInputStream(dfosFile), output); dfosFile.delete(); dfosFile = null; } else { output.write(cachedContent); } output.close(); cachedContent = null; }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+            "correctness": "uncompilable",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectOutputStream output = new ObjectOutputStream(); if (cachedContent == null) { IOUtils.copy(new FileInputStream(dfosFile), output); dfosFile.delete(); dfosFile = null; } else { output.write(cachedContent); } output.close(); cachedContent = null; }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); InputStream production = (InputStream) inputStream; if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+            "correctness": "uncompilable",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); InputStream output = (InputStream) in; if (cachedContent == null) { IOUtils.copy(new FileInputStream(dfosFile), output); dfosFile.delete(); dfosFile = null; } else { output.write(cachedContent); } output.close(); cachedContent = null; }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(); production.defaultWriteObject(); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+            "correctness": "uncompilable",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectOutputStream output = new ObjectOutputStream(); output.defaultWriteObject(); if (cachedContent == null) { IOUtils.copy(new FileInputStream(dfosFile), output); dfosFile.delete(); dfosFile = null; } else { output.write(cachedContent); } output.close(); cachedContent = null; }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectInputStream production = new ObjectInputStream(inputStream); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null; }",
+            "correctness": "uncompilable",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectInputStream output = new ObjectInputStream(in); if (cachedContent == null) { IOUtils.copy(new FileInputStream(dfosFile), output); dfosFile.delete(); dfosFile = null; } else { output.write(cachedContent); } output.close(); cachedContent = null; }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); savedData = inputStream.readObject(); }",
+            "correctness": "uncompilable",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); cachedContent = in.readObject(); }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(new FileOutputStream(serializationFile)); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close (); savedData = null; }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(dfosFile)); if (cachedContent == null) { IOUtils.copy(new FileInputStream(dfosFile), output); dfosFile.delete(); dfosFile = null; } else { output.write(cachedContent); } output.close(); cachedContent = null; }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(new FileOutputStream(serializationFile)); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData = null ; }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(dfosFile)); if (cachedContent == null) { IOUtils.copy(new FileInputStream(dfosFile), output); dfosFile.delete(); dfosFile = null; } else { output.write(cachedContent); } output.close(); cachedContent = null; }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream) throws IOException, ClassNotFoundException { inputStream.defaultReadObject(); ObjectOutputStream production = new ObjectOutputStream(new FileOutputStream(serializationFile)); if (savedData == null) { IOUtils.copy(new FileInputStream(serializationFile), production); serializationFile.delete(); serializationFile = null; } else { production.write(savedData); } production.close(); savedData =null; }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in) throws IOException, ClassNotFoundException { in.defaultReadObject(); ObjectOutputStream output = new ObjectOutputStream(new FileOutputStream(dfosFile)); if (cachedContent == null) { IOUtils.copy(new FileInputStream(dfosFile), output); dfosFile.delete(); dfosFile = null; } else { output.write(cachedContent); } output.close(); cachedContent = null; }"
+        }
+    ]
+}

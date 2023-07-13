@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if(c!= null &&!UNENCODED_SET.contains(c)) {",
+        "if(!UNENCODED_SET.contains(cStr)) {",
+        "if(!UNENCODED_SET.contains(c.charValue())) {",
+        "if(!UNENCODED_SET.contains(cStr)) {",
+        "if(!UNENCODED_SET.contains(c.charValue())) {",
+        "if(c == null ||!UNENCODED_SET.contains(c)) {",
+        "if(!UNENCODED_SET.contains(c) && c!= null) {",
+        "if(!UNENCODED_SET.contains(c) && c!= \") {",
+        "if(c >= 0 &&!UNENCODED_SET.contains(c)) {",
+        "if(c.length > 0 &&!UNENCODED_SET.contains(c)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if(c!= null &&!UNENCODED_SET.contains(c)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(!UNENCODED_SET.contains(cStr)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(!UNENCODED_SET.contains(c.charValue())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(!UNENCODED_SET.contains(cStr)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(!UNENCODED_SET.contains(c.charValue())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(c == null ||!UNENCODED_SET.contains(c)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(!UNENCODED_SET.contains(c) && c!= null) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(!UNENCODED_SET.contains(c) && c!= \") {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(c >= 0 &&!UNENCODED_SET.contains(c)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(c.length > 0 &&!UNENCODED_SET.contains(c)) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

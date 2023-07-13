@@ -1,0 +1,65 @@
+{
+    "id": 33,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1216,
+            "fix_type": "general",
+            "patch": "c == '/' || c == '\\\\' || c == ':' || c == '<' || c == '>' || c == '>' || c == <UNK> || c == <UNK> || c == <UNK> || c == <UNK> || c == <UNK> || c == <UNK>"
+        },
+        {
+            "rank": 2,
+            "score": -0.1719,
+            "fix_type": "general",
+            "patch": "c == '/' || c == '\\\\' || c == ':' || c == '<' || c == ';' || c == ';' || c == <UNK>"
+        },
+        {
+            "rank": 3,
+            "score": -0.1855,
+            "fix_type": "insert",
+            "patch": "if (a == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1722,
+            "fix_type": "general",
+            "patch": "c == '/' || c == '\\\\' || c == ':' || c == '<' || c == '>' || c == ';' || c == <UNK>"
+        },
+        {
+            "rank": 5,
+            "score": -0.2032,
+            "fix_type": "insert",
+            "patch": "if (a == null || m == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1259,
+            "fix_type": "general",
+            "patch": "c == '/' || c == '\\\\' || c == ':' || c == '<' || c == '>' || c == '>' || c == <UNK> || c == <UNK> || c == <UNK> || c == <UNK> || c == <UNK> || c == ']'"
+        },
+        {
+            "rank": 7,
+            "score": -0.1772,
+            "fix_type": "general",
+            "patch": "c == '/' || c == '\\\\' || c == ':' || c == '<' || c == ';' || c == '>' || c == <UNK>"
+        },
+        {
+            "rank": 8,
+            "score": -0.2327,
+            "fix_type": "insert",
+            "patch": "if (a == null || a == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2759,
+            "fix_type": "insert",
+            "patch": "if (c == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.13,
+            "fix_type": "general",
+            "patch": "c == '/' || c == '\\\\' || c == ':' || c == '<' || c == '>' || c == '>' || c == <UNK> || c == <UNK> || c == <UNK> || c == <UNK> || c == ']' || c == <UNK>"
+        }
+    ]
+}

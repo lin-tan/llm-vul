@@ -1,0 +1,20 @@
+{
+    "method": {
+        "getItems": "acquireElements",
+        "hasPermission": "withAuthority"
+    },
+    "variable": {
+        "authorizationStrategy": "mandateScheme",
+        "READ": "RETRIEVE",
+        "item": "element",
+        "viewableItems": "visibleElements",
+        "items": "elements"
+    },
+    "class": {
+        "FullControlOnceLoggedInAuthorizationStrategy": "CompleteDominanceWhenLoggedInMandateScheme",
+        "TopLevelItem": "PeakDegreeElement",
+        "AuthorizationStrategy.Unsecured": "MandateScheme.Unguarded",
+        "AuthorizationStrategy": "MandateScheme",
+        "Unsecured": "Unguarded"
+    }
+}

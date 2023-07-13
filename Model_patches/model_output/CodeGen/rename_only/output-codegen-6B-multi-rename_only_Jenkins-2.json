@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    result.add(new PeakDegreeElement(4));\n    return result;\n}\n\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    result.add(new PeakDegreeElement(4));\n    return result;\n}\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    result.add(new PeakDegreeElement(4));\n    return result;\n  }\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    return result;\n}\n\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    return result;\n}\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    return result;\n  }\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements) {\n        if (element!= null) {\n            result.add(element);\n        }\n    }\n    return result;\n}\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements) {\n        if (element!= null) {\n            result.add(element);\n        }\n    }\n    return result;\n}\n\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements) {\n        result.add(element);\n    }\n    return result;\n}\n}\n",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        result.add(element);\n    }\n    return result;\n}\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    result.add(new PeakDegreeElement(4));\n    return result;\n}",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    result.add(new TopLevelItem(1));\n    result.add(new TopLevelItem(2));\n    result.add(new TopLevelItem(3));\n    result.add(new TopLevelItem(4));\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    result.add(new PeakDegreeElement(4));\n    return result;\n}",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    result.add(new TopLevelItem(1));\n    result.add(new TopLevelItem(2));\n    result.add(new TopLevelItem(3));\n    result.add(new TopLevelItem(4));\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    result.add(new PeakDegreeElement(4));\n    return result;\n  }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    result.add(new TopLevelItem(1));\n    result.add(new TopLevelItem(2));\n    result.add(new TopLevelItem(3));\n    result.add(new TopLevelItem(4));\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    return result;\n}",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    result.add(new TopLevelItem(1));\n    result.add(new TopLevelItem(2));\n    result.add(new TopLevelItem(3));\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    return result;\n}",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    result.add(new TopLevelItem(1));\n    result.add(new TopLevelItem(2));\n    result.add(new TopLevelItem(3));\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    result.add(new PeakDegreeElement(1));\n    result.add(new PeakDegreeElement(2));\n    result.add(new PeakDegreeElement(3));\n    return result;\n  }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    result.add(new TopLevelItem(1));\n    result.add(new TopLevelItem(2));\n    result.add(new TopLevelItem(3));\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements) {\n        if (element!= null) {\n            result.add(element);\n        }\n    }\n    return result;\n}",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items) {\n        if (item!= null) {\n            result.add(item);\n        }\n    }\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements) {\n        if (element!= null) {\n            result.add(element);\n        }\n    }\n    return result;\n}",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items) {\n        if (item!= null) {\n            result.add(item);\n        }\n    }\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements) {\n        result.add(element);\n    }\n    return result;\n}",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items) {\n        result.add(item);\n    }\n    return result;\n}"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        result.add(element);\n    }\n    return result;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        result.add(item);\n    }\n    return result;\n}"
+        }
+    ]
+}

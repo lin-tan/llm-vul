@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\t",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1\n\n\tif",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\t\n\n\t\n\n\t||\n\n\tString pass1 = encPass;\n\t\n\t||\n\n\n\tString pass1 = encPass;\tpass\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\tif",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\tif",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\t\n\n\t\n\n\t||\n\n\tString pass1 = encPass;\n\t\n\t||\n\n\n\tString pass1 = encPass;\tpass\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1\n\n\tif (",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\t\n\n\t\n\n\t||\n\n\tString pass1 = encPass;\n\t\n\t||\n\n\n\tString pass1 = encPass;\tpass\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\tboolean",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\tboolean",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\tif (salt!= null)\n\t\n\n\t\n\t1\n\n\tif (",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\tif (salt!= null)\n\t\n\n\t\n\t\n\n\tif (enc",
+        "\n\tString pass1 = encPass;\n\t\n\t\n\n\t\n\n\t\n\n\t||\n\n\tString pass1 = encPass;\n\t\n\t||\n\n\n\tString pass1 = encPass;\tpass\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t\n\n\tif (enc"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1 =",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1\n\n\tif",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\t\n\n\t\n\n\t||\n\n\tString pass1 = encPass;\n\t\n\t||\n\n\n\tString pass1 = encPass;\tpass\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\tif",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\tif",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\t\n\n\t\n\n\t||\n\n\tString pass1 = encPass;\n\t\n\t||\n\n\n\tString pass1 = encPass;\tpass\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1\n\n\tif (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\t\n\n\t\n\n\t||\n\n\tString pass1 = encPass;\n\t\n\t||\n\n\n\tString pass1 = encPass;\tpass\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\tboolean",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\tif (salt!= null)\n\t\n\n\t\n\t1 =\n\n\tboolean",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\tif (salt!= null)\n\t\n\n\t\n\t1\n\n\tif (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\n\tString pass1 = encPass;\n\tif (ignorePasswordCase)\n\t ||\n\n\n\t.\n\n\n\tString pass1 = encPass;\t\n\n\n\tString pass1 = encPass;);\n\tif (salt!= null)\n\t\n\n\t\n\t\n\n\tif (enc",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\t\n\t\n\n\t\n\n\t\n\n\t||\n\n\tString pass1 = encPass;\n\t\n\t||\n\n\n\tString pass1 = encPass;\tpass\n\n\n\tString pass1 = encPass;);\n\n\tif (salt!= null)\n\t\n\n\t\n\t\n\n\tif (enc",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "sb.append(\"sessionId=\").append(sessionId);",
+        "sb.append(\"sessionId\").append(sessionId);",
+        "sb.append(\"sessionId\" + \"String_Node_Str\");",
+        "sb.append(\"sessionId\" + sessionId);",
+        "sb.append(\"sessionId=\"+sessionId);",
+        "if (sessionId!= null) { sb.append(\"sessionId\");",
+        "sb.append(\"sessionId=\").append(getSessionId());",
+        "sb.append(\"sessionId=\");",
+        "if (sessionId!= null) {",
+        "sb.append(\"sessionId\");"
+    ],
+    "validation_result": [
+        {
+            "patch": "sb.append(\"sessionId=\").append(sessionId);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb.append(\"sessionId\").append(sessionId);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb.append(\"sessionId\" + \"String_Node_Str\");",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb.append(\"sessionId\" + sessionId);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb.append(\"sessionId=\"+sessionId);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (sessionId!= null) { sb.append(\"sessionId\");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sb.append(\"sessionId=\").append(getSessionId());",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "sb.append(\"sessionId=\");",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (sessionId!= null) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sb.append(\"sessionId\");",
+            "correctness": "test_timeout"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(), monitor.data(this)); }",
+        "for (NodeMonitor monitor : nodeMonitorList) r.put(monitor.name(), monitor.data(this));",
+        "for (NodeMonitor monitor : nodeMonitorList) r.put(monitor.getName(), monitor.data(this));",
+        "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.getName(), monitor.data(this)); }",
+        "NodeMonitor monitor = nodeMonitorList.get(i); r.put(monitor.name(), monitor.data(this));",
+        "if (nodeMonitorList!= null && nodeMonitorList.size() > 0) { while(i < nodeMonitorList.size() && nodeMonitorList.get(i).data(this)!= null) { i++; }",
+        "r.put(\"String_Node_Str\", nodeMonitorList.get(0).data(this));",
+        "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(), monitor.data(this)); i++; }",
+        "r.put(\"String_Node_Str\", nodeMonitorList.size());",
+        "i++;"
+    ],
+    "validation_result": [
+        {
+            "patch": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(), monitor.data(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(), monitor.data(this)); }"
+        },
+        {
+            "patch": "for (NodeMonitor monitor : nodeMonitorList) r.put(monitor.name(), monitor.data(this));",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) r.put(monitor.name(), monitor.data(this));"
+        },
+        {
+            "patch": "for (NodeMonitor monitor : nodeMonitorList) r.put(monitor.getName(), monitor.data(this));",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) r.put(monitor.getName(), monitor.data(this));"
+        },
+        {
+            "patch": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.getName(), monitor.data(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.getName(), monitor.data(this)); }"
+        },
+        {
+            "patch": "NodeMonitor monitor = nodeMonitorList.get(i); r.put(monitor.name(), monitor.data(this));",
+            "correctness": "uncompilable",
+            "translated": "NodeMonitor monitor = nodeMonitorList.get(i); r.put(monitor.name(), monitor.data(this));"
+        },
+        {
+            "patch": "if (nodeMonitorList!= null && nodeMonitorList.size() > 0) { while(i < nodeMonitorList.size() && nodeMonitorList.get(i).data(this)!= null) { i++; }",
+            "correctness": "uncompilable",
+            "translated": "if (nodeMonitorList!= null && nodeMonitorList.size() > 0) { while(i < nodeMonitorList.size() && nodeMonitorList.get(i).data(this)!= null) { i++; }"
+        },
+        {
+            "patch": "r.put(\"String_Node_Str\", nodeMonitorList.get(0).data(this));",
+            "correctness": "compile_success",
+            "translated": "r.put(\"String_Node_Str\", nodeMonitorList.get(0).data(this));"
+        },
+        {
+            "patch": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(), monitor.data(this)); i++; }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(), monitor.data(this)); i++; }"
+        },
+        {
+            "patch": "r.put(\"String_Node_Str\", nodeMonitorList.size());",
+            "correctness": "compile_success",
+            "translated": "r.put(\"String_Node_Str\", nodeMonitorList.size());"
+        },
+        {
+            "patch": "i++;",
+            "correctness": "compile_success",
+            "translated": "i++;"
+        }
+    ]
+}

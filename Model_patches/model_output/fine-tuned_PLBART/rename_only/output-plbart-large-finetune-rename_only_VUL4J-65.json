@@ -1,0 +1,66 @@
+{
+    "output": [
+        "int point = titile.lastIndexOf('.');",
+        "int point = titile.indexOf('\\\\');",
+        "int point = titile.indexOf('.');",
+        "int point = titile.indexOf('/');",
+        "int point = titile.indexOf('.');",
+        "int point = titile.indexOf(' ');",
+        "int point = titile.indexOf(':');",
+        "int point = titile.indexOf('$');",
+        "int point = titile.indexOf('.', 2);",
+        "int point = 0;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int point = titile.lastIndexOf('.');",
+            "correctness": "compile_success",
+            "translated": "int dot = name.lastIndexOf('.');"
+        },
+        {
+            "patch": "int point = titile.indexOf('\\\\');",
+            "correctness": "compile_success",
+            "translated": "int dot = name.indexOf('\\\\');"
+        },
+        {
+            "patch": "int point = titile.indexOf('.');",
+            "correctness": "compile_success",
+            "translated": "int dot = name.indexOf('.');"
+        },
+        {
+            "patch": "int point = titile.indexOf('/');",
+            "correctness": "compile_success",
+            "translated": "int dot = name.indexOf('/');"
+        },
+        {
+            "patch": "int point = titile.indexOf('.');",
+            "correctness": "compile_success",
+            "translated": "int dot = name.indexOf('.');"
+        },
+        {
+            "patch": "int point = titile.indexOf(' ');",
+            "correctness": "compile_success",
+            "translated": "int dot = name.indexOf(' ');"
+        },
+        {
+            "patch": "int point = titile.indexOf(':');",
+            "correctness": "compile_success",
+            "translated": "int dot = name.indexOf(':');"
+        },
+        {
+            "patch": "int point = titile.indexOf('$');",
+            "correctness": "compile_success",
+            "translated": "int dot = name.indexOf('$');"
+        },
+        {
+            "patch": "int point = titile.indexOf('.', 2);",
+            "correctness": "compile_success",
+            "translated": "int dot = name.indexOf('.', 2);"
+        },
+        {
+            "patch": "int point = 0;",
+            "correctness": "compile_success",
+            "translated": "int dot = 0;"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();",
+        "archiveCreator = DocumentBuilderFactory.newInstance().newDocumentBuilder();",
+        "archiveCreator = archiveCreatorManufactory.newDocumentBuilder(true);",
+        "archiveCreator = archiveCreatorManufactory.newDocumentBuilder(false);",
+        "archiveCreator = new DocumentBuilder(archiveCreatorManufactory);",
+        "archiveCreator = newDocumentBuilder();",
+        "archiveCreator = archiveCreatorManufactory.getDocumentBuilder();",
+        "archiveCreator = archiveCreatorManufactory.createDocumentBuilder();",
+        "archiveCreator = documentBuilderFactory.newDocumentBuilder();",
+        "archiveCreator = DocumentBuilderFactory.newInstance();"
+    ],
+    "validation_result": [
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();",
+            "correctness": "compile_success",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = DocumentBuilderFactory.newInstance().newDocumentBuilder();",
+            "correctness": "compile_success",
+            "translated": "docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder(true);",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder(true);"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder(false);",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder(false);"
+        },
+        {
+            "patch": "archiveCreator = new DocumentBuilder(archiveCreatorManufactory);",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = new DocumentBuilder(docBuilderFactory);"
+        },
+        {
+            "patch": "archiveCreator = newDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = newDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.getDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.getDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.createDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.createDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = documentBuilderFactory.newDocumentBuilder();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = documentBuilderFactory.newDocumentBuilder();"
+        },
+        {
+            "patch": "archiveCreator = DocumentBuilderFactory.newInstance();",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = DocumentBuilderFactory.newInstance();"
+        }
+    ]
+}

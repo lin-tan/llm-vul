@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "return true;",
+        "e.printStackTrace();",
+        "ret = false; return ret;",
+        "return false;",
+        "//$NON-NLS-1$",
+        "|| case '=': return false;",
+        "nan",
+        "'@': case ',':",
+        "case '@': return false;",
+        "|| case '@': return false;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return true;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "e.printStackTrace();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ret = false; return ret;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return false;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "//$NON-NLS-1$",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "|| case '=': return false;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "nan",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "'@': case ',':",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '@': return false;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "|| case '@': return false;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

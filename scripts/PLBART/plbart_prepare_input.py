@@ -1,0 +1,122 @@
+import subprocess
+import re
+import os
+import json
+from pathlib import Path
+import sys
+PLBART_DIR = os.path.abspath(__file__)[: os.path.abspath(__file__).rindex('/') + 1]
+
+sys.path.insert(1, PLBART_DIR+'../') # utils file
+
+from util import vjbench_bug_id_list,vul4j_bug_id_list, cve_int_to_name
+
+bug_range_list =  vjbench_bug_id_list+vul4j_bug_id_list
+JAVA_DIR = PLBART_DIR + '../../jasper/'
+
+def command(cmd):
+    # print(cmd)
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    output, err = process.communicate()
+    if output != b'' or err != b'':
+        print(output)
+        print(err)
+    return output, err
+
+def get_plbart_input(filename, start, end, config, tmp_file):
+    os.chdir(JAVA_DIR)
+    command([
+        'java', '-cp', '.:target:lib/*', 'clm.plbart.PLBartInputParser',
+        filename, str(start), str(end), config, tmp_file
+    ])
+
+
+def genearte_plbart_input_jasper(output_file,obs):
+    begin =  "class Main {\n"
+    end = "\n}"
+    plbart_input = {'config': config, 'data': {}}
+    for vul_int in bug_range_list:
+        vul_id = "VUL4J-{}".format(vul_int)
+        if vul_int > 1000:
+            vul_id = cve_int_to_name[vul_int]
+        VUL_FOLDER = os.path.join(PLBART_DIR+'../../VJBench-trans', vul_id)
+        bug_location_file = os.path.join(VUL_FOLDER, "buggyline_location.json")
+        # read the bug location file
+        with open(bug_location_file, 'r') as f:
+            buggy_line_dict = json.load(f) 
+        buggy_line_list = buggy_line_dict[  trans]
+        if trans == "structure_change_only":
+            buggy_file = os.path.join(VUL_FOLDER, "{}_code_structure_change_only.java".format(vul_id))
+        elif trans == "rename+code_structure":
+            buggy_file = os.path.join(VUL_FOLDER, "{}_full_transformation.java".format(vul_id))
+        elif  trans== "rename_only":
+            buggy_file = os.path.join(VUL_FOLDER, "{}_rename_only.java".format(vul_id))
+        elif trans== "original":         
+            buggy_file = os.path.join(VUL_FOLDER, "{}_original_method.java".format(vul_id))
+        if not os.path.exists(buggy_file):
+            continue
+        buggy_line_start = buggy_line_list[0][0]
+        if (len(buggy_line_list[0])==1):
+            buggy_line_end = buggy_line_start
+        else:
+            buggy_line_end = buggy_line_list[0][1]
+        rem_loc = "{}-{}".format(buggy_line_start, buggy_line_end)
+        
+        buggy_file_path = os.path.join(VUL_FOLDER,buggy_file)
+        # read the code
+        with open(buggy_file_path, 'r') as f:
+            buggy_code = f.read()
+        # write to a tmo file
+        tmp_code = begin + buggy_code + end
+        tmp_code_file = os.path.join(PLBART_DIR, "tmp_code.java")
+        with open(tmp_code_file, 'w') as f:
+            f.write(tmp_code)
+        buggy_file_path = tmp_code_file
+        buggy_line_start  = buggy_line_start  + 1
+        buggy_line_end = buggy_line_end + 1
+
+
+        tmp_file = PLBART_DIR + 'tmp.json'
+    
+        # get_plbart_finetune_input(buggy_file_path,  buggy_line_start, buggy_line_end, tmp_file)
+        get_plbart_input(buggy_file_path,  buggy_line_start, buggy_line_end, config, tmp_file)
+
+        filename = vul_id 
+        if not os.path.exists(tmp_file):
+            print(filename, 'failed.', output_file, 'not found.')
+            continue
+        print(filename, 'succeeded')
+
+        result = json.load(open(tmp_file, 'r'))
+        if config == 'PLBART_SEQFORM_MASKFORM_NOCOMMENT':
+            plbart_input['data'][filename] = {
+                'loc': rem_loc,
+                'input': '<s> ' + re.sub('\\s+', ' ', result['input']).strip() + ' </s> java',
+                'function range': result['function range']
+            }
+        elif config == 'PLBART_SEQFORM_COMMENTFORM_NOCOMMENT':
+            result['input'] = re.sub('/\\* buggy line:', '/* ', result['input'])
+            plbart_input['data'][filename] = {
+                'loc': rem_loc,
+                'input': '<s> ' + re.sub('\\s+', ' ', result['input']).strip() + ' </s> java',
+                'function range': result['function range']
+            }
+
+        command(['rm', '-rf', tmp_file])
+        command(['rm', '-rf', tmp_code_file])
+        json.dump(plbart_input, open(output_file, 'w'), indent=2) 
+          
+config = "PLBART_SEQFORM_MASKFORM_NOCOMMENT"
+
+if __name__ == "__main__":
+
+    for trans in [
+        "structure_change_only", 
+        "rename_only", 
+        "rename+code_structure",
+        "original"
+        ]:
+        input_folder = os.path.join(PLBART_DIR,"inputs")
+        if not os.path.exists(input_folder):
+            os.mkdir(input_folder)
+        input_file = os.path.join(PLBART_DIR,"inputs","input-{}.json".format( trans))
+        genearte_plbart_input_jasper(input_file, trans)

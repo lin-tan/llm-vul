@@ -1,0 +1,37 @@
+{
+    "VUL4J-61-68-69": {
+        "src": "Document CaMeL Builder document CaMeL Builder = document CaMeL Builder CaMeL Factory . new CaMeL Document CaMeL Builder ( ) ;",
+        "patches": [
+            {
+                "patch": "List < MapResult > result = new ArrayList < MapResult >( ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'NEXT_SIBLING', true ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'FIRST_CHILD_OF', true ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'IS_CHILD_OF', true ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'NEXT', true ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'non empty parents', true ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'NEXT_SIBLING', false ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'FIRST_CHILD_OF', false ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'IS_CHILD_OF', false ) ;"
+            },
+            {
+                "patch": "boolean failOnError =( boolean ) config.getOrDefault( 'NEXT', false ) ;"
+            }
+        ]
+    }
+}

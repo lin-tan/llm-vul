@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? dataProvider : Encode.forJavaScriptSource(dataProvider);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? \"String_Node_Str\" : dataProvider;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? \"String_Node_Str\" : encode(dataProvider);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider).toString();\n<|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : encode(dataProvider);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, true);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider.toLowerCase());\n<|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, false);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return null;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return dataProvider == null? dataProvider : Encode.forJavaScriptSource(dataProvider);\n",
+            "correctness": "compile_success",
+            "translated": "    return source == null? source : Encode.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? \"String_Node_Str\" : dataProvider;\n",
+            "correctness": "compile_success",
+            "translated": "    return source == null? \"String_Node_Str\" : source;\n"
+        },
+        {
+            "patch": "    return dataProvider == null? \"String_Node_Str\" : encode(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? \"String_Node_Str\" : encode(source);\n"
+        },
+        {
+            "patch": "    return dataProvider;\n",
+            "correctness": "compile_success",
+            "translated": "    return source;\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider).toString();\n",
+            "correctness": "compile_success",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source).toString();\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : encode(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : encode(source);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, true);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source, true);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider.toLowerCase());\n",
+            "correctness": "compile_success",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source.toLowerCase());\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, false);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source, false);\n"
+        },
+        {
+            "patch": "    return null;\n",
+            "correctness": "compile_success",
+            "translated": "    return null;\n"
+        }
+    ]
+}

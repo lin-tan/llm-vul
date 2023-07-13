@@ -1,0 +1,40 @@
+{
+    "method": {
+        "makeSearchIndex": "constructLookupIndex",
+        "add": "attach",
+        "getItemByFullName": "acquireElementUsingWholeName",
+        "all": "whole",
+        "getPrimaryView": "acquireMainUIComponent",
+        "getComputer": "acquireComputingMachine",
+        "getAll": "acquireWhole",
+        "getAllItems": "acquireEveryElement",
+        "get": "acquire",
+        "getView": "acquireUIComponent",
+        "getViews": "acquireUIComponents"
+        
+    },
+    "variable": {
+        "key": "clue",
+        "computers": "computingMachines",
+        "views": "uiComponents",
+        "searchIndexBuilder": "lookupIndexCreator",
+        "collectionSearchIndexComputer": "aggregationLookupIndexComputingMachine",
+        "collectionSearchIndexView": "aggregationLookupIndexUIComponent",
+        "collectionSearchIndexItem": "aggregationLookupIndexElement",
+        "collectionSearchIndexUser": "aggregationLookupIndexClient",
+        "primaryView_": "mainUIComponent_",
+        "primaryViewSearchIndexBuilder": "mainUIComponentLookupIndexCreator"
+        
+
+    },
+    "class": {
+        "SearchIndexBuilder": "LookupIndexCreator",
+        "User": "Client",
+        "TopLevelItem": "PeakDegreeElement",
+        "Computer": "ComputingMachine",
+        "View": "UIComponent",
+        "CollectionSearchIndex": "AggregationLookupIndex",
+        "SearchItem": "LookupElement",
+        "": ""
+    }
+}

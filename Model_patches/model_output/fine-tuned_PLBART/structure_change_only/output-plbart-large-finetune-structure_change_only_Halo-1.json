@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (!pathToCheck.startsWith(parentPath)) {",
+        "Path normalizedPath = parentPath.normalize(); if (!pathToCheck.startsWith(normalizedPath)) {",
+        "if (!pathToCheck.startsWith(parentPath.normalize())) {",
+        "Path parentPath = parentPath.normalize(); if (!pathToCheck.startsWith(parentPath)) {",
+        "if (!pathToCheck.endsWith(parentPath)) {",
+        "if (!pathToCheck.equals(parentPath)) {",
+        "if (!pathToCheck.startsWith(pathParentPath)) {",
+        "if (pathToCheck.startsWith(parentPath)) {",
+        "if (!pathToCheck.startsWith(parentPath.toFile())) {",
+        "if (!pathToCheck.startsWith(parentPath.toAbsolutePath())) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!pathToCheck.startsWith(parentPath)) {",
+            "correctness": "compile_success",
+            "translated": "if (!pathToCheck.startsWith(parentPath)) {"
+        },
+        {
+            "patch": "Path normalizedPath = parentPath.normalize(); if (!pathToCheck.startsWith(normalizedPath)) {",
+            "correctness": "compile_success",
+            "translated": "Path normalizedPath = parentPath.normalize(); if (!pathToCheck.startsWith(normalizedPath)) {"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "compile_success",
+            "translated": "if (!pathToCheck.startsWith(parentPath.normalize())) {"
+        },
+        {
+            "patch": "Path parentPath = parentPath.normalize(); if (!pathToCheck.startsWith(parentPath)) {",
+            "correctness": "uncompilable",
+            "translated": "Path parentPath = parentPath.normalize(); if (!pathToCheck.startsWith(parentPath)) {"
+        },
+        {
+            "patch": "if (!pathToCheck.endsWith(parentPath)) {",
+            "correctness": "compile_success",
+            "translated": "if (!pathToCheck.endsWith(parentPath)) {"
+        },
+        {
+            "patch": "if (!pathToCheck.equals(parentPath)) {",
+            "correctness": "compile_success",
+            "translated": "if (!pathToCheck.equals(parentPath)) {"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(pathParentPath)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!pathToCheck.startsWith(pathParentPath)) {"
+        },
+        {
+            "patch": "if (pathToCheck.startsWith(parentPath)) {",
+            "correctness": "compile_success",
+            "translated": "if (pathToCheck.startsWith(parentPath)) {"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(parentPath.toFile())) {",
+            "correctness": "uncompilable",
+            "translated": "if (!pathToCheck.startsWith(parentPath.toFile())) {"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(parentPath.toAbsolutePath())) {",
+            "correctness": "compile_success",
+            "translated": "if (!pathToCheck.startsWith(parentPath.toAbsolutePath())) {"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    if ( f!= null )\n    {\n</s>",
+        "<pad><s>    if ( f.exists() ) {\n</s></s>",
+        "<pad><s>    if ( f.exists() )\n</s></s></s>",
+        "<pad><s>    if ( f!= null )\n</s></s></s></s>",
+        "<pad><s>    try ( final OutputStream out = null ){\n</s>",
+        "<pad><s>    if ( f!= null ) {\n</s></s></s>",
+        "<pad><s>    try ( final OutputStream out = null ) {\n</s>",
+        "<pad><s>    if ( f!= null ){\n</s></s></s>",
+        "<pad><s>    if (!isIgnorePermissions() )\n</s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if ( f!= null )\n    {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if ( f.exists() ) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if ( f.exists() )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if ( f!= null )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( final OutputStream out = null ){\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if ( f!= null ) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( final OutputStream out = null ) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if ( f!= null ){\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!isIgnorePermissions() )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

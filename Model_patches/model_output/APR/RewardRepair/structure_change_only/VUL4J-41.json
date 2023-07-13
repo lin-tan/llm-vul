@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "try {",
+        "if ( isOverwrite() ) {",
+        "if ( isOverwrite() || f.exists() ) {",
+        "if ( f!= null ) {",
+        "if ( f.isDirectory() ) {",
+        "If ( isOverwrite() ||!f.exists() ) {",
+        "if ( isOverwrite() ||!f.exists()) {",
+        "if (!f.exists() ) {",
+        "if ( isOverwrite() ||!isDirectory ) {",
+        "try { f.getParentFile().mkdirs();"
+    ],
+    "validation_result": [
+        {
+            "patch": "try {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if ( isOverwrite() ) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( isOverwrite() || f.exists() ) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( f!= null ) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( f.isDirectory() ) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "If ( isOverwrite() ||!f.exists() ) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( isOverwrite() ||!f.exists()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!f.exists() ) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( isOverwrite() ||!isDirectory ) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try { f.getParentFile().mkdirs();",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>                    setCurrentAccessPermission(new AccessPermission(dicPermissions, true));\n</s>",
+        "<pad><s>                    setCurrentAccessPermission(new AccessPermission(dicPermissions, false));\n</s>",
+        "<pad><s>                    setCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());\n</s></s>",
+        "<pad><s>                    setCurrentAccessPermission(new AccessPermission(dicPermissions, null));\n</s>",
+        "<pad><s>                    setCurrentAccessPermission(new AccessPermission(dicPermissions), true);\n</s>",
+        "<pad><s>                    setCurrentAccessPermission(new OwnerAccessPermission(dicPermissions));\n</s></s>",
+        "<pad><s>                    setCurrentAccessPermission(new AccessPermission(dicPermissions));\n</s></s></s>",
+        "<pad><s>                    setCurrentAccessPermission(new AccessPermission(dicPermissions, encryption));\n</s>",
+        "<pad><s>                    setCurrentAccessPermission(accessPermission);\n</s></s></s></s></s></s></s>",
+        "<pad><s>                    setCurrentAccessPermission(accessPermissions);\n</s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions, true));\n",
+            "correctness": "uncompilable",
+            "translated": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions, true));\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions, false));\n",
+            "correctness": "uncompilable",
+            "translated": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions, false));\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());\n",
+            "correctness": "compile_success",
+            "translated": "                    setCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions, null));\n",
+            "correctness": "uncompilable",
+            "translated": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions, null));\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions), true);\n",
+            "correctness": "uncompilable",
+            "translated": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions), true);\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(new OwnerAccessPermission(dicPermissions));\n",
+            "correctness": "uncompilable",
+            "translated": "                    setCurrentAccessPermission(new OwnerAccessPermission(dicPermissions));\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions));\n",
+            "correctness": "compile_success",
+            "translated": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions));\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions, encryption));\n",
+            "correctness": "uncompilable",
+            "translated": "                    setCurrentAccessPermission(new AccessPermission(dicPermissions, encryption));\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(accessPermission);\n",
+            "correctness": "uncompilable",
+            "translated": "                    setCurrentAccessPermission(accessPermission);\n"
+        },
+        {
+            "patch": "                    setCurrentAccessPermission(accessPermissions);\n",
+            "correctness": "uncompilable",
+            "translated": "                    setCurrentAccessPermission(accessPermissions);\n"
+        }
+    ]
+}

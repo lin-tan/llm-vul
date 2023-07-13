@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return viewableItems;\n</s></s></s></s></s></s></s>",
+        "<pad><s>    return new ArrayList<>(itemValues);\n</s></s></s></s>",
+        "<pad><s>    return new ArrayList<TopLevelItem>(itemValues);\n</s>",
+        "<pad><s>    return itemValues;\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    return viewableItems.addAll(itemValues);\n</s>",
+        "<pad><s>    return viewableItems.concat(itemValues);\n</s></s>",
+        "<pad><s>    return viewableItems.toArray(itemValues);\n</s></s>",
+        "<pad><s>    return Collections.unmodifiableList(itemValues);\n</s></s>",
+        "<pad><s>    return new ArrayList<TopLevelItem>();\n</s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return viewableItems;\n",
+            "correctness": "compile_success",
+            "translated": "    return viewableItems;\n"
+        },
+        {
+            "patch": "    return new ArrayList<>(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<>(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList<TopLevelItem>(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<TopLevelItem>(itemValues);\n"
+        },
+        {
+            "patch": "    return itemValues;\n",
+            "correctness": "uncompilable",
+            "translated": "    return itemValues;\n"
+        },
+        {
+            "patch": "    return viewableItems.addAll(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return viewableItems.addAll(itemValues);\n"
+        },
+        {
+            "patch": "    return viewableItems.concat(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return viewableItems.concat(itemValues);\n"
+        },
+        {
+            "patch": "    return viewableItems.toArray(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return viewableItems.toArray(itemValues);\n"
+        },
+        {
+            "patch": "    return Collections.unmodifiableList(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return Collections.unmodifiableList(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList<TopLevelItem>();\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<TopLevelItem>();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

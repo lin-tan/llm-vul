@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>\t\twriteDirectly(remoteAddr);\n</s></s></s></s></s>",
+        "<pad><s>\t\twrite(htmlEncodeButNotSpace(remoteAddr));\n</s>",
+        "<pad><s>\t\twriteDirectly(urlEncode(remoteAddr));\n</s></s>",
+        "<pad><s>\t\twriteDirectly(session.getRemoteAddr());\n</s></s>",
+        "<pad><s>\t\twrite(\"String_Node_Str\" + remoteAddr);\n</s>",
+        "<pad><s>\t\twriteDirectly(remoteAddr, false);\n</s></s></s>",
+        "<pad><s>\t\twriteDirectly(\"String_Node_Str\");\n</s></s>",
+        "<pad><s>\t\twriteDirectly(remoteAddr);\n\t</s></s></s></s>",
+        "<pad><s>\t</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\t\twriteDirectly(remoteAddr);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\t\twrite(htmlEncodeButNotSpace(remoteAddr));\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "\t\twriteDirectly(urlEncode(remoteAddr));\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\t\twriteDirectly(session.getRemoteAddr());\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\t\twrite(\"String_Node_Str\" + remoteAddr);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\t\twriteDirectly(remoteAddr, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\t\twriteDirectly(\"String_Node_Str\");\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "\t\twriteDirectly(remoteAddr);\n\t",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\t",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success"
+        }
+    ]
+}

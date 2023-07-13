@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!(content.getClass().equals(String.class)) &&!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n<|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression()).matcher(String.valueOf(content)).matches()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content.toString()).matches()) {\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!(content.getClass().equals(String.class)) ||!acquireUrlRegularExpression().matcher(String.valueOf(content)).matches()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!(content.getClass().equals(String.class)) ||!PATTERN.matcher(String.valueOf(content)).matches()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n<|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content).matches()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!content.getClass().equals(String.class) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content == null || content.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n// buggy lines end\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n    if (!(content.getClass().equals(String.class))) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) &&!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value.getClass().equals(String.class)) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression()).matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex()).matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content.toString()).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value.toString()).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) ||!acquireUrlRegularExpression().matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) ||!PATTERN.matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!(value.getClass().equals(String.class)) ||!PATTERN.matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content).matches()) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value).matches()) {\n"
+        },
+        {
+            "patch": "    if (!content.getClass().equals(String.class) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!value.getClass().equals(String.class) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class))) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value.getClass().equals(String.class))) {\n"
+        }
+    ]
+}

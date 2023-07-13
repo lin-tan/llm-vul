@@ -1,0 +1,65 @@
+{
+    "id": 17,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.4385,
+            "fix_type": "insert",
+            "patch": "if (file == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.548,
+            "fix_type": "insert",
+            "patch": " final File file = FileUtils.resolveFile();\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5769,
+            "fix_type": "insert",
+            "patch": "  boolean ROLE = false;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5769,
+            "fix_type": "insert",
+            "patch": "  boolean destFile = false;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.5943,
+            "fix_type": "insert",
+            "patch": " final Archiver ROLE = null;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5943,
+            "fix_type": "insert",
+            "patch": " final ArchiveEntry ROLE = null;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.6079,
+            "fix_type": "insert",
+            "patch": " final File file = file.getParentFile();\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.6124,
+            "fix_type": "insert",
+            "patch": "  Archiver ROLE = null;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.6124,
+            "fix_type": "insert",
+            "patch": "  ArchiveEntry ROLE = null;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.6361,
+            "fix_type": "insert",
+            "patch": "  File file = FileUtils.resolveFile();\n"
+        }
+    ]
+}

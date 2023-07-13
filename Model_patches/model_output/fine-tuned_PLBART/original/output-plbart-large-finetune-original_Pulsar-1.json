@@ -1,0 +1,56 @@
+{
+    "output": [
+        "ledger.asyncReadEntry(new PositionImpl(positionId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "try { ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ledger.asyncReadEntry(new PositionImpl(entryId, ledgerId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ledger.asyncReadEntry(new PositionImpl(topicId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), null, new AsyncCallbacks.ReadEntryCallback() {",
+        "ledger.asyncReadEntry(new PositionImpl(entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ledger.asyncReadEntry(new PositionImpl(position, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback(), null);",
+        "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback(null)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(positionId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try { ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(entryId, ledgerId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(topicId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), null, new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(position, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback(), null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback(null)) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

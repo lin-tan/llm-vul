@@ -1,0 +1,56 @@
+{
+    "output": [
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    return new BigInteger[] {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    return new BigInteger[]{\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    try {\n        return new BigInteger[]{\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s.size() > 0) {\n        return new BigInteger[]{\n<|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    BigInteger[] ret = new BigInteger[] {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s.getObjectAt(0) instanceof ASN1Integer) {\n<|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s.size() > 0)\n        return new BigInteger[]{\n<|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s.size() > 0) {\n        return new BigInteger[] {\n<|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s.size() > 0) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s.size() == 2) {\n        return new BigInteger[] {\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return new BigInteger[] {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return new BigInteger[]{\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    try {\n        return new BigInteger[]{\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (s.size() > 0) {\n        return new BigInteger[]{\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    BigInteger[] ret = new BigInteger[] {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (s.getObjectAt(0) instanceof ASN1Integer) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (s.size() > 0)\n        return new BigInteger[]{\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (s.size() > 0) {\n        return new BigInteger[] {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (s.size() > 0) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (s.size() == 2) {\n        return new BigInteger[] {\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

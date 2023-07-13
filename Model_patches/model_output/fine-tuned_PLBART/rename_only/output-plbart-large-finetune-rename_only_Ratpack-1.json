@@ -1,0 +1,66 @@
+{
+    "output": [
+        "HttpHeaders heading = new DefaultHttpHeaders(false);",
+        "HttpHeaders heading = new DefaultHttpHeaders();",
+        "HttpHeaders heading = new DefaultHttpHeaders(false, false);",
+        "HttpHeaders heading = new DefaultHttpHeaders(false, null);",
+        "HttpHeaders heading = new DefaultHttpHeaders(false, true);",
+        "HttpHeaders heading = new DefaultHttpHeaders(true);",
+        "HttpHeaders headers = new DefaultHttpHeaders(false);",
+        "HttpHeaders heading = new DefaultHttpHeaders(false, headers);",
+        "HttpHeaders headings = new DefaultHttpHeaders(false);",
+        "final HttpHeaders heading = new DefaultHttpHeaders(false);"
+    ],
+    "validation_result": [
+        {
+            "patch": "HttpHeaders heading = new DefaultHttpHeaders(false);",
+            "correctness": "compile_success",
+            "translated": "HttpHeaders nettyHeaders = new DefaultHttpHeaders(false);"
+        },
+        {
+            "patch": "HttpHeaders heading = new DefaultHttpHeaders();",
+            "correctness": "test_success",
+            "translated": "HttpHeaders nettyHeaders = new DefaultHttpHeaders();"
+        },
+        {
+            "patch": "HttpHeaders heading = new DefaultHttpHeaders(false, false);",
+            "correctness": "uncompilable",
+            "translated": "HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, false);"
+        },
+        {
+            "patch": "HttpHeaders heading = new DefaultHttpHeaders(false, null);",
+            "correctness": "uncompilable",
+            "translated": "HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, null);"
+        },
+        {
+            "patch": "HttpHeaders heading = new DefaultHttpHeaders(false, true);",
+            "correctness": "uncompilable",
+            "translated": "HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, true);"
+        },
+        {
+            "patch": "HttpHeaders heading = new DefaultHttpHeaders(true);",
+            "correctness": "test_success",
+            "translated": "HttpHeaders nettyHeaders = new DefaultHttpHeaders(true);"
+        },
+        {
+            "patch": "HttpHeaders headers = new DefaultHttpHeaders(false);",
+            "correctness": "uncompilable",
+            "translated": "HttpHeaders headers = new DefaultHttpHeaders(false);"
+        },
+        {
+            "patch": "HttpHeaders heading = new DefaultHttpHeaders(false, headers);",
+            "correctness": "uncompilable",
+            "translated": "HttpHeaders nettyHeaders = new DefaultHttpHeaders(false, headers);"
+        },
+        {
+            "patch": "HttpHeaders headings = new DefaultHttpHeaders(false);",
+            "correctness": "uncompilable",
+            "translated": "HttpHeaders headings = new DefaultHttpHeaders(false);"
+        },
+        {
+            "patch": "final HttpHeaders heading = new DefaultHttpHeaders(false);",
+            "correctness": "compile_success",
+            "translated": "final HttpHeaders nettyHeaders = new DefaultHttpHeaders(false);"
+        }
+    ]
+}

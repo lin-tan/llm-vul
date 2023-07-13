@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-61,5",
+    "output": [
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n\n           \n           \n           \n           \n           \n           \n\n   ",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n\n               \n           \n           \n           \n           \n           \n\n   ",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n\n           \n           \n           \n           \n           \n           \n   \n",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n\n               \n           \n           \n           \n           \n           \n   \n",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n \n       \n       \n       \n       \n       \n    }\n",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n\n           \n           \n           \n           \n           \n       \n\n   ",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n\n               \n       \n       \n       \n       \n       \n\n   ",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n\n               \n           \n           \n           \n           \n       \n\n   ",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n \n       \n       \n       \n       \n       \n\n    }",
+        "\n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n\n           \n       \n       \n       \n       \n       \n\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n \n       \n       \n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n\n\n \n       \n       \n       \n       \n       \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n       \n           \n\n       \n       \n           \n    }\n   \n   \n   \n    try {\n       \n       \n\n       \n        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

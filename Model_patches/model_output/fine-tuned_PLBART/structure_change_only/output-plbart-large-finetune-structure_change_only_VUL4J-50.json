@@ -1,0 +1,66 @@
+{
+    "output": [
+        "write(remoteAddr);",
+        "write(remoteAddr!= null? remoteAddr : \"&nbsp;\");",
+        "String s2 = \"String_Node_Str\"; write(s2);",
+        "String s2 = \"String_Node_Str\" + remoteAddr;",
+        "write(s2);",
+        "write(remoteAddr!= null? remoteAddr:\"&nbsp;\";",
+        "String s2 = \"String_Node_Str\";",
+        "String s2 = remoteAddr;",
+        "write(s1);",
+        "write(nextColumnAlignCenter);"
+    ],
+    "validation_result": [
+        {
+            "patch": "write(remoteAddr);",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr);"
+        },
+        {
+            "patch": "write(remoteAddr!= null? remoteAddr : \"&nbsp;\");",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr!= null? remoteAddr : \"&nbsp;\");"
+        },
+        {
+            "patch": "String s2 = \"String_Node_Str\"; write(s2);",
+            "correctness": "test_success",
+            "translated": "String s2 = \"String_Node_Str\"; write(s2);"
+        },
+        {
+            "patch": "String s2 = \"String_Node_Str\" + remoteAddr;",
+            "correctness": "test_success",
+            "translated": "String s2 = \"String_Node_Str\" + remoteAddr;"
+        },
+        {
+            "patch": "write(s2);",
+            "correctness": "uncompilable",
+            "translated": "write(s2);"
+        },
+        {
+            "patch": "write(remoteAddr!= null? remoteAddr:\"&nbsp;\";",
+            "correctness": "uncompilable",
+            "translated": "write(remoteAddr!= null? remoteAddr:\"&nbsp;\";"
+        },
+        {
+            "patch": "String s2 = \"String_Node_Str\";",
+            "correctness": "test_success",
+            "translated": "String s2 = \"String_Node_Str\";"
+        },
+        {
+            "patch": "String s2 = remoteAddr;",
+            "correctness": "test_success",
+            "translated": "String s2 = remoteAddr;"
+        },
+        {
+            "patch": "write(s1);",
+            "correctness": "test_success",
+            "translated": "write(s1);"
+        },
+        {
+            "patch": "write(nextColumnAlignCenter);",
+            "correctness": "test_success",
+            "translated": "write(nextColumnAlignCenter);"
+        }
+    ]
+}

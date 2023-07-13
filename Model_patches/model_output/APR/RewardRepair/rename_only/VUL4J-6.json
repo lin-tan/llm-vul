@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "for (int iodine = 0; iodine < this.rcount; iodine++) {",
+        "for (int iodine = 0; iodine < this.rcount + 1; iodine++) {",
+        "for (int iodine = 0; iodine < this.count; iodine++) {",
+        "for (int iodine = 0; iodine < this.rcount + 8; iodine++) {",
+        "for (int iodine = 0; iodine < this.rcount + 2; iodine++) {",
+        "for (int iodine = 1; iodine < this.rcount; iodine++) {",
+        "for (int iodine = 0; iodine < this.rcount; iodine++) {",
+        "for (int iodine = 0; iodine < this.rcount+1; iodine++) {",
+        "for (int iodine = 0; iodine <= this.rcount; iodine++) {",
+        "for (int iodine = 1; iodine <= this.rcount; iodine++) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "for (int iodine = 0; iodine < this.rcount; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 0; i < this.rcount; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 0; iodine < this.rcount + 1; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 0; i < this.rcount + 1; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 0; iodine < this.count; iodine++) {",
+            "correctness": "uncompilable",
+            "translated": "for (int i = 0; i < this.count; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 0; iodine < this.rcount + 8; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 0; i < this.rcount + 8; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 0; iodine < this.rcount + 2; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 0; i < this.rcount + 2; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 1; iodine < this.rcount; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 1; i < this.rcount; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 0; iodine < this.rcount; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 0; i < this.rcount; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 0; iodine < this.rcount+1; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 0; i < this.rcount + 1; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 0; iodine <= this.rcount; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 0; i <= this.rcount; i++) {"
+        },
+        {
+            "patch": "for (int iodine = 1; iodine <= this.rcount; iodine++) {",
+            "correctness": "compile_success",
+            "translated": "for (int i = 1; i <= this.rcount; i++) {"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "if(!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.getName())){",
+  "if(!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())){\n",
+  "if(!CustomerFromDatabase.acquireCustomerTitle()){\n",
+  "return false;",
+  "if(!CustomerFromDatabase.equals(CustomerRequest.acquireCustomerTitle())){\n",
+  "if(!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())){",
+  "if(!CustomerFromDatabase.acquireCustomerTitle().equals(requestContent.acquireCustomerTitle())){",
+  "if(!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireMainEmail())){",
+  "if(CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())){\n",
+  "if(!CustomerFromDatabase){\n"
+]

@@ -1,0 +1,12 @@
+[
+  "String pass1 = ((encPass + \"null\") + \"null\");\n",
+  "String pass1 = (rawPass + \"null\");\n",
+  "String pass1 = ((encPass + \"null\") + rawPass);\n",
+  "String pass1 = (((encPass + \"null\") + \"null\") + \"null\");\n",
+  "String pass1 = (salt + \"null\");\n",
+  "String pass1 = encPass;\n",
+  "final String pass1 = (encPass + \"null\");\n",
+  "String pass1 = mergePasswordAndSalt(rawPass, salt, false);\n",
+  "String pass1 = (encPass + \"null\");\n",
+  "String pass1 = (encPass + encPass);\n"
+]

@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-11,1",
+    "output": [
+        "\n    return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//",
+        "\n    return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//Number\n   ",
+        "\n    return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n\n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//Number\n   ",
+        "\n    return new LargeWholeNumber[] {S.acquireContent()).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//,\n\n   ",
+        "\n    return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n    returnge//,\n\n   ",
+        "\n    return new LargeWholeNumber[] {S.acquireContent()).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//\n       \n\n",
+        "\n    return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n\n   \n    return new LargeWholeNumber[] {\npublic\npublic\n    return {\n.\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n   \n    returnE//,\n\n",
+        "\n    return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n\n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n   \n    returnE//,\n\n",
+        "\n    return new LargeWholeNumber[] {S.acquireContent()).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//,\n\n\n",
+        "\n    return new LargeWholeNumber[] {S.acquireContent()).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge\nNumber\n   \n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getObjectAt(0)).getValue(),\n   \n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//Number",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getObjectAt(0)).getValue(),\n   \n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//Number"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n\n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//Number",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getObjectAt(0)).getValue(),\n   \n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return//Number"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireContent()).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//,",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getValue()).getValue(),\n   \n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//,"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n    returnge//,",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getObjectAt(0)).getValue(),\n   \n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n    returnge//,"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireContent()).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getValue()).getValue(),\n   \n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n\n   \n    return new LargeWholeNumber[] {\npublic\npublic\n    return {\n.\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n   \n    returnE//,",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getObjectAt(0)).getValue(),\n\n   \n    return new BigInteger[] {\npublic\npublic\n    return {\n.\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n   \n    returnE//,"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireItemAt(0)).acquireContent(),\n\n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n   \n    returnE//,",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getObjectAt(0)).getValue(),\n\n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\n,\n    return {\n    {\n    return).\n    return {\n    return\n    {Number,\n   \n    returnE//,"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireContent()).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//,",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getValue()).getValue(),\n   \n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge//,"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {S.acquireContent()).acquireContent(),\n   \n   \n    return new LargeWholeNumber[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge\nNumber",
+            "correctness": "uncompilable",
+            "translated": "return new BigInteger[] {s.getValue()).getValue(),\n   \n   \n    return new BigInteger[] {\nprivate\nprivate\n    return {\nNumber\n    return {\n    {\n    return {).\n    return {\n    return\n    {Number,\n   \n    returnge\nNumber"
+        }
+    ]
+}

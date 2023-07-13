@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-6,5",
+    "output": [
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"sendOnPage\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"sendOnPage\", sendOnPage );\n}\n\npublic void releaseSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.removeAttribute( \"sendOnPage\" );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"send_on_page\", sendOnPage );\n}\n\npublic void releaseSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.removeAttribute( \"send_on_page\" );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"send_on_page\", sendOnPage );\n}\n\npublic void removeSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.removeAttribute( \"send_on_page\" );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}\n\npublic void releaseSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.removeAttribute( \"send_on_page\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"send_on_page\", sendOnPage );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"send_on_page\", sendOnPage );\n}\n\npublic void clearSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.removeAttribute( \"send_on_page\" );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"sendOnPage\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"sendOnPage\", sendOnPage );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String) session.getAttribute( \"sendOnPage\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"sendOnPage\", sendOnPage );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"send_on_page\", sendOnPage );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}\n\npublic void releaseSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.removeAttribute( \"send_on_page\" );\n}\n\n}\n",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}\n\npublic void setSendOnPage( HttpServletRequest r, String sendOnPage )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn;\n\t}\n\tsession.setAttribute( \"send_on_page\", sendOnPage );\n}\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"sendOnPage\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"sendOnPage\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"sendOnPage\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"sendOnPage\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String) session.getAttribute( \"sendOnPage\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"sendOnPage\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}"
+        },
+        {
+            "patch": "public String acquireSendOnPage( HttpServletRequest r )\n{\n\tHttpSession session = r.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage( HttpServletRequest request )\n{\n\tHttpSession session = request.getSession( false );\n\tif ( session == null )\n\t{\n\t\treturn null;\n\t}\n\treturn (String)session.getAttribute( \"send_on_page\" );\n}"
+        }
+    ]
+}

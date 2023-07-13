@@ -1,0 +1,67 @@
+{
+    "function range": "3,5-53,5",
+    "output": [
+        "\n        positionService\n        positionService\n    } catch (AdministeredRecordsException ex) {\n        positionService\n        positionService\n}",
+        "\n        positionService\n        positionService\n    } catch (NullPointerException nullPointerException) {\n       \n        positionService\n}",
+        "\n        positionService\n        positionService\n    } catch (NullPointerException nullPointerException) {\n        positionService\n        positionService\n}",
+        "\n        positionService\n        positionService\n    }\n    try {\n       \n        positionService\n}",
+        "\n        positionService\n        positionService\n    } catch (InvalidPositionException e) {\n       \n        positionService\n}",
+        "\n        positionService\n        positionService\n    }\n\n    try {\n       \n        positionService\n}",
+        "\n        positionService\n        positionService\n    } catch (AdministeredRecordsException exception) {\n       \n        positionService\n}",
+        "\n        positionService\n        positionService\n    } catch (AdministeredRecordsException ex) {\n        positionService\n        positionService\n   \n\n   \n}",
+        "\n        positionService\n        positionService\n    } catch (AdministeredRecordsException ex) {\n        positionService\n        positionService\n\n\n\n   \n}",
+        "\n        positionService\n        positionService\n    } catch (AdministeredRecordsException ex) {\n        positionService\n        positionService\n    }"
+    ],
+    "validation_result": [
+        {
+            "patch": "positionService\n        positionService\n    } catch (AdministeredRecordsException ex) {\n        positionService\n        positionService\n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    } catch (ManagedLedgerException ex) {\n        positionService\n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    } catch (NullPointerException nullPointerException) {\n       \n        positionService\n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    } catch (NullPointerException npe) {\n       \n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    } catch (NullPointerException nullPointerException) {\n        positionService\n        positionService\n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    } catch (NullPointerException npe) {\n        positionService\n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    }\n    try {\n       \n        positionService\n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    }\n    try {\n       \n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    } catch (InvalidPositionException e) {\n       \n        positionService\n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    } catch (InvalidPositionException e) {\n       \n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    }\n\n    try {\n       \n        positionService\n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    }\n    try {\n       \n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    } catch (AdministeredRecordsException exception) {\n       \n        positionService\n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    } catch (ManagedLedgerException exception) {\n       \n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    } catch (AdministeredRecordsException ex) {\n        positionService\n        positionService\n   \n\n   \n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    } catch (ManagedLedgerException ex) {\n        positionService\n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    } catch (AdministeredRecordsException ex) {\n        positionService\n        positionService\n\n\n\n   \n}",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    } catch (ManagedLedgerException ex) {\n        positionService\n        positionService\n}"
+        },
+        {
+            "patch": "positionService\n        positionService\n    } catch (AdministeredRecordsException ex) {\n        positionService\n        positionService\n    }",
+            "correctness": "uncompilable",
+            "translated": "positionService\n        positionService\n    } catch (ManagedLedgerException ex) {\n        positionService\n        positionService\n}"
+        }
+    ]
+}

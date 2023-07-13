@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    if (!pathToCheck.startsWith(parentPath)) {\n</s></s></s></s>",
+        "<pad><s>    if (!pathToCheck.equals(parentPath)) {\n</s></s></s></s></s>",
+        "<pad><s>    if (!pathToCheck.startsWith(parentPath.normalize())) {\n</s>",
+        "<pad><s>    if (!parentPath.equals(pathToCheck)) {\n</s></s></s></s></s>",
+        "<pad><s>    if (!pathToCheck.getParent().equals(parentPath)) {\n</s></s>",
+        "<pad><s>    if (!pathToCheck.equals(parentPath.normalize())) {\n</s></s>",
+        "<pad><s>    if (!pathToCheck.isAbsolute()) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>    if (!parentPath.isAbsolute()) {\n</s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!pathToCheck.startsWith(parentPath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.startsWith(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (!pathToCheck.equals(parentPath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.equals(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (!pathToCheck.startsWith(parentPath.normalize())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.startsWith(parentPath.normalize())) {\n"
+        },
+        {
+            "patch": "    if (!parentPath.equals(pathToCheck)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!parentPath.equals(pathToCheck)) {\n"
+        },
+        {
+            "patch": "    if (!pathToCheck.getParent().equals(parentPath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.getParent().equals(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (!pathToCheck.equals(parentPath.normalize())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.equals(parentPath.normalize())) {\n"
+        },
+        {
+            "patch": "    if (!pathToCheck.isAbsolute()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!pathToCheck.isAbsolute()) {\n"
+        },
+        {
+            "patch": "    if (!parentPath.isAbsolute()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!parentPath.isAbsolute()) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

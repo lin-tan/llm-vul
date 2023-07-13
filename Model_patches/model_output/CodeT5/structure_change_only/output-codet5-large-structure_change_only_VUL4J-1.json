@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-63,5",
+    "output": [
+        "\n    }\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n } }\n\n   \n\n   \n\n    parser",
+        "\n    }\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n } }\n\n   \n\n   \n    \n   ",
+        "\n    }\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n }\n\n\n   \n\n   \n\n    parser",
+        "\n    }\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n\n\n\n } }\n\n   \n\n   \n\n    parser.",
+        "\n    }\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n\n    }\n\n    }\n   \n\n\n } }\n\n   \n\n   \n\n    parser.",
+        "\n    }\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n } }\n\n   \n\n   \n\n    if",
+        "\n    }\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n }\n\n\n   \n\n   \n    \n   ",
+        "\n    }\n   @SuppressWarnings({ \"unchecked\", \"rawtypes\" })\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n\n\n    }\n\n    }\n\n\n\n } }\n }\n }\n\n   ",
+        "\n    }\n   @SuppressWarnings({ \"unchecked\", \"rawtypes\" })\npublic static <T> T toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n\n\n    }\n\n    }\n\n\n\n } }\n }\n\n   \n\n   ",
+        "\n    }\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n }\n\n\n   \n\n   \n\n    if"
+    ],
+    "validation_result": [
+        {
+            "patch": "}\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n } }\n\n   \n\n   \n\n    parser",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n }\n\n\n   \n\n   \n\n    parser",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n\n\n\n } }\n\n   \n\n   \n\n    parser.",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n\n    }\n\n    }\n   \n\n\n } }\n\n   \n\n   \n\n    parser.",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n } }\n\n   \n\n   \n\n    if",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings({ \"unchecked\", \"rawtypes\" })\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n\n\n    }\n\n    }\n\n\n\n } }\n }\n }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings({ \"unchecked\", \"rawtypes\" })\npublic static <T> T toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n\n\n    }\n\n    }\n\n\n\n } }\n }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T[] toObjectArray(DefaultJSONParser parser, Class<T> componentClass) {\n\n\n\n        case JSONToken.COMMA:\n           \n    }\n   \n\n\n   \n   \n    }\n\n    }\n   \n\n\n }\n\n\n   \n\n   \n\n    if",
+            "correctness": "uncompilable"
+        }
+    ]
+}

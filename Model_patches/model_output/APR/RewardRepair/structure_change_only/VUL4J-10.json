@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "OutputStream output = getOutputStream();",
+        "OutputStream output = null; output = getOutputStream();",
+        "OutputStream output = getInputStream();",
+        "OutputStream output = this.getOutputStream();",
+        "OutputStream output = getOutputStream(in);",
+        "InputStream output = getOutputStream();",
+        "OutputStream output = getWriter().getOutputStream();",
+        "OutputStream output = getWritableOutputStream();",
+        "OutputStream output = new OutputStream();",
+        "InputStream output = getInputStream();"
+    ],
+    "validation_result": [
+        {
+            "patch": "OutputStream output = getOutputStream();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "OutputStream output = null; output = getOutputStream();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "OutputStream output = getInputStream();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = this.getOutputStream();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(in);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "InputStream output = getOutputStream();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = getWriter().getOutputStream();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = getWritableOutputStream();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = new OutputStream();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "InputStream output = getInputStream();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

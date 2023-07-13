@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        retval[i] = getNumber( i ).floatValue();\n</s></s></s></s></s></s>",
+        "<pad><s>        retval[i] = this.getObject( i ).floatValue();\n</s></s></s>",
+        "<pad><s>        retval[i] = getObject( i ).floatValue();\n</s></s></s></s></s></s>",
+        "<pad><s>        retval[i] = ((COSNumber) getObject( i )).floatValue();\n</s>",
+        "<pad><s>        retval[i] = (float) ((COSNumber) getObject( i ));\n</s>",
+        "<pad><s>        retval[i] = (float) getObject( i );\n</s></s></s></s></s></s></s>",
+        "<pad><s>        retval[i] = (float) getObject( i);\n</s></s></s></s></s></s></s>",
+        "<pad><s>        retval[i] = getDouble( i );\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        retval[i] = getNumber( i ).floatValue();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        retval[i] = this.getObject( i ).floatValue();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        retval[i] = getObject( i ).floatValue();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        retval[i] = ((COSNumber) getObject( i )).floatValue();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        retval[i] = (float) ((COSNumber) getObject( i ));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        retval[i] = (float) getObject( i );\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        retval[i] = (float) getObject( i);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        retval[i] = getDouble( i );\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

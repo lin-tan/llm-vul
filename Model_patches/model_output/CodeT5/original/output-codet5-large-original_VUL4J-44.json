@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n\tif( ==\t\t\n\n",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n\tif( ==\t\t\t\n",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n =\n\t\tfor( )\n",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( cStr == null )\n\t\n\tif( cStr == null )\n\n\t\t\n\t\n for( )\n",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( cStr == null )\n\t\n\tif( c == null )\n\n\t\t\n\t\n\tfor( )\n",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( cStr == null )\n\t\n\tif( c == null )\n\n\t\t\n\t //\n\t\n\n\t",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n =\n\t\n\tfor\t\n",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n =\n\t\n\tfor( )",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n =\n\t\t//\t\n\t",
+        "\n\tif(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\n\t\n//\n\n\tfor( )"
+    ],
+    "validation_result": [
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n\tif( ==",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n\tif( ==",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n =\n\t\tfor( )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( cStr == null )\n\t\n\tif( cStr == null )\n\n\t\t\n\t\n for( )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( cStr == null )\n\t\n\tif( c == null )\n\n\t\t\n\t\n\tfor( )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( cStr == null )\n\t\n\tif( c == null )\n\n\t\t\n\t //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n =\n\t\n\tfor",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n =\n\t\n\tfor( )",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\t\n =\n\t\t//",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(immune == null)\n\tif(cStr == null)\n\n\n\tif(cStr == null)\t\n\t\n\t\n\t\n\n\n\t.\n\t\n\tif( immune == null )\n\tif( c == null )\n\t\n\tif( c == null )\n\n\t\n\t\n//\n\n\tfor( )",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-7,1",
+    "output": [
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader(inDataSequence); }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = producer.createXMLStreamReader(inDataSequence); return reader; }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader(inDataSequence); }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLInputFactory inputFactory = XMLInputFactory.newInstance(); return inputFactory.createXMLStreamReader(inDataSequence); }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = producer.createXMLStreamReader(inDataSequence); return reader ; }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader( inDataSequence); }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader(inDataSequence, null); }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = producer.createXMLStreamReader(inDataSequence); return reader; }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLInputFactory inputFactory = XMLInputFactory.newInstance(); return inputFactory.createXMLStreamReader(inDataSequence); }",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader(new BufferedInputStream(inDataSequence)); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader(inDataSequence); }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return factory.createXMLStreamReader(inputStream); }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = producer.createXMLStreamReader(inDataSequence); return reader; }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = factory.createXMLStreamReader(inputStream); return reader; }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader(inDataSequence); }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return factory.createXMLStreamReader(inputStream); }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLInputFactory inputFactory = XMLInputFactory.newInstance(); return inputFactory.createXMLStreamReader(inDataSequence); }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLInputFactory inputFactory = XMLInputFactory.newInstance(); return inputFactory.createXMLStreamReader(inputStream); }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = producer.createXMLStreamReader(inDataSequence); return reader ; }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = factory.createXMLStreamReader(inputStream); return reader; }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader( inDataSequence); }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return factory.createXMLStreamReader(inputStream); }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader(inDataSequence, null); }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return factory.createXMLStreamReader(inputStream, null); }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = producer.createXMLStreamReader(inDataSequence); return reader; }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLStreamReader reader = factory.createXMLStreamReader(inputStream); return reader; }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLInputFactory inputFactory = XMLInputFactory.newInstance(); return inputFactory.createXMLStreamReader(inDataSequence); }",
+            "correctness": "compile_success",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); XMLInputFactory inputFactory = XMLInputFactory.newInstance(); return inputFactory.createXMLStreamReader(inputStream); }"
+        },
+        {
+            "patch": "final static private XMLStreamReader createXMLStreamReader(InputStream inDataSequence) throws XMLStreamException, IOException { XMLInputFactory producer = XMLInputFactory.newInstance(); producer.setProperty(XMLInputFactory.IS_COALESCING, true); producer.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return producer.createXMLStreamReader(new BufferedInputStream(inDataSequence)); }",
+            "correctness": "uncompilable",
+            "translated": "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException { XMLInputFactory factory = XMLInputFactory.newInstance(); factory.setProperty(XMLInputFactory.IS_COALESCING, true); factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true); return factory.createXMLStreamReader(new BufferedInputStream(inputStream)); }"
+        }
+    ]
+}

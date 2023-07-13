@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "cbr = cbr.remaining(); }",
+        "cbr = cb.remaining(); }",
+        "cbr = cbr; }",
+        "cbr = enc.remaining(); }",
+        "enc.encode(cb, out, false); }",
+        "enc.put(enc, cbr); }",
+        "cbr = out.remaining(); }",
+        "enc = cb.remaining(); }",
+        "res = enc.encode(cb, out); }",
+        "if (out == null) { return null; } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "cbr = cbr.remaining(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "cbr = cb.remaining(); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "cbr = cbr; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "cbr = enc.remaining(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "enc.encode(cb, out, false); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "enc.put(enc, cbr); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "cbr = out.remaining(); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "enc = cb.remaining(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "res = enc.encode(cb, out); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (out == null) { return null; } }",
+            "correctness": "compile_success"
+        }
+    ]
+}

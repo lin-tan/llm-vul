@@ -1,0 +1,37 @@
+{
+    "VUL4J-47-115-116": {
+        "src": "xml CaMeL Input . set CaMeL Property ( XML CaMeL Input CaMeL Factory . IS _ SUPPORTING _ EXTERNAL _ ENTITIES , Boolean . FALSE ) ;",
+        "patches": [
+            {
+                "patch": "} initializeManufactories( xmlInput , xmlOutput , xmlOutput , textComponentName ) ;"
+            },
+            {
+                "patch": "xmlInput.setProperty( ' ', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlInput.setProperty( ' || ch == ', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlInput.setProperty( '\\r', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlInput.setProperty( '\\n', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlInput.setProperty( '\\t', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlInput = Boolean.valueOf( Boolean.valueOf( Boolean.FALSE ) ).booleanValue( ) ;"
+            },
+            {
+                "patch": "xmlInput.setProperty( Boolean.FALSE , Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "if( xmlInput == null ) { throw new IllegalArgumentException( ' ') ; }"
+            },
+            {
+                "patch": "if( xmlInput == null ) { throw new IllegalArgumentException( ' || ch == ') ; }"
+            }
+        ]
+    }
+}

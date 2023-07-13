@@ -1,0 +1,66 @@
+{
+    "output": [
+        "OutputStream output = null;",
+        "OutputStream output = getOutputStream(false);",
+        "OutputStream output = getOutputStream(true);",
+        "final OutputStream output = getOutputStream();",
+        "OutputStream output = getOutputStream(in);",
+        "OutputStream output = getOutput();",
+        "OutputStream output = outputStream;",
+        "OutputStream output = out;",
+        "OutputStream output = new BufferedOutputStream();",
+        "OutputStream output = getOutputStream(null);"
+    ],
+    "validation_result": [
+        {
+            "patch": "OutputStream output = null;",
+            "correctness": "compile_success",
+            "translated": "OutputStream output = null;"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(false);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(false);"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(true);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(true);"
+        },
+        {
+            "patch": "final OutputStream output = getOutputStream();",
+            "correctness": "compile_success",
+            "translated": "final OutputStream output = getOutputStream();"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(in);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(input);"
+        },
+        {
+            "patch": "OutputStream output = getOutput();",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutput();"
+        },
+        {
+            "patch": "OutputStream output = outputStream;",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = outputStream;"
+        },
+        {
+            "patch": "OutputStream output = out;",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = out;"
+        },
+        {
+            "patch": "OutputStream output = new BufferedOutputStream();",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = new BufferedOutputStream();"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(null);",
+            "correctness": "uncompilable",
+            "translated": "OutputStream output = getOutputStream(null);"
+        }
+    ]
+}

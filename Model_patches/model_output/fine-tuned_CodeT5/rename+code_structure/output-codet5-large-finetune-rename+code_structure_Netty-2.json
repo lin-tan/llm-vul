@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    int terminalColon = titleTerminal;\n</s>",
+        "<pad><s>    int terminalColon;\n</s></s></s></s>",
+        "<pad><s>    int terminalColon = -1;\n</s>",
+        "<pad><s>    int terminalColon = 0;\n</s></s>",
+        "<pad><s>    int terminalColon = titleEnd;\n</s>",
+        "<pad><s>    final int terminalColon;\n</s></s></s>",
+        "<pad><s>    int terminalColon = range;\n</s></s>",
+        "<pad><s>    int titleColon;\n</s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    int terminalColon = titleTerminal;\n",
+            "correctness": "compile_success",
+            "translated": "    int colonEnd = nameEnd;\n"
+        },
+        {
+            "patch": "    int terminalColon;\n",
+            "correctness": "compile_success",
+            "translated": "    int colonEnd;\n"
+        },
+        {
+            "patch": "    int terminalColon = -1;\n",
+            "correctness": "compile_success",
+            "translated": "    int colonEnd = -1;\n"
+        },
+        {
+            "patch": "    int terminalColon = 0;\n",
+            "correctness": "compile_success",
+            "translated": "    int colonEnd = 0;\n"
+        },
+        {
+            "patch": "    int terminalColon = titleEnd;\n",
+            "correctness": "uncompilable",
+            "translated": "    int colonEnd = titleEnd;\n"
+        },
+        {
+            "patch": "    final int terminalColon;\n",
+            "correctness": "uncompilable",
+            "translated": "    final int colonEnd;\n"
+        },
+        {
+            "patch": "    int terminalColon = range;\n",
+            "correctness": "compile_success",
+            "translated": "    int colonEnd = length;\n"
+        },
+        {
+            "patch": "    int titleColon;\n",
+            "correctness": "uncompilable",
+            "translated": "    int titleColon;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

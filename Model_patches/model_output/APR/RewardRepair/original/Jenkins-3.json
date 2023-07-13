@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "nativeCollection < View> all() { return views; }",
+        "nullCollection < View> all() { return views; }",
+        "nativeSet < View> all() { return views; }",
+        "public Collection < View> all() { return views; }",
+        "Collection < View> all() { return views; }",
+        "final Collection < View> all() { return views; }",
+        "private Collection < View> all() { return views; }",
+        "Collection < View> all() { return views.values(); }",
+        ".add(new Collection < View> all() { return views; }",
+        "null Collection < View> all() { return views; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "nativeCollection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "nullCollection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "nativeSet < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public Collection < View> all() { return views; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Collection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "final Collection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private Collection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Collection < View> all() { return views.values(); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".add(new Collection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "null Collection < View> all() { return views; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

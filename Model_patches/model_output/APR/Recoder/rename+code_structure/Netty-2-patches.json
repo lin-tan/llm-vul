@@ -1,0 +1,12 @@
+[
+  "break;\n",
+  "return;\n",
+  "reset();\n",
+  "resetNow();\n",
+  "titleTerminal++;\n",
+  "terminalColon++;\n",
+  "terminalColon = titleTerminal;\n",
+  "contentBeginning = discoverNotSpacing(a, terminalColon);\n",
+  "title = a.partOfStringInsecure(titleBeginning, titleTerminal);\n",
+  "titleTerminal = titleBeginning;\n"
+]

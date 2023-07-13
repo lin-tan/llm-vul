@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "= ZipEncodingHelper.growBufferBy(out, increment);",
+        "= ZipEncodingHelper.growBufferBy(out);",
+        "= ZipEncodingHelper.growBufferBy(out, increment, false);",
+        "= ZipEncodingHelper.growBufferBy(enc, increment);",
+        "= ZipEncodingHelper.growBufferBy(out, increment, true);",
+        "out = ZipEncodingHelper.growBufferBy(out, increment);",
+        "= ZipEncodingHelper.growBufferBy(out, increment, enc);",
+        "= ZipEncodingHelper.growBufferBy(incremental);",
+        "= ZipEncodingHelper.growBufferBy(out, increment, 0);",
+        "= ZipEncodingHelper.growBufferBy(res, increment);"
+    ],
+    "validation_result": [
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(out, increment);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(out);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(out, increment, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(enc, increment);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(out, increment, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(out, increment, enc);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(incremental);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(out, increment, 0);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "= ZipEncodingHelper.growBufferBy(res, increment);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

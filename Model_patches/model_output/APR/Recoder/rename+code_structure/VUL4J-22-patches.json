@@ -1,0 +1,12 @@
+[
+  "circumstancePath = ((circumstancePath == null))?r.getContextPath():circumstancePath;\n",
+  "if((circumstancePath == null)){\n",
+  "return null;",
+  "return circumstancePath;",
+  "circumstancePath = (String)r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n",
+  "r.getContextPath();\n",
+  "circumstancePath = r.getContextPath();\n",
+  "return decryptRequestContent(r, circumstancePath);",
+  "if((circumstancePath != null)){\n",
+  "circumstancePath = ((circumstancePath == null))?r.getContextPath():circumstancePath;\ncircumstancePath = ((circumstancePath == null))?r.getContextPath():circumstancePath;\n"
+]

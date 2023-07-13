@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        ".setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "SetCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "SetCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());",
+        "setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "this.setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "This.setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "setCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());",
+        "this.setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "nativeSetCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "This.setCurrentAccessPermission(new AccessPermission(dicPermissions));"
+    ],
+    "validation_result": [
+        {
+            "patch": ".setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "SetCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "SetCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "This.setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "nativeSetCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "This.setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "uncompilable"
+        }
+    ]
+}

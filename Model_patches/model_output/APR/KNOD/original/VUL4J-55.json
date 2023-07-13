@@ -1,0 +1,65 @@
+{
+    "id": 25,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2587,
+            "fix_type": "general",
+            "patch": "f.redoAdjustmentIfModified > 3"
+        },
+        {
+            "rank": 2,
+            "score": -0.2693,
+            "fix_type": "general",
+            "patch": "bits.redoAdjustmentIfModified"
+        },
+        {
+            "rank": 3,
+            "score": -0.2693,
+            "fix_type": "general",
+            "patch": "spec.redoAdjustmentIfModified"
+        },
+        {
+            "rank": 4,
+            "score": -0.4757,
+            "fix_type": "general",
+            "patch": "f.redoAdjustmentIfModified"
+        },
+        {
+            "rank": 5,
+            "score": -0.5632,
+            "fix_type": "insert",
+            "patch": "if (l == null )continue  ;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5018,
+            "fix_type": "general",
+            "patch": "f.redoAdjustmentIfModified && f.displayName"
+        },
+        {
+            "rank": 7,
+            "score": -0.5018,
+            "fix_type": "general",
+            "patch": "f.redoAdjustmentIfModified && f.field"
+        },
+        {
+            "rank": 8,
+            "score": -0.5251,
+            "fix_type": "general",
+            "patch": "f.redoAdjustmentIfModified != null"
+        },
+        {
+            "rank": 9,
+            "score": -0.6031,
+            "fix_type": "insert",
+            "patch": "if (next == null )continue  ;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5596,
+            "fix_type": "general",
+            "patch": "f.redoAdjustmentIfModified || f.displayName"
+        }
+    ]
+}

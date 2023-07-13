@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-52,1",
+    "output": [
+        "\n    try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           //\n",
+        "\n    try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n   \n    try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           //\n",
+        "\n    try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try ////\n",
+        "\n    try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           \n\n",
+        "\n    try\n    try\n    }\n    catch ( final FileNotFoundException e )\n    {\n        acquireLogger().warn( e.getMessage() );\n    }\n    try\n\n    try\n    try\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n\n           //\n//\n//\n\n",
+        "\n    try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n        try\n           //\n",
+        "\n    try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n   \n    try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try ////\n",
+        "\n    try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n   \n    try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           \n\n",
+        "\n    try\n    try\n    }\n    catch ( final FileNotFoundException e )\n    {\n        acquireLogger().warn( e.getMessage() );\n    }\n    try\n\n    try\n    try\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n\n           //\n\n\n\n\n\n",
+        "\n    try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try //\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           //",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInputStream, srcF );\n        }\n        catch ( final IOException ex )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           //"
+        },
+        {
+            "patch": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n   \n    try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           //",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInputStream, srcF );\n        }\n        catch ( final IOException ex )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           //"
+        },
+        {
+            "patch": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try ////",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInputStream, srcF );\n        }\n        catch ( final IOException ex )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try ////"
+        },
+        {
+            "patch": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInputStream, srcF );\n        }\n        catch ( final IOException ex )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try"
+        },
+        {
+            "patch": "try\n    try\n    }\n    catch ( final FileNotFoundException e )\n    {\n        acquireLogger().warn( e.getMessage() );\n    }\n    try\n\n    try\n    try\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n\n           //\n//\n//",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n    }\n    catch ( final FileNotFoundException ex )\n    {\n        getLogger().warn( ex.getMessage() );\n    }\n    try\n\n    try\n    try\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n\n           //\n//\n//"
+        },
+        {
+            "patch": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n        try\n           //",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInputStream, srcF );\n        }\n        catch ( final IOException ex )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           //"
+        },
+        {
+            "patch": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n   \n    try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try ////",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInputStream, srcF );\n        }\n        catch ( final IOException ex )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try ////"
+        },
+        {
+            "patch": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n   \n    try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInputStream, srcF );\n        }\n        catch ( final IOException ex )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try"
+        },
+        {
+            "patch": "try\n    try\n    }\n    catch ( final FileNotFoundException e )\n    {\n        acquireLogger().warn( e.getMessage() );\n    }\n    try\n\n    try\n    try\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n\n           //",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n    }\n    catch ( final FileNotFoundException ex )\n    {\n        getLogger().warn( ex.getMessage() );\n    }\n    try\n\n    try\n    try\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n\n           //"
+        },
+        {
+            "patch": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInDataSequence, originFile );\n        }\n        catch ( final IOException e )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try //",
+            "correctness": "uncompilable",
+            "translated": "try\n    try\n   \n    try\n   \n    try\n        {\n            IOUtil.copy( compressedInputStream, srcF );\n        }\n        catch ( final IOException ex )\n        {\n        }\n       \n       \n       \n       \n        try\n       \n       \n    try\n    try\n    try\n       \n\n    try\n    try\n           //"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable();\n    for (int i = in.readInt(); i > 0; i--) {\n      Object key = in.readObject();\n      Object value = in.readObject();\n      table.put(key, value);\n    }\n  }\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable<>();\n    for (int i = in.readInt(); i > 0; i--) {\n      Object key = in.readObject();\n      Object value = in.readObject();\n      put(key, value);\n    }\n  }\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable();\n    for (int i = in.readInt(); i > 0; i--) {\n      Object key = in.readObject();\n      Object value = in.readObject();\n      put(key, value);\n    }\n  }\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    init();\n  }\n\n  private void writeObject(ObjectOutputStream out) throws IOException {\n    out.defaultWriteObject();\n  }\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    init();\n  }\n\n  private void writeObject(ObjectOutputStream out) throws IOException {\n    out.defaultWriteObject();\n  }\n\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    init();\n  }\n\n  private void writeObject(ObjectOutputStream out)\n        throws IOException {\n    out.defaultWriteObject();\n  }\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    init();\n  }\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable();\n  }\n}\n",
+        "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable<>();\n  }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable();\n    for (int i = in.readInt(); i > 0; i--) {\n      Object key = in.readObject();\n      Object value = in.readObject();\n      table.put(key, value);\n    }\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable<>();\n    for (int i = in.readInt(); i > 0; i--) {\n      Object key = in.readObject();\n      Object value = in.readObject();\n      put(key, value);\n    }\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable();\n    for (int i = in.readInt(); i > 0; i--) {\n      Object key = in.readObject();\n      Object value = in.readObject();\n      put(key, value);\n    }\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    init();\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    init();\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    init();\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    init();\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable();\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n    table = new Hashtable<>();\n  }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

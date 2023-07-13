@@ -1,0 +1,17 @@
+{
+    "method": {
+        "getOutputStream": "acquireOutDataSequence",
+        "readObject": "readItem"
+    },
+    "variable": {
+        "output": "production",
+        "cachedContent": "savedData",
+        "input": "in",
+        "dfosFile": "serializationFile",
+        "in": "inputStream",
+        "": ""
+    },
+    "class": {
+        "": ""
+    }
+}

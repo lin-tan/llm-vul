@@ -1,0 +1,12 @@
+[
+  "if((step.getWait() && (item instanceof Job))){",
+  "if((item instanceof Job)){\n",
+  "if((step.getWait() || (item instanceof Job))){",
+  "if((step.isPropagate() && (item instanceof Job))){",
+  "if(step.getWait()){\n",
+  "if((step.getWait() && (item == Job))){",
+  "if((step.getWait() && (item != Job))){",
+  "if((step.getWait() && (item > Job))){",
+  "if(start()){\n",
+  "if(((step.getWait() && (item instanceof Job)) && (item instanceof Job))){\n"
+]

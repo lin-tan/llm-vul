@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(true);\n</s>",
+        "<pad><s>        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(false);\n</s>",
+        "<pad><s>        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(null);\n</s>",
+        "<pad><s>        documentBuilder = documentBuilderFactory.newDocumentBuilder();\n</s></s></s></s></s>",
+        "<pad><s>        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n</s></s></s>",
+        "<pad><s>        final DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n</s></s>",
+        "<pad><s>        docBuilder = documentBuilderFactory.newDocumentBuilder();\n</s></s></s></s></s>",
+        "<pad><s>        DocumentBuilder documentBuilder = null;\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>        DocumentBuilder documentBuilder = new DocumentBuilder();\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(null);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        documentBuilder = documentBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "        final DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "        docBuilder = documentBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        DocumentBuilder documentBuilder = null;\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "        DocumentBuilder documentBuilder = new DocumentBuilder();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

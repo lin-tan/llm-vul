@@ -1,0 +1,65 @@
+{
+    "id": 4,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.3668,
+            "fix_type": "insert",
+            "patch": "if (fpath == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.3797,
+            "fix_type": "insert",
+            "patch": "if (fpath == null ){\nthrow new IOException(\"failed to create directory \");\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3828,
+            "fix_type": "general",
+            "patch": "fpath.equals(objectiveFolder.getCanonicalPath())"
+        },
+        {
+            "rank": 4,
+            "score": -0.4317,
+            "fix_type": "insert",
+            "patch": "if (fpath == null || fpath == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.4473,
+            "fix_type": "insert",
+            "patch": "if (fpath == null ){\ncontinue  ;\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4962,
+            "fix_type": "insert",
+            "patch": "if (fpath == null ){\nthrow new ZipArchiveEntry(\"failed to create directory \");\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4962,
+            "fix_type": "insert",
+            "patch": "if (fpath == null ){\nthrow new IOUtils(\"failed to create directory \");\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.5577,
+            "fix_type": "general",
+            "patch": "objectiveFolder.startsWith(objectiveFolder.getCanonicalPath())"
+        },
+        {
+            "rank": 9,
+            "score": -0.6137,
+            "fix_type": "insert",
+            "patch": "if (fpath instanceof ZipArchiveEntry ){\ncontinue  ;\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.6137,
+            "fix_type": "insert",
+            "patch": "if (fpath instanceof IOUtils ){\ncontinue  ;\n}\n"
+        }
+    ]
+}

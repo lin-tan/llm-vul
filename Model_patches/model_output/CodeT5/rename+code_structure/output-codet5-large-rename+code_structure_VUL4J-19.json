@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-112,1",
+    "output": [
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }\n\n\n",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }\n       \n       \n\n       \n       \n    }\n\n\n",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n\n\n       \n       \n    }\n\n\n\n",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }\n       \n       \n\n       \n       \n       \n\n\n\n",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }\n       \n       \n\n       \n       \n    }\n\n\n",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }\n       \n       \n\n       \n       \n       \n\n    }",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }\n\n\n",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n       \n\n\n\n",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n\n\n       \n       \n    }\n\n\n   ",
+        "\n                    byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }\n       \n       \n\n       \n       \n       \n\n\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }\n       \n       \n\n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n\n\n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n            }\n        }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }\n       \n       \n\n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }\n       \n       \n\n       \n       \n       \n\n    }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n            }\n        }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n               \n            }\n        }\n\n\n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n               \n            }\n        }\n       \n\n       \n       \n    }"
+        },
+        {
+            "patch": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] fileIdentifierByte = acquireFileIdentifierByte();\n\n\n       \n\n\n\n            }\n        }",
+            "correctness": "uncompilable",
+            "translated": "byte[] passwordByteArray = acquirePasswordByteArray();\n\n           \n                    byte[] fileIdentifierByteArray = acquireFileIdentifierByteArray();\n                    byte[]\n\n       \n       \n       \n\n\n       \n       \n            byte[] documentIDBytes = getDocumentIDBytes();\n\n\n       \n\n\n\n            }\n        }"
+        }
+    ]
+}

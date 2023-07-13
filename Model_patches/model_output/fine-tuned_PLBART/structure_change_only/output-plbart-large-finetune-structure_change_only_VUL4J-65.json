@@ -1,0 +1,66 @@
+{
+    "output": [
+        "for(int index = 1;file.exists();index++){",
+        "for(int index = 0;index < 2;index++) {",
+        "for (int index = 1;file.exists();index++){",
+        "for(int index = 1;file.exists();index++) {",
+        "for(int index = 0;index < 2;index++){",
+        "for (int index = 1;file.exists();index++) {",
+        "for (int index = 0;index < 2;index++) {",
+        "for(int index = 0; index < 2;index++) {",
+        "for(int index = 1; file.exists();index++){",
+        "for(int index = 0;index <= 2;index++) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "for(int index = 1;file.exists();index++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for(int index = 0;index < 2;index++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index < 2;index++) {"
+        },
+        {
+            "patch": "for (int index = 1;file.exists();index++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for(int index = 1;file.exists();index++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for(int index = 0;index < 2;index++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index < 2;index++) {"
+        },
+        {
+            "patch": "for (int index = 1;file.exists();index++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for (int index = 0;index < 2;index++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index < 2;index++) {"
+        },
+        {
+            "patch": "for(int index = 0; index < 2;index++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index < 2;index++) {"
+        },
+        {
+            "patch": "for(int index = 1; file.exists();index++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for(int index = 0;index <= 2;index++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index <= 2;index++) {"
+        }
+    ]
+}

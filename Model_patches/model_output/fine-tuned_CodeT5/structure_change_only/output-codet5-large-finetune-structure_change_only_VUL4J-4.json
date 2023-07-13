@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        answer = typeConverter.convertTo(type, exchange, body);\n</s>",
+        "<pad><s>        answer = typeConverter.convertTo(type, exchange, answer);\n</s>",
+        "<pad><s>        answer = (answer == null? body : new InputSource(answer));\n</s>",
+        "<pad><s>        answer = null;\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        answer = getContent(exchange, answer);\n</s></s></s></s></s></s></s>",
+        "<pad><s>        answer = convert(answer);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        answer = convert(answer, body);\n</s></s></s></s></s></s></s>",
+        "<pad><s>        answer = new InputSource(body);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        answer = typeConverter.convertTo(type, exchange, body);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        answer = typeConverter.convertTo(type, exchange, answer);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        answer = (answer == null? body : new InputSource(answer));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        answer = null;\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "        answer = getContent(exchange, answer);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        answer = convert(answer);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        answer = convert(answer, body);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        answer = new InputSource(body);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

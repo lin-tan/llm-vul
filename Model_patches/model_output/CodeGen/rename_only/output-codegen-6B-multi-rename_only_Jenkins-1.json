@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n  }\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n  }\n\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n@Exported(inline=true)\npublic Map<String,Object> releaseProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n@Exported(inline=true)\npublic Map<String,Object> releaseProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n@Exported(inline=true)\npublic Map<String,Object> getProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n@Exported(inline=true)\npublic Map<String,Object> releaseProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n@Exported(inline=true)\npublic Map<String,Object> getProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n@Exported(inline=true)\npublic Map<String,Object> releaseProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}\n\n@Exported(inline=true)\npublic Map<String,Object> releaseProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n  }",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        },
+        {
+            "patch": "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() {\n    Map<String,Object> z = new HashMap<String, Object>();\n    return z;\n}",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true)\npublic Map<String,Object> getMonitorData() {\n    Map<String,Object> r = new HashMap<String, Object>();\n    return r;\n  }"
+        }
+    ]
+}

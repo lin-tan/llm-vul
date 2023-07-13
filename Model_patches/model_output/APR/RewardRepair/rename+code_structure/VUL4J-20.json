@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "COSNumeral cosNumber = (COSNumeral)acquireItem( j ).floatContent();",
+        "COSNumeral cosNumber = (COSNumeral)acquireItem( j );",
+        "(COSNumeral)acquireItem( j ).floatContent();",
+        "COSNumeral cosNumber = (COSNumeral)acquireItem( j ).intValue();",
+        "CoSNumeral cosNumber = (COSNumeral)acquireItem( j ).floatContent();",
+        "CoSNumeral cosNumber = (COSNumeral)acquireItem( j );",
+        "COSNumeral cosNumber = acquireItem( j ); result[j] = cosNumber.floatContent();",
+        "COSNumeral cosNumber = (COSNumeral)acquireItem( result );",
+        "float content = acquireItem( j ); COSNumeral cosNumber = (COSNumeral)content;",
+        "CoSNumeral cosNumber = (COSNumeral)acquireItem( j ).intValue();"
+    ],
+    "validation_result": [
+        {
+            "patch": "COSNumeral cosNumber = (COSNumeral)acquireItem( j ).floatContent();",
+            "correctness": "uncompilable",
+            "translated": "COSNumber cosNumber = (COSNumber)getObject( i ).floatValue();"
+        },
+        {
+            "patch": "COSNumeral cosNumber = (COSNumeral)acquireItem( j );",
+            "correctness": "compile_success",
+            "translated": "COSNumber cosNumber = (COSNumber)getObject( i );"
+        },
+        {
+            "patch": "(COSNumeral)acquireItem( j ).floatContent();",
+            "correctness": "uncompilable",
+            "translated": "(COSNumber)getObject( i ).floatValue();"
+        },
+        {
+            "patch": "COSNumeral cosNumber = (COSNumeral)acquireItem( j ).intValue();",
+            "correctness": "uncompilable",
+            "translated": "COSNumber cosNumber = (COSNumber)getObject( i ).intValue();"
+        },
+        {
+            "patch": "CoSNumeral cosNumber = (COSNumeral)acquireItem( j ).floatContent();",
+            "correctness": "uncompilable",
+            "translated": "CoSNumeral cosNumber = (COSNumber)getObject( i ).floatValue();"
+        },
+        {
+            "patch": "CoSNumeral cosNumber = (COSNumeral)acquireItem( j );",
+            "correctness": "uncompilable",
+            "translated": "CoSNumeral cosNumber = (COSNumber)getObject( i );"
+        },
+        {
+            "patch": "COSNumeral cosNumber = acquireItem( j ); result[j] = cosNumber.floatContent();",
+            "correctness": "uncompilable",
+            "translated": "COSNumber cosNumber = getObject( i ); retval[i] = cosNumber.floatValue();"
+        },
+        {
+            "patch": "COSNumeral cosNumber = (COSNumeral)acquireItem( result );",
+            "correctness": "uncompilable",
+            "translated": "COSNumber cosNumber = (COSNumber)getObject( retval );"
+        },
+        {
+            "patch": "float content = acquireItem( j ); COSNumeral cosNumber = (COSNumeral)content;",
+            "correctness": "uncompilable",
+            "translated": "float content = getObject( i ); COSNumber cosNumber = (COSNumber)content;"
+        },
+        {
+            "patch": "CoSNumeral cosNumber = (COSNumeral)acquireItem( j ).intValue();",
+            "correctness": "uncompilable",
+            "translated": "CoSNumeral cosNumber = (COSNumber)getObject( i ).intValue();"
+        }
+    ]
+}

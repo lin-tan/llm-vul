@@ -1,0 +1,12 @@
+[
+  "Document doc = documentBuilderFactory.newDocumentBuilder().parse(xPathExpression);\n",
+  "Document doc = documentBuilderFactory.newDocumentBuilder().parse(xPathFactory);\n",
+  "Document doc = xPathExpression.newDocumentBuilder().parse(inputStream);\n",
+  "Document doc = documentBuilderFactory.newDocumentBuilder();\n",
+  "Document doc = documentBuilderFactory.newDocumentBuilder().parse(simpleMode);\n",
+  "return;\n",
+  "Document doc = documentBuilderFactory.pollFirst().parse(inputStream);\n",
+  "Document doc = documentBuilderFactory.newXPath().parse(inputStream);\n",
+  "if((xPathExpression != null)){\n",
+  "documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n"
+]

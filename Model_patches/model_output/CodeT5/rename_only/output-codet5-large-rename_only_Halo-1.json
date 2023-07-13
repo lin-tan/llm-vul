@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-9,1",
+    "output": [
+        "\n    if (basePath.equals(examinePath)) {//\n\n    if (!isProhibited()) {\n\n\n\n\n\n\n\n",
+        "\n    if (basePath.equals(examinePath)) {//\n\n    if (isProhibited()) {\n\n\n   \n\n\n\n\n",
+        "\n    if (basePath.equals(examinePath)) {//\n\n    if (!isProhibited()) {\n\n\n   \n\n\n\n\n",
+        "\n    if (basePath.equals(examinePath)) {\n   ",
+        "\n    if (basePath.equals(examinePath)) {\n",
+        "\n    if (basePath.equals(examinePath)) {\n    } else {",
+        "\n    if (isProhibited()) {\n    } else {",
+        "\n    if (isProhibited()) {\n   ",
+        "\n    if (!isProhibited()) {\n   ",
+        "\n    if (basePath.isAbsolute()) {\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "if (basePath.equals(examinePath)) {//\n\n    if (!isProhibited()) {",
+            "correctness": "uncompilable",
+            "translated": "if (parentPath.equals(pathToCheck)) {//\n\n    if (!isProhibited()) {"
+        },
+        {
+            "patch": "if (basePath.equals(examinePath)) {//\n\n    if (isProhibited()) {",
+            "correctness": "uncompilable",
+            "translated": "if (parentPath.equals(pathToCheck)) {//\n\n    if (isProhibited()) {"
+        },
+        {
+            "patch": "if (basePath.equals(examinePath)) {//\n\n    if (!isProhibited()) {",
+            "correctness": "uncompilable",
+            "translated": "if (parentPath.equals(pathToCheck)) {//\n\n    if (!isProhibited()) {"
+        },
+        {
+            "patch": "if (basePath.equals(examinePath)) {",
+            "correctness": "compile_success",
+            "translated": "if (parentPath.equals(pathToCheck)) {"
+        },
+        {
+            "patch": "if (basePath.equals(examinePath)) {",
+            "correctness": "compile_success",
+            "translated": "if (parentPath.equals(pathToCheck)) {"
+        },
+        {
+            "patch": "if (basePath.equals(examinePath)) {\n    } else {",
+            "correctness": "compile_success",
+            "translated": "if (parentPath.equals(pathToCheck)) {\n    } else {"
+        },
+        {
+            "patch": "if (isProhibited()) {\n    } else {",
+            "correctness": "uncompilable",
+            "translated": "if (isProhibited()) {\n    } else {"
+        },
+        {
+            "patch": "if (isProhibited()) {",
+            "correctness": "uncompilable",
+            "translated": "if (isProhibited()) {"
+        },
+        {
+            "patch": "if (!isProhibited()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!isProhibited()) {"
+        },
+        {
+            "patch": "if (basePath.isAbsolute()) {",
+            "correctness": "compile_success",
+            "translated": "if (parentPath.isAbsolute()) {"
+        }
+    ]
+}

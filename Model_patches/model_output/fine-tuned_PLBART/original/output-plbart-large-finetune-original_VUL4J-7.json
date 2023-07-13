@@ -1,0 +1,56 @@
+{
+    "output": [
+        "return 0;",
+        "throw new EOFException();",
+        "return -1;",
+        "return l;",
+        "current.bytesReadFromStream += l;",
+        "if (l == -1) { return -1; }",
+        "return 0L;",
+        "throw new IOException();",
+        "l = -1;",
+        "return;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return 0;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "throw new EOFException();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return -1;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return l;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "current.bytesReadFromStream += l;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (l == -1) { return -1; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return 0L;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "throw new IOException();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "l = -1;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

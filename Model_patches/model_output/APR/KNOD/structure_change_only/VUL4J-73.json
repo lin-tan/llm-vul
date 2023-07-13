@@ -1,0 +1,65 @@
+{
+    "id": 35,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.3496,
+            "fix_type": "general",
+            "patch": "  String pass1 = \"\" + \"\";\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.4123,
+            "fix_type": "general",
+            "patch": "  String pass1 = encPass.trim() + \"\";\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4083,
+            "fix_type": "general",
+            "patch": "  String pass1 = \"\";\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.4399,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.3579,
+            "fix_type": "general",
+            "patch": "  String pass1 = encPass.toLowerCase() + \"\";\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3706,
+            "fix_type": "general",
+            "patch": "  String pass1 = encPass.length() + \"\";\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4099,
+            "fix_type": "general",
+            "patch": "  String pass1 = null;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.5272,
+            "fix_type": "insert",
+            "patch": "if (name == null )return false;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4576,
+            "fix_type": "general",
+            "patch": "  String pass1 = \"\" + \"\";\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.4576,
+            "fix_type": "general",
+            "patch": "  String pass1 = \"0\" + \"\";\n"
+        }
+    ]
+}

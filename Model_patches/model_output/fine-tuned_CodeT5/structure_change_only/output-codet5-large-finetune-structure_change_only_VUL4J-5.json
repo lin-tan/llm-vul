@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        if (fpath.startsWith(targetDirectory.getAbsolutePath())) {\n</s></s>",
+        "<pad><s>        if (fpath.startsWith(targetDirectory)) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>        if (fpath.startsWith(targetDirectory.toURI().toString())) {\n</s>",
+        "<pad><s>        if (fpath.startsWith(targetDirectory.getCanonicalPath())) {\n</s></s>",
+        "<pad><s>        if (fpath.equals(targetDirectory.getCanonicalPath())) {\n</s></s></s>",
+        "<pad><s>        if (fpath.startsWith(targetDirectory.getPath())) {\n</s></s></s>",
+        "<pad><s>        if (fpath.startsWith(targetDirectory.toURI().toString())) {   \n</s>",
+        "<pad><s>        if (fpath.startsWith(targetDirectoryPath)) {\n</s></s></s></s></s></s>",
+        "<pad><s>        if (fpath.startsWith(path)) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        if (fpath.startsWith(targetDirectory.getAbsolutePath())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (fpath.startsWith(targetDirectory)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        if (fpath.startsWith(targetDirectory.toURI().toString())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (fpath.startsWith(targetDirectory.getCanonicalPath())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (fpath.equals(targetDirectory.getCanonicalPath())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (fpath.startsWith(targetDirectory.getPath())) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (fpath.startsWith(targetDirectory.toURI().toString())) {   \n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        if (fpath.startsWith(targetDirectoryPath)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        if (fpath.startsWith(path)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

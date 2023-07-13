@@ -1,0 +1,791 @@
+{
+    "id": "cmpl-6rEWLrPjNSqYzw4uLVFuiSAoCBMt6",
+    "object": "text_completion",
+    "created": 1678145221,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "  this.setting = setting.getClass();\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "setting",
+                    " =",
+                    " setting",
+                    ".",
+                    "get",
+                    "Class",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.102694295,
+                    -0.10343058,
+                    -0.0072471024,
+                    -0.39002195,
+                    -0.04324431,
+                    -0.60364383,
+                    -1.1250843,
+                    -2.2242837,
+                    -0.5801778,
+                    -0.09283421,
+                    -0.11079272
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.102694295
+                    },
+                    {
+                        " this": -0.10343058
+                    },
+                    {
+                        ".": -0.0072471024
+                    },
+                    {
+                        "setting": -0.39002195
+                    },
+                    {
+                        " =": -0.04324431
+                    },
+                    {
+                        " setting": -0.60364383
+                    },
+                    {
+                        ";": -0.49836186
+                    },
+                    {
+                        "create": -0.3957908
+                    },
+                    {
+                        "Class": -0.5801778
+                    },
+                    {
+                        "();": -0.09283421
+                    },
+                    {
+                        "\n": -0.11079272
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    229,
+                    231,
+                    239,
+                    240,
+                    243,
+                    248,
+                    251
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.setting = setting;\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "setting",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.10298833,
+                    -0.10382118,
+                    -0.007217505,
+                    -0.38970342,
+                    -0.043378253,
+                    -0.603563,
+                    -0.49459118,
+                    -0.117550604
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.10298833
+                    },
+                    {
+                        " this": -0.10382118
+                    },
+                    {
+                        ".": -0.007217505
+                    },
+                    {
+                        "setting": -0.38970342
+                    },
+                    {
+                        " =": -0.043378253
+                    },
+                    {
+                        " setting": -0.603563
+                    },
+                    {
+                        ";": -0.49459118
+                    },
+                    {
+                        "\n": -0.117550604
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    229,
+                    231,
+                    239,
+                    240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.setting = setting;\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "setting",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.1012428,
+                    -0.10348531,
+                    -0.0070030177,
+                    -0.39033896,
+                    -0.043667562,
+                    -0.6050075,
+                    -0.4971678,
+                    -0.119786814
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.1012428
+                    },
+                    {
+                        " this": -0.10348531
+                    },
+                    {
+                        ".": -0.0070030177
+                    },
+                    {
+                        "setting": -0.39033896
+                    },
+                    {
+                        " =": -0.043667562
+                    },
+                    {
+                        " setting": -0.6050075
+                    },
+                    {
+                        ";": -0.4971678
+                    },
+                    {
+                        "\n": -0.119786814
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    229,
+                    231,
+                    239,
+                    240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.setting = setting;\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "setting",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.10299897,
+                    -0.10398921,
+                    -0.007222968,
+                    -0.39023462,
+                    -0.04334912,
+                    -0.60483193,
+                    -0.49815318,
+                    -0.117609195
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.10299897
+                    },
+                    {
+                        " this": -0.10398921
+                    },
+                    {
+                        ".": -0.007222968
+                    },
+                    {
+                        "setting": -0.39023462
+                    },
+                    {
+                        " =": -0.04334912
+                    },
+                    {
+                        " setting": -0.60483193
+                    },
+                    {
+                        ";": -0.49815318
+                    },
+                    {
+                        "\n": -0.117609195
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    229,
+                    231,
+                    239,
+                    240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.settings = setting;\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "settings",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.102694295,
+                    -0.10343058,
+                    -0.0072440393,
+                    -3.6003802,
+                    -0.017036825,
+                    -0.5271932,
+                    -0.012493576,
+                    -0.094408065
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.102694295
+                    },
+                    {
+                        " this": -0.10343058
+                    },
+                    {
+                        ".": -0.0072440393
+                    },
+                    {
+                        "setting": -0.38984236
+                    },
+                    {
+                        " =": -0.017036825
+                    },
+                    {
+                        " setting": -0.5271932
+                    },
+                    {
+                        ";": -0.012493576
+                    },
+                    {
+                        "\n": -0.094408065
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    230,
+                    232,
+                    240,
+                    241
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.setting = setting;\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "setting",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.10298833,
+                    -0.10382118,
+                    -0.0072118016,
+                    -0.389266,
+                    -0.043363877,
+                    -0.60395163,
+                    -0.496598,
+                    -0.11757647
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.10298833
+                    },
+                    {
+                        " this": -0.10382118
+                    },
+                    {
+                        ".": -0.0072118016
+                    },
+                    {
+                        "setting": -0.389266
+                    },
+                    {
+                        " =": -0.043363877
+                    },
+                    {
+                        " setting": -0.60395163
+                    },
+                    {
+                        ";": -0.496598
+                    },
+                    {
+                        "\n": -0.11757647
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    229,
+                    231,
+                    239,
+                    240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.context = setting;\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "context",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.1012428,
+                    -0.10348531,
+                    -0.0070030177,
+                    -1.8731432,
+                    -0.030316642,
+                    -0.18415236,
+                    -0.023503792,
+                    -0.080145895
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.1012428
+                    },
+                    {
+                        " this": -0.10348531
+                    },
+                    {
+                        ".": -0.0070030177
+                    },
+                    {
+                        "setting": -0.39019305
+                    },
+                    {
+                        " =": -0.030316642
+                    },
+                    {
+                        " setting": -0.18415236
+                    },
+                    {
+                        ";": -0.023503792
+                    },
+                    {
+                        "\n": -0.080145895
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    229,
+                    231,
+                    239,
+                    240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.setting = setting;\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "setting",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.10299897,
+                    -0.10398921,
+                    -0.007222968,
+                    -0.389226,
+                    -0.043410994,
+                    -0.60451335,
+                    -0.4971915,
+                    -0.11737979
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.10299897
+                    },
+                    {
+                        " this": -0.10398921
+                    },
+                    {
+                        ".": -0.007222968
+                    },
+                    {
+                        "setting": -0.389226
+                    },
+                    {
+                        " =": -0.043410994
+                    },
+                    {
+                        " setting": -0.60451335
+                    },
+                    {
+                        ";": -0.4971915
+                    },
+                    {
+                        "\n": -0.11737979
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    229,
+                    231,
+                    239,
+                    240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.setting = setting;\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "setting",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.10102221,
+                    -0.10357945,
+                    -0.00707865,
+                    -0.38949355,
+                    -0.043605734,
+                    -0.6045063,
+                    -0.49782693,
+                    -0.11949256
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.10102221
+                    },
+                    {
+                        " this": -0.10357945
+                    },
+                    {
+                        ".": -0.00707865
+                    },
+                    {
+                        "setting": -0.38949355
+                    },
+                    {
+                        " =": -0.043605734
+                    },
+                    {
+                        " setting": -0.6045063
+                    },
+                    {
+                        ";": -0.49782693
+                    },
+                    {
+                        "\n": -0.11949256
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    229,
+                    231,
+                    239,
+                    240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  this.jaxbContext = setting;\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " this",
+                    ".",
+                    "j",
+                    "ax",
+                    "b",
+                    "Context",
+                    " =",
+                    " setting",
+                    ";",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.004406282,
+                    -0.10306102,
+                    -0.10360351,
+                    -0.007237856,
+                    -2.9753165,
+                    -0.0356093,
+                    -0.030161215,
+                    -0.49401447,
+                    -0.027855055,
+                    -0.12389454,
+                    -0.021322753,
+                    -0.08181531
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.004406282
+                    },
+                    {
+                        " ": -0.10306102
+                    },
+                    {
+                        " this": -0.10360351
+                    },
+                    {
+                        ".": -0.007237856
+                    },
+                    {
+                        "setting": -0.39081067
+                    },
+                    {
+                        "ax": -0.0356093
+                    },
+                    {
+                        "b": -0.030161215
+                    },
+                    {
+                        "Context": -0.49401447
+                    },
+                    {
+                        " =": -0.027855055
+                    },
+                    {
+                        " setting": -0.12389454
+                    },
+                    {
+                        ";": -0.021322753
+                    },
+                    {
+                        "\n": -0.08181531
+                    }
+                ],
+                "text_offset": [
+                    215,
+                    215,
+                    216,
+                    221,
+                    222,
+                    223,
+                    225,
+                    226,
+                    233,
+                    235,
+                    243,
+                    244
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 60,
+        "completion_tokens": 96,
+        "total_tokens": 156
+    },
+    "validation_result": [
+        {
+            "patch": "  this.setting = setting.getClass();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = context.getClass();\n"
+        },
+        {
+            "patch": "  this.setting = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.setting = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.setting = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.settings = setting;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.settings = context;\n"
+        },
+        {
+            "patch": "  this.setting = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.context = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.setting = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.setting = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.jaxbContext = setting;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = context;\n"
+        }
+    ]
+}

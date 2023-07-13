@@ -1,0 +1,37 @@
+{
+    "VUL4J-1006-1905-1908": {
+        "src": "protected Collection < UI CaMeL Component > whole ( ) { return ui CaMeL Components ; }",
+        "patches": [
+            {
+                "patch": "protected Collection < ? > whole( ) { return computingMachines.values( ) ; } } ; lookupIndexCreator.attach( aggregationLookupIndexElement ) ;"
+            },
+            {
+                "patch": "protected Collection < ? > whole( ) { return uiComponents ; } } ; return uiComponents ;"
+            },
+            {
+                "patch": "protected Collection < ? > whole( ) { return uiComponents ; }"
+            },
+            {
+                "patch": "} ; lookupIndexCreator.attach( aggregationLookupIndexElement ) ; lookupIndexCreator.attach( 'Failed to load Jenkins.class', 'Failed to load Jenkins.class', 'Failed to load Jenkins.class', 'Failed to load Jenkins.class') ;"
+            },
+            {
+                "patch": "} ; lookupIndexCreator.attach( aggregationLookupIndexElement ) ; lookupIndexCreator.attach( 't know where the first exception will go, let', 't know where the first exception will go, let', 't know where the first exception will go, let', 't know where the first exception will go, let') ;"
+            },
+            {
+                "patch": "} ; lookupIndexCreator.attach( aggregationLookupIndexElement ) ; lookupIndexCreator.attach( 'authorizationStrategy', 'authorizationStrategy', 'authorizationStrategy', 'authorizationStrategy') ;"
+            },
+            {
+                "patch": "} ; lookupIndexCreator.attach( aggregationLookupIndexElement ) ; lookupIndexCreator.attach( 'securityRealm', 'securityRealm', 'securityRealm', 'securityRealm') ;"
+            },
+            {
+                "patch": "} ; lookupIndexCreator.attach( aggregationLookupIndexElement ) ; lookupIndexCreator.attach( 'listView', 'listView', 'listView', 'listView') ;"
+            },
+            {
+                "patch": "protected Collection < ? > whole( ) { return uiComponents ; } } ; lookupIndexCreator.attach( aggregationLookupIndexUIComponent ) ;"
+            },
+            {
+                "patch": "lookupIndexCreator.attach( aggregationLookupIndexElement ) ; lookupIndexCreator.attach( aggregationLookupIndexUIComponent ) ;"
+            }
+        ]
+    }
+}

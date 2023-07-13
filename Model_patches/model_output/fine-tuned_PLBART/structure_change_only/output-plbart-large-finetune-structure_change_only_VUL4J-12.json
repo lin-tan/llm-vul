@@ -1,0 +1,66 @@
+{
+    "output": [
+        "v = extend(v, t);",
+        "v += t;",
+        "v = (v << t) + 1;",
+        "v = v << t;",
+        "v = v << (t - 1);",
+        "v += (t - 1);",
+        "v = extend(v, t - 1);",
+        "v >>>= t;",
+        "v <<= t;",
+        "v += t - 1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "v = extend(v, t);",
+            "correctness": "compile_success",
+            "translated": "v = extend(v, t);"
+        },
+        {
+            "patch": "v += t;",
+            "correctness": "test_success",
+            "translated": "v += t;"
+        },
+        {
+            "patch": "v = (v << t) + 1;",
+            "correctness": "test_success",
+            "translated": "v = (v << t) + 1;"
+        },
+        {
+            "patch": "v = v << t;",
+            "correctness": "test_success",
+            "translated": "v = v << t;"
+        },
+        {
+            "patch": "v = v << (t - 1);",
+            "correctness": "test_success",
+            "translated": "v = v << (t - 1);"
+        },
+        {
+            "patch": "v += (t - 1);",
+            "correctness": "test_success",
+            "translated": "v += (t - 1);"
+        },
+        {
+            "patch": "v = extend(v, t - 1);",
+            "correctness": "compile_success",
+            "translated": "v = extend(v, t - 1);"
+        },
+        {
+            "patch": "v >>>= t;",
+            "correctness": "test_success",
+            "translated": "v >>>= t;"
+        },
+        {
+            "patch": "v <<= t;",
+            "correctness": "test_success",
+            "translated": "v <<= t;"
+        },
+        {
+            "patch": "v += t - 1;",
+            "correctness": "test_success",
+            "translated": "v += t - 1;"
+        }
+    ]
+}

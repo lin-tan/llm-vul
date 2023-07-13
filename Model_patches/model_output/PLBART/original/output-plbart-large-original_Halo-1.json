@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-9,1",
+    "output": [
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (pathToCheck.endsWith(parentPath)) { return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (pathToCheck.equals(parentPath)) { return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (checkDirectoryTraversal(parentPath, pathToCheck)) { return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.endsWith(pathToCheck)) { return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData (pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData (pathToCheck); }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData (pathToCheck); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (pathToCheck.endsWith(parentPath)) { return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (pathToCheck.equals(parentPath)) { return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (checkDirectoryTraversal(parentPath, pathToCheck)) { return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.endsWith(pathToCheck)) { return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData(pathToCheck); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData (pathToCheck); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData (pathToCheck); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(parentPath, \"Parent path must not be null\"); Assert.notNull(pathToCheck, \"Path to check must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); return; } throw new ForbiddenException(\"\u4f60\u6ca1\u6709\u6743\u9650\u8bbf\u95ee \" + pathToCheck).setErrorData (pathToCheck); }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

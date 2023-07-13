@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (!item.isDirectory() && outputFile!= null) {",
+        "if (!item.isDirectory() &&!item.isDirectory()) {",
+        "if (!item.isDirectory() && outputFile.isDirectory()) {",
+        "if (!item.isDirectory() && outputFile!= null) {",
+        "if (!item.isDirectory() &&!outputFile.exists()) {",
+        "if (!item.isDirectory() && outputFile.exists()) {",
+        "if (!item.isDirectory() && outputFile.isDirectory()) {",
+        "if (!item.isDirectory() &&!inputFile.exists()) {",
+        "if (outputFile.exists() &&!item.isDirectory()) {",
+        "if (!item.isDirectory() && outputFile.exists()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!item.isDirectory() && outputFile!= null) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() && outFile!= null) {"
+        },
+        {
+            "patch": "if (!item.isDirectory() &&!item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() &&!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (!item.isDirectory() && outputFile.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() && outFile.isDirectory()) {"
+        },
+        {
+            "patch": "if (!item.isDirectory() && outputFile!= null) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() && outFile!= null) {"
+        },
+        {
+            "patch": "if (!item.isDirectory() &&!outputFile.exists()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() &&!outFile.exists()) {"
+        },
+        {
+            "patch": "if (!item.isDirectory() && outputFile.exists()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() && outFile.exists()) {"
+        },
+        {
+            "patch": "if (!item.isDirectory() && outputFile.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() && outFile.isDirectory()) {"
+        },
+        {
+            "patch": "if (!item.isDirectory() &&!inputFile.exists()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!entry.isDirectory() &&!inputFile.exists()) {"
+        },
+        {
+            "patch": "if (outputFile.exists() &&!item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (outFile.exists() &&!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (!item.isDirectory() && outputFile.exists()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() && outFile.exists()) {"
+        }
+    ]
+}

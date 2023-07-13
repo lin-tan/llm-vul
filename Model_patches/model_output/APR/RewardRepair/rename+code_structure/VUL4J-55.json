@@ -1,0 +1,41 @@
+{
+    "outputs": [
+        "if (b.remakeAdaptationWhenAltered)",
+        "if (b.remakeAdaptationWhenAltered)",
+        "if (a.remakeAdaptationWhenAltered && b!= null)",
+        "if (a.remakeAdaptationWhenAltered) { }",
+        "if (a.remakeAdaptationWhenAltered) { }",
+        "if (a!= null && a.remakeAdaptationWhenAltered)",
+        "if (!a.remakeAdaptationWhenAltered)",
+        "if (!a.remakeAdaptationWhenAltered)",
+        "if (b==null || a.remakeAdaptationWhenAltered)",
+        "if (a.getAdaptationWhenAltered())"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (b.remakeAdaptationWhenAltered)",
+            "correctness": "compile_success",
+            "translated": "if (l.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (b.remakeAdaptationWhenAltered)",
+            "correctness": "compile_success",
+            "translated": "if (l.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered && b!= null)",
+            "correctness": "test_success",
+            "translated": "if (f.redoAdjustmentIfModified && l!= null)"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered) { }",
+            "correctness": "compile_success",
+            "translated": "if (f.redoAdjustmentIfModified) { }"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered) { }",
+            "correctness": "compile_success",
+            "translated": "if (f.redoAdjustmentIfModified) { }"
+        }
+    ]
+}

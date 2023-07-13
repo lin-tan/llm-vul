@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (a.remakeAdaptationWhenAltered) {",
+        "if (a.remakeAdaptationWhenAltered)",
+        "if (a.remakeAdaptationWhenAltered || b.remakeAdaptationWhenAltered)",
+        "if (!a.remakeAdaptationWhenAltered)",
+        "if (a.remakeAdaptationWhenAltered || a.remakeAdaptationWhenAltered)",
+        "if (a.remakeAdaptationWhenAltered && b!= null)",
+        "if (a.remakeAdaptationWhenAltered || a.remakeAdaptationWhenRemoved)",
+        "if (a.remakeAdapterWhenAltered)",
+        "if (a.removeAdaptationWhenAltered)",
+        "if (a.remakeAdaptationWhenAltered || a.remakeAdaptationWhenModified)"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered) {",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustmentIfModified) {"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered)",
+            "correctness": "compile_success",
+            "translated": "if (f.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered || b.remakeAdaptationWhenAltered)",
+            "correctness": "compile_success",
+            "translated": "if (f.redoAdjustmentIfModified || l.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (!a.remakeAdaptationWhenAltered)",
+            "correctness": "test_success",
+            "translated": "if (!f.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered || a.remakeAdaptationWhenAltered)",
+            "correctness": "compile_success",
+            "translated": "if (f.redoAdjustmentIfModified || f.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered && b!= null)",
+            "correctness": "test_success",
+            "translated": "if (f.redoAdjustmentIfModified && l!= null)"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered || a.remakeAdaptationWhenRemoved)",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustmentIfModified || f.remakeAdaptationWhenRemoved)"
+        },
+        {
+            "patch": "if (a.remakeAdapterWhenAltered)",
+            "correctness": "uncompilable",
+            "translated": "if (f.remakeAdapterWhenAltered)"
+        },
+        {
+            "patch": "if (a.removeAdaptationWhenAltered)",
+            "correctness": "uncompilable",
+            "translated": "if (f.removeAdaptationWhenAltered)"
+        },
+        {
+            "patch": "if (a.remakeAdaptationWhenAltered || a.remakeAdaptationWhenModified)",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustmentIfModified || f.remakeAdaptationWhenModified)"
+        }
+    ]
+}

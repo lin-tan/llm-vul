@@ -1,0 +1,12 @@
+[
+  "parser.parseArray(componentClass, array, actualType);\n",
+  "parser.toObjectArray(componentClass, array, fieldName);\n",
+  "parser.parseArray(actualType, array, fieldName);\n",
+  "parser.parseArray(componentClass, actualType, fieldName);\n",
+  "parser.parseArray(componentClass, array, objTypeParams);\n",
+  "TypeUtils.parseArray(componentClass, array, fieldName);\n",
+  "parser.parseArray(objTypeParams, array, fieldName);\n",
+  "parser.parseArray(componentClass, objTypeParams, fieldName);\n",
+  "parser.parseArray();\n",
+  "parser.parseArray(componentClass, array, objParamType);\n"
+]

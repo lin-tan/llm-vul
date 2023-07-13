@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n}\n",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n\n}\n",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n\n    public void releaseItem(SecureRandom secureRandomInstance) throws Exception {\n\tsecureRandomInstance = null;\n    }\n}\n",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n\n    public void releaseItem(SecureRandom secureRandom) throws Exception {\n\tsecureRandom.setSeed(null);\n    }\n}\n",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n}",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n\n    public void releaseItem(SecureRandom secureRandomInstance) throws Exception {\n\tsecureRandomInstance.setSeed(null);\n    }\n}\n",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n\n    @Override\n    public void releaseItem(SecureRandom item) throws Exception {\n\titem.setSeed(null);\n    }\n}\n",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n\n    public void releaseItem(SecureRandom secureRandomInstance) throws Exception {\n\tsecureRandomInstance = null;\n    }\n\n}\n",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n\n    @Override\n    public void releaseItem(SecureRandom secureRandomInstance) throws Exception {\n\tsecureRandomInstance = null;\n    }\n}\n",
+        "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }\n\n    @Override\n    public void releaseItem(SecureRandom secureRandom) throws Exception {\n    }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception {\n\tSecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm);\n\n\treturn secureRandomInstance;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return source == null? \"String_Node_Str\" : Encode.forJavaScriptSource(source);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return source == null? null : \"String_Node_Str\" + Encode.forJavaScriptSource(source);\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return Encode.forJavaScriptSource(source);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return source;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    if (source == null) {\n        return null;\n    }\n    return Encode.forJavaScriptSource(source);\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return source == null? null : \"String_Node_Str\" + source + \"String_Node_Str\";\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return source == null? null : Encode.forJavaScriptSource(source, true);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return source == null? null : encodeForJSSource(source);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return source == null? null : Encoding.forJavaScriptSource(source);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String encodeForJSString(String source) {\n// buggy lines start:\n    return source == null? null : Encode.forJavaScriptSource(source);\n// buggy lines end\n}\n// fixed lines:\n    return source == null? \"String_Node_Str\" : Encode.forJavaScriptSource(source).toString();\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return source == null? \"String_Node_Str\" : Encode.forJavaScriptSource(source);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return source == null? null : \"String_Node_Str\" + Encode.forJavaScriptSource(source);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return Encode.forJavaScriptSource(source);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return source;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (source == null) {\n        return null;\n    }\n    return Encode.forJavaScriptSource(source);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return source == null? null : \"String_Node_Str\" + source + \"String_Node_Str\";\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return source == null? null : Encode.forJavaScriptSource(source, true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return source == null? null : encodeForJSSource(source);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return source == null? null : Encoding.forJavaScriptSource(source);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return source == null? \"String_Node_Str\" : Encode.forJavaScriptSource(source).toString();\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

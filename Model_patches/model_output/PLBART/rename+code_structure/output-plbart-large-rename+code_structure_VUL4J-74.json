@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-13,1",
+    "output": [
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.clone(); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = secureRandomInstance.nextBoolean(); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.nextObject(); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = secureRandomInstance.generateSecureRandom(); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.createSecureRandom(); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom)secureRandomInstance.clone(); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.clone(); secureRandomInstance.setSeed(0); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.clone(); secureRandomInstance.setSeed(seed); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.clone(); secureRandomInstance.nextBytes(); return secureRandomInstance; }",
+        "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom)secureRandomInstance.clone(); secureRandomInstance.setSeed(seed); return secureRandomInstance; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.clone(); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = (SecureRandom) rnd.clone(); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = secureRandomInstance.nextBoolean(); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = rnd.nextBoolean(); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.nextObject(); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = (SecureRandom) rnd.nextObject(); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = secureRandomInstance.generateSecureRandom(); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = rnd.generateSecureRandom(); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.createSecureRandom(); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = (SecureRandom) rnd.createSecureRandom(); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom)secureRandomInstance.clone(); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = (SecureRandom) rnd.clone(); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.clone(); secureRandomInstance.setSeed(0); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = (SecureRandom) rnd.clone(); rnd.setSeed(0); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.clone(); secureRandomInstance.setSeed(seed); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = (SecureRandom) rnd.clone(); rnd.setSeed(seed); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom) secureRandomInstance.clone(); secureRandomInstance.nextBytes(); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = (SecureRandom) rnd.clone(); rnd.nextBytes(); return rnd; }"
+        },
+        {
+            "patch": "public SecureRandom acquireItem() throws Exception { SecureRandom secureRandomInstance = SecureRandom.getInstance(algorithm); secureRandomInstance = (SecureRandom)secureRandomInstance.clone(); secureRandomInstance.setSeed(seed); return secureRandomInstance; }",
+            "correctness": "uncompilable",
+            "translated": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd = (SecureRandom) rnd.clone(); rnd.setSeed(seed); return rnd; }"
+        }
+    ]
+}

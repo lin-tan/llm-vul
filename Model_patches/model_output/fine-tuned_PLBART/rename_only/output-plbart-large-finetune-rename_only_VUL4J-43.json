@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (!item.isDirectory()) {",
+        "if (item.isDirectory() &&!output.exists()) {",
+        "if (item.isDirectory() &&!targetFolder.exists()) {",
+        "if (item == null || item.isDirectory()) {",
+        "if (item.isDirectory() && outputFile.exists()) {",
+        "if (item.isDirectory() &&!outputFile.exists()) {",
+        "if (compressedFile.isDirectory()) {",
+        "if (item!= null && item.isDirectory()) {",
+        "if (item.isDirectory() &&!item.isDirectory()) {",
+        "if (isDirectory(item)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() &&!output.exists()) {",
+            "correctness": "uncompilable",
+            "translated": "if (entry.isDirectory() &&!output.exists()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() &&!targetFolder.exists()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory() &&!destDir.exists()) {"
+        },
+        {
+            "patch": "if (item == null || item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry == null || entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() && outputFile.exists()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory() && outFile.exists()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() &&!outputFile.exists()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory() &&!outFile.exists()) {"
+        },
+        {
+            "patch": "if (compressedFile.isDirectory()) {",
+            "correctness": "uncompilable",
+            "translated": "if (zipFile.isDirectory()) {"
+        },
+        {
+            "patch": "if (item!= null && item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry!= null && entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() &&!item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory() &&!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (isDirectory(item)) {",
+            "correctness": "uncompilable",
+            "translated": "if (isDirectory(entry)) {"
+        }
+    ]
+}

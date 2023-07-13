@@ -1,0 +1,66 @@
+{
+    "output": [
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, null);",
+        "final InputStream in = wrapPrefixRemovingInputStream(inputStream);",
+        "InputStream in = new BufferedInputStream(inputStream);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, prefix);",
+        "InputStream in = wrapRemovingInputStream(inputStream);",
+        "InputStream in = wrapPrefixRemovingInputStream(inputStream, namespaceAware);",
+        "in = wrapPrefixRemovingInputStream(inputStream);"
+    ],
+    "validation_result": [
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream);",
+            "correctness": "compile_success",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream);"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, null);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, null);"
+        },
+        {
+            "patch": "final InputStream in = wrapPrefixRemovingInputStream(inputStream);",
+            "correctness": "compile_success",
+            "translated": "final InputStream in = wrapPrefixRemovingInputStream(inputStream);"
+        },
+        {
+            "patch": "InputStream in = new BufferedInputStream(inputStream);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = new BufferedInputStream(inputStream);"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, prefix);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, prefix);"
+        },
+        {
+            "patch": "InputStream in = wrapRemovingInputStream(inputStream);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapRemovingInputStream(inputStream);"
+        },
+        {
+            "patch": "InputStream in = wrapPrefixRemovingInputStream(inputStream, namespaceAware);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, namespaceAware);"
+        },
+        {
+            "patch": "in = wrapPrefixRemovingInputStream(inputStream);",
+            "correctness": "uncompilable",
+            "translated": "in = wrapPrefixRemovingInputStream(inputStream);"
+        }
+    ]
+}

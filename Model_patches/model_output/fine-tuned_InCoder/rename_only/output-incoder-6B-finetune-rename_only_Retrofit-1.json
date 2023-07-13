@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  this._category = category;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  this.jaxbCategory = category;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n}\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  this.category = category.getName();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  this.category = categoryClass;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  this.unmarshaller = unmarshaller;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  this.category = JAXBContext.newInstance(category);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  if (category!= null) {\n    this.category = category;\n  }\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  this.category = category == null? null : category.getName();\n<|endofmask|>",
+        "<|endoftext|>JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n  this.category = category!= null? category : Object.class;\n<|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  this._category = category;\n",
+            "correctness": "uncompilable",
+            "translated": "  this._category = type;\n"
+        },
+        {
+            "patch": "  this.jaxbCategory = category;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbCategory = type;\n"
+        },
+        {
+            "patch": "}\n",
+            "correctness": "uncompilable",
+            "translated": "}\n"
+        },
+        {
+            "patch": "  this.category = category.getName();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.type = type.getName();\n"
+        },
+        {
+            "patch": "  this.category = categoryClass;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.type = categoryClass;\n"
+        },
+        {
+            "patch": "  this.unmarshaller = unmarshaller;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.unmarshaller = unmarshaller;\n"
+        },
+        {
+            "patch": "  this.category = JAXBContext.newInstance(category);\n",
+            "correctness": "uncompilable",
+            "translated": "  this.type = JAXBContext.newInstance(type);\n"
+        },
+        {
+            "patch": "  if (category!= null) {\n    this.category = category;\n  }\n",
+            "correctness": "uncompilable",
+            "translated": "  if (type!= null) {\n    this.type = type;\n  }\n"
+        },
+        {
+            "patch": "  this.category = category == null? null : category.getName();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.type = type == null? null : type.getName();\n"
+        },
+        {
+            "patch": "  this.category = category!= null? category : Object.class;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.type = type!= null? type : Object.class;\n"
+        }
+    ]
+}

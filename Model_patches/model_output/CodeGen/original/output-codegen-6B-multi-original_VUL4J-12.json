@@ -1,0 +1,56 @@
+{
+    "output": [
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }\n\n  @Override\n  public boolean equals(Object obj) {\n    if (this == obj) {\n      return true;\n    }\n    if (obj == null) {\n      return false;\n    }\n    if (getClass()!= obj.getClass()) {\n      return false;\n    }\n    Bitmap other = (Bitmap) obj;\n    if (bitmap == null) {\n      if (other.bitmap!= null) {\n        return false;\n      }\n    } else if (!bitmap.equals(other.bitmap)) {\n      return false;\n    }\n    return true;\n  }\n\n  @Override\n  public int hashCode() {\n    final int prime = 31;\n    int result = 1;\n    result = prime * result + ((bitmap == null)? 0 : bitmap.hashCode());\n    return result;\n  }\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }\n\n  @Override\n  public boolean equals(Object obj) {\n    if (this == obj) {\n      return true;\n    }\n    if (obj == null) {\n      return false;\n    }\n    if (getClass()!= obj.getClass()) {\n      return false;\n    }\n    BitString other = (BitString) obj;\n    if (bits == null) {\n      if (other.bits!= null) {\n        return false;\n      }\n    } else if (!bits.equals(other.bits)) {\n      return false;\n    }\n    return true;\n  }\n\n  @Override\n  public int hashCode() {\n    final int prime = 31;\n    int result = 1;\n    result = prime * result + ((bits == null)? 0 : bits.hashCode());\n    return result;\n  }\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }\n\n  @Override\n  public boolean equals(Object obj) {\n    if (this == obj) {\n      return true;\n    }\n    if (obj == null) {\n      return false;\n    }\n    if (getClass()!= obj.getClass()) {\n      return false;\n    }\n    BitString other = (BitString) obj;\n    if (bits == null) {\n      if (other.bits!= null) {\n        return false;\n      }\n    } else if (!bits.equals(other.bits)) {\n      return false;\n    }\n    return true;\n  }\n\n  @Override\n  public int hashCode() {\n    final int prime = 31;\n    int result = 1;\n    result = prime * result + ((bits == null)? 0 : bits.hashCode());\n    return result;\n  }\n\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    return (v & vt) == 0? v | vt : v;\n  }\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    return (v & vt)!= 0? v | t : v & ~vt;\n  }\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    }\n    return v;\n  }\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }\n\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt) == 0) {\n      return v | vt;\n    } else {\n      return v;\n    }\n  }\n}\n",
+        "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v << t;\n    }\n  }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    return (v & vt) == 0? v | vt : v;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    return (v & vt)!= 0? v | t : v & ~vt;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    }\n    return v;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v;\n    }\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt) == 0) {\n      return v | vt;\n    } else {\n      return v;\n    }\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if ((v & vt)!= 0) {\n      return v | (vt << t);\n    } else {\n      return v << t;\n    }\n  }",
+            "correctness": "test_success"
+        }
+    ]
+}

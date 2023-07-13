@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-29,1",
+    "output": [
+        "\n    \n} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n\n    return resourseAddress;\n  }",
+        "\n    \n} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n\n\n    return resourseAddress;\n  }",
+        "\n    \n} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n    \n\n    \n    \n    \n\n\n\n    return resourseAddress;\n  }",
+        "\n    \n} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n}",
+        "\n    \n} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n    return resourseAddress;\n  }",
+        "\n\n}\n",
+        "\n\n} else {\n\n\n\n",
+        "\n\n} else {",
+        "\n\n",
+        "\n} else {\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n\n    return resourseAddress;\n  }",
+            "correctness": "uncompilable",
+            "translated": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n\n    return url;\n  }"
+        },
+        {
+            "patch": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n\n\n    return resourseAddress;\n  }",
+            "correctness": "uncompilable",
+            "translated": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n\n    return url;\n  }"
+        },
+        {
+            "patch": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n    \n\n    \n    \n    \n\n\n\n    return resourseAddress;\n  }",
+            "correctness": "uncompilable",
+            "translated": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n\n    return url;\n  }"
+        },
+        {
+            "patch": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n}",
+            "correctness": "uncompilable",
+            "translated": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n}"
+        },
+        {
+            "patch": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n    return resourseAddress;\n  }",
+            "correctness": "uncompilable",
+            "translated": "} else {\n\n    \n    \n    \n   \n    \n   \n    \n    ;\n}\n\n\n    \n    \n    \n\n\n    return url;\n  }"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable",
+            "translated": "}"
+        },
+        {
+            "patch": "} else {",
+            "correctness": "uncompilable",
+            "translated": "} else {"
+        },
+        {
+            "patch": "} else {",
+            "correctness": "uncompilable",
+            "translated": "} else {"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "} else {\n}",
+            "correctness": "uncompilable",
+            "translated": "} else {\n}"
+        }
+    ]
+}

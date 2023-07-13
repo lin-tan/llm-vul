@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n</s></s></s></s></s>",
+        "<pad><s>        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);\n</s></s>",
+        "<pad><s>        Document doc = documentBuilderFactory.newDocumentBuilder().parse(new InputSource(inputStream));\n</s>",
+        "<pad><s>        Document doc = (Document) documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n</s>",
+        "<pad><s>        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, true);\n</s></s>",
+        "<pad><s>        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, false);\n</s></s>",
+        "<pad><s>        documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n</s></s></s></s></s></s></s>",
+        "<pad><s>        Document doc = getDocumentBuilder().parse(inputStream);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "        Document doc = documentBuilderFactory.newDocumentBuilder().parse(new InputSource(inputStream));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        Document doc = (Document) documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        Document doc = getDocumentBuilder().parse(inputStream);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

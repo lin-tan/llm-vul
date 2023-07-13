@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "rnd.nextBytes(new byte[1]);",
+        "rnd.nextBytes(new byte[0]);",
+        "rnd.nextBytes(new byte[] { } );",
+        "rnd.nextBytes(new byte[1]);",
+        "rnd.nextBytes(new byte[0]);",
+        "rnd.nextBytes(new byte[] { } );",
+        "rnd.nextBytes(new byte[2]);",
+        "rnd.nextBytes(source.getInputStream());",
+        "rnd.nextBytes(new byte[2]);",
+        "rnd.nextBytes(source.getInputStream());"
+    ],
+    "validation_result": [
+        {
+            "patch": "rnd.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[1]);"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[0]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[0]);"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[] { } );",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[] { } );"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[1]);"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[0]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[0]);"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[] { } );",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[] { } );"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[2]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[2]);"
+        },
+        {
+            "patch": "rnd.nextBytes(source.getInputStream());",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(rnd.setSeed.getInputStream());"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[2]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[2]);"
+        },
+        {
+            "patch": "rnd.nextBytes(source.getInputStream());",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(rnd.setSeed.getInputStream());"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "c = r.consume();",
+        "c = t.transition(Data);",
+        "t.transition(c);",
+        "c = r.consume();",
+        "t.transition(r.consume());",
+        "c = t.transition(c);",
+        "t.transition(r);",
+        "c = t.transition(c);",
+        "c = c; c = c;",
+        "c = t.transition(Data);"
+    ],
+    "validation_result": [
+        {
+            "patch": "c = r.consume();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "c = t.transition(Data);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(c);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "c = r.consume();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "t.transition(r.consume());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "c = t.transition(c);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "t.transition(r);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "c = t.transition(c);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "c = c; c = c;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "c = t.transition(Data);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

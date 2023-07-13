@@ -1,0 +1,41 @@
+{
+    "method": {
+        "deserialize": "inverseConvert",
+        "getClass": "acquireClass",
+        "parseArray": "analyzeBatch",
+        "deserialze": "inverseConvert",
+        "token": "token",
+        "nextToken": "followingToken",
+        "getComponentType": "acquireCategoryOfComponent",
+        "toObjectArray": "transformObjectBatch",
+        "bytesValue": "contentsOfBytes",
+        "getContext": "obtainContext"
+    },
+    "variable": {
+        "componentType": "constituentCategory",
+        "fieldName": "attributeTitile",
+        "componentClass": "constituentTemplate",
+        "COMMA": "COMMA",
+        "actualType": "realCategory",
+        "i": "x",
+        "objRawType": "originalCategoryOfObject",
+        "objTypeParams": "objectCategoryParameters",
+        "LITERAL_STRING": "LITERAL_STR",
+        "typeVar": "categoryVariable",
+        "type": "category",
+        "lexer": "tokenizer",
+        "parser": "analyzer",
+        "objParamType": "parameterizedCategoryOfObject",
+        "array": "batch",
+        "NULL": "NULL",
+        "bytes": "bytes",
+        "clazz": "clazz",
+        "objType": "categoryOfObject"
+    },
+    "class": {
+        "JSONArray": "JsonBatch",
+        "JSONLexer": "JsonTokenizer",
+        "DefaultJSONParser": "BasicAnalyzerJson",
+        "TypeUtils": "CategoryTools"
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, null));\n</s>",
+        "<pad><s>    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, false));\n</s>",
+        "<pad><s>    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n</s></s></s>",
+        "<pad><s>    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, true));\n</s>",
+        "<pad><s>    return producer.createXMLStreamReader(swatheBeginingOfStringDetachedInDataSequence(inDataSequence));\n</s></s></s>",
+        "<pad><s>    return producer.createXMLStreamReader(swatheStartOfStringDetachingInDataSequence(inDataSequence));\n</s></s></s></s>",
+        "<pad><s>    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, charset));\n</s>",
+        "<pad><s>    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, encoding));\n</s>",
+        "<pad><s>    return producer.createXMLStreamReader(inDataSequence);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return producer.createXMLStreamReader(swatheBeginingOfStringDetaching(inDataSequence));\n</s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, null));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, null));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, false));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, false));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));\n",
+            "correctness": "compile_success",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, true));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachedInDataSequence(inDataSequence));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(swatheBeginingOfStringDetachedInDataSequence(inputStream));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheStartOfStringDetachingInDataSequence(inDataSequence));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(swatheStartOfStringDetachingInDataSequence(inputStream));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, charset));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, charset));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence, encoding));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, encoding));\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(inDataSequence);\n",
+            "correctness": "compile_success",
+            "translated": "    return factory.createXMLStreamReader(inputStream);\n"
+        },
+        {
+            "patch": "    return producer.createXMLStreamReader(swatheBeginingOfStringDetaching(inDataSequence));\n",
+            "correctness": "uncompilable",
+            "translated": "    return factory.createXMLStreamReader(swatheBeginingOfStringDetaching(inputStream));\n"
+        }
+    ]
+}

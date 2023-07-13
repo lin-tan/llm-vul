@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-8,1",
+    "output": [
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z = new HashMap<String, Object>(); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z = new HashMap<String,Object>(); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", name); z.put(\"age\", age); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.name); z.put(\"age\", this.age); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", name); z.put(\"description\", description); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.name); z.put(\"description\", this.description); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.name); z.put(\"address\", this.address); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.name); z.put(\"surname\", this.surname); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.proctorName); z.put(\"age\", this.proctorAge); return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.proctorName); z.put(\"age\", this.age); return z; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z = new HashMap<String, Object>(); return z; }",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r = new HashMap<String, Object>(); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z = new HashMap<String,Object>(); return z; }",
+            "correctness": "compile_success",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r = new HashMap<String, Object>(); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", name); z.put(\"age\", age); return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", name); r.put(\"age\", age); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.name); z.put(\"age\", this.age); return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.name); r.put(\"age\", this.age); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", name); z.put(\"description\", description); return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", name); r.put(\"description\", description); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.name); z.put(\"description\", this.description); return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.name); r.put(\"description\", this.description); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.name); z.put(\"address\", this.address); return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.name); r.put(\"address\", this.address); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.name); z.put(\"surname\", this.surname); return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.name); r.put(\"surname\", this.surname); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.proctorName); z.put(\"age\", this.proctorAge); return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.proctorName); r.put(\"age\", this.proctorAge); return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { Map<String,Object> z = new HashMap<String, Object>(); z.put(\"name\", this.proctorName); z.put(\"age\", this.age); return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.proctorName); r.put(\"age\", this.age); return r; }"
+        }
+    ]
+}

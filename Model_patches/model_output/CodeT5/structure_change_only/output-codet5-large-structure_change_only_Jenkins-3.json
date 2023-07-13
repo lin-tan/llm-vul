@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n\n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n\n\n                protected Collection<View> all() { \n                }\n               \n\n\n    }\n   \n\n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n\n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n               \n\n\n    }\n   \n\n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n          \n\n   \n   \n   \n    public\n       \n       \n\n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n\n\n                protected Collection<View> all() { \n                }\n               \n\n\n    }\n   \n\n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n\n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n          \n\n\n    }\n   \n\n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n          \n\n   \n   \n   \n    public\n       \n       \n\n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n\n\n                protected Collection<View> all() { \n                }\n          \n\n\n    }\n   \n\n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"configure\");\n        searchIndexBuilder.add(\"\n\n\n\n          \n\n\n\n               \n            };\n\n\n    }\n   \n\n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n\n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n               \n\n\n    }\n   \n   \n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n               \n\n\n    }\n   \n   \n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n\n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n          \n\n\n    }\n   \n   \n\n       ",
+        "\n                protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n          \n\n\n    }\n   \n   \n\n       "
+    ],
+    "validation_result": [
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n\n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n\n\n                protected Collection<View> all() { \n                }\n               \n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n\n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n               \n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n          \n\n   \n   \n   \n    public\n       \n       \n\n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n\n\n                protected Collection<View> all() { \n                }\n               \n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n\n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n          \n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n          \n\n   \n   \n   \n    public\n       \n       \n\n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n\n\n                protected Collection<View> all() { \n                }\n          \n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"configure\");\n        searchIndexBuilder.add(\"\n\n\n\n          \n\n\n\n               \n            };\n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n\n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n               \n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n               \n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n          \n          \n\n   \n   \n   \n    public\n       \n       \n\n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n          \n\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { \n                    return views.values(); \n                }\n\n          \n          \n\n   \n   \n   \n    public\n       \n       \n       \n       \n        searchIndexBuilder.add(\"\n\n\n\n           \n                protected Collection<View> all() { \n                }\n\n\n          \n\n\n    }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

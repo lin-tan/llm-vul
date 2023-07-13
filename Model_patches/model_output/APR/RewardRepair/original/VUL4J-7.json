@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "l += buf.position();",
+        "l = buf.position();",
+        "l++;",
+        "l = in.read(buf);",
+        "l *= buf.position();",
+        "l = in.position();",
+        "l = 0;",
+        "l += l;",
+        "l += buf.position();",
+        "l += buf.limit();"
+    ],
+    "validation_result": [
+        {
+            "patch": "l += buf.position();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l = buf.position();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l++;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l = in.read(buf);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l *= buf.position();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l = in.position();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l = 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l += l;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l += buf.position();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l += buf.limit();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-1004-1074-1081": {
+        "src": "while ( i < node CaMeL Monitor CaMeL List . size ( ) ) { Vertex CaMeL Proctor proctor = node CaMeL Monitor CaMeL List . get ( i ) ; Class monitor CaMeL Class = proctor . get CaMeL Class ( ) ; String name = monitor CaMeL Class . get CaMeL Name ( ) ; z . put ( name , proctor . information ( this ) ) ; i ++ ; }",
+        "patches": [
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { Class monitorClass = nodeMonitorList.get( i ) ; Class monitorClass = proctor.getClass( ) ; Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ; i ++ ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ; i ++ ; } z.put( name , proctor.information( this ) ) ; i ++ ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { if( nodeMonitorList.get( i ) != null ) { Class monitorClass = proctor.getClass( ) ; Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "for( int i =0; i < nodeMonitorList.size( ) ; i ++ ) { Class monitorClass = nodeMonitorList.get( i ) ; Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ; i ++ ; }"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { Class monitorClass = nodeMonitorList.get( i ) ; Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { Class monitorClass = proctor = nodeMonitorList.get( i ) ; Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { Class monitorClass = proctor.get( i ) ; Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ; z.put( name , proctor.information( this ) ) ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { Class monitorClass = nodeMonitorList.get( i ) ; Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ; i ++ ; }"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { String name = nodeMonitorList.get( i ) ; Class monitorClass = proctor.getClass( ) ; z.put( name , proctor.information( this ) ) ; i ++ ; } z.put( name , proctor.information( this ) ) ; i ++ ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { Class monitorClass = nodeMonitorList.get( i ) ; Class monitorClass = proctor.getClass( ) ; String name = monitorClass.getName( ) ; z.put( name , proctor.information( this ) ) ; z.put( name , proctor.information( this ) ) ;"
+            }
+        ]
+    }
+}

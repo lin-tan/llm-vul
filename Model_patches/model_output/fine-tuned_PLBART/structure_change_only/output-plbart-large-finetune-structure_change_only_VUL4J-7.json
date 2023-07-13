@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return 0;",
+        "throw new EOFException();",
+        "return -1;",
+        "return buf.remaining();",
+        "return 0L;",
+        "return l;",
+        "throw new IOException();",
+        "return;",
+        "return 0; } else {",
+        "return -1; } else {"
+    ],
+    "validation_result": [
+        {
+            "patch": "return 0;",
+            "correctness": "compile_success",
+            "translated": "return 0;"
+        },
+        {
+            "patch": "throw new EOFException();",
+            "correctness": "compile_success",
+            "translated": "throw new EOFException();"
+        },
+        {
+            "patch": "return -1;",
+            "correctness": "compile_success",
+            "translated": "return -1;"
+        },
+        {
+            "patch": "return buf.remaining();",
+            "correctness": "compile_success",
+            "translated": "return buf.remaining();"
+        },
+        {
+            "patch": "return 0L;",
+            "correctness": "uncompilable",
+            "translated": "return 0L;"
+        },
+        {
+            "patch": "return l;",
+            "correctness": "compile_success",
+            "translated": "return l;"
+        },
+        {
+            "patch": "throw new IOException();",
+            "correctness": "compile_success",
+            "translated": "throw new IOException();"
+        },
+        {
+            "patch": "return;",
+            "correctness": "uncompilable",
+            "translated": "return;"
+        },
+        {
+            "patch": "return 0; } else {",
+            "correctness": "uncompilable",
+            "translated": "return 0; } else {"
+        },
+        {
+            "patch": "return -1; } else {",
+            "correctness": "uncompilable",
+            "translated": "return -1; } else {"
+        }
+    ]
+}

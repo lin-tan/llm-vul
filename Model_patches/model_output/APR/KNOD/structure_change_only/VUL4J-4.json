@@ -1,0 +1,53 @@
+{
+    "id": 3,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -1.5592,
+            "fix_type": "general",
+            "patch": "catch ( Exception e) {\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -6.2114,
+            "fix_type": "general",
+            "patch": ""
+        },
+        {
+            "rank": 3,
+            "score": -2.0426,
+            "fix_type": "general",
+            "patch": "return null;\n"
+        },
+        {
+            "rank": 4,
+            "score": -4.2448,
+            "fix_type": "general",
+            "patch": "return;\n"
+        },
+        {
+            "rank": 5,
+            "score": -6.0935,
+            "fix_type": "general",
+            "patch": "{\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -5.4661,
+            "fix_type": "general",
+            "patch": "break;\n"
+        },
+        {
+            "rank": 7,
+            "score": -6.4039,
+            "fix_type": "general",
+            "patch": "continue  ;\n"
+        },
+        {
+            "rank": 8,
+            "score": -6.5684,
+            "fix_type": "general",
+            "patch": "    "
+        }
+    ]
+}

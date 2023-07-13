@@ -1,0 +1,36 @@
+{
+    "method": {
+        "isAllowed": "whetherPermitted",
+        "readValue": "retrieveContent",
+        "getOrigin": "acquireSource",
+        "isVerified": "whetherAuthenticated",
+        "getPrimaryEmail": "acquireMainEmail",
+        "getId": "acquireIdentification",
+        "extractPathVariableFromUrl": "derivePathObjectFromURL",
+        "isActive": "whetherInAction",
+        "get": "acquire",
+        "retrieve": "recover",
+        "getUserName": "acquireCustomerTitle",
+        "getRequestPath": "acquireRequestPath"
+    },
+    "variable": {
+        "scimUserProvisioning": "CustomerManagement",
+        "request": "request",
+        "scimUserFromDb": "CustomerOfDatabase",
+        "scimUserFromRequest": "CustomerOfRequest",
+        "requestBody": "requestContent",
+        "e": "x",
+        "zoneId": "areaIdentification",
+        "id": "identification",
+        "USER_ID_PATH_PARAMETER_INDEX": "CUSTOMER_IDENTIFICATION_PATH_ARGUMENT_INDEX",
+        "": ""
+    },
+    "class": {
+        "ScimUser": "Customer",
+        "JsonUtils": "JsonTools",
+        "ScimResourceNotFoundException": "DataSourceUnfoundException",
+        "IdentityZoneHolder": "IndividualityAreaPossessor",
+        "UaaUrlUtils": "URLTools",
+        "": ""
+    }
+}

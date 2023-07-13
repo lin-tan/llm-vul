@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "sfactory.setNamespaceAware(true);",
+        "sfactory.setNamespaceAware(true);",
+        "sfactory.setNamespaceAware(false);",
+        "sfactory.setNamespaceAware(true, false);",
+        "sfactory.setNamespaceAware(true, true);",
+        "sfactory.setNamespaceAware(false);",
+        "n.setNamespaceAware(true);",
+        "!sfactory.setNamespaceAware(true);",
+        "sfactory.setNamespaceAware(true);",
+        "sFactory.setNamespaceAware(true);"
+    ],
+    "validation_result": [
+        {
+            "patch": "sfactory.setNamespaceAware(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "n.setNamespaceAware(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "!sfactory.setNamespaceAware(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "sFactory.setNamespaceAware(true);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

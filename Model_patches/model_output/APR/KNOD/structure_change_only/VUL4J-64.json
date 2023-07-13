@@ -1,0 +1,65 @@
+{
+    "id": 32,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.348,
+            "fix_type": "insert",
+            "patch": "factory.setEncodeHashAsBase64(true);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.348,
+            "fix_type": "insert",
+            "patch": "factory.setForceLowerCasePrefix(true);\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4556,
+            "fix_type": "insert",
+            "patch": "factory.setEncodeHashAsBase64(false);\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.4556,
+            "fix_type": "insert",
+            "patch": "factory.setForceLowerCasePrefix(false);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.4736,
+            "fix_type": "general",
+            "patch": "  InputStream in = wrapPrefixRemovingInputStream(inputStream.toString());\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4736,
+            "fix_type": "general",
+            "patch": "  InputStream in = wrapPrefixRemovingInputStream(inputStream.hashCode());\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.6164,
+            "fix_type": "insert",
+            "patch": "factory.equals(inputStream.toString());\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.6164,
+            "fix_type": "insert",
+            "patch": "factory.equals(inputStream.hashCode());\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4761,
+            "fix_type": "general",
+            "patch": "  InputStream in = wrapPrefixRemovingInputStream((Name)null);\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.647,
+            "fix_type": "insert",
+            "patch": "factory.toString();\n"
+        }
+    ]
+}

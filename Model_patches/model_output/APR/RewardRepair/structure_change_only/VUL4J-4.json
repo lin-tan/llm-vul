@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body);",
+        "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else {",
+        "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } }",
+        "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); return null; } } else { return null; } }",
+        "if (answer!= null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body);",
+        "if (answer == null) { if (!(body instanceof WrappedFile)) { if (body instanceof BeanInvocation) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }",
+        "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (!(body instanceof String)) { StringReader stringReader = new StringReader((String) body);",
+        "if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }",
+        "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); } } else {",
+        "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); return null; } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); return null; } } else { return null; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer!= null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (body instanceof BeanInvocation) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (!(body instanceof String)) { StringReader stringReader = new StringReader((String) body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); } } else {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); return null; } }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

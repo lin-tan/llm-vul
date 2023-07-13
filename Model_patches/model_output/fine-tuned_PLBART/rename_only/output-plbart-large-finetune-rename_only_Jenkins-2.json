@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return new ArrayList(elements.values());",
+        "return new ArrayList<PeakDegreeElement>(elements.values());",
+        "return new ArrayList<>(elements.values());",
+        "List<PeakDegreeElement> elements = new ArrayList<>(elements.values());",
+        "return elements.values();",
+        "List<PeakDegreeElement> elements = elements.values();",
+        "return new ArrayList<PeakDegreeElement>();",
+        "return elements;",
+        "return new ArrayList<>();",
+        "return new ArrayList();"
+    ],
+    "validation_result": [
+        {
+            "patch": "return new ArrayList(elements.values());",
+            "correctness": "uncompilable",
+            "translated": "return new ArrayList(items.values());"
+        },
+        {
+            "patch": "return new ArrayList<PeakDegreeElement>(elements.values());",
+            "correctness": "uncompilable",
+            "translated": "return new ArrayList<TopLevelItem>(items.values());"
+        },
+        {
+            "patch": "return new ArrayList<>(elements.values());",
+            "correctness": "uncompilable",
+            "translated": "return new ArrayList<>(items.values());"
+        },
+        {
+            "patch": "List<PeakDegreeElement> elements = new ArrayList<>(elements.values());",
+            "correctness": "uncompilable",
+            "translated": "List<TopLevelItem> items = new ArrayList<>(items.values());"
+        },
+        {
+            "patch": "return elements.values();",
+            "correctness": "uncompilable",
+            "translated": "return items.values();"
+        },
+        {
+            "patch": "List<PeakDegreeElement> elements = elements.values();",
+            "correctness": "uncompilable",
+            "translated": "List<TopLevelItem> items = items.values();"
+        },
+        {
+            "patch": "return new ArrayList<PeakDegreeElement>();",
+            "correctness": "uncompilable",
+            "translated": "return new ArrayList<TopLevelItem>();"
+        },
+        {
+            "patch": "return elements;",
+            "correctness": "uncompilable",
+            "translated": "return items;"
+        },
+        {
+            "patch": "return new ArrayList<>();",
+            "correctness": "uncompilable",
+            "translated": "return new ArrayList<>();"
+        },
+        {
+            "patch": "return new ArrayList();",
+            "correctness": "uncompilable",
+            "translated": "return new ArrayList();"
+        }
+    ]
+}

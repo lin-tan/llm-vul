@@ -1,0 +1,37 @@
+{
+    "VUL4J-6-311-312": {
+        "src": "int iodine = 0 ;",
+        "patches": [
+            {
+                "patch": "int zv32= ZipTwoByteInteger.acquireContent( information , beginning +32) ;"
+            },
+            {
+                "patch": "int zv4= ZipTwoByteInteger.acquireContent( information , beginning +4) ;"
+            },
+            {
+                "patch": "int zv22= ZipTwoByteInteger.acquireContent( information , beginning +22) ;"
+            },
+            {
+                "patch": "int zv26= ZipTwoByteInteger.acquireContent( information , beginning +26) ;"
+            },
+            {
+                "patch": "int zv24= ZipTwoByteInteger.acquireContent( information , beginning +24) ;"
+            },
+            {
+                "patch": "while( iodine < this.rcount ) { iodine ++ ;"
+            },
+            {
+                "patch": "int iodine =0;"
+            },
+            {
+                "patch": "final int iodine =0;"
+            },
+            {
+                "patch": "int iodine =0; int iodine =0;"
+            },
+            {
+                "patch": "int iodine = ZipTwoByteInteger.acquireContent( information , beginning +32) ;"
+            }
+        ]
+    }
+}

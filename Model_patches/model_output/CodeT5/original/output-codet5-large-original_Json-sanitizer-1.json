@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n\n  sanitizedJson",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n  }\n}",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } } }\n  }\n}",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n}\n\n}",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n  }\n\n",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n  }\n  }\n  }\n ",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n  }\n  }\n  }\n}",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n  }\n \n\n}",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n}\n}",
+        "\n      case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n\n  sanitizedJson",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n  }\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } } }\n  }\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n}\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n  }\n  }\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n  }\n  }\n  }\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n  }\n \n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n}\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '>':\n      case '<':\n        if (i + 1 < end && isHexAt(i + 1)) {\n          insert(i, '\\\\');\n        }\n       \n      }\n      }\n        }\n \n \n \n\n\n \n \n}\n } } } } } } } }\n \n \n \n\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n     .add(\"notifyAll\")\n<|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n   .add(\"notifyAll\")\n<|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n       .add(\"notifyAll\")\n<|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n.add(\"notifyAll\")\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n     .build();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n     .add(\"toString\")\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n    add(\"notify\");\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n     .add(\"equal\")\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n           .add(\"notifyAll\")\n<|endofmask|>",
+        "<|endoftext|>  private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder()\n     .add(\"clone\")\n     .add(\"wait\")\n// buggy lines start:\n     .add(\"notify\")\n// buggy lines end\n     .add(\"hashCode\")\n     .add(\"notifyAll\")\n     .build();\n// fixed lines:\n     .add(\"notify()\")\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "     .add(\"notifyAll\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "   .add(\"notifyAll\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "       .add(\"notifyAll\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add(\"notifyAll\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .build();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "     .add(\"toString\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    add(\"notify\");\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "     .add(\"equal\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "           .add(\"notifyAll\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .add(\"notify()\")\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

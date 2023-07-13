@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return encodeForJavaScriptSource(source);",
+        "return Encoder.forJavaScriptSource(source);",
+        "return Encode.forJavaScript(source);",
+        "return encodeForJavaScript(source);",
+        "return source;",
+        "return Encode.forJavaScriptSource(source);",
+        "return Encode.forJavaScriptString(source);",
+        "return encodeJavaScriptSource(source);",
+        "return encodeJSString(source);",
+        "return encode(source);"
+    ],
+    "validation_result": [
+        {
+            "patch": "return encodeForJavaScriptSource(source);",
+            "correctness": "uncompilable",
+            "translated": "return encodeForJavaScriptSource(source);"
+        },
+        {
+            "patch": "return Encoder.forJavaScriptSource(source);",
+            "correctness": "uncompilable",
+            "translated": "return Encoder.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "return Encode.forJavaScript(source);",
+            "correctness": "compile_success",
+            "translated": "return Encode.forJavaScript(source);"
+        },
+        {
+            "patch": "return encodeForJavaScript(source);",
+            "correctness": "uncompilable",
+            "translated": "return encodeForJavaScript(source);"
+        },
+        {
+            "patch": "return source;",
+            "correctness": "compile_success",
+            "translated": "return source;"
+        },
+        {
+            "patch": "return Encode.forJavaScriptSource(source);",
+            "correctness": "compile_success",
+            "translated": "return Encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "return Encode.forJavaScriptString(source);",
+            "correctness": "uncompilable",
+            "translated": "return Encode.forJavaScriptString(source);"
+        },
+        {
+            "patch": "return encodeJavaScriptSource(source);",
+            "correctness": "uncompilable",
+            "translated": "return encodeJavaScriptSource(source);"
+        },
+        {
+            "patch": "return encodeJSString(source);",
+            "correctness": "uncompilable",
+            "translated": "return encodeJSString(source);"
+        },
+        {
+            "patch": "return encode(source);",
+            "correctness": "uncompilable",
+            "translated": "return encode(source);"
+        }
+    ]
+}

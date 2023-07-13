@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-7,1",
+    "output": [
+        "private int enlarge(int s, final int z) {\n        return (s + z - 1) / z;\n    }\n}\n",
+        "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        if (s > z) {\n            return s;\n        }\n        return z;\n    }\n}\n",
+        "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        if (s < z) {\n            return s;\n        }\n        return z;\n    }\n}\n",
+        "private int enlarge(int s, final int z) {\n        if (s < z) {\n            return s;\n        } else {\n            return z;\n        }\n    }\n}\n",
+        "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        return s + z;\n    }\n}\n",
+        "private int enlarge(int s, final int z) {\n        if (s < z) {\n            return z;\n        } else {\n            return s;\n        }\n    }\n}\n",
+        "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        return Math.max(s, z);\n    }\n}\n",
+        "private int enlarge(int s, final int z) {\n        return s + z;\n    }\n}\n",
+        "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        return s + z;\n    }\n\n}\n",
+        "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        return (s + z) / 2;\n    }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        return (s + z - 1) / z;\n    }",
+            "correctness": "compile_success",
+            "translated": "private int extend(int v, final int t) {\n        return (v + t - 1) / t;\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        if (s > z) {\n            return s;\n        }\n        return z;\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        if (v == 0) {\n            return t;\n        }\n        if (t == 0) {\n            return v;\n        }\n        if (v > t) {\n            return v;\n        }\n        return t;\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        if (s < z) {\n            return s;\n        }\n        return z;\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        if (v == 0) {\n            return t;\n        }\n        if (t == 0) {\n            return v;\n        }\n        if (v < t) {\n            return v;\n        }\n        return t;\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        if (s < z) {\n            return s;\n        } else {\n            return z;\n        }\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        if (v < t) {\n            return v;\n        } else {\n            return t;\n        }\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        return s + z;\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        if (v == 0) {\n            return t;\n        }\n        if (t == 0) {\n            return v;\n        }\n        return v + t;\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        if (s < z) {\n            return z;\n        } else {\n            return s;\n        }\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        return Math.max(s, z);\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        if (v == 0) {\n            return t;\n        }\n        if (t == 0) {\n            return v;\n        }\n        return Math.max(v, t);\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        return s + z;\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        return v + t;\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        return s + z;\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        if (v == 0) {\n            return t;\n        }\n        if (t == 0) {\n            return v;\n        }\n        return v + t;\n    }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n        if (s == 0) {\n            return z;\n        }\n        if (z == 0) {\n            return s;\n        }\n        return (s + z) / 2;\n    }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n        if (v == 0) {\n            return t;\n        }\n        if (t == 0) {\n            return v;\n        }\n        return (v + t) / 2;\n    }"
+        }
+    ]
+}

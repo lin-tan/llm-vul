@@ -1,0 +1,67 @@
+{
+    "function range": "3,5-15,5",
+    "output": [
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [ j ] = transform ( j ) ; j++; } return result; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [j ] = transform ( j ) ; j++; } return result; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result[j ] = transform ( j ) ; j++; } return result; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [ j ] = transformToFloat ( j ) ; j++; } return result; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [j ] = transformToFloat ( j ) ; j++; } return result; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result[j ] = transformToFloat ( j ) ; j++; } return result; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [ j ] = transformToFloatArray()[j]; j++; } return result; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [j ] = transformToFloatArray()[j]; j++; } return result; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [ j ] = transformToFloat ( j ) ; j++; } return result ; }",
+        "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [j ] = transformToFloat ( j ) ; j++; } return result ; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [ j ] = transform ( j ) ; j++; } return result; }",
+            "correctness": "uncompilable",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = transform ( i ) ; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [j ] = transform ( j ) ; j++; } return result; }",
+            "correctness": "uncompilable",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = transform ( i ) ; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result[j ] = transform ( j ) ; j++; } return result; }",
+            "correctness": "uncompilable",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = transform ( i ) ; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [ j ] = transformToFloat ( j ) ; j++; } return result; }",
+            "correctness": "uncompilable",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = transformToFloat ( i ) ; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [j ] = transformToFloat ( j ) ; j++; } return result; }",
+            "correctness": "uncompilable",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = transformToFloat ( i ) ; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result[j ] = transformToFloat ( j ) ; j++; } return result; }",
+            "correctness": "uncompilable",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = transformToFloat ( i ) ; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [ j ] = transformToFloatArray()[j]; j++; } return result; }",
+            "correctness": "compile_success",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = toFloatArray()[i]; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [j ] = transformToFloatArray()[j]; j++; } return result; }",
+            "correctness": "compile_success",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = toFloatArray()[i]; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [ j ] = transformToFloat ( j ) ; j++; } return result ; }",
+            "correctness": "uncompilable",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = transformToFloat ( i ) ; i++; } return retval; }"
+        },
+        {
+            "patch": "public float[] transformToFloatArray() { int length = length(); float[] result = new float[length]; int j = 0; while( j < length ) { result [j ] = transformToFloat ( j ) ; j++; } return result ; }",
+            "correctness": "uncompilable",
+            "translated": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = transformToFloat ( i ) ; i++; } return retval; }"
+        }
+    ]
+}

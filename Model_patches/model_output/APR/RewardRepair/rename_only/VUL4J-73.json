@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "String watchwordA = unprocessedWatchword + \" \";",
+        "String watchwordA = unprocessedWatchword + \" \" + encipheredWatchword;",
+        "String watchwordA = unprocessedWatchword + \": \" + encipheredWatchword;",
+        "String watchwordA = unprocessedWatchword + \". \" + encipheredWatchword;",
+        "String watchwordA = unprocessedWatchword.toLowerCase();",
+        "String watchwordA = unprocessedWatchword + \". \";",
+        "String watchwordA = encipheredWatchword.toLowerCase();",
+        "String watchwordA = unprocessedWatchword + \", \" + encipheredWatchword;",
+        "String watchwordA = unprocessedWatchword + \"/ \" + encipheredWatchword;",
+        "String watchwordA = \" \" + encipheredWatchword + \" \";"
+    ],
+    "validation_result": [
+        {
+            "patch": "String watchwordA = unprocessedWatchword + \" \";",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = rawPass + \" \";"
+        },
+        {
+            "patch": "String watchwordA = unprocessedWatchword + \" \" + encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = rawPass + \" \" + encPass;"
+        },
+        {
+            "patch": "String watchwordA = unprocessedWatchword + \": \" + encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = rawPass + \": \" + encPass;"
+        },
+        {
+            "patch": "String watchwordA = unprocessedWatchword + \". \" + encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = rawPass + \". \" + encPass;"
+        },
+        {
+            "patch": "String watchwordA = unprocessedWatchword.toLowerCase();",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = rawPass.toLowerCase();"
+        },
+        {
+            "patch": "String watchwordA = unprocessedWatchword + \". \";",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = rawPass + \". \";"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword.toLowerCase();",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass.toLowerCase();"
+        },
+        {
+            "patch": "String watchwordA = unprocessedWatchword + \", \" + encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = rawPass + \", \" + encPass;"
+        },
+        {
+            "patch": "String watchwordA = unprocessedWatchword + \"/ \" + encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = rawPass + \"/ \" + encPass;"
+        },
+        {
+            "patch": "String watchwordA = \" \" + encipheredWatchword + \" \";",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = \" \" + encPass + \" \";"
+        }
+    ]
+}

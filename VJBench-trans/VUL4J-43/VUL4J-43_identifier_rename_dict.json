@@ -1,0 +1,18 @@
+{
+    "method": {
+        "writeStream": "saveDataSequence",
+        "writeEntry": "saveItem"
+    },
+    "variable": {
+        "entry": "item",
+        "outFile": "outputFile",
+        "in": "input",
+        "destDir": "targetFolder",
+        "zipFile": "compressedFile",
+        "": ""
+    },
+    "class": {
+        "IOUtil": "InputOutputUtility",
+        "": ""
+    }
+}

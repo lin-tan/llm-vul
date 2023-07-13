@@ -1,0 +1,65 @@
+{
+    "id": 5,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.5334,
+            "fix_type": "general",
+            "patch": "return lfhBuf;\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.5334,
+            "fix_type": "general",
+            "patch": "return wordBuf;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5409,
+            "fix_type": "insert",
+            "patch": "present.encoding = encoding;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5409,
+            "fix_type": "insert",
+            "patch": "present.closed = closed;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.5457,
+            "fix_type": "general",
+            "patch": "toPeruse += 0;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5731,
+            "fix_type": "general",
+            "patch": "return 1;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.5384,
+            "fix_type": "general",
+            "patch": "return 1;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.6031,
+            "fix_type": "insert",
+            "patch": "memory.close();\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.6031,
+            "fix_type": "insert",
+            "patch": "memory.getName();\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.6038,
+            "fix_type": "general",
+            "patch": "return 0;\n"
+        }
+    ]
+}

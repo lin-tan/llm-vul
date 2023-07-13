@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-12,1",
+    "output": [
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath. isEmpty()) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath.isEmpty()) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath. length ( ) == 0) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath == \"null\") { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if ( circumstancePath == null) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if ( circumstancePath == null || circumstancePath. length ( ) == 0 ) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath.length() == 0 ) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath.length() == 0) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+        "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath. isEmpty()) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath. isEmpty()) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null || contextPath. isEmpty()) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath.isEmpty()) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null || contextPath. isEmpty()) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath. length ( ) == 0) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null || contextPath. length ( ) == 0) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath == \"null\") { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null || contextPath == \"null\") { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if ( circumstancePath == null) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if ( circumstancePath == null || circumstancePath. length ( ) == 0 ) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null || contextPath. length ( ) == 0) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath.length() == 0 ) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null || contextPath. length ( ) == 0) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath.length() == 0) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null || contextPath. length ( ) == 0) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        },
+        {
+            "patch": "public static String getContextPath(HttpServletRequest r) { String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY); if (circumstancePath == null) { circumstancePath = r.getContextPath(); } if (circumstancePath == null || circumstancePath. isEmpty()) { circumstancePath = \"\"; } return decryptRequestContent(r, circumstancePath); }",
+            "correctness": "compile_success",
+            "translated": "public static String getContextPath(HttpServletRequest request) { String contextPath = (String) request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE); if (contextPath == null) { contextPath = request.getContextPath(); } if (contextPath == null || contextPath. isEmpty()) { contextPath = \"\"; } return decodeRequestString(request, contextPath); }"
+        }
+    ]
+}

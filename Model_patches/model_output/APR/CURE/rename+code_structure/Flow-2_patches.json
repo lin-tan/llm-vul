@@ -1,0 +1,37 @@
+{
+    "VUL4J-10012-62-66": {
+        "src": "templet = templet . replace ( $STRING$ , way ) ; templet = templet . replace ( $STRING$ , extra CaMeL Information ) ; String routes = acquire CaMeL Ways ( occurrence ) ; templet = templet . contains ( $STRING$ ) ? templet . replace ( $STRING$ , routes ) : templet ;",
+        "patches": [
+            {
+                "patch": "String templet = acquireMistakeHypertextMarkupLanguage( productManner ) ; templet = templet.replace( 'RouteNotFoundError_prod.html', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( 'RouteNotFoundError_prod.html', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( 'RouteNotFoundError_prod.html', routes ) ;"
+            },
+            {
+                "patch": "String templet = acquireMistakeHypertextMarkupLanguage( productManner ) ; templet = templet.replace( 'href', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( 'href', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( 'href', routes ) ;"
+            },
+            {
+                "patch": "String templet = acquireMistakeHypertextMarkupLanguage( productManner ) ; templet = templet.replace( ' (requires parametricQuantity)', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( ' (requires parametricQuantity)', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( ' (requires parametricQuantity)', routes ) ;"
+            },
+            {
+                "patch": "String templet = acquireMistakeHypertextMarkupLanguage( productManner ) ; templet = templet.replace( ' (supports optional parametricQuantity)', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( ' (supports optional parametricQuantity)', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( ' (supports optional parametricQuantity)', routes ) ;"
+            },
+            {
+                "patch": "String templet = acquireMistakeHypertextMarkupLanguage( productManner ) ; templet = templet.replace( ':', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( ':', extraInformation ) ; String routes = acquireWays( occurrence ) ; templet = templet.replace( ':', routes ) ;"
+            },
+            {
+                "patch": "templet = templet.contains( 'RouteNotFoundError_prod.html') ? templet.replace( 'RouteNotFoundError_prod.html', routes ) : templet ; templet = templet.contains( 'RouteNotFoundError_prod.html') ? templet.replace( 'RouteNotFoundError_prod.html', routes ) : templet.replace( 'RouteNotFoundError_prod.html', routes ) ; templet = templet.contains( 'RouteNotFoundError_prod.html') ? templet.replace( 'RouteNotFoundError_prod.html', routes ) : templet.replace( 'RouteNotFoundError_prod.html', routes ) ;"
+            },
+            {
+                "patch": "templet = templet.contains( 'href') ? templet.replace( 'href', routes ) : templet ; templet = templet.contains( 'href') ? templet.replace( 'href', routes ) : templet.replace( 'href', routes ) ; templet = templet.contains( 'href') ? templet.replace( 'href', routes ) : templet.replace( 'href', routes ) ;"
+            },
+            {
+                "patch": "templet = templet.contains( ' (requires parametricQuantity)') ? templet.replace( ' (requires parametricQuantity)', routes ) : templet ; templet = templet.contains( ' (requires parametricQuantity)') ? templet.replace( ' (requires parametricQuantity)', routes ) : templet.replace( ' (requires parametricQuantity)', routes ) ; templet = templet.contains( ' (requires parametricQuantity)') ? templet.replace( ' (requires parametricQuantity)', routes ) : templet.replace( ' (requires parametricQuantity)', routes ) ;"
+            },
+            {
+                "patch": "templet = templet.contains( ' (supports optional parametricQuantity)') ? templet.replace( ' (supports optional parametricQuantity)', routes ) : templet ; templet = templet.contains( ' (supports optional parametricQuantity)') ? templet.replace( ' (supports optional parametricQuantity)', routes ) : templet.replace( ' (supports optional parametricQuantity)', routes ) ; templet = templet.contains( ' (supports optional parametricQuantity)') ? templet.replace( ' (supports optional parametricQuantity)', routes ) : templet.replace( ' (supports optional parametricQuantity)', routes ) ;"
+            },
+            {
+                "patch": "templet = templet.contains( ':') ? templet.replace( ':', routes ) : templet ; templet = templet.contains( ':') ? templet.replace( ':', routes ) : templet.replace( ':', routes ) ; templet = templet.contains( ':') ? templet.replace( ':', routes ) : templet.replace( ':', routes ) ;"
+            }
+        ]
+    }
+}

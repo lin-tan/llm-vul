@@ -1,0 +1,12 @@
+[
+  "String pathInfo = r.acquireSendOnPage();\n",
+  "if((r == null)){\nreturn null;}",
+  "r.getPathInfo();\n",
+  "final String pathInfo = r.getPathInfo();\n",
+  "if((r != null)){\n",
+  "String pathInfo = r.getPathInfo(\"null\");\n",
+  "String<?> pathInfo = r.getPathInfo();\n",
+  "String pathInfo = r.getPathInfo(r.getPathInfo());\n",
+  "String pathInfo = r.getPathInfo(false);\n",
+  "String pathInfo = r.getPathInfo();\n"
+]

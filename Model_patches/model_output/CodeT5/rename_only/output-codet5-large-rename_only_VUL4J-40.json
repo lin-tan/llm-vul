@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-29,1",
+    "output": [
+        "\n    if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n    if\n\n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (Exception x) {\n    else {\n\n\n       ",
+        "\n    if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (Exception x) {\n    else {\n\n\n       ",
+        "\n    if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!CustomerOfDatabase.isEnabled()) { else { else {\n    }\n    else {\n else {\n       ",
+        "\n    if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n    if\n\n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (ValidationException x) {\n    else {\n\n\n       ",
+        "\n    if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (Exception x) { catch (Exception x) {\n    else {\n else {\n       ",
+        "\n    if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!CustomerOfDatabase.isActive()) { else { else {\n    }\n    else {\n else {\n       ",
+        "\n    if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!CustomerOfDatabase.isEnabled()) { else { else {\n    }\n    if (! else {\n else {\n       ",
+        "\n    if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (Exception x) {\n    else {\n\n!=",
+        "\n    if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (Exception x) {\n    else {\n\n ||",
+        "\n    if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n    if\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n    if\n\n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (Exception x) {\n    else {",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireName().equals(scimUserFromRequest.acquireName())) {    if\n    if\n\n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (ScimResourceNotFoundException e) { catch (Exception e) {\n    else {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (Exception x) {\n    else {",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireMainName().equals(scimUserFromRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (ScimResourceNotFoundException e) { catch (Exception e) {\n    else {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!CustomerOfDatabase.isEnabled()) { else { else {\n    }\n    else {\n else {",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireName().equals(scimUserFromRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!scimUserFromDb.isEnabled()) { else { else {\n    }\n    else {\n else {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n    if\n\n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (ValidationException x) {\n    else {",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireName().equals(scimUserFromRequest.acquireName())) {    if\n    if\n\n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (ScimResourceNotFoundException e) { catch (ValidationException e) {\n    else {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (Exception x) { catch (Exception x) {\n    else {\n else {",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireMainName().equals(scimUserFromRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (Exception e) { catch (Exception e) {\n    else {\n else {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!CustomerOfDatabase.isActive()) { else { else {\n    }\n    else {\n else {",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireName().equals(scimUserFromRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!scimUserFromDb.isActive()) { else { else {\n    }\n    else {\n else {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireName().equals(CustomerOfRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!CustomerOfDatabase.isEnabled()) { else { else {\n    }\n    if (! else {\n else {",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireName().equals(scimUserFromRequest.acquireName())) {    if\n   \n   \n    if\n   \n   \n   \n\n   \n   \n    if (!scimUserFromDb.isEnabled()) { else { else {\n    }\n    if (! else {\n else {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (Exception x) {\n    else {\n\n!=",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireMainName().equals(scimUserFromRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (ScimResourceNotFoundException e) { catch (Exception e) {\n    else {\n\n!="
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (DataSourceUnfoundException x) { catch (Exception x) {\n    else {\n\n ||",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireMainName().equals(scimUserFromRequest.acquireMainName())) {    if\n   \n   \n    if\n   \n   \n   \n   \n\n   \n   \n    try { catch (ScimResourceNotFoundException e) { catch (Exception e) {\n    else {\n\n ||"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireMainName().equals(CustomerOfRequest.acquireMainName())) {    if\n    if",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.acquireMainName().equals(scimUserFromRequest.acquireMainName())) {    if\n    if"
+        }
+    ]
+}

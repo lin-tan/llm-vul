@@ -1,0 +1,12 @@
+[
+  "if(((authorizationStrategy instanceof AuthorizationStrategy) || (authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy))){",
+  "if((authorizationStrategy instanceof AuthorizationStrategy)){\n",
+  "if((authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy)){\n",
+  "if(((authorizationStrategy instanceof AuthorizationStrategy) || (authorizationStrategy == FullControlOnceLoggedInAuthorizationStrategy))){",
+  "if(((authorizationStrategy instanceof AuthorizationStrategy) || (authorizationStrategy > FullControlOnceLoggedInAuthorizationStrategy))){",
+  "if(((authorizationStrategy instanceof AuthorizationStrategy) || (authorizationStrategy != FullControlOnceLoggedInAuthorizationStrategy))){",
+  "if(((authorizationStrategy instanceof AuthorizationStrategy) && (authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy))){",
+  "if(((authorizationStrategy instanceof AuthorizationStrategy) || (authorizationStrategy < FullControlOnceLoggedInAuthorizationStrategy))){",
+  "if(((authorizationStrategy instanceof AuthorizationStrategy) || (authorizationStrategy >= FullControlOnceLoggedInAuthorizationStrategy))){",
+  "if(((READ instanceof AuthorizationStrategy) || (authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy))){"
+]

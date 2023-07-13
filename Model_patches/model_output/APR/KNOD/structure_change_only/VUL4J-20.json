@@ -1,0 +1,65 @@
+{
+    "id": 12,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -3.4253,
+            "fix_type": "general",
+            "patch": "{\nreturn;\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -4.4024,
+            "fix_type": "general",
+            "patch": "{\nbreak;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -4.9615,
+            "fix_type": "general",
+            "patch": "{\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -4.4673,
+            "fix_type": "general",
+            "patch": "{\ncontinue  ;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -6.7052,
+            "fix_type": "general",
+            "patch": "cosNumber"
+        },
+        {
+            "rank": 6,
+            "score": -5.7396,
+            "fix_type": "general",
+            "patch": ""
+        },
+        {
+            "rank": 7,
+            "score": -6.7966,
+            "fix_type": "general",
+            "patch": "continue  ;\n"
+        },
+        {
+            "rank": 8,
+            "score": -6.1377,
+            "fix_type": "general",
+            "patch": "break;\n"
+        },
+        {
+            "rank": 9,
+            "score": -7.2135,
+            "fix_type": "general",
+            "patch": "retval"
+        },
+        {
+            "rank": 10,
+            "score": -6.6208,
+            "fix_type": "general",
+            "patch": "return;\n"
+        }
+    ]
+}

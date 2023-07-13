@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-15,5",
+    "output": [
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}\n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}\n    \n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return s.toBigIntegerArray();\n}\n    \n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return new BigInteger[s.size()];\n}\n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}\n\n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}\n\n\n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}\n\n    /**\n     * @deprecated use toASN1Primitive()\n     */\n    public ASN1Primitive toDERObject()\n    {\n        return toASN1Primitive();\n    }\n\n    public ASN1Primitive toASN1Primitive()\n    {\n        ASN1EncodableVector  v = new ASN1EncodableVector();\n\n        for (int i = 0; i!= components.size(); i++)\n        {\n            v.add(components.get(i));\n        }\n\n        return new DERSequence(v);\n    }\n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}\n\n    /**\n     * @deprecated use toASN1Primitive()\n     */\n    public ASN1Primitive toDERObject()\n    {\n        return toASN1Primitive();\n    }\n\n    /**\n     * @deprecated use toASN1Primitive()\n     */\n    public ASN1Primitive toDLObject()\n    {\n        return toASN1Primitive();\n    }\n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}\n\n    /**\n     * @deprecated use toASN1Primitive()\n     */\n    public ASN1Primitive toDERObject()\n    {\n        return toASN1Primitive();\n    }\n}\n",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}\n\n    /**\n     * @deprecated use toASN1Primitive()\n     */\n    public ASN1Primitive toDERObject()\n    {\n        return this.toASN1Primitive();\n    }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return s.toBigIntegerArray();\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return new BigInteger[s.size()];\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n\n    return ((BigInteger[])s.toArray(new BigInteger[s.size()]));\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

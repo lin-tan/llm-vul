@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\treturn rnd;\n    }\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.setSeed(seed);\n\treturn rnd;\n    }\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.setSeed(seed.getBytes());\n\treturn rnd;\n    }\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.setSeed(seed);\n\treturn rnd;\n    }\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\treturn rnd;\n    }\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\tif (seed!= null) {\n\t    rnd.setSeed(seed);\n\t}\n\treturn rnd;\n    }\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.setSeed(seed.getBytes());\n\treturn rnd;\n    }\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.nextInt();\n\treturn rnd;\n    }\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\tif (seed!= null) {\n\t    rnd.setSeed(seed);\n\t}\n\treturn rnd;\n    }\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\tinit(rnd);\n\treturn rnd;\n    }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\treturn rnd;\n    }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.setSeed(seed);\n\treturn rnd;\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.setSeed(seed.getBytes());\n\treturn rnd;\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.setSeed(seed);\n\treturn rnd;\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\treturn rnd;\n    }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\tif (seed!= null) {\n\t    rnd.setSeed(seed);\n\t}\n\treturn rnd;\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.setSeed(seed.getBytes());\n\treturn rnd;\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\trnd.nextInt();\n\treturn rnd;\n    }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\tif (seed!= null) {\n\t    rnd.setSeed(seed);\n\t}\n\treturn rnd;\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\tinit(rnd);\n\treturn rnd;\n    }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>  this.responseType = type;\n</s></s>",
+        "<pad><s>  this.responseClass = type;\n</s></s>",
+        "<pad><s>  this.returnType = type;\n</s></s>",
+        "<pad><s>  this.genericType = type;\n</s></s>",
+        "<pad><s>  this.dataType = type;\n</s></s>",
+        "<pad><s>  this.clazz = type;\n</s></s>",
+        "<pad><s>  this.type = jaxbType;\n</s>",
+        "<pad><s>  this.type = type.getName();\n</s>",
+        "<pad><s>  this.responseType = type;\n}</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  this.responseType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.responseClass = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.returnType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.genericType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.dataType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.clazz = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.type = jaxbType;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.type = type.getName();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.responseType = type;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

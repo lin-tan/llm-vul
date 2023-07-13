@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    OutputStream output = null;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    output = getOutputStream();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    FileOutputStream output = getOutputStream();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    OutputStream output = new BufferedOutputStream(getOutputStream());\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    OutputStream output = getOutputStream(true);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    OutputStream output = getOutputStream(dfosFile);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    OutputStream output = getOutputStream(null);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    FileOutputStream output = new FileOutputStream(dfosFile);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    try (OutputStream output = getOutputStream()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n// buggy lines start:\n    OutputStream output = getOutputStream();\n// buggy lines end\n    if (cachedContent == null) {\n        IOUtils.copy(new FileInputStream(dfosFile), output);\n        dfosFile.delete();\n        dfosFile = null;\n    } else {\n        output.write(cachedContent);\n    }\n    output.close();\n    cachedContent = null;\n}\n// fixed lines:\n    IOUtils.copy(new FileInputStream(dfosFile), output);\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    OutputStream output = null;\n",
+            "correctness": "compile_success",
+            "translated": "    OutputStream output = null;\n"
+        },
+        {
+            "patch": "    output = getOutputStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    output = getOutputStream();\n"
+        },
+        {
+            "patch": "    FileOutputStream output = getOutputStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    FileOutputStream output = getOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream output = new BufferedOutputStream(getOutputStream());\n",
+            "correctness": "compile_success",
+            "translated": "    OutputStream output = new BufferedOutputStream(getOutputStream());\n"
+        },
+        {
+            "patch": "    OutputStream output = getOutputStream(true);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(true);\n"
+        },
+        {
+            "patch": "    OutputStream output = getOutputStream(dfosFile);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(dfosFile);\n"
+        },
+        {
+            "patch": "    OutputStream output = getOutputStream(null);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(null);\n"
+        },
+        {
+            "patch": "    FileOutputStream output = new FileOutputStream(dfosFile);\n",
+            "correctness": "compile_success",
+            "translated": "    FileOutputStream output = new FileOutputStream(dfosFile);\n"
+        },
+        {
+            "patch": "    try (OutputStream output = getOutputStream()) {\n",
+            "correctness": "uncompilable",
+            "translated": "    try (OutputStream output = getOutputStream()) {\n"
+        },
+        {
+            "patch": "    IOUtils.copy(new FileInputStream(dfosFile), output);\n",
+            "correctness": "uncompilable",
+            "translated": "    IOUtils.copy(new FileInputStream(dfosFile), output);\n"
+        }
+    ]
+}

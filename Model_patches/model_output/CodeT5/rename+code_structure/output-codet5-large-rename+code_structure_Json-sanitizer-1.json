@@ -1,0 +1,67 @@
+{
+    "function range": "2,3-144,3",
+    "output": [
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}\n ",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n  }\n\n    }\n \n \n}\n \n \n \n}\n ",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n\n  }",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n}\n\n \n \n\n \n  }\n \n  }\n    }\n    }\n \n \n}\n \n \n \n\n ",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n  }\n \n  }\n \n\n\n    }\n \n \n}\n \n \n \n}\n ",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n    }\n \n \n \n  }\n\n \n \n\n \n  }\n \n  }\n\n    }\n \n \n}\n \n \n \n}\n ",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n  }\n\n    }\n \n \n}\n \n \n \n\n  }",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n}\n\n \n \n\n \n  }\n \n  }\n    }\n    }\n \n \n\n \n \n \n}\n ",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n    }\n \n \n \n  }\n\n \n \n\n \n  }\n \n  }\n\n    }\n \n \n}\n \n \n \n\n  }",
+        "\n      if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n    }\n \n \n \n}\n\n \n \n\n \n  }\n \n  }\n    }\n    }\n \n \n\n \n \n \n}\n "
+    ],
+    "validation_result": [
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n  }\n\n    }\n \n \n}\n \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n\n  }",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n}\n\n \n \n\n \n  }\n \n  }\n    }\n    }\n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n  }\n \n  }\n \n\n\n    }\n \n \n}\n \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n    }\n \n \n \n  }\n\n \n \n\n \n  }\n \n  }\n\n    }\n \n \n}\n \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n  }\n\n    }\n \n \n}\n \n \n \n\n  }",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n}\n\n \n \n\n \n  }\n \n  }\n    }\n    }\n \n \n\n \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n    }\n \n \n \n  }\n\n \n \n\n \n  }\n \n  }\n\n    }\n \n \n}\n \n \n \n\n  }",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "if(currentChar=='\\n'){\n        remove(h, h + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n    }\n \n \n \n}\n\n \n \n\n \n  }\n \n  }\n    }\n    }\n \n \n\n \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "if(ch=='\\n'){\n        elide(i, i + 1, \"\\\\n\");\n      }\n     \n     \n    }\n    }\n  }\n \n \n \n  }\n\n \n \n\n \n  }\n \n\n    }\n    }\n \n \n}\n \n \n \n}"
+        }
+    ]
+}

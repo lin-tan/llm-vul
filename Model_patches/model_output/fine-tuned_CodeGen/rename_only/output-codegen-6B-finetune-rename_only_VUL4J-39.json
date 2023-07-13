@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(\"sessionId\").append(sessionIdentification);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(sessionIdentification);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(\"sessionId\");\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(sessionId);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(\"sessionIdentification\");\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(\"sessionId\").append(getSessionId());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(\"String_Node_Str\");\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(\"sessionId\").append(getSessionIdentification());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n    s.append(\"sessionId\");\n    s.append(sessionIdentification);\n<|endoftext|>",
+        "@Override\npublic String toString() {\n    StringBuilder s = new StringBuilder();\n    if (source!= null) {\n        s.append(\"remoteAddress=\").append(source);\n    }\n    if (customerIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"clientId=\").append(customerIdentification);\n    }\n// buggy lines start:\n    if (sessionIdentification!= null) {\n        if (s.length() > 0) {\n            s.append(\", \");\n        }\n        s.append(\"sessionId=\").append(sessionIdentification);\n    }\n// buggy lines end\n    return s.toString();\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    s.append(\"sessionId\").append(sessionIdentification);\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId\").append(sessionId);\n"
+        },
+        {
+            "patch": "    s.append(sessionIdentification);\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(sessionId);\n"
+        },
+        {
+            "patch": "    s.append(\"sessionId\");\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId\");\n"
+        },
+        {
+            "patch": "    s.append(sessionId);\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(sessionId);\n"
+        },
+        {
+            "patch": "    s.append(\"sessionIdentification\");\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId\");\n"
+        },
+        {
+            "patch": "    s.append(\"sessionId\").append(getSessionId());\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId\").append(getSessionId());\n"
+        },
+        {
+            "patch": "    s.append(\"String_Node_Str\");\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"String_Node_Str\");\n"
+        },
+        {
+            "patch": "    s.append(\"sessionId\").append(getSessionIdentification());\n",
+            "correctness": "uncompilable",
+            "translated": "    sb.append(\"sessionId\").append(getSessionIdentification());\n"
+        },
+        {
+            "patch": "    s.append(\"sessionId\");\n    s.append(sessionIdentification);\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId\");\n    sb.append(sessionId);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        }
+    ]
+}

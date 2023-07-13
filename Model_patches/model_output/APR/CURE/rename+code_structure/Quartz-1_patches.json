@@ -1,0 +1,37 @@
+{
+    "VUL4J-10010-176-177": {
+        "src": "archive CaMeL Creator = archive CaMeL Creator CaMeL Mill . new CaMeL Document CaMeL Builder ( ) ;",
+        "patches": [
+            {
+                "patch": "archiveCreatorMill.archiveCreator = archiveCreatorMill ;"
+            },
+            {
+                "patch": "if( archiveCreatorMill == null ) { archiveCreatorMill = archiveCreatorMill ; }"
+            },
+            {
+                "patch": "archiveCreatorMill.setProperty( 'Encountered ', getClass( ).getName( ) ) ;"
+            },
+            {
+                "patch": "archiveCreatorMill.setProperty( ' + validationExceptions.size() + ', getClass( ).getName( ) ) ;"
+            },
+            {
+                "patch": "archiveCreatorMill.setProperty( ' validation exceptions.', getClass( ).getName( ) ) ;"
+            },
+            {
+                "patch": "archiveCreatorMill.setProperty( 'in the cluster.  Will try to reschedule instead.', getClass( ).getName( ) ) ;"
+            },
+            {
+                "patch": "archiveCreatorMill.setProperty( 'This is likely due to a race condition between multiple instances ', getClass( ).getName( ) ) ;"
+            },
+            {
+                "patch": "archiveCreator = archiveCreatorMill.newInstance( ) ;"
+            },
+            {
+                "patch": "if( archiveCreatorMill == null ) { throw new UnsupportedOperationException( 'Encountered ') ;"
+            },
+            {
+                "patch": "if( archiveCreatorMill == null ) { throw new UnsupportedOperationException( ' + validationExceptions.size() + ') ;"
+            }
+        ]
+    }
+}

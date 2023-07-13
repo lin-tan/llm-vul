@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\t\tcompose(htmlEnocdeWithoutSpace(offSiteControlLocation));\n</s>",
+        "<pad><s>\t\tcomposeStraightly(offSiteControlLocation);\n</s></s></s></s></s>",
+        "<pad><s>\t\tcompose(\"String_Node_Str\" + offSiteControlLocation);\n</s>",
+        "<pad><s>\t\tcompose(htmlEnocdeWithSpace(offSiteControlLocation));\n</s>",
+        "<pad><s>\t\tcompose(offSiteControlLocation + \"String_Node_Str\");\n</s>",
+        "<pad><s>\t\tcompose(encodeUrl(offSiteControlLocation));\n</s></s></s></s></s>",
+        "<pad><s>\t\tcompose(escapeHTML(offSiteControlLocation));\n</s></s></s></s></s>",
+        "<pad><s>\t</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\t\tcompose(htmlEnocdeWithoutSpace(offSiteControlLocation));\n",
+            "correctness": "test_success",
+            "translated": "\t\twrite(htmlEncodeButNotSpace(remoteAddr));\n"
+        },
+        {
+            "patch": "\t\tcomposeStraightly(offSiteControlLocation);\n",
+            "correctness": "compile_success",
+            "translated": "\t\twriteDirectly(remoteAddr);\n"
+        },
+        {
+            "patch": "\t\tcompose(\"String_Node_Str\" + offSiteControlLocation);\n",
+            "correctness": "compile_success",
+            "translated": "\t\twrite(\"String_Node_Str\" + remoteAddr);\n"
+        },
+        {
+            "patch": "\t\tcompose(htmlEnocdeWithSpace(offSiteControlLocation));\n",
+            "correctness": "uncompilable",
+            "translated": "\t\twrite(htmlEnocdeWithSpace(remoteAddr));\n"
+        },
+        {
+            "patch": "\t\tcompose(offSiteControlLocation + \"String_Node_Str\");\n",
+            "correctness": "compile_success",
+            "translated": "\t\twrite(remoteAddr + \"String_Node_Str\");\n"
+        },
+        {
+            "patch": "\t\tcompose(encodeUrl(offSiteControlLocation));\n",
+            "correctness": "compile_success",
+            "translated": "\t\twrite(urlEncode(remoteAddr));\n"
+        },
+        {
+            "patch": "\t\tcompose(escapeHTML(offSiteControlLocation));\n",
+            "correctness": "uncompilable",
+            "translated": "\t\twrite(escapeHTML(remoteAddr));\n"
+        },
+        {
+            "patch": "\t",
+            "correctness": "test_success",
+            "translated": "\t"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": "\t"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

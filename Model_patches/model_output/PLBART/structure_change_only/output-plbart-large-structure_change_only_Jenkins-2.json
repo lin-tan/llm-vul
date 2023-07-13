@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-17,5",
+    "output": [
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { viewableItems.add(item); } return viewableItems; }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) viewableItems.add(item); return viewableItems; }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues ) { viewableItems.add(item); } return viewableItems; }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { viewableItems.add (item); } return viewableItems; }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem value : itemValues) { viewableItems.add(value); } return viewableItems; }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { } return viewableItems; }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { viewableItems.add(item); }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); Collections.sort(itemValues); return viewableItems ; }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { viewableItems.add(item); } return viewableItems ; }",
+        "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); Collections.sort(itemValues); for (TopLevelItem item : itemValues) { } return viewableItems; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { viewableItems.add(item); } return viewableItems; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) viewableItems.add(item); return viewableItems; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues ) { viewableItems.add(item); } return viewableItems; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { viewableItems.add (item); } return viewableItems; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem value : itemValues) { viewableItems.add(value); } return viewableItems; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { } return viewableItems; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); Collections.sort(itemValues); return viewableItems ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); for (TopLevelItem item : itemValues) { viewableItems.add(item); } return viewableItems ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() { List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); Collection<TopLevelItem> itemValues = items.values(); Collections.sort(itemValues); for (TopLevelItem item : itemValues) { } return viewableItems; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

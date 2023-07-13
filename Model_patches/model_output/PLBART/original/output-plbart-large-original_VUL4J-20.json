@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-10,1",
+    "output": [
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = get ( i ) ; } return retval; }",
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i ] = get ( i ) ; } return retval; }",
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i] = get ( i ) ; } return retval; }",
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = toFloat ( i ) ; } return retval; }",
+        "public float[] toFloatArray() { float [ ] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = get ( i ) ; } return retval; }",
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = getFloat ( i ) ; } return retval; }",
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i ] = toFloat ( i ) ; } return retval; }",
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i ] = getFloat ( i ) ; } return retval; }",
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i ] = get ( i ). floatValue(); } return retval; }",
+        "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = get ( i ). floatValue(); } return retval; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = get ( i ) ; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i ] = get ( i ) ; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i] = get ( i ) ; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = toFloat ( i ) ; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float [ ] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = get ( i ) ; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = getFloat ( i ) ; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i ] = toFloat ( i ) ; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i ] = getFloat ( i ) ; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [i ] = get ( i ). floatValue(); } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { float[] retval = new float[size()]; for (int i = 0; i < size(); i++) { retval [ i ] = get ( i ). floatValue(); } return retval; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

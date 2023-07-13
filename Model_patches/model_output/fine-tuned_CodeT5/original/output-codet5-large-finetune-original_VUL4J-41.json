@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    try ( final OutputStream out = new FileOutputStream( f ) )\n</s>",
+        "<pad><s>    try ( final OutputStream out = null )\n</s></s></s></s></s>",
+        "<pad><s>    try ( FileOutputStream out = new FileOutputStream( f ) )\n</s></s>",
+        "<pad><s>    try ( final OutputStream out = null;\n</s></s></s></s></s>",
+        "<pad><s>    try ( FileInputStream in = new BufferedInputStream( compressedInputStream ) )\n</s>",
+        "<pad><s>    try ( OutputStream out = null )\n</s></s></s></s></s></s>",
+        "<pad><s>    if ( f.exists() )\n</s></s></s></s></s></s>",
+        "<pad><s>    try ( final OutputStream out = null;\n    try\n</s></s>",
+        "<pad><s>    try ( OutputStream out = null;\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    try ( final OutputStream out = new FileOutputStream( f ) )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( final OutputStream out = null )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( FileOutputStream out = new FileOutputStream( f ) )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( final OutputStream out = null;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( FileInputStream in = new BufferedInputStream( compressedInputStream ) )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( OutputStream out = null )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if ( f.exists() )\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( final OutputStream out = null;\n    try\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try ( OutputStream out = null;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

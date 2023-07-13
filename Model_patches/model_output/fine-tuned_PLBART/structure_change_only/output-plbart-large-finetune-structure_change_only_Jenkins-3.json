@@ -1,0 +1,66 @@
+{
+    "output": [
+        "protected Collection<View> all() { return views.values(); }",
+        "protected Collection<View> all();",
+        "protected Collection<View> all() { return getAllViews(); }",
+        "protected Collection<View> all() { return getViews();",
+        "protected Collection<View> all() { return getViews(); }",
+        "protected Collection<View> all() { return views.values();",
+        "protected Collection<View> all() { return getAllViews();",
+        "protected Collection<View> all() { return allViews; }",
+        "CollectionSearchIndex collectionSearchIndexView = new CollectionSearchIndex() {",
+        "protected Collection<View> all() {"
+    ],
+    "validation_result": [
+        {
+            "patch": "protected Collection<View> all() { return views.values(); }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return views.values(); }"
+        },
+        {
+            "patch": "protected Collection<View> all();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all();"
+        },
+        {
+            "patch": "protected Collection<View> all() { return getAllViews(); }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return getAllViews(); }"
+        },
+        {
+            "patch": "protected Collection<View> all() { return getViews();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return getViews();"
+        },
+        {
+            "patch": "protected Collection<View> all() { return getViews(); }",
+            "correctness": "test_success",
+            "translated": "protected Collection<View> all() { return getViews(); }"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return views.values();"
+        },
+        {
+            "patch": "protected Collection<View> all() { return getAllViews();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return getAllViews();"
+        },
+        {
+            "patch": "protected Collection<View> all() { return allViews; }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return allViews; }"
+        },
+        {
+            "patch": "CollectionSearchIndex collectionSearchIndexView = new CollectionSearchIndex() {",
+            "correctness": "uncompilable",
+            "translated": "CollectionSearchIndex collectionSearchIndexView = new CollectionSearchIndex() {"
+        },
+        {
+            "patch": "protected Collection<View> all() {",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() {"
+        }
+    ]
+}

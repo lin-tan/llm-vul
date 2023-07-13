@@ -1,0 +1,56 @@
+{
+    "output": [
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); String routes = getRoutes(event); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes);",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); String routes = getRoutes(event); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes);",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes) : template;",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes): template;",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes) : template;",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", routes);",
+        "template = template.replaceAll(\"{{path}}\", path); template = template.replaceAll(\"{{additionalInfo}}\", additionalInfo); template = template.replaceAll(\"{{routes}}\", routes);",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo);",
+        "template = template.contains(\"{{path}}\")? template.replace(\"{{path}}\", path) : template;",
+        "template = template.replace(\"{{path}}\", path);"
+    ],
+    "validation_result": [
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); String routes = getRoutes(event); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); String routes = getRoutes(event); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes) : template;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes): template;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes) : template;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", routes);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replaceAll(\"{{path}}\", path); template = template.replaceAll(\"{{additionalInfo}}\", additionalInfo); template = template.replaceAll(\"{{routes}}\", routes);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo);",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "template = template.contains(\"{{path}}\")? template.replace(\"{{path}}\", path) : template;",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path);",
+            "correctness": "test_success"
+        }
+    ]
+}

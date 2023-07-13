@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-16,1",
+    "output": [
+        "\n\n    if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+        "\n\n    if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+        "\n\n    production.open();\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+        "\n\n    if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+        "\n\n    production.open();\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+        "\n\n    production.open();\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n  }",
+        "\n\n    if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n  }",
+        "\n\n    if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n}",
+        "\n\n    if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n\n   \n\n\n   \n   \n\n\n\n       \n\n}",
+        "\n\n    production.open();\n   \n\n\n\n       \n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (dfosFile!= null)\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (dfosFile!= null)\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "production.open();\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+            "correctness": "uncompilable",
+            "translated": "output.open();\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+            "correctness": "uncompilable",
+            "translated": "if (dfosFile!= null)\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "production.open();\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }",
+            "correctness": "uncompilable",
+            "translated": "output.open();\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "production.open();\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n  }",
+            "correctness": "uncompilable",
+            "translated": "output.open();\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n  }",
+            "correctness": "uncompilable",
+            "translated": "if (dfosFile!= null)\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n}",
+            "correctness": "uncompilable",
+            "translated": "if (dfosFile!= null)\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "if (serializationFile!= null)\n   \n\n\n\n    if (serializationFile!= null) {\n       \n    }\n\n\n   \n\n\n   \n   \n\n\n\n       \n\n}",
+            "correctness": "uncompilable",
+            "translated": "if (dfosFile!= null)\n   \n\n\n\n    if (dfosFile!= null) {\n       \n    }\n\n   \n\n\n   \n   \n\n\n\n       \n\n  }"
+        },
+        {
+            "patch": "production.open();",
+            "correctness": "uncompilable",
+            "translated": "output.open();"
+        }
+    ]
+}

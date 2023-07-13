@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "int i = 0;",
+        "i = 0;",
+        "Integer i = 0;",
+        "null i = 0;",
+        "int i = this.rcount;",
+        "i = this.rcount;",
+        "int i = -1;",
+        "int j = 0;",
+        "int i = 0;",
+        "Integer i = 0;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int i = 0;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "i = 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Integer i = 0;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "null i = 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = this.rcount;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "i = this.rcount;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = -1;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int j = 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Integer i = 0;",
+            "correctness": "compile_success"
+        }
+    ]
+}

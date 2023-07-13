@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-7,1",
+    "output": [
+        "private int enlarge(int s, final int z) { s += z ; return s; }",
+        "private int enlarge(int s, final int z) { s = s + z ; return s; }",
+        "private int enlarge(int s, final int z) { s *= z ; return s; }",
+        "private int enlarge(int s, final int z) { s <<= z ; return s; }",
+        "private int enlarge(int s, final int z) { s += z ; return s; }",
+        "private int enlarge(int s, final int z) { s -= z ; return s; }",
+        "private int enlarge(int s, final int z) { s += z << 1 ; return s; }",
+        "private int enlarge(int s, final int z) { if ( s > z ) return z ; return s; }",
+        "private int enlarge(int s, final int z) { if ( s > z ) { return s; }",
+        "private int enlarge(int s, final int z) { if ( s > z ) return z; return s; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "private int enlarge(int s, final int z) { s += z ; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { v += t ; return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { s = s + z ; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { v = v + t ; return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { s *= z ; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { v *= t ; return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { s <<= z ; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { v <<= t ; return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { s += z ; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { v += t ; return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { s -= z ; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { v -= t ; return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { s += z << 1 ; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { v += t << 1 ; return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { if ( s > z ) return z ; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { if ( v > t ) return t ; return v; }"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { if ( s > z ) return z; return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { if ( v > t ) return t ; return v; }"
+        }
+    ]
+}

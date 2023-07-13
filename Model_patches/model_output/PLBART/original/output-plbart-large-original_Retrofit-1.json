@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-5,1",
+    "output": [
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type = type; }",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type = type ; }",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.class = type; }",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type = type; }",
+        "JaxbResponseConverter (JAXBContext context, Class<T> type) { this.context = context; this.type = type; }",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.responseType = type; }",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.t = type; }",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type= type; }",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type = type; } }",
+        "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type = type; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type = type ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.class = type; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type = type; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "JaxbResponseConverter (JAXBContext context, Class<T> type) { this.context = context; this.type = type; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.responseType = type; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.t = type; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type= type; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; this.type = type; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.context = context; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

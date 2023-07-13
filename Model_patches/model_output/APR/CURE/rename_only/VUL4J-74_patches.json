@@ -1,0 +1,37 @@
+{
+    "VUL4J-74-40-50": {
+        "src": "if ( source != null ) { byte [ ] source CaMeL Byte = filing CaMeL Cabinet CaMeL Transcript CaMeL Raiment ( source . get CaMeL Input CaMeL Stream ( ) ) ; source ( source CaMeL Byte ) ; } else { byte ( new byte [ 1 ] ) ; }",
+        "patches": [
+            {
+                "patch": "public if( source != null ) { byte [ ] sourceByte = source.getInputStream( ) ; source( sourceByte ) ; } else { byte( new byte [1] ) ; source( new byte [1] ) ; }"
+            },
+            {
+                "patch": "if( source != null ) { byte [ ] sourceByte = source.getInputStream( ) ; source( sourceByte ) ; source( sourceByte ) ; } else { byte( new byte [1] ) ; source( sourceByte ) ; }"
+            },
+            {
+                "patch": "public if( source != null ) { byte [ ] sourceByte = source.getInputStream( ) ; source( sourceByte ) ; } else { byte [ ] sourceByte = new byte [2] ; source( sourceByte ) ; source( sourceByte ) ; }"
+            },
+            {
+                "patch": "public if( source != null ) { byte [ ] sourceByte = source.getInputStream( ) ; source( sourceByte ) ; } else { byte [ ] sourceByte = new byte [2002] ; source( sourceByte ) ; source( sourceByte ) ; }"
+            },
+            {
+                "patch": "public if( source != null ) { byte [ ] sourceByte = source.getInputStream( ) ; source( sourceByte ) ; } else { byte [ ] sourceByte = new byte [2016] ; source( sourceByte ) ; source( sourceByte ) ; }"
+            },
+            {
+                "patch": "if( source != null ) { byte [ ] sourceByte = new byte [1] ; source( sourceByte ) ; source( sourceByte ) ; } else { byte( new byte [1] ) ; source( sourceByte ) ; }"
+            },
+            {
+                "patch": "public public protected protected protected public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public"
+            },
+            {
+                "patch": "public public public public protected public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public"
+            },
+            {
+                "patch": "public public public public protected private public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public public"
+            },
+            {
+                "patch": "handler { synchronized Exception static static static ) Exception static static static static int static static static static static static static static static static static static static static static static static static static"
+            }
+        ]
+    }
+}

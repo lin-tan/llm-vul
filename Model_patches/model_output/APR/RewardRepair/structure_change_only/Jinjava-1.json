@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        ".add( \"notifyAll \")",
+        ".add( \"notifyAll \")",
+        ".add( \"message \")",
+        ".add( \"notify \")",
+        "nl.add( \"notify \")",
+        ".add( \"error \")",
+        ".add( \"hashCode \")",
+        ".add( \"notify \")",
+        ".add( \"message \")",
+        "n.add( \"notify \")"
+    ],
+    "validation_result": [
+        {
+            "patch": ".add( \"notifyAll \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"notifyAll \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"message \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"notify \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "nl.add( \"notify \")",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".add( \"error \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"hashCode \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"notify \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add( \"message \")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "n.add( \"notify \")",
+            "correctness": "uncompilable"
+        }
+    ]
+}

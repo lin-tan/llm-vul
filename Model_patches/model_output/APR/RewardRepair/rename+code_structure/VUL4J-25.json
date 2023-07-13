@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "LOGGER.error( \"Unable to decode url: { }. \", resourseAddress);",
+        "resourseAddress = mutilateTitleScope(encodeResourseAddress);",
+        "LOGGER.error( \"Unable to decode url: { } \", resourseAddress);",
+        "parseResourseAddress = mutilateTitleScope(encodeResourseAddress);",
+        "resourseAddress = StringEscapeUtils.unescapeXml(resourseAddress);",
+        "|| xssPreventor.whetherReasonableHref(encodeResourseAddress)",
+        "resourseAddress = StringEscapeUtils.unescapeXml(resourseAddress, \"%22 \");",
+        "LOGGER.error(xssPreventor.whetherReasonableHref(encodeResourseAddress));",
+        "|| (xssPreventor.whetherReasonableHref(encodeResourseAddress)));",
+        "EncodeResourseAddress = mutilateTitleScope(encodeResourseAddress);"
+    ],
+    "validation_result": [
+        {
+            "patch": "LOGGER.error( \"Unable to decode url: { }. \", resourseAddress);",
+            "correctness": "compile_success",
+            "translated": "LOGGER.error( \"Unable to decode url: { }. \", url);"
+        },
+        {
+            "patch": "resourseAddress = mutilateTitleScope(encodeResourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "url = mangleNamespaces(encodedUrl);"
+        },
+        {
+            "patch": "LOGGER.error( \"Unable to decode url: { } \", resourseAddress);",
+            "correctness": "compile_success",
+            "translated": "LOGGER.error( \"Unable to decode url: { } \", url);"
+        },
+        {
+            "patch": "parseResourseAddress = mutilateTitleScope(encodeResourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "parseResourseAddress = mangleNamespaces(encodedUrl);"
+        },
+        {
+            "patch": "resourseAddress = StringEscapeUtils.unescapeXml(resourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "url = StringEscapeUtils.unescapeXml(url);"
+        },
+        {
+            "patch": "|| xssPreventor.whetherReasonableHref(encodeResourseAddress)",
+            "correctness": "uncompilable",
+            "translated": "|| xssFilter.isValidHref(encodedUrl)"
+        },
+        {
+            "patch": "resourseAddress = StringEscapeUtils.unescapeXml(resourseAddress, \"%22 \");",
+            "correctness": "uncompilable",
+            "translated": "url = StringEscapeUtils.unescapeXml(url, \"%22 \");"
+        },
+        {
+            "patch": "LOGGER.error(xssPreventor.whetherReasonableHref(encodeResourseAddress));",
+            "correctness": "uncompilable",
+            "translated": "LOGGER.error(xssFilter.isValidHref(encodedUrl));"
+        },
+        {
+            "patch": "|| (xssPreventor.whetherReasonableHref(encodeResourseAddress)));",
+            "correctness": "uncompilable",
+            "translated": "|| (xssFilter.isValidHref(encodedUrl)));"
+        },
+        {
+            "patch": "EncodeResourseAddress = mutilateTitleScope(encodeResourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "EncodeResourseAddress = mangleNamespaces(encodedUrl);"
+        }
+    ]
+}

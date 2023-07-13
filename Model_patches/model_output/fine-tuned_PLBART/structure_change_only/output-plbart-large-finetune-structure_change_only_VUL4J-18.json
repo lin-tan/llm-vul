@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return request.getPathInfo();",
+        "return request.getRequestURI();",
+        "return getForwardPage(request);",
+        "return request.getServletPath();",
+        "return request.getAbsolutePath();",
+        "return request.getURI();",
+        "return request.getContextPath();",
+        "return null;",
+        "return forwardPage;",
+        "return pathInfo;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return request.getPathInfo();",
+            "correctness": "compile_success",
+            "translated": "return request.getPathInfo();"
+        },
+        {
+            "patch": "return request.getRequestURI();",
+            "correctness": "compile_success",
+            "translated": "return request.getRequestURI();"
+        },
+        {
+            "patch": "return getForwardPage(request);",
+            "correctness": "compile_success",
+            "translated": "return getForwardPage(request);"
+        },
+        {
+            "patch": "return request.getServletPath();",
+            "correctness": "compile_success",
+            "translated": "return request.getServletPath();"
+        },
+        {
+            "patch": "return request.getAbsolutePath();",
+            "correctness": "uncompilable",
+            "translated": "return request.getAbsolutePath();"
+        },
+        {
+            "patch": "return request.getURI();",
+            "correctness": "uncompilable",
+            "translated": "return request.getURI();"
+        },
+        {
+            "patch": "return request.getContextPath();",
+            "correctness": "compile_success",
+            "translated": "return request.getContextPath();"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "compile_success",
+            "translated": "return null;"
+        },
+        {
+            "patch": "return forwardPage;",
+            "correctness": "uncompilable",
+            "translated": "return forwardPage;"
+        },
+        {
+            "patch": "return pathInfo;",
+            "correctness": "uncompilable",
+            "translated": "return pathInfo;"
+        }
+    ]
+}

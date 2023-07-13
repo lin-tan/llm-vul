@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "String encodedUrl = URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+        "String encodedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+        "URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+        "String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+        "try { String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+        "LOGGER.error( \"Unable to decode url: { }. \", url);",
+        "String encodedUrl = StringEscapeUtils.unescapeXml(url);",
+        "String encodedUrl = StringEscapeUtils.unescapeXml(encodedUrl);",
+        "if (xssFilter.isValidHref(url)) { return encodedUrl; }",
+        "String encodedUrl = StringEscapeUtils.unescapeXml(encodedURL);"
+    ],
+    "validation_result": [
+        {
+            "patch": "String encodedUrl = URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String encodedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try { String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.name());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "LOGGER.error( \"Unable to decode url: { }. \", url);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String encodedUrl = StringEscapeUtils.unescapeXml(url);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String encodedUrl = StringEscapeUtils.unescapeXml(encodedUrl);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (xssFilter.isValidHref(url)) { return encodedUrl; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String encodedUrl = StringEscapeUtils.unescapeXml(encodedURL);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

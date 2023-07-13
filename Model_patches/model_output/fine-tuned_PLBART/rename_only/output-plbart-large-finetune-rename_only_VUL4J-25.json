@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return StringEscapeUtils.unescapeXml(resourseAddress);",
+        "return mutilateReasonableHref(resourseAddress);",
+        "return mutilateTitleScope(resourseAddress);",
+        "return mutilateTitleScope(convertedResourseAddress);",
+        "return acquireReasonableHref(resourseAddress);",
+        "return resourseAddress;",
+        "if (StringUtils.isNotEmpty(resourseAddress)) {",
+        "return mutilateHref(resourseAddress);",
+        "return null;",
+        "return reasonableHref;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return StringEscapeUtils.unescapeXml(resourseAddress);",
+            "correctness": "compile_success",
+            "translated": "return StringEscapeUtils.unescapeXml(url);"
+        },
+        {
+            "patch": "return mutilateReasonableHref(resourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "return mutilateReasonableHref(url);"
+        },
+        {
+            "patch": "return mutilateTitleScope(resourseAddress);",
+            "correctness": "compile_success",
+            "translated": "return mangleNamespaces(url);"
+        },
+        {
+            "patch": "return mutilateTitleScope(convertedResourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "return mangleNamespaces(encodedUrl);"
+        },
+        {
+            "patch": "return acquireReasonableHref(resourseAddress);",
+            "correctness": "compile_success",
+            "translated": "return getValidHref(url);"
+        },
+        {
+            "patch": "return resourseAddress;",
+            "correctness": "compile_success",
+            "translated": "return url;"
+        },
+        {
+            "patch": "if (StringUtils.isNotEmpty(resourseAddress)) {",
+            "correctness": "uncompilable",
+            "translated": "if (StringUtils.isNotEmpty(url)) {"
+        },
+        {
+            "patch": "return mutilateHref(resourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "return mutilateHref(url);"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "compile_success",
+            "translated": "return null;"
+        },
+        {
+            "patch": "return reasonableHref;",
+            "correctness": "uncompilable",
+            "translated": "return reasonableHref;"
+        }
+    ]
+}

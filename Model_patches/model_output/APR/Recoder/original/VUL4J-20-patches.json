@@ -1,0 +1,12 @@
+[
+  "retval[i] = getObject(i);\n",
+  "retval[i] = (COSNumber)getObject(i);\n",
+  "retval[i] = (COSNumber)get(i);\n",
+  "retval[i] = (COSNumber)remove(i);\n",
+  "return getObject(i);",
+  "getObject((COSNumber)getObject(i));\n",
+  "",
+  "i = (COSNumber)getObject(i);\n",
+  "retval[i] = retval;\n",
+  "if((i != null)){\n"
+]

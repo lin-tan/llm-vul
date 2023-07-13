@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {\n</s></s>",
+        "<pad><s>        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallback<Item>() {\n</s></s></s>",
+        "<pad><s>        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallback() {\n</s></s></s></s></s></s>",
+        "<pad><s>        records.asyncRetrieveItem(new PlaceImpl(recordNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {\n</s></s>",
+        "<pad><s>        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallback.ReadEntryCallback() {\n</s></s>",
+        "<pad><s>        records.asyncRetrieve(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {\n</s></s></s>",
+        "<pad><s>        records.asyncRetrieveItem(place, new AsyncCallbacks.ReadEntryCallback() {\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {\n\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "compile_success",
+            "translated": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {\n"
+        },
+        {
+            "patch": "        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallback<Item>() {\n",
+            "correctness": "uncompilable",
+            "translated": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback<Entry>() {\n"
+        },
+        {
+            "patch": "        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallback() {\n",
+            "correctness": "uncompilable",
+            "translated": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback() {\n"
+        },
+        {
+            "patch": "        records.asyncRetrieveItem(new PlaceImpl(recordNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "uncompilable",
+            "translated": "        ledger.asyncReadEntry(new PositionImpl(recordNumber, entryId), new AsyncCallbacks.ReadEntryCallback() {\n"
+        },
+        {
+            "patch": "        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallback.ReadEntryCallback() {\n",
+            "correctness": "uncompilable",
+            "translated": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallback.ReadEntryCallback() {\n"
+        },
+        {
+            "patch": "        records.asyncRetrieve(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "uncompilable",
+            "translated": "        ledger.asyncRetrieve(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {\n"
+        },
+        {
+            "patch": "        records.asyncRetrieveItem(place, new AsyncCallbacks.ReadEntryCallback() {\n",
+            "correctness": "uncompilable",
+            "translated": "        ledger.asyncReadEntry(place, new AsyncCallbacks.ReadEntryCallback() {\n"
+        },
+        {
+            "patch": "        records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {\n\n",
+            "correctness": "compile_success",
+            "translated": "        ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n\n  private void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n  }\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n\n  private void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n  }\n\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n\n  private void writeObject(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n  }\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n}\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n\n  private void writeItem(ObjectOutputStream outputStream) throws IOException {\n    outputStream.defaultWriteObject();\n  }\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n  \n  private void writeItem(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n  }\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n\n  private void writeObject(ObjectOutputStream outputStream)\n        throws IOException {\n    outputStream.defaultWriteObject();\n  }\n\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n\n}\n",
+        "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }\n\n  private void writeObject(ObjectOutputStream outputStream) throws IOException {\n    outputStream.defaultWriteObject();\n  }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n}",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        },
+        {
+            "patch": "private void readItem(ObjectInputStream inputStream)\n        throws IOException, ClassNotFoundException {\n    inputStream.defaultReadObject();\n  }",
+            "correctness": "compile_success",
+            "translated": "private void readObject(ObjectInputStream in)\n        throws IOException, ClassNotFoundException {\n    in.defaultReadObject();\n  }"
+        }
+    ]
+}

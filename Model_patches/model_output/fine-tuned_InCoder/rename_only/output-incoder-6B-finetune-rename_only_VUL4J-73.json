@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA = encipheredWatchword;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA = encipheredWatchword.toLowerCase();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tfinal String watchwordA = encipheredWatchword + \"\";\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA = encipheredWatchword.toLowerCase(Locale.ENGLISH);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA = encipheredWatchword.trim();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA = \"String_Node_Str\" + encipheredWatchword;\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData);\n<|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA = \"String_Node_Str\" + encipheredWatchword + \"\";\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n// buggy lines start:\n\tString watchwordA = encipheredWatchword + \"\";\n// buggy lines end\n\n\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false);\n\tif (isWatchwordCaseInsensitive) {\n\t\twatchwordA = watchwordA.toLowerCase(Locale.ENGLISH);\n\t\twatchwordB = watchwordB.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn WatchwordEncipherTools.isEqualTo(watchwordA, watchwordB);\n}\n// fixed lines:\n\tString watchwordA = encipheredWatchword.toLowerCase(Locale.ENGLISH) + \"\";\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tString watchwordA = encipheredWatchword;\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass;\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword.toLowerCase();\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass.toLowerCase();\n"
+        },
+        {
+            "patch": "\tfinal String watchwordA = encipheredWatchword + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tfinal String pass1 = encPass + \"\";\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword.toLowerCase(Locale.ENGLISH);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass.toLowerCase(Locale.ENGLISH);\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword.trim();\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass.trim();\n"
+        },
+        {
+            "patch": "\tString watchwordA = \"String_Node_Str\" + encipheredWatchword;\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = \"String_Node_Str\" + encPass;\n"
+        },
+        {
+            "patch": "\tString watchwordA;\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1;\n"
+        },
+        {
+            "patch": "\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(encPass, salt);\n"
+        },
+        {
+            "patch": "\tString watchwordA = \"String_Node_Str\" + encipheredWatchword + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = \"String_Node_Str\" + encPass + \"\";\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword.toLowerCase(Locale.ENGLISH) + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass.toLowerCase(Locale.ENGLISH) + \"\";\n"
+        }
+    ]
+}

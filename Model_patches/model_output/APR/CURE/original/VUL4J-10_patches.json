@@ -1,0 +1,37 @@
+{
+    "VUL4J-10-659-660": {
+        "src": "Output CaMeL Stream output = get CaMeL Output CaMeL Stream ( ) ;",
+        "patches": [
+            {
+                "patch": "if( cachedContent != null ) { output.write( cachedContent ) ;"
+            },
+            {
+                "patch": "OutputStream output = getOutputStream( ) ;"
+            },
+            {
+                "patch": "OutputStream output = null ; try { output = getOutputStream( ) ;"
+            },
+            {
+                "patch": "if( cachedContent != null ) { output.write( cachedContent ) ; }"
+            },
+            {
+                "patch": "if( cachedContent != null ) { output = getOutputStream( ) ;"
+            },
+            {
+                "patch": "output = getOutputStream( ) ; output = getOutputStream( ) ;"
+            },
+            {
+                "patch": "OutputStream output = getOutputStream( ) ; if( output != null )"
+            },
+            {
+                "patch": "try { OutputStream output = getOutputStream( ) ;"
+            },
+            {
+                "patch": "output = getOutputStream( ) ;"
+            },
+            {
+                "patch": "OutputStream output = null ; try { OutputStream output = null ;"
+            }
+        ]
+    }
+}

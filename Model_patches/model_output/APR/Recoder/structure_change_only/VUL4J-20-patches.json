@@ -1,0 +1,12 @@
+[
+  "COSNumber cosNumber = (COSNumber)getObject(i);\n",
+  "COSNumber cosNumber = (COSNumber)get(i);\n",
+  "COSNumber cosNumber = (COSNumber)remove(i);\n",
+  "COSNumber cosNumber = getObject(i);\n",
+  "clear();\n",
+  "COSNumber cosNumber = (COSNumber)toFloatArray(i);\n",
+  "COSNumber cosNumber = (COSNumber)getObject(retval);\n",
+  "final COSNumber cosNumber = (COSNumber)getObject(i);\n",
+  "retval[i] = cosNumber.floatValue();\n",
+  "i++;\n"
+]

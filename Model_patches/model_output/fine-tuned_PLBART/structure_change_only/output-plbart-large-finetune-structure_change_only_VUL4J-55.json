@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (f.redoAdjustmentIfModified) {",
+        "if (f.redoAdjustmentIfModified)",
+        "if (!f.redoAdjustmentIfModified)",
+        "if (f.redoAdjustmentIfModified || f.redoAdjustmentIfModified)",
+        "if (f.redoAdjustmentIfModified == true)",
+        "if (f.redoAdjustmentIfModified!= null)",
+        "if (f.redoAdjustmentIfModified &&!cal.isBefore(this))",
+        "if (f.redoAdjustmentIfModified || f.redoAdjustment)",
+        "if (f.redoAdjustment)",
+        "if (f.redoAdjustmentIfModified && f.isModified())"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (f.redoAdjustmentIfModified) {",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustmentIfModified) {"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified)",
+            "correctness": "compile_success",
+            "translated": "if (f.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (!f.redoAdjustmentIfModified)",
+            "correctness": "test_success",
+            "translated": "if (!f.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified || f.redoAdjustmentIfModified)",
+            "correctness": "compile_success",
+            "translated": "if (f.redoAdjustmentIfModified || f.redoAdjustmentIfModified)"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified == true)",
+            "correctness": "compile_success",
+            "translated": "if (f.redoAdjustmentIfModified == true)"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified!= null)",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustmentIfModified!= null)"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified &&!cal.isBefore(this))",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustmentIfModified &&!cal.isBefore(this))"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified || f.redoAdjustment)",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustmentIfModified || f.redoAdjustment)"
+        },
+        {
+            "patch": "if (f.redoAdjustment)",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustment)"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified && f.isModified())",
+            "correctness": "uncompilable",
+            "translated": "if (f.redoAdjustmentIfModified && f.isModified())"
+        }
+    ]
+}

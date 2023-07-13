@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = S.acquireItemAt(1);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Succession object0 = S.acquireItemAt(0);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1WholeNumber object0 = S.acquireItemAt(0);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object1 = S.acquireItemAt(1);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = S.acquireItem(0);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = S.acquireItemAt(2);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    object0 = S.acquireItemAt(0);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = S.acquireItemAtOrNull(0);\n<|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteArray(encryption);\n// buggy lines start:\n    ASN1Encodable object0 = S.acquireItemAt(0);\n// buggy lines end\n    ASN1Encodable object1 = S.acquireItemAt(1);\n    LargeWholeNumber bigInteger0 = ((ASN1WholeNumber) object0).acquireContent();\n    LargeWholeNumber bigInteger1 = ((ASN1WholeNumber) object1).acquireContent();\n    return new LargeWholeNumber[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = S.acquireItemAt(S.size());\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    ASN1Encodable object0 = S.acquireItemAt(1);\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(1);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = S.acquireItemAt(0);\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1Succession object0 = S.acquireItemAt(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Sequence object0 = s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1WholeNumber object0 = S.acquireItemAt(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Integer object0 = s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object1 = S.acquireItemAt(1);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object1 = s.getObjectAt(1);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = S.acquireItem(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.acquireItem(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = S.acquireItemAt(2);\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(2);\n"
+        },
+        {
+            "patch": "    object0 = S.acquireItemAt(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    object0 = s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = S.acquireItemAtOrNull(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.acquireItemAtOrNull(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = S.acquireItemAt(S.size());\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(s.size());\n"
+        }
+    ]
+}

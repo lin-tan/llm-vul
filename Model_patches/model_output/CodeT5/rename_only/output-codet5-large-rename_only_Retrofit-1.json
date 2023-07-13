@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-5,1",
+    "output": [
+        "\n  this.category = category;function\n\n  return this;\n}",
+        "\n  this.category = category;function\n\n  return this;\n  return this;\n\n\n\n  this.\n\n  return this;\n\n\n  this.category = category;\n  return this;\n  return this;Context\n  return this;\n  return this;\nContext\n  this.\n  return this;",
+        "\n  this.category = category;function\n\n  return this;\n}\n\n\n\n  this.\n  return this;\n\n\n\n  this.category = category;\n  return this;\n  return this;Context\n  return this;\n  return this;\n  return this;Context\n  this.\n\n}",
+        "\n  this.category = category;public <T>\n\n  return this;\n}",
+        "\n  this.category = category;function\n\n  return this;\n  return this;\n<T>\n\n  this.\n\n  return this;",
+        "\n  this.category = category;public\n\n  return this;\n}",
+        "\n  this.category = category;function\n\n  return this;\n  return this;\nT\n\n  this.\n\n  return this;",
+        "\n  this.category = category;function\n\n  return this;\n  return this;\n\n\n\n  this.\n\n  return this;",
+        "\n  return category;function\n\n  return this;\n}",
+        "\n  return this;function\n\n  return this;\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.category = category;function\n\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;function\n\n  return this;\n}"
+        },
+        {
+            "patch": "this.category = category;function\n\n  return this;\n  return this;\n\n\n\n  this.\n\n  return this;\n\n\n  this.category = category;\n  return this;\n  return this;Context\n  return this;\n  return this;\nContext\n  this.\n  return this;",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;function\n\n  return this;\n  return this;\n\n\n\n  this.\n\n  return this;\n\n\n  this.type = type;\n  return this;\n  return this;Context\n  return this;\n  return this;\nContext\n  this.\n  return this;"
+        },
+        {
+            "patch": "this.category = category;function\n\n  return this;\n}\n\n\n\n  this.\n  return this;\n\n\n\n  this.category = category;\n  return this;\n  return this;Context\n  return this;\n  return this;\n  return this;Context\n  this.\n\n}",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;function\n\n  return this;\n}\n\n\n\n  this.\n  return this;\n\n\n\n  this.type = type;\n  return this;\n  return this;Context\n  return this;\n  return this;\n  return this;Context\n  this.\n\n}"
+        },
+        {
+            "patch": "this.category = category;public <T>\n\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;public <T>\n\n  return this;\n}"
+        },
+        {
+            "patch": "this.category = category;function\n\n  return this;\n  return this;\n<T>\n\n  this.\n\n  return this;",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;function\n\n  return this;\n  return this;\n<T>\n\n  this.\n\n  return this;"
+        },
+        {
+            "patch": "this.category = category;public\n\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;public\n\n  return this;\n}"
+        },
+        {
+            "patch": "this.category = category;function\n\n  return this;\n  return this;\nT\n\n  this.\n\n  return this;",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;function\n\n  return this;\n  return this;\nT\n\n  this.\n\n  return this;"
+        },
+        {
+            "patch": "this.category = category;function\n\n  return this;\n  return this;\n\n\n\n  this.\n\n  return this;",
+            "correctness": "uncompilable",
+            "translated": "this.type = type;function\n\n  return this;\n  return this;\n\n\n\n  this.\n\n  return this;"
+        },
+        {
+            "patch": "return category;function\n\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "return type;function\n\n  return this;\n}"
+        },
+        {
+            "patch": "return this;function\n\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "return this;function\n\n  return this;\n}"
+        }
+    ]
+}

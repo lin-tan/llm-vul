@@ -1,0 +1,56 @@
+{
+    "output": [
+        ".add(\"notifyAll\");",
+        ".add(\"notifyAll\")",
+        "..add(\"notifyAll\");",
+        "..add(\"notifyAll\")",
+        "...add(\"notifyAll\");",
+        ".add(\"notifyAll\", true);",
+        "...add(\"notifyAll\")",
+        ".add(\"notifyAll\", false);",
+        ".add(\"notify\")",
+        ".add(\"notify\");"
+    ],
+    "validation_result": [
+        {
+            "patch": ".add(\"notifyAll\");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".add(\"notifyAll\")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "..add(\"notifyAll\");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "..add(\"notifyAll\")",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "...add(\"notifyAll\");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".add(\"notifyAll\", true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "...add(\"notifyAll\")",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".add(\"notifyAll\", false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ".add(\"notify\")",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".add(\"notify\");",
+            "correctness": "uncompilable"
+        }
+    ]
+}

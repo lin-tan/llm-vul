@@ -1,0 +1,65 @@
+{
+    "id": 4,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1631,
+            "fix_type": "general",
+            "patch": "fpath.startsWith(targetDirectory.getCanonicalPath())"
+        },
+        {
+            "rank": 2,
+            "score": -0.3933,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\nthrow new IOException(\"expanding \");\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3927,
+            "fix_type": "general",
+            "patch": "fpath.getCanonicalPath() && fpath.startsWith(targetDirectory.getCanonicalPath())"
+        },
+        {
+            "rank": 4,
+            "score": -0.3957,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.4281,
+            "fix_type": "general",
+            "patch": "fpath.startsWith(targetDirectory.close())"
+        },
+        {
+            "rank": 6,
+            "score": -0.4281,
+            "fix_type": "general",
+            "patch": "fpath.startsWith(targetDirectory.read())"
+        },
+        {
+            "rank": 7,
+            "score": -0.4529,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\ncontinue  ;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.5164,
+            "fix_type": "general",
+            "patch": "!fpath.startsWith(targetDirectory.getCanonicalPath())"
+        },
+        {
+            "rank": 9,
+            "score": -0.5204,
+            "fix_type": "general",
+            "patch": "fpath.equals(targetDirectory.getCanonicalPath())"
+        },
+        {
+            "rank": 10,
+            "score": -0.4966,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\nthrow new ZipArchiveEntry(\"expanding \");\n}\n"
+        }
+    ]
+}

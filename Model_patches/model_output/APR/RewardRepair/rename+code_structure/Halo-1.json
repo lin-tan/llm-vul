@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (examinePath!= null &&!examinePath.startsWith(normalizedBasePath)) {",
+        "if (!examinePath.startsWith(normalizedBasePath) || examinePath.startsWith(normalizedBasePath)) {",
+        "if (examinePath == null ||!examinePath.startsWith(normalizedBasePath)) {",
+        "if (!examinePath.startsWith(normalizedBasePath) &&!examinePath.startsWith(path)) {",
+        "if (examinePath!= null &&!examinePath.startsWith(normalizedBasePath)) {",
+        "if (!examinePath.startsWith(normalizedBasePath) &&!examinePath.startsWith( \"/ \")) {",
+        "if (!examinePath.startsWith(normalizedBasePath.getPath())) {",
+        "if (examinePath == null ||!examinePath.startsWith(normalizedBasePath)) {",
+        "if (!examinePath.startsWith(normalizedBasePath.getName())) {",
+        "if (!examinePath!= null &&!examinePath.startsWith(normalizedBasePath)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (examinePath!= null &&!examinePath.startsWith(normalizedBasePath)) {",
+            "correctness": "compile_success",
+            "translated": "if (pathToCheck!= null &&!pathToCheck.startsWith(normalizedParentPath)) {"
+        },
+        {
+            "patch": "if (!examinePath.startsWith(normalizedBasePath) || examinePath.startsWith(normalizedBasePath)) {",
+            "correctness": "compile_success",
+            "translated": "if (!pathToCheck.startsWith(normalizedParentPath) || pathToCheck.startsWith(normalizedParentPath)) {"
+        },
+        {
+            "patch": "if (examinePath == null ||!examinePath.startsWith(normalizedBasePath)) {",
+            "correctness": "compile_success",
+            "translated": "if (pathToCheck == null ||!pathToCheck.startsWith(normalizedParentPath)) {"
+        },
+        {
+            "patch": "if (!examinePath.startsWith(normalizedBasePath) &&!examinePath.startsWith(path)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!pathToCheck.startsWith(normalizedParentPath) &&!pathToCheck.startsWith(path)) {"
+        },
+        {
+            "patch": "if (examinePath!= null &&!examinePath.startsWith(normalizedBasePath)) {",
+            "correctness": "compile_success",
+            "translated": "if (pathToCheck!= null &&!pathToCheck.startsWith(normalizedParentPath)) {"
+        },
+        {
+            "patch": "if (!examinePath.startsWith(normalizedBasePath) &&!examinePath.startsWith( \"/ \")) {",
+            "correctness": "compile_success",
+            "translated": "if (!pathToCheck.startsWith(normalizedParentPath) &&!pathToCheck.startsWith( \"/ \")) {"
+        },
+        {
+            "patch": "if (!examinePath.startsWith(normalizedBasePath.getPath())) {",
+            "correctness": "uncompilable",
+            "translated": "if (!pathToCheck.startsWith(normalizedParentPath.getPath())) {"
+        },
+        {
+            "patch": "if (examinePath == null ||!examinePath.startsWith(normalizedBasePath)) {",
+            "correctness": "compile_success",
+            "translated": "if (pathToCheck == null ||!pathToCheck.startsWith(normalizedParentPath)) {"
+        },
+        {
+            "patch": "if (!examinePath.startsWith(normalizedBasePath.getName())) {",
+            "correctness": "uncompilable",
+            "translated": "if (!pathToCheck.startsWith(normalizedParentPath.getName())) {"
+        },
+        {
+            "patch": "if (!examinePath!= null &&!examinePath.startsWith(normalizedBasePath)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!pathToCheck!= null &&!pathToCheck.startsWith(normalizedParentPath)) {"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "2,3-26,5",
+    "output": [
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n         \n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n    public final void {\n   \n    {\n    .\n    }\n\n   ",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n    .;\n      this.\n\n",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n    public final void {\n   \n    {\n    .\n\n    }",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n      this...\n   }",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n    .;\n     \n\n   }",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n         \n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n    public final void {\n    final;\n  .rcount;\n     \n\n",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n      this...\n  \n  ",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n    ..\n     \n\n   }",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n         \n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n    public final void {\n    final;\n  .\n  }",
+        "\n      int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n\n      this.\n         \n      int i = 0;\n     \n      i = 0;\n         \n\n      i = 0;\n\n         \n    public final void {\n    final;\n  .\n  }"
+    ],
+    "validation_result": [
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n         \n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n    public final void {\n   \n    {\n    .\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n    .;\n      this.",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n    public final void {\n   \n    {\n    .\n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n      this...\n   }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n    .;\n     \n\n   }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n         \n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n    public final void {\n    final;\n  .rcount;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n      this...",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n          this.\n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n   public final void\n   {\n    ..\n     \n\n   }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n      int i = 0;\n      this.\n         \n\n      i = 0;\n\n         \n\n      i = 0;\n\n         \n    public final void {\n    final;\n  .\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int i = 0;  \n      int j = 0;\n     \n      int i = 0;\n     \n      this.\n\n\n      this.\n         \n      int i = 0;\n     \n      i = 0;\n         \n\n      i = 0;\n\n         \n    public final void {\n    final;\n  .\n  }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-95,1",
+    "output": [
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n   \n}\n\n",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n\n    }\n   \n   \n\n   \n   \n   \n}\n\n",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n        byte[]\n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n\n    }\n   \n    }\n\n\n   \n   \n    }\n   \n   \n   \n\n   ",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n\n   \n\n   ",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n\n   \n\n\n",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n\n    }\n   \n   \n\n   \n   \n\n   \n\n   ",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n        byte[]\n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n\n    }\n   \n\n    }\n\n   \n   \n\n   \n   \n   \n}\n\n\n",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n\n    }\n   \n   \n\n   \n   \n\n   \n\n\n",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n   \n\n    if",
+        "\n        adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n   \n\n\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n   \n}",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n   \n}"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n\n    }\n   \n   \n\n   \n   \n   \n}",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n   \n}"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n        byte[]\n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n\n    }\n   \n    }\n\n\n   \n   \n    }",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n        byte[]\n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n\n    }\n   \n    }\n\n\n   \n   \n    }"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n   \n    }\n   \n    }\n    }"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n   \n    }\n   \n    }\n    }"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n   \n    }\n   \n    }\n    }"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n        byte[]\n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n\n    }\n   \n\n    }\n\n   \n   \n\n   \n   \n   \n}",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n        byte[]\n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n\n    }\n   \n    }\n\n\n   \n   \n    }"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n   \n    }\n   \n    }\n    }"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n   \n\n    if",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n   \n    }\n   \n    }\n    }\n\n   \n   \n\n   \n   \n   \n\n    if"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] pc = null;\n    byte[] ec = null;\n   \n    }\n   \n    }\n    }",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);\n    }\n       \n   \n    }\n   \n    byte[]\n   \n   \n   \n\n   \n   \n   \n    byte[] oe = null;\n    byte[] ue = null;\n   \n    }\n   \n    }\n    }"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n            out = encodeFully(enc, tmp, out, increment);\n   ",
+        "\n            out = encodeFully(enc, tmp, out);\n   ",
+        "\n            cb.limit(cb.position() + increment);\n   ",
+        "\n            cb.position(cb.position() + increment);\n   ",
+        "\n            out = ZipEncodingHelper.growBufferBy(out, increment);\n   ",
+        "\n            out = ZipEncodingHelper.growBufferBy(out, increment - out.remaining());\n   ",
+        "\n            out = encodeFully(enc, out, increment);\n   ",
+        "\n            cb.limit(increment);\n   ",
+        "\n            cb = cb.slice(increment);\n   ",
+        "\n            cb.position() += increment;\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "out = encodeFully(enc, tmp, out, increment);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "out = encodeFully(enc, tmp, out);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "cb.limit(cb.position() + increment);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "cb.position(cb.position() + increment);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment - out.remaining());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "out = encodeFully(enc, out, increment);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "cb.limit(increment);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "cb = cb.slice(increment);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "cb.position() += increment;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

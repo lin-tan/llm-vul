@@ -1,0 +1,21 @@
+{
+    "method": {
+        "getProperty": "acquireAttribute",
+        "toSAXSourceFromStream": "transformDataSequenceToSAXSource"
+    },
+    "variable": {
+        "ex": "p",
+        "parser": "analyzer",
+        "xmlReader": "subscriber",
+        "sfactory": "sproducer",
+        "e": "x",
+        "Exchange.SAXPARSER_FACTORY": "Interchange.SAXPARSERFACTORY",
+        "exchange": "interchange",
+        "source": "dataProvider",
+        "inputSource": "inDataProvider",
+        "": ""
+    },
+    "class": {
+        "Exchange": "Interchange"
+    }
+}

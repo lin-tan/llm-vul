@@ -1,0 +1,37 @@
+{
+    "VUL4J-50-162-163": {
+        "src": "compose ( off CaMeL Site CaMeL Control CaMeL Location ) ;",
+        "patches": [
+            {
+                "patch": "compose( wholeNumberFormatting.format( session.acquireSerializedSize( ) ) ) ;"
+            },
+            {
+                "patch": "compose( wholeNumberFormatting.format( session.acquirePropertyCounting( ) ) ) ;"
+            },
+            {
+                "patch": "compose( offSiteControlLocation ) ;"
+            },
+            {
+                "patch": "compose( followingColumnAlignRightField ) ;"
+            },
+            {
+                "patch": "compose( encodeUrl( session.acquireId( ) ) ) ;"
+            },
+            {
+                "patch": "compose( wholeNumberFormatting.format( session.acquireId( ) ) ) ;"
+            },
+            {
+                "patch": "compose( offSiteControlLocation ) ; }"
+            },
+            {
+                "patch": "compose( terminationFormatting.format( session.acquirePropertyCounting( ) ) ) ;"
+            },
+            {
+                "patch": "compose( encodeUrl( session.acquireId( ) ) ) ; }"
+            },
+            {
+                "patch": "compose( offSiteControlLocation , offSiteControlLocation ) ;"
+            }
+        ]
+    }
+}

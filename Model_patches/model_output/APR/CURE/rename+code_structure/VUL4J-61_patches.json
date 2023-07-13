@@ -1,0 +1,37 @@
+{
+    "VUL4J-61-79-80": {
+        "src": "Document doctor = archive CaMeL Creator CaMeL Mill . new CaMeL Document CaMeL Builder ( ) . parse ( input CaMeL Stream ) ;",
+        "patches": [
+            {
+                "patch": "Document doctor = archiveCreatorMill.parse( inputStream ) ;"
+            },
+            {
+                "patch": "Map < String , Object > emptyMap = new Map < String , Object >( ) ;"
+            },
+            {
+                "patch": "final Map < Map < String , Object >> emptyMap = Collections.emptyMap( ) ;"
+            },
+            {
+                "patch": "final Map < Map < String , Object > emptyMap = Collections.emptyMap( ) ;"
+            },
+            {
+                "patch": "final Deque < Map < String , Object > emptyMap = Collections.emptyMap( ) ;"
+            },
+            {
+                "patch": "Map < String , Object >> emptyMap = new Map < String , Object >( ) ;"
+            },
+            {
+                "patch": "Document doctor = archiveCreatorMill.parse( inputStream , null ) ;"
+            },
+            {
+                "patch": "final List < Map < String , Object >> emptyMap = Collections.emptyMap( ) ;"
+            },
+            {
+                "patch": "Document doctor = archiveCreatorMill.newInstance( ).parse( inputStream ) ;"
+            },
+            {
+                "patch": "if( inputStream == null ) { throw new IllegalArgumentException( 'NEXT_SIBLING') ; }"
+            }
+        ]
+    }
+}

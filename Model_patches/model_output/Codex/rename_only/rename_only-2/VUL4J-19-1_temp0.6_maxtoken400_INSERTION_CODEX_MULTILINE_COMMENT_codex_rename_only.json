@@ -1,0 +1,1247 @@
+{
+    "id": "cmpl-8HOxYXh9DEIlt7mSoUNdAzHVg3r3u",
+    "object": "text_completion",
+    "created": 1699158212,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -0.3078958,
+                    -0.11766792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078958
+                    },
+                    {
+                        "\n": -0.11766792
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4435
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent, lexiconAlteration);\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ",",
+                    " lex",
+                    "icon",
+                    "Al",
+                    "ter",
+                    "ation",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -1.5152818,
+                    -0.7198998,
+                    -8.435633e-05,
+                    -0.78963333,
+                    -3.529076e-06,
+                    -3.6482897e-06,
+                    -0.5466674,
+                    -0.11355829
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078958
+                    },
+                    {
+                        " lex": -0.7198998
+                    },
+                    {
+                        "icon": -8.435633e-05
+                    },
+                    {
+                        "Cons": -0.7815348
+                    },
+                    {
+                        "ter": -3.529076e-06
+                    },
+                    {
+                        "ation": -3.6482897e-06
+                    },
+                    {
+                        ");": -0.5466674
+                    },
+                    {
+                        "\n": -0.11355829
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4434,
+                    4438,
+                    4442,
+                    4444,
+                    4447,
+                    4452,
+                    4454
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -0.3078958,
+                    -0.11766792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078958
+                    },
+                    {
+                        "\n": -0.11766792
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4435
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent);\n        adjustExploiterWatchword(watchword.getBytes(watchwordCharSet), lexiconConsent, lexiconSize );\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ");",
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Expl",
+                    "o",
+                    "iter",
+                    "Watch",
+                    "word",
+                    "(",
+                    "watch",
+                    "word",
+                    ".",
+                    "get",
+                    "Bytes",
+                    "(",
+                    "watch",
+                    "word",
+                    "Char",
+                    "Set",
+                    "),",
+                    " lex",
+                    "icon",
+                    "Cons",
+                    "ent",
+                    ",",
+                    " lex",
+                    "icon",
+                    "Size",
+                    " );",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -0.3078958,
+                    -0.11766792,
+                    -1.5479451,
+                    -1.4227136,
+                    -1.4141462,
+                    -0.01230903,
+                    -0.0046941745,
+                    -0.39314127,
+                    -0.0064714127,
+                    -0.06853455,
+                    -0.14098956,
+                    -1.3422466e-05,
+                    -0.29249257,
+                    -0.0014923154,
+                    -1.2588937e-05,
+                    -0.0028195963,
+                    -0.011494187,
+                    -5.912312e-06,
+                    -0.00015100244,
+                    -5.3162735e-06,
+                    -0.8030089,
+                    -0.9721348,
+                    -1.1514188e-05,
+                    -1.5867063,
+                    -1.0920954e-05,
+                    -0.22154018,
+                    -0.6632563,
+                    -1.688045e-05,
+                    -1.7439986,
+                    -2.0913682,
+                    -0.23102029
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078958
+                    },
+                    {
+                        "\n": -0.11766792
+                    },
+                    {
+                        "<|endoftext|>": -0.38854042
+                    },
+                    {
+                        " adjust": -1.4227136
+                    },
+                    {
+                        "Expl": -1.4141462
+                    },
+                    {
+                        "o": -0.01230903
+                    },
+                    {
+                        "iter": -0.0046941745
+                    },
+                    {
+                        "Watch": -0.39314127
+                    },
+                    {
+                        "word": -0.0064714127
+                    },
+                    {
+                        "(": -0.06853455
+                    },
+                    {
+                        "watch": -0.14098956
+                    },
+                    {
+                        "word": -1.3422466e-05
+                    },
+                    {
+                        ".": -0.29249257
+                    },
+                    {
+                        "get": -0.0014923154
+                    },
+                    {
+                        "Bytes": -1.2588937e-05
+                    },
+                    {
+                        "(": -0.0028195963
+                    },
+                    {
+                        "watch": -0.011494187
+                    },
+                    {
+                        "word": -5.912312e-06
+                    },
+                    {
+                        "Char": -0.00015100244
+                    },
+                    {
+                        "Set": -5.3162735e-06
+                    },
+                    {
+                        "));": -0.61861604
+                    },
+                    {
+                        " lex": -0.9721348
+                    },
+                    {
+                        "icon": -1.1514188e-05
+                    },
+                    {
+                        "Al": -0.29811493
+                    },
+                    {
+                        "ent": -1.0920954e-05
+                    },
+                    {
+                        ",": -0.22154018
+                    },
+                    {
+                        " lex": -0.6632563
+                    },
+                    {
+                        "icon": -1.688045e-05
+                    },
+                    {
+                        "Al": -0.19300562
+                    },
+                    {
+                        ");": -0.3223693
+                    },
+                    {
+                        "\n": -0.23102029
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4435,
+                    4436,
+                    4443,
+                    4450,
+                    4454,
+                    4455,
+                    4459,
+                    4464,
+                    4468,
+                    4469,
+                    4474,
+                    4478,
+                    4479,
+                    4482,
+                    4487,
+                    4488,
+                    4493,
+                    4497,
+                    4501,
+                    4504,
+                    4506,
+                    4510,
+                    4514,
+                    4518,
+                    4521,
+                    4522,
+                    4526,
+                    4530,
+                    4534,
+                    4537
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(null);\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "null",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -4.504174,
+                    -0.027074737,
+                    -0.09798559
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        ");": -0.027074737
+                    },
+                    {
+                        "\n": -0.09798559
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4420,
+                    4422
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -0.3078966,
+                    -0.11766792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078966
+                    },
+                    {
+                        "\n": -0.11766792
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4435
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -0.3078966,
+                    -0.11766792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078966
+                    },
+                    {
+                        "\n": -0.11766792
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4435
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -0.3078966,
+                    -0.11766792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078966
+                    },
+                    {
+                        "\n": -0.11766792
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4435
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -0.3078966,
+                    -0.11766792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078966
+                    },
+                    {
+                        "\n": -0.11766792
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4435
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "       ",
+                    " adjust",
+                    "Present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    "(",
+                    "present",
+                    "Use",
+                    "Cons",
+                    "ent",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.001971412,
+                    -0.07116409,
+                    -0.21559998,
+                    -0.11174045,
+                    -0.018203761,
+                    -0.002220846,
+                    -0.0008680538,
+                    -0.038999375,
+                    -0.5503208,
+                    -0.0014015855,
+                    -0.00013407106,
+                    -2.1649737e-05,
+                    -0.3078966,
+                    -0.11766792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.001971412
+                    },
+                    {
+                        "       ": -0.07116409
+                    },
+                    {
+                        " adjust": -0.21559998
+                    },
+                    {
+                        "Present": -0.11174045
+                    },
+                    {
+                        "Use": -0.018203761
+                    },
+                    {
+                        "Cons": -0.002220846
+                    },
+                    {
+                        "ent": -0.0008680538
+                    },
+                    {
+                        "(": -0.038999375
+                    },
+                    {
+                        "present": -0.5503208
+                    },
+                    {
+                        "Use": -0.0014015855
+                    },
+                    {
+                        "Cons": -0.00013407106
+                    },
+                    {
+                        "ent": -2.1649737e-05
+                    },
+                    {
+                        ");": -0.3078966
+                    },
+                    {
+                        "\n": -0.11766792
+                    }
+                ],
+                "text_offset": [
+                    4384,
+                    4384,
+                    4391,
+                    4398,
+                    4405,
+                    4408,
+                    4412,
+                    4415,
+                    4416,
+                    4423,
+                    4426,
+                    4430,
+                    4433,
+                    4435
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1147,
+        "completion_tokens": 172,
+        "total_tokens": 1319
+    },
+    "validation_result": [
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent, lexiconAlteration);\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission, dicRevision);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent);\n        adjustExploiterWatchword(watchword.getBytes(watchwordCharSet), lexiconConsent, lexiconSize );\n",
+            "correctness": "uncompilable",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission);\n        adjustExploiterWatchword(password.getBytes(passwordCharset), dicPermissions, dicLength );\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(null);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(null);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission);\n"
+        },
+        {
+            "patch": "        adjustPresentUseConsent(presentUseConsent);\n",
+            "correctness": "compile_success",
+            "translated": "        setCurrentAccessPermission(currentAccessPermission);\n"
+        }
+    ]
+}

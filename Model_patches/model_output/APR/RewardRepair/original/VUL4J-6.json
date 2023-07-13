@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "for (int i = 0; i < this.hashSize; i++) {",
+        "for (int i = 0; i < this.rcount; i++) {",
+        "for (int i = 0; i <= this.rcount; i++) {",
+        "for (int i = 0; j < this.rcount; i++) {",
+        "for (int i = 0; i < this.hashAlg; i++) {",
+        "for (int i = 0; i < data.length; i++) {",
+        "for (int i = 0; i < this.count; i++) {",
+        "for (int i = 0; i < this.rcount + 1; i++) {",
+        "for (int i = 0; i < this.rcount + 8; i++) {",
+        "for (int i = 0; i < this.length; i++) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "for (int i = 0; i < this.hashSize; i++) {",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "for (int i = 0; i < this.rcount; i++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (int i = 0; i <= this.rcount; i++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (int i = 0; j < this.rcount; i++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for (int i = 0; i < this.hashAlg; i++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for (int i = 0; i < data.length; i++) {",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "for (int i = 0; i < this.count; i++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for (int i = 0; i < this.rcount + 1; i++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (int i = 0; i < this.rcount + 8; i++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (int i = 0; i < this.length; i++) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

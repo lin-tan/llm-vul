@@ -1,0 +1,37 @@
+{
+    "VUL4J-53-207-208": {
+        "src": "z . set ( attribute , m - position ) ;",
+        "patches": [
+            {
+                "patch": "z.set( attribute , m - position ) ;"
+            },
+            {
+                "patch": "if( z != null ) z.set( attribute , m - position ) ;"
+            },
+            {
+                "patch": "z.set( attribute , m - position ) ; this.z.set( attribute , m - position ) ;"
+            },
+            {
+                "patch": "z.set( attribute , m -1) ;"
+            },
+            {
+                "patch": "z.set( attribute , m ) ;"
+            },
+            {
+                "patch": "set( attribute , m - position ) ; this.z.set( attribute , m - position ) ;"
+            },
+            {
+                "patch": "z.set( attribute , m - position - position ) ;"
+            },
+            {
+                "patch": "synchronized( z ) { z.set( attribute , m - position ) ; }"
+            },
+            {
+                "patch": "z.set( attribute , m - position ) ; this.set( attribute , m - position ) ;"
+            },
+            {
+                "patch": "z.set( attribute , m - position + position ) ;"
+            }
+        ]
+    }
+}

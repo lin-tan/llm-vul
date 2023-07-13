@@ -1,0 +1,67 @@
+{
+    "function range": "2,3-5,3",
+    "output": [
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.setting = setting; }",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.context = setting; }",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.settings = setting; }",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; jaxbContext = setting; }",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.setting = setting ; }",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.setting = setting; }",
+        "JaxbReplyTransformer (JAXBContext setting, Class<T> category) { this.category = category; this.setting = setting; }",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; }",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.context = setting ; }",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; context = setting; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.setting = setting; }",
+            "correctness": "compile_success",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; this.context = context; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.context = setting; }",
+            "correctness": "compile_success",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; this.context = context; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.settings = setting; }",
+            "correctness": "uncompilable",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; this.settings = context; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; jaxbContext = setting; }",
+            "correctness": "uncompilable",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; jaxbContext = context; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.setting = setting ; }",
+            "correctness": "compile_success",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; this.context = context; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.setting = setting; }",
+            "correctness": "compile_success",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; this.context = context; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer (JAXBContext setting, Class<T> category) { this.category = category; this.setting = setting; }",
+            "correctness": "compile_success",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; this.context = context; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; }",
+            "correctness": "uncompilable",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; this.context = setting ; }",
+            "correctness": "compile_success",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; this.context = context; }"
+        },
+        {
+            "patch": "JaxbReplyTransformer(JAXBContext setting, Class<T> category) { this.category = category; context = setting; }",
+            "correctness": "uncompilable",
+            "translated": "JaxbResponseConverter(JAXBContext context, Class<T> type) { this.type = type; context = context; }"
+        }
+    ]
+}

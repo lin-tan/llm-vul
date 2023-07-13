@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\tString watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordA = unprocessedWatchword + \"\";\n</s></s></s></s></s></s>",
+        "<pad><s>\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordB = watchwordA + \"\";\n</s></s></s></s></s></s>",
+        "<pad><s>\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordB = watchwordA + \"String_Node_Str\";\n</s>",
+        "<pad><s>\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordB = encipheredWatchword + \"\";\n</s></s></s></s>",
+        "<pad><s>\tString watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordA = unprocessedWatchword + \"String_Node_Str\";\n</s>",
+        "<pad><s>\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData);\n\tString watchwordA = encipheredWatchword;\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString watchwordA = encipheredWatchword + \"\";\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tString watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordA = unprocessedWatchword + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass2 = mergePasswordAndSalt(encPass, salt, false);\n\tString pass1 = rawPass + \"\";\n"
+        },
+        {
+            "patch": "\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n"
+        },
+        {
+            "patch": "\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordB = watchwordA + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\tString pass2 = pass1 + \"\";\n"
+        },
+        {
+            "patch": "\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordB = watchwordA + \"String_Node_Str\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\tString pass2 = pass1 + \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordB = encipheredWatchword + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n\tString pass2 = encPass + \"\";\n"
+        },
+        {
+            "patch": "\tString watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n\tString watchwordA = unprocessedWatchword + \"String_Node_Str\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass2 = mergePasswordAndSalt(encPass, salt, false);\n\tString pass1 = rawPass + \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "\tString watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData);\n\tString watchwordA = encipheredWatchword;\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass2 = mergePasswordAndSalt(rawPass, salt);\n\tString pass1 = encPass;\n"
+        },
+        {
+            "patch": "\tString watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass2 = mergePasswordAndSalt(encPass, salt, false);\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass + \"\";\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

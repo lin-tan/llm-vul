@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if ( \"/ \".equals(circumstancePath)) { contextPath = \" \"; } return decryptRequestContent(r, contextPath);",
+        "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, contextPath);",
+        "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, \" \");",
+        "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, circumstancePath);",
+        "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, \" \");",
+        "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, \"/ \");",
+        "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, \"/ \");",
+        "if( \"/ \".equals(circumstancePath)) { contextPath = \" \"; } return decryptRequestContent(r, contextPath);",
+        "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, r);",
+        "if (! \"/ \".equals(circumstancePath)) { return \" \"; } return decryptRequestContent(r, contextPath);"
+    ],
+    "validation_result": [
+        {
+            "patch": "if ( \"/ \".equals(circumstancePath)) { contextPath = \" \"; } return decryptRequestContent(r, contextPath);",
+            "correctness": "compile_success",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, contextPath);"
+        },
+        {
+            "patch": "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, contextPath);",
+            "correctness": "compile_success",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, contextPath);"
+        },
+        {
+            "patch": "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, circumstancePath);",
+            "correctness": "compile_success",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, contextPath);"
+        },
+        {
+            "patch": "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, \" \");",
+            "correctness": "compile_success",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, \" \");"
+        },
+        {
+            "patch": "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, \"/ \");",
+            "correctness": "compile_success",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, \"/ \");"
+        },
+        {
+            "patch": "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, \"/ \");",
+            "correctness": "compile_success",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, \"/ \");"
+        },
+        {
+            "patch": "if( \"/ \".equals(circumstancePath)) { contextPath = \" \"; } return decryptRequestContent(r, contextPath);",
+            "correctness": "compile_success",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, contextPath);"
+        },
+        {
+            "patch": "if ( \"/ \".equals(circumstancePath)) { circumstancePath = \" \"; } return decryptRequestContent(r, r);",
+            "correctness": "uncompilable",
+            "translated": "if ( \"/ \".equals(contextPath)) { contextPath = \" \"; } return decodeRequestString(request, request);"
+        },
+        {
+            "patch": "if (! \"/ \".equals(circumstancePath)) { return \" \"; } return decryptRequestContent(r, contextPath);",
+            "correctness": "compile_success",
+            "translated": "if (! \"/ \".equals(contextPath)) { return \" \"; } return decodeRequestString(request, contextPath);"
+        }
+    ]
+}

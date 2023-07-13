@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-53,1",
+    "output": [
+        "\n    batch.add(attributeTitile);\n   public static <T> T\n    batch.add(attributeTitile);\n   \n public <T>\n\n\n\n\n   \n   \n\n   \n    batch.add(attributeTitile);\n   \n\n\n }",
+        "\n    batch.add(object);\n   public static <T> T\n    batch.add(attributeTitile);\n   \n\npublic static <T>\n\n\n\n\n   \n   \n    batch.add(attributeTitile);\n   \n\n   \n\n\n }",
+        "\n    transformObjectBatch(analyzer, constituentCategory, batch);\n   public static <T> T\n    batch.add(attributeTitile);\n   \n   \n}",
+        "\n    batch.add(attribute);\n   ",
+        "\n    batch.addObject(attribute);\n   ",
+        "\n    transformObjectBatch(analyzer, constituentCategory, batch);\n   ",
+        "\n    batch.add(attributeTitile);\n   ",
+        "\n    batch.addObject(attributeTitile);\n   ",
+        "\n    batch.add(object);\n   ",
+        "\n    batch.add(category);\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "batch.add(attributeTitile);\n   public static <T> T\n    batch.add(attributeTitile);\n   \n public <T>\n\n\n\n\n   \n   \n\n   \n    batch.add(attributeTitile);\n   \n\n\n }",
+            "correctness": "uncompilable",
+            "translated": "array.add(fieldName);\n   public static <T> T\n    array.add(fieldName);\n   \n public <T>\n\n\n\n\n   \n   \n\n   \n    array.add(fieldName);\n   \n\n\n }"
+        },
+        {
+            "patch": "batch.add(object);\n   public static <T> T\n    batch.add(attributeTitile);\n   \n\npublic static <T>\n\n\n\n\n   \n   \n    batch.add(attributeTitile);\n   \n\n   \n\n\n }",
+            "correctness": "uncompilable",
+            "translated": "array.add(object);\n   public static <T> T\n    array.add(fieldName);\n   \n\npublic static <T>\n\n\n\n\n   \n   \n    array.add(fieldName);\n   \n\n   \n\n\n }"
+        },
+        {
+            "patch": "transformObjectBatch(analyzer, constituentCategory, batch);\n   public static <T> T\n    batch.add(attributeTitile);\n   \n   \n}",
+            "correctness": "uncompilable",
+            "translated": "toObjectArray(parser, componentType, array);\n   public static <T> T\n    array.add(fieldName);\n   \n   \n}"
+        },
+        {
+            "patch": "batch.add(attribute);",
+            "correctness": "uncompilable",
+            "translated": "array.add(attribute);"
+        },
+        {
+            "patch": "batch.addObject(attribute);",
+            "correctness": "uncompilable",
+            "translated": "array.addObject(attribute);"
+        },
+        {
+            "patch": "transformObjectBatch(analyzer, constituentCategory, batch);",
+            "correctness": "uncompilable",
+            "translated": "toObjectArray(parser, componentType, array);"
+        },
+        {
+            "patch": "batch.add(attributeTitile);",
+            "correctness": "compile_success",
+            "translated": "array.add(fieldName);"
+        },
+        {
+            "patch": "batch.addObject(attributeTitile);",
+            "correctness": "uncompilable",
+            "translated": "array.addObject(fieldName);"
+        },
+        {
+            "patch": "batch.add(object);",
+            "correctness": "uncompilable",
+            "translated": "array.add(object);"
+        },
+        {
+            "patch": "batch.add(category);",
+            "correctness": "compile_success",
+            "translated": "array.add(type);"
+        }
+    ]
+}

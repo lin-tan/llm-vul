@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        return encodeForJSString(source);\n</s></s>",
+        "<pad><s>        return Encode.forJSSource(source);\n</s>",
+        "<pad><s>        return Encode.forJavaScriptString(source);\n</s>",
+        "<pad><s>        return Encode.forJSString(source);\n</s>",
+        "<pad><s>        return encodeForJSSource(source);\n</s></s>",
+        "<pad><s>        return encodeForJavaScriptSource(source);\n</s></s>",
+        "<pad><s>        return source;\n</s></s></s></s></s></s></s>",
+        "<pad><s>        return encode(source);\n</s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        return encodeForJSString(source);\n",
+            "correctness": "compile_success",
+            "translated": "        return encodeForJSString(source);\n"
+        },
+        {
+            "patch": "        return Encode.forJSSource(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJSSource(source);\n"
+        },
+        {
+            "patch": "        return Encode.forJavaScriptString(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJavaScriptString(source);\n"
+        },
+        {
+            "patch": "        return Encode.forJSString(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return Encode.forJSString(source);\n"
+        },
+        {
+            "patch": "        return encodeForJSSource(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return encodeForJSSource(source);\n"
+        },
+        {
+            "patch": "        return encodeForJavaScriptSource(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return encodeForJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "        return source;\n",
+            "correctness": "compile_success",
+            "translated": "        return source;\n"
+        },
+        {
+            "patch": "        return encode(source);\n",
+            "correctness": "uncompilable",
+            "translated": "        return encode(source);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

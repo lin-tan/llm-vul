@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (measure.acquireDelay()) {",
+        "if (measure.acquireDelay()) {",
+        "if (measure!= null && measure.acquireDelay() &&!(point instanceof Occupation)) {",
+        "if (measure.acquireDelay() &&!(point instanceof Occupation)) {",
+        "if (measure.acquireDelay() ||!(point instanceof Occupation)) {",
+        "If (measure.acquireDelay() &&!(point instanceof Occupation)) {",
+        "if (measure.acquireDelay() ||!(point instanceof Occupation)) {",
+        "if (measure.acquireDelay() &&!(point instanceof Occupation)) {",
+        "if (measure.acquireDelay() &&!(point instanceof OccupationBlendIn)) {",
+        "if (!measure.acquireDelay() &&!(point instanceof Occupation)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (measure.acquireDelay()) {",
+            "correctness": "test_timeout",
+            "translated": "if (step.getWait()) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay()) {",
+            "correctness": "test_timeout",
+            "translated": "if (step.getWait()) {"
+        },
+        {
+            "patch": "if (measure!= null && measure.acquireDelay() &&!(point instanceof Occupation)) {",
+            "correctness": "compile_success",
+            "translated": "if (step!= null && step.getWait() &&!(item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() &&!(point instanceof Occupation)) {",
+            "correctness": "compile_success",
+            "translated": "if (step.getWait() &&!(item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() ||!(point instanceof Occupation)) {",
+            "correctness": "test_timeout",
+            "translated": "if (step.getWait() ||!(item instanceof Job)) {"
+        },
+        {
+            "patch": "If (measure.acquireDelay() &&!(point instanceof Occupation)) {",
+            "correctness": "uncompilable",
+            "translated": "If (step.getWait() &&!(item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() ||!(point instanceof Occupation)) {",
+            "correctness": "test_timeout",
+            "translated": "if (step.getWait() ||!(item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() &&!(point instanceof Occupation)) {",
+            "correctness": "compile_success",
+            "translated": "if (step.getWait() &&!(item instanceof Job)) {"
+        },
+        {
+            "patch": "if (measure.acquireDelay() &&!(point instanceof OccupationBlendIn)) {",
+            "correctness": "test_timeout",
+            "translated": "if (step.getWait() &&!(item instanceof ParameterizedJobMixIn)) {"
+        },
+        {
+            "patch": "if (!measure.acquireDelay() &&!(point instanceof Occupation)) {",
+            "correctness": "compile_success",
+            "translated": "if (!step.getWait() &&!(item instanceof Job)) {"
+        }
+    ]
+}

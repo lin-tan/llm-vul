@@ -1,0 +1,66 @@
+{
+    "output": [
+        "sb = sb.length() > 0?sb.append(\", \"):sb;",
+        "sb =sb.length() > 0?sb.append(\", \"):sb;",
+        "sb = sb.length() > 0? sb.append(\"remoteAddress=\").append(origin) : sb;",
+        "sb.append(\"sessionId=\"); sb.append(sessionId);",
+        "sb = sb.length() > 0? sb.append(\", \"):sb;",
+        "if (sessionId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb;",
+        "sb =sb.length() > 0?sb.append(\", \"):sb;",
+        "sb.append(\"clientId=\"); sb.append(clientId);",
+        "sb.append(\"sessionId\");",
+        "sb.append(sessionId);"
+    ],
+    "validation_result": [
+        {
+            "patch": "sb = sb.length() > 0?sb.append(\", \"):sb;",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb;"
+        },
+        {
+            "patch": "sb =sb.length() > 0?sb.append(\", \"):sb;",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb;"
+        },
+        {
+            "patch": "sb = sb.length() > 0? sb.append(\"remoteAddress=\").append(origin) : sb;",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0? sb.append(\"remoteAddress=\").append(origin) : sb;"
+        },
+        {
+            "patch": "sb.append(\"sessionId=\"); sb.append(sessionId);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId=\"); sb.append(sessionId);"
+        },
+        {
+            "patch": "sb = sb.length() > 0? sb.append(\", \"):sb;",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb;"
+        },
+        {
+            "patch": "if (sessionId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb;",
+            "correctness": "uncompilable",
+            "translated": "if (sessionId!= null) { sb =sb.length() > 0?sb.append(\", \"):sb;"
+        },
+        {
+            "patch": "sb =sb.length() > 0?sb.append(\", \"):sb;",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb;"
+        },
+        {
+            "patch": "sb.append(\"clientId=\"); sb.append(clientId);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"clientId=\"); sb.append(clientId);"
+        },
+        {
+            "patch": "sb.append(\"sessionId\");",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId\");"
+        },
+        {
+            "patch": "sb.append(sessionId);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(sessionId);"
+        }
+    ]
+}

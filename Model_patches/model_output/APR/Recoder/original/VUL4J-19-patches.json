@@ -1,0 +1,12 @@
+[
+  "logIfStrongEncryptionMissing();\n",
+  "return;\n",
+  "isUserPassword(currentAccessPermission);\n",
+  "validatePerms(currentAccessPermission);\n",
+  "setCurrentAccessPermission(currentAccessPermission);\n",
+  "setCurrentAccessPermission(computedPassword);\n",
+  "encryptionKey = computeEncryptedKey(password.getBytes(passwordCharset), ownerKey, userKey, oe, ue, dicPermissions, documentIDBytes, dicRevision, dicLength, encryptMetadata, false);\n",
+  "currentAccessPermission = new AccessPermission(dicPermissions);\n",
+  "validatePerms(encryption, dicPermissions, encryptMetadata);\n",
+  "computeEncryptedKey(currentAccessPermission);\n"
+]

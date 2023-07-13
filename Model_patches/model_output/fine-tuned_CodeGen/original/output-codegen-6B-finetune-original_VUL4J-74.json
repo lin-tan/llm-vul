@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(seed);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(seed.getInputStream());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.nextBytes(new byte[1]);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(seed.getBytes());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(getSeed());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(seed == null? null : seed.getInputStream());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(seedBytes);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(seed!= null? seed.getInputStream() : new byte[1]);\n<|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(seed!= null? seed.getInputStream() : new byte[0]);\n<|endoftext|>",
+        "public SecureRandom getObject() throws Exception {\n\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n// buggy lines start:\n\tif (seed!= null) {\n\t\tbyte[] seedBytes = FileCopyUtils.copyToByteArray(seed.getInputStream());\n\t\trnd.setSeed(seedBytes);\n\t}\n\telse {\n\t\trnd.nextBytes(new byte[1]);\n\t}\n// buggy lines end\n\n\treturn rnd;\n}\n// fixed lines:\n\trnd.setSeed(seed!= null? seed.getInputStream() : null);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\trnd.setSeed(seed);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(seed.getInputStream());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.nextBytes(new byte[1]);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "\trnd.setSeed(seed.getBytes());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(getSeed());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(seed == null? null : seed.getInputStream());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(seedBytes);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(seed!= null? seed.getInputStream() : new byte[1]);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(seed!= null? seed.getInputStream() : new byte[0]);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\trnd.setSeed(seed!= null? seed.getInputStream() : null);\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

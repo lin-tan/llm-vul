@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return new LargeWholeNumber[]{\n</s></s></s>",
+        "<pad><s>    return new LargeWholeNumber[] {\n</s></s></s>",
+        "<pad><s>    return new LargeWholeNumber[2];\n</s></s>",
+        "<pad><s>    return new LargeWholeNumber[1];\n</s></s>",
+        "<pad><s>    return new LargeWholeNumber[][]{\n</s></s>",
+        "<pad><s>    return new LargeWholeNumber[2][]{\n</s>",
+        "<pad><s>    return null;\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    try {\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return new LargeWholeNumber[]{\n",
+            "correctness": "compile_success",
+            "translated": "    return new BigInteger[]{\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[] {\n",
+            "correctness": "compile_success",
+            "translated": "    return new BigInteger[]{\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[2];\n",
+            "correctness": "uncompilable",
+            "translated": "    return new BigInteger[2];\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[1];\n",
+            "correctness": "uncompilable",
+            "translated": "    return new BigInteger[1];\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[][]{\n",
+            "correctness": "uncompilable",
+            "translated": "    return new BigInteger[][]{\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[2][]{\n",
+            "correctness": "uncompilable",
+            "translated": "    return new BigInteger[2][]{\n"
+        },
+        {
+            "patch": "    return null;\n",
+            "correctness": "uncompilable",
+            "translated": "    return null;\n"
+        },
+        {
+            "patch": "    try {\n",
+            "correctness": "uncompilable",
+            "translated": "    try {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

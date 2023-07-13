@@ -1,0 +1,66 @@
+{
+    "output": [
+        "try (final FileInputStream inputStream = new FileInputStream(targetFile)) {",
+        "try (final FileInputStream input = new FileInputStream(targetFile)) {",
+        "try (final FileInputStream input = new FileInputStream(originFile)) {",
+        "try (final FileInputStream inputStream = new FileInputStream(originFile)) {",
+        "try (InputStream input = new FileInputStream(originFile)) {",
+        "try (InputStream input = new FileInputStream(targetFile)) {",
+        "if (whetherDisregardConsent()) { try{",
+        "try (final InputStream input = null) {",
+        "if (whetherDisregardConsent()) { return; }",
+        "try {"
+    ],
+    "validation_result": [
+        {
+            "patch": "try (final FileInputStream inputStream = new FileInputStream(targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream inputStream = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "try (final FileInputStream input = new FileInputStream(targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream input = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "try (final FileInputStream input = new FileInputStream(originFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream input = new FileInputStream(srcF)) {"
+        },
+        {
+            "patch": "try (final FileInputStream inputStream = new FileInputStream(originFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (final FileInputStream inputStream = new FileInputStream(srcF)) {"
+        },
+        {
+            "patch": "try (InputStream input = new FileInputStream(originFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (InputStream input = new FileInputStream(srcF)) {"
+        },
+        {
+            "patch": "try (InputStream input = new FileInputStream(targetFile)) {",
+            "correctness": "uncompilable",
+            "translated": "try (InputStream input = new FileInputStream(f)) {"
+        },
+        {
+            "patch": "if (whetherDisregardConsent()) { try{",
+            "correctness": "uncompilable",
+            "translated": "if (isIgnorePermissions()) { try{"
+        },
+        {
+            "patch": "try (final InputStream input = null) {",
+            "correctness": "compile_success",
+            "translated": "try (final InputStream input = null) {"
+        },
+        {
+            "patch": "if (whetherDisregardConsent()) { return; }",
+            "correctness": "uncompilable",
+            "translated": "if (isIgnorePermissions()) { return; }"
+        },
+        {
+            "patch": "try {",
+            "correctness": "compile_success",
+            "translated": "try {"
+        }
+    ]
+}

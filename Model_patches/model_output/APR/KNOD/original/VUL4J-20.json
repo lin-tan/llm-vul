@@ -1,0 +1,65 @@
+{
+    "id": 11,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0819,
+            "fix_type": "general",
+            "patch": "retval[i] = (COSNumber)getObject(i).floatValue();\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.2166,
+            "fix_type": "general",
+            "patch": "retval[i] = (COSNumber)getObject(i);\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4884,
+            "fix_type": "insert",
+            "patch": "retval[i][i] = (float)i[i];\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1299,
+            "fix_type": "general",
+            "patch": "retval[i] = (COSNumber)get(i).floatValue();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1299,
+            "fix_type": "general",
+            "patch": "retval[i] = (COSNumber)getName(i).floatValue();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.2576,
+            "fix_type": "general",
+            "patch": "retval[i] = getObject(i).floatValue();\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4908,
+            "fix_type": "insert",
+            "patch": "retval[i] = (float) (i + i);\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1791,
+            "fix_type": "general",
+            "patch": "objects[i] = (COSNumber)getObject(i).floatValue();\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.1791,
+            "fix_type": "general",
+            "patch": "needToBeUpdated[i] = (COSNumber)getObject(i).floatValue();\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.1849,
+            "fix_type": "general",
+            "patch": "retval[i] = (COSNumber)getObject(i).getCOSObject();\n"
+        }
+    ]
+}

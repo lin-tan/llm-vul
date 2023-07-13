@@ -1,0 +1,12 @@
+[
+  "",
+  "CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);\n",
+  "result = CompressedFileEncodingAssistant.enlargeBufferWith(increase, increase);\n",
+  "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);\n",
+  "if((increase != null)){\n",
+  "return;\n",
+  "result = enlargeBufferWith(result, increase);\n",
+  "result = CompressedFileEncodingAssistant.enlargeBufferWith(charEncoder, increase);\n",
+  "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, charEncoder);\n",
+  "result = CompressedFileEncodingAssistant.enlargeBufferWith(result);\n"
+]

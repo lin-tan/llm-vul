@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-17,5",
+    "output": [
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return itemValues;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n    return viewableItems\n\n\n",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n\n    for (",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n    for (Iterator",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n    return viewable\n",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n    for (TopLevel",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return itemValues;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n \n\n    for (",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n    for (Object",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n\n   \n\n\n\n\n \n\n    for (",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n\n   \n\n\n\n\n\n\n    for (Iterator",
+        "\n    return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return itemValues;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n\n    for (Iterator"
+    ],
+    "validation_result": [
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return itemValues;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n    return viewableItems",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n\n    for (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n    for (Iterator",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n    return viewable",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n    for (TopLevel",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return itemValues;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n \n\n    for (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n    for (Object",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n\n   \n\n\n\n\n \n\n    for (",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return viewableItems;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n\n   \n\n\n\n\n\n\n    for (Iterator",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return itemValues;\n\n   \n    return viewableItems;\n\n\n\n\n\n\n\n\n\n    return viewableItems;\n\n    return itemValues;\n  public\n    return viewableItems;\n   \n    itemValues.stream().filter(itemValues::contains).collect(itemValues);\n   \n   \n\n\n\n\n\n\n    for (Iterator",
+            "correctness": "uncompilable"
+        }
+    ]
+}

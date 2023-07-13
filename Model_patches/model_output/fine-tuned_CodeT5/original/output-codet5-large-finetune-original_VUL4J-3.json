@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        } else {\n            sfactory = SAXParserFactory.newInstance();\n        }\n</s>",
+        "<pad><s>        }\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        } else {\n            LOG.warn(\"String_Node_Str\");\n        }\n</s>",
+        "<pad><s>        } else\n            sfactory = SAXParserFactory.newInstance();\n</s></s></s></s></s>",
+        "<pad><s>        } else {\n            sfactory = new SAXParserFactory();\n        }\n</s></s></s>",
+        "<pad><s>        } catch (Exception ex) {\n        }\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        } else {\n        }\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        };\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        });\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        } else {\n            sfactory = SAXParserFactory.newInstance();\n        }\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        } else {\n            LOG.warn(\"String_Node_Str\");\n        }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        } else\n            sfactory = SAXParserFactory.newInstance();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        } else {\n            sfactory = new SAXParserFactory();\n        }\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        } catch (Exception ex) {\n        }\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        } else {\n        }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        };\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        });\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

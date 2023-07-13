@@ -1,0 +1,37 @@
+{
+    "VUL4J-55-346-347": {
+        "src": "if ( a . remake CaMeL Adaptation CaMeL When CaMeL Altered )",
+        "patches": [
+            {
+                "patch": "if( a.remakeAdaptationWhenAltered )"
+            },
+            {
+                "patch": "if( a.remakeAdaptationWhenAltered ) {"
+            },
+            {
+                "patch": "if( a.remakeAdaptationWhenAltered( ) ) continue ; }"
+            },
+            {
+                "patch": "if( following >=0)"
+            },
+            {
+                "patch": "if( a.remakeAdaptationWhenAltered( ) ) break ; }"
+            },
+            {
+                "patch": "if( ! a.remakeAdaptationWhenAltered )"
+            },
+            {
+                "patch": "if( a.remakeAdaptationWhenAltered( ) )"
+            },
+            {
+                "patch": "if( a.remakeAdaptationWhenAltered &&"
+            },
+            {
+                "patch": "} if( a.remakeAdaptationWhenAltered )"
+            },
+            {
+                "patch": "if( following >=0) { continue ; }"
+            }
+        ]
+    }
+}

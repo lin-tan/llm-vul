@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "new LargeWholeNumber[] {",
+        "return new LargeWholeNumber[] {",
+        "LargeWholeNumber[] derDecrypt = new LargeWholeNumber[] {",
+        "new LargeWholeNumber[] { S.acquireItemAt(0),",
+        "//$NON-NLS-1$ return new LargeWholeNumber[] {",
+        "final LargeWholeNumber[] s = new LargeWholeNumber[] {",
+        "|| new LargeWholeNumber[] {",
+        "new LargeWholeNumber[] { super.decrypt(encryption);",
+        ".acquireContent(), return new LargeWholeNumber[] {",
+        "NewASN1WholeNumber[] new LargeWholeNumber[] {"
+    ],
+    "validation_result": [
+        {
+            "patch": "new LargeWholeNumber[] {",
+            "correctness": "uncompilable",
+            "translated": "new BigInteger[] {"
+        },
+        {
+            "patch": "return new LargeWholeNumber[] {",
+            "correctness": "compile_success",
+            "translated": "return new BigInteger[] {"
+        },
+        {
+            "patch": "LargeWholeNumber[] derDecrypt = new LargeWholeNumber[] {",
+            "correctness": "uncompilable",
+            "translated": "BigInteger[] derDecode = new BigInteger[] {"
+        },
+        {
+            "patch": "new LargeWholeNumber[] { S.acquireItemAt(0),",
+            "correctness": "uncompilable",
+            "translated": "new BigInteger[] { s.getObjectAt(0),"
+        },
+        {
+            "patch": "//$NON-NLS-1$ return new LargeWholeNumber[] {",
+            "correctness": "uncompilable",
+            "translated": "//$NON-NLS-1$ return new BigInteger[] {"
+        },
+        {
+            "patch": "final LargeWholeNumber[] s = new LargeWholeNumber[] {",
+            "correctness": "uncompilable",
+            "translated": "final BigInteger[] s = new BigInteger[] {"
+        },
+        {
+            "patch": "|| new LargeWholeNumber[] {",
+            "correctness": "uncompilable",
+            "translated": "|| new BigInteger[] {"
+        },
+        {
+            "patch": "new LargeWholeNumber[] { super.decrypt(encryption);",
+            "correctness": "uncompilable",
+            "translated": "new BigInteger[] { super.decrypt(encoding);"
+        },
+        {
+            "patch": ".acquireContent(), return new LargeWholeNumber[] {",
+            "correctness": "uncompilable",
+            "translated": ".getValue(), return new BigInteger[] {"
+        },
+        {
+            "patch": "NewASN1WholeNumber[] new LargeWholeNumber[] {",
+            "correctness": "uncompilable",
+            "translated": "NewASN1WholeNumber[] new BigInteger[] {"
+        }
+    ]
+}

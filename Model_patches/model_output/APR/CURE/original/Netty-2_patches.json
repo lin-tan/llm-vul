@@ -1,0 +1,37 @@
+{
+    "VUL4J-1003-750-751": {
+        "src": "for ( colon CaMeL End = name CaMeL End ; colon CaMeL End < length ; colon CaMeL End ++ ) {",
+        "patches": [
+            {
+                "patch": "for( colonEnd = nameEnd ; colonEnd < length ; colonEnd ++ ) {"
+            },
+            {
+                "patch": "for( colonEnd = nameEnd ; colonEnd < length ; colonEnd ++ ) { if( sb.charAt( colonEnd ) == ' + maxLength + ') {"
+            },
+            {
+                "patch": "for( colonEnd = nameEnd ; colonEnd < length ; colonEnd ++ ) { if( sb.charAt( colonEnd ) == ' bytes.') {"
+            },
+            {
+                "patch": "for( colonEnd = nameEnd ; colonEnd < length ; colonEnd ++ ) { if( sb.charAt( colonEnd ) == 'An HTTP line is larger than ') {"
+            },
+            {
+                "patch": "for( colonEnd = nameEnd ; colonEnd < length ; colonEnd ++ ) { if( sb.charAt( colonEnd ) == 'HTTP header is larger than ') {"
+            },
+            {
+                "patch": "for( colonEnd = nameEnd ; colonEnd < length ; colonEnd ++ ) { if( sb.charAt( colonEnd ) == ':') {"
+            },
+            {
+                "patch": "for( nameEnd = findNonWhitespace( sb , colonEnd ) ; nameEnd < length ; nameEnd ++ ) {"
+            },
+            {
+                "patch": "for( colonEnd = findNonWhitespace( sb , colonEnd ) ; colonEnd < length ; colonEnd ++ ) {"
+            },
+            {
+                "patch": "for( colonEnd = nameStart ; colonEnd < length ; colonEnd ++ ) { if( sb.charAt( colonEnd ) == ' + maxLength + ') {"
+            },
+            {
+                "patch": "for( colonEnd = nameStart ; colonEnd < length ; colonEnd ++ ) { if( sb.charAt( colonEnd ) == ' bytes.') {"
+            }
+        ]
+    }
+}

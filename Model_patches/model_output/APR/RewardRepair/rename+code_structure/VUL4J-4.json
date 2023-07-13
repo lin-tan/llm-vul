@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+        "if (reply == null) { if (content instanceof WrappedFile) { if (content instanceof BeanExecution) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+        "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else {",
+        "if (reply == null) { if (!(content instanceof WrappedFile)) { if (content instanceof BeanExecution) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+        "if (reply == null) { if (content instanceof WrappedFile) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+        "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+        "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } }",
+        "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content);",
+        "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+        "If (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }"
+        },
+        {
+            "patch": "if (reply == null) { if (content instanceof WrappedFile) { if (content instanceof BeanExecution) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (body instanceof WrappedFile) { if (body instanceof BeanInvocation) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }"
+        },
+        {
+            "patch": "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else {",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else {"
+        },
+        {
+            "patch": "if (reply == null) { if (!(content instanceof WrappedFile)) { if (content instanceof BeanExecution) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (body instanceof BeanInvocation) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }"
+        },
+        {
+            "patch": "if (reply == null) { if (content instanceof WrappedFile) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (body instanceof WrappedFile) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }"
+        },
+        {
+            "patch": "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }"
+        },
+        {
+            "patch": "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } }"
+        },
+        {
+            "patch": "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content);",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body);"
+        },
+        {
+            "patch": "if (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }"
+        },
+        {
+            "patch": "If (reply == null) { if (!(content instanceof WrappedFile)) { if (!(content instanceof BeanExecution)) { if (content instanceof String) { StringReader stringReader = new StringReader((String) content); reply = new InputSource(stringReader); } } else { }",
+            "correctness": "uncompilable",
+            "translated": "If (answer == null) { if (!(body instanceof WrappedFile)) { if (!(body instanceof BeanInvocation)) { if (body instanceof String) { StringReader stringReader = new StringReader((String) body); answer = new InputSource(stringReader); } } else { }"
+        }
+    ]
+}

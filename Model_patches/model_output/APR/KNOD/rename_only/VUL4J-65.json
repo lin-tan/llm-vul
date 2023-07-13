@@ -1,0 +1,65 @@
+{
+    "id": 29,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.226,
+            "fix_type": "general",
+            "patch": "  int point = logger.indexOf('.');\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.4947,
+            "fix_type": "insert",
+            "patch": "if (titile == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3742,
+            "fix_type": "general",
+            "patch": "  int point = titile.substring('.');\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5306,
+            "fix_type": "insert",
+            "patch": "if (titile == null ){\ntitile = new File();\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.5331,
+            "fix_type": "insert",
+            "patch": "if (titile == null ){\nreturn 1;\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4231,
+            "fix_type": "general",
+            "patch": "  int point = Collections.emptyList().indexOf('.');\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.5461,
+            "fix_type": "insert",
+            "patch": "if (titile == null ){\nreturn f;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.5465,
+            "fix_type": "insert",
+            "patch": "  int logger = titile.substring();\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.5587,
+            "fix_type": "insert",
+            "patch": "  int logger = 0;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.4391,
+            "fix_type": "general",
+            "patch": "  int point = titile.substring('.');\n"
+        }
+    ]
+}

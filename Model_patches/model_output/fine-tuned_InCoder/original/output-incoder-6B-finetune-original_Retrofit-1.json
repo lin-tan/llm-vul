@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  this.jaxbType = type;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  this.responseType = type;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n}\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  setType(type);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  this.classType = type;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  this.unmarshaller = unmarshaller;\n<|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  this.xmlType = type;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  this.xmlType = xmlType;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  this.unmarshaller = null;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>JaxbResponseConverter(JAXBContext context, Class<T> type) {\n  this.context = context;\n// buggy lines start:\n  this.type = type;\n// buggy lines end\n}\n// fixed lines:\n  this.unmarshallingType = type;\n<|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  this.jaxbType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.responseType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  setType(type);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.classType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.unmarshaller = unmarshaller;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.xmlType = type;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.xmlType = xmlType;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.unmarshaller = null;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "  this.unmarshallingType = type;\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

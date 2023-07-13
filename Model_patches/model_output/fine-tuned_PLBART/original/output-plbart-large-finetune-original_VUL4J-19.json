@@ -1,0 +1,56 @@
+{
+    "output": [
+        "setCurrentAccessPermission(currentAccessPermission);",
+        "currentAccessPermission = new AccessPermission(dicPermissions);",
+        "setCurrentAccessPermission(currentAccessPermission, false);",
+        "setCurrentAccessPermission(currentAccessPermission, true);",
+        "currentAccessPermission = setCurrentAccessPermission(currentAccessPermission);",
+        "setCurrentAccessPermission(currentAccessPermission, documentIDArray);",
+        "setCurrentAccessPermission(currentAccessPermission, dicRevision);",
+        "setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "currentAccessPermission = getCurrentAccessPermission();",
+        "setCurrentAccessPermission(currentAccessPermission, dicLength);"
+    ],
+    "validation_result": [
+        {
+            "patch": "setCurrentAccessPermission(currentAccessPermission);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "currentAccessPermission = new AccessPermission(dicPermissions);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "setCurrentAccessPermission(currentAccessPermission, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(currentAccessPermission, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "currentAccessPermission = setCurrentAccessPermission(currentAccessPermission);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(currentAccessPermission, documentIDArray);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(currentAccessPermission, dicRevision);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "currentAccessPermission = getCurrentAccessPermission();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "setCurrentAccessPermission(currentAccessPermission, dicLength);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,809 @@
+{
+    "id": "cmpl-8HPPsuGDndxQAjUAvSudUxJ0uEAzT",
+    "object": "text_completion",
+    "created": 1699159968,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings(false);\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " Head",
+                    "ings",
+                    " heading",
+                    " =",
+                    " new",
+                    " Network",
+                    "Library",
+                    "Head",
+                    "ing",
+                    "Support",
+                    "e",
+                    "Head",
+                    "ings",
+                    "(",
+                    "false",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.9882071,
+                    -0.012454829,
+                    -0.06866376,
+                    -0.0039571933,
+                    -0.029688817,
+                    -0.358768,
+                    -0.0044257427,
+                    -0.008823305,
+                    -0.011363838,
+                    -0.4043285,
+                    -0.015555545,
+                    -0.024000261,
+                    -0.0013229182,
+                    -0.4666831,
+                    -0.5218366,
+                    -0.019977517,
+                    -0.02003243
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ings": -0.012454829
+                    },
+                    {
+                        " heading": -0.06866376
+                    },
+                    {
+                        " =": -0.0039571933
+                    },
+                    {
+                        " new": -0.029688817
+                    },
+                    {
+                        " Network": -0.358768
+                    },
+                    {
+                        "Library": -0.0044257427
+                    },
+                    {
+                        "Head": -0.008823305
+                    },
+                    {
+                        "ing": -0.011363838
+                    },
+                    {
+                        "Support": -0.4043285
+                    },
+                    {
+                        "e": -0.015555545
+                    },
+                    {
+                        "Head": -0.024000261
+                    },
+                    {
+                        "ings": -0.0013229182
+                    },
+                    {
+                        "(": -0.4666831
+                    },
+                    {
+                        "false": -0.5218366
+                    },
+                    {
+                        ");": -0.019977517
+                    },
+                    {
+                        "\n": -0.02003243
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3863,
+                    3867,
+                    3875,
+                    3877,
+                    3881,
+                    3889,
+                    3896,
+                    3900,
+                    3903,
+                    3910,
+                    3911,
+                    3915,
+                    3919,
+                    3920,
+                    3925,
+                    3927
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings();\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " Head",
+                    "ings",
+                    " heading",
+                    " =",
+                    " new",
+                    " Network",
+                    "Library",
+                    "Head",
+                    "ing",
+                    "Support",
+                    "e",
+                    "Head",
+                    "ings",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.9882071,
+                    -0.012454829,
+                    -0.06866376,
+                    -0.0039571933,
+                    -0.029688817,
+                    -0.358768,
+                    -0.0044257427,
+                    -0.008823305,
+                    -0.011363838,
+                    -0.4043285,
+                    -0.015555545,
+                    -0.024000261,
+                    -0.0013229182,
+                    -1.0205703,
+                    -0.028761365
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ings": -0.012454829
+                    },
+                    {
+                        " heading": -0.06866376
+                    },
+                    {
+                        " =": -0.0039571933
+                    },
+                    {
+                        " new": -0.029688817
+                    },
+                    {
+                        " Network": -0.358768
+                    },
+                    {
+                        "Library": -0.0044257427
+                    },
+                    {
+                        "Head": -0.008823305
+                    },
+                    {
+                        "ing": -0.011363838
+                    },
+                    {
+                        "Support": -0.4043285
+                    },
+                    {
+                        "e": -0.015555545
+                    },
+                    {
+                        "Head": -0.024000261
+                    },
+                    {
+                        "ings": -0.0013229182
+                    },
+                    {
+                        "(": -0.4666831
+                    },
+                    {
+                        "\n": -0.028761365
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3863,
+                    3867,
+                    3875,
+                    3877,
+                    3881,
+                    3889,
+                    3896,
+                    3900,
+                    3903,
+                    3910,
+                    3911,
+                    3915,
+                    3919,
+                    3922
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  HttpHeaders heading = new DefaultHttpHeaders();\n  heading.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);\n  heading.add(HttpHeaderNames.SERVER, serverName);\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " H",
+                    "ttp",
+                    "Head",
+                    "ers",
+                    " heading",
+                    " =",
+                    " new",
+                    " Default",
+                    "Http",
+                    "Head",
+                    "ers",
+                    "();",
+                    "\n",
+                    " ",
+                    " heading",
+                    ".",
+                    "add",
+                    "(",
+                    "Http",
+                    "Header",
+                    "Names",
+                    ".",
+                    "CON",
+                    "N",
+                    "ECTION",
+                    ",",
+                    " H",
+                    "ttp",
+                    "Header",
+                    "Values",
+                    ".",
+                    "K",
+                    "EEP",
+                    "_",
+                    "AL",
+                    "IVE",
+                    ");",
+                    "\n",
+                    " ",
+                    " heading",
+                    ".",
+                    "add",
+                    "(",
+                    "Http",
+                    "Header",
+                    "Names",
+                    ".",
+                    "SER",
+                    "VER",
+                    ",",
+                    " server",
+                    "Name",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.93829453,
+                    -0.00048191354,
+                    -0.02300836,
+                    -0.042689912,
+                    -0.015296593,
+                    -0.00235885,
+                    -0.046607986,
+                    -0.060110707,
+                    -0.013359913,
+                    -0.0040013576,
+                    -3.690939e-05,
+                    -0.54935306,
+                    -0.03606097,
+                    -0.93931854,
+                    -0.6106966,
+                    -0.0064567137,
+                    -1.2166755,
+                    -0.048723754,
+                    -0.27230367,
+                    -0.07257082,
+                    -0.0098945405,
+                    -0.0003372524,
+                    -1.9335866,
+                    -0.0028612013,
+                    -3.8103353e-05,
+                    -0.0033016042,
+                    -0.22426435,
+                    -0.00024561098,
+                    -0.045704275,
+                    -0.027530039,
+                    -8.88872e-05,
+                    -0.3705664,
+                    -0.0001536241,
+                    -0.0009645246,
+                    -5.693833e-05,
+                    -8.296486e-06,
+                    -0.0064041032,
+                    -0.010882991,
+                    -0.8333147,
+                    -0.50575876,
+                    -0.0011491937,
+                    -0.04178344,
+                    -0.016789129,
+                    -0.06452954,
+                    -0.0068188244,
+                    -0.0033760024,
+                    -0.00010569845,
+                    -0.7333916,
+                    -0.00041935995,
+                    -0.0019138446,
+                    -2.8926072,
+                    -0.9133521,
+                    -0.05600852,
+                    -0.006156625
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ttp": -0.00048191354
+                    },
+                    {
+                        "Head": -0.02300836
+                    },
+                    {
+                        "ers": -0.042689912
+                    },
+                    {
+                        " heading": -0.015296593
+                    },
+                    {
+                        " =": -0.00235885
+                    },
+                    {
+                        " new": -0.046607986
+                    },
+                    {
+                        " Default": -0.060110707
+                    },
+                    {
+                        "Http": -0.013359913
+                    },
+                    {
+                        "Head": -0.0040013576
+                    },
+                    {
+                        "ers": -3.690939e-05
+                    },
+                    {
+                        "();": -0.54935306
+                    },
+                    {
+                        "\n": -0.03606097
+                    },
+                    {
+                        "<|endoftext|>": -0.5021076
+                    },
+                    {
+                        " heading": -0.6106966
+                    },
+                    {
+                        ".": -0.0064567137
+                    },
+                    {
+                        "set": -0.40225276
+                    },
+                    {
+                        "(": -0.048723754
+                    },
+                    {
+                        "Http": -0.27230367
+                    },
+                    {
+                        "Header": -0.07257082
+                    },
+                    {
+                        "Names": -0.0098945405
+                    },
+                    {
+                        ".": -0.0003372524
+                    },
+                    {
+                        "SER": -0.7539707
+                    },
+                    {
+                        "N": -0.0028612013
+                    },
+                    {
+                        "ECTION": -3.8103353e-05
+                    },
+                    {
+                        ",": -0.0033016042
+                    },
+                    {
+                        " H": -0.22426435
+                    },
+                    {
+                        "ttp": -0.00024561098
+                    },
+                    {
+                        "Header": -0.045704275
+                    },
+                    {
+                        "Values": -0.027530039
+                    },
+                    {
+                        ".": -8.88872e-05
+                    },
+                    {
+                        "K": -0.3705664
+                    },
+                    {
+                        "EEP": -0.0001536241
+                    },
+                    {
+                        "_": -0.0009645246
+                    },
+                    {
+                        "AL": -5.693833e-05
+                    },
+                    {
+                        "IVE": -8.296486e-06
+                    },
+                    {
+                        ");": -0.0064041032
+                    },
+                    {
+                        "\n": -0.010882991
+                    },
+                    {
+                        "<|endoftext|>": -0.57336414
+                    },
+                    {
+                        " heading": -0.50575876
+                    },
+                    {
+                        ".": -0.0011491937
+                    },
+                    {
+                        "add": -0.04178344
+                    },
+                    {
+                        "(": -0.016789129
+                    },
+                    {
+                        "Http": -0.06452954
+                    },
+                    {
+                        "Header": -0.0068188244
+                    },
+                    {
+                        "Names": -0.0033760024
+                    },
+                    {
+                        ".": -0.00010569845
+                    },
+                    {
+                        "SER": -0.7333916
+                    },
+                    {
+                        "VER": -0.00041935995
+                    },
+                    {
+                        ",": -0.0019138446
+                    },
+                    {
+                        " app": -0.8967311
+                    },
+                    {
+                        "Name": -0.9133521
+                    },
+                    {
+                        ");": -0.05600852
+                    },
+                    {
+                        "\n": -0.006156625
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3860,
+                    3863,
+                    3867,
+                    3870,
+                    3878,
+                    3880,
+                    3884,
+                    3892,
+                    3896,
+                    3900,
+                    3903,
+                    3906,
+                    3907,
+                    3908,
+                    3916,
+                    3917,
+                    3920,
+                    3921,
+                    3925,
+                    3931,
+                    3936,
+                    3937,
+                    3940,
+                    3941,
+                    3947,
+                    3948,
+                    3950,
+                    3953,
+                    3959,
+                    3965,
+                    3966,
+                    3967,
+                    3970,
+                    3971,
+                    3973,
+                    3976,
+                    3978,
+                    3979,
+                    3980,
+                    3988,
+                    3989,
+                    3992,
+                    3993,
+                    3997,
+                    4003,
+                    4008,
+                    4009,
+                    4012,
+                    4015,
+                    4016,
+                    4023,
+                    4027,
+                    4029
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1076,
+        "completion_tokens": 92,
+        "total_tokens": 1168
+    },
+    "validation_result": [
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings(false);\n",
+            "correctness": "uncompilable",
+            "translated": "  Headers nettyHeaders = new NettyHeadersBackedHeaders(false);\n"
+        },
+        {
+            "patch": "  Headings heading = new NetworkLibraryHeadingSupporteHeadings();\n",
+            "correctness": "uncompilable",
+            "translated": "  Headers nettyHeaders = new NettyHeadersBackedHeaders(); \n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  HttpHeaders heading = new DefaultHttpHeaders();\n  heading.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);\n  heading.add(HttpHeaderNames.SERVER, serverName);\n",
+            "correctness": "uncompilable",
+            "translated": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n  nettyHeaders.add(HttpHeaderNames.CONNECTION, HttpHeaderValues.KEEP_ALIVE);\n  nettyHeaders.add(HttpHeaderNames.SERVER, serverName);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "nodeMonitor = nodeMonitorList.get(i);",
+        "r.put( name,nodeMonitor.data(this));",
+        "r.put( name,monitor.data(this));",
+        "r.put( nodeMonitor.data(this));",
+        "NodeMonitor monitor = nodeMonitorList.get(i);",
+        "r.put(name,nodeMonitor.data(this));",
+        "r.put( name,monitor.data(this));",
+        "r.put( name, nodeMonitor.data(this));",
+        "r.put(name,monitor.data(this));",
+        "r.put(name,monitor.data(this));"
+    ],
+    "validation_result": [
+        {
+            "patch": "nodeMonitor = nodeMonitorList.get(i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "r.put( name,nodeMonitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "r.put( name,monitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "r.put( nodeMonitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "NodeMonitor monitor = nodeMonitorList.get(i);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "r.put(name,nodeMonitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "r.put( name,monitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "r.put( name, nodeMonitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "r.put(name,monitor.data(this));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "r.put(name,monitor.data(this));",
+            "correctness": "uncompilable"
+        }
+    ]
+}

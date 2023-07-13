@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>            }\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>            } else\n                result = encodeEntirely(charEncoder, result);\n</s></s></s>",
+        "<pad><s>            } else\n                result = encodeEntirely(charEncoder, result, result);\n</s>",
+        "<pad><s>            } else\n                break;\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>            } else {\n                break;\n            }\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>                break;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>                continue;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>            });\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            }\n",
+            "correctness": "compile_success",
+            "translated": "            }\n"
+        },
+        {
+            "patch": "            } else\n                result = encodeEntirely(charEncoder, result);\n",
+            "correctness": "uncompilable",
+            "translated": "            } else\n                out = encodeFully(enc, out);\n"
+        },
+        {
+            "patch": "            } else\n                result = encodeEntirely(charEncoder, result, result);\n",
+            "correctness": "uncompilable",
+            "translated": "            } else\n                out = encodeFully(enc, out, out);\n"
+        },
+        {
+            "patch": "            } else\n                break;\n",
+            "correctness": "test_success",
+            "translated": "            } else\n                break;\n"
+        },
+        {
+            "patch": "            } else {\n                break;\n            }\n",
+            "correctness": "test_success",
+            "translated": "            } else {\n                break;\n            }\n"
+        },
+        {
+            "patch": "                break;\n",
+            "correctness": "uncompilable",
+            "translated": "                break;\n"
+        },
+        {
+            "patch": "                continue;\n",
+            "correctness": "uncompilable",
+            "translated": "                continue;\n"
+        },
+        {
+            "patch": "            });\n",
+            "correctness": "uncompilable",
+            "translated": "            });\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

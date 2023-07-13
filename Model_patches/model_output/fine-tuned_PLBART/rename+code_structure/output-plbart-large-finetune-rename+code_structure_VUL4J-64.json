@@ -1,0 +1,66 @@
+{
+    "output": [
+        "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence, false);",
+        "InputStream in = getSwatheBeginingOfStringDetachingInDataSequence(inDataSequence);",
+        "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence, true);",
+        "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence, null);",
+        "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence);",
+        "InputStream in = swatheBeginingOfStringDetachingInDataSequence(dataSequence);",
+        "final InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence);",
+        "InputStream in = swatheBeginingOfDataSequence(inDataSequence);",
+        "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence, context);",
+        "InputStream in = swatheBeginingOfStringInDataSequence(inDataSequence);"
+    ],
+    "validation_result": [
+        {
+            "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence, false);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);"
+        },
+        {
+            "patch": "InputStream in = getSwatheBeginingOfStringDetachingInDataSequence(inDataSequence);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = getSwatheBeginingOfStringDetachingInDataSequence(inputStream);"
+        },
+        {
+            "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence, true);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);"
+        },
+        {
+            "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence, null);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, null);"
+        },
+        {
+            "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence);",
+            "correctness": "compile_success",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream);"
+        },
+        {
+            "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence(dataSequence);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(dataSequence);"
+        },
+        {
+            "patch": "final InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence);",
+            "correctness": "compile_success",
+            "translated": "final InputStream in = wrapPrefixRemovingInputStream(inputStream);"
+        },
+        {
+            "patch": "InputStream in = swatheBeginingOfDataSequence(inDataSequence);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = swatheBeginingOfDataSequence(inputStream);"
+        },
+        {
+            "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence(inDataSequence, context);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = wrapPrefixRemovingInputStream(inputStream, context);"
+        },
+        {
+            "patch": "InputStream in = swatheBeginingOfStringInDataSequence(inDataSequence);",
+            "correctness": "uncompilable",
+            "translated": "InputStream in = swatheBeginingOfStringInDataSequence(inputStream);"
+        }
+    ]
+}

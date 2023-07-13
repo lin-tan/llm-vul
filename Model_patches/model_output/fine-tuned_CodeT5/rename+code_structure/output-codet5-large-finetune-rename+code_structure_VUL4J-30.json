@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        String s = content.toString();\n</s></s></s></s></s></s>",
+        "<pad><s>        String s = String.valueOf(content).trim();\n</s>",
+        "<pad><s>        String s = String.valueOf(content.toString());\n</s>",
+        "<pad><s>        String s = String.valueOf((String) content);\n</s>",
+        "<pad><s>        String s = String.valueOf(item);\n</s></s></s>",
+        "<pad><s>        String s = (String) content;\n</s></s></s></s></s>",
+        "<pad><s>        String s = String.valueOf(value);\n</s></s></s>",
+        "<pad><s>        String s = toString(content);\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        String s = content.toString();\n",
+            "correctness": "compile_success",
+            "translated": "        String s = value.toString();\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(content).trim();\n",
+            "correctness": "test_success",
+            "translated": "        String s = String.valueOf(value).trim();\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(content.toString());\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf(value.toString());\n"
+        },
+        {
+            "patch": "        String s = String.valueOf((String) content);\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf((String) value);\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(item);\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf(object);\n"
+        },
+        {
+            "patch": "        String s = (String) content;\n",
+            "correctness": "compile_success",
+            "translated": "        String s = (String) value;\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(value);\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf(value);\n"
+        },
+        {
+            "patch": "        String s = toString(content);\n",
+            "correctness": "uncompilable",
+            "translated": "        String s = toString(value);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "analyzer.analyzeBatch(batch, constituentTemplate, attributeTitile);",
+        "analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile);",
+        "analyzer.analyzeBatch(constituentTemplate, batch);",
+        "analyzer.analyzeBatch(null, constituentTemplate, batch, attributeTitile);",
+        "analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, false);",
+        "analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, true);",
+        "analyzer.analyzeBatch(constituentTemplate, attributeTitile, batch);",
+        "analyzer.analyzeBatch(constantituentTemplate, batch, attributeTitile);",
+        "analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, null);",
+        "analyzer.analyzeBatch( constituentTemplate, batch, attributeTitile);"
+    ],
+    "validation_result": [
+        {
+            "patch": "analyzer.analyzeBatch(batch, constituentTemplate, attributeTitile);",
+            "correctness": "uncompilable",
+            "translated": "parser.parseArray(array, componentClass, fieldName);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile);",
+            "correctness": "compile_success",
+            "translated": "parser.parseArray(componentClass, array, fieldName);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch(constituentTemplate, batch);",
+            "correctness": "compile_success",
+            "translated": "parser.parseArray(componentClass, array);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch(null, constituentTemplate, batch, attributeTitile);",
+            "correctness": "uncompilable",
+            "translated": "parser.parseArray(null, componentClass, array, fieldName);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, false);",
+            "correctness": "uncompilable",
+            "translated": "parser.parseArray(componentClass, array, fieldName, false);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, true);",
+            "correctness": "uncompilable",
+            "translated": "parser.parseArray(componentClass, array, fieldName, true);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch(constituentTemplate, attributeTitile, batch);",
+            "correctness": "uncompilable",
+            "translated": "parser.parseArray(componentClass, fieldName, array);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch(constantituentTemplate, batch, attributeTitile);",
+            "correctness": "uncompilable",
+            "translated": "parser.parseArray(constantituentTemplate, array, fieldName);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, null);",
+            "correctness": "uncompilable",
+            "translated": "parser.parseArray(componentClass, array, fieldName, null);"
+        },
+        {
+            "patch": "analyzer.analyzeBatch( constituentTemplate, batch, attributeTitile);",
+            "correctness": "compile_success",
+            "translated": "parser.parseArray(componentClass, array, fieldName);"
+        }
+    ]
+}

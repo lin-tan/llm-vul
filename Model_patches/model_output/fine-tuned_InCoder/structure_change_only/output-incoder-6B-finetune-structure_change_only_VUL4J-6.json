@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      int i = 0;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      int i = this.rcount;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      int i = 1;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      i = 0;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      int i = offset;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      int i = this.hashSize;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      int i = this.rcount - 1;\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      this.hashes = new int[this.rcount];\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      this.crc = ZipLong.getValue(data, offset + 16);\n<|endofmask|>",
+        "<|endoftext|>public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n      this.rcount = ZipLong.getValue(data, offset + 8);\n      this.flags = ZipShort.getValue(data, offset + 6);\n      this.format = ZipShort.getValue(data, offset);\n      this.bitlen = ZipShort.getValue(data, offset + 4);\n      int zv2 = ZipShort.getValue(data, offset + 2);\n      this.algId = EncryptionAlgorithm.getAlgorithmByCode(zv2);\n      if (rcount <= 0) {\n          return;\n      }\n      this.hashSize = ZipShort.getValue(data, offset + 14);\n      int zv12 =  ZipShort.getValue(data, offset + 12);\n      this.hashAlg = HashAlgorithm.getAlgorithmByCode(zv12);\n// buggy lines start:\n      int i = 0;\n// buggy lines end\n      while ( i < this.rcount) {\n          i++;\n          int j = 0;\n          while ( j < this.hashSize) {\n              j++;\n          }\n      }\n  }\n// fixed lines:\n      int i = this.hashSize - 1;\n<|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "      int i = 0;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = 0;\n"
+        },
+        {
+            "patch": "      int i = this.rcount;\n",
+            "correctness": "uncompilable",
+            "translated": "      int i = this.rcount;\n"
+        },
+        {
+            "patch": "      int i = 1;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = 1;\n"
+        },
+        {
+            "patch": "      i = 0;\n",
+            "correctness": "uncompilable",
+            "translated": "      i = 0;\n"
+        },
+        {
+            "patch": "      int i = offset;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = offset;\n"
+        },
+        {
+            "patch": "      int i = this.hashSize;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = this.hashSize;\n"
+        },
+        {
+            "patch": "      int i = this.rcount - 1;\n",
+            "correctness": "uncompilable",
+            "translated": "      int i = this.rcount - 1;\n"
+        },
+        {
+            "patch": "      this.hashes = new int[this.rcount];\n",
+            "correctness": "uncompilable",
+            "translated": "      this.hashes = new int[this.rcount];\n"
+        },
+        {
+            "patch": "      this.crc = ZipLong.getValue(data, offset + 16);\n",
+            "correctness": "uncompilable",
+            "translated": "      this.crc = ZipLong.getValue(data, offset + 16);\n"
+        },
+        {
+            "patch": "      int i = this.hashSize - 1;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = this.hashSize - 1;\n"
+        }
+    ]
+}

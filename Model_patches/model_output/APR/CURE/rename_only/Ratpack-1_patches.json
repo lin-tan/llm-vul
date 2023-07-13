@@ -1,0 +1,37 @@
+{
+    "VUL4J-10015-159-160": {
+        "src": "Http CaMeL Headers heading = new Default CaMeL Http CaMeL Headers ( false ) ;",
+        "patches": [
+            {
+                "patch": "if( petitionOrganicStructure != null ) { InetSocketAddress distantReference =( InetSocketAddress ) groove.distantReference( ) ;"
+            },
+            {
+                "patch": "InetSocketAddress distantReference =( InetSocketAddress ) groove.distantReference( ) ;"
+            },
+            {
+                "patch": "InetSocketAddress distantReference = new AssumedReplySender( heading , groove , time , petitionOrganicStructure ) ;"
+            },
+            {
+                "patch": "final InetSocketAddress reference =( InetSocketAddress ) groove.distantReference( ) ;"
+            },
+            {
+                "patch": "if( false ) { throw new Exception( 'Failure: '+ false ) ; }"
+            },
+            {
+                "patch": "if( false ) { throw new Exception( ' + status.toString() + '+ false ) ; }"
+            },
+            {
+                "patch": "if( false ) { throw new Exception( '\\r\\n'+ false ) ; }"
+            },
+            {
+                "patch": "if( false ) { throw new Exception( 'Connection reset by peer'+ false ) ; }"
+            },
+            {
+                "patch": "if( false ) { throw new Exception( ''+ false ) ; }"
+            },
+            {
+                "patch": "if( ! false ) { throw new Exception( 'Failure: ') ; }"
+            }
+        ]
+    }
+}

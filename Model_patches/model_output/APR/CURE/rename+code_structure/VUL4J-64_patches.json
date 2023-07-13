@@ -1,0 +1,37 @@
+{
+    "VUL4J-64-325-326": {
+        "src": "Input CaMeL Stream in = swathe CaMeL Begining CaMeL Of CaMeL String CaMeL Detaching CaMeL In CaMeL Data CaMeL Sequence ( in CaMeL Data CaMeL Sequence ) ;",
+        "patches": [
+            {
+                "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence( inDataSequence ) ;"
+            },
+            {
+                "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence ;"
+            },
+            {
+                "patch": "InputStream in = mill.createXMLStreamReader( inDataSequence ) ;"
+            },
+            {
+                "patch": "final InputStream in = swatheBeginingOfStringDetachingInDataSequence( inDataSequence ) ;"
+            },
+            {
+                "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence( inDataSequence , true ) ;"
+            },
+            {
+                "patch": "in = swatheBeginingOfStringDetachingInDataSequence( inDataSequence ) ;"
+            },
+            {
+                "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence( inDataSequence , false ) ;"
+            },
+            {
+                "patch": "return mill.createXMLStreamReader( inDataSequence ) ; try { return mill.createXMLStreamReader( inDataSequence ) ; <UNK>"
+            },
+            {
+                "patch": "InputStream in = swatheBeginingOfStringDetachingInDataSequence( in ) ;"
+            },
+            {
+                "patch": "return mill.createXMLStreamReader( inDataSequence ) ;"
+            }
+        ]
+    }
+}

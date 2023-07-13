@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-9,5",
+    "output": [
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    producer.setProperty",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n\n\n    producer.setProperty(",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    if (in",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    byte[]",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    try {\n",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    if (inData",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    producer.set",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    if (in",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n\n   \n\n\n    byte[]",
+        "\n\n\n\n\n\n\n   .setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    byte[] data"
+    ],
+    "validation_result": [
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    producer.setProperty",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    factory.setProperty"
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n\n\n    producer.setProperty(",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n\n\n    factory.setProperty("
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    if (in",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    if (in"
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    byte[]",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    byte[]"
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    try {",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    try {"
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    if (inData",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    if (inData"
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    producer.set",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    factory.set"
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n    if (in",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    if (in"
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n\n   \n\n\n    byte[]",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n\n   \n\n\n    byte[]"
+        },
+        {
+            "patch": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inDataSequence);\n    producer.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    byte[] data",
+            "correctness": "uncompilable",
+            "translated": ".setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n   \n\n   \n\n(in);\n}\n\n\n\n\n.createXMLStreamReader(inputStream);\n    factory.setProperty(XMLInputFactory.SUPPORT_DTD, true);\n\n\n\n // //\n //\n //\n\n\n    byte[] data"
+        }
+    ]
+}

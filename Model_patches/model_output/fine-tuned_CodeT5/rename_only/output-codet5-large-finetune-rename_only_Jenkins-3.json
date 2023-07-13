@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>                protected Collection<UIComponent> whole() { return uiComponents.values(); }\n</s></s></s>",
+        "<pad><s>                public Collection<UIComponent> whole() {\n                    return uiComponents;\n                }\n</s>",
+        "<pad><s>                public Collection<UIComponent> whole() { return uiComponents; }\n</s></s></s></s></s>",
+        "<pad><s>                protected Collection<? extends UIComponent> whole() { return uiComponents; }\n</s></s></s></s></s>",
+        "<pad><s>                protected Collection<UIComponent> all() { return uiComponents; }\n</s></s></s></s></s>",
+        "<pad><s>                protected Collection<UIComponent> whole() { return uiComponents; }\n</s></s></s></s></s>",
+        "<pad><s>                return uiComponents;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>                return uiComponents.values();\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "                protected Collection<UIComponent> whole() { return uiComponents.values(); }\n",
+            "correctness": "uncompilable",
+            "translated": "                protected Collection<View> all() { return views.values(); }\n"
+        },
+        {
+            "patch": "                public Collection<UIComponent> whole() {\n                    return uiComponents;\n                }\n",
+            "correctness": "compile_success",
+            "translated": "                public Collection<View> all() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                public Collection<UIComponent> whole() { return uiComponents; }\n",
+            "correctness": "compile_success",
+            "translated": "                public Collection<View> all() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                protected Collection<? extends UIComponent> whole() { return uiComponents; }\n",
+            "correctness": "compile_success",
+            "translated": "                protected Collection<? extends View> all() { return views; }\n"
+        },
+        {
+            "patch": "                protected Collection<UIComponent> all() { return uiComponents; }\n",
+            "correctness": "compile_success",
+            "translated": "                protected Collection<View> all() { return views; }\n"
+        },
+        {
+            "patch": "                protected Collection<UIComponent> whole() { return uiComponents; }\n",
+            "correctness": "compile_success",
+            "translated": "                protected Collection<View> all() { return views; }\n"
+        },
+        {
+            "patch": "                return uiComponents;\n",
+            "correctness": "uncompilable",
+            "translated": "                return views;\n"
+        },
+        {
+            "patch": "                return uiComponents.values();\n",
+            "correctness": "uncompilable",
+            "translated": "                return views.values();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

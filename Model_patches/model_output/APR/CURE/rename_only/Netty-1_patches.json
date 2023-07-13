@@ -1,0 +1,37 @@
+{
+    "VUL4J-1002-731-732": {
+        "src": "if ( z == $STRING$ || Character . is CaMeL Whitespace ( z ) ) {",
+        "patches": [
+            {
+                "patch": "if( z == ' + maxLength + '|| z == ' + maxLength + '|| z == ' + maxLength + '|| z == ' + maxLength + ') {"
+            },
+            {
+                "patch": "if( z == ' bytes.'|| z == ' bytes.'|| z == ' bytes.'|| z == ' bytes.') {"
+            },
+            {
+                "patch": "if( z == 'An HTTP line is larger than '|| z == 'An HTTP line is larger than '|| z == 'An HTTP line is larger than '|| z == 'An HTTP line is larger than ') {"
+            },
+            {
+                "patch": "if( z == 'HTTP header is larger than '|| z == 'HTTP header is larger than '|| z == 'HTTP header is larger than '|| z == 'HTTP header is larger than ') {"
+            },
+            {
+                "patch": "if( z == ':'|| z == ':'|| z == ':'|| z == ':') {"
+            },
+            {
+                "patch": "if( z == ' + maxLength + '|| Character.isWhitespace( z ) ) {"
+            },
+            {
+                "patch": "if( z == ' bytes.'|| Character.isWhitespace( z ) ) {"
+            },
+            {
+                "patch": "if( z == 'An HTTP line is larger than '|| Character.isWhitespace( z ) ) {"
+            },
+            {
+                "patch": "if( z == 'HTTP header is larger than '|| Character.isWhitespace( z ) ) {"
+            },
+            {
+                "patch": "if( z == ':'|| Character.isWhitespace( z ) ) {"
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (examinePath.startsWith(basePath)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (examinePath.equals(basePath.normalize())) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (examinePath.startsWith(basePath.normalize()))\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (examinePath.startsWith(basePath.normalize().normalize())) {\n<|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (basePath.startsWith(examinePath.normalize())) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (examinePath.equals(basePath)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (examinePath.startsWith(basePath.normalize().toString())) {\n<|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (examinePath.startsWith(basePath.toString())) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n    if (basePath.equals(examinePath)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static void examinePathManipulation(@NonNull Path basePath, @NonNull Path examinePath) {\n    Assert.notNull(basePath, \"Parent path must not be null\");\n    Assert.notNull(examinePath, \"Path to check must not be null\");\n// buggy lines start:\n    if (examinePath.startsWith(basePath.normalize())) {\n// buggy lines end\n        return;\n    }\n    throw new ProhibitedException(\"You do not have permission to access \" + examinePath).specifyErrorInformation(examinePath);\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (examinePath.startsWith(basePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.startsWith(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (examinePath.equals(basePath.normalize())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.equals(parentPath.normalize())) {\n"
+        },
+        {
+            "patch": "    if (examinePath.startsWith(basePath.normalize()))\n",
+            "correctness": "uncompilable",
+            "translated": "    if (pathToCheck.startsWith(parentPath.normalize()))\n"
+        },
+        {
+            "patch": "    if (examinePath.startsWith(basePath.normalize().normalize())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.startsWith(parentPath.normalize().normalize())) {\n"
+        },
+        {
+            "patch": "    if (basePath.startsWith(examinePath.normalize())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (parentPath.startsWith(pathToCheck.normalize())) {\n"
+        },
+        {
+            "patch": "    if (examinePath.equals(basePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.equals(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (examinePath.startsWith(basePath.normalize().toString())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.startsWith(parentPath.normalize().toString())) {\n"
+        },
+        {
+            "patch": "    if (examinePath.startsWith(basePath.toString())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.startsWith(parentPath.toString())) {\n"
+        },
+        {
+            "patch": "    if (basePath.equals(examinePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (parentPath.equals(pathToCheck)) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

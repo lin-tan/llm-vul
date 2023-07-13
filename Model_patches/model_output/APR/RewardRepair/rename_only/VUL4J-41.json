@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "try",
+        "if ( targetFile!= null )",
+        "if ( targetFile == null )",
+        "if ( targetFile.exists() )",
+        "if ( targetFile.isDirectory() )",
+        "if ( targetFile == null ) return; try",
+        "try { } catch ( IOException e ) { } try",
+        "if ( targetFile == null ) return;",
+        "try if ( targetFile == null )",
+        "try { } catch ( IOException e )"
+    ],
+    "validation_result": [
+        {
+            "patch": "try",
+            "correctness": "compile_success",
+            "translated": "try"
+        },
+        {
+            "patch": "if ( targetFile!= null )",
+            "correctness": "uncompilable",
+            "translated": "if ( f!= null )"
+        },
+        {
+            "patch": "if ( targetFile == null )",
+            "correctness": "uncompilable",
+            "translated": "if ( f == null )"
+        },
+        {
+            "patch": "if ( targetFile.exists() )",
+            "correctness": "uncompilable",
+            "translated": "if ( f.exists() )"
+        },
+        {
+            "patch": "if ( targetFile.isDirectory() )",
+            "correctness": "uncompilable",
+            "translated": "if ( f.isDirectory() )"
+        },
+        {
+            "patch": "if ( targetFile == null ) return; try",
+            "correctness": "compile_success",
+            "translated": "if ( f == null ) return; try"
+        },
+        {
+            "patch": "try { } catch ( IOException e ) { } try",
+            "correctness": "uncompilable",
+            "translated": "try { } catch ( IOException ex ) { } try"
+        },
+        {
+            "patch": "if ( targetFile == null ) return;",
+            "correctness": "uncompilable",
+            "translated": "if ( f == null ) return;"
+        },
+        {
+            "patch": "try if ( targetFile == null )",
+            "correctness": "uncompilable",
+            "translated": "try if ( f == null )"
+        },
+        {
+            "patch": "try { } catch ( IOException e )",
+            "correctness": "uncompilable",
+            "translated": "try { } catch ( IOException ex )"
+        }
+    ]
+}

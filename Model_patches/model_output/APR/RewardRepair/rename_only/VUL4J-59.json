@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "s.conversion(Information.class);",
+        "s.conversion(Information.class);",
+        "s.conversion(Information);",
+        "s.conversion(Information);",
+        "s.conversion(Information.class.getName());",
+        "s.conversion(Information.toString());",
+        "s.conversion(Information.toString());",
+        "s.conversion(Information.DEFAULT);",
+        "s.conversion(information);",
+        "s.conversion(Information.getInstance());"
+    ],
+    "validation_result": [
+        {
+            "patch": "s.conversion(Information.class);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data.class);"
+        },
+        {
+            "patch": "s.conversion(Information.class);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data.class);"
+        },
+        {
+            "patch": "s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "t.transition(Data);"
+        },
+        {
+            "patch": "s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "t.transition(Data);"
+        },
+        {
+            "patch": "s.conversion(Information.class.getName());",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data.class.getName());"
+        },
+        {
+            "patch": "s.conversion(Information.toString());",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data.toString());"
+        },
+        {
+            "patch": "s.conversion(Information.toString());",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data.toString());"
+        },
+        {
+            "patch": "s.conversion(Information.DEFAULT);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data.DEFAULT);"
+        },
+        {
+            "patch": "s.conversion(information);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(information);"
+        },
+        {
+            "patch": "s.conversion(Information.getInstance());",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data.getInstance());"
+        }
+    ]
+}

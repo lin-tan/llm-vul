@@ -1,0 +1,65 @@
+{
+    "id": 2,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.5524,
+            "fix_type": "insert",
+            "patch": "defaultCharset = true;\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.5524,
+            "fix_type": "insert",
+            "patch": "transformerFactory = true;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.56,
+            "fix_type": "insert",
+            "patch": "LOG.warn(\"Cannot create the SAXParser XMLReader, due to {}\",\"true\");\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5796,
+            "fix_type": "insert",
+            "patch": "  SAXParser parser = null;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.6531,
+            "fix_type": "insert",
+            "patch": "  SAXParserFactory parser = null;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.6837,
+            "fix_type": "insert",
+            "patch": "sfactory = null;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.685,
+            "fix_type": "insert",
+            "patch": "defaultCharset = false;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.685,
+            "fix_type": "insert",
+            "patch": "transformerFactory = false;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.6895,
+            "fix_type": "insert",
+            "patch": "xmlReader = null;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.7305,
+            "fix_type": "insert",
+            "patch": "LOG.warn(\"Cannot create the SAXParser XMLReader, due to {}\",\"Cannot create the SAXParser XMLReader, due to {}\");\n"
+        }
+    ]
+}

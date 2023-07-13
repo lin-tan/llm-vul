@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (!scimUserFromDb.getPrimaryEmail().equals(scimUserFromRequest.getPrimaryEmail())) {",
+        "if (!scimUserFromDb.getEmail().equals(scimUserFromRequest.getEmail())) {",
+        "if (!scimUserFromDb.getFullName().equals(scimUserFromRequest.getFullName())) {",
+        "if (!scimUserFromDb.getUserId().equals(scimUserFromRequest.getUserId())) {",
+        "if (!scimUserFromDb.getUsername().equals(scimUserFromRequest.getUsername())) {",
+        "if (!scimUserFromDb.getName().equals(scimUserFromRequest.getName())) {",
+        "if (!scimUserFromDb.getId().equals(scimUserFromRequest.getId())) {",
+        "if (scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {",
+        "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUsername())) {",
+        "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName().toLowerCase())) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!scimUserFromDb.getPrimaryEmail().equals(scimUserFromRequest.getPrimaryEmail())) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getEmail().equals(scimUserFromRequest.getEmail())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getFullName().equals(scimUserFromRequest.getFullName())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getUserId().equals(scimUserFromRequest.getUserId())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getUsername().equals(scimUserFromRequest.getUsername())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getName().equals(scimUserFromRequest.getName())) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getId().equals(scimUserFromRequest.getId())) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUsername())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName().toLowerCase())) {",
+            "correctness": "test_timeout"
+        }
+    ]
+}

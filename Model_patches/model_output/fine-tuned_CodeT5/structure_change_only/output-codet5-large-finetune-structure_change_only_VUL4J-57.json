@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        if (!step.getWait() && (item instanceof Job)) {\n</s></s>",
+        "<pad><s>        if (!step.getWait() && (item instanceof Job)) {\n</s>",
+        "<pad><s>        if (!step.getWait()) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>        if (!step.getWait() || (item instanceof Job)) {\n</s></s>",
+        "<pad><s>        if (!step.getWait() ||!(item instanceof Job)) {\n</s>",
+        "<pad><s>        if (!step.getWait() || (item instanceof Job)) {\n</s>",
+        "<pad><s>        if (!step.getWait()) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>        if (!(item instanceof Job)) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>        if (!(item instanceof Job)) {\n</s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        if (!step.getWait() && (item instanceof Job)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!step.getWait() && (item instanceof Job)) {\n"
+        },
+        {
+            "patch": "        if (!step.getWait() && (item instanceof Job)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!step.getWait() && (item instanceof Job)) {\n"
+        },
+        {
+            "patch": "        if (!step.getWait()) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!step.getWait()) {\n"
+        },
+        {
+            "patch": "        if (!step.getWait() || (item instanceof Job)) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (!step.getWait() || (item instanceof Job)) {\n"
+        },
+        {
+            "patch": "        if (!step.getWait() ||!(item instanceof Job)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!step.getWait() ||!(item instanceof Job)) {\n"
+        },
+        {
+            "patch": "        if (!step.getWait() || (item instanceof Job)) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (!step.getWait() || (item instanceof Job)) {\n"
+        },
+        {
+            "patch": "        if (!step.getWait()) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!step.getWait()) {\n"
+        },
+        {
+            "patch": "        if (!(item instanceof Job)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!(item instanceof Job)) {\n"
+        },
+        {
+            "patch": "        if (!(item instanceof Job)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!(item instanceof Job)) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

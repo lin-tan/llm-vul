@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    v += (1 << (t - 1));\n</s></s>",
+        "<pad><s>    v = (1 << t) + v;\n</s></s>",
+        "<pad><s>    v += (1 << t);\n</s></s></s></s></s>",
+        "<pad><s>    int vt = (-1 << t) + 1;\n</s>",
+        "<pad><s>    v = (1 << (t - 1));\n</s></s>",
+        "<pad><s>    int vt = (1 << (t - 1));\n</s>",
+        "<pad><s>    v >>>= t;\n</s></s></s></s></s></s></s>",
+        "<pad><s>    v = (1 << t);\n</s></s></s></s></s>",
+        "<pad><s>    v += t;\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    v += (1 << (t - 1));\n",
+            "correctness": "test_success",
+            "translated": "    v += (1 << (t - 1));\n"
+        },
+        {
+            "patch": "    v = (1 << t) + v;\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << t) + v;\n"
+        },
+        {
+            "patch": "    v += (1 << t);\n",
+            "correctness": "test_success",
+            "translated": "    v += (1 << t);\n"
+        },
+        {
+            "patch": "    int vt = (-1 << t) + 1;\n",
+            "correctness": "test_success",
+            "translated": "    int vt = (-1 << t) + 1;\n"
+        },
+        {
+            "patch": "    v = (1 << (t - 1));\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << (t - 1));\n"
+        },
+        {
+            "patch": "    int vt = (1 << (t - 1));\n",
+            "correctness": "test_success",
+            "translated": "    int vt = (1 << (t - 1));\n"
+        },
+        {
+            "patch": "    v >>>= t;\n",
+            "correctness": "test_success",
+            "translated": "    v >>>= t;\n"
+        },
+        {
+            "patch": "    v = (1 << t);\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << t);\n"
+        },
+        {
+            "patch": "    v += t;\n",
+            "correctness": "test_success",
+            "translated": "    v += t;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        }
+    ]
+}

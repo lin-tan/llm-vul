@@ -1,0 +1,12 @@
+[
+  "if((!content.getClass() || !Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches())){",
+  "if(!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()){\n",
+  "if(!content.getClass()){\n",
+  "if((content == null)){\n",
+  "if((content.toString().length() == 0)){\n",
+  "if(((!content.getClass() || !Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) || !Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches())){\n",
+  "if((!content.getClass() || !Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches())){\n",
+  "if((!content.getClass() && !Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches())){",
+  "if((!content.getClass() || !Pattern.compile(getName(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches())){",
+  "if((!content.getClass() || !Pattern.compile(acquireAttributeTitle(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches())){"
+]

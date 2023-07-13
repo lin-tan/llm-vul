@@ -1,0 +1,65 @@
+{
+    "id": 4,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0844,
+            "fix_type": "general",
+            "patch": "for (int i = 0;i < this.rcount;i++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\n}\n}\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.0903,
+            "fix_type": "general",
+            "patch": "for (int i = 0;i < this.rcount;i++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\n}\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1178,
+            "fix_type": "general",
+            "patch": "for (int i = 0;j < this.hashSize;i++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\n}\n}\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.17,
+            "fix_type": "general",
+            "patch": "for (int i = 0;i < this.rcount;i,i++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\nfor (int j = 0;;j++)\n{\nfor (int j = 0;;j++)\n{\nfor (int j = 0;;j++)\n{\nhashSize++;\n}\n}\n}\n}\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.4391,
+            "fix_type": "insert",
+            "patch": "this.centralData = false;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4391,
+            "fix_type": "insert",
+            "patch": "this.headerId = false;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.0953,
+            "fix_type": "general",
+            "patch": "for (int i = 0;i < this.rcount;i++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\nfor (int j = ZipShort.getValue();j < this.hashSize;j++)\n{\n}\n}\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1402,
+            "fix_type": "general",
+            "patch": "for (int i = 0;j < this.hashSize;i++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\nfor (int j = 0;j < this.hashSize;j++)\n{\nfor (int j = ZipShort.getValue(data);j < this.hashSize;j++)\n{\nthis.hashSize;\n}\n}\n}\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.1878,
+            "fix_type": "general",
+            "patch": "for (int i = 0;i < this.rcount;i,i++)\n{\nfor (int j = 0;i < this.hashSize;j,j,j,j,j,j)\n }\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.4431,
+            "fix_type": "insert",
+            "patch": "this.centralData = true;\n"
+        }
+    ]
+}

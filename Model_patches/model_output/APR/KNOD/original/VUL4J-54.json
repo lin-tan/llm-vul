@@ -1,0 +1,65 @@
+{
+    "id": 24,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1102,
+            "fix_type": "general",
+            "patch": "registerConverter(new RobustCollectionConverter(getMapper(),getMapper()),10);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1804,
+            "fix_type": "general",
+            "patch": "registerConverter(new RobustCollectionConverter(getMapper(),getReflectionProvider()));\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2152,
+            "fix_type": "general",
+            "patch": "registerConverter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),10);\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.436,
+            "fix_type": "insert",
+            "patch": "getMapperInjectionPoint();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.436,
+            "fix_type": "insert",
+            "patch": "createDefaultConverter();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1415,
+            "fix_type": "general",
+            "patch": "registerConverter(new RobustCollectionConverter(getMapper(),getMapper(),getMapper()),10);\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2039,
+            "fix_type": "general",
+            "patch": "registerConverter(new RobustCollectionConverter(getMapper(),getReflectionProvider(),10));\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2452,
+            "fix_type": "general",
+            "patch": "registerConverter(new RobustCollectionConverter(getMapper(),getReflectionProvider(),getMapperInjectionPoint()));\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2452,
+            "fix_type": "general",
+            "patch": "registerConverter(new RobustCollectionConverter(getMapper(),getReflectionProvider(),createDefaultConverter()));\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2643,
+            "fix_type": "general",
+            "patch": "registerConverter(new RobustCollectionConverter(getMapper(),getMapper()),null);\n"
+        }
+    ]
+}

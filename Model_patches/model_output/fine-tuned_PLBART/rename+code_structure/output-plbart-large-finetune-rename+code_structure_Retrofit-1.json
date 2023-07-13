@@ -1,0 +1,66 @@
+{
+    "output": [
+        "this.setting = setting.getJAXBContext();",
+        "this.setting = (JAXBContext) setting;",
+        "this.setting = new JAXBContext(setting);",
+        "this.setting = setting.clone();",
+        "this.setting = null;",
+        "this.setting = setting.createJAXBContext();",
+        "this.setting = newJAXBContext(setting);",
+        "this.setting = setting.copy();",
+        "this.setting = setting;",
+        "this.setting = setting.getUnmarshaller();"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.setting = setting.getJAXBContext();",
+            "correctness": "uncompilable",
+            "translated": "this.context = context.getJAXBContext();"
+        },
+        {
+            "patch": "this.setting = (JAXBContext) setting;",
+            "correctness": "compile_success",
+            "translated": "this.context = (JAXBContext) context;"
+        },
+        {
+            "patch": "this.setting = new JAXBContext(setting);",
+            "correctness": "uncompilable",
+            "translated": "this.context = new JAXBContext(context);"
+        },
+        {
+            "patch": "this.setting = setting.clone();",
+            "correctness": "uncompilable",
+            "translated": "this.context = context.clone();"
+        },
+        {
+            "patch": "this.setting = null;",
+            "correctness": "compile_success",
+            "translated": "this.context = null;"
+        },
+        {
+            "patch": "this.setting = setting.createJAXBContext();",
+            "correctness": "uncompilable",
+            "translated": "this.context = context.createJAXBContext();"
+        },
+        {
+            "patch": "this.setting = newJAXBContext(setting);",
+            "correctness": "uncompilable",
+            "translated": "this.context = new JAXBContext(context);"
+        },
+        {
+            "patch": "this.setting = setting.copy();",
+            "correctness": "uncompilable",
+            "translated": "this.context = context.copy();"
+        },
+        {
+            "patch": "this.setting = setting;",
+            "correctness": "compile_success",
+            "translated": "this.context = context;"
+        },
+        {
+            "patch": "this.setting = setting.getUnmarshaller();",
+            "correctness": "uncompilable",
+            "translated": "this.context = context.getUnmarshaller();"
+        }
+    ]
+}

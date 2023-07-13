@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-8,1",
+    "output": [
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n@Override\npublic String decodeFromJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLDecoder.decode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n}\n",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n@Override\npublic String decodeFromJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLDecoder.decode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n}\n",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n@Override\npublic String decodeFromJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLDecoder.decode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n\n}\n",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n@Override\npublic String decodeFromJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLDecoder.decode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n}",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        dataProvider = dataProvider.replace(\"\\\\\", \"\\\\\\\\\");\n        dataProvider = dataProvider.replace(\"\\\"\", \"\\\\\\\"\");\n        dataProvider = dataProvider.replace(\"\\n\", \"\\\\n\");\n        dataProvider = dataProvider.replace(\"\\r\", \"\\\\r\");\n        dataProvider = dataProvider.replace(\"\\b\", \"\\\\b\");\n        dataProvider = dataProvider.replace(\"\\f\", \"\\\\f\");\n        dataProvider = dataProvider.replace(\"\\t\", \"\\\\t\");\n    }\n    return \"\\\"\" + dataProvider + \"\\\"\";\n}\n}\n",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n@Override\npublic String decodeFromJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLDecoder.decode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n}",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        dataProvider = dataProvider.replace(\"\\\\\", \"\\\\\\\\\");\n        dataProvider = dataProvider.replace(\"\\\"\", \"\\\\\\\"\");\n        dataProvider = dataProvider.replace(\"\\n\", \"\\\\n\");\n        dataProvider = dataProvider.replace(\"\\r\", \"\\\\r\");\n        dataProvider = dataProvider.replace(\"\\b\", \"\\\\b\");\n        dataProvider = dataProvider.replace(\"\\f\", \"\\\\f\");\n        dataProvider = dataProvider.replace(\"\\t\", \"\\\\t\");\n    }\n    return \"\\\"\" + dataProvider + \"\\\"\";\n}\n\n}\n",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        dataProvider = dataProvider.replace(\"\\\\\", \"\\\\\\\\\");\n        dataProvider = dataProvider.replace(\"\\\"\", \"\\\\\\\"\");\n        dataProvider = dataProvider.replace(\"\\n\", \"\\\\n\");\n        dataProvider = dataProvider.replace(\"\\r\", \"\\\\r\");\n        dataProvider = dataProvider.replace(\"\\b\", \"\\\\b\");\n        dataProvider = dataProvider.replace(\"\\f\", \"\\\\f\");\n        dataProvider = dataProvider.replace(\"\\t\", \"\\\\t\");\n    }\n    return dataProvider;\n}\n}\n",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n@Override\npublic String decodeFromJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLDecoder.decode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n\n}\n\n",
+        "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        dataProvider = dataProvider.replace(\"\\\\\", \"\\\\\\\\\");\n        dataProvider = dataProvider.replace(\"\\\"\", \"\\\\\\\"\");\n        dataProvider = dataProvider.replace(\"\\n\", \"\\\\n\");\n        dataProvider = dataProvider.replace(\"\\r\", \"\\\\r\");\n        dataProvider = dataProvider.replace(\"\\b\", \"\\\\b\");\n        dataProvider = dataProvider.replace(\"\\f\", \"\\\\f\");\n        dataProvider = dataProvider.replace(\"\\t\", \"\\\\t\");\n    }\n    return \"\\\"\" + dataProvider + \"\\\"\";\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        dataProvider = dataProvider.replace(\"\\\\\", \"\\\\\\\\\");\n        dataProvider = dataProvider.replace(\"\\\"\", \"\\\\\\\"\");\n        dataProvider = dataProvider.replace(\"\\n\", \"\\\\n\");\n        dataProvider = dataProvider.replace(\"\\r\", \"\\\\r\");\n        dataProvider = dataProvider.replace(\"\\b\", \"\\\\b\");\n        dataProvider = dataProvider.replace(\"\\f\", \"\\\\f\");\n        dataProvider = dataProvider.replace(\"\\t\", \"\\\\t\");\n    }\n    return \"\\\"\" + dataProvider + \"\\\"\";\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        dataProvider = dataProvider.replace(\"\\\\\", \"\\\\\\\\\");\n        dataProvider = dataProvider.replace(\"\\\"\", \"\\\\\\\"\");\n        dataProvider = dataProvider.replace(\"\\n\", \"\\\\n\");\n        dataProvider = dataProvider.replace(\"\\r\", \"\\\\r\");\n        dataProvider = dataProvider.replace(\"\\b\", \"\\\\b\");\n        dataProvider = dataProvider.replace(\"\\f\", \"\\\\f\");\n        dataProvider = dataProvider.replace(\"\\t\", \"\\\\t\");\n    }\n    return dataProvider;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override\npublic String encodeForJSString(String dataProvider) {\n    if( dataProvider!= null ){\n        try {\n            return URLEncoder.encode(dataProvider, \"UTF-8\");\n        } catch (UnsupportedEncodingException e) {\n            e.printStackTrace();\n        }\n    }\n    return null;\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

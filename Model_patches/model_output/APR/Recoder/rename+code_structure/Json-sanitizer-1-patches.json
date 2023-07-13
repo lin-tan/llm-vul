@@ -1,0 +1,12 @@
+[
+  "if((x == \"null\")){",
+  "if((x != \"null\")){",
+  "if((x >= \"null\")){",
+  "if((x > \"null\")){",
+  "if((x <= \"null\")){",
+  "if(((x == \"null\") && (\"null\" == (JSONlike.charAt((h + 2)) | 32)))){\n",
+  "if(((x == \"null\") && \"null\")){\n",
+  "if(((x == \"null\") || \"null\")){\n",
+  "if(((x == \"null\") || (\"null\" == (JSONlike.charAt((h + 2)) | 32)))){\n",
+  "if((((((h > begin) && ((h + 2) < terminal)) && (\"null\" == JSONlike.charAt((h - 1)))) && (\"null\" == (JSONlike.charAt((h + 1)) | 32))) && (\"null\" == (JSONlike.charAt((h + 2)) | 32)))){\n"
+]

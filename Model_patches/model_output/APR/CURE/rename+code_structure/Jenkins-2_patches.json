@@ -1,0 +1,37 @@
+{
+    "VUL4J-1005-1478-1490": {
+        "src": "if ( ! ( mandate CaMeL Scheme instanceof Mandate CaMeL Scheme . Unguarded ) && ! ( mandate CaMeL Scheme instanceof Complete CaMeL Dominance CaMeL When CaMeL Logged CaMeL In CaMeL Mandate CaMeL Scheme ) ) { Iterator < Peak CaMeL Degree CaMeL Element > iterator = item CaMeL Values . iterator ( ) ; while ( iterator . has CaMeL Next ( ) ) { Peak CaMeL Degree CaMeL Element element = iterator . next ( ) ; if ( ! element . with CaMeL Authority ( Item . PERUSE ) ) continue ; visible CaMeL Elements . add ( element ) ; } return visible CaMeL Elements ; } return new Array CaMeL List ( item CaMeL Values ) ;",
+        "patches": [
+            {
+                "patch": "public List < PeakDegreeElement > acquireElements( ) { List < PeakDegreeElement > visibleElements = new ArrayList < PeakDegreeElement >( ) ; Collection < PeakDegreeElement > itemValues = elements.values( ) ; if( itemValues.size( ) >0) { itemValues.add( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme ) ) ) ) ) ) ) ) ) )"
+            },
+            {
+                "patch": "synchronized( itemValues ) { if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; } return visibleElements ;"
+            },
+            {
+                "patch": "public List < PeakDegreeElement > acquireElements( ) { List < PeakDegreeElement > visibleElements = new ArrayList < PeakDegreeElement >( ) ; Collection < PeakDegreeElement > itemValues = elements.values( ) ; return itemValues.iterator( ).hasNext( ) ? itemValues.iterator( ) : itemValues.iterator( ).hasNext( ) ? itemValues.iterator( ) : itemValues.iterator( ).hasNext( ) ? itemValues.iterator( ) : itemValues.iterator( ).hasNext( ) : itemValues.iterator( ).hasNext( ) ? itemValues.iterator( ) : itemValues.iterator( ).hasNext( ) : itemValues.next( ) ) ; return visibleElements"
+            },
+            {
+                "patch": "public List < PeakDegreeElement > acquireElements( ) { List < PeakDegreeElement > visibleElements = new ArrayList < PeakDegreeElement >( ) ; Collection < PeakDegreeElement > itemValues = elements.values( ) ; itemValues.add( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( ) ) ) ) ) ) ; if( !( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme( ) ) ) ) ) ) ) { if( !( mandateScheme( mandateScheme( mandateScheme( mandateScheme( mandateScheme"
+            },
+            {
+                "patch": "if( !( itemValues != null ) && !( itemValues.contains( Item.PERUSE ) ) ) continue ; visibleElements.add( itemValues.get( Item.PERUSE ) ) ; if( !( itemValues.contains( Item.PERUSE ) ) ) continue ; if( !( itemValues.contains( Item.PERUSE ) ) ) continue ; visibleElements.add( element ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; return visibleElements ;"
+            },
+            {
+                "patch": "while( itemValues.hasNext( ) ) { if( ! element.withAuthority( Item.PERUSE ) ) continue ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; } return visibleElements ;"
+            },
+            {
+                "patch": "result = new ArrayList( itemValues.size( ) ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; return visibleElements ;"
+            },
+            {
+                "patch": "while( itemValues.hasNext( ) ) { if( ! element.withAuthority( Item.PERUSE ) ) { if( ! element.withAuthority( Item.PERUSE ) ) { continue ; } if( ! element.withAuthority( Item.PERUSE ) ) { continue ; } if( ! element.withAuthority( Item.PERUSE ) ) { continue ; } if( ! element.withAuthority( Item.PERUSE ) ) { continue ; } visibleElements.add( element ) ; } return visibleElements ;"
+            },
+            {
+                "patch": "Iterator iterator = itemValues.iterator( ) ; while( iterator.hasNext( ) ) { Iterator iterator = itemValues.iterator( ) ; while( iterator.hasNext( ) ) { Iterator iterator = itemValues.iterator( ) ; while( iterator.hasNext( ) ) { Iterator iterator =( ArrayList ) iterator.next( ) ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; } } } return visibleElements ;"
+            },
+            {
+                "patch": "if( itemValues.iterator( ).hasNext( ) ) { if( ! element.withAuthority( Item.PERUSE ) ) continue ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; if( ! element.withAuthority( Item.PERUSE ) ) continue ; visibleElements.add( element ) ; visibleElements.add( element ) ; } return visibleElements ;"
+            }
+        ]
+    }
+}

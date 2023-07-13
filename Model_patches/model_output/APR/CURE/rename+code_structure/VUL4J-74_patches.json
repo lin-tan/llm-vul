@@ -1,0 +1,37 @@
+{
+    "VUL4J-74-40-47": {
+        "src": "if ( source == null ) { rnd . next CaMeL Bytes ( new byte [ 1 ] ) ; } else { Input CaMeL Stream input CaMeL Stream = source . get CaMeL Input CaMeL Stream ( ) ; rnd . set CaMeL Seed ( File CaMeL Copy CaMeL Utils . copy CaMeL To CaMeL Byte CaMeL Array ( input CaMeL Stream ) ) ; }",
+        "patches": [
+            {
+                "patch": "if( source == null ) { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ; } else { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ;"
+            },
+            {
+                "patch": "if( source != null ) { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ; } else { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ; }"
+            },
+            {
+                "patch": "if( source == null ) { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ; rnd.setSeed( new byte [1] ) ; } else { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ;"
+            },
+            {
+                "patch": "InputStream inputStream = null ; if( inputStream == null ) { inputStream = source.getInputStream( ) ; } else { inputStream = source.getInputStream( ) ; } InputStream inputStream = source.getInputStream( ) ; InputStream inputStream = source.getInputStream( ) ;"
+            },
+            {
+                "patch": "if( source == null ) { InputStream inputStream = source.getInputStream( ) ; InputStream inputStream = source.getInputStream( ) ; InputStream inputStream = source.getInputStream( ) ; InputStream inputStream = source.getInputStream( ) ;"
+            },
+            {
+                "patch": "if( source == null ) { InputStream inputStream = source.getInputStream( ) ; InputStream inputStream = source.getInputStream( ) ; if( inputStream != null ) { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ;"
+            },
+            {
+                "patch": "InputStream inputStream = source.getInputStream( ) ; if( inputStream != null ) { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ; InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ;"
+            },
+            {
+                "patch": "if( rnd != null ) { InputStream inputStream = source.getInputStream( ) ; InputStream inputStream = source.getInputStream( ) ; if( inputStream != null ) { InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ;"
+            },
+            {
+                "patch": "if( source == null ) { return null ; } else { InputStream inputStream = source.getInputStream( ) ; if( inputStream != null ) { InputStream inputStream = source.getInputStream( ) ; InputStream inputStream = source.getInputStream( ) ;"
+            },
+            {
+                "patch": "InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ; rnd.setSeed( new byte [1] ) ; InputStream inputStream = source.getInputStream( ) ; rnd.setSeed( new byte [1] ) ;"
+            }
+        ]
+    }
+}

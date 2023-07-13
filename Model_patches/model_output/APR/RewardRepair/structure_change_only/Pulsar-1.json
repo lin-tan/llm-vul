@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "((ManagedLedgerImpl) getTopicReference(topicName))",
+        "((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())",
+        "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger())",
+        "(ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())",
+        "((ManagedLedgerImpl) getTopicReference(topicName).getManagedLedger())",
+        "((ManagedLedgerImpl) ((PersistentTopic) getReference(topicName)).getManagedLedger())",
+        "(ManagedLedgerImpl) ((PersistentTopic) getTopicReference(entryId).getManagedLedger())",
+        "(ManagedLedgerImpl) ((PersistentTopic) getReference(topicName)).getManagedLedger())",
+        "(ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName))",
+        "((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).isManagedLedger())"
+    ],
+    "validation_result": [
+        {
+            "patch": "((ManagedLedgerImpl) getTopicReference(topicName))",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "(ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "((ManagedLedgerImpl) getTopicReference(topicName).getManagedLedger())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "((ManagedLedgerImpl) ((PersistentTopic) getReference(topicName)).getManagedLedger())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "(ManagedLedgerImpl) ((PersistentTopic) getTopicReference(entryId).getManagedLedger())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "(ManagedLedgerImpl) ((PersistentTopic) getReference(topicName)).getManagedLedger())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "(ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName))",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).isManagedLedger())",
+            "correctness": "uncompilable"
+        }
+    ]
+}

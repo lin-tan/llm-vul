@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-7,1",
+    "output": [
+        "\n    size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n}\n\n\n\n",
+        "\n    size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n\n\n\n\n}",
+        "\n    size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n\n\n\n\n\n",
+        "\n    size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += s;\n\n\n\n\n}",
+        "\n    size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += s;\n\n\n\n\n\n",
+        "\n    size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n\n\n//\n\n",
+        "\n    size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n\n\n\n\n\n",
+        "\n    size = z;\n,\n    size += z;\n\n    size += s;\n\n    size += z;\n\n    size += z;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n    size += z;\n   \n    size += z;\n\n\n\n}",
+        "\n    size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n\n\n\n\n ",
+        "\n    size = z;\n,\n    size += z;\n\n    size += s;\n\n    size += z;\n\n    size += z;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n    size += z;\n   \n    size += z;\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n}",
+            "correctness": "uncompilable",
+            "translated": "size += t;\n,\n    size += t;\n    size += t;\n    size += v;\n\n    size += t;\n\n    size += v;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n\n   \n    size += t;\n\n\n    size += t;\n}"
+        },
+        {
+            "patch": "size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "size += t;\n,\n    size += t;\n    size += t;\n    size += v;\n\n    size += t;\n\n    size += v;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n\n   \n    size += t;\n\n\n    size += t;\n}"
+        },
+        {
+            "patch": "size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;",
+            "correctness": "uncompilable",
+            "translated": "size += t;\n,\n    size += t;\n    size += t;\n    size += v;\n\n    size += t;\n\n    size += v;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n\n   \n    size += t;\n\n\n    size += t;"
+        },
+        {
+            "patch": "size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += s;\n\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "size += t;\n,\n    size += t;\n    size += t;\n    size += v;\n\n    size += t;\n\n    size += v;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n\n   \n    size += t;\n\n\n    size += v;\n\n\n\n\n}"
+        },
+        {
+            "patch": "size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += s;",
+            "correctness": "uncompilable",
+            "translated": "size += t;\n,\n    size += t;\n    size += t;\n    size += v;\n\n    size += t;\n\n    size += v;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n\n   \n    size += t;\n\n\n    size += v;"
+        },
+        {
+            "patch": "size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;\n\n\n//",
+            "correctness": "uncompilable",
+            "translated": "size += t;\n,\n    size += t;\n    size += t;\n    size += v;\n\n    size += t;\n\n    size += v;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n\n   \n    size += t;\n\n\n    size += t;\n\n\n//"
+        },
+        {
+            "patch": "size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;",
+            "correctness": "uncompilable",
+            "translated": "size += t;\n,\n    size += t;\n    size += t;\n    size += v;\n\n    size += t;\n\n    size += v;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n\n   \n    size += t;\n\n\n    size += t;"
+        },
+        {
+            "patch": "size = z;\n,\n    size += z;\n\n    size += s;\n\n    size += z;\n\n    size += z;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n    size += z;\n   \n    size += z;\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "size = t;\n,\n    size += t;\n\n    size += v;\n\n    size += t;\n\n    size += t;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n    size += t;\n   \n    size += t;\n\n\n\n}"
+        },
+        {
+            "patch": "size += z;\n,\n    size += z;\n    size += z;\n    size += s;\n\n    size += z;\n\n    size += s;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n\n   \n    size += z;\n\n\n    size += z;",
+            "correctness": "uncompilable",
+            "translated": "size += t;\n,\n    size += t;\n    size += t;\n    size += v;\n\n    size += t;\n\n    size += v;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n\n   \n    size += t;\n\n\n    size += t;"
+        },
+        {
+            "patch": "size = z;\n,\n    size += z;\n\n    size += s;\n\n    size += z;\n\n    size += z;\n    size += z;\n\n\n    size += z;\n\n    size += z;\n\n    size += z;\n   \n    size += z;\n}",
+            "correctness": "uncompilable",
+            "translated": "size = t;\n,\n    size += t;\n\n    size += v;\n\n    size += t;\n\n    size += t;\n    size += t;\n\n\n    size += t;\n\n    size += t;\n\n    size += t;\n   \n    size += t;\n\n\n\n}"
+        }
+    ]
+}

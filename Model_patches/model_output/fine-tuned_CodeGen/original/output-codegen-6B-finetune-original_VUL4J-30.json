@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(String.valueOf(value)).matches()) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (!(value instanceof String)) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.DOTALL).matcher(String.valueOf(value)).matches()) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (!(value.getClass().equals(String.class))) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (value.getClass().equals(String.class) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n<|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (value.getClass().equals(String.class) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n<|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher((String) value).matches()) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value.toString()).matches()) {\n<|endoftext|>",
+        "public void validate(Object object) throws ValidationException {\n    String fieldName = getFieldName();\n    Object value = this.getFieldValue(fieldName, object);\n    if (value == null || value.toString().length() == 0) {\n        return;\n    }\n// buggy lines start:\n    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n// buggy lines end\n        addFieldError(fieldName, object);\n    }\n}\n// fixed lines:\n    if (value.getClass().equals(String.class) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches() {\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!(value instanceof String)) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.DOTALL).matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!(value.getClass().equals(String.class))) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (value.getClass().equals(String.class) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (value.getClass().equals(String.class) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher((String) value).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value.toString()).matches()) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (value.getClass().equals(String.class) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches() {\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return Encoder.forJavaScriptSource(dataProvider);",
+        "return encode.forJavaScriptSource(dataProvider);",
+        "return JavaScriptEncode.forJavaScriptSource(dataProvider);",
+        "return encodeJavaScriptSource(dataProvider);",
+        "return JavaScriptEncoder.forJavaScriptSource(dataProvider);",
+        "return Encode.forJavaScriptSource(dataProvider);",
+        "return encodeForJavaScriptSource(dataProvider);",
+        "return Encode.forJavaScript(dataProvider);",
+        "return encode(dataProvider);",
+        "return encodeJavaScript(dataProvider);"
+    ],
+    "validation_result": [
+        {
+            "patch": "return Encoder.forJavaScriptSource(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return Encoder.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "return encode.forJavaScriptSource(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "return JavaScriptEncode.forJavaScriptSource(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return JavaScriptEncode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "return encodeJavaScriptSource(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return encodeJavaScriptSource(source);"
+        },
+        {
+            "patch": "return JavaScriptEncoder.forJavaScriptSource(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return JavaScriptEncoder.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "return Encode.forJavaScriptSource(dataProvider);",
+            "correctness": "compile_success",
+            "translated": "return Encode.forJavaScriptSource(source);"
+        },
+        {
+            "patch": "return encodeForJavaScriptSource(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return encodeForJavaScriptSource(source);"
+        },
+        {
+            "patch": "return Encode.forJavaScript(dataProvider);",
+            "correctness": "compile_success",
+            "translated": "return Encode.forJavaScript(source);"
+        },
+        {
+            "patch": "return encode(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return encode(source);"
+        },
+        {
+            "patch": "return encodeJavaScript(dataProvider);",
+            "correctness": "uncompilable",
+            "translated": "return encodeJavaScript(source);"
+        }
+    ]
+}

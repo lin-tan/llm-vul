@@ -1,0 +1,12 @@
+[
+  "HttpHeaders heading = new DefaultHttpHeaders(true);\n",
+  "HttpHeaders heading = new DefaultHttpHeaders(\"null\");\n",
+  "HttpHeaders heading = new DefaultHttpHeaders(null);\n",
+  "DefaultHttpHeaders heading = new DefaultHttpHeaders(false);\n",
+  "new DefaultHttpHeaders(false);\n",
+  "AssumedPetition heading = new DefaultHttpHeaders(false);\n",
+  "heading = new DefaultHttpHeaders(false);\n",
+  "HttpHeaders heading = new DefaultHttpHeaders(false);\n",
+  "HttpHeaders heading = new DefaultHttpHeaders();\n",
+  "final HttpHeaders heading = new DefaultHttpHeaders(false);\n"
+]

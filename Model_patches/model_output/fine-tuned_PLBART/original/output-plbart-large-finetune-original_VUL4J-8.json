@@ -1,0 +1,56 @@
+{
+    "output": [
+        "out = ZipEncodingHelper.growBufferBy(out, increment);",
+        "out = ZipEncodingHelper.growBufferBy(out, increment, true);",
+        "out = ZipEncodingHelper.growBufferBy(out, increment, false);",
+        "out = ZipEncodingHelper.growBufferBy(out, increment + 1);",
+        "out = ZipEncodingHelper.growBufferBy(out, increment * 2);",
+        "out = ZipEncodingHelper.growBufferBy(out, increment / 2);",
+        "out = zipEncodingHelper.growBufferBy(out, increment);",
+        "out = ZipEncodingHelper.growBufferBy(out, increment * 2);",
+        "ZipEncodingHelper.growBufferBy(out, increment);",
+        "out = out.growBufferBy(increment);"
+    ],
+    "validation_result": [
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment + 1);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment * 2);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment / 2);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "out = zipEncodingHelper.growBufferBy(out, increment);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "out = ZipEncodingHelper.growBufferBy(out, increment * 2);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "ZipEncodingHelper.growBufferBy(out, increment);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "out = out.growBufferBy(increment);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

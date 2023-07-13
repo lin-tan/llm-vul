@@ -1,0 +1,65 @@
+{
+    "id": 45,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.697,
+            "fix_type": "general",
+            "patch": "!HandlerHelper.isPathUnsafe(request.getMethod())"
+        },
+        {
+            "rank": 2,
+            "score": -0.7345,
+            "fix_type": "general",
+            "patch": "!HandlerHelper.isPathUnsafe(name)"
+        },
+        {
+            "rank": 3,
+            "score": -0.7359,
+            "fix_type": "general",
+            "patch": "!HandlerHelper.isPathUnsafe(requestFilename.get())"
+        },
+        {
+            "rank": 4,
+            "score": -0.7359,
+            "fix_type": "general",
+            "patch": "!HandlerHelper.isPathUnsafe(requestFilename.build())"
+        },
+        {
+            "rank": 5,
+            "score": -0.7901,
+            "fix_type": "general",
+            "patch": "!HandlerHelper.isPathUnsafe(value)"
+        },
+        {
+            "rank": 6,
+            "score": -0.7894,
+            "fix_type": "general",
+            "patch": "!HandlerHelper.isPathUnsafe(request.get())"
+        },
+        {
+            "rank": 7,
+            "score": -0.7894,
+            "fix_type": "general",
+            "patch": "!HandlerHelper.isPathUnsafe(request.build())"
+        },
+        {
+            "rank": 8,
+            "score": -0.7786,
+            "fix_type": "general",
+            "patch": "!(devServerStartFuture.get() instanceof List)"
+        },
+        {
+            "rank": 9,
+            "score": -0.7786,
+            "fix_type": "general",
+            "patch": "!(devServerStartFuture.get() instanceof PulsarAdminException)"
+        },
+        {
+            "rank": 10,
+            "score": -0.8609,
+            "fix_type": "general",
+            "patch": "!HandlerHelper.isPathUnsafe(requestFilename.getMethod())"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "if((z == \"null\")){\n",
+  "if(Character.isWhitespace(z)){\n",
+  "if(((z == \"null\") || Character.isWhitespace(z))){",
+  "if(((z >= \"null\") || Character.isWhitespace(z))){",
+  "if((((z == \"null\") || Character.isWhitespace(z)) || Character.isWhitespace(z))){\n",
+  "if(((z <= \"null\") || Character.isWhitespace(z))){",
+  "if(((z == \"null\") || Character.isWhitespace(z))){\n",
+  "if(((z > \"null\") || Character.isWhitespace(z))){",
+  "if(((z == \"null\") && Character.isWhitespace(z))){",
+  "if(((z == \"null\") || Character.isWhitespace(terminalColon))){"
+]

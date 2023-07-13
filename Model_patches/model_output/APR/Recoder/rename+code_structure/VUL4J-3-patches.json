@@ -1,0 +1,12 @@
+[
+  "smill.setNamespaceAware(false);\n",
+  "smill.setNamespaceAware();\n",
+  "smill = interchange.acquireAttribute(Interchange.SAXPARSER_FACTORY, SAXParserFactory);\n",
+  "smill.setNamespaceAware(true);\n",
+  "subscriber = smill.newSAXParser().getXMLReader();\n",
+  "return new SAXSource(subscriber, inDataProvider);",
+  "smill.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true);\n",
+  "smill = SAXParserFactory.newInstance();\n",
+  "LOG.warn(\"null\", p);\n",
+  "smill.setNamespaceAware(this);\n"
+]

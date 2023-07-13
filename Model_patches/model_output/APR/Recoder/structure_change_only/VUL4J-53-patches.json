@@ -1,0 +1,12 @@
+[
+  "final int n = (i - offset);\n",
+  "int n = (i - offset);\n",
+  "int n = (i - field);\n",
+  "int n = (i - c);\n",
+  "long n = (i - offset);\n",
+  "int n = (offset - offset);\n",
+  "int n = (i - i);\n",
+  "int n = (offset - i);\n",
+  "int n = offset;\n",
+  "int n = i;\n"
+]

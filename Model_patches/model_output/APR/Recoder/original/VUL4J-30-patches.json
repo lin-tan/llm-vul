@@ -1,0 +1,12 @@
+[
+  "if((!value.getClass() || !Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches())){",
+  "if(!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()){\n",
+  "if(!value.getClass()){\n",
+  "if((value == null)){\n",
+  "if((value.toString().length() == 0)){\n",
+  "if((!value.getClass() || !Pattern.compile(getName(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches())){",
+  "if((!value.getClass() && !Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches())){",
+  "if(((!value.getClass() || !Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) || !Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches())){\n",
+  "if((!value.getClass() || !Pattern.compile(getFieldName(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches())){",
+  "if((!value.getClass() || !Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches())){\n"
+]

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "for (VertexProctor proctor : VertexProctor.acquireWhole()) z.put(proctor.getClass().getName(), proctor.information(this));",
+        "for (VertexProctor proctor : VertexProctor.acquireWhole(this)) z.put(proctor.getClass().getName(),proctor.information(this));",
+        "for (VertexProctor proctor : VertexProctor.acquireWhole()) { z.put(proctor.getClass().getName(),proctor.information(this)); }",
+        "for (VertexProctor proctor : VertexProctor.acquireWhole(this)) z.put(proctor.getClass().getName(), proctor.information(this));",
+        "for (VertexProctor proctor : VertexProctor.acquireWhole()) z.put(proctor.getClass().getName(),proctor.information(this));",
+        "for (VertexProctor proctor : VertexProctor.acquireWhole()) { z.put(proctor.getClass().getName(), proctor.information(this)); }",
+        "for (VertexProctor proctor : VertexProctor.acquireWhole().iterator()) z.put(proctor.getClass().getName(),proctor.information(this));",
+        "z.put(VertexProctor.class.getName(), VertexProctor.information(this));",
+        "for (VertexProctor proctor : VertexProctor.acquireWhole()) z.put(proctor.getClass().getName(), proctor.information());",
+        "z.put(VertexProctor.class.getName(),VertexProctor.information(this));"
+    ],
+    "validation_result": [
+        {
+            "patch": "for (VertexProctor proctor : VertexProctor.acquireWhole()) z.put(proctor.getClass().getName(), proctor.information(this));",
+            "correctness": "compile_success",
+            "translated": "for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(), monitor.data(this));"
+        },
+        {
+            "patch": "for (VertexProctor proctor : VertexProctor.acquireWhole(this)) z.put(proctor.getClass().getName(),proctor.information(this));",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : NodeMonitor.getAll(this)) r.put(monitor.getClass().getName(),monitor.data(this));"
+        },
+        {
+            "patch": "for (VertexProctor proctor : VertexProctor.acquireWhole()) { z.put(proctor.getClass().getName(),proctor.information(this)); }",
+            "correctness": "compile_success",
+            "translated": "for (NodeMonitor monitor : NodeMonitor.getAll()) { r.put(monitor.getClass().getName(),monitor.data(this)); }"
+        },
+        {
+            "patch": "for (VertexProctor proctor : VertexProctor.acquireWhole(this)) z.put(proctor.getClass().getName(), proctor.information(this));",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : NodeMonitor.getAll(this)) r.put(monitor.getClass().getName(),monitor.data(this));"
+        },
+        {
+            "patch": "for (VertexProctor proctor : VertexProctor.acquireWhole()) z.put(proctor.getClass().getName(),proctor.information(this));",
+            "correctness": "compile_success",
+            "translated": "for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(), monitor.data(this));"
+        },
+        {
+            "patch": "for (VertexProctor proctor : VertexProctor.acquireWhole()) { z.put(proctor.getClass().getName(), proctor.information(this)); }",
+            "correctness": "compile_success",
+            "translated": "for (NodeMonitor monitor : NodeMonitor.getAll()) { r.put(monitor.getClass().getName(),monitor.data(this)); }"
+        },
+        {
+            "patch": "for (VertexProctor proctor : VertexProctor.acquireWhole().iterator()) z.put(proctor.getClass().getName(),proctor.information(this));",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : NodeMonitor.getAll().iterator()) r.put(monitor.getClass().getName(),monitor.data(this));"
+        },
+        {
+            "patch": "z.put(VertexProctor.class.getName(), VertexProctor.information(this));",
+            "correctness": "uncompilable",
+            "translated": "r.put(NodeMonitor.class.getName(), NodeMonitor.data(this));"
+        },
+        {
+            "patch": "for (VertexProctor proctor : VertexProctor.acquireWhole()) z.put(proctor.getClass().getName(), proctor.information());",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : NodeMonitor.getAll()) r.put(monitor.getClass().getName(), monitor.data());"
+        },
+        {
+            "patch": "z.put(VertexProctor.class.getName(),VertexProctor.information(this));",
+            "correctness": "uncompilable",
+            "translated": "r.put(NodeMonitor.class.getName(), NodeMonitor.data(this));"
+        }
+    ]
+}

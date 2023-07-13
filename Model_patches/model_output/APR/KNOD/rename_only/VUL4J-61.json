@@ -1,0 +1,65 @@
+{
+    "id": 27,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1522,
+            "fix_type": "general",
+            "patch": "  DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder();\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.4866,
+            "fix_type": "insert",
+            "patch": "if (archiveCreator == null )return null;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2172,
+            "fix_type": "general",
+            "patch": "  DocumentBuilder archiveCreator = db.newDocumentBuilder();\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2172,
+            "fix_type": "general",
+            "patch": "  DocumentBuilder archiveCreator = log.newDocumentBuilder();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2752,
+            "fix_type": "general",
+            "patch": " final DocumentBuilder archiveCreator = archiveCreatorMill.newDocumentBuilder();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5761,
+            "fix_type": "insert",
+            "patch": "if (archiveCreator == null ){\nthrow new Exception(\"heading\");\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.3849,
+            "fix_type": "general",
+            "patch": "archiveCreator = archiveCreatorMill.newDocumentBuilder();\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.5905,
+            "fix_type": "insert",
+            "patch": "if (archiveCreatorMill == null )return null;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4568,
+            "fix_type": "general",
+            "patch": "  Label archiveCreator = archiveCreatorMill.newDocumentBuilder();\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.4568,
+            "fix_type": "general",
+            "patch": "  NodeResult archiveCreator = archiveCreatorMill.newDocumentBuilder();\n"
+        }
+    ]
+}

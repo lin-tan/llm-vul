@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v >= vt) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v > vt) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v < vt + 1) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v <= vt) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    if (v < vt) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v < vt) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v < vt - 1) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v & vt) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    do {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n// buggy lines start:\n    while (v < vt) {\n// buggy lines end\n        vt = (-1 << t) + 1;\n        v += vt;\n    }\n    return v;\n}\n// fixed lines:\n    while (v < vt && v!= 0) {\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    while (v >= vt) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while (v > vt) {\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    while (v < vt + 1) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while (v <= vt) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (v < vt) {\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    while (v < vt) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    while (v < vt - 1) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    while (v & vt) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    do {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    while (v < vt && v!= 0) {\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

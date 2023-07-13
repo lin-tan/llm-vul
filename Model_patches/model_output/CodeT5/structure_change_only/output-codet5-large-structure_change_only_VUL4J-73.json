@@ -1,0 +1,57 @@
+{
+    "function range": "2,2-8,2",
+    "output": [
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\tpass1 = rawPass;\n\tpass2 = encPass;\n\n\n\n\n\treturn\n\n\n\tpass2 = rawPass;\n\t.\n\n\n;\n\tpass2 =\n\n\n?\n}",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass1 =\n\n\n?\n}",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t(\n\n\n;\n\tpass2 =\n\n\n:\n}",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass1 =\n\n\n? }",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t(\n\n\n;\n\tpass1 =\n\n\n:\n}",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass1 =\n\n\n:\n}",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\tpass1 = rawPass;\n\tpass2 = encPass;\n\n\n\n\n\treturn\n\n\n\tpass2 = rawPass;\n\t\n.\n\n\n;\n\tpass2 =\n\n\n? }",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass2 =\n\n\n? }",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\tpass1 = rawPass;\n\tpass2 = encPass;\n\n\n\n\n\treturn\n\n\n\tpass2 = rawPass;\n\t.\n\n\n;\n\tpass2 =\n\n\n? }",
+        "\n\tString pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass2 =\n\n\n?\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\tpass1 = rawPass;\n\tpass2 = encPass;\n\n\n\n\n\treturn\n\n\n\tpass2 = rawPass;\n\t.\n\n\n;\n\tpass2 =\n\n\n?\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass1 =\n\n\n?\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t(\n\n\n;\n\tpass2 =\n\n\n:\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass1 =\n\n\n? }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t(\n\n\n;\n\tpass1 =\n\n\n:\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass1 =\n\n\n:\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\tpass1 = rawPass;\n\tpass2 = encPass;\n\n\n\n\n\treturn\n\n\n\tpass2 = rawPass;\n\t\n.\n\n\n;\n\tpass2 =\n\n\n? }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass2 =\n\n\n? }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\tpass1 = rawPass;\n\tpass2 = encPass;\n\n\n\n\n\treturn\n\n\n\tpass2 = rawPass;\n\t.\n\n\n;\n\tpass2 =\n\n\n? }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass1 = encPass;\n\tString pass2 = rawPass;\n\t\n\t\n\tString pass1 = rawPass;\n\tString pass2 = encPass;\n\n?\n\n\t&&\n\n\n\t\n\t&&\n\n\n;\n\tpass2 =\n\n\n?\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

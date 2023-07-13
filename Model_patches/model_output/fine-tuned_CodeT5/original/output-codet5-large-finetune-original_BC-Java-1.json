@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    return new BigInteger[]{\n</s></s></s></s></s>",
+        "<pad><s>    return new BigInteger[] {\n</s></s></s></s></s>",
+        "<pad><s>    return new BigInteger[2];\n</s></s></s></s>",
+        "<pad><s>    try {\n        return new BigInteger[]{\n</s>",
+        "<pad><s>    return new BigInteger[s.size()];\n</s>",
+        "<pad><s>    BigInteger[] result = new BigInteger[]{\n</s></s>",
+        "<pad><s>    return new BigInteger[1];\n</s></s></s></s>",
+        "<pad><s>    return new BigInteger[2][]{\n</s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return new BigInteger[]{\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return new BigInteger[] {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return new BigInteger[2];\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    try {\n        return new BigInteger[]{\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return new BigInteger[s.size()];\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    BigInteger[] result = new BigInteger[]{\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return new BigInteger[1];\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return new BigInteger[2][]{\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

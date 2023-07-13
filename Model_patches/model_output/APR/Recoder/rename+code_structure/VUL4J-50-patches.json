@@ -1,0 +1,12 @@
+[
+  "String s2 = ((offSiteControlLocation != null))?offSiteControlLocation:\"null\";\n",
+  "String s2 = ((offSiteControlLocation == null))?offSiteControlLocation:\"null\";\n",
+  "final String s2 = ((offSiteControlLocation != null))?offSiteControlLocation:\"null\";\n",
+  "String s2 = ((followingColumn != null))?offSiteControlLocation:\"null\";\n",
+  "String  = ((offSiteControlLocation != null))?offSiteControlLocation:\"null\";\n",
+  "",
+  "String s2 = ((offSiteControlLocation && null))?offSiteControlLocation:\"null\";\n",
+  "String s2 = ((offSiteControlLocation > null))?offSiteControlLocation:\"null\";\n",
+  "String s2 = ((offSiteControlLocation != null))?offSiteControlLocation:true;\n",
+  "compose(s2);\n"
+]

@@ -1,0 +1,12 @@
+[
+  "xmlInput.setProperty(xmlOutput, Boolean.FALSE);\n",
+  "return;\n",
+  "xmlInput.setProperty(xmlInput, Boolean.FALSE);\n",
+  "xmlInput.setProperty(IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+  "xmlInput.setProperty(textComponentCfgName, Boolean.FALSE);\n",
+  "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, xmlOutput);\n",
+  "xmlInput.setProperty(FALSE, Boolean.FALSE);\n",
+  "xmlInput.initializeManufactories(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+  "xmlInput.setProperty(xgCharacteristics, Boolean.FALSE);\n",
+  "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, xmlInput);\n"
+]

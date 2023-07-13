@@ -1,0 +1,22 @@
+{
+    "method": {
+        "derDecode": "derDecrypt",
+        "fromByteArray": "outOfByteArray",
+        "getValue": "acquireContent",
+        "getObjectAt": "acquireItemAt",
+        "": ""
+    },
+    "variable": {
+        "s": "S",
+        "encoding": "encryption",
+        "": ""
+    },
+    "class": {
+        "ASN1Sequence": "ASN1Succession",
+        "BigInteger": "LargeWholeNumber",
+        "IOException": "IOException",
+        "ASN1Integer": "ASN1WholeNumber",
+        "ASN1Primitive": "ASN1Basic",
+        "": ""
+    }
+}

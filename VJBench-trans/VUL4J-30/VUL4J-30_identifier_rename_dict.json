@@ -1,0 +1,19 @@
+{
+    "method": {
+        "getUrlRegex": "acquireUrlRegularExpression",
+        "addFieldError": "attachAttributeError",
+        "getFieldValue": "acquireAttributeContent",
+        "getFieldName": "acquireAttributeTitle",
+        "validate": "approve"
+    },
+    "variable": {
+        "fieldName": "attributeTitle",
+        "value": "content",
+        "value_class": "content_class",
+        "object": "item",
+        "": ""
+    },
+    "class": {
+        "": ""
+    }
+}

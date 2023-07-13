@@ -1,0 +1,66 @@
+{
+    "output": [
+        "s = s.length() > 0?s.append(\", \"):s;",
+        "s = s.length() > 0?s.append(\", \"):s; s.append(\"sessionId=\");",
+        "s = s.length() > 0?s.append(\", \"):s; s.append(\"sessionId\");",
+        "s = s.length() > 0? s.append(\", \"):s; s.append(\"sessionId=\");",
+        "s = s.length() > 0?s.append(\", \"):s; s.append(sessionIdentification);",
+        "s = s.length() > 0? s.append(\", \"):s;",
+        "s.append(\"sessionId=\"); s.append(sessionIdentification);",
+        "s = s.length() > 0?s.append(', \"):s;",
+        "s.append(\"sessionId=\");",
+        "s.append(\"sessionId\");"
+    ],
+    "validation_result": [
+        {
+            "patch": "s = s.length() > 0?s.append(\", \"):s;",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb;"
+        },
+        {
+            "patch": "s = s.length() > 0?s.append(\", \"):s; s.append(\"sessionId=\");",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb; sb.append(\"sessionId=\");"
+        },
+        {
+            "patch": "s = s.length() > 0?s.append(\", \"):s; s.append(\"sessionId\");",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb; sb.append(\"sessionId\");"
+        },
+        {
+            "patch": "s = s.length() > 0? s.append(\", \"):s; s.append(\"sessionId=\");",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb; sb.append(\"sessionId=\");"
+        },
+        {
+            "patch": "s = s.length() > 0?s.append(\", \"):s; s.append(sessionIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb; sb.append(sessionId);"
+        },
+        {
+            "patch": "s = s.length() > 0? s.append(\", \"):s;",
+            "correctness": "test_timeout",
+            "translated": "sb = sb.length() > 0?sb.append(\", \"):sb;"
+        },
+        {
+            "patch": "s.append(\"sessionId=\"); s.append(sessionIdentification);",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId=\"); sb.append(sessionId);"
+        },
+        {
+            "patch": "s = s.length() > 0?s.append(', \"):s;",
+            "correctness": "uncompilable",
+            "translated": "sb = sb.length() > 0?sb.append(', \"):sb;"
+        },
+        {
+            "patch": "s.append(\"sessionId=\");",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId=\");"
+        },
+        {
+            "patch": "s.append(\"sessionId\");",
+            "correctness": "test_timeout",
+            "translated": "sb.append(\"sessionId\");"
+        }
+    ]
+}

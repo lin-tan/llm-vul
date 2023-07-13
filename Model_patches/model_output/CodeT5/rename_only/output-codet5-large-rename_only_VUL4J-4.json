@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-40,1",
+    "output": [
+        " else {\n        reply = content;\n    } &&\n}",
+        " else {\n        reply = content;\n    } &&",
+        "\n    category = acquireArchiveCategory(); &&",
+        " else {\n        reply = content;\n    } && }",
+        "\n    category = acquireArchiveCategory(); &&\n}",
+        " else {\n        reply = content;\n    }\n &&\n}",
+        "\n &&",
+        "\n &&\n}",
+        "\n     &&",
+        "\n ||"
+    ],
+    "validation_result": [
+        {
+            "patch": "else {\n        reply = content;\n    } &&\n}",
+            "correctness": "uncompilable",
+            "translated": "else {\n        answer = body;\n    } &&\n}"
+        },
+        {
+            "patch": "else {\n        reply = content;\n    } &&",
+            "correctness": "uncompilable",
+            "translated": "else {\n        answer = body;\n    } &&"
+        },
+        {
+            "patch": "category = acquireArchiveCategory(); &&",
+            "correctness": "uncompilable",
+            "translated": "type = getDocumentType(); &&"
+        },
+        {
+            "patch": "else {\n        reply = content;\n    } && }",
+            "correctness": "uncompilable",
+            "translated": "else {\n        answer = body;\n    } &&\n}"
+        },
+        {
+            "patch": "category = acquireArchiveCategory(); &&\n}",
+            "correctness": "uncompilable",
+            "translated": "type = getDocumentType(); &&\n}"
+        },
+        {
+            "patch": "else {\n        reply = content;\n    }\n &&\n}",
+            "correctness": "uncompilable",
+            "translated": "else {\n        answer = body;\n    } &&\n}"
+        },
+        {
+            "patch": "&&",
+            "correctness": "uncompilable",
+            "translated": "&&"
+        },
+        {
+            "patch": "&&\n}",
+            "correctness": "uncompilable",
+            "translated": "&&\n}"
+        },
+        {
+            "patch": "&&",
+            "correctness": "uncompilable",
+            "translated": "&&"
+        },
+        {
+            "patch": "||",
+            "correctness": "uncompilable",
+            "translated": "||"
+        }
+    ]
+}

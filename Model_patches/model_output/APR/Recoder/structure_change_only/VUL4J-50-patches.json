@@ -1,0 +1,12 @@
+[
+  "String s2 = ((remoteAddr != null))?remoteAddr:\"null\";\n",
+  "String s2 = ((remoteAddr == null))?remoteAddr:\"null\";\n",
+  "final String s2 = ((remoteAddr != null))?remoteAddr:\"null\";\n",
+  "String s2 = ((nextColumn != null))?remoteAddr:\"null\";\n",
+  "String  = ((remoteAddr != null))?remoteAddr:\"null\";\n",
+  "String  = (remoteAddr != null);\n",
+  "String s2 = ((remoteAddr && null))?remoteAddr:\"null\";\n",
+  "",
+  "String  = ((remoteAddr != null))?remoteAddr:(remoteAddr != null);\n",
+  "String s2 = ((remoteAddr > null))?remoteAddr:\"null\";\n"
+]

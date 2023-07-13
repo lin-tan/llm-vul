@@ -1,0 +1,66 @@
+{
+    "output": [
+        "sfactory.setNamespaceAware(false);",
+        "sfactory.setNamespaceAware(true, true);",
+        "sfactory.setNamespaceAware(true, false);",
+        "sfactory.setNamespaceAware(true, \"String_Node_Str\");",
+        "xmlReader.setNamespaceAware(true);",
+        "sfactory.setNamespaceAware(true, null);",
+        "if (sfactory!= null) { sfactory.setNamespaceAware(true);",
+        "sfactory.setNamespaceAware(true);",
+        "sfactory.setNamespaceAware(true, new Boolean(true));",
+        "sfactory.setNamespaceAware(true, new Boolean[0]);"
+    ],
+    "validation_result": [
+        {
+            "patch": "sfactory.setNamespaceAware(false);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(false);"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true, true);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, true);"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true, false);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, false);"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true, \"String_Node_Str\");",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, \"String_Node_Str\");"
+        },
+        {
+            "patch": "xmlReader.setNamespaceAware(true);",
+            "correctness": "uncompilable",
+            "translated": "xmlReader.setNamespaceAware(true);"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true, null);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, null);"
+        },
+        {
+            "patch": "if (sfactory!= null) { sfactory.setNamespaceAware(true);",
+            "correctness": "uncompilable",
+            "translated": "if (sfactory!= null) { sfactory.setNamespaceAware(true);"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true);"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true, new Boolean(true));",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, new Boolean(true));"
+        },
+        {
+            "patch": "sfactory.setNamespaceAware(true, new Boolean[0]);",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true, new Boolean[0]);"
+        }
+    ]
+}

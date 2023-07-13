@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {\n     \n     \n\n",
+        "\n    docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {\n     \n     \n\n   ",
+        "\n    DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {\n     \n     \n\n   ",
+        "\n    DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n   \n      public String\n\n   ",
+        "\n    DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n\n    \n         \n         \n      }\n    };\n   \n    {\n     \n     \n\n   ",
+        "\n    DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n\n         \n         \n      }\n    };\n   \n    {\n     \n     \n\n   ",
+        "\n    DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {\n     \n     \n\n   ",
+        "\n    docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {\n     \n     \n\n    doc",
+        "\n    DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {\n     \n\n    doc",
+        "\n    DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n   \n     \n\n    docBuilder"
+    ],
+    "validation_result": [
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n   \n      public String",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n\n    \n         \n         \n      }\n    };\n   \n    {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n\n         \n         \n      }\n    };\n   \n    {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {\n     \n     \n\n    doc",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n    {\n     \n\n    doc",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n    \n   \n    \n    \n    \n         \n         \n      }\n    };\n   \n   \n     \n\n    docBuilder",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        return mutilateTitleScope(resourseAddress);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>        return xssStrainer.whetherReasonableHref(resourseAddress);\n</s></s></s>",
+        "<pad><s>        return URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());\n</s>",
+        "<pad><s>        return xssStrainer.acquireReasonableHref(resourseAddress);\n</s></s></s>",
+        "<pad><s>        return xssStrainer.getReasonableHref(resourseAddress);\n</s></s></s></s>",
+        "<pad><s>        resourseAddress = mutilateTitleScope(resourseAddress);\n</s></s></s></s></s>",
+        "<pad><s>        return acquireReasonableHref(resourseAddress);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        return resourseAddress;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        return mutilateTitleScope(resourseAddress);\n",
+            "correctness": "compile_success",
+            "translated": "           return mangleNamespaces(url);\n"
+        },
+        {
+            "patch": "        return xssStrainer.whetherReasonableHref(resourseAddress);\n",
+            "correctness": "uncompilable",
+            "translated": "           return xssFilter.isValidHref(url);\n"
+        },
+        {
+            "patch": "        return URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());\n",
+            "correctness": "uncompilable",
+            "translated": "        return URLDecoder.decode(url, StandardCharsets.UTF_8.name());\n"
+        },
+        {
+            "patch": "        return xssStrainer.acquireReasonableHref(resourseAddress);\n",
+            "correctness": "uncompilable",
+            "translated": "           return xssFilter.getValidHref(url);\n"
+        },
+        {
+            "patch": "        return xssStrainer.getReasonableHref(resourseAddress);\n",
+            "correctness": "uncompilable",
+            "translated": "        return xssFilter.getReasonableHref(url);\n"
+        },
+        {
+            "patch": "        resourseAddress = mutilateTitleScope(resourseAddress);\n",
+            "correctness": "uncompilable",
+            "translated": "           url = mangleNamespaces(url);\n"
+        },
+        {
+            "patch": "        return acquireReasonableHref(resourseAddress);\n",
+            "correctness": "compile_success",
+            "translated": "           return getValidHref(url);\n"
+        },
+        {
+            "patch": "        return resourseAddress;\n",
+            "correctness": "compile_success",
+            "translated": "           return url;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

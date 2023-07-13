@@ -1,0 +1,56 @@
+{
+    "output": [
+        "XMLStreamReader reader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return reader;",
+        "return factory.createXMLStreamReader(inputStream);",
+        "XMLStreamReader xmlStreamReader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return xmlStreamReader;",
+        "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, \"String_Node_Str\"));",
+        "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));",
+        "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, false));",
+        "XMLStreamReader xmlReader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return xmlReader;",
+        "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, null));",
+        "return factory.createXMLStreamReader(new ByteArrayInputStream(wrapPrefixRemovingInputStream(inputStream)));",
+        "return factory.createXMLStreamReader(wrapRemovingInputStream(inputStream));"
+    ],
+    "validation_result": [
+        {
+            "patch": "XMLStreamReader reader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return reader;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return factory.createXMLStreamReader(inputStream);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "XMLStreamReader xmlStreamReader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return xmlStreamReader;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, \"String_Node_Str\"));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, false));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "XMLStreamReader xmlReader = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return xmlReader;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, null));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory.createXMLStreamReader(new ByteArrayInputStream(wrapPrefixRemovingInputStream(inputStream)));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory.createXMLStreamReader(wrapRemovingInputStream(inputStream));",
+            "correctness": "uncompilable"
+        }
+    ]
+}

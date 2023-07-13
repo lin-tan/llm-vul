@@ -1,0 +1,12 @@
+[
+  "",
+  "adjustPresentUseConsent(new UseConsent(lexiconConsent));\n",
+  "adjustPresentUseConsent(new UseConsent(passwordByteArray));\n",
+  "formalizePerm(new UseConsent(lexiconConsent));\n",
+  "formalizePerm(cipher, lexiconConsent, cipherDescriptiveData);\n",
+  "cipherUniqueIdentifier = calculateCipheredUniqueIdentifier(passwordByteArray, proprietorUniqueIdentifier, exploiterUniqueIdentifier, pc, ec, lexiconConsent, fileIdentifierByte, lexiconAlteration, lexiconSize, cipherDescriptiveData, false);\n",
+  "calculateWatchword = acquireExploiterWatchword(passwordByteArray, proprietorUniqueIdentifier, lexiconAlteration, lexiconSize);\n",
+  "calculateWatchword = passwordByteArray;\n",
+  "adjustPresentUseConsent(new UseConsent(lexiconConsent), false);\n",
+  "return;\n"
+]

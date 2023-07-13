@@ -1,0 +1,65 @@
+{
+    "id": 19,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2228,
+            "fix_type": "general",
+            "patch": "NOT_ENCODE_COLLECTION.contains(a)"
+        },
+        {
+            "rank": 2,
+            "score": -0.2981,
+            "fix_type": "insert",
+            "patch": "if (byteArray == null )return null;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3037,
+            "fix_type": "general",
+            "patch": "Set.contains(a)"
+        },
+        {
+            "rank": 4,
+            "score": -0.3112,
+            "fix_type": "general",
+            "patch": "NOT_ENCODE_COLLECTION.isOctalDigit(a)"
+        },
+        {
+            "rank": 5,
+            "score": -0.3112,
+            "fix_type": "general",
+            "patch": "NOT_ENCODE_COLLECTION.isHexDigit(a)"
+        },
+        {
+            "rank": 6,
+            "score": -0.3868,
+            "fix_type": "insert",
+            "patch": "if (byteArray == null )return charString;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4619,
+            "fix_type": "insert",
+            "patch": "if (charString == null )return null;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4801,
+            "fix_type": "insert",
+            "patch": "if (byteArray == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4896,
+            "fix_type": "general",
+            "patch": "NOT_ENCODE_COLLECTION.contains(a) && hex"
+        },
+        {
+            "rank": 10,
+            "score": -0.4896,
+            "fix_type": "general",
+            "patch": "NOT_ENCODE_COLLECTION.contains(a) && ALPHA_NUMERIC_STR"
+        }
+    ]
+}

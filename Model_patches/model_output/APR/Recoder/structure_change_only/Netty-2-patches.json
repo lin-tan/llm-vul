@@ -1,0 +1,12 @@
+[
+  "break;\n",
+  "return;\n",
+  "nameEnd++;\n",
+  "reset();\n",
+  "resetNow();\n",
+  "colonEnd = nameEnd;\n",
+  "colonEnd++;\n",
+  "valueStart = findNonWhitespace(sb, colonEnd);\n",
+  "name = sb.subStringUnsafe(nameStart, nameEnd);\n",
+  "valueEnd = findEndOfString(sb);\n"
+]

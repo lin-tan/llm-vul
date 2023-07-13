@@ -1,0 +1,66 @@
+{
+    "output": [
+        "s.conversion(UnquotedPropertyValue);",
+        "s.releaseLabelUndecided();",
+        "s.conversion(Information, false);",
+        "s.conversion(Information, true);",
+        "s.conversion(Information, this);",
+        "s.conversion(Information);",
+        "s.conversion(Unknown);",
+        "s.conversion(Information, null);",
+        "s.conversion(Null);",
+        "s.conversion(null);"
+    ],
+    "validation_result": [
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);",
+            "correctness": "compile_success",
+            "translated": "t.transition(AttributeValue_unquoted);"
+        },
+        {
+            "patch": "s.releaseLabelUndecided();",
+            "correctness": "compile_success",
+            "translated": "t.emitTagPending();"
+        },
+        {
+            "patch": "s.conversion(Information, false);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data, false);"
+        },
+        {
+            "patch": "s.conversion(Information, true);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data, true);"
+        },
+        {
+            "patch": "s.conversion(Information, this);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data, this);"
+        },
+        {
+            "patch": "s.conversion(Information);",
+            "correctness": "compile_success",
+            "translated": "t.transition(Data);"
+        },
+        {
+            "patch": "s.conversion(Unknown);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Unknown);"
+        },
+        {
+            "patch": "s.conversion(Information, null);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data, null);"
+        },
+        {
+            "patch": "s.conversion(Null);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Null);"
+        },
+        {
+            "patch": "s.conversion(null);",
+            "correctness": "compile_success",
+            "translated": "t.transition(null);"
+        }
+    ]
+}

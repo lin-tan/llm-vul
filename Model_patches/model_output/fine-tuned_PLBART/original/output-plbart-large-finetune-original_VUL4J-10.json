@@ -1,0 +1,56 @@
+{
+    "output": [
+        "OutputStream output = null;",
+        "OutputStream output = getOutputStream(false);",
+        "OutputStream output = getOutputStream(true);",
+        "OutputStream output = getOutputStream(in);",
+        "OutputStream output = getOutput();",
+        "final OutputStream output = getOutputStream();",
+        "OutputStream output = new ByteArrayOutputStream();",
+        "OutputStream output = outputStream;",
+        "OutputStream output = getOutputStream(null);",
+        "OutputStream output = out;"
+    ],
+    "validation_result": [
+        {
+            "patch": "OutputStream output = null;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(in);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = getOutput();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "final OutputStream output = getOutputStream();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "OutputStream output = new ByteArrayOutputStream();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = outputStream;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = getOutputStream(null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "OutputStream output = out;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

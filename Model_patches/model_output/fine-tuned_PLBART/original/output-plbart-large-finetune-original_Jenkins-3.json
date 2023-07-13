@@ -1,0 +1,56 @@
+{
+    "output": [
+        "protected Collection<View> all() { return getViews(); }",
+        "protected Collection<View> all() { return views.values();",
+        "protected Collection<View> all() { return views; }",
+        "protected Collection<View> all();",
+        "}; return super.makeSearchIndex();",
+        "}",
+        "}); }",
+        "return views;",
+        "} }); }",
+        "});"
+    ],
+    "validation_result": [
+        {
+            "patch": "protected Collection<View> all() { return getViews(); }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views.values();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "protected Collection<View> all() { return views; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected Collection<View> all();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}; return super.makeSearchIndex();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return views;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} }); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "});",
+            "correctness": "uncompilable"
+        }
+    ]
+}

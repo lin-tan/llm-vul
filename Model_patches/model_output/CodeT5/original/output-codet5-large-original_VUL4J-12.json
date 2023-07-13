@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    while (v < vt) {\n",
+        "\n    while (vt > 0) {\n",
+        "\n    while (v < vt) {\n }",
+        "\n    while (vt!= 0) {\n",
+        "\n    while (vt > 0) {\n }",
+        "\n    while (vt!= 0) {\n }",
+        "\n    if (v < vt) {\n",
+        "\n    if (v < vt) {\n }",
+        "\n    while (vt == 0) {\n",
+        "\n    while (v < vt) {\n        t--;"
+    ],
+    "validation_result": [
+        {
+            "patch": "while (v < vt) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "while (vt > 0) {",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "while (v < vt) {\n }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "while (vt!= 0) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "while (vt > 0) {\n }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "while (vt!= 0) {\n }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (v < vt) {",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (v < vt) {\n }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "while (vt == 0) {",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "while (v < vt) {\n        t--;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

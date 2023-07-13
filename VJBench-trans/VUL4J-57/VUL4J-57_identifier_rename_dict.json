@@ -1,0 +1,53 @@
+{
+    "method": {
+        "getQuietPeriod": "acquireLullTimePeriod",
+        "getJob": "acquireOccupation",
+        "completeDefaultParameters": "finishPrimaryParameter",
+        "asJob": "arsenicOccupation",
+        "start": "beginning",
+        "getWait": "acquireDelay",
+        "isPropagate": "beSpread",
+        "getParameters": "acquireParameter",
+        "getContext": "acquireLinguisticContext",
+        "onSuccess": "alongAchiever"
+    },
+    "variable": {
+        "item": "point",
+        "getQuietPeriod": "acquireLullTimePeriod",
+        "scheduleResult": "agendaConsequence",
+        "e": "v",
+        "f": "d",
+        "listener": "hearer",
+        "project": "scheduledJob",
+        "node": "knob",
+        "quietPeriod": "lullTimePeriod",
+        "task": "undertaking",
+        "context": "linguisticContext",
+        "invokingRun": "raiseTally",
+        "step": "measure",
+        "job": "occupation",
+        "actions": "action",
+        "parameters": "parameter",
+        "": ""
+    },
+    "class": {
+        "Action": "Activity",
+        "StepContext": "MeasureCircumstance",
+        "ScheduleResult": "AgendaConsequence",
+        "Describable": "Describable",
+        "ParameterizedJobMixIn.ParameterizedJob": "OccupationBlendOccupation",
+        "ModelHyperlinkNote": "TheoreticalAccountShortLetter",
+        "NoSuchMethodException": "NoExclusion",
+        "ParameterizedJobMixIn": "OccupationBlendIn",
+        "Item": "Point",
+        "Cause.UpstreamCause": "Reason",
+        "QueueTaskFuture": "WaitingLineUndertakingHereafter",
+        "BuildTriggerAction": "PhysiqueInductionActivity",
+        "CauseAction": "ReasonActivity",
+        "Job": "Occupation",
+        "ParameterValue": "ParametricQuantityPrize",
+        "ParametersAction": "ParameterActivity",
+        "Jenkins": "Jenkins",
+        "": ""
+    }
+}

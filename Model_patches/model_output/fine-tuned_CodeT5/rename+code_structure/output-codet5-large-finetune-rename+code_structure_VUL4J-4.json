@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        reply = (reply == null)? content : new InputSource(reply);\n</s>",
+        "<pad><s>        if (reply!= null)\n            reply = new InputSource(reply);\n</s>",
+        "<pad><s>        assert (reply!= null);\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        reply = null;\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        checkReply(reply, interchange, content);\n</s></s></s></s></s></s>",
+        "<pad><s>        reply = new InputSource(reply);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        checkReply(reply, interchange);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>        assert (reply == null);\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        checkReply(reply);\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        reply = (reply == null)? content : new InputSource(reply);\n",
+            "correctness": "uncompilable",
+            "translated": "        answer = (answer == null)? body : new InputSource(answer);\n"
+        },
+        {
+            "patch": "        if (reply!= null)\n            reply = new InputSource(reply);\n",
+            "correctness": "uncompilable",
+            "translated": "        if (answer!= null)\n            answer = new InputSource(answer);\n"
+        },
+        {
+            "patch": "        assert (reply!= null);\n",
+            "correctness": "test_timeout",
+            "translated": "        assert (answer!= null);\n"
+        },
+        {
+            "patch": "        reply = null;\n",
+            "correctness": "test_timeout",
+            "translated": "        answer = null;\n"
+        },
+        {
+            "patch": "        checkReply(reply, interchange, content);\n",
+            "correctness": "uncompilable",
+            "translated": "        checkReply(answer, exchange, body);\n"
+        },
+        {
+            "patch": "        reply = new InputSource(reply);\n",
+            "correctness": "uncompilable",
+            "translated": "        answer = new InputSource(answer);\n"
+        },
+        {
+            "patch": "        checkReply(reply, interchange);\n",
+            "correctness": "uncompilable",
+            "translated": "        checkReply(answer, exchange);\n"
+        },
+        {
+            "patch": "        assert (reply == null);\n",
+            "correctness": "test_timeout",
+            "translated": "        assert (answer == null);\n"
+        },
+        {
+            "patch": "        checkReply(reply);\n",
+            "correctness": "uncompilable",
+            "translated": "        checkReply(answer);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        }
+    ]
+}

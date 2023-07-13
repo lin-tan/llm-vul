@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return Encode.forJavaScriptSource(dataProvider);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : JavaScriptEncode.forJavaScriptSource(dataProvider);\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider!= null? Encode.forJavaScriptSource(dataProvider) : null;\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encoding.forJavaScriptSource(dataProvider);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider).toString();\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : JavaScriptStringEncoding.encode(dataProvider);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, true);\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, null);\n<|endofmask|>",
+        "<|endoftext|>@Override\npublic String JavaScriptStringEncoding(String dataProvider) {\n// buggy lines start:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n// buggy lines end\n}\n// fixed lines:\n    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, false);\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return Encode.forJavaScriptSource(dataProvider);\n",
+            "correctness": "compile_success",
+            "translated": "    return Encode.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "    return dataProvider;\n",
+            "correctness": "compile_success",
+            "translated": "    return source;\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : JavaScriptEncode.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : JavaScriptEncode.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "    return dataProvider!= null? Encode.forJavaScriptSource(dataProvider) : null;\n",
+            "correctness": "compile_success",
+            "translated": "    return source!= null? Encode.forJavaScriptSource(source) : null;\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encoding.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encoding.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider).toString();\n",
+            "correctness": "compile_success",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source).toString();\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : JavaScriptStringEncoding.encode(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : encodeForJSString.encode(source);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, true);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source, true);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, null);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source, null);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, false);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source, false);\n"
+        }
+    ]
+}

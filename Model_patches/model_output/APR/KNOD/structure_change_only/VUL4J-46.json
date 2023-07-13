@@ -1,0 +1,65 @@
+{
+    "id": 23,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -1.404,
+            "fix_type": "insert",
+            "patch": "return null;\n"
+        },
+        {
+            "rank": 2,
+            "score": -2.87,
+            "fix_type": "insert",
+            "patch": "break;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.8735,
+            "fix_type": "general",
+            "patch": "  String xmlIn = XMLInputFactory.newInstance();\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.8973,
+            "fix_type": "general",
+            "patch": "XMLInputFactory.newInstance(XMLInputFactory.newInstance());\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.9249,
+            "fix_type": "general",
+            "patch": "XMLInputFactory.get(XMLInputFactory.newInstance());\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.9249,
+            "fix_type": "general",
+            "patch": "XMLInputFactory.getInstance(XMLInputFactory.newInstance());\n"
+        },
+        {
+            "rank": 7,
+            "score": -1.1338,
+            "fix_type": "general",
+            "patch": "_initFactories(XMLInputFactory.newInstance());\n"
+        },
+        {
+            "rank": 8,
+            "score": -1.1753,
+            "fix_type": "general",
+            "patch": "XMLInputFactory.newInstance();\n"
+        },
+        {
+            "rank": 9,
+            "score": -1.1781,
+            "fix_type": "general",
+            "patch": "xmlIn.newInstance();\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.9479,
+            "fix_type": "general",
+            "patch": "i = XMLInputFactory.getInstance();\n"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "String resourseAddressUnescaped = URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());\n",
+  "String resourseAddressUnescaped = URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.getName());\n",
+  "String resourseAddressUnescaped = URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.substring());\n",
+  "final String resourseAddressUnescaped = URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());\n",
+  "String resourseAddressUnescaped = URLDecoder.decode(StandardCharsets.UTF_8.name(), resourseAddress);\n",
+  "String resourseAddressUnescaped = URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.replaceAll());\n",
+  "URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());\n",
+  "return encodeResourseAddress;",
+  "return \"null\";",
+  "String resourseAddressUnescaped = URLDecoder.decode(StandardCharsets.UTF_8.name());\n"
+]

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n</s></s></s>",
+        "<pad><s>    List<TopLevelItem> viewableItems = new ArrayList<>(items.values());\n</s></s>",
+        "<pad><s>    return new ArrayList<TopLevelItem>(items.values());\n</s></s></s></s></s></s></s>",
+        "<pad><s>    List<TopLevelItem> items = new ArrayList<TopLevelItem>(items.values());\n</s>",
+        "<pad><s>    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n</s></s></s></s></s>",
+        "<pad><s>    return new ArrayList<>(items.values());\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return items.values();\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return items;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    List<TopLevelItem> viewableItems = new ArrayList<>(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return new ArrayList<TopLevelItem>(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    List<TopLevelItem> items = new ArrayList<TopLevelItem>(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    return new ArrayList<>(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return items.values();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return items;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

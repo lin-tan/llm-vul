@@ -1,0 +1,37 @@
+{
+    "VUL4J-64-325-326": {
+        "src": "Input CaMeL Stream in = wrap CaMeL Prefix CaMeL Removing CaMeL Input CaMeL Stream ( input CaMeL Stream ) ;",
+        "patches": [
+            {
+                "patch": "InputStream in = wrapPrefixRemovingInputStream( inputStream ) ;"
+            },
+            {
+                "patch": "InputStream in = wrapPrefixRemovingInputStream( inputStream ) ; return factory.createXMLStreamReader( in ) ;"
+            },
+            {
+                "patch": "final InputStream in = wrapPrefixRemovingInputStream( inputStream ) ;"
+            },
+            {
+                "patch": "InputStream in = wrapPrefixRemovingInputStream( inputStream ) ; return factory.createXMLStreamReader( in ) ; }"
+            },
+            {
+                "patch": "InputStream in = wrapPrefixRemovingInputStream( inputStream , inputStream ) ;"
+            },
+            {
+                "patch": "in = wrapPrefixRemovingInputStream( inputStream ) ;"
+            },
+            {
+                "patch": "InputStream in = wrapPrefixRemovingInputStream( inputStream , true ) ;"
+            },
+            {
+                "patch": "InputStream in = inputStream.getInputStream( ) ; if( in == null ) return null ;"
+            },
+            {
+                "patch": "wrapPrefixRemovingInputStream( inputStream ) ;"
+            },
+            {
+                "patch": "InputStream in = wrapPrefixRemovingInputStream( inputStream ) ; if( in == null )"
+            }
+        ]
+    }
+}

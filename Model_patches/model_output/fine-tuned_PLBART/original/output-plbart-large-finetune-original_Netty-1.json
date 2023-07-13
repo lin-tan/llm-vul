@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (ch == ':' || Character.isWhitespace(ch)) {",
+        "if (ch == ':' ||!Character.isWhitespace(ch)) {",
+        "if (ch == ':' && Character.isWhitespace(ch)) {",
+        "if (ch == ':' || isWhitespace(ch)) {",
+        "if (ch == ':' || Character.isWhitespace(ch))",
+        "if (ch == ':' || Character.isISOControl(ch)) {",
+        "if (ch == ':' || Character.isSpaceChar(ch)) {",
+        "if (ch == ':' || ch == '\\0') {",
+        "if (!Character.isWhitespace(ch)) {",
+        "if (isWhitespace(ch)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (ch == ':' || Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch == ':' ||!Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch == ':' && Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch == ':' || isWhitespace(ch)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':' || Character.isWhitespace(ch))",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':' || Character.isISOControl(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch == ':' || Character.isSpaceChar(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (ch == ':' || ch == '\\0') {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!Character.isWhitespace(ch)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (isWhitespace(ch)) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

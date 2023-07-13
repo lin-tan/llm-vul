@@ -1,0 +1,37 @@
+{
+    "VUL4J-12-403-404": {
+        "src": "while ( n < no ) {",
+        "patches": [
+            {
+                "patch": "while( n < no ) { no =( -1<< o )"
+            },
+            {
+                "patch": "while( n < no ) {"
+            },
+            {
+                "patch": "while(( n < no ) &&( n < no ) )"
+            },
+            {
+                "patch": "while( n < no ) { no = -1;"
+            },
+            {
+                "patch": "while(( n < no ) &&( n < no ) ) {"
+            },
+            {
+                "patch": "while( n <= no ) {"
+            },
+            {
+                "patch": "while( n != no ) {"
+            },
+            {
+                "patch": "while( no < no ) {"
+            },
+            {
+                "patch": "while( n < no ) { while( n < no )"
+            },
+            {
+                "patch": "while( n < no ) { no =( -1) +1;"
+            }
+        ]
+    }
+}

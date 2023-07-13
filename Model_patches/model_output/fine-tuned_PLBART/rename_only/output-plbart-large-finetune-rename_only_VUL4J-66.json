@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return true;",
+        "return false;",
+        "throw new UnsupportedOperationException();",
+        "return null;",
+        "return;",
+        "throw new IllegalStateException();",
+        "throw new IllegalArgumentException();",
+        "break;",
+        "continue;",
+        "return m;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return true;",
+            "correctness": "compile_success",
+            "translated": "return true;"
+        },
+        {
+            "patch": "return false;",
+            "correctness": "compile_success",
+            "translated": "return false;"
+        },
+        {
+            "patch": "throw new UnsupportedOperationException();",
+            "correctness": "compile_success",
+            "translated": "throw new UnsupportedOperationException();"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "uncompilable",
+            "translated": "return null;"
+        },
+        {
+            "patch": "return;",
+            "correctness": "uncompilable",
+            "translated": "return;"
+        },
+        {
+            "patch": "throw new IllegalStateException();",
+            "correctness": "compile_success",
+            "translated": "throw new IllegalStateException();"
+        },
+        {
+            "patch": "throw new IllegalArgumentException();",
+            "correctness": "compile_success",
+            "translated": "throw new IllegalArgumentException();"
+        },
+        {
+            "patch": "break;",
+            "correctness": "compile_success",
+            "translated": "break;"
+        },
+        {
+            "patch": "continue;",
+            "correctness": "compile_success",
+            "translated": "continue;"
+        },
+        {
+            "patch": "return m;",
+            "correctness": "uncompilable",
+            "translated": "return i;"
+        }
+    ]
+}

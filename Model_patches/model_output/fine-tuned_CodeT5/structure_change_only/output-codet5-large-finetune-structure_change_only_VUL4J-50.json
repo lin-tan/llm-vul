@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\twriteDirectly(remoteAddr);\n</s></s>",
+        "<pad><s>\twrite(remoteAddr);\n</s></s></s></s>",
+        "<pad><s>\twrite(session.getRemoteAddr());\n</s>",
+        "<pad><s>\twrite(s2);\n</s></s></s></s>",
+        "<pad><s>\twrite(nextColumnAlignRight);\n</s></s>",
+        "<pad><s>\twriteRemoteAddr(remoteAddr);\n</s></s>",
+        "<pad><s>\twriteAddr(remoteAddr);\n</s></s></s>",
+        "<pad><s>\twrite(s1);\n</s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\twriteDirectly(remoteAddr);\n",
+            "correctness": "compile_success",
+            "translated": "\twriteDirectly(remoteAddr);\n"
+        },
+        {
+            "patch": "\twrite(remoteAddr);\n",
+            "correctness": "compile_success",
+            "translated": "\twrite(remoteAddr);\n"
+        },
+        {
+            "patch": "\twrite(session.getRemoteAddr());\n",
+            "correctness": "compile_success",
+            "translated": "\twrite(session.getRemoteAddr());\n"
+        },
+        {
+            "patch": "\twrite(s2);\n",
+            "correctness": "uncompilable",
+            "translated": "\twrite(s2);\n"
+        },
+        {
+            "patch": "\twrite(nextColumnAlignRight);\n",
+            "correctness": "test_success",
+            "translated": "\twrite(nextColumnAlignRight);\n"
+        },
+        {
+            "patch": "\twriteRemoteAddr(remoteAddr);\n",
+            "correctness": "uncompilable",
+            "translated": "\twriteRemoteAddr(remoteAddr);\n"
+        },
+        {
+            "patch": "\twriteAddr(remoteAddr);\n",
+            "correctness": "uncompilable",
+            "translated": "\twriteAddr(remoteAddr);\n"
+        },
+        {
+            "patch": "\twrite(s1);\n",
+            "correctness": "test_success",
+            "translated": "\twrite(s1);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

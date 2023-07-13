@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n\n       \n       \n       \n    }\n",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n        if (!\n\n       \n       \n       \n    }\n",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        //\n\n       \n\n\n       \n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n        }\n        if (!\n\n       \n       \n       \n\n   ",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists())\n            throw new IOException(\"failed to create file \" + f);\n       \n\n       \n\n\n       \n       \n\n\n\n       \n\n\n\n        if (!\n            );\n        }\n        if (!\n\n       \n       \n       \n\n   ",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        //\n\n       \n\n\n       \n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n        if (!\n            +\n\n       \n       \n       \n    }\n\n",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n\n\n       \n       \n       \n    }\n\n",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        //\n\n       \n\n\n       \n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n        if (!\n                +\n\n       \n       \n       \n    }\n\n",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n\n       \n       \n       \n\n    supplier",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n\n       \n       \n       \n\n}",
+        "\n    String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            throw new IOException(\"failed to create file \" + f);\n        }\n       \n\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        if (!\n            +\n\n       \n       \n       \n    }\n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n\n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n        if (!\n\n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        //\n\n       \n\n\n       \n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n        }\n        if (!",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists())\n            throw new IOException(\"failed to create file \" + f);\n       \n\n       \n\n\n       \n       \n\n\n\n       \n\n\n\n        if (!\n            );\n        }\n        if (!",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        //\n\n       \n\n\n       \n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n        if (!\n            +\n\n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n\n\n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        //\n\n       \n\n\n       \n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n\n   \n    String targetDirPath = targetDirectory.getCanonicalPath();\n        if (!\n                +\n\n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n\n       \n       \n       \n\n    supplier",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n    String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n\n       \n       \n       \n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String targetDirPath = targetDirectory.getCanonicalPath();\n   \n       \n\n\n\n        if (!f.exists()) {\n            throw new IOException(\"failed to create file \" + f);\n        }\n       \n\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        if (!\n            +\n\n       \n       \n       \n    }\n\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

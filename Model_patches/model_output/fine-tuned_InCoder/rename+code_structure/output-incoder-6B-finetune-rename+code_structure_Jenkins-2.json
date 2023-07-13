@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return itemValues;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return new ArrayList(itemValues);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return new ArrayList<>(itemValues);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return new ArrayList<PeakDegreeElement>(itemValues);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return Collections.unmodifiableCollection(itemValues);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return itemValues.toArray(new PeakDegreeElement[itemValues.size()]);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return Collections.unmodifiableList(itemValues);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    List<PeakDegreeElement> elements = new ArrayList<PeakDegreeElement>(itemValues);\n    return elements;\n<|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return (List<PeakDegreeElement>) itemValues.clone();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n    Collection<PeakDegreeElement> itemValues = elements.values();\n// buggy lines start:\n    if (!(mandateScheme instanceof MandateScheme.Unguarded) &&\n       !(mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)) {\n        List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n        Iterator<PeakDegreeElement> iterator = itemValues.iterator();\n        while( iterator.hasNext()){\n            PeakDegreeElement element = iterator.next();\n            if (!element.withAuthority(Item.RETRIEVE))\n                continue;\n            visibleElements.add(element);\n        }\n        return visibleElements;\n    }\n    return new ArrayList(itemValues);\n// buggy lines end\n}\n// fixed lines:\n    return itemValues.toArray(new PeakDegreeElement[0]);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return itemValues;\n",
+            "correctness": "uncompilable",
+            "translated": "    return itemValues;\n"
+        },
+        {
+            "patch": "    return new ArrayList(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList<>(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<>(itemValues);\n"
+        },
+        {
+            "patch": "    return new ArrayList<PeakDegreeElement>(itemValues);\n",
+            "correctness": "compile_success",
+            "translated": "    return new ArrayList<TopLevelItem>(itemValues);\n"
+        },
+        {
+            "patch": "    return Collections.unmodifiableCollection(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return Collections.unmodifiableCollection(itemValues);\n"
+        },
+        {
+            "patch": "    return itemValues.toArray(new PeakDegreeElement[itemValues.size()]);\n",
+            "correctness": "uncompilable",
+            "translated": "    return itemValues.toArray(new TopLevelItem[itemValues.size()]);\n"
+        },
+        {
+            "patch": "    return Collections.unmodifiableList(itemValues);\n",
+            "correctness": "uncompilable",
+            "translated": "    return Collections.unmodifiableList(itemValues);\n"
+        },
+        {
+            "patch": "    List<PeakDegreeElement> elements = new ArrayList<PeakDegreeElement>(itemValues);\n    return elements;\n",
+            "correctness": "compile_success",
+            "translated": "    List<TopLevelItem> items = new ArrayList<TopLevelItem>(itemValues);\n    return items;\n"
+        },
+        {
+            "patch": "    return (List<PeakDegreeElement>) itemValues.clone();\n",
+            "correctness": "uncompilable",
+            "translated": "    return (List<TopLevelItem>) itemValues.clone();\n"
+        },
+        {
+            "patch": "    return itemValues.toArray(new PeakDegreeElement[0]);\n",
+            "correctness": "uncompilable",
+            "translated": "    return itemValues.toArray(new TopLevelItem[0]);\n"
+        }
+    ]
+}

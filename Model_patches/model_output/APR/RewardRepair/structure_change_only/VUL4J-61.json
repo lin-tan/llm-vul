@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+        "doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(url, inputStream);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, false);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, url);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, config);",
+        "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, true);",
+        "Document doc = xPathFactory.newDocumentBuilder().parse(inputStream);"
+    ],
+    "validation_result": [
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(url, inputStream);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, url);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, config);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Document doc = xPathFactory.newDocumentBuilder().parse(inputStream);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

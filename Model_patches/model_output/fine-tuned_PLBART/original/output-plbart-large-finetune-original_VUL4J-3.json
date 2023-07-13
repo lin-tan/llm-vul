@@ -1,0 +1,56 @@
+{
+    "output": [
+        "} else { LOG.warn(\"String_Node_Str\");",
+        "return new SAXSource(xmlReader, inputSource);",
+        "} catch (Exception e) {",
+        "} else {",
+        "}",
+        "} else { return null; }",
+        "} else { return null;",
+        "return null;",
+        "} }",
+        "});"
+    ],
+    "validation_result": [
+        {
+            "patch": "} else { LOG.warn(\"String_Node_Str\");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new SAXSource(xmlReader, inputSource);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} catch (Exception e) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} else {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "} else { return null; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "} else { return null;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "} }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "});",
+            "correctness": "uncompilable"
+        }
+    ]
+}

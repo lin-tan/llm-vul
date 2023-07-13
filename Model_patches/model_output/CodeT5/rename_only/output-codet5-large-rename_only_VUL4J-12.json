@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-9,1",
+    "output": [
+        "\n    while (s < h) {\n",
+        "\n    while (h!= 0) {\n",
+        "\n    s += h;\n    {\n",
+        "\n    while (h > s) {\n",
+        "\n    s += h;\n    {",
+        "\n    while (h > 0) {\n",
+        "\n    while (s < h) {\n }",
+        "\n    while (h!= 0) {\n       ",
+        "\n    while (h < s) {\n",
+        "\n    while (s < h) {\n       "
+    ],
+    "validation_result": [
+        {
+            "patch": "while (s < h) {",
+            "correctness": "compile_success",
+            "translated": "while (v < vt) {"
+        },
+        {
+            "patch": "while (h!= 0) {",
+            "correctness": "test_timeout",
+            "translated": "while (vt!= 0) {"
+        },
+        {
+            "patch": "s += h;\n    {",
+            "correctness": "test_success",
+            "translated": "v += vt;\n    {"
+        },
+        {
+            "patch": "while (h > s) {",
+            "correctness": "compile_success",
+            "translated": "while (vt > v) {"
+        },
+        {
+            "patch": "s += h;\n    {",
+            "correctness": "test_success",
+            "translated": "v += vt;\n    {"
+        },
+        {
+            "patch": "while (h > 0) {",
+            "correctness": "test_success",
+            "translated": "while (vt > 0) {"
+        },
+        {
+            "patch": "while (s < h) {\n }",
+            "correctness": "uncompilable",
+            "translated": "while (v < vt) {\n }"
+        },
+        {
+            "patch": "while (h!= 0) {",
+            "correctness": "test_timeout",
+            "translated": "while (vt!= 0) {"
+        },
+        {
+            "patch": "while (h < s) {",
+            "correctness": "test_success",
+            "translated": "while (vt < v) {"
+        },
+        {
+            "patch": "while (s < h) {",
+            "correctness": "compile_success",
+            "translated": "while (v < vt) {"
+        }
+    ]
+}

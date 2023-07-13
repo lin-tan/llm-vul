@@ -1,0 +1,12 @@
+[
+  "return ((dataProvider == null))?null:Encode.JavaScriptStringEncoding(dataProvider);",
+  "return dataProvider;",
+  "return (String)((dataProvider == null))?null:Encode.forJavaScriptSource(dataProvider);",
+  "return ((dataProvider == null))?dataProvider:Encode.forJavaScriptSource(dataProvider);",
+  "return Encode.forJavaScriptSource(dataProvider);",
+  "return ((dataProvider == null))?null:dataProvider;",
+  "return ((dataProvider == null))?null:Encode.forJavaScriptSource(dataProvider);",
+  "return ((dataProvider != null))?null:Encode.forJavaScriptSource(dataProvider);",
+  "return ((dataProvider == null))?\"null\":Encode.forJavaScriptSource(dataProvider);",
+  "return ((dataProvider == null))?(String)dataProvider:Encode.forJavaScriptSource(dataProvider);"
+]

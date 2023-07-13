@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    z.put(\"String_Node_Str\", nodeMonitorList);\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    z.put(\"String_Node_Str\", nodeMonitorList.get(i).information(this));\n</s></s>",
+        "<pad><s>    z.put( \"String_Node_Str\", nodeMonitorList.get(i).information(this));\n</s>",
+        "<pad><s>    z.put(\"String_Node_Str\", nodeMonitorList.size());\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    z.put(\"String_Node_Str\", nodeMonitorList.get(0).information(this));\n</s></s>",
+        "<pad><s>    z.putAll(nodeMonitorList);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    z.put(\"String_Node_Str\", nodeMonitorList.get(i));\n</s></s></s></s></s></s>",
+        "<pad><s>    z.put( \"String_Node_Str\", nodeMonitorList);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    z.put(\"String_Node_Str\", nodeMonitorList);\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList);\n"
+        },
+        {
+            "patch": "    z.put(\"String_Node_Str\", nodeMonitorList.get(i).information(this));\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList.get(i).data(this));\n"
+        },
+        {
+            "patch": "    z.put( \"String_Node_Str\", nodeMonitorList.get(i).information(this));\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList.get(i).data(this));\n"
+        },
+        {
+            "patch": "    z.put(\"String_Node_Str\", nodeMonitorList.size());\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList.size());\n"
+        },
+        {
+            "patch": "    z.put(\"String_Node_Str\", nodeMonitorList.get(0).information(this));\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList.get(0).data(this));\n"
+        },
+        {
+            "patch": "    z.putAll(nodeMonitorList);\n",
+            "correctness": "uncompilable",
+            "translated": "    r.putAll(nodeMonitorList);\n"
+        },
+        {
+            "patch": "    z.put(\"String_Node_Str\", nodeMonitorList.get(i));\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList.get(i));\n"
+        },
+        {
+            "patch": "    z.put( \"String_Node_Str\", nodeMonitorList);\n",
+            "correctness": "compile_success",
+            "translated": "    r.put(\"String_Node_Str\", nodeMonitorList);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

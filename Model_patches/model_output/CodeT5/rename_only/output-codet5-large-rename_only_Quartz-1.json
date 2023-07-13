@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-36,1",
+    "output": [
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String\n     \n     \n\n ",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String\n     \n     \n\n   ",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n     \n    };\n   \n   \n   \n\n",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n\n      public\n     \n      public\n    };\n\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n      public String\n      {\n         \n     \n     \n\n",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n     \n      public String\n\n      public String\n     \n     \n\n",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n     \n      public String\n      {\n         \n     \n     \n\n",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String\n     \n      public\n\n",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n     \n      public\n    };\n\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n     \n\n      public String\n     \n     \n\n ",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n     \n      public\n    };\n\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n     \n\n      public String\n     \n     \n\n   ",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n\n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String\n     \n      public\n\n "
+    ],
+    "validation_result": [
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n     \n    };",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n\n\n\n      public\n     \n    };"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n\n      public\n     \n      public\n    };\n\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n      public String\n      {",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n\n      public\n     \n      public\n    };\n\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n      public String\n      {"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n     \n      public String\n\n      public String",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n\n\n\n     \n      public String\n\n      public String"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n     \n      public String\n      {",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n\n\n\n     \n      public String\n      {"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String\n     \n      public",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String\n     \n      public"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n     \n      public\n    };\n\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n     \n\n      public String",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n     \n      public\n    };\n\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n     \n\n      public String"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n     \n      public\n    };\n\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n     \n\n      public String",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n     \n      public\n    };\n\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n\n   \n\n\n\n      }\n      public String\n     \n\n      public String"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n      public\n\n   \n\n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String\n     \n      public",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n      public\n\n   \n   \n      public\n      {\n      }\n    };\n   \n\n\n   \n   \n\n\n    docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n\n\n\n      public\n      }\n      public String\n     \n      public"
+        }
+    ]
+}

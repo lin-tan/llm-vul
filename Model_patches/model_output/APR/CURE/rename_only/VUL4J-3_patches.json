@@ -1,0 +1,37 @@
+{
+    "VUL4J-3-599-600": {
+        "src": "}",
+        "patches": [
+            {
+                "patch": "} else { inDataProvider = }"
+            },
+            {
+                "patch": "} } } } } }"
+            },
+            {
+                "patch": "} else { inDataProvider = null ;"
+            },
+            {
+                "patch": "} else { **}"
+            },
+            {
+                "patch": "if( dataProvider.getReader( ) != null )"
+            },
+            {
+                "patch": "} } } } ) ;"
+            },
+            {
+                "patch": "} else { inDataProvider = null ; }"
+            },
+            {
+                "patch": "} else { dataProvider = null ; }"
+            },
+            {
+                "patch": "} else { }"
+            },
+            {
+                "patch": "} else {"
+            }
+        ]
+    }
+}

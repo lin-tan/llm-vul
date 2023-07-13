@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return request.getRequestURI();\n</s></s></s>",
+        "<pad><s>    return request.getPathInfo();\n</s></s></s>",
+        "<pad><s>    return \"String_Node_Str\";\n</s></s>",
+        "<pad><s>    return request.getRequestURI().toString();\n</s>",
+        "<pad><s>    return null;\n</s></s></s></s></s></s></s>",
+        "<pad><s>    return request.getContextPath();\n</s></s></s></s>",
+        "<pad><s>    return request.getQueryString();\n</s></s></s></s>",
+        "<pad><s>    return forwardPage;\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return request.getRequestURI();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getRequestURI();\n"
+        },
+        {
+            "patch": "    return request.getPathInfo();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getPathInfo();\n"
+        },
+        {
+            "patch": "    return \"String_Node_Str\";\n",
+            "correctness": "compile_success",
+            "translated": "    return \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "    return request.getRequestURI().toString();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getRequestURI().toString();\n"
+        },
+        {
+            "patch": "    return null;\n",
+            "correctness": "compile_success",
+            "translated": "    return null;\n"
+        },
+        {
+            "patch": "    return request.getContextPath();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getContextPath();\n"
+        },
+        {
+            "patch": "    return request.getQueryString();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getQueryString();\n"
+        },
+        {
+            "patch": "    return forwardPage;\n",
+            "correctness": "uncompilable",
+            "translated": "    return forwardPage;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

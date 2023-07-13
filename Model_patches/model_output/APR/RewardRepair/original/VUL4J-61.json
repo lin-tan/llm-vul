@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newInstance();",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(true);",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(null);",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(false);",
+        "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder( \" \");",
+        "Builder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+        "DocumentBuilder documentBuilder = (DocumentBuilder) documentBuilderFactory.newInstance();",
+        "Builder documentBuilder = documentBuilderFactory.newInstance();"
+    ],
+    "validation_result": [
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder(false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder( \" \");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Builder documentBuilder = documentBuilderFactory.newDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = (DocumentBuilder) documentBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Builder documentBuilder = documentBuilderFactory.newInstance();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

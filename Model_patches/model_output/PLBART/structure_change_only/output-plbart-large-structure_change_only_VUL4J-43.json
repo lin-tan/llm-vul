@@ -1,0 +1,57 @@
+{
+    "function range": "2,2-19,2",
+    "output": [
+        "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdir(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdir(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+        "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { outFile.mkdirs(); File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdir(); } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdir(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry(ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdir(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdirs(); } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void writeEntry (ZipFile zipFile, ZipEntry entry, File destDir) throws IOException { String entryName = entry.getName(); File outFile = new File(destDir,entryName); if (entry.isDirectory()) { outFile.mkdirs(); } else if (entry.isRegularFile()) { outFile.mkdirs(); File parentFile = outFile.getParentFile(); parentFile.mkdirs(); try (InputStream in = zipFile.getInputStream(entry)) { IOUtil.writeStream(in, outFile); } } else { outFile.mkdir(); } }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

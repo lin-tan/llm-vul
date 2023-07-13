@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    sb.append(\"sessionId=\").append(sessionId);\n</s>",
+        "<pad><s>    sb.append(\"sessionId=\").append(getSessionId());\n</s>",
+        "<pad><s>    sb.append(\"sessionId\").append(sessionId);\n</s></s>",
+        "<pad><s>    sb.append(\"sessionId=String_Node_Str\");\n</s>",
+        "<pad><s>    sb.append(\"sessionId\");\n</s></s></s></s></s></s></s>",
+        "<pad><s>    sb.append(\"sessionId\" + sessionId);\n</s></s></s></s>",
+        "<pad><s>    sb.append(\"sessionId=\");\n</s></s></s></s></s></s>",
+        "<pad><s>    appendSessionId(sb);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    sb.append(\"sessionId=\").append(sessionId);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    sb.append(\"sessionId=\").append(getSessionId());\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    sb.append(\"sessionId\").append(sessionId);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    sb.append(\"sessionId=String_Node_Str\");\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    sb.append(\"sessionId\");\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    sb.append(\"sessionId\" + sessionId);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    sb.append(\"sessionId=\");\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    appendSessionId(sb);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

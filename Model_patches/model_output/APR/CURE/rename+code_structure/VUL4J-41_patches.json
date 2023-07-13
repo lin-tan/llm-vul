@@ -1,0 +1,37 @@
+{
+    "VUL4J-41-311-312": {
+        "src": "try {",
+        "patches": [
+            {
+                "patch": "if( file != null ) {"
+            },
+            {
+                "patch": "if( whetherOverwrite( ) || ! file.exists( ) ) {"
+            },
+            {
+                "patch": "try"
+            },
+            {
+                "patch": "if( file != null && file.exists( ) )"
+            },
+            {
+                "patch": "try { try { try ; if try ;"
+            },
+            {
+                "patch": "if( [0] == null ) return ;"
+            },
+            {
+                "patch": "if( file != null && file.lastModified( ) < itemTime.getTime( ) ) {"
+            },
+            {
+                "patch": "if( whetherOverwrite( ) && ! file.exists( ) ) {"
+            },
+            {
+                "patch": "if( whetherOverwrite( ) || ! file.exists( ) )"
+            },
+            {
+                "patch": "if( file != null && file.exists( ) ) {"
+            }
+        ]
+    }
+}

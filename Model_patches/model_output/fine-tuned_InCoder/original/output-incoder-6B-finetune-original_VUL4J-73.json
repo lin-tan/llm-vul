@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = encPass;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tfinal String pass1 = encPass + \"\";\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = encPass.trim();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = encPass + \"String_Node_Str\";\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n<|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = encPass.trim() + \"\";\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = encPass + salt;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = rawPass + \"\";\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = new String(encPass, StandardCharsets.UTF_8);\n<|endofmask|>",
+        "<|endoftext|>public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n// buggy lines start:\n\tString pass1 = encPass + \"\";\n// buggy lines end\n\n\tString pass2 = mergePasswordAndSalt(rawPass, salt, false);\n\tif (ignorePasswordCase) {\n\t\tpass1 = pass1.toLowerCase(Locale.ENGLISH);\n\t\tpass2 = pass2.toLowerCase(Locale.ENGLISH);\n\t}\n\treturn PasswordEncoderUtils.equals(pass1, pass2);\n}\n// fixed lines:\n\tString pass1 = mergePasswordAndSalt(encPass, salt, true);\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tString pass1 = encPass;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "\tfinal String pass1 = encPass + \"\";\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tString pass1 = encPass.trim();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tString pass1 = encPass + \"String_Node_Str\";\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tString pass1 = encPass.trim() + \"\";\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tString pass1 = encPass + salt;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tString pass1 = rawPass + \"\";\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tString pass1 = new String(encPass, StandardCharsets.UTF_8);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tString pass1 = mergePasswordAndSalt(encPass, salt, true);\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

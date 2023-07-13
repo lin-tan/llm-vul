@@ -1,0 +1,67 @@
+{
+    "function range": "",
+    "output": [
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"equals\").add(\"hashCode\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"waitAll\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"wait\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"waitAll\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"hashCode\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"notifyAll\").add(\"notifyAll\").build();",
+        "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").build();"
+    ],
+    "validation_result": [
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"equals\").add(\"hashCode\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"equals\").add(\"hashCode\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"waitAll\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"waitAll\").add(\"notify\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"wait\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"wait\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"waitAll\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"waitAll\").add(\"notifyAll\").add(\"hashCode\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"hashCode\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"hashCode\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"notifyAll\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notify\").add(\"notifyAll\").add(\"notifyAll\").build();"
+        },
+        {
+            "patch": "private static final Set<String> CONFINED_ROUTINES = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").build();",
+            "correctness": "compile_success",
+            "translated": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"wait\").add(\"notify\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").add(\"notifyAll\").build();"
+        }
+    ]
+}

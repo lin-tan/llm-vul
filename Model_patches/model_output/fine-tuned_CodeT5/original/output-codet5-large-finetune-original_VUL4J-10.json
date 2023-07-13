@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    final OutputStream output = getOutputStream();\n</s>",
+        "<pad><s>    output = getOutputStream();\n</s></s></s>",
+        "<pad><s>    outputStream = getOutputStream();\n</s></s></s>",
+        "<pad><s>    OutputStream output = outputStream;\n</s></s>",
+        "<pad><s>    OutputStream output = null;\n</s></s>",
+        "<pad><s>    OutputStream outputStream = getOutputStream();\n</s></s>",
+        "<pad><s>    OutputStream output = new ByteArrayOutputStream();\n</s>",
+        "<pad><s>    out = getOutputStream();\n</s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    final OutputStream output = getOutputStream();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    output = getOutputStream();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    outputStream = getOutputStream();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    OutputStream output = outputStream;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    OutputStream output = null;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    OutputStream outputStream = getOutputStream();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    OutputStream output = new ByteArrayOutputStream();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    out = getOutputStream();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

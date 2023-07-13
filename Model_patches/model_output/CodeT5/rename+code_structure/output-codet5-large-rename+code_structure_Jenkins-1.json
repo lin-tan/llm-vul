@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-15,5",
+    "output": [
+        "\n }\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n    for (",
+        "\n }\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n public\nMap\n\n    for (",
+        "\n }\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\npublic Map\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    while (i < nodeMonitorList.size()) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n    for (",
+        "\n }\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\npublic Map\n\n    for",
+        "\n\n}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\nString\n\n    for",
+        "\n\n}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n\n\nMap\n\n    for",
+        "\n }\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\nfunction\npublic Map\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\nString\n\n    for",
+        "\n }\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\n\npublic Map\n\n   ",
+        "\n\n}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n\n\nString\n\n    for",
+        "\n }\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n\n    for"
+    ],
+    "validation_result": [
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n    for (",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n    for ("
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n public\nMap\n\n    for (",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n public\nMap\n\n    for ("
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\npublic Map\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    while (i < nodeMonitorList.size()) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n    for (",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\npublic Map\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    while (i < nodeMonitorList.size()) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n    for ("
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\npublic Map\n\n    for",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\npublic Map\n\n    for"
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\nString\n\n    for",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\nString\n\n    for"
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n\n\nMap\n\n    for",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n\n\nMap\n\n    for"
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\nfunction\npublic Map\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\nString\n\n    for",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\nfunction\npublic Map\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\nString\n\n    for"
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\n\npublic Map",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n\n\n\npublic Map"
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n\n\nString\n\n    for",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\npublicProctorInformation() {\n\n\n\nString\n\n    for"
+        },
+        {
+            "patch": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n\n    for",
+            "correctness": "uncompilable",
+            "translated": "}\n\nfunction\n\nfunction\n public Map<String,Object>\n\npublic Map\n\n\npublic Map\n\n\n\n\n}\n\nfunction\n\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n}\n\nfunctionProctorInformation() {\n\n public\nMap\n\n\n    for"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>                public Collection<View> all() {\n                    return views;\n                }\n</s></s></s>",
+        "<pad><s>                protected Collection<View> all() {\n                    return views.values();\n                }\n</s>",
+        "<pad><s>                protected Collection<View> all(View.class);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>                private Collection<View> all() {\n                    return views;\n                }\n</s></s></s>",
+        "<pad><s>                protected Collection<View> all() {\n                    return getViews();\n                }\n</s></s>",
+        "<pad><s>                protected Collection<View> getAll() {\n                    return views.values();\n                }\n</s>",
+        "<pad><s>                protected Collection<View> getAll() {\n                    return views;\n                }\n</s></s></s>",
+        "<pad><s>                return views;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "                public Collection<View> all() {\n                    return views;\n                }\n",
+            "correctness": "compile_success",
+            "translated": "                public Collection<View> all() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                protected Collection<View> all() {\n                    return views.values();\n                }\n",
+            "correctness": "uncompilable",
+            "translated": "                protected Collection<View> all() {\n                    return views.values();\n                }\n"
+        },
+        {
+            "patch": "                protected Collection<View> all(View.class);\n",
+            "correctness": "uncompilable",
+            "translated": "                protected Collection<View> all(View.class);\n"
+        },
+        {
+            "patch": "                private Collection<View> all() {\n                    return views;\n                }\n",
+            "correctness": "uncompilable",
+            "translated": "                private Collection<View> all() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                protected Collection<View> all() {\n                    return getViews();\n                }\n",
+            "correctness": "test_success",
+            "translated": "                protected Collection<View> all() {\n                    return getViews();\n                }\n"
+        },
+        {
+            "patch": "                protected Collection<View> getAll() {\n                    return views.values();\n                }\n",
+            "correctness": "uncompilable",
+            "translated": "                protected Collection<View> getAll() {\n                    return views.values();\n                }\n"
+        },
+        {
+            "patch": "                protected Collection<View> getAll() {\n                    return views;\n                }\n",
+            "correctness": "uncompilable",
+            "translated": "                protected Collection<View> getAll() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                return views;\n",
+            "correctness": "uncompilable",
+            "translated": "                return views;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

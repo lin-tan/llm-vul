@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-8,1",
+    "output": [
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r = new HashMap<String, Object>(); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r = new HashMap<String,Object>(); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); Map<String,Object> m = new HashMap<String,Object>(); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); Map<String,Object> m = new HashMap<String, Object>(); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); Map<String, Object> m = new HashMap<String, Object>(); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"id\", this.id); r.put(\"name\", this.name); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.name); r.put(\"description\", this.description); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.name); r.put(\"age\", this.age); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", name); r.put(\"description\", description); return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", name); r.put(\"age\", age); return r; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r = new HashMap<String, Object>(); return r; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r = new HashMap<String,Object>(); return r; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); Map<String,Object> m = new HashMap<String,Object>(); return r; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); Map<String,Object> m = new HashMap<String, Object>(); return r; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); Map<String, Object> m = new HashMap<String, Object>(); return r; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"id\", this.id); r.put(\"name\", this.name); return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.name); r.put(\"description\", this.description); return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", this.name); r.put(\"age\", this.age); return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", name); r.put(\"description\", description); return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { Map<String,Object> r = new HashMap<String, Object>(); r.put(\"name\", name); r.put(\"age\", age); return r; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

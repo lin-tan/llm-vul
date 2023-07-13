@@ -1,0 +1,37 @@
+{
+    "VUL4J-10010-177-178": {
+        "src": "archive CaMeL Creator = archive CaMeL Creator CaMeL Mill . new CaMeL Document CaMeL Builder ( ) ;",
+        "patches": [
+            {
+                "patch": "if( archiveCreatorMill == null ) throw new IllegalArgumentException( 'Encountered ') ;"
+            },
+            {
+                "patch": "if( archiveCreatorMill == null ) throw new IllegalArgumentException( ' + validationExceptions.size() + ') ;"
+            },
+            {
+                "patch": "if( archiveCreatorMill == null ) throw new IllegalArgumentException( ' validation exceptions.') ;"
+            },
+            {
+                "patch": "if( archiveCreatorMill == null ) throw new IllegalArgumentException( 'in the cluster.  Will try to reschedule instead.') ;"
+            },
+            {
+                "patch": "if( archiveCreatorMill == null ) throw new IllegalArgumentException( 'This is likely due to a race condition between multiple instances ') ;"
+            },
+            {
+                "patch": "archiveCreator = archiveCreatorMill.newInstance( ) ;"
+            },
+            {
+                "patch": "if( archiveCreatorMill == null ) { archiveCreatorMill = archiveCreatorMill ; }"
+            },
+            {
+                "patch": "archiveCreator = null ; archiveCreator = null ; archiveCreator = null ; archiveCreator = null ;"
+            },
+            {
+                "patch": "if( path == null ) { throw new IllegalArgumentException( 'Encountered ') ;"
+            },
+            {
+                "patch": "if( path == null ) { throw new IllegalArgumentException( ' + validationExceptions.size() + ') ;"
+            }
+        ]
+    }
+}

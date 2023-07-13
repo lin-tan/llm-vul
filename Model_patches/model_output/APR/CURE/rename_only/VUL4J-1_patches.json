@@ -1,0 +1,37 @@
+{
+    "VUL4J-1-177-178": {
+        "src": "analyzer . analyze CaMeL Batch ( constituent CaMeL Template , batch , attribute CaMeL Titile ) ;",
+        "patches": [
+            {
+                "patch": "return( T ) transformObjectBatch( analyzer , constituentTemplate , batch , attributeTitile ) ;"
+            },
+            {
+                "patch": "transformObjectBatch( analyzer , constituentTemplate , batch , attributeTitile ) ;"
+            },
+            {
+                "patch": "constituentTemplate =( Class ) transformObjectBatch( analyzer , constituentTemplate , batch ) ;"
+            },
+            {
+                "patch": "return( T ) transformObjectBatch( analyzer , constituentTemplate , batch , batch ) ;"
+            },
+            {
+                "patch": "if( constituentTemplate == null ) { throw new IllegalArgumentException( 'unchecked') ; }"
+            },
+            {
+                "patch": "if( constituentTemplate == null ) { throw new IllegalArgumentException( ', ') ; }"
+            },
+            {
+                "patch": "if( constituentTemplate == null ) { throw new IllegalArgumentException( 'rawtypes') ; }"
+            },
+            {
+                "patch": "if( constituentTemplate == null ) { throw new IllegalArgumentException( ']') ; }"
+            },
+            {
+                "patch": "if( constituentTemplate == null ) { throw new IllegalArgumentException( 'null]') ; }"
+            },
+            {
+                "patch": "analyze( constituentTemplate , batch , attributeTitile ) ;"
+            }
+        ]
+    }
+}

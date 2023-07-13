@@ -1,0 +1,66 @@
+{
+    "output": [
+        "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.getName(),proctor.information(this)); }",
+        "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.name(),proctor.information(this)); }",
+        "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.name(), proctor.information(this)); }",
+        "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.getName(), proctor.information(this)); }",
+        "for(VertexProctor proctor : nodeMonitorList) { z.put(proctor.getName(),proctor.information(this)); }",
+        "for(VertexProctor proctor : nodeMonitorList) { z.put(proctor.name(),proctor.information(this)); }",
+        "z.put(VertexProctor.class.getName(),VertexProctor.information(this));",
+        "for(VertexProctor proctor : nodeMonitorList) { z.put(proctor.name(), proctor.information(this)); }",
+        "z.put(\"String_Node_Str\", nodeMonitorList.get(0).information(this));",
+        "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.information(this), proctor); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.getName(),proctor.information(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.getName(),monitor.data(this)); }"
+        },
+        {
+            "patch": "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.name(),proctor.information(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(),monitor.data(this)); }"
+        },
+        {
+            "patch": "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.name(), proctor.information(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(),monitor.data(this)); }"
+        },
+        {
+            "patch": "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.getName(), proctor.information(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.getName(),monitor.data(this)); }"
+        },
+        {
+            "patch": "for(VertexProctor proctor : nodeMonitorList) { z.put(proctor.getName(),proctor.information(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.getName(),monitor.data(this)); }"
+        },
+        {
+            "patch": "for(VertexProctor proctor : nodeMonitorList) { z.put(proctor.name(),proctor.information(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(),monitor.data(this)); }"
+        },
+        {
+            "patch": "z.put(VertexProctor.class.getName(),VertexProctor.information(this));",
+            "correctness": "uncompilable",
+            "translated": "r.put(NodeMonitor.class.getName(),NodeMonitor.data(this));"
+        },
+        {
+            "patch": "for(VertexProctor proctor : nodeMonitorList) { z.put(proctor.name(), proctor.information(this)); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.name(),monitor.data(this)); }"
+        },
+        {
+            "patch": "z.put(\"String_Node_Str\", nodeMonitorList.get(0).information(this));",
+            "correctness": "compile_success",
+            "translated": "r.put(\"String_Node_Str\", nodeMonitorList.get(0).data(this));"
+        },
+        {
+            "patch": "for (VertexProctor proctor : nodeMonitorList) { z.put(proctor.information(this), proctor); }",
+            "correctness": "uncompilable",
+            "translated": "for (NodeMonitor monitor : nodeMonitorList) { r.put(monitor.data(this), monitor); }"
+        }
+    ]
+}

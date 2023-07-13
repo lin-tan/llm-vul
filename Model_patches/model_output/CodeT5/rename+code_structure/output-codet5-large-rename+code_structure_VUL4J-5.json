@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-40,5",
+    "output": [
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n                //\n\n else\n\n   ",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               //\n\n else\n\n   ",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n    for (\n   \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               //\n\n else\n\n   ",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n//\n\n",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n //\n\n",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n//\n",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n    for (\n   \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n//\n",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   //               \n",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n //\n",
+        "\n        if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) { //\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n//\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n                //\n\n else",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n                //\n\n else"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               //\n\n else",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n                //\n\n else"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n    for (\n   \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               //\n\n else",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n    for (\n   \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               //\n\n else"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n//",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n//"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n //",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n//"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n//",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n//"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n    for (\n   \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n//",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n    for (\n   \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n//"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   //",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n//"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n //",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n//"
+        },
+        {
+            "patch": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) { //\n        if (fpath!= null) { for (\n\n        if (\n\n               \n                   //                   \n//",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.length() > 0) {\n            f = new File(fpath);\n           \n        if (f.exists()) {\n           \n\n               \n               \n               \n\n\n        if (\n           \n        if (f.exists()) {//\n        if (fpath!= null){ for (\n\n        if (\n\n               \n                   //                   \n//"
+        }
+    ]
+}

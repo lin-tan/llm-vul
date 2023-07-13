@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ner.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "dger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "gler.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "ge.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "asyncReadEntry(new PositionImpl(ledgerName, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "gedger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+        "asyncReadEntry(new PositionImpl(ledgerId, entryId)), new AsyncCallbacks.ReadEntryCallback() {",
+        "entry.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+    ],
+    "validation_result": [
+        {
+            "patch": "asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ner.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "dger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "gler.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "ge.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "asyncReadEntry(new PositionImpl(ledgerName, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "gedger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "asyncReadEntry(new PositionImpl(ledgerId, entryId)), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "entry.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

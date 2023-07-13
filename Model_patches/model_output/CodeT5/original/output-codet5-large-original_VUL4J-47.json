@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n   \n        _cfgNameForTextElement = nameForTextElem;\n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n\n\n       \n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n}\n\n\n\n\n\n\n   \n\n\n\n\n   \n\n\n\n\n       \n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n}\n\n\n\n\n\n\n   \n\n\n\n       \n\n\n\n\n       \n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n}\n\n\n   \n\n\n\n   \n\n\n\n       \n\n\n\n\n       \n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n}\n\n\n\n\n\n   \n   \n\n\n\n       \n\n\n\n\n       \n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n}\n\npublic void\n        _cfgNameForTextElement = nameForTextElem;\n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n   \n        _cfgNameForTextElement = null;\n}",
+        "\n        _initFactories(xmlIn, xmlOut);\n       \n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n   \n        _cfgNameForTextElement = nameForTextElem;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n   \n\n   \n\n\n   \n   \n\n\n\n       \n\n\n\n\n       \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n}\n\n\n\n\n\n\n   \n\n\n\n\n   \n\n\n\n\n       \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n}\n\n\n\n\n\n\n   \n\n\n\n       \n\n\n\n\n       \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n}\n\n\n   \n\n\n\n   \n\n\n\n       \n\n\n\n\n       \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}\n\nfunction init()\n{\n   \n   \n}\n\n\n\n\n\n   \n   \n\n\n\n       \n\n\n\n\n       \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n}\n\npublic void\n        _cfgNameForTextElement = nameForTextElem;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n}\n\nfunction init(ObjectCodec oc)\n{\n   \n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n   \n        _cfgNameForTextElement = null;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "_initFactories(xmlIn, xmlOut);\n       \n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-1007-23-24": {
+        "src": ". add ( $STRING$ )",
+        "patches": [
+            {
+                "patch": ".add( '_') add( '_') ;"
+            },
+            {
+                "patch": ".add( \"Cannot find method '\") add( \"Cannot find method '\") ;"
+            },
+            {
+                "patch": ".add( ' + method + ') add( ' + method + ') ;"
+            },
+            {
+                "patch": ".add( \"' in \") add( \"' in \") ;"
+            },
+            {
+                "patch": ".add( '\" + method + \"') add( '\" + method + \"') ;"
+            },
+            {
+                "patch": "."
+            },
+            {
+                "patch": ".add( '_') )"
+            },
+            {
+                "patch": ".add( \"Cannot find method '\") )"
+            },
+            {
+                "patch": ".add( ' + method + ') )"
+            },
+            {
+                "patch": ".add( \"' in \") )"
+            }
+        ]
+    }
+}

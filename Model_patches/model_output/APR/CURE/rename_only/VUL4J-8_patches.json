@@ -1,0 +1,37 @@
+{
+    "VUL4J-8-114-115": {
+        "src": "result = Compressed CaMeL File CaMeL Encoding CaMeL Assistant . enlarge CaMeL Buffer CaMeL With ( result , increase ) ;",
+        "patches": [
+            {
+                "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith( result , increase ) ;"
+            },
+            {
+                "patch": "result = encodeEntirely( charEncoder , encodeAlternate( c , charBuffer.remaining( ) ) ) ;"
+            },
+            {
+                "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith( result , increase ) ; }"
+            },
+            {
+                "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith( result , increase , increase ) ;"
+            },
+            {
+                "patch": "result += CompressedFileEncodingAssistant.enlargeBufferWith( result , increase ) ;"
+            },
+            {
+                "patch": "return encodeEntirely( charEncoder , encodeAlternate( c , charBuffer.get( ) ) ) ;"
+            },
+            {
+                "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith( result , increase , increase , -1) ;"
+            },
+            {
+                "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith( result , increase , true ) ;"
+            },
+            {
+                "patch": "return CompressedFileEncodingAssistant.enlargeBufferWith( result , increase ) ;"
+            },
+            {
+                "patch": "result = encodeEntirely( charBuffer , encodeAlternate( c , charBuffer.remaining( ) ) ) ;"
+            }
+        ]
+    }
+}

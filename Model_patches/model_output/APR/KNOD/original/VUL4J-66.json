@@ -1,0 +1,65 @@
+{
+    "id": 31,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.166,
+            "fix_type": "general",
+            "patch": "return false;\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1763,
+            "fix_type": "insert",
+            "patch": "if (str == null )return false;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4693,
+            "fix_type": "general",
+            "patch": "return str.length() > 0;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1767,
+            "fix_type": "insert",
+            "patch": "if (str == null || i == null )return false;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2404,
+            "fix_type": "general",
+            "patch": "return true;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3887,
+            "fix_type": "general",
+            "patch": "return null;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2598,
+            "fix_type": "insert",
+            "patch": "if (str == null || str == null )return false;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4168,
+            "fix_type": "general",
+            "patch": "map = false;\nbreak;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4168,
+            "fix_type": "general",
+            "patch": "INSTANCE = false;\nbreak;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5017,
+            "fix_type": "general",
+            "patch": "return map != null;\n"
+        }
+    ]
+}

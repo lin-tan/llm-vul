@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-13,1",
+    "output": [
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keysize); rnd.nextBytes(keysize); rnd.nextBytes(keysize); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keySize); rnd.nextBytes(keySize); rnd.nextBytes(keySize); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(key.getBytes(), key.length()); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keylen, keylength); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keysize); rnd.nextBytes(keysize); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(key.getBytes(), key.length()); rnd.nextBytes(key.getBytes()); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keySize); rnd.nextBytes(keySize); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(key.getBytes(), key.getLength()); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keysize); rnd.nextBytes(keysize); rnd.skipBytes(keysize); return rnd; }",
+        "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(key.getBytes(), key.getLength()); rnd.nextBytes(key.getBytes()); return rnd; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keysize); rnd.nextBytes(keysize); rnd.nextBytes(keysize); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keySize); rnd.nextBytes(keySize); rnd.nextBytes(keySize); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(key.getBytes(), key.length()); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keylen, keylength); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keysize); rnd.nextBytes(keysize); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(key.getBytes(), key.length()); rnd.nextBytes(key.getBytes()); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keySize); rnd.nextBytes(keySize); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(key.getBytes(), key.getLength()); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(keysize); rnd.nextBytes(keysize); rnd.skipBytes(keysize); return rnd; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception { SecureRandom rnd = SecureRandom.getInstance(algorithm); rnd.init(key.getBytes(), key.getLength()); rnd.nextBytes(key.getBytes()); return rnd; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

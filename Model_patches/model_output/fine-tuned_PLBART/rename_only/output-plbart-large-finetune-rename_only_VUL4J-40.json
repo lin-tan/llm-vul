@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()) || CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {",
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle().trim())) {",
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {",
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle().toLowerCase())) {",
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()) && CustomerOfDatabase.whetherAuthenticated()!= CustomerOfRequest.whetherAuthenticated()) {",
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()) && CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {",
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equalsIgnoreCase(CustomerOfRequest.acquireCustomerTitle())) {",
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()) || CustomerOfDatabase.acquireMainEmail().equals(CustomerOfRequest.acquireMainEmail())) {",
+        "if (!CustomerOfDatabase.acquireMainEmail().equals(CustomerOfRequest.acquireMainEmail())) {",
+        "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle() || CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()) || CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName()) || scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle().trim())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName().trim())) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle().toLowerCase())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName().toLowerCase())) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()) && CustomerOfDatabase.whetherAuthenticated()!= CustomerOfRequest.whetherAuthenticated()) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName()) && scimUserFromDb.isVerified()!= scimUserFromRequest.isVerified()) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()) && CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName()) && scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equalsIgnoreCase(CustomerOfRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equalsIgnoreCase(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle()) || CustomerOfDatabase.acquireMainEmail().equals(CustomerOfRequest.acquireMainEmail())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName()) || scimUserFromDb.getPrimaryEmail().equals(scimUserFromRequest.getPrimaryEmail())) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireMainEmail().equals(CustomerOfRequest.acquireMainEmail())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getPrimaryEmail().equals(scimUserFromRequest.getPrimaryEmail())) {"
+        },
+        {
+            "patch": "if (!CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle() || CustomerOfDatabase.acquireCustomerTitle().equals(CustomerOfRequest.acquireCustomerTitle())) {",
+            "correctness": "uncompilable",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName() || scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        }
+    ]
+}

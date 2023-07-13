@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-51,1",
+    "output": [
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if (\n\n   \n\n   \n   \n   ",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n   \n\n    if (\n\n   \n\n   \n   \n",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n   \n\n    if (\n\n       \n   \n\n",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if (\n\n       \n\n\n   \n   \n",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   ",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if (\n\n       \n   \n\n   \n\n",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n   \n\n    if (\n\n       \n   \n\n\n   ",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (\n       \n    if (forbiddenBegin.get()) {\n       \n\n    if (\n\n       \n   \n\n   \n\n",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n       \n\n    if (\n\n       \n   \n\n",
+        "\n    if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if (\n\n       \n   \n\n\n   \n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n   \n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n   \n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n   \n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (\n       \n    if (forbiddenBegin.get()) {\n       \n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (\n       \n    if (forbiddenBegin.get()) {\n       \n\n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n       \n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if ("
+        },
+        {
+            "patch": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if (",
+            "correctness": "uncompilable",
+            "translated": "if (forbiddenBegin.get()) {\n        getLogger().debug(\"Resource not served by webpack {}\",\n       \n    if (\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n    if (forbiddenBegin.get()) {\n        forbiddenBegin(\n\n\n    if ("
+        }
+    ]
+}

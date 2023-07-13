@@ -1,0 +1,673 @@
+{
+    "id": "cmpl-6gXqpLicLjY1TqkBTyDsB34QyskbL",
+    "object": "text_completion",
+    "created": 1675597919,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "             return false;\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "            ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -1.713919,
+                    -0.16404337,
+                    -0.63491863,
+                    -0.0038736,
+                    -0.087600745,
+                    -0.40765792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.16404337
+                    },
+                    {
+                        " false": -0.63491863
+                    },
+                    {
+                        ";": -0.0038736
+                    },
+                    {
+                        "\n": -0.087600745
+                    },
+                    {
+                        "<|endoftext|>": -0.40765792
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    683,
+                    690,
+                    696,
+                    697,
+                    698
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "             return false;\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "            ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -1.713919,
+                    -0.16404337,
+                    -0.63491863,
+                    -0.0038736,
+                    -0.087600745,
+                    -0.40765792
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.16404337
+                    },
+                    {
+                        " false": -0.63491863
+                    },
+                    {
+                        ";": -0.0038736
+                    },
+                    {
+                        "\n": -0.087600745
+                    },
+                    {
+                        "<|endoftext|>": -0.40765792
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    683,
+                    690,
+                    696,
+                    697,
+                    698
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -0.5673622,
+                    -0.22804366,
+                    -0.30339727,
+                    -0.0014637242,
+                    -0.06253155,
+                    -0.34181038
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.22804366
+                    },
+                    {
+                        " false": -0.30339727
+                    },
+                    {
+                        ";": -0.0014637242
+                    },
+                    {
+                        "\n": -0.06253155
+                    },
+                    {
+                        "<|endoftext|>": -0.34181038
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    682,
+                    689,
+                    695,
+                    696,
+                    697
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -0.5673622,
+                    -0.22804366,
+                    -0.30339727,
+                    -0.0014637242,
+                    -0.06253155,
+                    -0.34181038
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.22804366
+                    },
+                    {
+                        " false": -0.30339727
+                    },
+                    {
+                        ";": -0.0014637242
+                    },
+                    {
+                        "\n": -0.06253155
+                    },
+                    {
+                        "<|endoftext|>": -0.34181038
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    682,
+                    689,
+                    695,
+                    696,
+                    697
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -0.5673622,
+                    -0.22804366,
+                    -0.30339727,
+                    -0.0014637242,
+                    -0.06253155,
+                    -0.34181038
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.22804366
+                    },
+                    {
+                        " false": -0.30339727
+                    },
+                    {
+                        ";": -0.0014637242
+                    },
+                    {
+                        "\n": -0.06253155
+                    },
+                    {
+                        "<|endoftext|>": -0.34181038
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    682,
+                    689,
+                    695,
+                    696,
+                    697
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            // continue;\n            return false;\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " //",
+                    " continue",
+                    ";",
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>",
+                    "#",
+                    "include",
+                    " <"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -0.5673622,
+                    -4.1402946,
+                    -4.160986,
+                    -0.9100471,
+                    -0.15208687,
+                    -0.32847783,
+                    -0.437691,
+                    -0.008374633,
+                    -0.0011629778,
+                    -0.06350594,
+                    -0.41465446,
+                    -2.274796,
+                    -1.0833068,
+                    -0.70050925
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.22804366
+                    },
+                    {
+                        "return": -1.3125644
+                    },
+                    {
+                        ";": -0.9100471
+                    },
+                    {
+                        "\n": -0.15208687
+                    },
+                    {
+                        "           ": -0.32847783
+                    },
+                    {
+                        " return": -0.437691
+                    },
+                    {
+                        " false": -0.008374633
+                    },
+                    {
+                        ";": -0.0011629778
+                    },
+                    {
+                        "\n": -0.06350594
+                    },
+                    {
+                        "<|endoftext|>": -0.41465446
+                    },
+                    {
+                        "package": -1.4568199
+                    },
+                    {
+                        "include": -1.0833068
+                    },
+                    {
+                        " <": -0.70050925
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    682,
+                    685,
+                    694,
+                    695,
+                    696,
+                    707,
+                    714,
+                    720,
+                    721,
+                    722,
+                    722,
+                    722,
+                    722
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -0.5673622,
+                    -0.22804366,
+                    -0.30339727,
+                    -0.0014637242,
+                    -0.06253155,
+                    -0.34181038
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.22804366
+                    },
+                    {
+                        " false": -0.30339727
+                    },
+                    {
+                        ";": -0.0014637242
+                    },
+                    {
+                        "\n": -0.06253155
+                    },
+                    {
+                        "<|endoftext|>": -0.34181038
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    682,
+                    689,
+                    695,
+                    696,
+                    697
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -0.5673622,
+                    -0.22804366,
+                    -0.30339727,
+                    -0.0014637242,
+                    -0.06253155,
+                    -0.34181038
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.22804366
+                    },
+                    {
+                        " false": -0.30339727
+                    },
+                    {
+                        ";": -0.0014637242
+                    },
+                    {
+                        "\n": -0.06253155
+                    },
+                    {
+                        "<|endoftext|>": -0.34181038
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    682,
+                    689,
+                    695,
+                    696,
+                    697
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "             return true;\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "            ",
+                    " return",
+                    " true",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -1.713919,
+                    -0.16404337,
+                    -0.7988552,
+                    -0.0027720192,
+                    -0.084896274,
+                    -0.31140757
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.16404337
+                    },
+                    {
+                        " false": -0.63491863
+                    },
+                    {
+                        ";": -0.0027720192
+                    },
+                    {
+                        "\n": -0.084896274
+                    },
+                    {
+                        "<|endoftext|>": -0.31140757
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    683,
+                    690,
+                    695,
+                    696,
+                    697
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "            return false;\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "           ",
+                    " return",
+                    " false",
+                    ";",
+                    "\n",
+                    "<|endoftext|>"
+                ],
+                "token_logprobs": [
+                    -0.0018304202,
+                    -0.5673622,
+                    -0.22804366,
+                    -0.30339727,
+                    -0.0014637242,
+                    -0.06253155,
+                    -0.34181038
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0018304202
+                    },
+                    {
+                        "           ": -0.5673622
+                    },
+                    {
+                        " return": -0.22804366
+                    },
+                    {
+                        " false": -0.30339727
+                    },
+                    {
+                        ";": -0.0014637242
+                    },
+                    {
+                        "\n": -0.06253155
+                    },
+                    {
+                        "<|endoftext|>": -0.34181038
+                    }
+                ],
+                "text_offset": [
+                    671,
+                    671,
+                    682,
+                    689,
+                    695,
+                    696,
+                    697
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 190,
+        "completion_tokens": 65,
+        "total_tokens": 255
+    },
+    "validation_result": [
+        {
+            "patch": "             return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "             return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            // continue;\n            return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "             return true;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

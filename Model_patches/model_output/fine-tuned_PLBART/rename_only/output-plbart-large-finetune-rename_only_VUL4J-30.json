@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (!(content instanceof String) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content).matches()) {",
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content.toString()).matches()) {",
+        "if (!(content instanceof String) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content).matches()) {",
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression()).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content instanceof String) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content)).matches()) {",
+        "if (!(content instanceof String)) {",
+        "if (!content.getClass().equals(String.class)) {",
+        "if (!(content instanceof CharSequence)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(content instanceof String) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content).matches()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content.toString()).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value.toString()).matches()) {"
+        },
+        {
+            "patch": "if (!(content instanceof String) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content).matches()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression()).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex()).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content instanceof String) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content)).matches()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content)).matches()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content instanceof String)) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value instanceof String)) {"
+        },
+        {
+            "patch": "if (!content.getClass().equals(String.class)) {",
+            "correctness": "compile_success",
+            "translated": "if (!value.getClass().equals(String.class)) {"
+        },
+        {
+            "patch": "if (!(content instanceof CharSequence)) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value instanceof CharSequence)) {"
+        }
+    ]
+}

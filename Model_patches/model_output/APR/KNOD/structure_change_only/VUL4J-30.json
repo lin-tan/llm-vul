@@ -1,0 +1,65 @@
+{
+    "id": 17,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.286,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(name);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.3393,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(value.trim());\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3663,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(value.toLowerCase());\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.3909,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(p.trim());\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.413,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(size);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4196,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(value.close());\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4196,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(value.createArchive());\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4253,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(value.toString());\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.427,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(value.length());\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.4332,
+            "fix_type": "general",
+            "patch": "  String s = String.valueOf(p.toLowerCase());\n"
+        }
+    ]
+}

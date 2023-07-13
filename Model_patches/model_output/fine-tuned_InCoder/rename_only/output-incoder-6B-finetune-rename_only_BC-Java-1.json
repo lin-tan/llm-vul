@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    return new LargeWholeNumber[]{\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    return new LargeWholeNumber[] {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    return new LargeWholeNumber[] { \n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    return new LargeWholeNumber[2]{\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    return new LargeWholeNumber[] { <|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    if (S.isEmpty()) {\n        return null;\n    }\n    return new LargeWholeNumber[] {\n<|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    if (S.isEmpty()) {\n        return null;\n    }\n    return new LargeWholeNumber[]{\n<|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    if (S.isEmpty())\n        return null;\n    return new LargeWholeNumber[]{\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    if (S.isEmpty())\n        return null;\n    return new LargeWholeNumber[] {\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private LargeWholeNumber[] derDecrypt(\n    byte[]  encryption)\n    throws IOException\n{\n    ASN1Succession S = (ASN1Succession)ASN1Basic.outOfByteBatch(encryption);\n// buggy lines start:\n    return new LargeWholeNumber[]{\n// buggy lines end\n        ((ASN1WholeNumber)S.acquireItemAt(0)).acquireContent(),\n        ((ASN1WholeNumber)S.acquireItemAt(1)).acquireContent()\n    };\n}\n// fixed lines:\n    if (S.isEmpty())\n        return null;\n    else\n        return new LargeWholeNumber[]{\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return new LargeWholeNumber[]{\n",
+            "correctness": "compile_success",
+            "translated": "    return new BigInteger[]{\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[] {\n",
+            "correctness": "compile_success",
+            "translated": "    return new BigInteger[]{\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[] { \n",
+            "correctness": "compile_success",
+            "translated": "    return new BigInteger[]{\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[2]{\n",
+            "correctness": "uncompilable",
+            "translated": "    return new BigInteger[2]{\n"
+        },
+        {
+            "patch": "    return new LargeWholeNumber[] { ",
+            "correctness": "compile_success",
+            "translated": "    return new BigInteger[]{\n"
+        },
+        {
+            "patch": "    if (S.isEmpty()) {\n        return null;\n    }\n    return new LargeWholeNumber[] {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (s.isEmpty()) {\n        return null;\n    }\n    return new BigInteger[] {\n"
+        },
+        {
+            "patch": "    if (S.isEmpty()) {\n        return null;\n    }\n    return new LargeWholeNumber[]{\n",
+            "correctness": "uncompilable",
+            "translated": "    if (s.isEmpty()) {\n        return null;\n    }\n    return new BigInteger[] {\n"
+        },
+        {
+            "patch": "    if (S.isEmpty())\n        return null;\n    return new LargeWholeNumber[]{\n",
+            "correctness": "uncompilable",
+            "translated": "    if (s.isEmpty())\n        return null;\n    return new BigInteger[]{\n"
+        },
+        {
+            "patch": "    if (S.isEmpty())\n        return null;\n    return new LargeWholeNumber[] {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (s.isEmpty())\n        return null;\n    return new BigInteger[]{\n"
+        },
+        {
+            "patch": "    if (S.isEmpty())\n        return null;\n    else\n        return new LargeWholeNumber[]{\n",
+            "correctness": "uncompilable",
+            "translated": "    if (s.isEmpty())\n        return null;\n    else\n        return new BigInteger[]{\n"
+        }
+    ]
+}

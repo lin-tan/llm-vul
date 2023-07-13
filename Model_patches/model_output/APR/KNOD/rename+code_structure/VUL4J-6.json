@@ -1,0 +1,65 @@
+{
+    "id": 5,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2875,
+            "fix_type": "general",
+            "patch": "  int iodine = 0;\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.4587,
+            "fix_type": "general",
+            "patch": "  int iodine = 12;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5262,
+            "fix_type": "insert",
+            "patch": "this.centralData = false;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5262,
+            "fix_type": "insert",
+            "patch": "this.headerId = false;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.3996,
+            "fix_type": "general",
+            "patch": "  int iodine = centralData;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3996,
+            "fix_type": "general",
+            "patch": "  int iodine = headerId;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4613,
+            "fix_type": "general",
+            "patch": " final int iodine = 0;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.462,
+            "fix_type": "general",
+            "patch": "  int iodine = 12;\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.5459,
+            "fix_type": "insert",
+            "patch": "this.centralData = 0;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5459,
+            "fix_type": "insert",
+            "patch": "this.headerId = 0;\n"
+        }
+    ]
+}

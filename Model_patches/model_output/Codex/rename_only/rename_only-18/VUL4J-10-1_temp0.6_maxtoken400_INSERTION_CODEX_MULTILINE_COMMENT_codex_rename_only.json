@@ -1,0 +1,1193 @@
+{
+    "id": "cmpl-8HPP4VXU2wJbIpAZDaQwnqNCDs0vA",
+    "object": "text_completion",
+    "created": 1699159918,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "    OutputStream production = new PipedOutputStream();\n    IOUtils.copy(inputStream, (PipedOutputStream) production);\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " new",
+                    " Pip",
+                    "ed",
+                    "Output",
+                    "Stream",
+                    "();",
+                    "\n",
+                    "   ",
+                    " I",
+                    "OU",
+                    "t",
+                    "ils",
+                    ".",
+                    "copy",
+                    "(",
+                    "input",
+                    "Stream",
+                    ",",
+                    " (",
+                    "P",
+                    "iped",
+                    "Output",
+                    "Stream",
+                    ")",
+                    " production",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -2.3426783,
+                    -2.801203,
+                    -0.0011982486,
+                    -0.020620339,
+                    -0.00092735497,
+                    -0.40995824,
+                    -0.12270434,
+                    -0.48125282,
+                    -3.931278,
+                    -0.0032901245,
+                    -0.00091697165,
+                    -0.00029330945,
+                    -0.00059772714,
+                    -0.01236672,
+                    -0.080108374,
+                    -1.0636055,
+                    -0.004322952,
+                    -0.0031301675,
+                    -3.3381486,
+                    -0.35867855,
+                    -0.00087706116,
+                    -0.17505433,
+                    -0.0003131028,
+                    -0.0013094299,
+                    -0.28072962,
+                    -0.0040241587,
+                    -0.04812665
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        " Byte": -0.97098684
+                    },
+                    {
+                        "ed": -0.0011982486
+                    },
+                    {
+                        "Output": -0.020620339
+                    },
+                    {
+                        "Stream": -0.00092735497
+                    },
+                    {
+                        "();": -0.40995824
+                    },
+                    {
+                        "\n": -0.12270434
+                    },
+                    {
+                        "   ": -0.48125282
+                    },
+                    {
+                        " Pip": -2.2770052
+                    },
+                    {
+                        "OU": -0.0032901245
+                    },
+                    {
+                        "t": -0.00091697165
+                    },
+                    {
+                        "ils": -0.00029330945
+                    },
+                    {
+                        ".": -0.00059772714
+                    },
+                    {
+                        "copy": -0.01236672
+                    },
+                    {
+                        "(": -0.080108374
+                    },
+                    {
+                        "new": -1.040562
+                    },
+                    {
+                        "Stream": -0.004322952
+                    },
+                    {
+                        ",": -0.0031301675
+                    },
+                    {
+                        " production": -0.064013354
+                    },
+                    {
+                        "P": -0.35867855
+                    },
+                    {
+                        "iped": -0.00087706116
+                    },
+                    {
+                        "Output": -0.17505433
+                    },
+                    {
+                        "Stream": -0.0003131028
+                    },
+                    {
+                        ")": -0.0013094299
+                    },
+                    {
+                        " production": -0.28072962
+                    },
+                    {
+                        ");": -0.0040241587
+                    },
+                    {
+                        "\n": -0.04812665
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    644,
+                    648,
+                    650,
+                    656,
+                    662,
+                    665,
+                    666,
+                    669,
+                    671,
+                    673,
+                    674,
+                    677,
+                    678,
+                    682,
+                    683,
+                    688,
+                    694,
+                    695,
+                    697,
+                    698,
+                    702,
+                    708,
+                    714,
+                    715,
+                    726,
+                    728
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataPipe();\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "P",
+                    "ipe",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -5.0491447,
+                    -0.3668328,
+                    -0.2665966,
+                    -0.12587114
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ipe": -0.3668328
+                    },
+                    {
+                        "();": -0.2665966
+                    },
+                    {
+                        "\n": -0.12587114
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    656,
+                    659,
+                    662
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(true);\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "true",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.88659996,
+                    -1.8818425,
+                    -0.040674336,
+                    -0.12160494
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639606
+                    },
+                    {
+                        "false": -1.7847651
+                    },
+                    {
+                        ");": -0.040674336
+                    },
+                    {
+                        "\n": -0.12160494
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    668,
+                    670
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(item);\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "item",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.88659996,
+                    -4.3433466,
+                    -1.6101067,
+                    -0.12327479
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639606
+                    },
+                    {
+                        "false": -1.7847651
+                    },
+                    {
+                        ");": -1.6101067
+                    },
+                    {
+                        "\n": -0.12327479
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    668,
+                    670
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(getOutputFile());\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "get",
+                    "Output",
+                    "File",
+                    "());",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.88659996,
+                    -4.1264625,
+                    -2.2267592,
+                    -2.0246694,
+                    -0.55135053,
+                    -0.124326535
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639606
+                    },
+                    {
+                        "false": -1.7847651
+                    },
+                    {
+                        "Output": -2.2267592
+                    },
+                    {
+                        "Stream": -1.8467195
+                    },
+                    {
+                        "());": -0.55135053
+                    },
+                    {
+                        "\n": -0.124326535
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    667,
+                    673,
+                    677,
+                    681
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence();\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320879,
+                    -0.0011441823,
+                    -0.8639606,
+                    -0.1030071
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320879
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639606
+                    },
+                    {
+                        "\n": -0.1030071
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    666
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(0);\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "0",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320882,
+                    -0.0011441823,
+                    -0.88660055,
+                    -3.4701304,
+                    -0.10524257,
+                    -0.115555264
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320882
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "false": -1.7847648
+                    },
+                    {
+                        ");": -0.10524257
+                    },
+                    {
+                        "\n": -0.115555264
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    665,
+                    667
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutputStream();\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Output",
+                    "Stream",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -1.5389684,
+                    -0.60466146,
+                    -0.28269047,
+                    -0.11823102
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Stream": -0.60466146
+                    },
+                    {
+                        "();": -0.28269047
+                    },
+                    {
+                        "\n": -0.11823102
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    654,
+                    660,
+                    663
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence(true);\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "(",
+                    "true",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320882,
+                    -0.0011441823,
+                    -0.88660055,
+                    -1.8818424,
+                    -0.040674336,
+                    -0.12160481
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320882
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "false": -1.7847648
+                    },
+                    {
+                        ");": -0.040674336
+                    },
+                    {
+                        "\n": -0.12160481
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    664,
+                    668,
+                    670
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    OutputStream production = acquireOutDataSequence();\n    //\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " Output",
+                    "Stream",
+                    " production",
+                    " =",
+                    " acquire",
+                    "Out",
+                    "Data",
+                    "Sequ",
+                    "ence",
+                    "();",
+                    "\n",
+                    "   ",
+                    " //",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0072707585,
+                    -0.034234427,
+                    -0.30942547,
+                    -0.0015557121,
+                    -0.010069129,
+                    -0.023411835,
+                    -0.44860205,
+                    -0.54888093,
+                    -0.19690348,
+                    -0.4320882,
+                    -0.0011441823,
+                    -0.8639603,
+                    -0.10300697,
+                    -0.8096222,
+                    -2.3133,
+                    -3.318984
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0072707585
+                    },
+                    {
+                        "   ": -0.034234427
+                    },
+                    {
+                        " Output": -0.30942547
+                    },
+                    {
+                        "Stream": -0.0015557121
+                    },
+                    {
+                        " production": -0.010069129
+                    },
+                    {
+                        " =": -0.023411835
+                    },
+                    {
+                        " acquire": -0.44860205
+                    },
+                    {
+                        "Out": -0.54888093
+                    },
+                    {
+                        "Data": -0.19690348
+                    },
+                    {
+                        "Sequ": -0.4320882
+                    },
+                    {
+                        "ence": -0.0011441823
+                    },
+                    {
+                        "();": -0.8639603
+                    },
+                    {
+                        "\n": -0.10300697
+                    },
+                    {
+                        "<|endoftext|>": -0.66764593
+                    },
+                    {
+                        " if": -1.0393628
+                    },
+                    {
+                        " END": -2.2751353
+                    }
+                ],
+                "text_offset": [
+                    611,
+                    611,
+                    614,
+                    621,
+                    627,
+                    638,
+                    640,
+                    648,
+                    651,
+                    655,
+                    659,
+                    663,
+                    666,
+                    667,
+                    670,
+                    673
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 153,
+        "completion_tokens": 163,
+        "total_tokens": 316
+    },
+    "validation_result": [
+        {
+            "patch": "    OutputStream production = new PipedOutputStream();\n    IOUtils.copy(inputStream, (PipedOutputStream) production);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = new PipedOutputStream();\n    IOUtils.copy(in, (PipedOutputStream) output);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataPipe();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = acquireOutDataPipe();\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(true);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(true);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(item);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(item);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(getOutputFile());\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(getOutputFile());\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence();\n",
+            "correctness": "compile_success",
+            "translated": "    OutputStream output = getOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(0);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutputStream();\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = acquireOutputStream();\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence(true);\n",
+            "correctness": "uncompilable",
+            "translated": "    OutputStream output = getOutputStream(true);\n"
+        },
+        {
+            "patch": "    OutputStream production = acquireOutDataSequence();\n    //\n",
+            "correctness": "compile_success",
+            "translated": "    OutputStream output = getOutputStream();\n    //\n"
+        }
+    ]
+}

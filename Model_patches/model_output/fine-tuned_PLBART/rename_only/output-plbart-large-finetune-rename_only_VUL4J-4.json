@@ -1,0 +1,66 @@
+{
+    "output": [
+        "reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(content, interchange, content);",
+        "reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(category, interchange, content);",
+        "reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(content, interchange);",
+        "if (reply == null && content instanceof String) { reply = new InputSource(new StringReader((String) content)); }",
+        "try { reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(content, interchange);",
+        "if (reply == null) {",
+        "if (reply!= null) {",
+        "if (content == null) { return null; }",
+        "try { if (reply == null) {",
+        "return reply;"
+    ],
+    "validation_result": [
+        {
+            "patch": "reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(content, interchange, content);",
+            "correctness": "uncompilable",
+            "translated": "answer = exchange.getContext().getTypeConverter().convertTo(body, exchange, body);"
+        },
+        {
+            "patch": "reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(category, interchange, content);",
+            "correctness": "test_timeout",
+            "translated": "answer = exchange.getContext().getTypeConverter().convertTo(type, exchange, body);"
+        },
+        {
+            "patch": "reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(content, interchange);",
+            "correctness": "uncompilable",
+            "translated": "answer = exchange.getContext().getTypeConverter().convertTo(body, exchange);"
+        },
+        {
+            "patch": "if (reply == null && content instanceof String) { reply = new InputSource(new StringReader((String) content)); }",
+            "correctness": "test_timeout",
+            "translated": "if (answer == null && body instanceof String) { answer = new InputSource(new StringReader((String) body)); }"
+        },
+        {
+            "patch": "try { reply = interchange.acquireCircumstance().acquireCategoryTransformer().transformTo(content, interchange);",
+            "correctness": "uncompilable",
+            "translated": "try { answer = exchange.getContext().getTypeConverter().convertTo(body, exchange);"
+        },
+        {
+            "patch": "if (reply == null) {",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) {"
+        },
+        {
+            "patch": "if (reply!= null) {",
+            "correctness": "uncompilable",
+            "translated": "if (answer!= null) {"
+        },
+        {
+            "patch": "if (content == null) { return null; }",
+            "correctness": "test_success",
+            "translated": "if (body == null) { return null; }"
+        },
+        {
+            "patch": "try { if (reply == null) {",
+            "correctness": "uncompilable",
+            "translated": "try { if (answer == null) {"
+        },
+        {
+            "patch": "return reply;",
+            "correctness": "uncompilable",
+            "translated": "return answer;"
+        }
+    ]
+}

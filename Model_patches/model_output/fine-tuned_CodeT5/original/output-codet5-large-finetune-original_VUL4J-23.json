@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    return source == null? null : Encode.forJavaScriptString(source);\n</s></s></s></s>",
+        "<pad><s>    return (source == null)? null : Encode.forJavaScriptSource(source);\n</s></s>",
+        "<pad><s>    return source == null? null : encodeForJSString(source);\n</s></s></s></s></s>",
+        "<pad><s>    return source == null? null : Encode.forJSString(source);\n</s></s></s></s>",
+        "<pad><s>    return source == null? null : Encode.forJavaScriptSource(source.trim());\n</s></s>",
+        "<pad><s>    return source == null? null : Encode.forJSSource(source);\n</s></s></s></s>",
+        "<pad><s>    return source == null? null : Encode.forJavaScriptSource(source.toLowerCase());\n</s>",
+        "<pad><s>    return source == null? null : Encode.forJavaScriptSource(source.toCharArray());\n</s>",
+        "<pad><s>    return null;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return source == null? null : Encode.forJavaScriptString(source);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return (source == null)? null : Encode.forJavaScriptSource(source);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return source == null? null : encodeForJSString(source);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return source == null? null : Encode.forJSString(source);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return source == null? null : Encode.forJavaScriptSource(source.trim());\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return source == null? null : Encode.forJSSource(source);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return source == null? null : Encode.forJavaScriptSource(source.toLowerCase());\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return source == null? null : Encode.forJavaScriptSource(source.toCharArray());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return null;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

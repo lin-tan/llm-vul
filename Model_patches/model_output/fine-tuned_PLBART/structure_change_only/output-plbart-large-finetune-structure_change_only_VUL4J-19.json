@@ -1,0 +1,56 @@
+{
+    "output": [
+        "setCurrentAccessPermission(new AccessPermission(dicPermissions, false));",
+        "setCurrentAccessPermission(new AccessPermission(dicPermissions, true));",
+        "setCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());",
+        "setCurrentAccessPermission(new AccessPermission(dictionaryPermissions));",
+        "setCurrentAccessPermission(new AccessPermission( dicPermissions, false));",
+        "setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+        "setCurrentAccessPermission(new AccessPermission(dicPermissions, null));",
+        "setCurrentAccessPermission(accessPermission);",
+        "setCurrentAccessPermission(new AccessPermission( dicPermissions, true));",
+        "setCurrentAccessPermission(null);"
+    ],
+    "validation_result": [
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission(dicPermissions, false));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission(dicPermissions, true));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(AccessPermission.getOwnerAccessPermission());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission(dictionaryPermissions));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission( dicPermissions, false));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission(dicPermissions));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission(dicPermissions, null));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(accessPermission);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(new AccessPermission( dicPermissions, true));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "setCurrentAccessPermission(null);",
+            "correctness": "compile_success"
+        }
+    ]
+}

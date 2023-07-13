@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return r.getRequestURI();",
+        "return \"String_Node_Str\";",
+        "return r.getPathInfo();",
+        "return r.getPathInfo().toLowerCase();",
+        "return r.getPathInfo().toString();",
+        "return r.getPathInfo(true);",
+        "return r.getContextPath();",
+        "return r.getAbsolutePath();",
+        "return r.getURI();",
+        "return null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return r.getRequestURI();",
+            "correctness": "compile_success",
+            "translated": "return request.getRequestURI();"
+        },
+        {
+            "patch": "return \"String_Node_Str\";",
+            "correctness": "compile_success",
+            "translated": "return \"String_Node_Str\";"
+        },
+        {
+            "patch": "return r.getPathInfo();",
+            "correctness": "compile_success",
+            "translated": "return request.getPathInfo();"
+        },
+        {
+            "patch": "return r.getPathInfo().toLowerCase();",
+            "correctness": "compile_success",
+            "translated": "return request.getPathInfo().toLowerCase();"
+        },
+        {
+            "patch": "return r.getPathInfo().toString();",
+            "correctness": "compile_success",
+            "translated": "return request.getPathInfo().toString();"
+        },
+        {
+            "patch": "return r.getPathInfo(true);",
+            "correctness": "uncompilable",
+            "translated": "return request.getPathInfo(true);"
+        },
+        {
+            "patch": "return r.getContextPath();",
+            "correctness": "compile_success",
+            "translated": "return request.getContextPath();"
+        },
+        {
+            "patch": "return r.getAbsolutePath();",
+            "correctness": "uncompilable",
+            "translated": "return request.getAbsolutePath();"
+        },
+        {
+            "patch": "return r.getURI();",
+            "correctness": "uncompilable",
+            "translated": "return request.getURI();"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "compile_success",
+            "translated": "return null;"
+        }
+    ]
+}

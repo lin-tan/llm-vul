@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (!HandlerHelper.isPathUnsafe(requestFilename, false)) {",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename, true)) {",
+        "if (!HandlerHelper.isPathUnsafe(request.getPathInfo())) {",
+        "if (HandlerHelper.isPathUnsafe(requestFilename)) {",
+        "if (!isPathUnsafe(requestFilename)) {",
+        "if (!handlerHelper.isPathUnsafe(requestFilename)) {",
+        "if (!HandlerHelper.isUnsafePath(requestFilename)) {",
+        "if (!HandlerUtils.isPathUnsafe(requestFilename)) {",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename, requestMethodname)) {",
+        "if (!isUnsafePath(requestFilename)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename, false)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename, true)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(request.getPathInfo())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (HandlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!isPathUnsafe(requestFilename)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!handlerHelper.isPathUnsafe(requestFilename)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isUnsafePath(requestFilename)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerUtils.isPathUnsafe(requestFilename)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename, requestMethodname)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isUnsafePath(requestFilename)) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

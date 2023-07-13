@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>  this.context = setting;\n</s></s></s></s></s>",
+        "<pad><s>  this.jaxbContext = jaxbContext;\n</s>",
+        "<pad><s>  this.jaxbContext = setting;\n</s></s></s>",
+        "<pad><s>  this.setting = jaxbContext;\n</s></s></s>",
+        "<pad><s>  this.context = context;\n</s></s></s></s></s>",
+        "<pad><s>  this.settings = setting;\n</s></s></s></s></s>",
+        "<pad><s>  this.setting = context;\n</s></s></s></s></s>",
+        "<pad><s>  return this;\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  this.context = setting;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.jaxbContext = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = jaxbContext;\n"
+        },
+        {
+            "patch": "  this.jaxbContext = setting;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = context;\n"
+        },
+        {
+            "patch": "  this.setting = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = jaxbContext;\n"
+        },
+        {
+            "patch": "  this.context = context;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  this.settings = setting;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.settings = context;\n"
+        },
+        {
+            "patch": "  this.setting = context;\n",
+            "correctness": "compile_success",
+            "translated": "  this.context = context;\n"
+        },
+        {
+            "patch": "  return this;\n",
+            "correctness": "uncompilable",
+            "translated": "  return this;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

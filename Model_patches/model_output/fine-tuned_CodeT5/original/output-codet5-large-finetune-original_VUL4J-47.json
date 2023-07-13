@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);\n</s>",
+        "<pad><s>        xmlIn.setProperty(XMLInputFactory.SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);\n</s></s></s>",
+        "<pad><s>        xmlIn.setProperty(XMLInputFactory.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n</s></s></s>",
+        "<pad><s>        xmlIn.setProperty(XMLConstants.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n</s></s>",
+        "<pad><s>        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n</s>",
+        "<pad><s>        xmlIn.setProperty(XMLConstants.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n</s></s></s></s>",
+        "<pad><s>        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);\n</s></s></s>",
+        "<pad><s>        xmlIn.setProperty(XMLConstants.XMLConstants.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n</s>",
+        "<pad><s>        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);\n</s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        xmlIn.setProperty(XMLInputFactory.SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn.setProperty(XMLInputFactory.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn.setProperty(XMLConstants.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        xmlIn.setProperty(XMLConstants.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        xmlIn.setProperty(XMLConstants.XMLConstants.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), false);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, false));\n<|endoftext|><|endoftext|><|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), true);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));\n<|endoftext|><|endoftext|><|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(inputStream);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), true, false);\n<|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), false, false);\n<|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), null);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrapInputStream(inputStream));\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "final static private XMLStreamReader createXMLStreamReader(InputStream inputStream) throws XMLStreamException, IOException {\n    XMLInputFactory factory = XMLInputFactory.newInstance();\n    factory.setProperty(XMLInputFactory.IS_COALESCING, true);\n    factory.setProperty(XMLInputFactory.IS_REPLACING_ENTITY_REFERENCES, true);\n// buggy lines start:\n    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n// buggy lines end\n}\n// fixed lines:\n    return factory.createXMLStreamReader(wrappedInputStream);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, false));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(inputStream);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), true, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), false, false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), null);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapInputStream(inputStream));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrappedInputStream);\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

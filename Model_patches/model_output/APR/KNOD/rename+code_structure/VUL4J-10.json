@@ -1,0 +1,65 @@
+{
+    "id": 8,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1623,
+            "fix_type": "general",
+            "patch": "  OutputStream production = acquireOutDataSequence();\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1669,
+            "fix_type": "general",
+            "patch": "  OutputStream production = get();\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1669,
+            "fix_type": "general",
+            "patch": "  OutputStream production = isFormField();\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1838,
+            "fix_type": "general",
+            "patch": "  FileItem production = acquireOutDataSequence();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1838,
+            "fix_type": "general",
+            "patch": "  FileUploadException production = acquireOutDataSequence();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4439,
+            "fix_type": "insert",
+            "patch": "headers = null;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4439,
+            "fix_type": "insert",
+            "patch": "fileName = null;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4742,
+            "fix_type": "insert",
+            "patch": "if (inch == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4788,
+            "fix_type": "insert",
+            "patch": "headers = true;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.4788,
+            "fix_type": "insert",
+            "patch": "fileName = true;\n"
+        }
+    ]
+}

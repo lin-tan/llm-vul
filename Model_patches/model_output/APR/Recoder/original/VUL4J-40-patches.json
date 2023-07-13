@@ -1,0 +1,12 @@
+[
+  "if(!scimUserFromDb.getUserName().equals(scimUserFromRequest.getName())){",
+  "if(!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())){\n",
+  "if(!scimUserFromDb.equals(scimUserFromRequest.getUserName())){\n",
+  "if(!scimUserFromDb.getUserName()){\n",
+  "if(!scimUserFromDb.getUserName().equals(scimUserFromRequest.getPrimaryEmail())){",
+  "return false;",
+  "if(scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())){\n",
+  "if(!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())){",
+  "if(scimUserFromDb){\n",
+  "if(!scimUserFromDb){\n"
+]

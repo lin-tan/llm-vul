@@ -1,0 +1,38 @@
+{
+    "method": {
+        "getLastAccess": "acquireFinalAccess",
+        "getAge": "acquireHistoricPeriod",
+        "getRemoteAddr": "obtainOffSiteLocation",
+        "writeCountry": "composeState",
+        "getSerializedSize": "acquireSerializedSize",
+        "getExpirationDate": "acquireTerminationTime",
+        "writeDirectly": "composeStraightly",
+        "getId": "acquireId",
+        "getAttributeCount": "acquirePropertyCounting",
+        "htmlEncodeButNotSpace": "htmlEnocdeWithoutSpace",
+        "urlEncode": "encodeUrl",
+        "getRemoteUser": "acquireOffSiteControlExploiter",
+        "getStringForJavascript": "acquireJavascriptString",
+        "isSerializable": "whetherSerializable",
+        "writeSession": "composeSession",
+        "write": "compose",
+        "": ""
+    },
+    "variable": {
+        "remoteUser": "offSiteControlExploiter",
+        "A_HREF_PART_SESSIONS": "A_HREF_PART_SESSIONS",
+        "displayUser": "showExploiter",
+        "integerFormat": "wholeNumberFormatting",
+        "expiryFormat": "terminationFormatting",
+        "nextColumnAlignRight": "followingColumnAlignRightField",
+        "session": "session",
+        "nextColumnAlignCenter": "followingColumnAlignCore",
+        "nextColumn": "followingColumn",
+        "durationFormat": "timeSpanFormatting",
+        "remoteAddr": "offSiteControlLocation",
+        "": ""
+    },
+    "class": {
+        "SessionInformations": "SessionData"
+    }
+}

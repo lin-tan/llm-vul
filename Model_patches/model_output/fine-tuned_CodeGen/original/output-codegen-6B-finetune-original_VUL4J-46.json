@@ -1,0 +1,56 @@
+{
+    "output": [
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlIn = XML_INPUT_FACTORY;\n<|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlIn = XML_IN_FACTORY;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlInputFactory = XMLInputFactory.newInstance();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlIn = new XMLInputFactory();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlIn = XML_INPUT_INSTANCE;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlIn = XML_FACTORY;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        _xmlInputFactory = XMLInputFactory.newInstance();\n<|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlIn = XML_INITIAL_FACTORY;\n<|endoftext|><|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlIn = XML_INPUT_FACTORY.clone();\n<|endoftext|>",
+        "protected XmlFactory(ObjectCodec oc, int xpFeatures, int xgFeatures,\n        XMLInputFactory xmlIn, XMLOutputFactory xmlOut,\n        String nameForTextElem)\n{\n    super(oc);\n    _xmlParserFeatures = xpFeatures;\n    _xmlGeneratorFeatures = xgFeatures;\n    _cfgNameForTextElement = nameForTextElem;\n    if (xmlIn == null) {\n// buggy lines start:\n        xmlIn = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOut == null) {\n        xmlOut = XMLOutputFactory.newInstance();\n    }\n    _initFactories(xmlIn, xmlOut);\n    _xmlInputFactory = xmlIn;\n    _xmlOutputFactory = xmlOut;\n}\n// fixed lines:\n        xmlIn = XML_IN_FACTORY.newInstance();\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        xmlIn = XML_INPUT_FACTORY;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn = XML_IN_FACTORY;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlInputFactory = XMLInputFactory.newInstance();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn = new XMLInputFactory();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn = XML_INPUT_INSTANCE;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn = XML_FACTORY;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        _xmlInputFactory = XMLInputFactory.newInstance();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        xmlIn = XML_INITIAL_FACTORY;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn = XML_INPUT_FACTORY.clone();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        xmlIn = XML_IN_FACTORY.newInstance();\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

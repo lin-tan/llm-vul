@@ -1,0 +1,37 @@
+{
+    "VUL4J-66-52-53": {
+        "src": "return false ;",
+        "patches": [
+            {
+                "patch": "{ return false ; } return false ;"
+            },
+            {
+                "patch": "return false ;"
+            },
+            {
+                "patch": "if( str.length( ) ==0) {"
+            },
+            {
+                "patch": "return false ; switch( str.charAt(0) ) {"
+            },
+            {
+                "patch": "return false ; else { return false ; }"
+            },
+            {
+                "patch": "if( str.length( ) ==0)"
+            },
+            {
+                "patch": "return false ; return false ;"
+            },
+            {
+                "patch": "return false ; if( str.length( ) ==0)"
+            },
+            {
+                "patch": "return true ;"
+            },
+            {
+                "patch": "{ return str.length( ) ==0;"
+            }
+        ]
+    }
+}

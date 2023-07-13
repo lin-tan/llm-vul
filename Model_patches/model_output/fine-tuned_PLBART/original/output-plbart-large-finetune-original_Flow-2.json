@@ -1,0 +1,56 @@
+{
+    "output": [
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes(event));",
+        "template = template.replaceAll(\"{{path}}\", path); template = template.replaceAll(\"{{additionalInfo}}\", additionalInfo); template = template.replaceAll(\"{{routes}}\", getRoutes(event));",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo);",
+        "template = template.replace(\"{{path}}\", path); if (template.contains(\"{{routes}}\")) { template = template.replace(\"{{routes}}\", getRoutes(event)); }",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes(event);",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", routes);",
+        "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes());",
+        "template = template.replace(\"{{path}}\" + path + \"{{additionalInfo}}\" + additionalInfo + \"{{routes}}\" + getRoutes(event);",
+        "template = template.replace(\"{{path}}\", path);",
+        "template = template.replace(\"{{routes}}\", getRoutes(event));"
+    ],
+    "validation_result": [
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes(event));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "template = template.replaceAll(\"{{path}}\", path); template = template.replaceAll(\"{{additionalInfo}}\", additionalInfo); template = template.replaceAll(\"{{routes}}\", getRoutes(event));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo);",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); if (template.contains(\"{{routes}}\")) { template = template.replace(\"{{routes}}\", getRoutes(event)); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes(event);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", routes);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\" + path + \"{{additionalInfo}}\" + additionalInfo + \"{{routes}}\" + getRoutes(event);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "template = template.replace(\"{{path}}\", path);",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "template = template.replace(\"{{routes}}\", getRoutes(event));",
+            "correctness": "test_success"
+        }
+    ]
+}

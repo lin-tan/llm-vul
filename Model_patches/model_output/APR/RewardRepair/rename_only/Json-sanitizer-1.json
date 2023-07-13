@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, '",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, '",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h,",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) |",
+        "if (h >= begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, '",
+        "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(",
+        "if (h > start && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, '",
+        "if (h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, ''); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, '",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert(i, '"
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, '",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert(i, '"
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert("
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)"
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h,",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert(i,"
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) |",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) |"
+        },
+        {
+            "patch": "if (h >= begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, '",
+            "correctness": "uncompilable",
+            "translated": "if (i >= start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert(i, '"
+        },
+        {
+            "patch": "if (h > begin && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt("
+        },
+        {
+            "patch": "if (h > start && h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, '",
+            "correctness": "uncompilable",
+            "translated": "if (i > start && i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert(i, '"
+        },
+        {
+            "patch": "if (h + 2 < terminal &&'<'== JSONlike.charAt(h - 1) &&'s' == (JSONlike.charAt(h + 1) | 32) && 'c' == (JSONlike.charAt(h + 2) | 32)) { embed(h, ''); }",
+            "correctness": "uncompilable",
+            "translated": "if (i + 2 < end &&'<'== jsonish.charAt(i - 1) &&'s' == (jsonish.charAt(i + 1) | 32) && 'c' == (jsonish.charAt(i + 2) | 32)) { insert(i, ''); }"
+        }
+    ]
+}

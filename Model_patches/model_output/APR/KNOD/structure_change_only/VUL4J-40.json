@@ -1,0 +1,65 @@
+{
+    "id": 19,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.5481,
+            "fix_type": "insert",
+            "patch": "if (scimUserFromRequest.hasNext() ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.5481,
+            "fix_type": "insert",
+            "patch": "if (scimUserFromRequest.isEmpty() ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5867,
+            "fix_type": "insert",
+            "patch": "if (scimUserFromDb.hasNext() ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5867,
+            "fix_type": "insert",
+            "patch": "if (scimUserFromDb.isEmpty() ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.6507,
+            "fix_type": "general",
+            "patch": "dbUserName.equals(requestUserName.size())"
+        },
+        {
+            "rank": 6,
+            "score": -0.6507,
+            "fix_type": "general",
+            "patch": "dbUserName.equals(requestUserName.toString())"
+        },
+        {
+            "rank": 7,
+            "score": -0.6588,
+            "fix_type": "insert",
+            "patch": "if (scimUserFromRequest.hasNext() ){\nreturn true;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.6588,
+            "fix_type": "insert",
+            "patch": "if (scimUserFromRequest.isEmpty() ){\nreturn true;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.6804,
+            "fix_type": "insert",
+            "patch": "  String dbOrigin = scimUserFromRequest.getOrigin();\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.6942,
+            "fix_type": "insert",
+            "patch": "if (scimUserFromRequest.isVerified() == null ){\ncontinue  ;\n}\n"
+        }
+    ]
+}

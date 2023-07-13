@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-16,1",
+    "output": [
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;\n    \n",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;\n   //\n",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) { \n         if(c) {\n   }              \n   return true;\n",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(!c) {\n         if(c) {\n   }              \n   return true;\n",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }              \n   return true;\n  ",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }              \n   }\n   return\n",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;\n  //  ",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) { \n         if(c) {\n   }               return true;   //\n",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }              \n   }\n   return  ",
+        "\n         if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(!c) {\n         if(c) {\n   }               return true;   //\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;\n   //",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;\n   //"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) { \n         if(c) {\n   }              \n   return true;",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(!c) {\n         if(c) {\n   }              \n   return true;",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(!c) {\n         if(c) {\n   }              \n   return true;"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }              \n   return true;",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }              \n   }\n   return",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }              \n   }\n   return"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;\n  //",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;\n   //"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) { \n         if(c) {\n   }               return true;   //",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }               return true;\n   //"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }              \n   }\n   return",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(c) {\n         if(c) {\n   }              \n   }\n   return"
+        },
+        {
+            "patch": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(!c) {\n         if(c) {\n   }               return true;   //",
+            "correctness": "uncompilable",
+            "translated": "if(!c) {     \n\n         if(!c) {\n  \n\n  \n\n  \n         if(!c) {         \n\n  \n         if(!c) {\n         if(!c) {\n         if(!c) {\n         if(c) {\n   }               return true;   //"
+        }
+    ]
+}

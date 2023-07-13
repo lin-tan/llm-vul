@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "new BigInteger[] {",
+        "return new BigInteger[] {",
+        "Arrays.copyOf(new BigInteger[] {",
+        "Integer[] encoding = new Integer[] {",
+        "Integer[] result = new BigInteger[] {",
+        "Integer[] decode = new BigInteger[] {",
+        "BigInteger[] newBigInteger[] {",
+        "Integer[] newBigInteger[] {",
+        "BigInteger[] result = new BigInteger[] {",
+        "Integer[] der = new BigInteger[] {"
+    ],
+    "validation_result": [
+        {
+            "patch": "new BigInteger[] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[] {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Arrays.copyOf(new BigInteger[] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Integer[] encoding = new Integer[] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Integer[] result = new BigInteger[] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Integer[] decode = new BigInteger[] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "BigInteger[] newBigInteger[] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Integer[] newBigInteger[] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "BigInteger[] result = new BigInteger[] {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "Integer[] der = new BigInteger[] {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

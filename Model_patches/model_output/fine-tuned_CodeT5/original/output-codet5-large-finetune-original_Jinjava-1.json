@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>     .add(\"notifyAll\")\n</s>",
+        "<pad><s>     .add(\"notifyAll\");\n</s>",
+        "<pad><s>     .add(\"notifyOnce\")\n</s>",
+        "<pad><s>     .add(\"addListener\")\n</s>",
+        "<pad><s>     .addAll(\"notify\");\n</s>",
+        "<pad><s>     .add(\"dispatch\")\n</s></s>",
+        "<pad><s>     .add(\"add\")\n</s></s>",
+        "<pad><s>     .add(\"publish\")\n</s></s>",
+        "<pad><s>     .add(\"call\")\n</s></s>",
+        "<pad><s>     .add(\"remove\")\n</s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "     .add(\"notifyAll\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .add(\"notifyAll\");\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "     .add(\"notifyOnce\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .add(\"addListener\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .addAll(\"notify\");\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "     .add(\"dispatch\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .add(\"add\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .add(\"publish\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .add(\"call\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "     .add(\"remove\")\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

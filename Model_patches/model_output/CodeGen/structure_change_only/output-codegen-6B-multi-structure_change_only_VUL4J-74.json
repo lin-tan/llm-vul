@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-13,2",
+    "output": [
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed);\n\t\treturn rnd;\n\t}\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed);\n\t\treturn rnd;\n\t}\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed.getBytes());\n\t\treturn rnd;\n\t}\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed.getBytes());\n\t\treturn rnd;\n\t}\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.nextBytes(bytes);\n\t\treturn rnd;\n\t}\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.nextInt();\n\t\treturn rnd;\n\t}\n\n}\n",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed);\n\t\treturn rnd;\n\t}\n}",
+        "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.nextInt();\n\t\treturn rnd;\n\t}\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed);\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed);\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed.getBytes());\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed.getBytes());\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.nextBytes(bytes);\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.nextInt();\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.setSeed(seed);\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public SecureRandom getObject() throws Exception {\n\t\tSecureRandom rnd = SecureRandom.getInstance(algorithm);\n\t\trnd.nextInt();\n\t\treturn rnd;\n\t}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

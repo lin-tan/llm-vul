@@ -1,0 +1,65 @@
+{
+    "id": 22,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.254,
+            "fix_type": "general",
+            "patch": "!UNENCODED_SET.contains(bytes)"
+        },
+        {
+            "rank": 2,
+            "score": -0.5619,
+            "fix_type": "insert",
+            "patch": "  byte[] sb;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3434,
+            "fix_type": "general",
+            "patch": "bytes != null && !UNENCODED_SET.contains(bytes)"
+        },
+        {
+            "rank": 4,
+            "score": -0.5111,
+            "fix_type": "general",
+            "patch": "!UNENCODED_SET.contains(name)"
+        },
+        {
+            "rank": 5,
+            "score": -0.5465,
+            "fix_type": "general",
+            "patch": "!List.contains(name)"
+        },
+        {
+            "rank": 6,
+            "score": -0.5465,
+            "fix_type": "general",
+            "patch": "!SetFromMap.contains(name)"
+        },
+        {
+            "rank": 7,
+            "score": -0.6,
+            "fix_type": "general",
+            "patch": "!List.contains(value)"
+        },
+        {
+            "rank": 8,
+            "score": -0.6,
+            "fix_type": "general",
+            "patch": "!SetFromMap.contains(value)"
+        },
+        {
+            "rank": 9,
+            "score": -0.6452,
+            "fix_type": "general",
+            "patch": "!UNENCODED_SET.contains(value)"
+        },
+        {
+            "rank": 10,
+            "score": -0.6587,
+            "fix_type": "general",
+            "patch": "!UNENCODED_SET.contains(c.getName())"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "this.context = new JAXBContext(context);",
+        "this.context = new JAXBContext(context);",
+        "this.context = (JaxBContext) context;",
+        "this.context = new JAXBContext();",
+        "this.context = (JaxBContext) context;",
+        "this.context = new JXBContext(context);",
+        "this.context = new JAXBContext();",
+        "this.context = context;",
+        "this.context = (JaxBContext)context;",
+        "this.context = (JaxBContext)context;"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.context = new JAXBContext(context);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = new JAXBContext(context);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = (JaxBContext) context;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = new JAXBContext();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = (JaxBContext) context;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = new JXBContext(context);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = new JAXBContext();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.context = (JaxBContext)context;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = (JaxBContext)context;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

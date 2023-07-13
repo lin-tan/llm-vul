@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-16,1",
+    "output": [
+        "\n        String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n\n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+        "\n        String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+        "\n        String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n &&\n\n        String s = content.toString();\n       \n   \n  }",
+        "\n        String s = content.toString(); content\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n        String s = content.toString(); &&\n);\n        String s = content.toString();\n   \n  }",
+        "\n        String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n   \n\n        String s = content.toString();\n        if (\n   \n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+        "\n        String s = content.toString(); content\n       \n\n       \n       \n        if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n        String s = content.toString(); &&\n);\n        String s = content.toString();\n   \n  }",
+        "\n        String s = content.toString(); content\n       \n\n       \n       \n        if (\n       \n       \n\n        String s = content.toString();\n        if (\n    if (\n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+        "\n        String s = content.toString(); content\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n    if (\n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+        "\n        String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n &&\n        String s = content.toString();\n       \n       \n   \n   ",
+        "\n        String s = content.toString(); content\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n        String s = content.toString(); &&\n);\n        String s = content.toString();\n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n\n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = value.toString();\n        if (\n\n\n\n &&\n        String s = value.toString();\n       \n       \n   \n  }"
+        },
+        {
+            "patch": "String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = value.toString();\n        if (\n\n\n\n &&\n        String s = value.toString();\n       \n       \n   \n  }"
+        },
+        {
+            "patch": "String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n &&\n\n        String s = content.toString();\n       \n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = value.toString();\n        if (\n\n\n\n &&\n        String s = value.toString();\n       \n       \n   \n  }"
+        },
+        {
+            "patch": "String s = content.toString(); content\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n        String s = content.toString(); &&\n);\n        String s = content.toString();\n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = value.toString();\n        if (\n   \n\n\n        String s = value.toString(); &&\n);\n        String s = value.toString();\n   \n  }"
+        },
+        {
+            "patch": "String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n   \n\n        String s = content.toString();\n        if (\n   \n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = value.toString();\n        if (\n\n\n\n &&\n        String s = value.toString();\n       \n       \n   \n  }"
+        },
+        {
+            "patch": "String s = content.toString(); content\n       \n\n       \n       \n        if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n        String s = content.toString(); &&\n);\n        String s = content.toString();\n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = value.toString();\n        if (\n   \n\n\n        String s = value.toString(); &&\n);\n        String s = value.toString();\n   \n  }"
+        },
+        {
+            "patch": "String s = content.toString(); content\n       \n\n       \n       \n        if (\n       \n       \n\n        String s = content.toString();\n        if (\n    if (\n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value\n       \n\n       \n       \n        if (\n       \n       \n\n        String s = value.toString();\n        if (\n    if (\n\n\n &&\n        String s = value.toString();\n       \n       \n   \n  }"
+        },
+        {
+            "patch": "String s = content.toString(); content\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n    if (\n\n\n &&\n        String s = content.toString();\n       \n       \n   \n  }",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value\n       \n\n       \n       \n        if (\n       \n       \n\n        String s = value.toString();\n        if (\n    if (\n\n\n &&\n        String s = value.toString();\n       \n       \n   \n  }"
+        },
+        {
+            "patch": "String s = content.toString(); content_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n &&\n        String s = content.toString();",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value_class == String.class &&\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = value.toString();\n        if (\n   \n\n\n &&\n        String s = value.toString();"
+        },
+        {
+            "patch": "String s = content.toString(); content\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = content.toString();\n        if (\n   \n\n\n        String s = content.toString(); &&\n);\n        String s = content.toString();",
+            "correctness": "uncompilable",
+            "translated": "String s = value.toString(); value\n       \n\n       \n       \n    if (\n       \n       \n\n        String s = value.toString();\n        if (\n   \n\n\n        String s = value.toString(); &&\n);\n        String s = value.toString();"
+        }
+    ]
+}

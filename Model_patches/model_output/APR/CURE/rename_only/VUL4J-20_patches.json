@@ -1,0 +1,37 @@
+{
+    "VUL4J-20-539-540": {
+        "src": "result [ j ] = ( ( COS CaMeL Numeral ) acquire CaMeL Item ( j ) ) . float CaMeL Content ( ) ;",
+        "patches": [
+            {
+                "patch": "result [ j ] =(( COSNumeral ) acquireItem( j ) ).floatContent( ) ;"
+            },
+            {
+                "patch": "result [ j ] =( float )(( COSNumeral ) acquireItem( j ) ).floatContent( ) ;"
+            },
+            {
+                "patch": "result [ j ] =(( COSNumeral ) acquireItem( ) ).floatContent( ) ;"
+            },
+            {
+                "patch": "result [ j ] =(( COSNumeral ) acquireItem( j ) ).floatContent( ) ; }"
+            },
+            {
+                "patch": "result [ j ] =( float )((( COSNumeral ) acquireItem( j ) ).floatContent( ) ) ;"
+            },
+            {
+                "patch": "if( j ==0) result [ j ] =(( COSNumeral ) acquireItem( j ) ).floatContent( ) ;"
+            },
+            {
+                "patch": "result [ j ] =((( COSNumeral ) acquireItem( j ) ).floatContent( ) ) ;"
+            },
+            {
+                "patch": "result [ j ] =(( COSNumeral ) acquireItem( j ) ).floatContent( this ) ;"
+            },
+            {
+                "patch": "result [ j ] =(( COSNumeral ) getItem( j ) ).floatContent( ) ;"
+            },
+            {
+                "patch": "result [ j ] =(( COSNumeral ) acquireItem( j ) ).floatValue( ) ;"
+            }
+        ]
+    }
+}

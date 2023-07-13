@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return request.getRequestURI();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return \"String_Node_Str\";\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return null;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return request.getServletPath();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return request.getContextPath();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return request.getQueryString();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return request.getPathInfo() + \"String_Node_Str\";\n<|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return \"String_Node_Str\" + request.getPathInfo();\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return request.getPath();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public String getForwardPage( HttpServletRequest request )\n{\n// buggy lines start:\n    return request.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return \"String_Node_Str\" + request.getRequestURI();\n<|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return request.getRequestURI();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return \"String_Node_Str\";\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return null;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return request.getServletPath();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return request.getContextPath();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return request.getQueryString();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return request.getPathInfo() + \"String_Node_Str\";\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return \"String_Node_Str\" + request.getPathInfo();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return request.getPath();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return \"String_Node_Str\" + request.getRequestURI();\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return xssStrainer.whetherReasonableHref(resourseAddress);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return mutilateTitleScope(resourseAddress);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return StringEscapeUtils.unescapeXml(URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8));\n</s>",
+        "<pad><s>    return URLDecoder.decode(resourseAddress, \"String_Node_Str\");\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    return URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());\n</s></s></s></s></s></s></s>",
+        "<pad><s>    return StringEscapeUtils.unescapeXml(URLDecoder.decode(resourseAddress));\n</s></s></s></s></s></s></s>",
+        "<pad><s>    return acquireReasonableHref(resourseAddress);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return resourseAddress;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return xssStrainer.whetherReasonableHref(resourseAddress);\n",
+            "correctness": "uncompilable",
+            "translated": "       return xssFilter.isValidHref(url);\n"
+        },
+        {
+            "patch": "    return mutilateTitleScope(resourseAddress);\n",
+            "correctness": "uncompilable",
+            "translated": "       return mangleNamespaces(url);\n"
+        },
+        {
+            "patch": "    return StringEscapeUtils.unescapeXml(URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8));\n",
+            "correctness": "uncompilable",
+            "translated": "    return StringEscapeUtils.unescapeXml(URLDecoder.decode(url, StandardCharsets.UTF_8));\n"
+        },
+        {
+            "patch": "    return URLDecoder.decode(resourseAddress, \"String_Node_Str\");\n",
+            "correctness": "uncompilable",
+            "translated": "    return URLDecoder.decode(url, \"String_Node_Str\");\n"
+        },
+        {
+            "patch": "    return URLDecoder.decode(resourseAddress, StandardCharsets.UTF_8.name());\n",
+            "correctness": "uncompilable",
+            "translated": "    return URLDecoder.decode(url, StandardCharsets.UTF_8.name());\n"
+        },
+        {
+            "patch": "    return StringEscapeUtils.unescapeXml(URLDecoder.decode(resourseAddress));\n",
+            "correctness": "uncompilable",
+            "translated": "    return StringEscapeUtils.unescapeXml(URLDecoder.decode(url));\n"
+        },
+        {
+            "patch": "    return acquireReasonableHref(resourseAddress);\n",
+            "correctness": "uncompilable",
+            "translated": "    return getValidHref(url);\n"
+        },
+        {
+            "patch": "    return resourseAddress;\n",
+            "correctness": "uncompilable",
+            "translated": "    return url;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": "       \n"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.name());\n",
+  "String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.getName());\n",
+  "String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.substring());\n",
+  "final String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.name());\n",
+  "String unescapedURL = URLDecoder.decode(StandardCharsets.UTF_8.name(), url);\n",
+  "String unescapedURL = URLDecoder.decode(url, StandardCharsets.UTF_8.replaceAll());\n",
+  "URLDecoder.decode(url, StandardCharsets.UTF_8.name());\n",
+  "return encodedUrl;",
+  "return \"null\";",
+  "String unescapedURL = URLDecoder.decode(StandardCharsets.UTF_8.name());\n"
+]

@@ -1,0 +1,65 @@
+{
+    "id": 33,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0893,
+            "fix_type": "general",
+            "patch": "ch == ':' || Character.isWhitespace(ch)"
+        },
+        {
+            "rank": 2,
+            "score": -0.5297,
+            "fix_type": "insert",
+            "patch": "  int message = sb.charAtUnsafe();\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5297,
+            "fix_type": "insert",
+            "patch": "  int first = sb.charAtUnsafe();\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1632,
+            "fix_type": "general",
+            "patch": "ch == ':' || Character.isDigit(ch)"
+        },
+        {
+            "rank": 5,
+            "score": -0.5518,
+            "fix_type": "insert",
+            "patch": "  int message = sb.toString();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5518,
+            "fix_type": "insert",
+            "patch": "  int first = sb.toString();\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.563,
+            "fix_type": "insert",
+            "patch": "if (ch == 1 ){\nbreak;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2569,
+            "fix_type": "general",
+            "patch": "ch == message || Character.isWhitespace(ch)"
+        },
+        {
+            "rank": 9,
+            "score": -0.2569,
+            "fix_type": "general",
+            "patch": "ch == first || Character.isWhitespace(ch)"
+        },
+        {
+            "rank": 10,
+            "score": -0.2915,
+            "fix_type": "general",
+            "patch": "ch == '.' || Character.isWhitespace(ch)"
+        }
+    ]
+}

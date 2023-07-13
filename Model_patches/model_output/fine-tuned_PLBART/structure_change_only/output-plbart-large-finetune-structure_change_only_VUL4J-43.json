@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (entry.isDirectory()) {",
+        "if (!entry.isDirectory() &&!entry.isSymbolicLink()) {",
+        "if (!entry.isDirectory() &&!entry.isDirectory()) {",
+        "if (!entry.isDirectory() && entry.getSize() > 0) {",
+        "if (entry!= null &&!entry.isDirectory()) {",
+        "if (!isDirectory(entry)) {",
+        "if (!entry.isDirectory() &&!entry.isComment()) {",
+        "if (!entry.isDirectory() && outFile!= null) {",
+        "if (!entry.isDirectory() && entry.getName().endsWith('.')) {",
+        "if (isDirectory(entry)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (entry.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (!entry.isDirectory() &&!entry.isSymbolicLink()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!entry.isDirectory() &&!entry.isSymbolicLink()) {"
+        },
+        {
+            "patch": "if (!entry.isDirectory() &&!entry.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() &&!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (!entry.isDirectory() && entry.getSize() > 0) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() && entry.getSize() > 0) {"
+        },
+        {
+            "patch": "if (entry!= null &&!entry.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry!= null &&!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (!isDirectory(entry)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!isDirectory(entry)) {"
+        },
+        {
+            "patch": "if (!entry.isDirectory() &&!entry.isComment()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!entry.isDirectory() &&!entry.isComment()) {"
+        },
+        {
+            "patch": "if (!entry.isDirectory() && outFile!= null) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory() && outFile!= null) {"
+        },
+        {
+            "patch": "if (!entry.isDirectory() && entry.getName().endsWith('.')) {",
+            "correctness": "uncompilable",
+            "translated": "if (!entry.isDirectory() && entry.getName().endsWith('.')) {"
+        },
+        {
+            "patch": "if (isDirectory(entry)) {",
+            "correctness": "uncompilable",
+            "translated": "if (isDirectory(entry)) {"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-46-113-114": {
+        "src": "xml CaMeL Input = XML CaMeL Input CaMeL Factory . new CaMeL Instance ( ) ;",
+        "patches": [
+            {
+                "patch": "xmlInput = ' '; } else { xmlInput = ' ';"
+            },
+            {
+                "patch": "xmlInput = ' || ch == '; } else { xmlInput = ' || ch == ';"
+            },
+            {
+                "patch": "xmlInput = '\\r'; } else { xmlInput = '\\r';"
+            },
+            {
+                "patch": "xmlInput = '\\n'; } else { xmlInput = '\\n';"
+            },
+            {
+                "patch": "xmlInput = '\\t'; } else { xmlInput = '\\t';"
+            },
+            {
+                "patch": "textComponentCfgName = textComponentName ;"
+            },
+            {
+                "patch": "xmlInput = xmlInput ;"
+            },
+            {
+                "patch": "if( xmlInput == null ) { xmlInput = null ;"
+            },
+            {
+                "patch": "xmlInput =( xmlInput != null ) ? ' ': ' ';"
+            },
+            {
+                "patch": "xmlInput =( xmlInput != null ) ? ' || ch == ': ' || ch == ';"
+            }
+        ]
+    }
+}

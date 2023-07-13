@@ -1,0 +1,37 @@
+{
+    "VUL4J-19-240-241": {
+        "src": "adjust CaMeL Present CaMeL Use CaMeL Consent ( present CaMeL Use CaMeL Consent ) ;",
+        "patches": [
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ; adjustPresentUseConsent( presentUseConsent ) ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent , presentUseConsent ) ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ; cipherUniqueIdentifier = calculateCipheredUniqueIdentifier( ) ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ; } else { throw new IOException( 'JCE unlimited strength jurisdiction policy files are not installed') ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ; } else { throw new IOException( 'AES') ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ; } else { throw new IOException( 'SHA-256') ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ; } else { throw new IOException( '3') ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ; } else { throw new IOException( 'AES/CBC/NoPadding') ;"
+            },
+            {
+                "patch": "adjustPresentUseConsent( presentUseConsent ) ; }"
+            }
+        ]
+    }
+}

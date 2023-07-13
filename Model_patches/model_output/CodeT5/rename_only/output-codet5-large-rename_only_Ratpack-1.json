@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-84,1",
+    "output": [
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n\n\n \n\n\n}\n\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n\n \n\n\n}\n\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n\n \n\n\n\n  }\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n\n \n\n\n}\n\n\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n  }\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n\n\n \n\n\n}\n\n\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n \n \n}\n\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n \n  }\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n\n \n\n\n}\n\n\n \n}\n\n}",
+        "\n  Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n\n\n \n\n\n}\n\n\n \n}\n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n\n\n \n\n\n}\n\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n\n\n \n \n\n\n\n \n\n\n}\n\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n\n \n\n\n}\n\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n\n\n \n \n\n\n\n \n\n\n}\n\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n\n \n\n\n\n  }\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n\n\n \n \n\n\n\n \n\n\n}\n\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n\n \n\n\n}\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n\n\n \n \n\n\n\n \n\n\n}\n\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n  }\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n  }\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n\n\n \n\n\n}\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n  }\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n \n \n}\n\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n  }\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n \n  }\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n  }\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n\n \n\n\n}\n\n\n \n}\n\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n \n\n \n\n\n\n  }\n}"
+        },
+        {
+            "patch": "Headings heading = new NetworkLibraryHeadingSupporteHeadings(time);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n\n\n \n\n\n}\n\n\n \n}\n\n}",
+            "correctness": "uncompilable",
+            "translated": "Headers nettyHeaders = new NettyHeadersBackedHeaders(clock);\n \n \n\n \n\n \n\n \n}\n\n\n \n \n\n\n\n \n\n\n}\n\n\n \n}\n\n}"
+        }
+    ]
+}

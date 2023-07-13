@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-13,5",
+    "output": [
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); try { checkDirectoryTraversal(pathToCheck, parentPath); } catch (IOException e) { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); try { checkDirectoryTraversal(parentPath, pathToCheck); } catch (IOException e) { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); try { checkDirectoryTraversal(pathToCheck, parentPath); } catch (AccessDeniedException e) { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); try { checkDirectoryTraversal(pathToCheck, parentPath); } catch (SecurityException e) { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); } else { final ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e ; } }",
+        "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e ; } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); try { checkDirectoryTraversal(pathToCheck, parentPath); } catch (IOException e) { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); try { checkDirectoryTraversal(parentPath, pathToCheck); } catch (IOException e) { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (parentPath.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); try { checkDirectoryTraversal(pathToCheck, parentPath); } catch (AccessDeniedException e) { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); try { checkDirectoryTraversal(pathToCheck, parentPath); } catch (SecurityException e) { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); } else { final ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(parentPath, pathToCheck); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e ; } }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public static void checkDirectoryTraversal(@NonNull Path parentPath, @NonNull Path pathToCheck) { Assert.notNull(pathToCheck, \"Path to check must not be null\"); Assert.notNull(parentPath, \"Parent path must not be null\"); if (pathToCheck.isDirectory()) { checkDirectoryTraversal(pathToCheck, parentPath); } else { ForbiddenException e = new ForbiddenException(\"You do not have permission to access \" + pathToCheck); e.setErrorData(pathToCheck); throw e ; } }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

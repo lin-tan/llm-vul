@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>                protected Collection<UIComponent> whole() {\n                    return uiComponents.values();\n                }\n</s>",
+        "<pad><s>                public Collection<UIComponent> whole() {\n                    return uiComponents;\n                }\n</s></s></s>",
+        "<pad><s>                private Collection<UIComponent> whole() {\n                    return uiComponents;\n                }\n</s></s></s>",
+        "<pad><s>                protected Collection<UIComponent> whole() { \n                    return uiComponents.values();\n                }\n</s>",
+        "<pad><s>                public Collection<UIComponent> whole() { \n                    return uiComponents;\n                }\n</s></s></s>",
+        "<pad><s>                private Collection<UIComponent> whole() { \n                    return uiComponents;\n                }\n</s></s></s>",
+        "<pad><s>                final Collection<UIComponent> whole = uiComponents;\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>                return uiComponents;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "                protected Collection<UIComponent> whole() {\n                    return uiComponents.values();\n                }\n",
+            "correctness": "uncompilable",
+            "translated": "                protected Collection<View> all() {\n                    return views.values();\n                }\n"
+        },
+        {
+            "patch": "                public Collection<UIComponent> whole() {\n                    return uiComponents;\n                }\n",
+            "correctness": "compile_success",
+            "translated": "                public Collection<View> all() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                private Collection<UIComponent> whole() {\n                    return uiComponents;\n                }\n",
+            "correctness": "uncompilable",
+            "translated": "                private Collection<View> all() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                protected Collection<UIComponent> whole() { \n                    return uiComponents.values();\n                }\n",
+            "correctness": "uncompilable",
+            "translated": "                protected Collection<View> all() {\n                    return views.values();\n                }\n"
+        },
+        {
+            "patch": "                public Collection<UIComponent> whole() { \n                    return uiComponents;\n                }\n",
+            "correctness": "compile_success",
+            "translated": "                public Collection<View> all() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                private Collection<UIComponent> whole() { \n                    return uiComponents;\n                }\n",
+            "correctness": "uncompilable",
+            "translated": "                private Collection<View> all() {\n                    return views;\n                }\n"
+        },
+        {
+            "patch": "                final Collection<UIComponent> whole = uiComponents;\n",
+            "correctness": "uncompilable",
+            "translated": "                final Collection<View> all = views;\n"
+        },
+        {
+            "patch": "                return uiComponents;\n",
+            "correctness": "uncompilable",
+            "translated": "                return views;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

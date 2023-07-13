@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = XMLInputFactory.newFactory();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = XML_INPUT_FACTORY.newInstance();\n<|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = XMLInputFactory.getInstance();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = XML_INPUT_FACTORY;\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = XMLInputFactory.createXMLInputFactory();\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = XMLFactory.newInstance();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = null;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = XML_INPUT_FACTORY.getInstance();\n<|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInput = XMLInputFactory.createXMLInput();\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    xmlParserCharacteristics = xpCharacteristics;\n    xmlCreatorCharacteristics = xgCharacteristics;\n    textComponentCfgName = textComponentName;\n    if (xmlInput == null) {\n// buggy lines start:\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines end\n    }\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlInputManufactory = xmlInput;\n    xmlOutputManufactory = xmlOutput;\n}\n// fixed lines:\n        xmlInputFactory = XMLInputFactory.newInstance();\n<|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        xmlInput = XMLInputFactory.newFactory();\n",
+            "correctness": "compile_success",
+            "translated": "        xmlIn = XMLInputFactory.newFactory();\n"
+        },
+        {
+            "patch": "        xmlInput = XML_INPUT_FACTORY.newInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XML_INPUT_FACTORY.newInstance();\n"
+        },
+        {
+            "patch": "        xmlInput = XMLInputFactory.getInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XMLInputFactory.getInstance();\n"
+        },
+        {
+            "patch": "        xmlInput = XML_INPUT_FACTORY;\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XML_INPUT_FACTORY;\n"
+        },
+        {
+            "patch": "        xmlInput = XMLInputFactory.createXMLInputFactory();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XMLInputFactory.createXMLInputFactory();\n"
+        },
+        {
+            "patch": "        xmlInput = XMLFactory.newInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XMLFactory.newInstance();\n"
+        },
+        {
+            "patch": "        xmlInput = null;\n",
+            "correctness": "compile_success",
+            "translated": "        xmlIn = null;\n"
+        },
+        {
+            "patch": "        xmlInput = XML_INPUT_FACTORY.getInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XML_INPUT_FACTORY.getInstance();\n"
+        },
+        {
+            "patch": "        xmlInput = XMLInputFactory.createXMLInput();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XMLInputFactory.createXMLInput();\n"
+        },
+        {
+            "patch": "        xmlInputFactory = XMLInputFactory.newInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlInputFactory = XMLInputFactory.newInstance();\n"
+        }
+    ]
+}

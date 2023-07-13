@@ -1,0 +1,66 @@
+{
+    "output": [
+        "String objectiveDirectoryPath = objectiveFolder.getAbsolutePath();",
+        "final String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();",
+        "String objectiveDirectoryPath = objectiveFolder.getAbsoluteFile().getCanonicalPath();",
+        "String objectiveDirectoryPath = objectiveFolder.getParentFile().getCanonicalPath();",
+        "String objectiveDirectoryPath = objectiveFolder.toURI().toString();",
+        "String objectiveDirectoryPath = objectiveFolder.toURI().getPath();",
+        "String objectiveDirectoryPath = objectiveFolder.getPath();",
+        "String objectiveDirectoryPath = objectiveFolder.getCanonicalFile().getAbsolutePath();",
+        "String objectiveDirectoryPath = objectiveFolder.getCanonicalFile().getCanonicalPath();",
+        "String objectiveDirectoryPath = FileUtils.getCanonicalPath(objectiveFolder);"
+    ],
+    "validation_result": [
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getAbsolutePath();",
+            "correctness": "compile_success",
+            "translated": "String targetDirPath = targetDirectory.getAbsolutePath();"
+        },
+        {
+            "patch": "final String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();",
+            "correctness": "compile_success",
+            "translated": "final String targetDirPath = targetDirectory.getCanonicalPath();"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getAbsoluteFile().getCanonicalPath();",
+            "correctness": "compile_success",
+            "translated": "String targetDirPath = targetDirectory.getAbsoluteFile().getCanonicalPath();"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getParentFile().getCanonicalPath();",
+            "correctness": "compile_success",
+            "translated": "String targetDirPath = targetDirectory.getParentFile().getCanonicalPath();"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.toURI().toString();",
+            "correctness": "compile_success",
+            "translated": "String targetDirPath = targetDirectory.toURI().toString();"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.toURI().getPath();",
+            "correctness": "test_success",
+            "translated": "String targetDirPath = targetDirectory.toURI().getPath();"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getPath();",
+            "correctness": "compile_success",
+            "translated": "String targetDirPath = targetDirectory.getPath();"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalFile().getAbsolutePath();",
+            "correctness": "compile_success",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalFile().getAbsolutePath();"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalFile().getCanonicalPath();",
+            "correctness": "compile_success",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalFile().getCanonicalPath();"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = FileUtils.getCanonicalPath(objectiveFolder);",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = FileUtils.getCanonicalPath(targetDirectory);"
+        }
+    ]
+}

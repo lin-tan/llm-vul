@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "this.category = category;",
+        "this.category = (Class < T>) category;",
+        "this.category = new Class < T>();",
+        "this.category = (Category) category;",
+        "this.category = (Class < T>) setting;",
+        "this.category = this.category;",
+        "this.setCategory(category);",
+        "This.category = category;",
+        "this.category = category.clone();",
+        "this.category = new Class < T>();"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.category = category;",
+            "correctness": "compile_success",
+            "translated": "this.type = type;"
+        },
+        {
+            "patch": "this.category = (Class < T>) category;",
+            "correctness": "compile_success",
+            "translated": "this.type = (Class < T>) type;"
+        },
+        {
+            "patch": "this.category = new Class < T>();",
+            "correctness": "uncompilable",
+            "translated": "this.type = new Class < T>();"
+        },
+        {
+            "patch": "this.category = (Category) category;",
+            "correctness": "uncompilable",
+            "translated": "this.type = (Category) type;"
+        },
+        {
+            "patch": "this.category = (Class < T>) setting;",
+            "correctness": "uncompilable",
+            "translated": "this.type = (Class < T>) context;"
+        },
+        {
+            "patch": "this.category = this.category;",
+            "correctness": "uncompilable",
+            "translated": "this.type = this.type;"
+        },
+        {
+            "patch": "this.setCategory(category);",
+            "correctness": "uncompilable",
+            "translated": "this.setCategory(type);"
+        },
+        {
+            "patch": "This.category = category;",
+            "correctness": "uncompilable",
+            "translated": "This.type = type;"
+        },
+        {
+            "patch": "this.category = category.clone();",
+            "correctness": "uncompilable",
+            "translated": "this.type = type.clone();"
+        },
+        {
+            "patch": "this.category = new Class < T>();",
+            "correctness": "uncompilable",
+            "translated": "this.type = new Class < T>();"
+        }
+    ]
+}

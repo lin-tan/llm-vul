@@ -1,0 +1,66 @@
+{
+    "output": [
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    for (int vt = (1 << (t - 1)); v <= vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n<|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    for (int vt = (1 << (t - 1)); v > vt; v -= vt) {\n        vt = (-1 << t) + 1;\n    }\n<|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    for (int vt = (1 << (t - 1)); vt <= v; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n<|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    v = (1 << (t - 1)) | v;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    v += t;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    int vt = (1 << (t - 1));\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    v = (1 << (t - 1)) + v;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    for (int vt = (1 << (t - 1)); vt < v; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n<|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    int vt = (1 << (t - 1)) + 1;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int extend(int v, final int t) {\n// buggy lines start:\n    for (int vt = (1 << (t - 1)); v < vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n// buggy lines end\n    return v;\n}\n// fixed lines:\n    for (int vt = (1 << (t - 1)); vt > v; vt--) {\n        v = (-1 << t) + 1;\n    }\n<|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    for (int vt = (1 << (t - 1)); v <= vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n",
+            "correctness": "test_timeout",
+            "translated": "    for (int vt = (1 << (t - 1)); v <= vt; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int vt = (1 << (t - 1)); v > vt; v -= vt) {\n        vt = (-1 << t) + 1;\n    }\n",
+            "correctness": "test_timeout",
+            "translated": "    for (int vt = (1 << (t - 1)); v > vt; v -= vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    for (int vt = (1 << (t - 1)); vt <= v; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n",
+            "correctness": "test_timeout",
+            "translated": "    for (int vt = (1 << (t - 1)); vt <= v; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    v = (1 << (t - 1)) | v;\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << (t - 1)) | v;\n"
+        },
+        {
+            "patch": "    v += t;\n",
+            "correctness": "test_success",
+            "translated": "    v += t;\n"
+        },
+        {
+            "patch": "    int vt = (1 << (t - 1));\n",
+            "correctness": "test_success",
+            "translated": "    int vt = (1 << (t - 1));\n"
+        },
+        {
+            "patch": "    v = (1 << (t - 1)) + v;\n",
+            "correctness": "test_success",
+            "translated": "    v = (1 << (t - 1)) + v;\n"
+        },
+        {
+            "patch": "    for (int vt = (1 << (t - 1)); vt < v; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n",
+            "correctness": "test_success",
+            "translated": "    for (int vt = (1 << (t - 1)); vt < v; v += vt) {\n        vt = (-1 << t) + 1;\n    }\n"
+        },
+        {
+            "patch": "    int vt = (1 << (t - 1)) + 1;\n",
+            "correctness": "test_success",
+            "translated": "    int vt = (1 << (t - 1)) + 1;\n"
+        },
+        {
+            "patch": "    for (int vt = (1 << (t - 1)); vt > v; vt--) {\n        v = (-1 << t) + 1;\n    }\n",
+            "correctness": "test_success",
+            "translated": "    for (int vt = (1 << (t - 1)); vt > v; vt--) {\n        v = (-1 << t) + 1;\n    }\n"
+        }
+    ]
+}

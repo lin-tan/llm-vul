@@ -1,0 +1,56 @@
+{
+    "output": [
+        "case '\\\\':",
+        "case '/':",
+        "case '\\\\': break;",
+        "case '/': break;",
+        "case '\\\\' :",
+        "break; case '\\\\':",
+        "case '\\'':",
+        "case '/' :",
+        "break;",
+        "continue;"
+    ],
+    "validation_result": [
+        {
+            "patch": "case '\\\\':",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '/':",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "case '\\\\': break;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '/': break;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "case '\\\\' :",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "break; case '\\\\':",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '\\'':",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "case '/' :",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "break;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "continue;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

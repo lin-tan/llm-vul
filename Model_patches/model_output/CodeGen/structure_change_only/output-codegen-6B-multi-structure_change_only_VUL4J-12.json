@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-7,1",
+    "output": [
+        "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (this == o) {\n            return true;\n        }\n        if (o == null || getClass()!= o.getClass()) {\n            return false;\n        }\n\n        Pair<?,?> pair = (Pair<?,?>) o;\n\n        if (first!= null?!first.equals(pair.first) : pair.first!= null) {\n            return false;\n        }\n        return second!= null? second.equals(pair.second) : pair.second == null;\n    }\n\n    @Override\n    public int hashCode() {\n        int result = first!= null? first.hashCode() : 0;\n        result = 31 * result + (second!= null? second.hashCode() : 0);\n        return result;\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (this == o) {\n            return true;\n        }\n        if (o == null || getClass()!= o.getClass()) {\n            return false;\n        }\n\n        Pair<?,?> pair = (Pair<?,?>) o;\n\n        if (first!= null?!first.equals(pair.first) : pair.first!= null) {\n            return false;\n        }\n        return!(second!= null?!second.equals(pair.second) : pair.second!= null);\n\n    }\n\n    @Override\n    public int hashCode() {\n        int result = first!= null? first.hashCode() : 0;\n        result = 31 * result + (second!= null? second.hashCode() : 0);\n        return result;\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (this == o) {\n            return true;\n        }\n        if (o == null || getClass()!= o.getClass()) {\n            return false;\n        }\n\n        Pair<?,?> pair = (Pair<?,?>) o;\n\n        if (first!= null?!first.equals(pair.first) : pair.first!= null) {\n            return false;\n        }\n        return second!= null? second.equals(pair.second) : pair.second == null;\n\n    }\n\n    @Override\n    public int hashCode() {\n        int result = first!= null? first.hashCode() : 0;\n        result = 31 * result + (second!= null? second.hashCode() : 0);\n        return result;\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }\n\n    @Override\n    public boolean equals(Object o) {\n        if (this == o) {\n            return true;\n        }\n        if (o == null || getClass()!= o.getClass()) {\n            return false;\n        }\n\n        Pair<?,?> pair = (Pair<?,?>) o;\n\n        if (first!= null?!first.equals(pair.first) : pair.first!= null) {\n            return false;\n        }\n        return!(second!= null?!second.equals(pair.second) : pair.second!= null);\n    }\n\n    @Override\n    public int hashCode() {\n        int result = first!= null? first.hashCode() : 0;\n        result = 31 * result + (second!= null? second.hashCode() : 0);\n        return result;\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        return v + t;\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        if (v < t) {\n            return v + 1;\n        } else {\n            return v;\n        }\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        if (v > t) {\n            return v;\n        } else {\n            return t;\n        }\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        }\n        return v;\n    }\n}\n",
+        "private int extend(int v, final int t) {\n        if (v < t) {\n            return v + 1;\n        } else {\n            return v;\n        }\n    }\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        } else {\n            return v;\n        }\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        return v + t;\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v < t) {\n            return v + 1;\n        } else {\n            return v;\n        }\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v > t) {\n            return v;\n        } else {\n            return t;\n        }\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v < t) {\n            return t;\n        }\n        return v;\n    }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "private int extend(int v, final int t) {\n        if (v < t) {\n            return v + 1;\n        } else {\n            return v;\n        }\n    }",
+            "correctness": "test_success"
+        }
+    ]
+}

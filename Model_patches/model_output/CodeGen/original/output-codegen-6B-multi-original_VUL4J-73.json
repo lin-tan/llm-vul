@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(encPass, rawPass);\n        } else {\n            return BCrypt.checkpw(encPass, rawPass, (byte[]) salt);\n        }\n    }\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        } else {\n            return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, salt));\n        }\n    }\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        } else {\n            return BCrypt.checkpw(rawPass, encPass + salt);\n        }\n    }\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        }\n        return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, salt));\n    }\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return BCrypt.checkpw(encPass, rawPass);\n    }\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return BCrypt.checkpw(rawPass, encPass);\n    }\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        }\n        return BCrypt.checkpw(rawPass, encPass + salt);\n    }\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        }\n        return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, encPass, salt));\n    }\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        } else {\n            return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, salt));\n        }\n    }\n\n}\n",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        } else {\n            return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, encPass, salt));\n        }\n    }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(encPass, rawPass);\n        } else {\n            return BCrypt.checkpw(encPass, rawPass, (byte[]) salt);\n        }\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        } else {\n            return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, salt));\n        }\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        } else {\n            return BCrypt.checkpw(rawPass, encPass + salt);\n        }\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        }\n        return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, salt));\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return BCrypt.checkpw(encPass, rawPass);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return BCrypt.checkpw(rawPass, encPass);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        }\n        return BCrypt.checkpw(rawPass, encPass + salt);\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        }\n        return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, encPass, salt));\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        } else {\n            return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, salt));\n        }\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        if (salt == null) {\n            return BCrypt.checkpw(rawPass, encPass);\n        } else {\n            return BCrypt.checkpw(rawPass, BCrypt.gensalt(BCrypt.GENSALT_DEFAULT_LOG2_ROUNDS, encPass, salt));\n        }\n    }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    analyzer.analyzeBatch(constituentTemplate, batch);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    batch = analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile);\n</s>",
+        "<pad><s>    analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, true);\n</s>",
+        "<pad><s>    analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, false);\n</s>",
+        "<pad><s>    analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, null);\n</s>",
+        "<pad><s>    analyzer.analyze(constituentTemplate, batch, attributeTitile);\n</s></s></s></s>",
+        "<pad><s>    analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile);\n</s></s></s>",
+        "<pad><s>    analyzer.analyzeBatch(constituentTemplate, batch, attributes);\n</s></s></s></s></s></s>",
+        "<pad><s>    analyzer.analyzeBatch(constituentTemplate, batch, null);\n</s></s></s></s></s></s>",
+        "<pad><s>    analyzer.analyzeBatch(constituentTemplate, batch, attributesTitile);\n</s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    analyzer.analyzeBatch(constituentTemplate, batch);\n",
+            "correctness": "compile_success",
+            "translated": "    parser.parseArray(componentClass, array);\n"
+        },
+        {
+            "patch": "    batch = analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile);\n",
+            "correctness": "uncompilable",
+            "translated": "    array = parser.parseArray(componentClass, array, fieldName);\n"
+        },
+        {
+            "patch": "    analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, true);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, fieldName, true);\n"
+        },
+        {
+            "patch": "    analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, false);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, fieldName, false);\n"
+        },
+        {
+            "patch": "    analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile, null);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, fieldName, null);\n"
+        },
+        {
+            "patch": "    analyzer.analyze(constituentTemplate, batch, attributeTitile);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.analyze(componentClass, array, fieldName);\n"
+        },
+        {
+            "patch": "    analyzer.analyzeBatch(constituentTemplate, batch, attributeTitile);\n",
+            "correctness": "compile_success",
+            "translated": "    parser.parseArray(componentClass, array, fieldName);\n"
+        },
+        {
+            "patch": "    analyzer.analyzeBatch(constituentTemplate, batch, attributes);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, attributes);\n"
+        },
+        {
+            "patch": "    analyzer.analyzeBatch(constituentTemplate, batch, null);\n",
+            "correctness": "compile_success",
+            "translated": "    parser.parseArray(componentClass, array, null);\n"
+        },
+        {
+            "patch": "    analyzer.analyzeBatch(constituentTemplate, batch, attributesTitile);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, attributesTitile);\n"
+        }
+    ]
+}

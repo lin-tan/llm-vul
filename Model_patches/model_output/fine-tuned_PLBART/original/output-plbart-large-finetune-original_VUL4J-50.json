@@ -1,0 +1,56 @@
+{
+    "output": [
+        "write(remoteAddr + \"String_Node_Str\");",
+        "write(remoteAddr);",
+        "write(remoteAddr.trim());",
+        "write(\"String_Node_Str\");",
+        "writeDirectly(remoteAddr);",
+        "write(\"String_Node_Str\" + remoteAddr);",
+        "write(remoteAddr.toString());",
+        "write(\"String_Node_Str\"); write(remoteAddr);",
+        "write(remoteAddr == null? \" \" : remoteAddr);",
+        "write(remoteAddr, true);"
+    ],
+    "validation_result": [
+        {
+            "patch": "write(remoteAddr + \"String_Node_Str\");",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(remoteAddr.trim());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(\"String_Node_Str\");",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "writeDirectly(remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(\"String_Node_Str\" + remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(remoteAddr.toString());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(\"String_Node_Str\"); write(remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(remoteAddr == null? \" \" : remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(remoteAddr, true);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

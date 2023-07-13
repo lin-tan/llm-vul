@@ -1,0 +1,37 @@
+{
+    "VUL4J-1002-731-732": {
+        "src": "if ( ch == $STRING$ || Character . is CaMeL Whitespace ( ch ) ) {",
+        "patches": [
+            {
+                "patch": "if( ch == ' + maxLength + '|| ch == ' + maxLength + '|| ch == ' + maxLength + '|| ch == ' + maxLength + ') {"
+            },
+            {
+                "patch": "if( ch == ' bytes.'|| ch == ' bytes.'|| ch == ' bytes.'|| ch == ' bytes.') {"
+            },
+            {
+                "patch": "if( ch == 'An HTTP line is larger than '|| ch == 'An HTTP line is larger than '|| ch == 'An HTTP line is larger than '|| ch == 'An HTTP line is larger than ') {"
+            },
+            {
+                "patch": "if( ch == 'HTTP header is larger than '|| ch == 'HTTP header is larger than '|| ch == 'HTTP header is larger than '|| ch == 'HTTP header is larger than ') {"
+            },
+            {
+                "patch": "if( ch == ':'|| ch == ':'|| ch == ':'|| ch == ':') {"
+            },
+            {
+                "patch": "if(( ch == ' + maxLength + '|| ch == ' + maxLength + ') ||( ch == ' + maxLength + ') ) {"
+            },
+            {
+                "patch": "if(( ch == ' bytes.'|| ch == ' bytes.') ||( ch == ' bytes.') ) {"
+            },
+            {
+                "patch": "if(( ch == 'An HTTP line is larger than '|| ch == 'An HTTP line is larger than ') ||( ch == 'An HTTP line is larger than ') ) {"
+            },
+            {
+                "patch": "if(( ch == 'HTTP header is larger than '|| ch == 'HTTP header is larger than ') ||( ch == 'HTTP header is larger than ') ) {"
+            },
+            {
+                "patch": "if(( ch == ':'|| ch == ':') ||( ch == ':') ) {"
+            }
+        ]
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "id": 41,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.3441,
+            "fix_type": "general",
+            "patch": " protected Collection<View<View>> all(  User  key){\nreturn getView();\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.3531,
+            "fix_type": "general",
+            "patch": " protected Collection<View<View>> all(  CollectionSearchIndex  key){\nreturn getView();\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3729,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all(){\nreturn values;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.3827,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all(){\nreturn views.values();\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.397,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all(){\nreturn name;\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4021,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all(){\nreturn info;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.3939,
+            "fix_type": "general",
+            "patch": " protected Collection<View<View>> all(){\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4339,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all(){\nreturn getView();\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4379,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all(){\nreturn User.getAll();\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.44,
+            "fix_type": "general",
+            "patch": " protected Collection<View> all(){\nreturn context;\n}\n"
+        }
+    ]
+}

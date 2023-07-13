@@ -1,0 +1,12 @@
+[
+  "if((ADD_NEW != null)){",
+  "if((source != null)){",
+  "if((sessionIdentification != null)){",
+  "if((customerIdentification != null)){",
+  "if((sessionIdentification == null)){",
+  "s = ((s.length() > 0))?s.append(\"null\"):s;\n",
+  "s.append(\"null\");\n",
+  "if((s != null)){",
+  "return null;",
+  "if((sessionIdentification >= null)){"
+]

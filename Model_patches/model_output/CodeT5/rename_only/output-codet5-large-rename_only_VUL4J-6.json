@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-16,1",
+    "output": [
+        "\n        {           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n",
+        "\n        {           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n\n              , final int beginning, final int duration) {\n  }",
+        "\n        {           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n\n              , final int beginning, final int duration) {\n    }",
+        "\n        {           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n        {\n              , final int beginning, final int duration) {\n    }",
+        "\n        {           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n        {\n              , final int beginning, final int duration) {\n  }",
+        "\n        {           \n        for (int joule = 0; joule < this.rcount; joule++) {\n            }\n",
+        "\n        {           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n\n",
+        "\n        {           \n        for (int joule = 0; joule < this.hashish; joule++) {\n        }",
+        "\n        {           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {",
+        "\n        if (this.hashishSizing > 0) {           \n           \n"
+    ],
+    "validation_result": [
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }",
+            "correctness": "uncompilable",
+            "translated": "{           \n        for (int j = 0; j < this.hashAlg; j++) {\n            }"
+        },
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n\n              , final int beginning, final int duration) {\n  }",
+            "correctness": "uncompilable",
+            "translated": "{           \n        for (int j = 0; j < this.hashAlg; j++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n\n              , final int offset, final int length) {\n  }"
+        },
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n\n              , final int beginning, final int duration) {\n    }",
+            "correctness": "uncompilable",
+            "translated": "{           \n        for (int j = 0; j < this.hashAlg; j++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n\n              , final int offset, final int length) {\n  }"
+        },
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n        {\n              , final int beginning, final int duration) {\n    }",
+            "correctness": "uncompilable",
+            "translated": "{           \n        for (int j = 0; j < this.hashAlg; j++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n        {\n              , final int offset, final int length) {\n    }"
+        },
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n        {\n              , final int beginning, final int duration) {\n  }",
+            "correctness": "uncompilable",
+            "translated": "{           \n        for (int j = 0; j < this.hashAlg; j++) {\n            }\n        {\n\n.\n  .....\n        {\n\n        {.\n        {\n\n        {\n              , final int offset, final int length) {\n    }"
+        },
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.rcount; joule++) {\n            }",
+            "correctness": "compile_success",
+            "translated": "{           \n        for (int j = 0; j < this.rcount; j++) {\n            }"
+        },
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }",
+            "correctness": "uncompilable",
+            "translated": "{           \n        for (int j = 0; j < this.hashAlg; j++) {\n            }"
+        },
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.hashish; joule++) {\n        }",
+            "correctness": "uncompilable",
+            "translated": "{           \n        for (int j = 0; j < this.hashAlg; j++) {\n            }"
+        },
+        {
+            "patch": "{           \n        for (int joule = 0; joule < this.hashish; joule++) {\n            }\n        {",
+            "correctness": "uncompilable",
+            "translated": "{           \n        for (int j = 0; j < this.hashAlg; j++) {\n            }\n        {"
+        },
+        {
+            "patch": "if (this.hashishSizing > 0) {",
+            "correctness": "test_success",
+            "translated": "if (this.hashSize > 0) {"
+        }
+    ]
+}

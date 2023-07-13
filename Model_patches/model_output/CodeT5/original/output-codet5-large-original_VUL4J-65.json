@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    int dot = name.indexOf('.');\n   \n   \n\n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n    int dot = name.indexOf('.');\n\n;\n   \n   \n    int dot = dot;\n   \n   \n\n\n",
+        "\n    int dot = name.indexOf('.');\n   \n   \n   \n   \n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n,\n   \n    int dot;\n   \n   \n   \n\n",
+        "\n    int dot = name.indexOf('.');\n   \n   \n\n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n\n    int dot = name.indexOf('.');\n;\n   \n   \n    int dot = dot;\n   \n   \n\n\n",
+        "\n    int dot = name.indexOf('.');\n   \n   \n   \n   \n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n,\n   \n\n    String\n   \n   \n    return file;",
+        "\n    int dot = name.indexOf('.');\n   \n   \n   \n   \n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n,\n   \n\n    String\n   \n   \n}",
+        "\n    int dot = name.indexOf('.');\n   \n   \n   \n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n\n    int dot = name.indexOf('.');\n,\n   \n    int dot = dot;\n   \n   \n   \n\n",
+        "\n    int dot = name.indexOf('.');\n   \n   \n\n    int dot = name.indexOf('-');\n   \n   \nstatic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n    int dot = name.indexOf('.');\n\n;\n   \n   \n    int dot = dot;\n   \n   \n\n\n",
+        "\n    int dot = name.indexOf('.');\n   \n   \n   \n   \n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n,\n   \n\n    String\n   \n   \n\n    return file",
+        "\n    int dot = name.indexOf('.');\n   \n   \n\n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n    int dot = name.indexOf('-');\n\n;\n   \n   \n    int dot = dot;\n   \n   \n\n\n",
+        "\n    int dot = name.indexOf('.');\n   \n   \n   \n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n\n    int dot = name.indexOf('.');\n,\n    return file;\n   \n\n    String\n   \n   \n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n\n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n    int dot = name.indexOf('.');\n\n;\n   \n   \n    int dot = dot;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n   \n   \n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n,\n   \n    int dot;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n\n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n\n    int dot = name.indexOf('.');\n;\n   \n   \n    int dot = dot;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n   \n   \n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n,\n   \n\n    String\n   \n   \n    return file;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n   \n   \n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n,\n   \n\n    String\n   \n   \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n   \n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n\n    int dot = name.indexOf('.');\n,\n   \n    int dot = dot;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n\n    int dot = name.indexOf('-');\n   \n   \nstatic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n    int dot = name.indexOf('.');\n\n;\n   \n   \n    int dot = dot;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n   \n   \n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n    int dot = name.indexOf('-');\n   \n   \n    int dot = name.indexOf('.');\n,\n   \n\n    String\n   \n   \n\n    return file",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n\n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n    int dot = name.indexOf('-');\n\n;\n   \n   \n    int dot = dot;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');\n   \n   \n   \n    int dot = name.indexOf('-');\n   \n   \npublic\n\n\n\n\n\n\n    int dot = name.indexOf('.');\n\n   \n\n    int dot = name.indexOf('.');\n,\n    return file;\n   \n\n    String",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "contextPath = ((contextPath == null))?request.getContextPath():contextPath;\n",
+  "if((contextPath == null)){\n",
+  "return null;",
+  "return contextPath;",
+  "contextPath = (String)request.getAttribute(INCLUDE_CONTEXT_PATH_ATTRIBUTE);\n",
+  "return decodeRequestString(request, contextPath);",
+  "contextPath = request.getContextPath();\n",
+  "request.getContextPath();\n",
+  "if((contextPath != null)){\n",
+  "contextPath = ((contextPath == null))?request.getContextPath():contextPath;\ncontextPath = ((contextPath == null))?request.getContextPath():contextPath;\n"
+]

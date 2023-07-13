@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    docBuilder = docBuilderFactory.newDocumentBuilder(true);\n</s>",
+        "<pad><s>    docBuilder = docBuilderFactory.newDocumentBuilder(null);\n</s>",
+        "<pad><s>    docBuilder = docBuilderFactory.newDocumentBuilder(false);\n</s>",
+        "<pad><s>    docBuilder = docBuilderFactory.newDocumentBuilder();\n</s></s></s>",
+        "<pad><s>    documentBuilder = docBuilderFactory.newDocumentBuilder();\n</s></s></s>",
+        "<pad><s>    docBuilder = documentBuilderFactory.newDocumentBuilder();\n</s></s></s>",
+        "<pad><s>    docBuilder = docBuilderFactory.createDocumentBuilder();\n</s></s></s>",
+        "<pad><s>    docBuilder = getDocumentBuilder();\n</s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    docBuilder = docBuilderFactory.newDocumentBuilder(true);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    docBuilder = docBuilderFactory.newDocumentBuilder(null);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    docBuilder = docBuilderFactory.newDocumentBuilder(false);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    docBuilder = docBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    documentBuilder = docBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    docBuilder = documentBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    docBuilder = docBuilderFactory.createDocumentBuilder();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    docBuilder = getDocumentBuilder();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

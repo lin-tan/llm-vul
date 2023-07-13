@@ -1,0 +1,32 @@
+{
+    "method": {
+        "appendHex": "addOnHexadecimal",
+        "elide": "remove",
+        "isHexAt": "whetherHexadecimalAt",
+        "replace": "supplant",
+        "insert": "embed",
+        "isHighSurrogate": "whetherHighAlternate",
+        "isOctAt": "whetherOctalAt",
+        "sanitizeString": "cleanString",
+        "isLowSurrogate": "whetherLowAlternate"
+    },
+    "variable": {
+        "sanitizedJson": "cleanedJSON",
+        "ch": "currentChar",
+        "start": "begin",
+        "i": "h",
+        "j": "k",
+        "HEX_DIGITS": "HEX_NUMBER",
+        "startDelim": "beginDelimiter",
+        "octalEnd": "octalTerminal",
+        "jsonish": "JSONlike",
+        "closed": "shut",
+        "sch": "nextChar",
+        "end": "terminal",
+        "value": "content",
+        "": ""
+    },
+    "class": {
+        "": ""
+    }
+}

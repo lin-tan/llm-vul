@@ -1,0 +1,56 @@
+{
+    "output": [
+        "int dot = name.lastIndexOf('.');",
+        "int dot = name.indexOf('.', name.length());",
+        "int dot = name.indexOf('.');",
+        "int dot = name.indexOf('.');",
+        ". int dot = name.lastIndexOf('.');",
+        "int dot = name.endsWith('.');",
+        "int dot = name.indexOf('.', q);",
+        "int dot = name.indexOf('.', 1);",
+        "final int dot = name.indexOf('.');",
+        "int dot = -1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int dot = name.lastIndexOf('.');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = name.indexOf('.', name.length());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = name.indexOf('.');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ". int dot = name.lastIndexOf('.');",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.endsWith('.');",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int dot = name.indexOf('.', q);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = name.indexOf('.', 1);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "final int dot = name.indexOf('.');",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int dot = -1;",
+            "correctness": "compile_success"
+        }
+    ]
+}

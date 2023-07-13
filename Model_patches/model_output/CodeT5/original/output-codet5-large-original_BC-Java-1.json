@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        encoding,\n    };\n}",
+        "\n    return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        null,\n    };\n}",
+        "\n    return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        s.getObjectIdentifier(),\n    };\n}",
+        "\n    return new BigInteger[]{)\n   ,\n   \n    return new BigInteger[]{\n        s.getObjectIdentifier(),\n    };\n}",
+        "\n    return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        encoding,\n    };\n}\n\n",
+        "\n    return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        null,\n    };\n}\n\n",
+        "\n    return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        null,\n    };\n\n   ",
+        "\n    return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[]{\n        s.getObjectIdentifier(),\n    };\n}",
+        "\n    return new BigInteger[]{)\n   ,\n   \n    return new BigInteger[] {\n        s.getObjectIdentifier(),\n    };\n}",
+        "\n    return new BigInteger[]{)\n   ,\n\n    return new BigInteger[]{\n   ,\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        encoding,\n    };\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        null,\n    };\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        s.getObjectIdentifier(),\n    };\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[]{)\n   ,\n   \n    return new BigInteger[]{\n        s.getObjectIdentifier(),\n    };\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        encoding,\n    };\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        null,\n    };\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[] {\n        null,\n    };",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[] {)\n   ,\n   \n    return new BigInteger[]{\n        s.getObjectIdentifier(),\n    };\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[]{)\n   ,\n   \n    return new BigInteger[] {\n        s.getObjectIdentifier(),\n    };\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new BigInteger[]{)\n   ,\n\n    return new BigInteger[]{\n   ,",
+            "correctness": "uncompilable"
+        }
+    ]
+}

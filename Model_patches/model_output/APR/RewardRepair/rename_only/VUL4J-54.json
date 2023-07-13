@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),10);",
+        "Convertor(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),10);",
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),9);",
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),10);",
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),1);",
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),8);",
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),2);",
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),12);",
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),0);",
+        "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),5);"
+    ],
+    "validation_result": [
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),10);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),10);"
+        },
+        {
+            "patch": "Convertor(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),10);",
+            "correctness": "uncompilable",
+            "translated": "Convertor(new RobustCollectionConverter(getMapper(),getReflectionProvider()),10);"
+        },
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),9);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),9);"
+        },
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),10);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),10);"
+        },
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),1);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),1);"
+        },
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),8);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),8);"
+        },
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),2);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),2);"
+        },
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),12);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),12);"
+        },
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),0);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),0);"
+        },
+        {
+            "patch": "Converter(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),5);",
+            "correctness": "uncompilable",
+            "translated": "Converter(new RobustCollectionConverter(getMapper(),getReflectionProvider()),5);"
+        }
+    ]
+}

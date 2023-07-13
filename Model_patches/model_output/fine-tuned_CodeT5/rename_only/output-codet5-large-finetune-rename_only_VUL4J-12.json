@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    while (s > h) {\n</s></s></s></s></s>",
+        "<pad><s>    while (s <= h) {\n</s></s></s></s></s>",
+        "<pad><s>    while (s < h + 1) {\n</s></s></s>",
+        "<pad><s>    while (s < h && s >= 0) {\n</s>",
+        "<pad><s>    while (s >= h) {\n</s></s></s></s></s>",
+        "<pad><s>    while (s < h && s!= 0) {\n</s>",
+        "<pad><s>    while (h < s) {\n</s></s></s></s></s>",
+        "<pad><s>    while (h <= s) {\n</s></s></s></s></s>",
+        "<pad><s>    while (s < h) {\n</s></s></s></s></s>",
+        "<pad><s>    while (s < h && s < max) {\n</s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    while (s > h) {\n",
+            "correctness": "compile_success",
+            "translated": "    while (v > vt) {\n"
+        },
+        {
+            "patch": "    while (s <= h) {\n",
+            "correctness": "test_timeout",
+            "translated": "    while (v <= vt) {\n"
+        },
+        {
+            "patch": "    while (s < h + 1) {\n",
+            "correctness": "test_timeout",
+            "translated": "    while (v < vt + 1) {\n"
+        },
+        {
+            "patch": "    while (s < h && s >= 0) {\n",
+            "correctness": "test_success",
+            "translated": "    while (v < vt && v >= 0) {\n"
+        },
+        {
+            "patch": "    while (s >= h) {\n",
+            "correctness": "test_timeout",
+            "translated": "    while (v >= vt) {\n"
+        },
+        {
+            "patch": "    while (s < h && s!= 0) {\n",
+            "correctness": "compile_success",
+            "translated": "    while (v < vt && v!= 0) {\n"
+        },
+        {
+            "patch": "    while (h < s) {\n",
+            "correctness": "test_success",
+            "translated": "    while (vt < v) {\n"
+        },
+        {
+            "patch": "    while (h <= s) {\n",
+            "correctness": "test_timeout",
+            "translated": "    while (vt <= v) {\n"
+        },
+        {
+            "patch": "    while (s < h) {\n",
+            "correctness": "compile_success",
+            "translated": "    while (v < vt) {\n"
+        },
+        {
+            "patch": "    while (s < h && s < max) {\n",
+            "correctness": "uncompilable",
+            "translated": "    while (v < vt && v < max) {\n"
+        }
+    ]
+}

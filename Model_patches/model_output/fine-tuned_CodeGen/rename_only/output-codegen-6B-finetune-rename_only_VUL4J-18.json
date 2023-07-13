@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return r.getRequestURI();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return pathInfo;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return \"String_Node_Str\";\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return \"String_Node_Str\" + r.getPathInfo();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return null;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return r.getContextPath();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return r.getContextPath() + \"String_Node_Str\" + r.getPathInfo();\n<|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return r.getPageInfo();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return \"String_Node_Str\" + r.getRequestURI();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public String acquireSendOnPage( HttpServletRequest r )\n{\n// buggy lines start:\n    return r.getPathInfo();\n// buggy lines end\n}\n// fixed lines:\n    return r.getContextPath() + r.getPathInfo();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return r.getRequestURI();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getRequestURI();\n"
+        },
+        {
+            "patch": "    return pathInfo;\n",
+            "correctness": "uncompilable",
+            "translated": "    return pathInfo;\n"
+        },
+        {
+            "patch": "    return \"String_Node_Str\";\n",
+            "correctness": "compile_success",
+            "translated": "    return \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "    return \"String_Node_Str\" + r.getPathInfo();\n",
+            "correctness": "compile_success",
+            "translated": "    return \"String_Node_Str\" + request.getPathInfo();\n"
+        },
+        {
+            "patch": "    return null;\n",
+            "correctness": "compile_success",
+            "translated": "    return null;\n"
+        },
+        {
+            "patch": "    return r.getContextPath();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getContextPath();\n"
+        },
+        {
+            "patch": "    return r.getContextPath() + \"String_Node_Str\" + r.getPathInfo();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getContextPath() + \"String_Node_Str\" + request.getPathInfo();\n"
+        },
+        {
+            "patch": "    return r.getPageInfo();\n",
+            "correctness": "uncompilable",
+            "translated": "    return request.getPageInfo();\n"
+        },
+        {
+            "patch": "    return \"String_Node_Str\" + r.getRequestURI();\n",
+            "correctness": "compile_success",
+            "translated": "    return \"String_Node_Str\" + request.getRequestURI();\n"
+        },
+        {
+            "patch": "    return r.getContextPath() + r.getPathInfo();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getContextPath() + request.getPathInfo();\n"
+        }
+    ]
+}

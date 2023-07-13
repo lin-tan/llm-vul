@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-39,1",
+    "output": [
+        "\n                    if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    calendar = futurityTwoYears",
+        "\n                    if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                       \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar;\n",
+        "\n                    if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar;\n",
+        "\n                    if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar;\n",
+        "\n                    if (following==a.initial(this)) }\n                                      \n                }\n                if (a.initial(this)>=0) {\n                                       \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar;\n",
+        "\n                    if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar\n",
+        "\n                    if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                       \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar\n",
+        "\n                    if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar\n",
+        "\n                    if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n    }\n   \n   \n   \n   \n   \n    calendar =.clone",
+        "\n                    if (following==a.initial(this)) }\n                                      \n                }\n                if (a.initial(this)>=0) {\n                                       \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    calendar = futurityTwoYears",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    cal = twoYearsFuture"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                       \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar;",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return cal;"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar;",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return cal;"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar;",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return cal;"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                      \n                }\n                if (a.initial(this)>=0) {\n                                       \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar;",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n   \n   \n   \n   \n   \n    }\n    return cal;"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return cal"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                       \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return cal"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return cal"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                  \n                }\n                if (a.initial(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n    }\n   \n   \n   \n   \n   \n    calendar =.clone",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                  \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                               \n                   \n    }\n   \n   \n   \n   \n   \n    cal =.clone"
+        },
+        {
+            "patch": "if (following==a.initial(this)) }\n                                      \n                }\n                if (a.initial(this)>=0) {\n                                       \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return calendar",
+            "correctness": "uncompilable",
+            "translated": "if (next==f.first(this)) }\n                                  \n                }\n                if (f.first(this)>=0) {\n                                   \n   \n   \n   \n   \n   \n   \n       \n       \n                       \n                                                  \n                   \n   \n   \n   \n   \n   \n    }\n    return cal"
+        }
+    ]
+}

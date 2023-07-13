@@ -1,0 +1,37 @@
+{
+    "VUL4J-8-93-94": {
+        "src": "} else {",
+        "patches": [
+            {
+                "patch": "} else { int l =8*res.length( ) ;"
+            },
+            {
+                "patch": "} else { int l =16*res.length( ) ;"
+            },
+            {
+                "patch": "} else { int l =4*res.length( ) ;"
+            },
+            {
+                "patch": "} else { int l =12*res.length( ) ;"
+            },
+            {
+                "patch": "} else { int l =6*res.length( ) ;"
+            },
+            {
+                "patch": "} else while( cb.remaining( ) >0) {"
+            },
+            {
+                "patch": "} } enc.encode( cb , out , true ) ;"
+            },
+            {
+                "patch": "} enc.encode( cb , out , true ) ;"
+            },
+            {
+                "patch": "} else { { out = } }"
+            },
+            {
+                "patch": "} else if else {"
+            }
+        ]
+    }
+}

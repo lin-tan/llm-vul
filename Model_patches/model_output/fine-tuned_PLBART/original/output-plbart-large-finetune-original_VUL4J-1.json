@@ -1,0 +1,56 @@
+{
+    "output": [
+        "array = parser.parseArray(componentClass, array, fieldName);",
+        "parser.parseArray(componentClass, array, fieldName, null);",
+        "parser.parseArray(componentClass, array, fieldName, type);",
+        "parser.parseArray(componentClass, array, fieldName, true);",
+        "parser.parseArray(componentClass, array, fieldName, false);",
+        "parser.parseArray(componentClass, array);",
+        "return parser.parseArray(componentClass, array, fieldName);",
+        "parser.parseArray(array, fieldName);",
+        "parser.parseArray(className, array, fieldName);",
+        "parser.parse(componentClass, array, fieldName);"
+    ],
+    "validation_result": [
+        {
+            "patch": "array = parser.parseArray(componentClass, array, fieldName);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "parser.parseArray(componentClass, array, fieldName, null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "parser.parseArray(componentClass, array, fieldName, type);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "parser.parseArray(componentClass, array, fieldName, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "parser.parseArray(componentClass, array, fieldName, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "parser.parseArray(componentClass, array);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return parser.parseArray(componentClass, array, fieldName);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "parser.parseArray(array, fieldName);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "parser.parseArray(className, array, fieldName);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "parser.parse(componentClass, array, fieldName);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

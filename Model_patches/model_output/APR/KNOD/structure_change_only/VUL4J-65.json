@@ -1,0 +1,65 @@
+{
+    "id": 33,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.4489,
+            "fix_type": "insert",
+            "patch": "if (name == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.5322,
+            "fix_type": "insert",
+            "patch": "if (name == 1 ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5868,
+            "fix_type": "insert",
+            "patch": "  int index = 0;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5887,
+            "fix_type": "insert",
+            "patch": "  File file = new File(name);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.5912,
+            "fix_type": "insert",
+            "patch": "if (name == null )return null;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.6318,
+            "fix_type": "insert",
+            "patch": "  File file = new File();\n"
+        },
+        {
+            "rank": 7,
+            "score": -4.0735,
+            "fix_type": "insert",
+            "patch": ""
+        },
+        {
+            "rank": 8,
+            "score": -0.2558,
+            "fix_type": "general",
+            "patch": "for (int index = 2;file.exists(),file.exists(),file.exists();)\n{\npos = new File(name,name);\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2888,
+            "fix_type": "general",
+            "patch": "for (int index = 2;file.exists(),file.exists(),file.exists();)\n "
+        },
+        {
+            "rank": 10,
+            "score": -0.3385,
+            "fix_type": "general",
+            "patch": "for (int index = 2;file.exists(),file.exists();)\n "
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "for(int vt = (1 < (t - 1));(v < vt);v += vt) {",
+  "for(int vt = (1 <= (t - 1));(v < vt);v += vt) {",
+  "for(int vt = (1 > (t - 1));(v < vt);v += vt) {",
+  "for(int vt = (1 & (t - 1));(v < vt);v += vt) {",
+  "for(int vt = (1 >= (t - 1));(v < vt);v += vt) {",
+  "for(int vt = (1 - (t - 1));(v < vt);v += vt) {",
+  "for(int vt = (1 | (t - 1));(v < vt);v += vt) {",
+  "for(int vt = (1 >> (t - 1));(v < vt);v += vt) {",
+  "for(int vt = (1 << (t - 1));(v <= vt);v += vt) {",
+  "for(int vt = (1 >>> (t - 1));(v < vt);v += vt) {"
+]

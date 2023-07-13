@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-13,1",
+    "output": [
+        "\n\tsecureRandomInstance.setSeed(seed);\npublicfinal\n\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\n\npublicfinal\n\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\n\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\n\tsecureRandomInstance.setSeedGenerator(generator);\n}\nthrows\n\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\n\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\n\tsecureRandomInstance.setSeedGenerator(generator);\n\n}\nthrows\n\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\n\tsecureRandomInstance.setSeed(seed);\n}\nfinal\n\n\n\n}",
+        "\n\tsecureRandomInstance.setSeed(seed);\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n\t\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\npublicfinal\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\npublicfinal\n\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\npublicfinal\n\trnd.setSeed(seed);\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\n\npublicfinal\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\npublicfinal\n\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\npublicfinal\n\trnd.setSeed(seed);\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\n\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\npublicfinal\n\trnd.setSeed(seed);\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\n\tsecureRandomInstance.setSeedGenerator(generator);\n}\nthrows\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\n\trnd.setSeedGenerator(generator);\n}\nthrows\n\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\n\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\npublicfinal\n\trnd.setSeed(seed);\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\n\tsecureRandomInstance.setSeedGenerator(generator);\n\n}\nthrows\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\n\trnd.setSeedGenerator(generator);\n}\nthrows\n\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\n\tsecureRandomInstance.setSeed(seed);\n}\nfinal\n\n\n\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\n\trnd.setSeed(seed);\n}\nfinal\n\n\n\n}"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(seed);\npublicfinal\n\tsecureRandomInstance.setSeed(seed);\n\n\n\t\n}",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);\npublicfinal\n\trnd.setSeed(seed);\n\n\n}"
+        }
+    ]
+}

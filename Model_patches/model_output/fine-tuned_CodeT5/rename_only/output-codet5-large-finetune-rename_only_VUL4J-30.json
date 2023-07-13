@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    if (!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n</s></s></s></s></s>",
+        "<pad><s>    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression()).matcher(content.toString()).matches()) {\n</s>",
+        "<pad><s>    if (!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content.toString()).matches()) {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (!(content instanceof String) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher((String) content).matches()) {\n</s></s>",
+        "<pad><s>    if (!(content.getClass().equals(String.class)) ||!acquireUrlRegularExpression().matcher(String.valueOf(content)).matches()) {\n</s></s></s>",
+        "<pad><s>    if (!Pattern.compile(acquireUrlRegularExpression()).matcher(String.valueOf(content)).matches()) {\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (!(content.getClass().equals(String.class))) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    if (!(content instanceof String)) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression()).matcher(content.toString()).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex()).matcher(value.toString()).matches()) {\n"
+        },
+        {
+            "patch": "    if (!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(content.toString()).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value.toString()).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content instanceof String) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher((String) content).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher((String) value).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class)) ||!acquireUrlRegularExpression().matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!Pattern.compile(acquireUrlRegularExpression()).matcher(String.valueOf(content)).matches()) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!Pattern.compile(getUrlRegex()).matcher(String.valueOf(value)).matches()) {\n"
+        },
+        {
+            "patch": "    if (!(content.getClass().equals(String.class))) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value.getClass().equals(String.class))) {\n"
+        },
+        {
+            "patch": "    if (!(content instanceof String)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (!(value instanceof String)) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

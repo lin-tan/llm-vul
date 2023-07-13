@@ -1,0 +1,37 @@
+{
+    "VUL4J-10014-539-546": {
+        "src": "else if ( x == $STRING$ ) { if ( h > begin && h + $NUMBER$ < terminal && $STRING$ == JSO CaMeL Nlike . char CaMeL At ( h - 1 ) && $STRING$ == ( JSO CaMeL Nlike . char CaMeL At ( h + 1 ) | 32 ) && $STRING$ == ( JSO CaMeL Nlike . char CaMeL At ( h + $NUMBER$ ) | 32 ) ) { embed ( h , $STRING$ ) ; } }",
+        "patches": [
+            {
+                "patch": "public else if( x == 'a') { if( h > begin && h +9< terminal && 'a'== JSONlike.charAt( h -1) && 'a'==( JSONlike.charAt( h +1) | JSONlike.charAt( h +1) && 'a'==( JSONlike.charAt( h +1) | JSONlike.charAt("
+            },
+            {
+                "patch": "public else if( x == ', ') { if( h > begin && h +9< terminal && ', '== JSONlike.charAt( h -1) && ', '==( JSONlike.charAt( h +1) | JSONlike.charAt( h +1) && ', '==( JSONlike.charAt( h +1) | JSONlike.charAt("
+            },
+            {
+                "patch": "public else if( x == '9') { if( h > begin && h +9< terminal && '9'== JSONlike.charAt( h -1) && '9'==( JSONlike.charAt( h +1) | JSONlike.charAt( h +1) && '9'==( JSONlike.charAt( h +1) | JSONlike.charAt("
+            },
+            {
+                "patch": "public else if( x == 'c') { if( h > begin && h +9< terminal && 'c'== JSONlike.charAt( h -1) && 'c'==( JSONlike.charAt( h +1) | JSONlike.charAt( h +1) && 'c'==( JSONlike.charAt( h +1) | JSONlike.charAt("
+            },
+            {
+                "patch": "public else if( x == 'b') { if( h > begin && h +9< terminal && 'b'== JSONlike.charAt( h -1) && 'b'==( JSONlike.charAt( h +1) | JSONlike.charAt( h +1) && 'b'==( JSONlike.charAt( h +1) | JSONlike.charAt("
+            },
+            {
+                "patch": "else if( x == 'a') { if( h > begin && h +9< terminal && 'a'== JSONlike.charAt( h -1) && 'a'== JSONlike.charAt( h +1) && 'a'== JSONlike.charAt( h +1) && 'a'== JSONlike.charAt( h +1) && 'a'==( JSONlike.charCaMeL"
+            },
+            {
+                "patch": "else if( x == ', ') { if( h > begin && h +9< terminal && ', '== JSONlike.charAt( h -1) && ', '== JSONlike.charAt( h +1) && ', '== JSONlike.charAt( h +1) && ', '== JSONlike.charAt( h +1) && ', '==( JSONlike.charCaMeL"
+            },
+            {
+                "patch": "else if( x == '9') { if( h > begin && h +9< terminal && '9'== JSONlike.charAt( h -1) && '9'== JSONlike.charAt( h +1) && '9'== JSONlike.charAt( h +1) && '9'== JSONlike.charAt( h +1) && '9'==( JSONlike.charCaMeL"
+            },
+            {
+                "patch": "else if( x == 'c') { if( h > begin && h +9< terminal && 'c'== JSONlike.charAt( h -1) && 'c'== JSONlike.charAt( h +1) && 'c'== JSONlike.charAt( h +1) && 'c'== JSONlike.charAt( h +1) && 'c'==( JSONlike.charCaMeL"
+            },
+            {
+                "patch": "else if( x == 'b') { if( h > begin && h +9< terminal && 'b'== JSONlike.charAt( h -1) && 'b'== JSONlike.charAt( h +1) && 'b'== JSONlike.charAt( h +1) && 'b'== JSONlike.charAt( h +1) && 'b'==( JSONlike.charCaMeL"
+            }
+        ]
+    }
+}

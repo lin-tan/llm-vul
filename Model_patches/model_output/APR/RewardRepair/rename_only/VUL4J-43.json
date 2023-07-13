@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (!item.isDirectory()) {",
+        "if (!item.isDirectory()) {",
+        "if (item.isDirectory() &&!item.isDirectory()) {",
+        "if (outputFile.isDirectory()) {",
+        "if (outputFile.isDirectory()) {",
+        "if (inputFile.exists() && item.isDirectory()) {",
+        "if (item.isDirectory() && outputFile.isDirectory()) {",
+        "if (item.isDirectory() && outputFile.isDirectory()) {",
+        "if (item!= null && item.isDirectory()) {",
+        "if (item.isDirectory() || item.isDirectory()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (!item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() &&!item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory() &&!entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (outputFile.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (outFile.isDirectory()) {"
+        },
+        {
+            "patch": "if (outputFile.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (outFile.isDirectory()) {"
+        },
+        {
+            "patch": "if (inputFile.exists() && item.isDirectory()) {",
+            "correctness": "uncompilable",
+            "translated": "if (inputFile.exists() && entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() && outputFile.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory() && outFile.isDirectory()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() && outputFile.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory() && outFile.isDirectory()) {"
+        },
+        {
+            "patch": "if (item!= null && item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry!= null && entry.isDirectory()) {"
+        },
+        {
+            "patch": "if (item.isDirectory() || item.isDirectory()) {",
+            "correctness": "compile_success",
+            "translated": "if (entry.isDirectory() || entry.isDirectory()) {"
+        }
+    ]
+}

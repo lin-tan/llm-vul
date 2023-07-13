@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName).find()) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName.toLowerCase())) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName) && petition.getPathInfo()!= null) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionMethodname)) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName.trim())) {",
+        "if (petitionFileName!= null &&!OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+        "If (!OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName.substring(0,petitionFileName.length()-1))) {",
+        "if (!OperatorAssistant.whetherPathInsecure(petitionFileName, false)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName).find()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename).find()) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName.toLowerCase())) {",
+            "correctness": "compile_success",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename.toLowerCase())) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+            "correctness": "compile_success",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename)) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName) && petition.getPathInfo()!= null) {",
+            "correctness": "compile_success",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename) && request.getPathInfo()!= null) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionMethodname)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!HandlerHelper.isPathUnsafe(petitionMethodname)) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName.trim())) {",
+            "correctness": "compile_success",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename.trim())) {"
+        },
+        {
+            "patch": "if (petitionFileName!= null &&!OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+            "correctness": "compile_success",
+            "translated": "if (requestFilename!= null &&!HandlerHelper.isPathUnsafe(requestFilename)) {"
+        },
+        {
+            "patch": "If (!OperatorAssistant.whetherPathInsecure(petitionFileName)) {",
+            "correctness": "uncompilable",
+            "translated": "If (!HandlerHelper.isPathUnsafe(requestFilename)) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName.substring(0,petitionFileName.length()-1))) {",
+            "correctness": "compile_success",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename.substring(0,requestFilename.length()-1))) {"
+        },
+        {
+            "patch": "if (!OperatorAssistant.whetherPathInsecure(petitionFileName, false)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!HandlerHelper.isPathUnsafe(requestFilename, false)) {"
+        }
+    ]
+}

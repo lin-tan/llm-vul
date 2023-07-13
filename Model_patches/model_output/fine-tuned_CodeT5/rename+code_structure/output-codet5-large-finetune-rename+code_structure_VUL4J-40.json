@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        if (dbUserName.equalsIgnoreCase(requestUserName)) {\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        if (dbUserName!= null && dbUserName.equals(requestUserName)) {\n</s></s></s></s></s>",
+        "<pad><s>        if (dbUserName.equals(requestUserName) || dbUserName.equals(requestUserName)) {\n</s>",
+        "<pad><s>        if (StringUtils.equals(dbUserName, requestUserName)) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>        if (dbUserName == null || dbUserName.equals(requestUserName)) {\n</s></s></s></s></s>",
+        "<pad><s>        if (!dbUserName.equals(requestUserName)) {\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        if (dbUserName.equals(requestUserName)) {\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        if (dbUserName.equals(requestUserName) && CustomerOfRequest.whetherAuthenticated()) {\n</s>",
+        "<pad><s>        if (dbUserName.equals(requestUserName))\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        if (dbUserName.equalsIgnoreCase(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName.equalsIgnoreCase(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (dbUserName!= null && dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName!= null && dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (dbUserName.equals(requestUserName) || dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName.equals(requestUserName) || dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (StringUtils.equals(dbUserName, requestUserName)) {\n",
+            "correctness": "uncompilable",
+            "translated": "        if (StringUtils.equals(dbUserName, requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (dbUserName == null || dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName == null || dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (!dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (!dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (dbUserName.equals(requestUserName)) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName.equals(requestUserName)) {\n"
+        },
+        {
+            "patch": "        if (dbUserName.equals(requestUserName) && CustomerOfRequest.whetherAuthenticated()) {\n",
+            "correctness": "test_timeout",
+            "translated": "        if (dbUserName.equals(requestUserName) && scimUserFromRequest.isVerified()) {\n"
+        },
+        {
+            "patch": "        if (dbUserName.equals(requestUserName))\n",
+            "correctness": "uncompilable",
+            "translated": "        if (dbUserName.equals(requestUserName))\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-15,5",
+    "output": [
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeProctor : nodeMonitorList) { z.put(nodeProctor.getName(), nodeProctor.getProctorInformation()); } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor node : nodeMonitorList) { z.put(node.getName(), node.getProctorInformation()); } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor p : nodeMonitorList) { z.put(p.getName(), p.getProctorInformation()); } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeMonitor : nodeMonitorList) { z.put(nodeMonitor.getName(), nodeMonitor.getProctorInformation()); } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeProctor : nodeMonitorList) { z.put(nodeProctor.getProctorName(), nodeProctor.getProctorInformation()); } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { z.put(nodeMonitorList.get(i), nodeMonitorList.get(i+1)); i++; } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeMonitor : nodeMonitorList) { z.put(nodeMonitor.getProctorName(), nodeMonitor.getProctorInformation()); } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { z.put(nodeMonitorList.get(i), nodeMonitorList.get(i).getProctorInformation()); i++; } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeProctor : nodeMonitorList) { z.put(nodeProctor.getName(), nodeProctor.getProctorInformation()); i++; } return z; }",
+        "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { z.put(nodeMonitorList.get(i).getName(), nodeMonitorList.get(i).getValue()); i++; } return z; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeProctor : nodeMonitorList) { z.put(nodeProctor.getName(), nodeProctor.getProctorInformation()); } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeProctor : nodeMonitorList) { r.put(nodeProctor.getName(), nodeProctor.getProctorInformation()); } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor node : nodeMonitorList) { z.put(node.getName(), node.getProctorInformation()); } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor node : nodeMonitorList) { r.put(node.getName(), node.getProctorInformation()); } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor p : nodeMonitorList) { z.put(p.getName(), p.getProctorInformation()); } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor p : nodeMonitorList) { r.put(p.getName(), p.getProctorInformation()); } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeMonitor : nodeMonitorList) { z.put(nodeMonitor.getName(), nodeMonitor.getProctorInformation()); } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getName(), nodeMonitor.getProctorInformation()); } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeProctor : nodeMonitorList) { z.put(nodeProctor.getProctorName(), nodeProctor.getProctorInformation()); } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeProctor : nodeMonitorList) { r.put(nodeProctor.getProctorName(), nodeProctor.getProctorInformation()); } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { z.put(nodeMonitorList.get(i), nodeMonitorList.get(i+1)); i++; } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { r.put(nodeMonitorList.get(i), nodeMonitorList.get(i+1)); i++; } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeMonitor : nodeMonitorList) { z.put(nodeMonitor.getProctorName(), nodeMonitor.getProctorInformation()); } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getProctorName(), nodeMonitor.getProctorInformation()); } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { z.put(nodeMonitorList.get(i), nodeMonitorList.get(i).getProctorInformation()); i++; } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { r.put(nodeMonitorList.get(i), nodeMonitorList.get(i).getProctorInformation()); i++; } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; for (VertexProctor nodeProctor : nodeMonitorList) { z.put(nodeProctor.getName(), nodeProctor.getProctorInformation()); i++; } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeProctor : nodeMonitorList) { r.put(nodeProctor.getName(), nodeProctor.getProctorInformation()); i++; } return r; }"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> acquireProctorInformation() { List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole(); Map<String,Object> z = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { z.put(nodeMonitorList.get(i).getName(), nodeMonitorList.get(i).getValue()); i++; } return z; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; while (i < nodeMonitorList.size()) { r.put(nodeMonitorList.get(i).getName(), nodeMonitorList.get(i).getValue()); i++; } return r; }"
+        }
+    ]
+}

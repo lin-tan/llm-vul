@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>      int i = -1;\n</s></s>",
+        "<pad><s>      int i = 1;\n</s></s></s>",
+        "<pad><s>      int i = rcount;\n</s></s>",
+        "<pad><s>      int i = 0;\n</s></s></s>",
+        "<pad><s>      int i = length;\n</s></s></s>",
+        "<pad><s>      int i = 0, j;\n</s>",
+        "<pad><s>    int i = 0;\n</s></s></s>",
+        "<pad><s>      int j = 0;\n</s></s></s>",
+        "<pad><s>      int i;\n</s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "      int i = -1;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = -1;\n"
+        },
+        {
+            "patch": "      int i = 1;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = 1;\n"
+        },
+        {
+            "patch": "      int i = rcount;\n",
+            "correctness": "uncompilable",
+            "translated": "      int i = rcount;\n"
+        },
+        {
+            "patch": "      int i = 0;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = 0;\n"
+        },
+        {
+            "patch": "      int i = length;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = length;\n"
+        },
+        {
+            "patch": "      int i = 0, j;\n",
+            "correctness": "uncompilable",
+            "translated": "      int i = 0, j;\n"
+        },
+        {
+            "patch": "    int i = 0;\n",
+            "correctness": "compile_success",
+            "translated": "      int i = 0;\n"
+        },
+        {
+            "patch": "      int j = 0;\n",
+            "correctness": "uncompilable",
+            "translated": "      int j = 0;\n"
+        },
+        {
+            "patch": "      int i;\n",
+            "correctness": "uncompilable",
+            "translated": "      int i;\n"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "id": 28,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2888,
+            "fix_type": "general",
+            "patch": "a.remakeAdaptationWhenAltered > 3"
+        },
+        {
+            "rank": 2,
+            "score": -0.471,
+            "fix_type": "general",
+            "patch": "a.remakeAdaptationWhenAltered"
+        },
+        {
+            "rank": 3,
+            "score": -0.3442,
+            "fix_type": "general",
+            "patch": "bits.remakeAdaptationWhenAltered"
+        },
+        {
+            "rank": 4,
+            "score": -0.3442,
+            "fix_type": "general",
+            "patch": "spec.remakeAdaptationWhenAltered"
+        },
+        {
+            "rank": 5,
+            "score": -0.5991,
+            "fix_type": "insert",
+            "patch": "a.displayName = bits;\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5991,
+            "fix_type": "insert",
+            "patch": "a.field = bits;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.5517,
+            "fix_type": "general",
+            "patch": "a.remakeAdaptationWhenAltered && a.displayName"
+        },
+        {
+            "rank": 8,
+            "score": -0.5517,
+            "fix_type": "general",
+            "patch": "a.remakeAdaptationWhenAltered && a.field"
+        },
+        {
+            "rank": 9,
+            "score": -0.6094,
+            "fix_type": "insert",
+            "patch": "a.displayName = true;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.6094,
+            "fix_type": "insert",
+            "patch": "a.field = true;\n"
+        }
+    ]
+}

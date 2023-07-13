@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "z.set(attribute,m);",
+        "z.set(attribute,m);",
+        "z.set(attribute,m-position-1);",
+        "z.set(attribute,m - position);",
+        "z.set(attribute,m-position-1);",
+        "z.set(attribute,m-position-m);",
+        "z.set(attribute,m-position-1);",
+        "z.set(attribute,m - position);",
+        "z.set(attribute,m-position-1);",
+        "z.set(attribute,m-position);"
+    ],
+    "validation_result": [
+        {
+            "patch": "z.set(attribute,m);",
+            "correctness": "compile_success",
+            "translated": "c.set(field,i);"
+        },
+        {
+            "patch": "z.set(attribute,m);",
+            "correctness": "compile_success",
+            "translated": "c.set(field,i);"
+        },
+        {
+            "patch": "z.set(attribute,m-position-1);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field,i-offset-1);"
+        },
+        {
+            "patch": "z.set(attribute,m - position);",
+            "correctness": "compile_success",
+            "translated": "c.set(field,i - offset);"
+        },
+        {
+            "patch": "z.set(attribute,m-position-1);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field,i-offset-1);"
+        },
+        {
+            "patch": "z.set(attribute,m-position-m);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field,i-offset-i);"
+        },
+        {
+            "patch": "z.set(attribute,m-position-1);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field,i-offset-1);"
+        },
+        {
+            "patch": "z.set(attribute,m - position);",
+            "correctness": "compile_success",
+            "translated": "c.set(field,i - offset);"
+        },
+        {
+            "patch": "z.set(attribute,m-position-1);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field,i-offset-1);"
+        },
+        {
+            "patch": "z.set(attribute,m-position);",
+            "correctness": "compile_success",
+            "translated": "c.set(field,i - offset);"
+        }
+    ]
+}

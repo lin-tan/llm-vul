@@ -1,0 +1,37 @@
+{
+    "VUL4J-3-594-595": {
+        "src": "smill . set CaMeL Namespace CaMeL Aware ( true ) ;",
+        "patches": [
+            {
+                "patch": "smill = true ; } else { smill = true ; }"
+            },
+            {
+                "patch": "smill.setFeature( null ) ; } else { smill.setFeature( null ) ;"
+            },
+            {
+                "patch": "smill = smill.newInstance( ) ; } else { smill = newInstance( ) ;"
+            },
+            {
+                "patch": "smill = smill.setFeature( null ) ; } else { smill = smill ;"
+            },
+            {
+                "patch": "smill.setFeature( null ) ; smill.setFeature( null ) ;"
+            },
+            {
+                "patch": "if( smill != null ) { smill.setFeature( true ) ; }"
+            },
+            {
+                "patch": "smill.set( true ) ; smill.set( true ) ;"
+            },
+            {
+                "patch": "throw new IllegalArgumentException( ', new Object[]{javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, ') ;"
+            },
+            {
+                "patch": "throw new IllegalArgumentException( 'true') ;"
+            },
+            {
+                "patch": "throw new IllegalArgumentException( \"TransformerFactory doesn't support the feature {} with value {}, due to {}.\") ;"
+            }
+        ]
+    }
+}

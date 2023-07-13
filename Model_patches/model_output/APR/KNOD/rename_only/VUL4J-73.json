@@ -1,0 +1,65 @@
+{
+    "id": 31,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2125,
+            "fix_type": "general",
+            "patch": "  String watchwordA = encipheredWatchword + \"\";\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.2125,
+            "fix_type": "general",
+            "patch": "  String watchwordA = encipheredWatchword + \"0\";\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2334,
+            "fix_type": "general",
+            "patch": "  String watchwordA = encipheredWatchword != null;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2524,
+            "fix_type": "insert",
+            "patch": "if (encipheredWatchword == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2203,
+            "fix_type": "general",
+            "patch": "  String watchwordA = demergePasswordAndSalt(encipheredWatchword);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.2203,
+            "fix_type": "general",
+            "patch": "  String watchwordA = obtainPasswordAndSalt(encipheredWatchword);\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2445,
+            "fix_type": "general",
+            "patch": "  String watchwordA = encipheredWatchword + \"\";\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.3063,
+            "fix_type": "insert",
+            "patch": "if (unprocessedWatchword == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4551,
+            "fix_type": "general",
+            "patch": "  String watchwordA = new String(encipheredWatchword);\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2658,
+            "fix_type": "general",
+            "patch": "  PasswordEncoder watchwordA = encipheredWatchword + \"\";\n"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-17,5",
+    "output": [
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ) && item.hasPermission(Item.DISCOVER)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n\n  @Override\n  public boolean contains(TopLevelItem item) {\n    return items.containsKey(item.getName());\n  }\n\n  @Override\n  public void onJobRenamed(Item item, String oldName, String newName) {\n    items.remove(oldName);\n    items.put(newName, (TopLevelItem) item);\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n\n  @Override\n  public boolean contains(TopLevelItem item) {\n    return items.containsKey(item.getName());\n  }\n\n  @Override\n  public void onJobRenamed(TopLevelItem item, String oldName, String newName) {\n    items.remove(oldName);\n    items.put(newName, item);\n  }\n\n  @Override\n  public void onJobDeleted(TopLevelItem item) {\n    items.remove(item.getName());\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n\n  @Override\n  public boolean contains(TopLevelItem item) {\n    return items.containsKey(item.getName());\n  }\n\n  @Override\n  public void onJobRenamed(Item item, String oldName, String newName) {\n    items.remove(oldName);\n    items.put(newName, (TopLevelItem) item);\n  }\n\n  @Override\n  public void onJobDeleted(String oldName) {\n    items.remove(oldName);\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n\n  @Override\n  public boolean contains(TopLevelItem item) {\n    return items.containsKey(item.getName());\n  }\n\n  @Override\n  public void onJobRenamed(Item item, String oldName, String newName) {\n    items.remove(oldName);\n    items.put(newName, (TopLevelItem) item);\n  }\n\n  @Override\n  public void onJobDeleted(Item item) {\n    items.remove(item.getName());\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n\n  @Override\n  public boolean contains(TopLevelItem item) {\n    return items.containsKey(item.getName());\n  }\n\n  @Override\n  public void onJobRenamed(TopLevelItem item, String oldName, String newName) {\n    items.remove(oldName);\n    items.put(newName, item);\n  }\n\n  @Override\n  public void onJobDeleted(TopLevelItem item) {\n    items.remove(item.getName());\n  }\n\n  @Override\n  public void onJobCreated(TopLevelItem item) {\n    items.put(item.getName(), item);\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem itemValue : itemValues) {\n      if (itemValue.hasPermission(Item.READ)) {\n        viewableItems.add(itemValue);\n      }\n    }\n    return viewableItems;\n  }\n\n  @Override\n  public boolean contains(TopLevelItem item) {\n    return items.containsKey(item.getName());\n  }\n\n  @Override\n  public void onJobRenamed(Item item, String oldName, String newName) {\n    items.remove(oldName);\n    items.put(newName, (TopLevelItem) item);\n  }\n\n  @Override\n  public void onJobDeleted(String oldName) {\n    items.remove(oldName);\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n\n  @Override\n  public boolean contains(TopLevelItem item) {\n    return items.containsKey(item.getName());\n  }\n\n  @Override\n  public void onJobRenamed(Item item, String oldName, String newName) {\n    items.remove(oldName);\n    items.put(newName, (TopLevelItem) item);\n  }\n\n  @Override\n  public void onJobDeleted(String oldName) {\n    items.remove(oldName);\n  }\n\n  @Override\n  public Collection<TopLevelItem> getItems() {\n    return items.values();\n  }\n}\n",
+        "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }\n\n  @Override\n  public boolean contains(TopLevelItem item) {\n    return items.containsKey(item.getName());\n  }\n\n  @Override\n  public void onJobRenamed(Item item, String oldName, String newName) {\n    items.remove(oldName);\n    items.put(newName, (TopLevelItem) item);\n  }\n\n  @Override\n  public void onJobDeleted(Item item) {\n    items.remove(item.getName());\n  }\n\n  @Override\n  public Collection<TopLevelItem> getItems() {\n    return items.values();\n  }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ) && item.hasPermission(Item.DISCOVER)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem itemValue : itemValues) {\n      if (itemValue.hasPermission(Item.READ)) {\n        viewableItems.add(itemValue);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public List<TopLevelItem> getItems() {\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    Collection<TopLevelItem> itemValues = items.values();\n    for (TopLevelItem item : itemValues) {\n      if (item.hasPermission(Item.READ)) {\n        viewableItems.add(item);\n      }\n    }\n    return viewableItems;\n  }",
+            "correctness": "test_success"
+        }
+    ]
+}

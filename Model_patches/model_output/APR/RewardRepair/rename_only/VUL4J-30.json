@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) || Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) &&!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).find()) {",
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content))) {",
+        "If (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) || Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) || Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+        "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content).matches()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) || Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value.getClass().equals(String.class)) || Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) &&!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value.getClass().equals(String.class)) &&!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).find()) {",
+            "correctness": "test_success",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).find()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content))) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value))) {"
+        },
+        {
+            "patch": "If (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "uncompilable",
+            "translated": "If (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) || Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value.getClass().equals(String.class)) || Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) || Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content)).matches()) {",
+            "correctness": "compile_success",
+            "translated": "if (!(value.getClass().equals(String.class)) || Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value)).matches()) {"
+        },
+        {
+            "patch": "if (!(content.getClass().equals(String.class)) ||!Pattern.compile(acquireUrlRegularExpression(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(content).matches()) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(value.getClass().equals(String.class)) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(String.valueOf(value).matches()) {"
+        }
+    ]
+}

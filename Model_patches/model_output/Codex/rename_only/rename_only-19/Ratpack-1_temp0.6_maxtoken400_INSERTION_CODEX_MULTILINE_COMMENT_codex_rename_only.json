@@ -1,0 +1,641 @@
+{
+    "id": "cmpl-8HPR3bM9GfmcetGQT2zxXV2LX7Um7",
+    "object": "text_completion",
+    "created": 1699160041,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  HttpHeaders heading = new DefaultHttpHeaders();\n  heading.set(HttpHeaderNames.CONTENT_TYPE, HypertextTransferProtocolHeadingConstants.PLAIN_TEXT_UTF8);\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " H",
+                    "ttp",
+                    "Head",
+                    "ers",
+                    " heading",
+                    " =",
+                    " new",
+                    " Default",
+                    "Http",
+                    "Head",
+                    "ers",
+                    "();",
+                    "\n",
+                    " ",
+                    " heading",
+                    ".",
+                    "set",
+                    "(",
+                    "Http",
+                    "Header",
+                    "Names",
+                    ".",
+                    "CONT",
+                    "ENT",
+                    "_",
+                    "TYPE",
+                    ",",
+                    " Hyper",
+                    "text",
+                    "Transfer",
+                    "Prot",
+                    "ocol",
+                    "Head",
+                    "ing",
+                    "Const",
+                    "ants",
+                    ".",
+                    "PL",
+                    "AIN",
+                    "_",
+                    "TEXT",
+                    "_",
+                    "UTF",
+                    "8",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.93829453,
+                    -0.00048191354,
+                    -0.02300836,
+                    -0.042689912,
+                    -0.015296593,
+                    -0.00235885,
+                    -0.046607986,
+                    -0.060718805,
+                    -0.013418931,
+                    -0.0040871785,
+                    -3.7266083e-05,
+                    -0.54950607,
+                    -0.036074318,
+                    -0.9378588,
+                    -0.6110733,
+                    -0.0064851497,
+                    -0.4018578,
+                    -0.14078912,
+                    -0.19047396,
+                    -0.046121825,
+                    -0.008519562,
+                    -0.00023023302,
+                    -2.3798368,
+                    -0.00025443616,
+                    -0.00030058398,
+                    -0.29540974,
+                    -0.004092983,
+                    -1.0831842,
+                    -0.00038006424,
+                    -0.00073675625,
+                    -7.982734e-05,
+                    -1.0084622e-05,
+                    -0.009764224,
+                    -0.000107007865,
+                    -0.0024473355,
+                    -8.653179e-06,
+                    -0.0003170395,
+                    -0.10974764,
+                    -7.1481794e-05,
+                    -0.000411847,
+                    -0.0009762774,
+                    -0.01765622,
+                    -0.0058896607,
+                    -0.0004834642,
+                    -0.06809656,
+                    -0.007312786
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ttp": -0.00048191354
+                    },
+                    {
+                        "Head": -0.02300836
+                    },
+                    {
+                        "ers": -0.042689912
+                    },
+                    {
+                        " heading": -0.015296593
+                    },
+                    {
+                        " =": -0.00235885
+                    },
+                    {
+                        " new": -0.046607986
+                    },
+                    {
+                        " Default": -0.060718805
+                    },
+                    {
+                        "Http": -0.013418931
+                    },
+                    {
+                        "Head": -0.0040871785
+                    },
+                    {
+                        "ers": -3.7266083e-05
+                    },
+                    {
+                        "();": -0.54950607
+                    },
+                    {
+                        "\n": -0.036074318
+                    },
+                    {
+                        "<|endoftext|>": -0.5030453
+                    },
+                    {
+                        " heading": -0.6110733
+                    },
+                    {
+                        ".": -0.0064851497
+                    },
+                    {
+                        "set": -0.4018578
+                    },
+                    {
+                        "(": -0.14078912
+                    },
+                    {
+                        "Http": -0.19047396
+                    },
+                    {
+                        "Header": -0.046121825
+                    },
+                    {
+                        "Names": -0.008519562
+                    },
+                    {
+                        ".": -0.00023023302
+                    },
+                    {
+                        "SER": -0.8795165
+                    },
+                    {
+                        "ENT": -0.00025443616
+                    },
+                    {
+                        "_": -0.00030058398
+                    },
+                    {
+                        "TYPE": -0.29540974
+                    },
+                    {
+                        ",": -0.004092983
+                    },
+                    {
+                        " Hyper": -1.0831842
+                    },
+                    {
+                        "text": -0.00038006424
+                    },
+                    {
+                        "Transfer": -0.00073675625
+                    },
+                    {
+                        "Prot": -7.982734e-05
+                    },
+                    {
+                        "ocol": -1.0084622e-05
+                    },
+                    {
+                        "Head": -0.009764224
+                    },
+                    {
+                        "ing": -0.000107007865
+                    },
+                    {
+                        "Const": -0.0024473355
+                    },
+                    {
+                        "ants": -8.653179e-06
+                    },
+                    {
+                        ".": -0.0003170395
+                    },
+                    {
+                        "PL": -0.10974764
+                    },
+                    {
+                        "AIN": -7.1481794e-05
+                    },
+                    {
+                        "_": -0.000411847
+                    },
+                    {
+                        "TEXT": -0.0009762774
+                    },
+                    {
+                        "_": -0.01765622
+                    },
+                    {
+                        "UTF": -0.0058896607
+                    },
+                    {
+                        "8": -0.0004834642
+                    },
+                    {
+                        ");": -0.06809656
+                    },
+                    {
+                        "\n": -0.007312786
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3860,
+                    3863,
+                    3867,
+                    3870,
+                    3878,
+                    3880,
+                    3884,
+                    3892,
+                    3896,
+                    3900,
+                    3903,
+                    3906,
+                    3907,
+                    3908,
+                    3916,
+                    3917,
+                    3920,
+                    3921,
+                    3925,
+                    3931,
+                    3936,
+                    3937,
+                    3941,
+                    3944,
+                    3945,
+                    3949,
+                    3950,
+                    3956,
+                    3960,
+                    3968,
+                    3972,
+                    3976,
+                    3980,
+                    3983,
+                    3988,
+                    3992,
+                    3993,
+                    3995,
+                    3998,
+                    3999,
+                    4003,
+                    4004,
+                    4007,
+                    4008,
+                    4010
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  HttpHeaders heading = new DefaultHttpHeaders();\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " H",
+                    "ttp",
+                    "Head",
+                    "ers",
+                    " heading",
+                    " =",
+                    " new",
+                    " Default",
+                    "Http",
+                    "Head",
+                    "ers",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519,
+                    -0.95647454,
+                    -0.93829453,
+                    -0.00048191354,
+                    -0.02300836,
+                    -0.042689912,
+                    -0.015296593,
+                    -0.00235885,
+                    -0.046607986,
+                    -0.060718805,
+                    -0.013418931,
+                    -0.0040871785,
+                    -3.7266083e-05,
+                    -0.54950607,
+                    -0.036074318
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    },
+                    {
+                        "<|endoftext|>": -0.50968575
+                    },
+                    {
+                        " H": -0.93829453
+                    },
+                    {
+                        "ttp": -0.00048191354
+                    },
+                    {
+                        "Head": -0.02300836
+                    },
+                    {
+                        "ers": -0.042689912
+                    },
+                    {
+                        " heading": -0.015296593
+                    },
+                    {
+                        " =": -0.00235885
+                    },
+                    {
+                        " new": -0.046607986
+                    },
+                    {
+                        " Default": -0.060718805
+                    },
+                    {
+                        "Http": -0.013418931
+                    },
+                    {
+                        "Head": -0.0040871785
+                    },
+                    {
+                        "ers": -3.7266083e-05
+                    },
+                    {
+                        "();": -0.54950607
+                    },
+                    {
+                        "\n": -0.036074318
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3860,
+                    3863,
+                    3867,
+                    3870,
+                    3878,
+                    3880,
+                    3884,
+                    3892,
+                    3896,
+                    3900,
+                    3903,
+                    3906
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008857519
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008857519
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1076,
+        "completion_tokens": 63,
+        "total_tokens": 1139
+    },
+    "validation_result": [
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  HttpHeaders heading = new DefaultHttpHeaders();\n  heading.set(HttpHeaderNames.CONTENT_TYPE, HypertextTransferProtocolHeadingConstants.PLAIN_TEXT_UTF8);\n",
+            "correctness": "compile_success",
+            "translated": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n  nettyHeaders.set(HttpHeaderNames.CONTENT_TYPE, HttpHeaderConstants.PLAIN_TEXT_UTF8);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  HttpHeaders heading = new DefaultHttpHeaders();\n",
+            "correctness": "test_success",
+            "translated": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

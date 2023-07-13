@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-4,1",
+    "output": [
+        "void setTo(Calendar c, int i) { setToImpl ( c, i ) ; }",
+        "void setTo(Calendar c, int i) { calendar = c ; }",
+        "void setTo(Calendar c, int i) { c. setTimeInMillis ( i ) ; }",
+        "void setTo(Calendar c, int i) { this. calendar = c ; }",
+        "void setTo(Calendar c, int i) { this. c = c ; }",
+        "void setTo(Calendar c, int i) { calendar. setTimeInMillis ( i ) ; }",
+        "void setTo(Calendar c, int i) { setToImpl ( c, i, false ) ; }",
+        "void setTo(Calendar c, int i) { cal = c ; }",
+        "void setTo(Calendar c, int i) { mCalendar = c ; }",
+        "void setTo(Calendar c, int i) { setToImpl ( c, i, true ) ; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "void setTo(Calendar c, int i) { setToImpl ( c, i ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { calendar = c ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { c. setTimeInMillis ( i ) ; }",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { this. calendar = c ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { this. c = c ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { calendar. setTimeInMillis ( i ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { setToImpl ( c, i, false ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { cal = c ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { mCalendar = c ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "void setTo(Calendar c, int i) { setToImpl ( c, i, true ) ; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

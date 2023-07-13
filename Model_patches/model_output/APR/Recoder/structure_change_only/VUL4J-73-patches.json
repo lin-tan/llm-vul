@@ -1,0 +1,12 @@
+[
+  "String pass2 = mergePasswordAndSalt(rawPass, salt, true);\n",
+  "String pass2 = mergePasswordAndSalt(rawPass);\n",
+  "String pass2 = mergePasswordAndSalt(rawPass, salt, false);\n",
+  "String pass2 = mergePasswordAndSalt(rawPass, salt);\n",
+  "String pass2 = mergePasswordAndSalt();\n",
+  "String pass2 = mergePasswordAndSalt(rawPass, true);\n",
+  "String pass2 = mergePasswordAndSalt(rawPass, rawPass);\n",
+  "String pass2 = mergePasswordAndSalt(rawPass, false, false);\n",
+  "mergePasswordAndSalt(rawPass, salt, false);\n",
+  "String pass2 = mergePasswordAndSalt(rawPass, true, false);\n"
+]

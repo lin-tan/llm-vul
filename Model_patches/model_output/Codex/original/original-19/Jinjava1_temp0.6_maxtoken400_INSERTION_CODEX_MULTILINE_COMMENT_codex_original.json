@@ -1,0 +1,601 @@
+{
+    "id": "cmpl-6mTRlPWYp9PKnoPiVU27keU40ZYuF",
+    "object": "text_completion",
+    "created": 1677010957,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "bytes:\\xef",
+                    "bytes:\\xbb",
+                    "bytes:\\xbf"
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.5092783,
+                    -2.5190113,
+                    -2.4866502e-05,
+                    -4.277735e-07
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5092783
+                    },
+                    {
+                        "package": -1.4663264
+                    },
+                    {
+                        "bytes:\\xbb": -2.4866502e-05
+                    },
+                    {
+                        "bytes:\\xbf": -4.277735e-07
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    299,
+                    299,
+                    299
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    .add(\"notify\")\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " .",
+                    "add",
+                    "(\"",
+                    "not",
+                    "ify",
+                    "\")",
+                    "\n",
+                    "<|endoftext|>",
+                    "bytes:\\xef",
+                    "bytes:\\xbb",
+                    "bytes:\\xbf"
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.93810266,
+                    -0.073498495,
+                    -0.003005389,
+                    -0.014991787,
+                    -0.45227054,
+                    -0.033696227,
+                    -0.32056117,
+                    -0.07625553,
+                    -0.11507586,
+                    -2.5120826,
+                    -2.6298881e-05,
+                    -4.277735e-07
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5092783
+                    },
+                    {
+                        " .": -0.073498495
+                    },
+                    {
+                        "add": -0.003005389
+                    },
+                    {
+                        "(\"": -0.014991787
+                    },
+                    {
+                        "not": -0.45227054
+                    },
+                    {
+                        "ify": -0.033696227
+                    },
+                    {
+                        "\")": -0.32056117
+                    },
+                    {
+                        "\n": -0.07625553
+                    },
+                    {
+                        "<|endoftext|>": -0.11507586
+                    },
+                    {
+                        "package": -1.4618601
+                    },
+                    {
+                        "bytes:\\xbb": -2.6298881e-05
+                    },
+                    {
+                        "bytes:\\xbf": -4.277735e-07
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    302,
+                    304,
+                    307,
+                    309,
+                    312,
+                    315,
+                    317,
+                    318,
+                    318,
+                    318,
+                    318
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.5092783,
+                    -1.4663264,
+                    -0.70792055,
+                    -0.0014108961
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5092783
+                    },
+                    {
+                        "package": -1.4663264
+                    },
+                    {
+                        " com": -0.70792055
+                    },
+                    {
+                        ".": -0.0014108961
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    299,
+                    299,
+                    299
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.5060684,
+                    -1.4663606,
+                    -0.7076561,
+                    -0.0014142395
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5060684
+                    },
+                    {
+                        "package": -1.4663606
+                    },
+                    {
+                        " com": -0.7076561
+                    },
+                    {
+                        ".": -0.0014142395
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    299,
+                    299,
+                    299
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.5060684,
+                    -1.4663606,
+                    -0.7076561,
+                    -0.0014142395
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5060684
+                    },
+                    {
+                        "package": -1.4663606
+                    },
+                    {
+                        " com": -0.7076561
+                    },
+                    {
+                        ".": -0.0014142395
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    299,
+                    299,
+                    299
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.5060684,
+                    -1.4663606,
+                    -0.7076561,
+                    -0.0014142395
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5060684
+                    },
+                    {
+                        "package": -1.4663606
+                    },
+                    {
+                        " com": -0.7076561
+                    },
+                    {
+                        ".": -0.0014142395
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    299,
+                    299,
+                    299
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    .add(\"notify\")\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " .",
+                    "add",
+                    "(\"",
+                    "not",
+                    "ify",
+                    "\")",
+                    "\n",
+                    "<|endoftext|>",
+                    "#",
+                    "include",
+                    " \""
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.9432231,
+                    -0.073813386,
+                    -0.0029908633,
+                    -0.015997104,
+                    -0.45838234,
+                    -0.033287957,
+                    -0.3174637,
+                    -0.075892985,
+                    -0.115510434,
+                    -2.267024,
+                    -1.0931842,
+                    -0.94604546
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5060684
+                    },
+                    {
+                        " .": -0.073813386
+                    },
+                    {
+                        "add": -0.0029908633
+                    },
+                    {
+                        "(\"": -0.015997104
+                    },
+                    {
+                        "not": -0.45838234
+                    },
+                    {
+                        "ify": -0.033287957
+                    },
+                    {
+                        "\")": -0.3174637
+                    },
+                    {
+                        "\n": -0.075892985
+                    },
+                    {
+                        "<|endoftext|>": -0.115510434
+                    },
+                    {
+                        "package": -1.4621189
+                    },
+                    {
+                        "include": -1.0931842
+                    },
+                    {
+                        " <": -0.70273364
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    302,
+                    304,
+                    307,
+                    309,
+                    312,
+                    315,
+                    317,
+                    318,
+                    318,
+                    318,
+                    318
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "<?",
+                    "php",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.5060684,
+                    -2.4193819,
+                    -0.025925983,
+                    -0.15769291
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5060684
+                    },
+                    {
+                        "package": -1.4663606
+                    },
+                    {
+                        "php": -0.025925983
+                    },
+                    {
+                        "\n": -0.15769291
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    299,
+                    299,
+                    299
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.5060684,
+                    -1.4663606,
+                    -0.7076561,
+                    -0.0014142395
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5060684
+                    },
+                    {
+                        "package": -1.4663606
+                    },
+                    {
+                        " com": -0.7076561
+                    },
+                    {
+                        ".": -0.0014142395
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    299,
+                    299,
+                    299
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0017427023,
+                    -0.5060684,
+                    -1.4663606,
+                    -0.7076561,
+                    -0.0014142395
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0017427023
+                    },
+                    {
+                        "<|endoftext|>": -0.5060684
+                    },
+                    {
+                        "package": -1.4663606
+                    },
+                    {
+                        " com": -0.7076561
+                    },
+                    {
+                        ".": -0.0014142395
+                    }
+                ],
+                "text_offset": [
+                    299,
+                    299,
+                    299,
+                    299,
+                    299
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 88,
+        "completion_tokens": 18,
+        "total_tokens": 106
+    },
+    "validation_result": [
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    .add(\"notify\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    .add(\"notify\")\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success"
+        }
+    ]
+}

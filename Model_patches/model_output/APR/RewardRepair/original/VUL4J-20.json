@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "retval[i] = ((COSNumber)getObject( i )).floatValue();",
+        "retval[i] = ((COSNumber)getObject( i )).floatValue();",
+        "retval[i] = ((COSNumber)getObject( i )).doubleValue();",
+        "((COSNumber)getObject( i )).floatValue();",
+        "retval[i] = ((COSNumber)getObject( i )).intValue();",
+        "retval[i] = ((COSNumber[])getObject( i )).floatValue();",
+        "retval[i] = ((COSNumber)getObject(i)).floatValue();",
+        "retval[i] = ((COSNumber)getObject( i )).doubleValue();",
+        "retval[i] = ((COSNumber)getObject(i )).floatValue();",
+        "retval[i++] = ((COSNumber)getObject( i )).floatValue();"
+    ],
+    "validation_result": [
+        {
+            "patch": "retval[i] = ((COSNumber)getObject( i )).floatValue();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber)getObject( i )).floatValue();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber)getObject( i )).doubleValue();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "((COSNumber)getObject( i )).floatValue();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber)getObject( i )).intValue();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber[])getObject( i )).floatValue();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber)getObject(i)).floatValue();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber)getObject( i )).doubleValue();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber)getObject(i )).floatValue();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "retval[i++] = ((COSNumber)getObject( i )).floatValue();",
+            "correctness": "compile_success"
+        }
+    ]
+}

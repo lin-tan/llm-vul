@@ -1,0 +1,65 @@
+{
+    "id": 20,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2068,
+            "fix_type": "general",
+            "patch": "xmlIn = XMLInputFactory.newInstance();\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.3741,
+            "fix_type": "insert",
+            "patch": "serialVersionUID = true;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.3741,
+            "fix_type": "insert",
+            "patch": "_jdkXmlInFactory = true;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2206,
+            "fix_type": "general",
+            "patch": "xmlIn = XMLInputFactory.nextToken();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2206,
+            "fix_type": "general",
+            "patch": "xmlIn = XMLInputFactory.close();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3873,
+            "fix_type": "insert",
+            "patch": "serialVersionUID = null;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.3873,
+            "fix_type": "insert",
+            "patch": "_jdkXmlInFactory = null;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.3554,
+            "fix_type": "general",
+            "patch": "serialVersionUID = XMLInputFactory.newInstance();\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.3554,
+            "fix_type": "general",
+            "patch": "_jdkXmlInFactory = XMLInputFactory.newInstance();\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.4011,
+            "fix_type": "insert",
+            "patch": "serialVersionUID = false;\n"
+        }
+    ]
+}

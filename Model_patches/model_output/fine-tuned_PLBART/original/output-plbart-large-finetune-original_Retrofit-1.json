@@ -1,0 +1,56 @@
+{
+    "output": [
+        "this.context = context; this.type = type;",
+        "this.context = context;",
+        "this.type = context.getUnmarshaller().getType();",
+        "this.type = context.getType();",
+        "this.type = type.getCanonicalName();",
+        "this.type = type.getName();",
+        "this.type = context.getClass();",
+        "this.type = context.getJAXBContext().getType();",
+        "this.responseType = type;",
+        "this.type = type == null? null : type;"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.context = context; this.type = type;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = context.getUnmarshaller().getType();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = context.getType();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type.getCanonicalName();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type.getName();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = context.getClass();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = context.getJAXBContext().getType();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.responseType = type;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.type = type == null? null : type;",
+            "correctness": "compile_success"
+        }
+    ]
+}

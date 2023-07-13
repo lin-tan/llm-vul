@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    return factory.createXMLStreamReader(inputStream);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, null));\n</s>",
+        "<pad><s>    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));\n</s>",
+        "<pad><s>    return factory.createXMLStreamReader(inputStream, \"String_Node_Str\");\n</s>",
+        "<pad><s>    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), encoding);\n</s>",
+        "<pad><s>    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, false));\n</s>",
+        "<pad><s>    return factory.createXMLStreamReader(inputStream, null);\n</s></s></s></s></s></s>",
+        "<pad><s>    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, encoding));\n</s>",
+        "<pad><s>    return factory.createXMLStreamReader(inputStream, encoding);\n</s></s></s></s></s></s>",
+        "<pad><s>    return factory.createXMLStreamReader(inputStream, prefix);\n</s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return factory.createXMLStreamReader(inputStream);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, null));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, true));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(inputStream, \"String_Node_Str\");\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream), encoding);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, false));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(inputStream, null);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream, encoding));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(inputStream, encoding);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return factory.createXMLStreamReader(inputStream, prefix);\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

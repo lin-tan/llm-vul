@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-5,1",
+    "output": [
+        "@Override public String encodeForJSString(String source) { return source ; }",
+        "@Override public String encodeForJSString(String source) { return super. encodeForJSString(source); }",
+        "@Override public String encodeForJSString(String source) { return super. encodeForJSString ( source ) ; }",
+        "@Override public String encodeForJSString(String source) { return encodeForJSString ( source, false ) ; }",
+        "@Override public String encodeForJSString(String source) { return encodeForJSString ( source, null ) ; }",
+        "@Override public String encodeForJSString(String source) { return encodeForJSStringHelper ( source ) ; }",
+        "@Override public String encodeForJSString(String source) { return encodeForJSStringInternal ( source, false ) ; }",
+        "@Override public String encodeForJSString(String source) { return super. encodeForJSString ( source); }",
+        "@Override public String encodeForJSString(String source) { return super. encodeForJSString(source ) ; }",
+        "@Override public String encodeForJSString(String source) { return JSONTokener. encodeForJSString ( source); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return source ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return super. encodeForJSString(source); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return super. encodeForJSString ( source ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return encodeForJSString ( source, false ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return encodeForJSString ( source, null ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return encodeForJSStringHelper ( source ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return encodeForJSStringInternal ( source, false ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return super. encodeForJSString ( source); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return super. encodeForJSString(source ) ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Override public String encodeForJSString(String source) { return JSONTokener. encodeForJSString ( source); }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

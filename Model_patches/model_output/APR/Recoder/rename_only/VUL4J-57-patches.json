@@ -1,0 +1,12 @@
+[
+  "if((measure.acquireDelay() && (point instanceof Occupation))){",
+  "if((measure.acquireDelay() || (point instanceof Occupation))){",
+  "if((point instanceof Occupation)){\n",
+  "if((measure.beSpread() && (point instanceof Occupation))){",
+  "if(measure.acquireDelay()){\n",
+  "if((measure.acquireDelay() && (point == Occupation))){",
+  "if((measure.acquireDelay() && (point != Occupation))){",
+  "if((measure.acquireDelay() && (point > Occupation))){",
+  "if(beginning()){\n",
+  "if((measure.acquireDelay() && (point < Occupation))){"
+]

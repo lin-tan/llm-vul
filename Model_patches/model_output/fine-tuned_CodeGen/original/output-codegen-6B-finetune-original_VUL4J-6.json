@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int i = 0; i < rcount; i++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int j = 0; j < this.hashSize; j++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int i = 0; i <= this.rcount; i++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int i = 0; i < this.rcount - 1; i++) {\n<|endoftext|><|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int i = 0; i < this.hashSize; i++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int i = 0; i < (this.rcount - 1); i++) {\n<|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int i = 0; i < rcount; i++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int i = 0; i < count; i++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n        for (int j = 0; j < this.rcount; j++) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public void parseCentralDirectoryFormat(final byte[] data, final int offset, final int length) {\n    this.format = ZipShort.getValue(data, offset);\n    this.algId = EncryptionAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 2));\n    this.bitlen = ZipShort.getValue(data, offset + 4);\n    this.flags = ZipShort.getValue(data, offset + 6);\n    this.rcount = ZipLong.getValue(data, offset + 8);\n    if (rcount > 0) {\n        this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, offset + 12));\n        this.hashSize = ZipShort.getValue(data, offset + 14);\n// buggy lines start:\n        for (int i = 0; i < this.rcount; i++) {\n// buggy lines end\n            for (int j = 0; j < this.hashSize; j++) {\n            }\n        }\n    }\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        for (int i = 0; i < rcount; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int j = 0; j < this.hashSize; j++) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        for (int i = 0; i <= this.rcount; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < this.rcount - 1; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < this.hashSize; i++) {\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < (this.rcount - 1); i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < rcount; i++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "        for (int i = 0; i < count; i++) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        for (int j = 0; j < this.rcount; j++) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

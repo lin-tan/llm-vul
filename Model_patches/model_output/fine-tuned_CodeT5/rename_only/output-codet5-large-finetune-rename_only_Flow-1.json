@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    if (OperatorAssistant.whetherPathInsecure(queryFileName, true)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n</s>",
+        "<pad><s>    if (operatorAssistant.whetherPathInsecure(queryFileName)) {\n        getLogger().info(operatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n</s></s></s>",
+        "<pad><s>    if (OperatorAssistant.isPathInsecure(queryFileName)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n</s></s></s></s>",
+        "<pad><s>    if (!OperatorAssistant.whetherPathInsecure(queryFileName)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n</s></s></s>",
+        "<pad><s>    if (OperatorAssistant.whetherPathInsecure(queryFileName, false)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n</s>",
+        "<pad><s>    if (operatorAssistant.whetherPathInsecure(queryFileName)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n</s></s></s>",
+        "<pad><s>    if (OperatorAssistant.isPathInsecure(queryFileName)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM, queryFileName);\n</s>",
+        "<pad><s>    if (OperatorAssistant.whetherPathInsecure(queryFileName)) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (OperatorAssistant.whetherPathInsecure(queryFileName, true)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n",
+            "correctness": "uncompilable",
+            "translated": "    if (HandlerHelper.isPathUnsafe(requestFilename, true)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n"
+        },
+        {
+            "patch": "    if (operatorAssistant.whetherPathInsecure(queryFileName)) {\n        getLogger().info(operatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n",
+            "correctness": "uncompilable",
+            "translated": "    if (operatorAssistant.isPathUnsafe(requestFilename)) {\n        getLogger().info(operatorAssistant.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n"
+        },
+        {
+            "patch": "    if (OperatorAssistant.isPathInsecure(queryFileName)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n",
+            "correctness": "uncompilable",
+            "translated": "    if (HandlerHelper.isPathInsecure(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n"
+        },
+        {
+            "patch": "    if (!OperatorAssistant.whetherPathInsecure(queryFileName)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n",
+            "correctness": "compile_success",
+            "translated": "    if (!HandlerHelper.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n"
+        },
+        {
+            "patch": "    if (OperatorAssistant.whetherPathInsecure(queryFileName, false)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n",
+            "correctness": "uncompilable",
+            "translated": "    if (HandlerHelper.isPathUnsafe(requestFilename, false)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n"
+        },
+        {
+            "patch": "    if (operatorAssistant.whetherPathInsecure(queryFileName)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM,\n",
+            "correctness": "uncompilable",
+            "translated": "    if (operatorAssistant.isPathUnsafe(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,\n"
+        },
+        {
+            "patch": "    if (OperatorAssistant.isPathInsecure(queryFileName)) {\n        getLogger().info(OperatorAssistant.INSECURE_PATH_ERROR_INFORMATION_FORM, queryFileName);\n",
+            "correctness": "uncompilable",
+            "translated": "    if (HandlerHelper.isPathInsecure(requestFilename)) {\n        getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN, requestFilename);\n"
+        },
+        {
+            "patch": "    if (OperatorAssistant.whetherPathInsecure(queryFileName)) {\n",
+            "correctness": "uncompilable",
+            "translated": "    if (HandlerHelper.isPathUnsafe(requestFilename)) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

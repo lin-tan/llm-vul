@@ -1,0 +1,65 @@
+{
+    "id": 29,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1469,
+            "fix_type": "general",
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.324,
+            "fix_type": "general",
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream,logger));\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.324,
+            "fix_type": "general",
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream,PREVIEW_PARSING_LIMIT));\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.3412,
+            "fix_type": "general",
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream),logger);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.3412,
+            "fix_type": "general",
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream),PREVIEW_PARSING_LIMIT);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3544,
+            "fix_type": "general",
+            "patch": "return logger.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.3544,
+            "fix_type": "general",
+            "patch": "return PREVIEW_PARSING_LIMIT.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4212,
+            "fix_type": "general",
+            "patch": "return factory.createXMLStreamReader(XmlImporter.wrapPrefixRemovingInputStream(inputStream));\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4212,
+            "fix_type": "general",
+            "patch": "return factory.createXMLStreamReader(MarcImporter.wrapPrefixRemovingInputStream(inputStream));\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.4548,
+            "fix_type": "general",
+            "patch": "return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(wrapPrefixRemovingInputStream(inputStream)));\n"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-11,1",
+    "output": [
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt(encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt(encPass, salt, false); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt(encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = false; String pass1 = mergePasswordAndSalt(encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = false; String pass1 = mergePasswordAndSalt(encPass, salt, ignorePasswordCase); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = true; String pass1 = mergePasswordAndSalt(encPass, salt, ignorePasswordCase); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt (encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt(encPass, null, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = false; String pass1 = mergePasswordAndSalt(encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2\"); }",
+        "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = false; String pass1 = mergePasswordAndSalt(encPass, salt, ignorePasswordCase); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2\"); }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt(encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt(encPass, salt, false); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt(encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = false; String pass1 = mergePasswordAndSalt(encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = false; String pass1 = mergePasswordAndSalt(encPass, salt, ignorePasswordCase); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = true; String pass1 = mergePasswordAndSalt(encPass, salt, ignorePasswordCase); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt (encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { String pass1 = mergePasswordAndSalt(encPass, null, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2); }",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = false; String pass1 = mergePasswordAndSalt(encPass, salt, true); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2\"); }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) { boolean ignorePasswordCase = false; String pass1 = mergePasswordAndSalt(encPass, salt, ignorePasswordCase); String pass2 = mergePasswordAndSalt(rawPass, salt, false); if (ignorePasswordCase) { pass1 = pass1.toLowerCase(Locale.ENGLISH); pass2 = pass2.toLowerCase(Locale.ENGLISH); } return PasswordEncoderUtils.equals(pass1, pass2\"); }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

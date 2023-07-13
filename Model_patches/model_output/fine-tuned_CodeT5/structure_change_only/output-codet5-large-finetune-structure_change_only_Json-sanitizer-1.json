@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    }\n    if(ch == '/'){\n</s></s>",
+        "<pad><s>    }\n    if(ch == '/') {\n</s>",
+        "<pad><s>    }\n    if (ch == '/') {\n</s>",
+        "<pad><s>    }\n    if (ch == '/'){\n</s></s>",
+        "<pad><s>    } else if(ch == '/'){\n</s></s></s>",
+        "<pad><s>      else if(ch == '/') {\n</s></s></s>",
+        "<pad><s>    }\n    while (i < end) {\n</s>",
+        "<pad><s>      else if(ch == '/'){\n</s></s></s></s>",
+        "<pad><s>    } else {\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>      }\n</s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    }\n    if(ch == '/'){\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    }\n    if(ch == '/') {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    }\n    if (ch == '/') {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    }\n    if (ch == '/'){\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    } else if(ch == '/'){\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "      else if(ch == '/') {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    }\n    while (i < end) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "      else if(ch == '/'){\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    } else {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "      }\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

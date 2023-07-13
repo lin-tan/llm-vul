@@ -1,0 +1,56 @@
+{
+    "output": [
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    try {\n        file.createNewFile();\n    } catch (IOException e) {\n        throw new RuntimeException(e);\n    }\n    return file;\n  }\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    try {\n        file.createNewFile();\n    } catch (IOException e) {\n        throw new RuntimeException(e);\n    }\n    return file;\n}\n\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            throw new RuntimeException(e);\n        }\n    }\n    return file;\n}\n\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return file;\n}\n\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            throw new RuntimeException(e);\n        }\n    }\n    return file;\n  }\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            throw new RuntimeException(e);\n        }\n    }\n    return file;\n}\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return file;\n}\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    try {\n        file.createNewFile();\n    } catch (IOException e) {\n        e.printStackTrace();\n        return null;\n    }\n    return file;\n}\n\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return file;\n}\n\n}\n",
+        "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return file;\n  }\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    try {\n        file.createNewFile();\n    } catch (IOException e) {\n        throw new RuntimeException(e);\n    }\n    return file;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    try {\n        file.createNewFile();\n    } catch (IOException e) {\n        throw new RuntimeException(e);\n    }\n    return file;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            throw new RuntimeException(e);\n        }\n    }\n    return file;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return file;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            throw new RuntimeException(e);\n        }\n    }\n    return file;\n  }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            throw new RuntimeException(e);\n        }\n    }\n    return file;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n    }\n    return file;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    try {\n        file.createNewFile();\n    } catch (IOException e) {\n        e.printStackTrace();\n        return null;\n    }\n    return file;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return file;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) {\n    int q = name.indexOf('?');\n    if (q > 0) {\n        name = name.substring(0, q);\n    }\n    File file = new File(dir, name);\n    if (!file.exists()) {\n        try {\n            file.createNewFile();\n        } catch (IOException e) {\n            return null;\n        }\n    }\n    return file;\n  }",
+            "correctness": "compile_success"
+        }
+    ]
+}

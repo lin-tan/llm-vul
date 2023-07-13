@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "If (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "if (requestFilename.length() == 0) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "if (requestFilename.length() == 0) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().error(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "if(!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "if (requestFilename.startsWith( \"/ \")) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "if (requestFilename.startsWith( \"/ \")) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "if (requestFilename.endsWith( \"/ \")) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+        "if (HandlerHelper.isPathUnsafe(requestFilename) || getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "If (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (requestFilename.length() == 0) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename.length() == 0) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().error(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if(!HandlerHelper.isPathUnsafe(requestFilename)) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename.startsWith( \"/ \")) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename.startsWith( \"/ \")) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (requestFilename.endsWith( \"/ \")) { getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (HandlerHelper.isPathUnsafe(requestFilename) || getLogger().info(HandlerHelper.UNSAFE_PATH_ERROR_MESSAGE_PATTERN,",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-9,1",
+    "output": [
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s < h) {\n      s <<= 1;\n    }\n    return s;\n  }\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }\n\n  @Override\n  public boolean equals(Object o) {\n    if (this == o) {\n      return true;\n    }\n    if (o == null || getClass()!= o.getClass()) {\n      return false;\n    }\n    if (!super.equals(o)) {\n      return false;\n    }\n\n    PackedInts.Format format = (PackedInts.Format) o;\n\n    if (bitsPerValue!= format.bitsPerValue) {\n      return false;\n    }\n    if (size!= format.size) {\n      return false;\n    }\n\n    return true;\n  }\n\n  @Override\n  public int hashCode() {\n    int result = super.hashCode();\n    result = 31 * result + bitsPerValue;\n    result = 31 * result + size;\n    return result;\n  }\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s < h) {\n      h = h << 1;\n    }\n    return h;\n  }\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }\n\n  @Override\n  public boolean equals(Object o) {\n    if (this == o) {\n      return true;\n    }\n    if (o == null || getClass()!= o.getClass()) {\n      return false;\n    }\n    if (!super.equals(o)) {\n      return false;\n    }\n\n    PackedInts that = (PackedInts) o;\n\n    if (bitsPerValue!= that.bitsPerValue) {\n      return false;\n    }\n    if (size!= that.size) {\n      return false;\n    }\n\n    return true;\n  }\n\n  @Override\n  public int hashCode() {\n    int result = super.hashCode();\n    result = 31 * result + bitsPerValue;\n    result = 31 * result + size;\n    return result;\n  }\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }\n\n  @Override\n  public boolean equals(Object o) {\n    if (this == o) {\n      return true;\n    }\n    if (o == null || getClass()!= o.getClass()) {\n      return false;\n    }\n    if (!super.equals(o)) {\n      return false;\n    }\n\n    PackedInts.Format format = (PackedInts.Format) o;\n\n    if (bitsPerValue!= format.bitsPerValue) {\n      return false;\n    }\n    if (size!= format.size) {\n      return false;\n    }\n\n    return true;\n  }\n\n  @Override\n  public int hashCode() {\n    int result = super.hashCode();\n    result = 31 * result + bitsPerValue;\n    result = 31 * result + size;\n    return result;\n  }\n\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s < h) {\n      s = s << 1;\n    }\n    return s;\n  }\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }\n\n  @Override\n  public boolean equals(Object o) {\n    if (this == o) {\n      return true;\n    }\n    if (o == null || getClass()!= o.getClass()) {\n      return false;\n    }\n    if (!super.equals(o)) {\n      return false;\n    }\n\n    PackedInts.Format format = (PackedInts.Format) o;\n\n    if (bitsPerValue!= format.bitsPerValue) {\n      return false;\n    }\n\n    return true;\n  }\n\n  @Override\n  public int hashCode() {\n    int result = super.hashCode();\n    result = 31 * result + bitsPerValue;\n    return result;\n  }\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    if (s < h) {\n      return h;\n    } else {\n      return s;\n    }\n  }\n}\n",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s < h) {\n      s <<= 1;\n    }\n    return s;\n  }",
+            "correctness": "test_timeout",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v < vt) {\n      v <<= 1;\n    }\n    return v;\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v >= vt) {\n      v -= vt;\n      vt *= 2;\n    }\n    return vt;\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s < h) {\n      h = h << 1;\n    }\n    return h;\n  }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v < vt) {\n      vt = vt << 1;\n    }\n    return vt;\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v >= vt) {\n      v -= vt;\n      vt *= 2;\n    }\n    return vt;\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v >= vt) {\n      v -= vt;\n      vt *= 2;\n    }\n    return vt;\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s < h) {\n      s = s << 1;\n    }\n    return s;\n  }",
+            "correctness": "test_timeout",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v < vt) {\n      v = v << 1;\n    }\n    return v;\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v >= vt) {\n      v -= vt;\n      vt *= 2;\n    }\n    return vt;\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v >= vt) {\n      v -= vt;\n      vt *= 2;\n    }\n    return vt;\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    if (s < h) {\n      return h;\n    } else {\n      return s;\n    }\n  }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    if (v < vt) {\n      return vt;\n    } else {\n      return v;\n    }\n  }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n    while (s >= h) {\n      s -= h;\n      h *= 2;\n    }\n    return h;\n  }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) {\n    int vt = (1 << (t - 1));\n    while (v >= vt) {\n      v -= vt;\n      vt *= 2;\n    }\n    return vt;\n  }"
+        }
+    ]
+}

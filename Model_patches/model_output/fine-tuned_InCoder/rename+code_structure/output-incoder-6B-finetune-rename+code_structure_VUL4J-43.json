@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (item.isDirectory()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif(item.isDirectory()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!item.isDirectory()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tboolean isDirectory = item.isDirectory();\n\tif (isDirectory) {\n<|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!item.isDirectory() && outputFile.exists()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!item.isDirectory() && item.exists()) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tboolean isDirectory = item.isDirectory();\n\tif (!isDirectory) {\n<|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!item.getName().endsWith(\"String_Node_Str\")) {\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tif (!item.isDirectory() && item.getSize() > 0) {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public static void saveItem(ZipFile compressedFile, ZipEntry item, File targetFolder)\n\tthrows IOException\n{\n\tString entryName = item.getName();\n\tFile outputFile = new File(targetFolder,entryName);\n// buggy lines start:\n\tif (!item.isDirectory()) {\n// buggy lines end\n\n\t\tFile parentFile = outputFile.getParentFile();\n\t\tparentFile.mkdirs();\n\t\ttry (InputStream input = compressedFile.getInputStream(item)) {\n\t\t\tInputOutputUtility.saveDataSequence(input, outputFile);\n\t\t}\n\t}\n\telse {\n\t\toutputFile.mkdirs();\n\t}\n}\n// fixed lines:\n\tboolean isDirectory = item.isDirectory();\n\tif(isDirectory) {\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif (item.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif(item.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tif (!item.isDirectory()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.isDirectory()) {\n"
+        },
+        {
+            "patch": "\tboolean isDirectory = item.isDirectory();\n\tif (isDirectory) {\n",
+            "correctness": "compile_success",
+            "translated": "\tboolean isDirectory = entry.isDirectory();\n\tif (isDirectory) {\n"
+        },
+        {
+            "patch": "\tif (!item.isDirectory() && outputFile.exists()) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.isDirectory() && outFile.exists()) {\n"
+        },
+        {
+            "patch": "\tif (!item.isDirectory() && item.exists()) {\n",
+            "correctness": "uncompilable",
+            "translated": "\tif (!entry.isDirectory() && entry.exists()) {\n"
+        },
+        {
+            "patch": "\tboolean isDirectory = item.isDirectory();\n\tif (!isDirectory) {\n",
+            "correctness": "compile_success",
+            "translated": "\tboolean isDirectory = entry.isDirectory();\n\tif (!isDirectory) {\n"
+        },
+        {
+            "patch": "\tif (!item.getName().endsWith(\"String_Node_Str\")) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.getName().endsWith(\"String_Node_Str\")) {\n"
+        },
+        {
+            "patch": "\tif (!item.isDirectory() && item.getSize() > 0) {\n",
+            "correctness": "compile_success",
+            "translated": "\tif (!entry.isDirectory() && entry.getSize() > 0) {\n"
+        },
+        {
+            "patch": "\tboolean isDirectory = item.isDirectory();\n\tif(isDirectory) {\n",
+            "correctness": "compile_success",
+            "translated": "\tboolean isDirectory = entry.isDirectory();\n\tif (isDirectory) {\n"
+        }
+    ]
+}

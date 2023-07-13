@@ -1,0 +1,66 @@
+{
+    "output": [
+        "if (!NOT_ENCODE_COLLECTION.contains(a)) {",
+        "if (NOT_ENCODE_COLLECTION.contains(a)) {",
+        "if (!NOT_ENCODE_COLLECTION.contains(charValue)) {",
+        "if (!NOT_ENCODE_COLLECTION.containsKey(a)) {",
+        "if (NOT_ENCODE_COLLECTION.contains(a))",
+        "if(NOT_ENCODE_COLLECTION.contains(a)) {",
+        "if (!NOT_ENCODE_COLLECTION.contains(charValue))",
+        "if (!NOT_ENCODE_COLLECTION.contains(exempt)) {",
+        "if (!isNotEncoded(a)) {",
+        "if (!isNotEncoded(a))"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!NOT_ENCODE_COLLECTION.contains(a)) {",
+            "correctness": "compile_success",
+            "translated": "if (!UNENCODED_SET.contains(c)) {"
+        },
+        {
+            "patch": "if (NOT_ENCODE_COLLECTION.contains(a)) {",
+            "correctness": "compile_success",
+            "translated": "if (UNENCODED_SET.contains(c)) {"
+        },
+        {
+            "patch": "if (!NOT_ENCODE_COLLECTION.contains(charValue)) {",
+            "correctness": "compile_success",
+            "translated": "if (!UNENCODED_SET.contains(charValue)) {"
+        },
+        {
+            "patch": "if (!NOT_ENCODE_COLLECTION.containsKey(a)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!UNENCODED_SET.containsKey(c)) {"
+        },
+        {
+            "patch": "if (NOT_ENCODE_COLLECTION.contains(a))",
+            "correctness": "uncompilable",
+            "translated": "if (UNENCODED_SET.contains(c))"
+        },
+        {
+            "patch": "if(NOT_ENCODE_COLLECTION.contains(a)) {",
+            "correctness": "compile_success",
+            "translated": "if (UNENCODED_SET.contains(c)) {"
+        },
+        {
+            "patch": "if (!NOT_ENCODE_COLLECTION.contains(charValue))",
+            "correctness": "uncompilable",
+            "translated": "if (!UNENCODED_SET.contains(charValue))"
+        },
+        {
+            "patch": "if (!NOT_ENCODE_COLLECTION.contains(exempt)) {",
+            "correctness": "compile_success",
+            "translated": "if (!UNENCODED_SET.contains(immune)) {"
+        },
+        {
+            "patch": "if (!isNotEncoded(a)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!isNotEncoded(c)) {"
+        },
+        {
+            "patch": "if (!isNotEncoded(a))",
+            "correctness": "uncompilable",
+            "translated": "if (!isNotEncoded(c))"
+        }
+    ]
+}

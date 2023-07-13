@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        xmlInput = XMLInputFactory.newInstance(null);\n</s>",
+        "<pad><s>        xmlInput = XMLInputFactory.newInstance(true);\n</s>",
+        "<pad><s>        xmlInput = XML_INPUT_FACTORY.newInstance();\n</s>",
+        "<pad><s>        xmlInput = new XMLInputFactory();\n</s></s></s></s></s>",
+        "<pad><s>        xmlInput = xmlInputFactory.newInstance();\n</s></s></s>",
+        "<pad><s>        xmlInput = XMLInputFactory.newInstance(false);\n</s>",
+        "<pad><s>        xmlInput = XMLReaderFactory.newInstance();\n</s></s></s>",
+        "<pad><s>        xmlInput = XMLInputFactory.newInstance();\n</s></s></s>",
+        "<pad><s>        xmlInput = xmlOutput.getXMLInputFactory();\n</s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        xmlInput = XMLInputFactory.newInstance(null);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XMLInputFactory.newInstance(null);\n"
+        },
+        {
+            "patch": "        xmlInput = XMLInputFactory.newInstance(true);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XMLInputFactory.newInstance(true);\n"
+        },
+        {
+            "patch": "        xmlInput = XML_INPUT_FACTORY.newInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XML_INPUT_FACTORY.newInstance();\n"
+        },
+        {
+            "patch": "        xmlInput = new XMLInputFactory();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = new XMLInputFactory();\n"
+        },
+        {
+            "patch": "        xmlInput = xmlInputFactory.newInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = xmlInputFactory.newInstance();\n"
+        },
+        {
+            "patch": "        xmlInput = XMLInputFactory.newInstance(false);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XMLInputFactory.newInstance(false);\n"
+        },
+        {
+            "patch": "        xmlInput = XMLReaderFactory.newInstance();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = XMLReaderFactory.newInstance();\n"
+        },
+        {
+            "patch": "        xmlInput = XMLInputFactory.newInstance();\n",
+            "correctness": "compile_success",
+            "translated": "        xmlIn = XMLInputFactory.newInstance();\n"
+        },
+        {
+            "patch": "        xmlInput = xmlOutput.getXMLInputFactory();\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn = xmlOut.getXMLInputFactory();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        }
+    ]
+}

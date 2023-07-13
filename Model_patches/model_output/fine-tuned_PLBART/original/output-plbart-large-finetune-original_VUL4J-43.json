@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (!entry.isDirectory()) {",
+        "if (entry.isDirectory() &&!outFile.exists()) {",
+        "if (isDirectory(entry)) {",
+        "if (entry.isDirectory() || entry.isSymbolicLink()) {",
+        "if (entry.isDirectory() &&!entry.isDirectory()) {",
+        "if (entry == null || entry.isDirectory()) {",
+        "if (entry.isDirectory() &&!outDir.exists()) {",
+        ". if (!entry.isDirectory()) {",
+        "if (zipEntry.isDirectory()) {",
+        "if (!isDirectory(entry)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry.isDirectory() &&!outFile.exists()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (isDirectory(entry)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory() || entry.isSymbolicLink()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory() &&!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry == null || entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry.isDirectory() &&!outDir.exists()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ". if (!entry.isDirectory()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (zipEntry.isDirectory()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!isDirectory(entry)) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

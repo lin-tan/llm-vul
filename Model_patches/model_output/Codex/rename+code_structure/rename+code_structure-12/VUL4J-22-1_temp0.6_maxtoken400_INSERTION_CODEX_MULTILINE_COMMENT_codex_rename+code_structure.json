@@ -1,0 +1,1259 @@
+{
+    "id": "cmpl-6lkgCuJ1cFMd2SGdGjmdhY5ekayXa",
+    "object": "text_completion",
+    "created": 1676838872,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "package"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -1.4535712
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "const"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -4.0742183
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "<?"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -2.431009
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "//"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -2.7528512
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "#"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -2.2605445
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "//"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -2.7528512
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath.equals(\"/\")? \"\": circumstancePath);\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ".",
+                    "equ",
+                    "als",
+                    "(\"",
+                    "/",
+                    "\")",
+                    "?",
+                    " \"",
+                    "\":",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "/**",
+                    "\n",
+                    " *",
+                    " Created",
+                    " by",
+                    " Administrator"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -3.137233,
+                    -0.22368367,
+                    -0.0001607785,
+                    -0.02443608,
+                    -0.011100303,
+                    -0.0014081495,
+                    -0.4428234,
+                    -0.3763087,
+                    -0.0020826224,
+                    -0.055115867,
+                    -0.00011034852,
+                    -0.011894921,
+                    -0.107883975,
+                    -0.2073584,
+                    -3.6832058,
+                    -0.066542834,
+                    -0.101286404,
+                    -2.008854,
+                    -0.041252088,
+                    -2.7149067
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "equ": -0.22368367
+                    },
+                    {
+                        "als": -0.0001607785
+                    },
+                    {
+                        "(\"": -0.02443608
+                    },
+                    {
+                        "/": -0.011100303
+                    },
+                    {
+                        "\")": -0.0014081495
+                    },
+                    {
+                        "?": -0.4428234
+                    },
+                    {
+                        " \"": -0.3763087
+                    },
+                    {
+                        "\":": -0.0020826224
+                    },
+                    {
+                        " circumstance": -0.055115867
+                    },
+                    {
+                        "Path": -0.00011034852
+                    },
+                    {
+                        ");": -0.011894921
+                    },
+                    {
+                        "\n": -0.107883975
+                    },
+                    {
+                        "<|endoftext|>": -0.2073584
+                    },
+                    {
+                        "package": -1.4511293
+                    },
+                    {
+                        "\n": -0.066542834
+                    },
+                    {
+                        " *": -0.101286404
+                    },
+                    {
+                        " Copyright": -1.7289983
+                    },
+                    {
+                        " by": -0.041252088
+                    },
+                    {
+                        " Administrator": -2.7149067
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    554,
+                    557,
+                    560,
+                    562,
+                    563,
+                    565,
+                    566,
+                    568,
+                    570,
+                    583,
+                    587,
+                    589,
+                    590,
+                    590,
+                    590,
+                    590,
+                    590,
+                    590,
+                    590
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "package"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -1.4535712
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "bytes:\\xef",
+                    "bytes:\\xbb",
+                    "bytes:\\xbf",
+                    "using",
+                    " System",
+                    ";",
+                    "\n",
+                    "using",
+                    " System"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -2.5022857,
+                    -2.3795494e-05,
+                    -6.827632e-08,
+                    -0.28933713,
+                    -0.30058056,
+                    -0.2770322,
+                    -0.0019168895,
+                    -0.07085219,
+                    -0.061658524
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    },
+                    {
+                        "bytes:\\xbb": -2.3795494e-05
+                    },
+                    {
+                        "bytes:\\xbf": -6.827632e-08
+                    },
+                    {
+                        "using": -0.28933713
+                    },
+                    {
+                        " System": -0.30058056
+                    },
+                    {
+                        ";": -0.2770322
+                    },
+                    {
+                        "\n": -0.0019168895
+                    },
+                    {
+                        "using": -0.07085219
+                    },
+                    {
+                        " System": -0.061658524
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556,
+                    556,
+                    556,
+                    556,
+                    556,
+                    556,
+                    556,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "    return decryptRequestContent(r, circumstancePath);\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "   ",
+                    " return",
+                    " decrypt",
+                    "Request",
+                    "Content",
+                    "(",
+                    "r",
+                    ",",
+                    " circumstance",
+                    "Path",
+                    ");",
+                    "\n",
+                    "<|endoftext|>",
+                    "package"
+                ],
+                "token_logprobs": [
+                    -0.094083145,
+                    -0.061755206,
+                    -0.39152077,
+                    -0.30914596,
+                    -0.0027170912,
+                    -0.0011153591,
+                    -0.0013072822,
+                    -0.004678364,
+                    -0.0010108217,
+                    -0.02323027,
+                    -0.00011308939,
+                    -0.07349561,
+                    -0.09968603,
+                    -0.20637786,
+                    -1.4535712
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.094083145
+                    },
+                    {
+                        "   ": -0.061755206
+                    },
+                    {
+                        " return": -0.39152077
+                    },
+                    {
+                        " decrypt": -0.30914596
+                    },
+                    {
+                        "Request": -0.0027170912
+                    },
+                    {
+                        "Content": -0.0011153591
+                    },
+                    {
+                        "(": -0.0013072822
+                    },
+                    {
+                        "r": -0.004678364
+                    },
+                    {
+                        ",": -0.0010108217
+                    },
+                    {
+                        " circumstance": -0.02323027
+                    },
+                    {
+                        "Path": -0.00011308939
+                    },
+                    {
+                        ");": -0.07349561
+                    },
+                    {
+                        "\n": -0.09968603
+                    },
+                    {
+                        "<|endoftext|>": -0.20637786
+                    },
+                    {
+                        "package": -1.4535712
+                    }
+                ],
+                "text_offset": [
+                    501,
+                    501,
+                    504,
+                    511,
+                    519,
+                    526,
+                    533,
+                    534,
+                    535,
+                    536,
+                    549,
+                    553,
+                    555,
+                    556,
+                    556
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 132,
+        "completion_tokens": 141,
+        "total_tokens": 273
+    },
+    "validation_result": [
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath.equals(\"/\")? \"\": circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath.equals(\"/\")? \"\": contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        " else {\n        answer = body;\n    } &&\n}\n\npublic Object\n\n\n\npublic\n",
+        " else {\n        answer = body;\n    } &&\n}\n\n@Override\npublic Object\n\n\n\npublic\n",
+        " else {\n        answer = body;\n    } &&\n}\n\n@Override\npublic Object\n\n\n\n}",
+        " else {\n        answer = body;\n    } &&\n}\n\n@Override\npublic Object\n\n\n\n    public Object\n",
+        " else {\n        answer = body;\n    } &&\n}",
+        "\n    type = getDocumentType(); &&\n}",
+        "\n &&\n}",
+        "\n     &&\n}",
+        "\n && }",
+        "\n &&"
+    ],
+    "validation_result": [
+        {
+            "patch": "else {\n        answer = body;\n    } &&\n}\n\npublic Object\n\n\n\npublic",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        answer = body;\n    } &&\n}\n\n@Override\npublic Object\n\n\n\npublic",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        answer = body;\n    } &&\n}\n\n@Override\npublic Object\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        answer = body;\n    } &&\n}\n\n@Override\npublic Object\n\n\n\n    public Object",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        answer = body;\n    } &&\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "type = getDocumentType(); &&\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "&&\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "&&\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "&& }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "&&",
+            "correctness": "uncompilable"
+        }
+    ]
+}

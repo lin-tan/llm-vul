@@ -1,0 +1,66 @@
+{
+    "output": [
+        "for(int position = 1;f.exists();position++){",
+        "for (int position = 1;f.exists();position++){",
+        "for(int position = 0;position < 2;position++) {",
+        "for(int position = 0;position < 2;position++){",
+        "for(int position = 1;f.exists();position++) {",
+        "for (int position = 0;position < 2;position++) {",
+        "for (int position = 1;f.exists();position++) {",
+        "for(int position = 0;position <= 2;position++) {",
+        "for (int position = 0;position < 2;position++){",
+        "for(int position = 0;f.exists();position++){"
+    ],
+    "validation_result": [
+        {
+            "patch": "for(int position = 1;f.exists();position++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for (int position = 1;f.exists();position++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for(int position = 0;position < 2;position++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index < 2;index++) {"
+        },
+        {
+            "patch": "for(int position = 0;position < 2;position++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index < 2;index++) {"
+        },
+        {
+            "patch": "for(int position = 1;f.exists();position++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for (int position = 0;position < 2;position++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index < 2;index++) {"
+        },
+        {
+            "patch": "for (int position = 1;f.exists();position++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 1;file.exists();index++){"
+        },
+        {
+            "patch": "for(int position = 0;position <= 2;position++) {",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index <= 2;index++) {"
+        },
+        {
+            "patch": "for (int position = 0;position < 2;position++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;index < 2;index++) {"
+        },
+        {
+            "patch": "for(int position = 0;f.exists();position++){",
+            "correctness": "compile_success",
+            "translated": "for(int index = 0;file.exists();index++){"
+        }
+    ]
+}

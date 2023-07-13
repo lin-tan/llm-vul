@@ -1,0 +1,66 @@
+{
+    "output": [
+        "String watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false); String watchwordA = encipheredWatchword;",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, false); String watchwordA = encipheredWatchword;",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, true); String watchwordA = encipheredWatchword;",
+        "String watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);",
+        "String watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, true); String watchwordA = encipheredWatchword;",
+        "String watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, unprocessedWatchword, randomData, false);",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData); String watchwordA = encipheredWatchword;",
+        "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, false);",
+        "String watchwordA = encipheredWatchword + \"String_Node_Str\";"
+    ],
+    "validation_result": [
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false); String watchwordA = encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(encPass, salt, false); String pass1 = encPass;"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, false); String watchwordA = encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, false, false); String pass1 = encPass;"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, true); String watchwordA = encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, true); String pass1 = encPass;"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(encPass, salt, false);"
+        },
+        {
+            "patch": "String watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = mergePasswordAndSalt(encPass, salt, false);"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, true); String watchwordA = encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, false, true); String pass1 = encPass;"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(encipheredWatchword, unprocessedWatchword, randomData, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(encPass, rawPass, salt, false);"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData); String watchwordA = encipheredWatchword;",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt); String pass1 = encPass;"
+        },
+        {
+            "patch": "String watchwordB = unifyWatchwordAndRandomData(unprocessedWatchword, randomData, false, false);",
+            "correctness": "uncompilable",
+            "translated": "String pass2 = mergePasswordAndSalt(rawPass, salt, false, false);"
+        },
+        {
+            "patch": "String watchwordA = encipheredWatchword + \"String_Node_Str\";",
+            "correctness": "uncompilable",
+            "translated": "String pass1 = encPass + \"String_Node_Str\";"
+        }
+    ]
+}

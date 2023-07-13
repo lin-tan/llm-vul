@@ -1,0 +1,37 @@
+{
+    "VUL4J-10013-182-183": {
+        "src": "ASN 1 Encodable object 0 = S . acquire CaMeL Item CaMeL At ( 0 ) ;",
+        "patches": [
+            {
+                "patch": "return new LargeWholeNumber [ ] { new LargeWholeNumber [ ] { new( ) , new LargeWholeNumber [ ]"
+            },
+            {
+                "patch": "LargeWholeNumber = new LargeWholeNumber [0] ;"
+            },
+            {
+                "patch": "byte0= S.getBytes(0) ; byte1= S.getBytes(0) ;"
+            },
+            {
+                "patch": "return new LargeWholeNumber [ ] { new LargeWholeNumber [ ] { S1} } ;"
+            },
+            {
+                "patch": "return new LargeWholeNumber [ ] { S0, S1, S1} ;"
+            },
+            {
+                "patch": "byte [ ] [ ] object0= new byte [0] [ ] ;"
+            },
+            {
+                "patch": "return new LargeWholeNumber [ ] { new LargeWholeNumber [ ] { new(0) } ;"
+            },
+            {
+                "patch": "String [ ] object0=( String [ ] )( new String [0] ) ;"
+            },
+            {
+                "patch": "Encodable object0= S [1] ;0= S [1] ;"
+            },
+            {
+                "patch": "String object0=0; / / / / / / / / / / ;"
+            }
+        ]
+    }
+}

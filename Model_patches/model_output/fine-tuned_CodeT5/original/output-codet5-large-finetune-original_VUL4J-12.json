@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    while (v > vt) {\n</s></s></s>",
+        "<pad><s>    while (v <= vt) {\n</s></s></s>",
+        "<pad><s>    while (v >= vt) {\n</s></s></s>",
+        "<pad><s>    while (v < vt + 1) {\n</s>",
+        "<pad><s>    while (v < vt - 1) {\n</s>",
+        "<pad><s>    while (v < vt) {\n</s></s></s>",
+        "<pad><s>    while (v!= vt) {\n</s></s></s>",
+        "<pad><s>    while (v < vt)\n</s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    while (v > vt) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    while (v <= vt) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while (v >= vt) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while (v < vt + 1) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while (v < vt - 1) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    while (v < vt) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    while (v!= vt) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    while (v < vt)\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

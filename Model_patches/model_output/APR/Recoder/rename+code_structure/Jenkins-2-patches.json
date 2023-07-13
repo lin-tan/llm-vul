@@ -1,0 +1,12 @@
+[
+  "if((mandateScheme instanceof MandateScheme)){\n",
+  "if((mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme)){\n",
+  "if(((mandateScheme instanceof MandateScheme) || (mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme))){",
+  "if(((mandateScheme instanceof MandateScheme) && (mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme))){",
+  "if(isUsageStatisticsCollected()){\n",
+  "if(hasPeople()){\n",
+  "if(isRootUrlSecure()){\n",
+  "if(isUseSecurity()){\n",
+  "if(isUseProjectNamingStrategy()){\n",
+  "if(isUseCrumbs()){\n"
+]

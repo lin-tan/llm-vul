@@ -1,0 +1,65 @@
+{
+    "id": 23,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1238,
+            "fix_type": "general",
+            "patch": "z.set(attribute,m - position);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1467,
+            "fix_type": "general",
+            "patch": "bits.set(attribute,m - position);\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1467,
+            "fix_type": "general",
+            "patch": "spec.set(attribute,m - position);\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.5709,
+            "fix_type": "insert",
+            "patch": "if (m == null )return;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1903,
+            "fix_type": "general",
+            "patch": "z.add(attribute,m - position);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1903,
+            "fix_type": "general",
+            "patch": "z.getInstance(attribute,m - position);\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.5732,
+            "fix_type": "insert",
+            "patch": "if (m == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2331,
+            "fix_type": "general",
+            "patch": "z.set(bits,m - position);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2331,
+            "fix_type": "general",
+            "patch": "z.set(dayOfWeek,m - position);\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2896,
+            "fix_type": "general",
+            "patch": "z.set(attribute,bits - position);\n"
+        }
+    ]
+}

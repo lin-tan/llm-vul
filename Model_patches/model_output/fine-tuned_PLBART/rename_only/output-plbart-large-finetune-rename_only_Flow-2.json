@@ -1,0 +1,66 @@
+{
+    "output": [
+        "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation); templet = templet.replace(\"{{routes}}\", acquireWays(occurrence));",
+        "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation);",
+        "templet = templet.replaceAll(\"{{path}}\", way); templet = templet.replaceAll(\"{{additionalInfo}}\", extraInformation); templet = templet.replaceAll(\"{{routes}}\", acquireWays(occurrence));",
+        "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation); templet = templet.replace(\"{{routes}}\", acquireWays(occurrence);",
+        "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation); if (templet.contains(\"{{routes}}\")) {",
+        "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation); templet = templet.replace(\"{{routes}}\", acquireWays(occurrence)); }",
+        "templet = templet.replace(\"{{routes}}\", acquireWays(occurrence));",
+        "templet = templet.replace(\"{{path}}\", way);",
+        "templet = templet.replace(\"{{route}}\", way); templet = templet.replace(\"{{route}}\", extraInformation);",
+        "templet = templet.replace(\"{{path}}\", \"String_Node_Str\");"
+    ],
+    "validation_result": [
+        {
+            "patch": "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation); templet = templet.replace(\"{{routes}}\", acquireWays(occurrence));",
+            "correctness": "compile_success",
+            "translated": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes(event));"
+        },
+        {
+            "patch": "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation);",
+            "correctness": "test_success",
+            "translated": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo);"
+        },
+        {
+            "patch": "templet = templet.replaceAll(\"{{path}}\", way); templet = templet.replaceAll(\"{{additionalInfo}}\", extraInformation); templet = templet.replaceAll(\"{{routes}}\", acquireWays(occurrence));",
+            "correctness": "compile_success",
+            "translated": "template = template.replaceAll(\"{{path}}\", path); template = template.replaceAll(\"{{additionalInfo}}\", additionalInfo); template = template.replaceAll(\"{{routes}}\", getRoutes(event));"
+        },
+        {
+            "patch": "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation); templet = templet.replace(\"{{routes}}\", acquireWays(occurrence);",
+            "correctness": "uncompilable",
+            "translated": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes(event);"
+        },
+        {
+            "patch": "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation); if (templet.contains(\"{{routes}}\")) {",
+            "correctness": "uncompilable",
+            "translated": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); if (template.contains(\"{{routes}}\")) {"
+        },
+        {
+            "patch": "templet = templet.replace(\"{{path}}\", way); templet = templet.replace(\"{{additionalInfo}}\", extraInformation); templet = templet.replace(\"{{routes}}\", acquireWays(occurrence)); }",
+            "correctness": "uncompilable",
+            "translated": "template = template.replace(\"{{path}}\", path); template = template.replace(\"{{additionalInfo}}\", additionalInfo); template = template.replace(\"{{routes}}\", getRoutes(event)); }"
+        },
+        {
+            "patch": "templet = templet.replace(\"{{routes}}\", acquireWays(occurrence));",
+            "correctness": "test_success",
+            "translated": "template = template.replace(\"{{routes}}\", getRoutes(event));"
+        },
+        {
+            "patch": "templet = templet.replace(\"{{path}}\", way);",
+            "correctness": "test_success",
+            "translated": "template = template.replace(\"{{path}}\", path);"
+        },
+        {
+            "patch": "templet = templet.replace(\"{{route}}\", way); templet = templet.replace(\"{{route}}\", extraInformation);",
+            "correctness": "test_success",
+            "translated": "template = template.replace(\"{{route}}\", path); template = template.replace(\"{{route}}\", additionalInfo);"
+        },
+        {
+            "patch": "templet = templet.replace(\"{{path}}\", \"String_Node_Str\");",
+            "correctness": "test_success",
+            "translated": "template = template.replace(\"{{path}}\", \"String_Node_Str\");"
+        }
+    ]
+}

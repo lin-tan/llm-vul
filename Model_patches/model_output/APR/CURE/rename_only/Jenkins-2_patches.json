@@ -1,0 +1,37 @@
+{
+    "VUL4J-1005-1482-1486": {
+        "src": "if ( mandate CaMeL Scheme instanceof Mandate CaMeL Scheme . Unguarded || mandate CaMeL Scheme instanceof Complete CaMeL Dominance CaMeL When CaMeL Logged CaMeL In CaMeL Mandate CaMeL Scheme ) { return new Array CaMeL List ( elements . values ( ) ) ; }",
+        "patches": [
+            {
+                "patch": "if( elements == null ) { return new ArrayList( elements.values( ) ) ; } else { return new ArrayList( elements.values( ) ) ; }"
+            },
+            {
+                "patch": "if( elements.values( ).iterator( ).hasNext( ) ) { return new ArrayList( elements.values( ).values( ) ) ; } return null ;"
+            },
+            {
+                "patch": "if( elements.size( ) ==0) { return new ArrayList( ) ; } else { return new ArrayList( elements.values( ) ) ; }"
+            },
+            {
+                "patch": "if( mandateScheme != null ) { return new ArrayList( elements.values( ) ) ; } else { return new ArrayList( elements.values( ) ) ; }"
+            },
+            {
+                "patch": "if( mandateScheme == null ) { mandateScheme = new ArrayList( elements.values( ) ) ;"
+            },
+            {
+                "patch": "if( elements.values( ).values( ).values( ).values( ).values( ) ) { return new ArrayList( elements.values( ) ) ;"
+            },
+            {
+                "patch": "return new ArrayList < ArrayList < ArrayList < ArrayList < ArrayList >>( elements.values( ) ) ;"
+            },
+            {
+                "patch": "if( elements.values( ).size( ) >0) { return new ArrayList( elements.values( ) ) ;"
+            },
+            {
+                "patch": "if( elements.values( ).iterator( ).hasNext( ) ) return new ArrayList( elements.values( ).values( ) ) ;"
+            },
+            {
+                "patch": "if( elements.values( ).size( ) >0) { return new ArrayList( elements.values( ).values( ) ) ;"
+            }
+        ]
+    }
+}

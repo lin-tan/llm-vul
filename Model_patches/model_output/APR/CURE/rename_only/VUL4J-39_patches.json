@@ -1,0 +1,37 @@
+{
+    "VUL4J-39-116-122": {
+        "src": "if ( session CaMeL Identification != null ) { if ( s . length ( ) > 0 ) { s . append ( $STRING$ ) ; } s . append ( $STRING$ ) . append ( session CaMeL Identification ) ; }",
+        "patches": [
+            {
+                "patch": "if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( 'sessionIdentification=').append( sessionIdentification ) ; } s.append( 'sessionIdentification=').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( ', ').append( sessionIdentification ) ; } s.append( ', ').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( 'customerIdentification=').append( sessionIdentification ) ; } s.append( 'customerIdentification=').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( 'remoteAddress=').append( sessionIdentification ) ; } s.append( 'remoteAddress=').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( 'sessionIdentification').append( sessionIdentification ) ; } s.append( 'sessionIdentification').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( 'sessionIdentification=') ; } s.append( 'sessionIdentification=').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( ', ') ; } s.append( ', ').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( 'customerIdentification=') ; } s.append( 'customerIdentification=').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( 'remoteAddress=') ; } s.append( 'remoteAddress=').append( sessionIdentification ) ; }"
+            },
+            {
+                "patch": "if( sessionIdentification != null ) { if( sessionIdentification != null ) { if( s.length( ) >0) { s.append( 'sessionIdentification') ; } s.append( 'sessionIdentification').append( sessionIdentification ) ; }"
+            }
+        ]
+    }
+}

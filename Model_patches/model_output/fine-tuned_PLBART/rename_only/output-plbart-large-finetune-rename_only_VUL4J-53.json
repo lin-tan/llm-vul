@@ -1,0 +1,66 @@
+{
+    "output": [
+        "z.set(attribute, m);",
+        "z.set(attribute, m - position);",
+        "z.set(attribute, position);",
+        "z.set(attribute,position);",
+        "z.set(attribute,m);",
+        "z.set(attribute,m - position);",
+        "z.set(attribute, position - m);",
+        "z.set(position, m);",
+        "z.set(attribute, position - 1);",
+        "z.set(attribute, m - m);"
+    ],
+    "validation_result": [
+        {
+            "patch": "z.set(attribute, m);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i);"
+        },
+        {
+            "patch": "z.set(attribute, m - position);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i - offset);"
+        },
+        {
+            "patch": "z.set(attribute, position);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field, offset);"
+        },
+        {
+            "patch": "z.set(attribute,position);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field, offset);"
+        },
+        {
+            "patch": "z.set(attribute,m);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i);"
+        },
+        {
+            "patch": "z.set(attribute,m - position);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i - offset);"
+        },
+        {
+            "patch": "z.set(attribute, position - m);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field, offset - i);"
+        },
+        {
+            "patch": "z.set(position, m);",
+            "correctness": "test_timeout",
+            "translated": "c.set(offset, i);"
+        },
+        {
+            "patch": "z.set(attribute, position - 1);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field, offset - 1);"
+        },
+        {
+            "patch": "z.set(attribute, m - m);",
+            "correctness": "test_timeout",
+            "translated": "c.set(field, i - i);"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "try (final FileInputStream in = new FileInputStream( f)) {",
+        "try (final InputStream in = new FileInputStream( f)) {",
+        "try (final FileInputStream in = new FileInputStream(f)) {",
+        "try ( FileInputStream in = new FileInputStream( f)) {",
+        "try (InputStream in = new FileInputStream( f)) {",
+        "try (final FileInputStream fis = new FileInputStream( f)) {",
+        "try ( final FileInputStream in = new FileInputStream( f)) {",
+        "try {",
+        "try (final InputStream in = null) {",
+        "f.delete();"
+    ],
+    "validation_result": [
+        {
+            "patch": "try (final FileInputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (final InputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (final FileInputStream in = new FileInputStream(f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try ( FileInputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (InputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (final FileInputStream fis = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try ( final FileInputStream in = new FileInputStream( f)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "try (final InputStream in = null) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "f.delete();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

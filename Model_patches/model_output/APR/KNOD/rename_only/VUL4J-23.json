@@ -1,0 +1,65 @@
+{
+    "id": 12,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0456,
+            "fix_type": "general",
+            "patch": "return dataProvider == null ? null : Encode.forJavaScriptSource(dataProvider);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.2085,
+            "fix_type": "insert",
+            "patch": "if (dataProvider == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1863,
+            "fix_type": "general",
+            "patch": "return dataProvider == null ? null : Encode.forJavaScriptSource(dataProvider,dataProvider);\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2003,
+            "fix_type": "general",
+            "patch": "return dataProvider == null ? null : Encode.get(dataProvider);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2003,
+            "fix_type": "general",
+            "patch": "return dataProvider == null ? null : Encode.value(dataProvider);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.2772,
+            "fix_type": "insert",
+            "patch": "if (dataProvider == null )return null;\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2601,
+            "fix_type": "general",
+            "patch": "return dataProvider == null ? null : Encode.forJavaScriptSource(dataProvider,null);\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2898,
+            "fix_type": "insert",
+            "patch": "if (dataProvider == null ){\ndataProvider = new String();\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2417,
+            "fix_type": "general",
+            "patch": "return dataProvider == null ? null : Status.value(dataProvider);\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2417,
+            "fix_type": "general",
+            "patch": "return dataProvider == null ? null : JSONObject.quote(dataProvider);\n"
+        }
+    ]
+}

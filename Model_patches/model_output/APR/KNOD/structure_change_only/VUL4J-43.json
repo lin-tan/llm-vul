@@ -1,0 +1,65 @@
+{
+    "id": 21,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1436,
+            "fix_type": "general",
+            "patch": "!entry.isDirectory()"
+        },
+        {
+            "rank": 2,
+            "score": -0.4195,
+            "fix_type": "general",
+            "patch": "!entry.isDirectory() && !entry.isDirectory()"
+        },
+        {
+            "rank": 3,
+            "score": -0.5188,
+            "fix_type": "general",
+            "patch": "!entry.isDirectory() && entry.checkNextIsUnwrapped()"
+        },
+        {
+            "rank": 4,
+            "score": -0.5188,
+            "fix_type": "general",
+            "patch": "!entry.isDirectory() && entry.inRoot()"
+        },
+        {
+            "rank": 5,
+            "score": -0.4837,
+            "fix_type": "general",
+            "patch": "!entry.isDirectory() || !entry.isDirectory()"
+        },
+        {
+            "rank": 6,
+            "score": -0.488,
+            "fix_type": "general",
+            "patch": "!entry.checkNextIsUnwrapped() && !entry.isDirectory()"
+        },
+        {
+            "rank": 7,
+            "score": -0.488,
+            "fix_type": "general",
+            "patch": "!entry.inRoot() && !entry.isDirectory()"
+        },
+        {
+            "rank": 8,
+            "score": -0.5259,
+            "fix_type": "general",
+            "patch": "!entry.isDirectory() && entry.isDirectory()"
+        },
+        {
+            "rank": 9,
+            "score": -0.5827,
+            "fix_type": "general",
+            "patch": "entry.checkNextIsUnwrapped() && !entry.isDirectory()"
+        },
+        {
+            "rank": 10,
+            "score": -0.5827,
+            "fix_type": "general",
+            "patch": "entry.inRoot() && !entry.isDirectory()"
+        }
+    ]
+}

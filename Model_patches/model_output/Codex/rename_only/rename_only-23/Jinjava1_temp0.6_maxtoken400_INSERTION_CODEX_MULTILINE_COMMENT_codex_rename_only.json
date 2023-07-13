@@ -1,0 +1,514 @@
+{
+    "id": "cmpl-6mOPajbNMPTPZuVTKfdnekUy4jvTV",
+    "object": "text_completion",
+    "created": 1676991602,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "#",
+                    "include",
+                    " \""
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -2.2721732,
+                    -1.0957394,
+                    -0.94631803
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        "include": -1.0957394
+                    },
+                    {
+                        " <": -0.70195234
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "import",
+                    " React",
+                    " from"
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -2.1477528,
+                    -1.2183485,
+                    -0.5786704
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        " React": -1.2183485
+                    },
+                    {
+                        " from": -0.5786704
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "module",
+                    ".",
+                    "ex"
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -4.9339333,
+                    -0.76090574,
+                    -0.0025790976
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        ".": -0.76090574
+                    },
+                    {
+                        "ex": -0.0025790976
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -1.4647312,
+                    -0.70705116,
+                    -0.0013552669
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        " com": -0.70705116
+                    },
+                    {
+                        ".": -0.0013552669
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -1.4647312,
+                    -0.70705116,
+                    -0.0013552669
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        " com": -0.70705116
+                    },
+                    {
+                        ".": -0.0013552669
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "package",
+                    " com",
+                    "."
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -1.4647312,
+                    -0.70705116,
+                    -0.0013552669
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        " com": -0.70705116
+                    },
+                    {
+                        ".": -0.0013552669
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "bytes:\\xef",
+                    "bytes:\\xbb",
+                    "bytes:\\xbf"
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -2.5230417,
+                    -2.4986643e-05,
+                    -4.277735e-07
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        "bytes:\\xbb": -2.4986643e-05
+                    },
+                    {
+                        "bytes:\\xbf": -4.277735e-07
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "#",
+                    "!/",
+                    "bin"
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -2.2721732,
+                    -1.6367385,
+                    -0.9287145
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        "include": -1.0957394
+                    },
+                    {
+                        "usr": -0.5196397
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "import",
+                    " React",
+                    " from"
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -2.1477528,
+                    -1.2183485,
+                    -0.5786704
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        " React": -1.2183485
+                    },
+                    {
+                        " from": -0.5786704
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "<|endoftext|>",
+                    "bytes:\\xef",
+                    "bytes:\\xbb",
+                    "bytes:\\xbf"
+                ],
+                "token_logprobs": [
+                    -0.0015958281,
+                    -0.27855155,
+                    -2.5230417,
+                    -2.4986643e-05,
+                    -4.277735e-07
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0015958281
+                    },
+                    {
+                        "<|endoftext|>": -0.27855155
+                    },
+                    {
+                        "package": -1.4647312
+                    },
+                    {
+                        "bytes:\\xbb": -2.4986643e-05
+                    },
+                    {
+                        "bytes:\\xbf": -4.277735e-07
+                    }
+                ],
+                "text_offset": [
+                    298,
+                    298,
+                    298,
+                    298,
+                    298
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 89,
+        "total_tokens": 89
+    },
+    "validation_result": [
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        }
+    ]
+}

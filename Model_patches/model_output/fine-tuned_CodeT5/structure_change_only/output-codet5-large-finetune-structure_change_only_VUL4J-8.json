@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>            }\n</s></s></s></s></s></s>",
+        "<pad><s>            } else\n                break;\n</s>",
+        "<pad><s>            } else\n                continue;\n</s>",
+        "<pad><s>                continue;\n            }\n</s></s>",
+        "<pad><s>                break;\n</s></s></s></s></s>",
+        "<pad><s>                break;\n            }\n</s></s>",
+        "<pad><s>                continue;\n</s></s></s></s></s>",
+        "<pad><s>        }\n</s></s></s></s></s></s>",
+        "<pad><s>            });\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            } else\n                break;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "            } else\n                continue;\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "                continue;\n            }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "                break;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "                break;\n            }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "                continue;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "        }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            });\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

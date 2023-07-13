@@ -1,0 +1,37 @@
+{
+    "VUL4J-10014-547-555": {
+        "src": "case $STRING$ : if ( h > begin && h + $NUMBER$ < terminal && $STRING$ == JSO CaMeL Nlike . char CaMeL At ( h - 1 ) && $STRING$ == ( JSO CaMeL Nlike . char CaMeL At ( h + 1 ) | 32 ) && $STRING$ == ( JSO CaMeL Nlike . char CaMeL At ( h + $NUMBER$ ) | 32 ) ) { embed ( h , $STRING$ ) ; }",
+        "patches": [
+            {
+                "patch": "public case 'a': if( h > begin && h +9< terminal && 'a'== JSONlike.charAt( h -1) && 'a'== JSONlike.charAt( h +1) && 'a'== JSONlike.charAt( h +1) && 'a'== JSONlike.charAt( h +1) && 'a'== JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "public case ', ': if( h > begin && h +9< terminal && ', '== JSONlike.charAt( h -1) && ', '== JSONlike.charAt( h +1) && ', '== JSONlike.charAt( h +1) && ', '== JSONlike.charAt( h +1) && ', '== JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "public case '9': if( h > begin && h +9< terminal && '9'== JSONlike.charAt( h -1) && '9'== JSONlike.charAt( h +1) && '9'== JSONlike.charAt( h +1) && '9'== JSONlike.charAt( h +1) && '9'== JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "public case 'c': if( h > begin && h +9< terminal && 'c'== JSONlike.charAt( h -1) && 'c'== JSONlike.charAt( h +1) && 'c'== JSONlike.charAt( h +1) && 'c'== JSONlike.charAt( h +1) && 'c'== JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "public case 'b': if( h > begin && h +9< terminal && 'b'== JSONlike.charAt( h -1) && 'b'== JSONlike.charAt( h +1) && 'b'== JSONlike.charAt( h +1) && 'b'== JSONlike.charAt( h +1) && 'b'== JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "case 'a': if( h > begin && h +9< terminal && 'a'== JSONlike.charAt( h -1) && 'a'== JSONlike.charAt( h +1) && 'a'== JSONlike.charAt( h +1) && 'a'== JSONlike.charAt( h +1) && 'a'==( JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "case ', ': if( h > begin && h +9< terminal && ', '== JSONlike.charAt( h -1) && ', '== JSONlike.charAt( h +1) && ', '== JSONlike.charAt( h +1) && ', '== JSONlike.charAt( h +1) && ', '==( JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "case '9': if( h > begin && h +9< terminal && '9'== JSONlike.charAt( h -1) && '9'== JSONlike.charAt( h +1) && '9'== JSONlike.charAt( h +1) && '9'== JSONlike.charAt( h +1) && '9'==( JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "case 'c': if( h > begin && h +9< terminal && 'c'== JSONlike.charAt( h -1) && 'c'== JSONlike.charAt( h +1) && 'c'== JSONlike.charAt( h +1) && 'c'== JSONlike.charAt( h +1) && 'c'==( JSONlike.charAt( h +1"
+            },
+            {
+                "patch": "case 'b': if( h > begin && h +9< terminal && 'b'== JSONlike.charAt( h -1) && 'b'== JSONlike.charAt( h +1) && 'b'== JSONlike.charAt( h +1) && 'b'== JSONlike.charAt( h +1) && 'b'==( JSONlike.charAt( h +1"
+            }
+        ]
+    }
+}

@@ -1,0 +1,12 @@
+[
+  "templet.replace(\"null\", way);\n",
+  "templet = templet.replace(\"null\", way);\n",
+  "templet = templet.replace(\"null\", templet);\n",
+  "",
+  "if((templet != null)){\n",
+  "templet = templet.replace(\"null\", productManner);\n",
+  "templet = templet.replace(\"null\", \"null\");\n",
+  "templet = templet.replace(productManner);\n",
+  "templet = templet.replace(null, way);\n",
+  "templet = templet.replace(way, \"null\");\n"
+]

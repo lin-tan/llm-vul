@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream);",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, false);",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, null);",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, true);",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream);",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, 0);",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream.toString());",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream.trim());",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, false );",
+        "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream) ;"
+    ],
+    "validation_result": [
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream);",
+            "correctness": "compile_success",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, false);",
+            "correctness": "uncompilable",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, false);"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, null);",
+            "correctness": "compile_success",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, true);",
+            "correctness": "uncompilable",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, true);"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream);",
+            "correctness": "compile_success",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, 0);",
+            "correctness": "uncompilable",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, 0);"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream.toString());",
+            "correctness": "compile_success",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream.toString());"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream.trim());",
+            "correctness": "uncompilable",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream.trim());"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream, false );",
+            "correctness": "uncompilable",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, false);"
+        },
+        {
+            "patch": "Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream) ;",
+            "correctness": "compile_success",
+            "translated": "Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);"
+        }
+    ]
+}

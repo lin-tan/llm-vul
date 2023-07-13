@@ -1,0 +1,66 @@
+{
+    "output": [
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    this.category = category;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    this.category = category.getSuperclass();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    this.category = category.getClass();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    setCategory(category);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    if (category!= null) {\n        this.category = category;\n    }\n<|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    this.category = (T) category;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    this.category = category == null? null : category.getClass();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    this.category = category == null? \"String_Node_Str\" : category;\n<|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    this.jaxbContext = jaxbContext;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "JaxbReplyTransformer(JAXBContext setting, Class<T> category) {\n  this.setting = setting;\n// buggy lines start:\n  this.category = category;\n// buggy lines end\n}\n// fixed lines:\n    this.category = category == null? null : category.getSuperclass();\n<|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    this.category = category;\n",
+            "correctness": "compile_success",
+            "translated": "    this.type = type;\n"
+        },
+        {
+            "patch": "    this.category = category.getSuperclass();\n",
+            "correctness": "uncompilable",
+            "translated": "    this.type = type.getSuperclass();\n"
+        },
+        {
+            "patch": "    this.category = category.getClass();\n",
+            "correctness": "uncompilable",
+            "translated": "    this.type = type.getClass();\n"
+        },
+        {
+            "patch": "    setCategory(category);\n",
+            "correctness": "uncompilable",
+            "translated": "    setCategory(type);\n"
+        },
+        {
+            "patch": "    if (category!= null) {\n        this.category = category;\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    if (type!= null) {\n        this.type = type;\n    }\n"
+        },
+        {
+            "patch": "    this.category = (T) category;\n",
+            "correctness": "uncompilable",
+            "translated": "    this.type = (T) type;\n"
+        },
+        {
+            "patch": "    this.category = category == null? null : category.getClass();\n",
+            "correctness": "uncompilable",
+            "translated": "    this.type = type == null? null : type.getClass();\n"
+        },
+        {
+            "patch": "    this.category = category == null? \"String_Node_Str\" : category;\n",
+            "correctness": "uncompilable",
+            "translated": "    this.type = type == null? \"String_Node_Str\" : type;\n"
+        },
+        {
+            "patch": "    this.jaxbContext = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "    this.jaxbContext = jaxbContext;\n"
+        },
+        {
+            "patch": "    this.category = category == null? null : category.getSuperclass();\n",
+            "correctness": "uncompilable",
+            "translated": "    this.type = type == null? null : type.getSuperclass();\n"
+        }
+    ]
+}

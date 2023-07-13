@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return url;",
+        "return StringEscapeUtils.unescapeXml(URLDecoder.decode(url));",
+        "return mangleNamespaces(URLDecoder.decode(url, StandardCharsets.UTF_8));",
+        "return \"String_Node_Str\";",
+        "return mangleNamespaces(url);",
+        "return StringEscapeUtils.unescapeXml(url);",
+        "return mangleNamespaces(URLDecoder.decode(url));",
+        "return \"String_Node_Str\" + url;",
+        "return null;",
+        "return encodeUrl(url);"
+    ],
+    "validation_result": [
+        {
+            "patch": "return url;",
+            "correctness": "uncompilable",
+            "translated": "return url;"
+        },
+        {
+            "patch": "return StringEscapeUtils.unescapeXml(URLDecoder.decode(url));",
+            "correctness": "uncompilable",
+            "translated": "return StringEscapeUtils.unescapeXml(URLDecoder.decode(url));"
+        },
+        {
+            "patch": "return mangleNamespaces(URLDecoder.decode(url, StandardCharsets.UTF_8));",
+            "correctness": "uncompilable",
+            "translated": "return mangleNamespaces(URLDecoder.decode(url, StandardCharsets.UTF_8));"
+        },
+        {
+            "patch": "return \"String_Node_Str\";",
+            "correctness": "uncompilable",
+            "translated": "return \"String_Node_Str\";"
+        },
+        {
+            "patch": "return mangleNamespaces(url);",
+            "correctness": "uncompilable",
+            "translated": "return mangleNamespaces(url);"
+        },
+        {
+            "patch": "return StringEscapeUtils.unescapeXml(url);",
+            "correctness": "uncompilable",
+            "translated": "return StringEscapeUtils.unescapeXml(url);"
+        },
+        {
+            "patch": "return mangleNamespaces(URLDecoder.decode(url));",
+            "correctness": "uncompilable",
+            "translated": "return mangleNamespaces(URLDecoder.decode(url));"
+        },
+        {
+            "patch": "return \"String_Node_Str\" + url;",
+            "correctness": "uncompilable",
+            "translated": "return \"String_Node_Str\" + url;"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "uncompilable",
+            "translated": "return null;"
+        },
+        {
+            "patch": "return encodeUrl(url);",
+            "correctness": "uncompilable",
+            "translated": "return encodeUrl(url);"
+        }
+    ]
+}

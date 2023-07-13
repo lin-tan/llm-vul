@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "Collection < UIComponent> whole() { return uiComponents; }",
+        "final Collection < UIComponent> whole() { return uiComponents; }",
+        "public Collection < UIComponent> whole() { return uiComponents; }",
+        "private Collection < UIComponent> whole() { return uiComponents; }",
+        "protected Collection < UIComponent> whole() { return uiComponents; }",
+        "Set < UIComponent> whole() { return uiComponents; }",
+        "this.uiComponents = new HashSet < UIComponent>();",
+        "this.uiComponents = new ArrayList < UIComponent>();",
+        "new Collection < UIComponent> whole() { return uiComponents; }",
+        "Collection < UIComponent> whole() { return uiComponents; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "Collection < UIComponent> whole() { return uiComponents; }",
+            "correctness": "uncompilable",
+            "translated": "Collection < View> all() { return views; }"
+        },
+        {
+            "patch": "final Collection < UIComponent> whole() { return uiComponents; }",
+            "correctness": "uncompilable",
+            "translated": "final Collection < View> all() { return views; }"
+        },
+        {
+            "patch": "public Collection < UIComponent> whole() { return uiComponents; }",
+            "correctness": "compile_success",
+            "translated": "public Collection < View> all() { return views; }"
+        },
+        {
+            "patch": "private Collection < UIComponent> whole() { return uiComponents; }",
+            "correctness": "uncompilable",
+            "translated": "private Collection < View> all() { return views; }"
+        },
+        {
+            "patch": "protected Collection < UIComponent> whole() { return uiComponents; }",
+            "correctness": "compile_success",
+            "translated": "protected Collection < View> all() { return views; }"
+        },
+        {
+            "patch": "Set < UIComponent> whole() { return uiComponents; }",
+            "correctness": "uncompilable",
+            "translated": "Set < View> all() { return views; }"
+        },
+        {
+            "patch": "this.uiComponents = new HashSet < UIComponent>();",
+            "correctness": "uncompilable",
+            "translated": "this.views = new HashSet < View>();"
+        },
+        {
+            "patch": "this.uiComponents = new ArrayList < UIComponent>();",
+            "correctness": "uncompilable",
+            "translated": "this.views = new ArrayList < View>();"
+        },
+        {
+            "patch": "new Collection < UIComponent> whole() { return uiComponents; }",
+            "correctness": "uncompilable",
+            "translated": "new Collection < View> all() { return views; }"
+        },
+        {
+            "patch": "Collection < UIComponent> whole() { return uiComponents; }",
+            "correctness": "uncompilable",
+            "translated": "Collection < View> all() { return views; }"
+        }
+    ]
+}

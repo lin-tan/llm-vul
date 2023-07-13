@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "c.set(field, i-offset);",
+        "c.set(field, i);",
+        "c.set(field, i-offset);",
+        "c.set(field, n);",
+        "c.set(field, i);",
+        "c.set(field, i-1);",
+        "c.set(field, i + 1);",
+        "c.set(field, n);",
+        "c.set(field, i-offset-1);",
+        "c.set(field, i - offset);"
+    ],
+    "validation_result": [
+        {
+            "patch": "c.set(field, i-offset);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "c.set(field, i);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "c.set(field, i-offset);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "c.set(field, n);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "c.set(field, i);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "c.set(field, i-1);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "c.set(field, i + 1);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "c.set(field, n);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "c.set(field, i-offset-1);",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "c.set(field, i - offset);",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return encipheredWatchword.equals(unprocessedWatchword);\n    }\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return unprocessedWatchword.equals(encipheredWatchword);\n    }\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return encipheredWatchword.equalsIgnoreCase(unprocessedWatchword);\n    }\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        if (encipheredWatchword.equals(unprocessedWatchword)) {\n            return true;\n        }\n        return false;\n    }\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return unprocessedWatchword.equalsIgnoreCase(encipheredWatchword);\n    }\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return false;\n    }\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        if (encipheredWatchword == null || unprocessedWatchword == null) {\n            return false;\n        }\n        return encipheredWatchword.equals(unprocessedWatchword);\n    }\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return encipheredWatchword.equals(unprocessedWatchword);\n    }\n\n    @Override\n    public boolean isSoundWatchword(String encipheredWatchword) {\n        return encipheredWatchword.equals(encipheredWatchword);\n    }\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        if (encipheredWatchword.equals(unprocessedWatchword)) {\n            return true;\n        }\n        return false;\n    }\n\n}\n",
+        "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        if (encipheredWatchword == null || unprocessedWatchword == null) {\n            return false;\n        }\n        return encipheredWatchword.equals(unprocessedWatchword);\n    }\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return encipheredWatchword.equals(unprocessedWatchword);\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return encPass.equals(rawPass);\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return unprocessedWatchword.equals(encipheredWatchword);\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return rawPass.equals(encPass);\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return encipheredWatchword.equalsIgnoreCase(unprocessedWatchword);\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return encPass.equalsIgnoreCase(rawPass);\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        if (encipheredWatchword.equals(unprocessedWatchword)) {\n            return true;\n        }\n        return false;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass.equals(rawPass)) {\n            return true;\n        }\n        return false;\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return unprocessedWatchword.equalsIgnoreCase(encipheredWatchword);\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return rawPass.equalsIgnoreCase(encPass);\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return false;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return false;\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        if (encipheredWatchword == null || unprocessedWatchword == null) {\n            return false;\n        }\n        return encipheredWatchword.equals(unprocessedWatchword);\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        return encPass.equals(rawPass);\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        return encipheredWatchword.equals(unprocessedWatchword);\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        return encPass.equals(rawPass);\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        if (encipheredWatchword.equals(unprocessedWatchword)) {\n            return true;\n        }\n        return false;\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass.equals(rawPass)) {\n            return true;\n        }\n        return false;\n    }"
+        },
+        {
+            "patch": "public boolean isSoundWatchword(String encipheredWatchword, String unprocessedWatchword, Object randomData) {\n        if (encipheredWatchword == null || unprocessedWatchword == null) {\n            return false;\n        }\n        return encipheredWatchword.equals(unprocessedWatchword);\n    }",
+            "correctness": "uncompilable",
+            "translated": "public boolean isPasswordValid(String encPass, String rawPass, Object salt) {\n        if (encPass == null || rawPass == null) {\n            return false;\n        }\n        return encPass.equals(rawPass);\n    }"
+        }
+    ]
+}

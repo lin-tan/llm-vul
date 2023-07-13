@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "csize -= current.bytesRead;",
+        "csize = 0;",
+        "csize += current.bytesRead;",
+        "csize -= l;",
+        "csize = current.bytesRead;",
+        "l = buf.remaining();",
+        "csize -= 0;",
+        "csize *= current.bytesRead;",
+        "e.printStackTrace();",
+        "csize += l;"
+    ],
+    "validation_result": [
+        {
+            "patch": "csize -= current.bytesRead;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "csize = 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "csize += current.bytesRead;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "csize -= l;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "csize = current.bytesRead;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "l = buf.remaining();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "csize -= 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "csize *= current.bytesRead;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "e.printStackTrace();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "csize += l;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "adjustPresentUseConsent(lexiconConsent);",
+        "null = adjustPresentUseConsent(presentUseConsent);",
+        "AdjustPresentUseConsent(lexiconConsent);",
+        "n = adjustPresentUseConsent(presentUseConsent);",
+        "useConsent = adjustPresentUseConsent(presentUseConsent);",
+        "adjustPresentUseConsent(presentUseConsent);",
+        "null = adaptPresentUseConsent(presentUseConsent);",
+        "presentUseConsent = new UseConsent(lexiconConsent);",
+        "this.adjustPresentUseConsent(presentUseConsent);",
+        "useConsent = adjustPresentUseConsent(presentUseConsent);"
+    ],
+    "validation_result": [
+        {
+            "patch": "adjustPresentUseConsent(lexiconConsent);",
+            "correctness": "uncompilable",
+            "translated": "setCurrentAccessPermission(dicPermissions);"
+        },
+        {
+            "patch": "null = adjustPresentUseConsent(presentUseConsent);",
+            "correctness": "uncompilable",
+            "translated": "null = setCurrentAccessPermission(currentAccessPermission);"
+        },
+        {
+            "patch": "AdjustPresentUseConsent(lexiconConsent);",
+            "correctness": "uncompilable",
+            "translated": "AdjustPresentUseConsent(dicPermissions);"
+        },
+        {
+            "patch": "n = adjustPresentUseConsent(presentUseConsent);",
+            "correctness": "uncompilable",
+            "translated": "n = setCurrentAccessPermission(currentAccessPermission);"
+        },
+        {
+            "patch": "useConsent = adjustPresentUseConsent(presentUseConsent);",
+            "correctness": "uncompilable",
+            "translated": "useConsent = setCurrentAccessPermission(currentAccessPermission);"
+        },
+        {
+            "patch": "adjustPresentUseConsent(presentUseConsent);",
+            "correctness": "compile_success",
+            "translated": "setCurrentAccessPermission(currentAccessPermission);"
+        },
+        {
+            "patch": "null = adaptPresentUseConsent(presentUseConsent);",
+            "correctness": "uncompilable",
+            "translated": "null = adaptPresentUseConsent(currentAccessPermission);"
+        },
+        {
+            "patch": "presentUseConsent = new UseConsent(lexiconConsent);",
+            "correctness": "compile_success",
+            "translated": "currentAccessPermission = new AccessPermission(dicPermissions);"
+        },
+        {
+            "patch": "this.adjustPresentUseConsent(presentUseConsent);",
+            "correctness": "compile_success",
+            "translated": "this.setCurrentAccessPermission(currentAccessPermission);"
+        },
+        {
+            "patch": "useConsent = adjustPresentUseConsent(presentUseConsent);",
+            "correctness": "uncompilable",
+            "translated": "useConsent = setCurrentAccessPermission(currentAccessPermission);"
+        }
+    ]
+}

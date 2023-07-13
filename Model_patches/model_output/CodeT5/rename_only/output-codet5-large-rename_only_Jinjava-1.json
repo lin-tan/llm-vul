@@ -1,0 +1,66 @@
+{
+    "output": [
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\" //",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\" \" //",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\" //\n",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\". //",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\") //\n     .(\" //",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\"//",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\" )",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"\" //",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\".\" //",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"\", //"
+    ],
+    "validation_result": [
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\" //",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\" //"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\" \" //",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\" \" //"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\" //\n",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\" //\n"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\". //",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\". //"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\") //\n     .(\" //",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\") //\n     .(\" //"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\"//",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\" //"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\" )",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"(\" )"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"\" //",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\" \" //"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\".\" //",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\".\" //"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"\", //",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n     .(\"\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .\n // // //\n     . // // // final\n     .add(\" //\n     .add(\"notify\")\n     .(\"\", //"
+        }
+    ]
+}

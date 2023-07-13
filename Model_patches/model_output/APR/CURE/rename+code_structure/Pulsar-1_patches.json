@@ -1,0 +1,37 @@
+{
+    "VUL4J-10016-2330-2331": {
+        "src": "( ( Administered CaMeL Records CaMeL Impl ) ( ( Tenacious CaMeL Subject ) acquire CaMeL Subject CaMeL Mention ( subject CaMeL Title ) ) . acquire CaMeL Administered CaMeL Records ( ) )",
+        "patches": [
+            {
+                "patch": "acquireSubjectMention( subjectTitle ) ; if( !( acquireSubjectMention( subjectTitle ) ) ) { acquireSubjectMention( subjectTitle ) ;"
+            },
+            {
+                "patch": "acquireSubjectMention( subjectTitle ) ; if(( acquireSubjectMention( subjectTitle ) != null ) ? acquireSubjectMention( subjectTitle ) : null )"
+            },
+            {
+                "patch": "if( acquireSubjectMention( subjectTitle ) ) {(( Integer ) acquireSubjectMention( subjectTitle ) ).intValue( ) ; }"
+            },
+            {
+                "patch": "acquireSubjectMention( subjectTitle , acquireSubjectMention( subjectTitle ) , acquireSubjectMention( subjectTitle ) ) ;"
+            },
+            {
+                "patch": "acquireSubjectMention( subjectTitle ) ; if( acquireSubjectMention( subjectTitle ) )"
+            },
+            {
+                "patch": "if( acquireSubjectMention( subjectTitle , itemNumber , subjectTitle , subjectTitle ,"
+            },
+            {
+                "patch": "acquireSubjectMention( subjectTitle , readEntryCallback , null , readEntryCallback , null ) ;"
+            },
+            {
+                "patch": "if( acquireSubjectMention( subjectTitle ) ) { acquireSubjectMention( subjectTitle ) ;"
+            },
+            {
+                "patch": "if( readEntryCallback != null ) asyncReply.resume( ) ; else asyncReply.resume( ) ;"
+            },
+            {
+                "patch": "acquireSubjectMention( subjectTitle ) ; if( acquireSubjectMention( subjectTitle ) ) { acquireSubjectMention( subjectTitle ) ; return ; }"
+            }
+        ]
+    }
+}

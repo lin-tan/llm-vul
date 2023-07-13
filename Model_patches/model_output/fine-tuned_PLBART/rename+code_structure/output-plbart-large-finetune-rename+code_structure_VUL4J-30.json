@@ -1,0 +1,66 @@
+{
+    "output": [
+        "String s = content.toString();",
+        "String s = String.valueOf(content.toString());",
+        "String s = String.valueOf(content);",
+        "String s = content;",
+        "String s = String.valueOf(content).trim();",
+        "String s = (String) content;",
+        "String s = String.valueOf(contentString);",
+        "String s = new String(content);",
+        "String s = String.valueOf(content_class);",
+        "Object s = content;"
+    ],
+    "validation_result": [
+        {
+            "patch": "String s = content.toString();",
+            "correctness": "compile_success",
+            "translated": "String s = value.toString();"
+        },
+        {
+            "patch": "String s = String.valueOf(content.toString());",
+            "correctness": "compile_success",
+            "translated": "String s = String.valueOf(value.toString());"
+        },
+        {
+            "patch": "String s = String.valueOf(content);",
+            "correctness": "compile_success",
+            "translated": "String s = String.valueOf(value);"
+        },
+        {
+            "patch": "String s = content;",
+            "correctness": "uncompilable",
+            "translated": "String s = value;"
+        },
+        {
+            "patch": "String s = String.valueOf(content).trim();",
+            "correctness": "test_success",
+            "translated": "String s = String.valueOf(value).trim();"
+        },
+        {
+            "patch": "String s = (String) content;",
+            "correctness": "compile_success",
+            "translated": "String s = (String) value;"
+        },
+        {
+            "patch": "String s = String.valueOf(contentString);",
+            "correctness": "uncompilable",
+            "translated": "String s = String.valueOf(contentString);"
+        },
+        {
+            "patch": "String s = new String(content);",
+            "correctness": "uncompilable",
+            "translated": "String s = new String(value);"
+        },
+        {
+            "patch": "String s = String.valueOf(content_class);",
+            "correctness": "compile_success",
+            "translated": "String s = String.valueOf(value_class);"
+        },
+        {
+            "patch": "Object s = content;",
+            "correctness": "uncompilable",
+            "translated": "Object s = value;"
+        }
+    ]
+}

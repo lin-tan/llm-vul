@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "return URLDecoder.decode( r.getPathInfo(), \"UTF-8 \" );",
+        "return URLDecoder.decode(r.getPathInfo(), \"UTF-8 \");",
+        "return r == null? null : r.getPathInfo();",
+        "return URLDecoder.decode(r.getPathInfo(), \"UTF-8 \" );",
+        "if ( r!= null ) return r.getPathInfo(); else return \" \";",
+        "return r!= null? r.getPathInfo() : \" \";",
+        "String path = r.getPathInfo(); return path!= null? path : \" \";",
+        "return URLEncoder.encode( r.getPathInfo(), \"UTF-8 \" );",
+        "return URLDecoder.decode( r.getPathInfo(), \"utf-8 \" );",
+        "return r!= null? r.getPathInfo() : null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return URLDecoder.decode( r.getPathInfo(), \"UTF-8 \" );",
+            "correctness": "uncompilable",
+            "translated": "return URLDecoder.decode( request.getPathInfo(), \"UTF-8 \" );"
+        },
+        {
+            "patch": "return URLDecoder.decode(r.getPathInfo(), \"UTF-8 \");",
+            "correctness": "uncompilable",
+            "translated": "return URLDecoder.decode( request.getPathInfo(), \"UTF-8 \" );"
+        },
+        {
+            "patch": "return r == null? null : r.getPathInfo();",
+            "correctness": "compile_success",
+            "translated": "return request == null? null : request.getPathInfo();"
+        },
+        {
+            "patch": "return URLDecoder.decode(r.getPathInfo(), \"UTF-8 \" );",
+            "correctness": "uncompilable",
+            "translated": "return URLDecoder.decode( request.getPathInfo(), \"UTF-8 \" );"
+        },
+        {
+            "patch": "if ( r!= null ) return r.getPathInfo(); else return \" \";",
+            "correctness": "compile_success",
+            "translated": "if ( request!= null ) return request.getPathInfo(); else return \" \";"
+        },
+        {
+            "patch": "return r!= null? r.getPathInfo() : \" \";",
+            "correctness": "compile_success",
+            "translated": "return request!= null? request.getPathInfo() : \" \";"
+        },
+        {
+            "patch": "String path = r.getPathInfo(); return path!= null? path : \" \";",
+            "correctness": "compile_success",
+            "translated": "String path = request.getPathInfo(); return path!= null? path : \" \";"
+        },
+        {
+            "patch": "return URLEncoder.encode( r.getPathInfo(), \"UTF-8 \" );",
+            "correctness": "uncompilable",
+            "translated": "return URLEncoder.encode( request.getPathInfo(), \"UTF-8 \" );"
+        },
+        {
+            "patch": "return URLDecoder.decode( r.getPathInfo(), \"utf-8 \" );",
+            "correctness": "uncompilable",
+            "translated": "return URLDecoder.decode( request.getPathInfo(), \"utf-8 \" );"
+        },
+        {
+            "patch": "return r!= null? r.getPathInfo() : null;",
+            "correctness": "compile_success",
+            "translated": "return request!= null? request.getPathInfo() : null;"
+        }
+    ]
+}

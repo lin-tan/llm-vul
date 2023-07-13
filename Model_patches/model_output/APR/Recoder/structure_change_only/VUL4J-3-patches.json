@@ -1,0 +1,12 @@
+[
+  "sfactory.setNamespaceAware(false);\n",
+  "sfactory.setNamespaceAware();\n",
+  "sfactory = exchange.getProperty(Exchange.SAXPARSER_FACTORY, SAXParserFactory);\n",
+  "sfactory.setNamespaceAware(true);\n",
+  "xmlReader = sfactory.newSAXParser().getXMLReader();\n",
+  "return new SAXSource(xmlReader, inputSource);",
+  "sfactory.setFeature(javax.xml.XMLConstants.FEATURE_SECURE_PROCESSING, true);\n",
+  "sfactory = SAXParserFactory.newInstance();\n",
+  "LOG.warn(\"null\", ex);\n",
+  "sfactory.setNamespaceAware(this);\n"
+]

@@ -1,0 +1,12 @@
+[
+  "z.set(z, (m - position));\n",
+  "z.set(attribute, m);\n",
+  "z.set(attribute, (m - z));\n",
+  "z.set((m - position));\n",
+  "z.set(attribute, (m - position));\n",
+  "z.set((m - position), attribute);\n",
+  "z.set((m - position), 0);\n",
+  "z.set((m - position), (m - position));\n",
+  "z.set(m, (m - position));\n",
+  "z.set(attribute, (m + position));\n"
+]

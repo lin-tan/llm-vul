@@ -1,0 +1,12 @@
+[
+  "template.replace(\"null\", path);\n",
+  "template = template.replace(\"null\", path);\n",
+  "template = template.replace(\"null\", template);\n",
+  "if((template != null)){\n",
+  "template = template.replace(\"null\", productionMode);\n",
+  "",
+  "template = template.replace(\"null\", \"null\");\n",
+  "template = template.replace(productionMode);\n",
+  "template = template.replace(path, \"null\");\n",
+  "template = template.replace(null, path);\n"
+]

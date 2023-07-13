@@ -1,0 +1,65 @@
+{
+    "id": 2,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0132,
+            "fix_type": "general",
+            "patch": "sfactory.setNamespaceAware(true)"
+        },
+        {
+            "rank": 2,
+            "score": -0.4863,
+            "fix_type": "insert",
+            "patch": "  String defaultCharset = null;\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4863,
+            "fix_type": "insert",
+            "patch": "  String transformerFactory = null;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.4241,
+            "fix_type": "general",
+            "patch": "sfactory.setNamespaceAware(true,true)"
+        },
+        {
+            "rank": 5,
+            "score": -0.5344,
+            "fix_type": "general",
+            "patch": "sfactory.setNamespaceAware(\"Cannot create the SAXParser XMLReader, due to {}\")"
+        },
+        {
+            "rank": 6,
+            "score": -0.5263,
+            "fix_type": "insert",
+            "patch": "if (sfactory == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.5729,
+            "fix_type": "general",
+            "patch": "sfactory.setNamespaceAware(\"SAXParser doesn't support the feature {} with value {}, due to {}.\")"
+        },
+        {
+            "rank": 8,
+            "score": -0.6628,
+            "fix_type": "general",
+            "patch": "sfactory.setNamespaceAware(true,null)"
+        },
+        {
+            "rank": 9,
+            "score": -0.6792,
+            "fix_type": "general",
+            "patch": "sfactory.setNamespaceAware(true)return sfactory;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5275,
+            "fix_type": "insert",
+            "patch": "  String defaultCharset = null;\n  String defaultCharset = null;\n"
+        }
+    ]
+}

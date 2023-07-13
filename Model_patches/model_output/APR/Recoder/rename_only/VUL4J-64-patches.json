@@ -1,0 +1,12 @@
+[
+  "return mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+  "return mill.createXMLStreamReader(inDataSequence);",
+  "return mill.createXMLStreamReader(createXMLStreamReader(inDataSequence));",
+  "return mill.createXMLStreamReader(setProperty(inDataSequence));",
+  "return mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(mill));",
+  "return mill.setProperty(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+  "return swatheBeginingOfStringDetachingInDataSequence(inDataSequence);",
+  "return createXMLStreamReader(inDataSequence);",
+  "return mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence());",
+  "return mill.createXMLStreamReader(debug(inDataSequence));"
+]

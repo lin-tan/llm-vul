@@ -1,0 +1,21 @@
+{
+    "outputs": [
+        "z.set(attribute, m);",
+        "int n = m-position - 1;",
+        "int n = m - position;",
+        "int n = m-position--;",
+        "Integer n = m-position;",
+        "z.set(attribute, m-position);",
+        "z.set(attribute, m);",
+        "int n = m-position-1;",
+        "int n = m-position;",
+        "int n = m - position - 1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "z.set(attribute, m);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i);"
+        }
+    ]
+}

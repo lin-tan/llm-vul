@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "bytePerusedFromDataSequence = 0;",
+        "if (size > 0) { return -1; }",
+        "bytePerusedFromDataSequence = -1;",
+        "bytePerusedFromDataSequence += x;",
+        "if (size == 0) { return -1; }",
+        "return Integer.MAX_VALUE;",
+        "if (size > 0) return -1;",
+        "x = present.bytePerusedFromDataSequence;",
+        "if (size == 0) { return 0; }",
+        "if (size > 0) { return 0; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "bytePerusedFromDataSequence = 0;",
+            "correctness": "uncompilable",
+            "translated": "bytesReadFromStream = 0;"
+        },
+        {
+            "patch": "if (size > 0) { return -1; }",
+            "correctness": "compile_success",
+            "translated": "if (csize > 0) { return -1; }"
+        },
+        {
+            "patch": "bytePerusedFromDataSequence = -1;",
+            "correctness": "uncompilable",
+            "translated": "bytesReadFromStream = -1;"
+        },
+        {
+            "patch": "bytePerusedFromDataSequence += x;",
+            "correctness": "uncompilable",
+            "translated": "bytesReadFromStream += l;"
+        },
+        {
+            "patch": "if (size == 0) { return -1; }",
+            "correctness": "compile_success",
+            "translated": "if (csize == 0) { return -1; }"
+        },
+        {
+            "patch": "return Integer.MAX_VALUE;",
+            "correctness": "compile_success",
+            "translated": "return Integer.MAX_VALUE;"
+        },
+        {
+            "patch": "if (size > 0) return -1;",
+            "correctness": "compile_success",
+            "translated": "if (csize > 0) return -1;"
+        },
+        {
+            "patch": "x = present.bytePerusedFromDataSequence;",
+            "correctness": "uncompilable",
+            "translated": "l = current.bytesReadFromStream;"
+        },
+        {
+            "patch": "if (size == 0) { return 0; }",
+            "correctness": "compile_success",
+            "translated": "if (csize == 0) { return 0; }"
+        },
+        {
+            "patch": "if (size > 0) { return 0; }",
+            "correctness": "compile_success",
+            "translated": "if (csize > 0) { return 0; }"
+        }
+    ]
+}

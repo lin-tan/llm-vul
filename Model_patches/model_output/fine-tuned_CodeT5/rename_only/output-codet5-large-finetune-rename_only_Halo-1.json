@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    if (basePath.equals(examinePath)) {\n</s></s></s></s></s></s>",
+        "<pad><s>    if (examinePath.startsWith(basePath)) {\n</s></s></s></s></s>",
+        "<pad><s>    if (examinePath.equals(basePath)) {\n</s></s></s></s></s></s>",
+        "<pad><s>    if (examinePath.equals(basePath.normalize())) {\n</s></s></s>",
+        "<pad><s>    if (basePath.normalize().equals(examinePath.normalize())) {\n</s>",
+        "<pad><s>    if (basePath.startsWith(examinePath)) {\n</s></s></s></s></s>",
+        "<pad><s>    if (basePath.normalize().startsWith(examinePath)) {\n</s></s></s>",
+        "<pad><s>    if (basePath!= null && examinePath.startsWith(basePath)) {\n</s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (basePath.equals(examinePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (parentPath.equals(pathToCheck)) {\n"
+        },
+        {
+            "patch": "    if (examinePath.startsWith(basePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.startsWith(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (examinePath.equals(basePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.equals(parentPath)) {\n"
+        },
+        {
+            "patch": "    if (examinePath.equals(basePath.normalize())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (pathToCheck.equals(parentPath.normalize())) {\n"
+        },
+        {
+            "patch": "    if (basePath.normalize().equals(examinePath.normalize())) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (parentPath.normalize().equals(pathToCheck.normalize())) {\n"
+        },
+        {
+            "patch": "    if (basePath.startsWith(examinePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (parentPath.startsWith(pathToCheck)) {\n"
+        },
+        {
+            "patch": "    if (basePath.normalize().startsWith(examinePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (parentPath.normalize().startsWith(pathToCheck)) {\n"
+        },
+        {
+            "patch": "    if (basePath!= null && examinePath.startsWith(basePath)) {\n",
+            "correctness": "compile_success",
+            "translated": "    if (parentPath!= null && pathToCheck.startsWith(parentPath)) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

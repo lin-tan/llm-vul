@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-8,1",
+    "output": [
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return super. JavaScriptStringEncoding(source); } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return source. trim ( ) ; } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return source ; } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return new String ( Base64. decodeBase64 ( source ) ); } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return new String( Base64. decodeBase64 ( source ) ); } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return URLEncoder. encode( source, \"UTF-8\"); } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return source. getBytes(\"UTF-8\"); } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return URLEncoder. encode(source, \"UTF-8\"); } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return URLEncoder. encode( source, \"UTF-8\" ) ; } return null; }",
+        "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return new String ( Base64. decodeBase64( source ) ); } return null; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return super. JavaScriptStringEncoding(source); } return null; }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return super. encodeForJSString(source); } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return source. trim ( ) ; } return null; }",
+            "correctness": "compile_success",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return source. trim ( ) ; } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return source ; } return null; }",
+            "correctness": "compile_success",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return source ; } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return new String ( Base64. decodeBase64 ( source ) ); } return null; }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return new String ( Base64. decodeBase64 ( source ) ); } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return new String( Base64. decodeBase64 ( source ) ); } return null; }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return new String ( Base64. decodeBase64 ( source ) ); } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return URLEncoder. encode( source, \"UTF-8\"); } return null; }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return URLEncoder. encode( source, \"UTF-8\"); } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return source. getBytes(\"UTF-8\"); } return null; }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return source. getBytes(\"UTF-8\"); } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return URLEncoder. encode(source, \"UTF-8\"); } return null; }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return URLEncoder. encode( source, \"UTF-8\"); } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return URLEncoder. encode( source, \"UTF-8\" ) ; } return null; }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return URLEncoder. encode( source, \"UTF-8\"); } return null; }"
+        },
+        {
+            "patch": "@Override public String JavaScriptStringEncoding(String source) { if( source!= null ){ return new String ( Base64. decodeBase64( source ) ); } return null; }",
+            "correctness": "uncompilable",
+            "translated": "@Override public String encodeForJSString(String source) { if( source!= null ){ return new String ( Base64. decodeBase64 ( source ) ); } return null; }"
+        }
+    ]
+}

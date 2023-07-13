@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return decryptRequestContent(r, circumstancePath);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return encryptRequestContent(r, circumstancePath);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequestContent(r, circumstancePath);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return decodeRequest(r, circumstancePath);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return r.getContextPath();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return decryptRequestContent(circumstancePath);\n<|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return decryptRequestContent(r, disturbancePath);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return decryptRequestContent(r, naturePath);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n    return decryptRequestContent(r, circumstancePath, context);\n<|endoftext|>",
+        "public static String getContextPath(HttpServletRequest r) {\n    String circumstancePath = (String) r.getAttribute(ADD_CIRCUMSTANCE_PATH_PROPERTY);\n    if (circumstancePath == null) {\n        circumstancePath = r.getContextPath();\n    }\n// buggy lines start:\n    if (\"/\".equals(circumstancePath)) {\n        circumstancePath = \"\";\n    }\n    return decryptRequestContent(r, circumstancePath);\n// buggy lines end\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath);\n",
+            "correctness": "compile_success",
+            "translated": "    return decodeRequestString(request, contextPath);\n"
+        },
+        {
+            "patch": "    return encryptRequestContent(r, circumstancePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return encryptRequestContent(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decodeRequestContent(r, circumstancePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestContent(request, contextPath);\n"
+        },
+        {
+            "patch": "    return decodeRequest(r, circumstancePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequest(request, contextPath);\n"
+        },
+        {
+            "patch": "    return r.getContextPath();\n",
+            "correctness": "compile_success",
+            "translated": "    return request.getContextPath();\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(circumstancePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(contextPath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, disturbancePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request, disturbancePath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, naturePath);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request, naturePath);\n"
+        },
+        {
+            "patch": "    return decryptRequestContent(r, circumstancePath, context);\n",
+            "correctness": "uncompilable",
+            "translated": "    return decodeRequestString(request, contextPath, context);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

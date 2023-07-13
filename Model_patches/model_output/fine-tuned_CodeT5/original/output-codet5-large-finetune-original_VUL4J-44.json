@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>\tif(UNENCODED_SET.contains(c)) {\n</s></s>",
+        "<pad><s>\tif(UNENCODED_SET.contains(c))\n</s></s></s>",
+        "<pad><s>\tif(UNENCODED_SET.contains(cStr))\n</s></s>",
+        "<pad><s>\tif(UNENCODED_CHAR_SET.contains(c))\n</s>",
+        "<pad><s>\tif (UNENCODED_SET.contains(c))\n</s></s></s>",
+        "<pad><s>\tif(UNENCODED_SET.containsKey(c))\n</s></s>",
+        "<pad><s>\tif(unencodedSet.contains(c))\n</s></s></s></s>",
+        "<pad><s>\tif(unencodable)\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c)) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.contains(c))\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.contains(cStr))\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tif(UNENCODED_CHAR_SET.contains(c))\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tif (UNENCODED_SET.contains(c))\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "\tif(UNENCODED_SET.containsKey(c))\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tif(unencodedSet.contains(c))\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "\tif(unencodable)\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

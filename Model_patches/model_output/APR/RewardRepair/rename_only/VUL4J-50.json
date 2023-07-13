@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "compose( \"&nbsp; \");",
+        "compose(offSiteControlLocation);",
+        "compose(followingColumnAlignCore);",
+        "compose( \"&nbsp;n \");",
+        "compose(this.offSiteControlLocation);",
+        "compose( \"& \" + offSiteControlLocation);",
+        "compose( \"&amp; \");",
+        "compose(btainOffSiteLocation());",
+        "compose( \"&#160; \");",
+        "compose( \"& \"+offSiteControlLocation);"
+    ],
+    "validation_result": [
+        {
+            "patch": "compose( \"&nbsp; \");",
+            "correctness": "test_success",
+            "translated": "write( \"&nbsp; \");"
+        },
+        {
+            "patch": "compose(offSiteControlLocation);",
+            "correctness": "compile_success",
+            "translated": "write(remoteAddr);"
+        },
+        {
+            "patch": "compose(followingColumnAlignCore);",
+            "correctness": "test_success",
+            "translated": "write(nextColumnAlignCenter);"
+        },
+        {
+            "patch": "compose( \"&nbsp;n \");",
+            "correctness": "test_success",
+            "translated": "write( \"&nbsp;n \");"
+        },
+        {
+            "patch": "compose(this.offSiteControlLocation);",
+            "correctness": "uncompilable",
+            "translated": "write(this.remoteAddr);"
+        },
+        {
+            "patch": "compose( \"& \" + offSiteControlLocation);",
+            "correctness": "compile_success",
+            "translated": "write( \"& \" + remoteAddr);"
+        },
+        {
+            "patch": "compose( \"&amp; \");",
+            "correctness": "test_success",
+            "translated": "write( \"&amp; \");"
+        },
+        {
+            "patch": "compose(btainOffSiteLocation());",
+            "correctness": "uncompilable",
+            "translated": "write(btainOffSiteLocation());"
+        },
+        {
+            "patch": "compose( \"&#160; \");",
+            "correctness": "compile_success",
+            "translated": "write( \"&#160; \");"
+        },
+        {
+            "patch": "compose( \"& \"+offSiteControlLocation);",
+            "correctness": "compile_success",
+            "translated": "write( \"& \" + remoteAddr);"
+        }
+    ]
+}

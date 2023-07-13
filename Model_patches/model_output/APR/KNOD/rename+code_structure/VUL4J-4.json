@@ -1,0 +1,65 @@
+{
+    "id": 3,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1584,
+            "fix_type": "general",
+            "patch": "if (!(reply instanceof WrappedFile) ){\n  CamelContext context = interchange.acquireCircumstance();\n  TypeConverter typeConverter = context.acquireCategoryTransformer();\nreply = new InputSource(typeConverter.transformTo(InputStream.class,interchange,interchange));\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1634,
+            "fix_type": "general",
+            "patch": "if (!(reply instanceof WrappedFile) ){\n  CamelContext context = interchange.acquireCircumstance();\n  TypeConverter typeConverter = context.acquireCategoryTransformer();\nreply = new InputSource(typeConverter.transformTo(InputStream.class,interchange,interchange));\n}\nelse {\nif (content instanceof BeanExecution ){\n  StringReader stringReader = new StringReader((String)content);\nreply = new StringReader(content);\n}\nelse {\nif (content instanceof String ){\nreply = new InputSource(content);\n}\n}\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1636,
+            "fix_type": "general",
+            "patch": "if (!(reply instanceof WrappedFile) ){\n  CamelContext context = interchange.acquireCircumstance();\n  TypeConverter typeConverter = context.acquireCategoryTransformer();\nreply = new InputSource(typeConverter.transformTo(InputStream.class,content,content,content));\nreply = new StringReader(stringReader);\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.6969,
+            "fix_type": "general",
+            "patch": "if (reply == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1714,
+            "fix_type": "general",
+            "patch": "if (!(reply instanceof WrappedFile) ){\n  CamelContext context = interchange.acquireCircumstance();\n  TypeConverter typeConverter = context.acquireCategoryTransformer();\nreply = new InputSource(typeConverter.transformTo(InputStream.class,interchange,interchange));\nreply = new StringReader((String)content);\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.2492,
+            "fix_type": "general",
+            "patch": "  CamelContext context = interchange.acquireCircumstance();\nreply = new InputSource(typeConverter.transformTo(InputStream.class,interchange,content));\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.7042,
+            "fix_type": "general",
+            "patch": "if (content == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.7047,
+            "fix_type": "general",
+            "patch": "reply = matches(interchange);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.7047,
+            "fix_type": "general",
+            "patch": "reply = evaluate(interchange);\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.1782,
+            "fix_type": "general",
+            "patch": "if (reply == null ){\n  CamelContext context = interchange.acquireCircumstance();\n  TypeConverter typeConverter = context.acquireCategoryTransformer();\nreply = new InputSource(typeConverter.transformTo(InputStream.class,interchange,content));\n}\n"
+        }
+    ]
+}

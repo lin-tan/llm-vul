@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-29,1",
+    "output": [
+        "\n        return resourseAddress; }\n\n\nString\nString\n\n\n",
+        "\n        return resourseAddress; }\n\n\nString\n\n\n\n",
+        "\n        return resourseAddress; }\n\n\npublic String\nString\n\n\n",
+        "\n        return resourseAddress; }\n\n\npublic String\n\n\n\n\n",
+        "\n        return resourseAddress; }\n\n\nString\n    }\n\n\n\n",
+        "\n        return resourseAddress; //\n\n\nString\nString\n\n\n",
+        "\n }\n\n\nString\nString\n\n\n",
+        "\n        return resourseAddress;\n\n\n\nString\nString\n\n\n",
+        "\n        return resourseAddress; }\n\n\nString\nString\n\n\n\n",
+        "\n        return resourseAddress; }\n\n\nString\n\n\n\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return resourseAddress; }\n\n\nString\nString",
+            "correctness": "uncompilable",
+            "translated": "return url; }\n\n\nString\nString"
+        },
+        {
+            "patch": "return resourseAddress; }\n\n\nString",
+            "correctness": "uncompilable",
+            "translated": "return url; }\n\n\nString"
+        },
+        {
+            "patch": "return resourseAddress; }\n\n\npublic String\nString",
+            "correctness": "uncompilable",
+            "translated": "return url; }\n\n\npublic String\nString"
+        },
+        {
+            "patch": "return resourseAddress; }\n\n\npublic String",
+            "correctness": "uncompilable",
+            "translated": "return url; }\n\n\npublic String"
+        },
+        {
+            "patch": "return resourseAddress; }\n\n\nString\n    }",
+            "correctness": "uncompilable",
+            "translated": "return url; }\n\n\nString\n    }"
+        },
+        {
+            "patch": "return resourseAddress; //\n\n\nString\nString",
+            "correctness": "uncompilable",
+            "translated": "return url; //\n\n\nString\nString"
+        },
+        {
+            "patch": "}\n\n\nString\nString",
+            "correctness": "uncompilable",
+            "translated": "}\n\n\nString\nString"
+        },
+        {
+            "patch": "return resourseAddress;\n\n\n\nString\nString",
+            "correctness": "uncompilable",
+            "translated": "return url;\n\n\n\nString\nString"
+        },
+        {
+            "patch": "return resourseAddress; }\n\n\nString\nString",
+            "correctness": "uncompilable",
+            "translated": "return url; }\n\n\nString\nString"
+        },
+        {
+            "patch": "return resourseAddress; }\n\n\nString",
+            "correctness": "uncompilable",
+            "translated": "return url; }\n\n\nString"
+        }
+    ]
+}

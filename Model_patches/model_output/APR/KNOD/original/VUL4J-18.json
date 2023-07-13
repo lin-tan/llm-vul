@@ -1,0 +1,65 @@
+{
+    "id": 9,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2448,
+            "fix_type": "insert",
+            "patch": "if (request == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.3754,
+            "fix_type": "general",
+            "patch": "return request.getPathInfo();\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2746,
+            "fix_type": "insert",
+            "patch": "if (request == null ){\nthrow new WikiContext(\"\");\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2746,
+            "fix_type": "insert",
+            "patch": "if (request == null ){\nthrow new WikiContext(\"0\");\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.4362,
+            "fix_type": "general",
+            "patch": "return m_engine.getPathInfo();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4362,
+            "fix_type": "general",
+            "patch": "return m_pathPrefix.getPathInfo();\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.3186,
+            "fix_type": "insert",
+            "patch": "if (request == null ){\nthrow new IllegalArgumentException(\"\");\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.3186,
+            "fix_type": "insert",
+            "patch": "if (request == null ){\nthrow new IllegalArgumentException(\"0\");\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.3205,
+            "fix_type": "insert",
+            "patch": "if (request == null )return null;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5809,
+            "fix_type": "general",
+            "patch": "return request.getPathInfo(m_engine);\n"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n\npublic String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n\npublic String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n\npublic String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n\npublic String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn convertChar(exempt, charString);\n}\n\npublic String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn convertChar(exempt, charString);\n}\n\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn exempt[0] + charString + exempt[1];\n}\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn exempt[0] + charString + exempt[1];\n}\n\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn exempt[charString.length()];\n}\n}\n",
+        "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn exempt[charString.length()];\n}\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn cStr;\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn cStr;\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn cStr;\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn cStr;\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn charString;\n}",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn cStr;\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn convertChar(exempt, charString);\n}",
+            "correctness": "uncompilable",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn encodeCharacter(immune, cStr);\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn exempt[0] + charString + exempt[1];\n}",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn immune[0] + cStr + immune[1];\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn exempt[0] + charString + exempt[1];\n}",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn immune[0] + cStr + immune[1];\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn exempt[charString.length()];\n}",
+            "correctness": "uncompilable",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn immune[cStr.length()];\n}"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a )\n{\n\tchar charValue = a.charValue();\n\tString charString = String.valueOf(charValue);\n\treturn exempt[charString.length()];\n}",
+            "correctness": "uncompilable",
+            "translated": "public String encodeCharacter( char[] immune, Character c )\n{\n\tchar charValue = c.charValue();\n\tString cStr = String.valueOf(charValue);\n\treturn immune[cStr.length()];\n}"
+        }
+    ]
+}

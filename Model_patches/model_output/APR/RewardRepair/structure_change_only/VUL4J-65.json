@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "For(int index = 1;file.exists();index++) {",
+        "For(int index = 2;file.exists();index++) {",
+        "For(int index = 3;file.exists();index++) {",
+        "for(int index = 1;file.exists();index++) {",
+        "for(int index = 1;file.exists();index++) {",
+        "For(int index = 0;file.exists();index++) {",
+        "for(int index = 2;file.exists();index++) {",
+        "for(int index = 2;file.exists();index++) {",
+        "// for(int index = 2;file.exists();index++) {",
+        "for(int index = 0;file.exists();index++) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "For(int index = 1;file.exists();index++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "For(int index = 2;file.exists();index++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "For(int index = 3;file.exists();index++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for(int index = 1;file.exists();index++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for(int index = 1;file.exists();index++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "For(int index = 0;file.exists();index++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for(int index = 2;file.exists();index++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for(int index = 2;file.exists();index++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "// for(int index = 2;file.exists();index++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for(int index = 0;file.exists();index++) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

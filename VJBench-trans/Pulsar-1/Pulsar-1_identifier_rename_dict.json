@@ -1,0 +1,43 @@
+{
+    "method": {
+        "validateTopicOwnership": "confirmSubjectPossession",
+        "release": "free",
+        "validateGlobalNamespaceOwnership": "confirmUniversalTitleScopePossession",
+        "asyncReadEntry": "asyncRetrieveItem",
+        "clientAppId": "customerAppNumber",
+        "readEntryFailed": "retrieveItemUnsuccess",
+        "getTopicReference": "acquireSubjectMention",
+        "generateResponseWithEntry": "produceReplyWithItem",
+        "internalGetMessageById": "innerAcquireNewsThroughNumber",
+        "isGlobal": "whetherUniversal",
+        "getManagedLedger": "acquireAdministeredRecords",
+        "validateTopicOperation": "confirmSubjectAction",
+        "readEntryComplete": "retrieveItemFinish",
+        "": ""
+    },
+    "variable": {
+        "ledger": "records",
+        "npe": "nullPointerException",
+        "authoritative": "reliable",
+        "ctx": "obj",
+        "entryId": "itemNumber",
+        "ledgerId": "recordsNumber",
+        "entry": "item",
+        "topicName": "subjectTitle",
+        "topic": "subject",
+        "TopicOperation.PEEK_MESSAGES": "SubjectAction.GLANCENEWS",
+        "namespaceName": "titleScopeTitle",
+        "asyncResponse": "asyncReply",
+        "": ""
+    },
+    "class": {
+        "ManagedLedgerImpl": "AdministeredRecordsImpl",
+        "ManagedLedgerException": "AdministeredRecordsException",
+        "Entry": "Item",
+        "PersistentTopic": "TenaciousSubject",
+        "PositionImpl": "PlaceImpl",
+        "RestException": "RestException",
+        "AsyncCallbacks.ReadEntryCallback": "AsyncCallbacks.RetrieveRecordCallback",
+        "TopicOperation": "SubjectAction"
+    }
+}

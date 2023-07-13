@@ -1,0 +1,12 @@
+[
+  "return \"null\";",
+  "if((url == null)){\nreturn \"null\";}",
+  "String name = StandardCharsets.UTF_8.name();\n",
+  "final String name = StandardCharsets.UTF_8.name();\n",
+  "String name = StringUtils.name();\n",
+  "encodedUrl = encodedUrl.replaceAll(\"null\", \"null\");\n",
+  "String name = name();\n",
+  "String name = url.name();\n",
+  "encodedUrl = encodedUrl.replaceAll(\"null\", \"null\");\nreturn \"null\";",
+  "StandardCharsets.UTF_8.name();\n"
+]

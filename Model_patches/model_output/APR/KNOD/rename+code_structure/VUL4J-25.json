@@ -1,0 +1,65 @@
+{
+    "id": 15,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.465,
+            "fix_type": "general",
+            "patch": "  String name = StandardCharsets.UTF_8.unescapeXml(URLDecoder.decode(resourseAddress,name));\n"
+        },
+        {
+            "rank": 2,
+            "score": -1.0072,
+            "fix_type": "general",
+            "patch": "encodeForJSString(resourseAddress);\n"
+        },
+        {
+            "rank": 3,
+            "score": -1.0072,
+            "fix_type": "general",
+            "patch": "filterHTML(resourseAddress);\n"
+        },
+        {
+            "rank": 4,
+            "score": -1.1101,
+            "fix_type": "general",
+            "patch": "return encodeResourseAddress;\n"
+        },
+        {
+            "rank": 5,
+            "score": -1.228,
+            "fix_type": "general",
+            "patch": "encodeForJSString(encodeResourseAddress);\n"
+        },
+        {
+            "rank": 6,
+            "score": -1.228,
+            "fix_type": "general",
+            "patch": "filterHTML(encodeResourseAddress);\n"
+        },
+        {
+            "rank": 7,
+            "score": -1.2562,
+            "fix_type": "general",
+            "patch": "return encodeForJSString(resourseAddress);\n"
+        },
+        {
+            "rank": 8,
+            "score": -1.2562,
+            "fix_type": "general",
+            "patch": "return filterHTML(resourseAddress);\n"
+        },
+        {
+            "rank": 9,
+            "score": -1.2905,
+            "fix_type": "general",
+            "patch": "activate();\n"
+        },
+        {
+            "rank": 10,
+            "score": -1.2905,
+            "fix_type": "general",
+            "patch": "deactivate();\n"
+        }
+    ]
+}

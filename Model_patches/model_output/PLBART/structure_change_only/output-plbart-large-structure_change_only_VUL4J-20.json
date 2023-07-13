@@ -1,0 +1,57 @@
+{
+    "function range": "3,5-15,5",
+    "output": [
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = get ( i ) ; i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [i ] = get ( i ) ; i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = this. get ( i ) ; i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval[i ] = get ( i ) ; i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = getFloat ( i ) ; i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = toFloat ( i ) ; i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = get ( i ). floatValue(); i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = valueAt ( i ) ; i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = this [ i ] ; i++; } return retval; }",
+        "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = this. get ( i ) ; i++; } return retval ; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = get ( i ) ; i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [i ] = get ( i ) ; i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = this. get ( i ) ; i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval[i ] = get ( i ) ; i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = getFloat ( i ) ; i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = toFloat ( i ) ; i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = get ( i ). floatValue(); i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = valueAt ( i ) ; i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = this [ i ] ; i++; } return retval; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public float[] toFloatArray() { int size = size(); float[] retval = new float[size]; int i = 0; while( i < size ) { retval [ i ] = this. get ( i ) ; i++; } return retval ; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

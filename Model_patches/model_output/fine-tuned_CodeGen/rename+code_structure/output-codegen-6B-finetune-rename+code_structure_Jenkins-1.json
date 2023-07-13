@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor proctor : nodeMonitorList) {\n        z.put(proctor.getClass().getName(), proctor.information(this));\n    }\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor protor : nodeMonitorList) {\n        z.put(protor.getClass().getName(), protor.information(this));\n    }\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor proctor : nodeMonitorList) {\n        z.put(proctor.getName(), proctor.information(this));\n    }\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n        z.put(nodeMonitor.getClass().getName(), nodeMonitor.information(this));\n    }\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor protor : nodeMonitorList) {\n        z.put(protor.getName(), protor.information(this));\n    }\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor proactor : nodeMonitorList) {\n        z.put(proactor.getClass().getName(), proactor.information(this));\n    }\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n        z.put(nodeMonitor.getName(), nodeMonitor.information(this));\n    }\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor proctor : nodeMonitorList) {\n        z.put(proctor.getClass().getName(), proctor.information(this));\n        i++;\n    }\n<|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor nodeMonitor : nodeMonitorList) {\n        z.put(nodeMonitor.getClass().getName(), nodeMonitor.information(this));\n        i++;\n    }\n<|endoftext|>",
+        "@Exported(inline=true)\npublic Map<String,Object> acquireProctorInformation() { \n    List<VertexProctor> nodeMonitorList = VertexProctor.acquireWhole();\n    Map<String,Object> z = new HashMap<String, Object>();\n    int i = 0;\n// buggy lines start:\n    while(i < nodeMonitorList.size() ){\n        VertexProctor proctor = nodeMonitorList.get(i);\n        Class proctorClass = proctor.getClass();\n        String name  = proctorClass.getName();\n        z.put( name,proctor.information(this));\n        i++;\n    }\n// buggy lines end\n    return z;\n}\n// fixed lines:\n    for (VertexProctor protor : nodeMonitorList) {\n        z.put(protor.getClass().getName(), protor.information(this));\n        i++;\n    }\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    for (VertexProctor proctor : nodeMonitorList) {\n        z.put(proctor.getClass().getName(), proctor.information(this));\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (NodeMonitor monitor : nodeMonitorList) {\n        r.put(monitor.getClass().getName(), monitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor protor : nodeMonitorList) {\n        z.put(protor.getClass().getName(), protor.information(this));\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (NodeMonitor protor : nodeMonitorList) {\n        r.put(protor.getClass().getName(), protor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor proctor : nodeMonitorList) {\n        z.put(proctor.getName(), proctor.information(this));\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    for (NodeMonitor monitor : nodeMonitorList) {\n        r.put(monitor.getName(), monitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor nodeMonitor : nodeMonitorList) {\n        z.put(nodeMonitor.getClass().getName(), nodeMonitor.information(this));\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n        r.put(nodeMonitor.getClass().getName(), nodeMonitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor protor : nodeMonitorList) {\n        z.put(protor.getName(), protor.information(this));\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    for (NodeMonitor protor : nodeMonitorList) {\n        r.put(protor.getName(), protor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor proactor : nodeMonitorList) {\n        z.put(proactor.getClass().getName(), proactor.information(this));\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (NodeMonitor proactor : nodeMonitorList) {\n        r.put(proactor.getClass().getName(), proactor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor nodeMonitor : nodeMonitorList) {\n        z.put(nodeMonitor.getName(), nodeMonitor.information(this));\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n        r.put(nodeMonitor.getName(), nodeMonitor.data(this));\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor proctor : nodeMonitorList) {\n        z.put(proctor.getClass().getName(), proctor.information(this));\n        i++;\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (NodeMonitor monitor : nodeMonitorList) {\n        r.put(monitor.getClass().getName(), monitor.data(this));\n        i++;\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor nodeMonitor : nodeMonitorList) {\n        z.put(nodeMonitor.getClass().getName(), nodeMonitor.information(this));\n        i++;\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (NodeMonitor nodeMonitor : nodeMonitorList) {\n        r.put(nodeMonitor.getClass().getName(), nodeMonitor.data(this));\n        i++;\n    }\n"
+        },
+        {
+            "patch": "    for (VertexProctor protor : nodeMonitorList) {\n        z.put(protor.getClass().getName(), protor.information(this));\n        i++;\n    }\n",
+            "correctness": "compile_success",
+            "translated": "    for (NodeMonitor protor : nodeMonitorList) {\n        r.put(protor.getClass().getName(), protor.data(this));\n        i++;\n    }\n"
+        }
+    ]
+}

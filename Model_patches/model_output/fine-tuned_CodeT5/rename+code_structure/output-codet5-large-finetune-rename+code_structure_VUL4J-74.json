@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\tsecureRandomInstance.nextBytes(new byte[1]);\n</s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(new byte[0]);\n</s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(1);\n</s></s></s></s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(new byte[2]);\n</s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(getSeed());\n</s></s></s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes((byte[]) 1);\n</s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes((byte[]) 0);\n</s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(seed);\n</s></s></s></s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(byte[1]);\n</s></s>",
+        "<pad><s>\tsecureRandomInstance.nextBytes(0);\n</s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(new byte[1]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(new byte[1]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(new byte[0]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(new byte[0]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(1);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes(1);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(new byte[2]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(new byte[2]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(getSeed());\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(getSeed());\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes((byte[]) 1);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes((byte[]) 1);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes((byte[]) 0);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes((byte[]) 0);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(seed);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(seed);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(byte[1]);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(byte[1]);\n"
+        },
+        {
+            "patch": "\tsecureRandomInstance.nextBytes(0);\n",
+            "correctness": "uncompilable",
+            "translated": "\trnd.nextBytes(0);\n"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "",
+    "output": [
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"toString\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeEquals\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"toString\").add(\"equals\").add(\"hashCodeEquals\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"toString\").add(\"hashCodeEquals\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeEquals\").add(\"toString\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"toString\").add(\"notify\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeEquals\").add(\"notify\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"notify\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeEquals\").add(\"hashCodeEquals\").add(\"notifyAll\").add(\"wait\").build();",
+        "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeChecked\").add(\"notifyAll\").add(\"wait\").build();"
+    ],
+    "validation_result": [
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"toString\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeEquals\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"toString\").add(\"equals\").add(\"hashCodeEquals\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"toString\").add(\"hashCodeEquals\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeEquals\").add(\"toString\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"toString\").add(\"notify\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeEquals\").add(\"notify\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"notify\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeEquals\").add(\"hashCodeEquals\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "private static final Set<String> RESTRICTED_METHODS = ImmutableSet.<String> builder().add(\"clone\").add(\"hashCode\").add(\"equals\").add(\"hashCodeChecked\").add(\"notifyAll\").add(\"wait\").build();",
+            "correctness": "compile_success"
+        }
+    ]
+}

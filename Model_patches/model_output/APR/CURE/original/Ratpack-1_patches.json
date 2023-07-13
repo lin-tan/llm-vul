@@ -1,0 +1,37 @@
+{
+    "VUL4J-10015-159-160": {
+        "src": "Http CaMeL Headers netty CaMeL Headers = new Default CaMeL Http CaMeL Headers ( false ) ;",
+        "patches": [
+            {
+                "patch": "MutableHeaders response = new DefaultResponseTransmitter( channel , channel , clock , nettyRequest , requestBody ) ;"
+            },
+            {
+                "patch": "DefaultContext request = new DefaultContext( clock.instant( ) , requestHeaders , nettyRequest , requestBody ) ;"
+            },
+            {
+                "patch": "boolean hasBody =( contentLength >0) ||( transferEncoding != null ) ;"
+            },
+            {
+                "patch": "response = new DefaultContext( clock.instant( ) , requestHeaders , nettyRequest , requestBody ) ;"
+            },
+            {
+                "patch": "try { InetSocketAddress remoteAddress =( InetSocketAddress ) channel.remoteAddress( ) ;"
+            },
+            {
+                "patch": "if( request == null ) { throw new IllegalArgumentException( 'Failure: ') ; }"
+            },
+            {
+                "patch": "if( request == null ) { throw new IllegalArgumentException( ' + status.toString() + ') ; }"
+            },
+            {
+                "patch": "if( request == null ) { throw new IllegalArgumentException( '\\r\\n') ; }"
+            },
+            {
+                "patch": "if( request == null ) { throw new IllegalArgumentException( 'Connection reset by peer') ; }"
+            },
+            {
+                "patch": "if( request == null ) { throw new IllegalArgumentException( '') ; }"
+            }
+        ]
+    }
+}

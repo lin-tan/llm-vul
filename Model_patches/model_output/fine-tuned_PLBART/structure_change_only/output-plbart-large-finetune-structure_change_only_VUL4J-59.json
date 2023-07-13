@@ -1,0 +1,66 @@
+{
+    "output": [
+        "t.transition(data);",
+        "t.transition(Data_escape);",
+        "t.transition(Data);",
+        "t.transition(Data_null);",
+        "t.transition(TagPending);",
+        "t.error(this);",
+        "t.emitTagPending();",
+        "t.transition(Data_end);",
+        "t.transition();",
+        "return;"
+    ],
+    "validation_result": [
+        {
+            "patch": "t.transition(data);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(data);"
+        },
+        {
+            "patch": "t.transition(Data_escape);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data_escape);"
+        },
+        {
+            "patch": "t.transition(Data);",
+            "correctness": "compile_success",
+            "translated": "t.transition(Data);"
+        },
+        {
+            "patch": "t.transition(Data_null);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data_null);"
+        },
+        {
+            "patch": "t.transition(TagPending);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(TagPending);"
+        },
+        {
+            "patch": "t.error(this);",
+            "correctness": "compile_success",
+            "translated": "t.error(this);"
+        },
+        {
+            "patch": "t.emitTagPending();",
+            "correctness": "compile_success",
+            "translated": "t.emitTagPending();"
+        },
+        {
+            "patch": "t.transition(Data_end);",
+            "correctness": "uncompilable",
+            "translated": "t.transition(Data_end);"
+        },
+        {
+            "patch": "t.transition();",
+            "correctness": "uncompilable",
+            "translated": "t.transition();"
+        },
+        {
+            "patch": "return;",
+            "correctness": "uncompilable",
+            "translated": "return;"
+        }
+    ]
+}

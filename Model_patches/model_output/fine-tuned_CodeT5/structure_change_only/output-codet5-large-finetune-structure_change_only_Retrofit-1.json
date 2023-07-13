@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>  this.jaxbContext = context;\n</s></s></s></s></s>",
+        "<pad><s>  this.jaxbContext = jaxbContext;\n</s></s></s>",
+        "<pad><s>  this.context = jaxbContext;\n</s></s></s></s></s>",
+        "<pad><s>  this.context = JAXBContext.newInstance(context);\n</s>",
+        "<pad><s>  this.jaxbContext = context;\n</s></s></s></s>",
+        "<pad><s>  this.context = context.getJAXBContext();\n</s></s>",
+        "<pad><s>  jaxbContext = context;\n</s></s></s></s></s></s></s>",
+        "<pad><s>  this.context = JAXBContext.newInstance(type);\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  this.jaxbContext = context;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = context;\n"
+        },
+        {
+            "patch": "  this.jaxbContext = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = jaxbContext;\n"
+        },
+        {
+            "patch": "  this.context = jaxbContext;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = jaxbContext;\n"
+        },
+        {
+            "patch": "  this.context = JAXBContext.newInstance(context);\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = JAXBContext.newInstance(context);\n"
+        },
+        {
+            "patch": "  this.jaxbContext = context;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.jaxbContext = context;\n"
+        },
+        {
+            "patch": "  this.context = context.getJAXBContext();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = context.getJAXBContext();\n"
+        },
+        {
+            "patch": "  jaxbContext = context;\n",
+            "correctness": "uncompilable",
+            "translated": "  jaxbContext = context;\n"
+        },
+        {
+            "patch": "  this.context = JAXBContext.newInstance(type);\n",
+            "correctness": "uncompilable",
+            "translated": "  this.context = JAXBContext.newInstance(type);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

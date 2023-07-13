@@ -1,0 +1,37 @@
+{
+    "VUL4J-6-313-314": {
+        "src": "for ( int i = 0 ; i < this . rcount ; i ++ ) {",
+        "patches": [
+            {
+                "patch": "for( int i =0; i < this.rcount ; i ++ ) {"
+            },
+            {
+                "patch": "for( int i =0; i < this.rcount ; i ++ ) { this.hashSize = HashAlgorithm.getValue( data , offset +32) ;"
+            },
+            {
+                "patch": "for( int i =0; i < this.rcount ; i ++ ) { this.hashSize = HashAlgorithm.getValue( data , offset +4) ;"
+            },
+            {
+                "patch": "for( int i =0; i < this.rcount ; i ++ ) { this.hashSize = HashAlgorithm.getValue( data , offset +22) ;"
+            },
+            {
+                "patch": "for( int i =0; i < this.rcount ; i ++ ) { this.hashSize = HashAlgorithm.getValue( data , offset +26) ;"
+            },
+            {
+                "patch": "for( int i =0; i < this.rcount ; i ++ ) { this.hashSize = HashAlgorithm.getValue( data , offset +24) ;"
+            },
+            {
+                "patch": "for( int i =0; i < this.rcount ; i ++ ) { for( int i =0; i < this.hashSize ; i ++ ) {"
+            },
+            {
+                "patch": "for( int i =0; i < ZipShort.getValue( data , offset +32) ; i ++ ) {"
+            },
+            {
+                "patch": "for( int i =0; i < ZipShort.getValue( data , offset +4) ; i ++ ) {"
+            },
+            {
+                "patch": "for( int i =0; i < ZipShort.getValue( data , offset +22) ; i ++ ) {"
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "records.asyncRetrieveItem(new PlaceImpl(itemsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "try { records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "records.asyncRetrieveItem(new PlaceImpl(itemNumber, recordsNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "records.asyncRetrieveItem(new PlaceImpl(recordId, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+        "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemId), new AsyncCallbacks.ReadEntryCallback() {",
+        "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber, null), new AsyncCallbacks.ReadEntryCallback() {",
+        "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback(null)) {",
+        "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback(asyncReply));",
+        "records.asyncRetrieveItem(new PlaceImpl(recordsNumber), new AsyncCallbacks.ReadEntryCallback() {"
+    ],
+    "validation_result": [
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(itemsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(itemsNumber, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "compile_success",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "try { records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "try { ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(itemNumber, recordsNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "compile_success",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(entryId, ledgerId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(recordId, itemNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(recordId, entryId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemId), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(ledgerId, itemId), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber, null), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "compile_success",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId, null), new AsyncCallbacks.ReadEntryCallback() {"
+        },
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback(null)) {",
+            "correctness": "uncompilable",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback(null)) {"
+        },
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(recordsNumber, itemNumber), new AsyncCallbacks.ReadEntryCallback(asyncReply));",
+            "correctness": "uncompilable",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(ledgerId, entryId), new AsyncCallbacks.ReadEntryCallback(asyncResponse));"
+        },
+        {
+            "patch": "records.asyncRetrieveItem(new PlaceImpl(recordsNumber), new AsyncCallbacks.ReadEntryCallback() {",
+            "correctness": "uncompilable",
+            "translated": "ledger.asyncReadEntry(new PositionImpl(ledgerId), new AsyncCallbacks.ReadEntryCallback() {"
+        }
+    ]
+}

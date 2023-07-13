@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n       \n    }",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (Exception e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n       \n    }",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (FileNotFoundException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n\n    }",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n\n    }",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (FileNotFoundException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n       \n   ",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n\n       \n   ",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n   \n}",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n    }\n\n",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n    }\n}",
+        "\n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n\n\n    }"
+    ],
+    "validation_result": [
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (Exception e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (FileNotFoundException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n\n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (FileNotFoundException e) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n   \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n    }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n    }\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();       \n       \n\n       \n       \n       \n       \n       \n       \n       \n       \n       \n\n       \n        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n    }\n    catch (IOException e) {\n       \n\n\n\n       \n       \n\n       \n       \n       \n\n\n    }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

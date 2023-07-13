@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-6,5",
+    "output": [
+        "public String getForwardPage ( HttpServletRequest request ) { return null ; }",
+        "public String getForwardPage ( HttpServletRequest request ) { return forwardPage ; }",
+        "public String getForwardPage ( HttpServletRequest request ) { return \" \" ; }",
+        "public String getForwardPage ( HttpServletRequest request ) { return FORWARD_PAGE ; }",
+        "public String getForwardPage ( final HttpServletRequest request ) { return null ; }",
+        "public String getForwardPage ( final HttpServletRequest request ) { return forwardPage ; }",
+        "public String getForwardPage ( HttpServletRequest request ) { return \" / \" ; }",
+        "public String getForwardPage ( HttpServletRequest request ) { return REDIRECT_HOME ; }",
+        "public String getForwardPage ( HttpServletRequest request ) { return REDIRECT_PAGE ; }",
+        "; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public String getForwardPage ( HttpServletRequest request ) { return null ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage ( HttpServletRequest request ) { return forwardPage ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public String getForwardPage ( HttpServletRequest request ) { return \" \" ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage ( HttpServletRequest request ) { return FORWARD_PAGE ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public String getForwardPage ( final HttpServletRequest request ) { return null ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage ( final HttpServletRequest request ) { return forwardPage ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public String getForwardPage ( HttpServletRequest request ) { return \" / \" ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage ( HttpServletRequest request ) { return REDIRECT_HOME ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "public String getForwardPage ( HttpServletRequest request ) { return REDIRECT_PAGE ; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

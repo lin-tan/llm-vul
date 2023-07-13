@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n        retval[i] = get(i);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n        retval[i] = get(i);",
+        "\n        retval[i] = get(i);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = get(i);\n        retval[i] = this.get(i);AsAs\nAs_(retval);\n}",
+        "\n }\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n      }\n    return retval;\n  }",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n        retval[i] = i; }\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n        retval[i] = i; }\n   \n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n        retval[i] = i; }\n   //",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n        retval[i] = i; }\n   //}"
+    ],
+    "validation_result": [
+        {
+            "patch": "retval[i] = get(i);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get(i);\n\n        retval[i] = get(i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get(i);\n        retval[i] = get(i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get(i);\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = get(i);\n        retval[i] = this.get(i);AsAs\nAs_(retval);\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\n\n\n\n\n\n\n\n\n\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get(i);\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n      }\n    return retval;\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get(i);\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n        retval[i] = i; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get(i);\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n        retval[i] = i; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get(i);\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n        retval[i] = i; }\n   //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = get(i);\n\n        retval[i] = get(i);\n\n        retval[i] = get(i);\n        retval[i] = this.get(i);\nAs()\n    {\n     \n        retval[i] = i; }\n   //}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

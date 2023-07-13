@@ -1,0 +1,37 @@
+{
+    "VUL4J-8-114-115": {
+        "src": "out = Zip CaMeL Encoding CaMeL Helper . grow CaMeL Buffer CaMeL By ( out , increment ) ;",
+        "patches": [
+            {
+                "patch": "out = ZipEncodingHelper.growBufferBy( out , increment ) ;"
+            },
+            {
+                "patch": "if( increment >0) out = ZipEncodingHelper.growBufferBy( out , increment ) ;"
+            },
+            {
+                "patch": "if( increment >0) { out = ZipEncodingHelper.growBufferBy( out , increment ) ; }"
+            },
+            {
+                "patch": "out = ZipEncodingHelper.growBufferBy( out , increment ) ; }"
+            },
+            {
+                "patch": "out = ZipEncodingHelper.growBufferBy( out , increment , increment ) ;"
+            },
+            {
+                "patch": "if( tmp == null ) { tmp = CharBuffer.allocate(8) ;"
+            },
+            {
+                "patch": "if( tmp == null ) { tmp = CharBuffer.allocate(16) ;"
+            },
+            {
+                "patch": "if( tmp == null ) { tmp = CharBuffer.allocate(4) ;"
+            },
+            {
+                "patch": "if( tmp == null ) { tmp = CharBuffer.allocate(12) ;"
+            },
+            {
+                "patch": "if( tmp == null ) { tmp = CharBuffer.allocate(6) ;"
+            }
+        ]
+    }
+}

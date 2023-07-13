@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (step.getWait() &&!(item instanceof Item)) {",
+        "if (step.getWait() &&!(item instanceof ParameterizedJob)) {",
+        "if (step.getWait() &&!(item instanceof ParameterizedJob)) {",
+        "if (step.getWait() &&!(item instanceof Item)) {",
+        "if (item instanceof ParameterizedJobMixIn.ParameterizedJob) {",
+        "if (item instanceof ParameterizedJobMixIn.ParameterizedJob) {",
+        "if (!(item instanceof ParameterizedJobMixIn.ParameterizedJob)) {",
+        "if (item.getWait() &&!(item instanceof ParameterizedJob)) {",
+        "if (!(item instanceof Item)) {",
+        "if (item.getWait() &&!(item instanceof ParameterizedJob)) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (step.getWait() &&!(item instanceof Item)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (step.getWait() &&!(item instanceof ParameterizedJob)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (step.getWait() &&!(item instanceof ParameterizedJob)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (step.getWait() &&!(item instanceof Item)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (item instanceof ParameterizedJobMixIn.ParameterizedJob) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (item instanceof ParameterizedJobMixIn.ParameterizedJob) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (!(item instanceof ParameterizedJobMixIn.ParameterizedJob)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (item.getWait() &&!(item instanceof ParameterizedJob)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(item instanceof Item)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (item.getWait() &&!(item instanceof ParameterizedJob)) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

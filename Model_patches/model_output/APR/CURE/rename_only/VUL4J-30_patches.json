@@ -1,0 +1,37 @@
+{
+    "VUL4J-30-58-59": {
+        "src": "if ( ! ( content . get CaMeL Class ( ) . equals ( String . class ) ) || ! Pattern . compile ( acquire CaMeL Url CaMeL Regular CaMeL Expression ( ) , Pattern . CASE _ INSENSITIVE ) . matcher ( String . value CaMeL Of ( content ) ) . matches ( ) ) {",
+        "patches": [
+            {
+                "patch": "if( !( content.getClass( ).equals( String.class ) ) || ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( content ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( content.getClass( ).equals( String.class ) ) || ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( content ) ).matches( ) )"
+            },
+            {
+                "patch": "if( !( content.getClass( ).equals( String.class ) && ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( content ) ).matches( ) ) ) {"
+            },
+            {
+                "patch": "if( !( content.equals( String.class ) ) || ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( content ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( content.getClass( ).equals( String.class ) ) || ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( content ) ).matches( ) ) { return ;"
+            },
+            {
+                "patch": "if( !( content.getClass( ).equals( String.class ) || ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( content ) ).matches( ) ) ) {"
+            },
+            {
+                "patch": "if( ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( content ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( content.getClass( ).equals( String.class ) ) && ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( content ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( content.getClass( ).equals( String.class ) ) || ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matcher( content.getClass( ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( content.getClass( ).equals( String.class ) ) || ! Pattern.compile( acquireUrlRegularExpression( ) , Pattern.CASE_INSENSITIVE ).matches( String.valueOf( content ) ) ) {"
+            }
+        ]
+    }
+}

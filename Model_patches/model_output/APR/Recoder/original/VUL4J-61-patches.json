@@ -1,0 +1,12 @@
+[
+  "if((documentBuilderFactory != null)){\n",
+  "DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n",
+  "return Stream.of(new MapResult(Collections.emptyMap()));",
+  "documentBuilderFactory.setIgnoringElementContentWhitespace(true);\n",
+  "FileUtils.checkReadAllowed(url);\n",
+  "documentBuilderFactory.newDocumentBuilder();\n",
+  "path = (StringUtils.isEmpty(path))?\"null\":path;\n",
+  "return;\n",
+  "handleNode(stack, nodeList.item(i), simpleMode);\n",
+  "result.add(new MapResult(stack.pollFirst()));\n"
+]

@@ -1,0 +1,65 @@
+{
+    "id": 3,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1969,
+            "fix_type": "general",
+            "patch": "  String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.3701,
+            "fix_type": "insert",
+            "patch": "if (objectiveFolder == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4097,
+            "fix_type": "insert",
+            "patch": "if (noter == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.272,
+            "fix_type": "general",
+            "patch": "  ZipArchiveEntry objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.272,
+            "fix_type": "general",
+            "patch": "  IOUtils objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4951,
+            "fix_type": "insert",
+            "patch": "if (provider == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.318,
+            "fix_type": "general",
+            "patch": " final String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.543,
+            "fix_type": "insert",
+            "patch": "if (objectiveFolder.acquireTitle() == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.3774,
+            "fix_type": "general",
+            "patch": "  String objectiveDirectoryPath = null;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5572,
+            "fix_type": "insert",
+            "patch": "if (objectiveFolder == null ){\nthrow new IOException();\n}\n"
+        }
+    ]
+}

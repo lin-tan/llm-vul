@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (!UNENCODED_SET.contains(c))",
+        "if (UNENCODED_SET.contains(c)) {",
+        "if(UNENCODED_SET.contains(c)) {",
+        "if(!UNENCODED_SET.contains(c))",
+        "if (!UNENCODED_SET.contains(c)) {",
+        "if (UNENCODED_SET.contains(c))",
+        "if (NENCODED_SET.contains(c)) {",
+        "if (UNENCODED_SET.contains(c.charValue()))",
+        "if (UNNENCODED_SET.contains(c)) {",
+        "if(UNENCODED_SET.contains(c.charValue()))"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!UNENCODED_SET.contains(c))",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (UNENCODED_SET.contains(c)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(UNENCODED_SET.contains(c)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(!UNENCODED_SET.contains(c))",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!UNENCODED_SET.contains(c)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (UNENCODED_SET.contains(c))",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (NENCODED_SET.contains(c)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (UNENCODED_SET.contains(c.charValue()))",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (UNNENCODED_SET.contains(c)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if(UNENCODED_SET.contains(c.charValue()))",
+            "correctness": "compile_success"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XMLInputFactory.SUPPORT_EXTERNAL_ENTITIES, Boolean.FALSE);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XMLInputFactory.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, FALSE);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XML_INPUT_FACTORY_SUPPORT_EXTERNAL_ENTITIES, Boolean.FALSE);\n<|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n<|endoftext|><|endoftext|><|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE_VALUE);\n<|endoftext|>",
+        "protected XmlManufactory(ObjectCodec objcodec, int xpCharacteristics, int xgCharacteristics,\n        XMLInputFactory xmlInput, XMLOutputFactory xmlOutput,\n        String textComponentName)\n{\n    super(objcodec);\n    if (xmlOutput == null) {\n        xmlOutput = XMLOutputFactory.newInstance();\n    }\n    xmlCreatorCharacteristics = xgCharacteristics;\n    if (xmlInput == null) {\n        xmlInput = XMLInputFactory.newInstance();\n// buggy lines start:\n        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n// buggy lines end\n    }\n    textComponentCfgName = textComponentName;\n    xmlAnalyzerCharacteristics = xpCharacteristics;\n    initializeManufactories(xmlInput, xmlOutput);\n    xmlOutputManufactory = xmlOutput;\n    xmlInputManufactory = xmlInput;\n}\n// fixed lines:\n        xmlInput.setProperty(XML_INPUT_FACTORY_IS_SUPPORTING_EXTERNAL_ENTITIES, FALSE);\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);\n",
+            "correctness": "compile_success",
+            "translated": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.TRUE);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XMLInputFactory.SUPPORT_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn.setProperty(XMLInputFactory.SUPPORT_EXTERNAL_ENTITIES, Boolean.FALSE);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XMLInputFactory.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn.setProperty(XMLInputFactory.SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);\n",
+            "correctness": "compile_success",
+            "translated": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, FALSE);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, FALSE);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);\n",
+            "correctness": "compile_success",
+            "translated": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XML_INPUT_FACTORY_SUPPORT_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn.setProperty(XML_INPUT_FACTORY_SUPPORT_EXTERNAL_ENTITIES, Boolean.FALSE);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n",
+            "correctness": "compile_success",
+            "translated": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE_VALUE);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, Boolean.FALSE_VALUE);\n"
+        },
+        {
+            "patch": "        xmlInput.setProperty(XML_INPUT_FACTORY_IS_SUPPORTING_EXTERNAL_ENTITIES, FALSE);\n",
+            "correctness": "uncompilable",
+            "translated": "        xmlIn.setProperty(XML_INPUT_FACTORY_IS_SUPPORTING_EXTERNAL_ENTITIES, FALSE);\n"
+        }
+    ]
+}

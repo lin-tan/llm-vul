@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-14,1",
+    "output": [
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 ) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if( exempt == null || exempt.length == 0 ) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (charString == null || charString.length() == 0 ) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 || exempt.length == 1) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 || exempt.length == 1) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append(\"%'), y); return x.toString(); }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); } }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 || exempt.length == 1) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x. toString(); }",
+        "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 ) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null || immune.length == 0) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 ) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null || immune.length == 0) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if( exempt == null || exempt.length == 0 ) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null || immune.length == 0) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (charString == null || charString.length() == 0 ) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (cStr == null || cStr.length() == 0) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 || exempt.length == 1) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null || immune.length == 0 || immune.length == 1) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 || exempt.length == 1) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append(\"%'), y); return x.toString(); }",
+            "correctness": "uncompilable",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null || immune.length == 0 || immune.length == 1) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append(\"%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null || immune.length == 0) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 || exempt.length == 1) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x. toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null || immune.length == 0 || immune.length == 1) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        },
+        {
+            "patch": "public String convertChar( char[] exempt, Character a ) { String charString = String.valueOf(a.charValue()); byte[] byteArray; StringBuilder x; if (exempt == null || exempt.length == 0 ) return charString; byteArray = convertToUtf8Bytes(charString); x = new StringBuilder(byteArray.length * 3); for(byte y : byteArray) attachTwoUppercaseHexadecimal(x.append('%'), y); return x.toString(); }",
+            "correctness": "compile_success",
+            "translated": "public String encodeCharacter( char[] immune, Character c ) { String cStr = String.valueOf(c.charValue()); byte[] bytes; StringBuilder sb; if (immune == null || immune.length == 0) return cStr; bytes = toUtf8Bytes(cStr); sb = new StringBuilder(bytes.length * 3); for(byte b : bytes) appendTwoUpperHex(sb.append('%'), b); return sb.toString(); }"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    array.add(toObject(parser, componentType));\n   public static <T> T\n\n\n\npublic static <T>\n\npublic static <T> T\n\n\n   \n    } else {\n       \n    array.add(fieldName);\n\n\n   \n\n\n\n}",
+        "\n    array.add(toObject(parser, componentType));\n   public static <T> T\n\n\n\npublic static <T>\n\npublic static <T> T\n\n\n   \n    } else {\n       \n\n\n    array.add(fieldName);\n   \n\n\n\n}",
+        "\n    array.add(toObject(parser, componentType));\n   @SuppressWarnings(\"unchecked\")\n\n\n\n\npublic static <T>\n\npublic static <T>\n\n\n   \n    } else {\n       \n    array.add(fieldName);\n\n\n   \n\n\n\n}",
+        "\n    array.add(toObject(parser, componentType));\n   @SuppressWarnings(\"unchecked\")\n\n\n\n\npublic static <T>\n\npublic static <T>\n\n\n   \n    } else {\n       \n\n\n    array.add(fieldName);\n   \n\n\n\n}",
+        "\n    array.add(toObject(parser, componentType));\n   @SuppressWarnings(\"unchecked\")\npublic static <T>\n\n\n\npublic static <T>\n\npublic static <T>\n\n\n   \n    } else {\n       \n\n\n\n   \n\n\n\n}",
+        "\n    array.add(toObject(parser, componentType));\n   public static <T> T\n\n\n\npublic static <T>\n\npublic static <T>\n\n\n   \n    } else {\n       \n    array.add(fieldName);\n\n\n   \n\n\n\n}",
+        "\n    array.add(toObject(parser, componentType));\n   @Override\npublic <T> T[] toArray(Class<T> type) {\n\n\n\n}",
+        "\n    array.add(toObject(parser, componentType));\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T\n\n\n\n}",
+        "\n    array.add(toObject(parser, componentType));\n   ",
+        "\n    array.add(toObject(parser, componentType));\n   public static <T> T\n\n\n\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   public static <T> T\n\n\n\npublic static <T>\n\npublic static <T> T\n\n\n   \n    } else {\n       \n    array.add(fieldName);\n\n\n   \n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   public static <T> T\n\n\n\npublic static <T>\n\npublic static <T> T\n\n\n   \n    } else {\n       \n\n\n    array.add(fieldName);\n   \n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   @SuppressWarnings(\"unchecked\")\n\n\n\n\npublic static <T>\n\npublic static <T>\n\n\n   \n    } else {\n       \n    array.add(fieldName);\n\n\n   \n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   @SuppressWarnings(\"unchecked\")\n\n\n\n\npublic static <T>\n\npublic static <T>\n\n\n   \n    } else {\n       \n\n\n    array.add(fieldName);\n   \n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   @SuppressWarnings(\"unchecked\")\npublic static <T>\n\n\n\npublic static <T>\n\npublic static <T>\n\n\n   \n    } else {\n       \n\n\n\n   \n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   public static <T> T\n\n\n\npublic static <T>\n\npublic static <T>\n\n\n   \n    } else {\n       \n    array.add(fieldName);\n\n\n   \n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   @Override\npublic <T> T[] toArray(Class<T> type) {\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   @SuppressWarnings(\"unchecked\")\npublic static <T> T\n\n\n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "array.add(toObject(parser, componentType));\n   public static <T> T\n\n\n\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

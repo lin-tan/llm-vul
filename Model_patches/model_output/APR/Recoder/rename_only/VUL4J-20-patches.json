@@ -1,0 +1,12 @@
+[
+  "result[j] = acquireItem(j);\n",
+  "result[j] = (COSNumeral)acquireItem(j);\n",
+  "result[j] = (COSNumeral)get(j);\n",
+  "result[j] = (COSNumeral)remove(j);\n",
+  "return acquireItem(j);",
+  "acquireItem((COSNumeral)acquireItem(j));\n",
+  "if((j instanceof COSNumeral)){\n",
+  "j = (COSNumeral)acquireItem(j);\n",
+  "acquireItem(result, (COSNumeral)acquireItem(j));\n",
+  "acquireItem(result, j);\n"
+]

@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-15,5",
+    "output": [
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getName(), nodeMonitor); } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorName(), nodeMonitor); } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorName(), nodeMonitor.getMonitorData()); } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getName(), nodeMonitor.getValue()); } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getNodeName(), nodeMonitor); } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getName(), nodeMonitor.getMonitorData()); } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorName(), nodeMonitor.getMonitorValue()); } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorName(), nodeMonitor.getMonitorData()); i++; } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorId(), nodeMonitor.getMonitorData()); } return r; }",
+        "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getNodeName(), nodeMonitor.getMonitorData()); } return r; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getName(), nodeMonitor); } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorName(), nodeMonitor); } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorName(), nodeMonitor.getMonitorData()); } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getName(), nodeMonitor.getValue()); } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getNodeName(), nodeMonitor); } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getName(), nodeMonitor.getMonitorData()); } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorName(), nodeMonitor.getMonitorValue()); } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorName(), nodeMonitor.getMonitorData()); i++; } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getMonitorId(), nodeMonitor.getMonitorData()); } return r; }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "@Exported(inline=true) public Map<String,Object> getMonitorData() { List<NodeMonitor> nodeMonitorList = NodeMonitor.getAll(); Map<String,Object> r = new HashMap<String, Object>(); int i = 0; for (NodeMonitor nodeMonitor : nodeMonitorList) { r.put(nodeMonitor.getNodeName(), nodeMonitor.getMonitorData()); } return r; }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n\n  ctx",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n\n}",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n\n  ctx.channel",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n}",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n}\n\n",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n\n  channel",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n\n  ctx.",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n\n  channel.event",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n\n});\n\n",
+        "\n  MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n\n});\n\n "
+    ],
+    "validation_result": [
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n\n  ctx",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n\n  ctx.channel",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n\n  channel",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n\n  ctx.",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n\n  channel.event",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n \n\n \n\n \n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n}\n\n \n \n \n\n});",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "MutableHeaders nettyHeaders = new NettyHeadersBackedMutableHeaders(nettyRequest.headers());\n \n \n\n\n\n \n\n \n}\n\n\n \n \n\n \n  DefaultContext.RequestConstants requestConstants = new DefaultContext.RequestConstants();\n \n\n\n\n \n \n\n \n \n \n\n});",
+            "correctness": "uncompilable"
+        }
+    ]
+}

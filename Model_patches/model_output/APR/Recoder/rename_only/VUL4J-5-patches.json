@@ -1,0 +1,12 @@
+[
+  "String objectiveDirectoryPath = noter.getCanonicalPath();\n",
+  "if((noter == null)){\nreturn;\n}",
+  "return;\n",
+  "if((noter != null)){\n",
+  "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n",
+  "String objectiveDirectoryPath = provider.getCanonicalPath();\n",
+  "if((objectiveFolder == null)){\nreturn;\n}",
+  "if((objectiveFolder != null)){\n",
+  "String objectiveDirectoryPath = objectiveDirectoryPath.getCanonicalPath();\n",
+  "if((noter == null)){\n"
+]

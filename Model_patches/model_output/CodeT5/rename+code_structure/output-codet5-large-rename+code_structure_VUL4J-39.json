@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-20,5",
+    "output": [
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String return }",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n(\n\n\n: public public String\n    return }",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    }\n}\npublic String getQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String return }",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    }\n}\npublic String getQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n(\n\n\n: public public String\n    return }",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n: public public String\n    return }",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String\n }",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n(\n\n\n: public public public String public public String\n= target!=",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String\n= target",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String\n\n   ",
+        " else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String\n    \n"
+    ],
+    "validation_result": [
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String return }",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    } }\npublic String toQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String return }"
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n(\n\n\n: public public String\n    return }",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    } }\npublic String toQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n(\n\n\n: public public String\n    return }"
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    }\n}\npublic String getQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String return }",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String getQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String return }"
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    }\n}\npublic String getQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n(\n\n\n: public public String\n    return }",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String getQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n(\n\n\n: public public String\n    return }"
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n: public public String\n    return }",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    } }\npublic String toQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String return }"
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String\n }",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    } }\npublic String toQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n\n\n\n\n\n: public public String\n }"
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n(\n\n\n: public public public String public public String\n= target!=",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    } }\npublic String toQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n(\n\n\n: public public public String public public String\n= target!="
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String\n= target",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    } }\npublic String toQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String\n= target"
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    } }\npublic String toQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String"
+        },
+        {
+            "patch": "else {\n        s.append(\"clientId=\");\n        s.append(customerIdentification);\n    } }\npublic String toQueryString() {\n    StringBuilder s = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (customerIdentification!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String",
+            "correctness": "uncompilable",
+            "translated": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    } }\npublic String toQueryString() {\n    StringBuilder sb = new StringBuilder();\n\n\n\n   \n\n   \n\n\n\n    if (clientId!= null) {\n       \n    }\n\n\n\n\n\n\n: public public public String public public String"
+        }
+    ]
+}

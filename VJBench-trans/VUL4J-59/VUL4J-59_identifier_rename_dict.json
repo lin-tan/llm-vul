@@ -1,0 +1,32 @@
+{
+    "method": {
+        "appendAttributeValue": "attachPropertyContent",
+        "emitTagPending": "releaseLabelUndecided",
+        "read": "retrieve",
+        "eofError": "endOfFileError",
+        "consume": "devour",
+        "error": "mistake",
+        "unconsume": "notDevour",
+        "transition": "conversion",
+        "": ""
+    },
+    "variable": {
+        "r": "m",
+        "c": "a",
+        "t": "s",
+        "AttributeValue_doubleQuoted": "DoubleQuotedPropertyValue",
+        "tagPending": "labelUndecided",
+        "nullChar": "charBeNull",
+        "Data": "Information",
+        "AttributeValue_singleQuoted": "SingleQuotedPropertyValue",
+        "replacementChar": "substitutionChar",
+        "eof": "endOfFile",
+        "AttributeValue_unquoted": "UnquotedPropertyValue",
+        "": ""
+    },
+    "class": {
+        "CharacterReader": "CharScanner",
+        "Tokeniser": "Lexer",
+        "": ""
+    }
+}

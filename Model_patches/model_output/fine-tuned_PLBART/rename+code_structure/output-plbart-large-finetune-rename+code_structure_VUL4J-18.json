@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return r.getPathInfo();",
+        "return \"String_Node_Str\";",
+        "return r.getRequestURI();",
+        "String path = r.getRequestURI(); return path;",
+        "String path = r.getPath(); return path;",
+        "return r.getAbsolutePath();",
+        "return r.getContextPath();",
+        "return null;",
+        "return r.toString();",
+        "return pathInfo;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return r.getPathInfo();",
+            "correctness": "compile_success",
+            "translated": "return request.getPathInfo();"
+        },
+        {
+            "patch": "return \"String_Node_Str\";",
+            "correctness": "compile_success",
+            "translated": "return \"String_Node_Str\";"
+        },
+        {
+            "patch": "return r.getRequestURI();",
+            "correctness": "compile_success",
+            "translated": "return request.getRequestURI();"
+        },
+        {
+            "patch": "String path = r.getRequestURI(); return path;",
+            "correctness": "compile_success",
+            "translated": "String path = request.getRequestURI(); return path;"
+        },
+        {
+            "patch": "String path = r.getPath(); return path;",
+            "correctness": "uncompilable",
+            "translated": "String path = request.getPath(); return path;"
+        },
+        {
+            "patch": "return r.getAbsolutePath();",
+            "correctness": "uncompilable",
+            "translated": "return request.getAbsolutePath();"
+        },
+        {
+            "patch": "return r.getContextPath();",
+            "correctness": "compile_success",
+            "translated": "return request.getContextPath();"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "compile_success",
+            "translated": "return null;"
+        },
+        {
+            "patch": "return r.toString();",
+            "correctness": "compile_success",
+            "translated": "return request.toString();"
+        },
+        {
+            "patch": "return pathInfo;",
+            "correctness": "uncompilable",
+            "translated": "return pathInfo;"
+        }
+    ]
+}

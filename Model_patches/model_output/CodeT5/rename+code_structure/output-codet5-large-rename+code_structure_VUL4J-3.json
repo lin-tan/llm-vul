@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-37,1",
+    "output": [
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n\npublic\n\n           \n           \n           \n            sproducer.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    } catch",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sproducer.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sproducer.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    }",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    }",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n\npublic\n\n           \n           \n           \n            sproducer.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch (",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sproducer.setNamespaceAware(true);\n\n }\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    } catch",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n    public\n   \n\n\n       \n           \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    }",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n       \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch",
+        "\n            sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n    public\n   \n\n\n       \n           \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch"
+    ],
+    "validation_result": [
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n\npublic\n\n           \n           \n           \n            sproducer.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    } catch",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (Exception ex) {\n       \n\n   \n   \n   \n\npublic\n\n           \n           \n           \n            sfactory.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    } catch"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sproducer.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (XMLStreamException ex) {\n       \n\n   \n   \n   \n\npublic\n\n       \n   \n   \n            sfactory.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    } catch"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (XMLStreamException ex) {\n       \n\n   \n   \n   \n\npublic\n\n       \n   \n   \n            sfactory.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    } catch"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sproducer.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    }",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (XMLStreamException ex) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sfactory.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    }"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    }",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (XMLStreamException ex) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sfactory.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    }"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n\npublic\n\n           \n           \n           \n            sproducer.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch (",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (Exception ex) {\n       \n\n   \n   \n   \n\npublic\n\n           \n           \n           \n            sfactory.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n} catch ("
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sproducer.setNamespaceAware(true);\n\n }\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    } catch",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (Exception ex) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n           \n            sfactory.setNamespaceAware(true);\n\n }\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    } catch"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n    public\n   \n\n\n       \n           \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n    }",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (Exception ex) {\n       \n\n   \n   \n   \n    public\n   \n\n\n       \n           \n\n\n            sfactory.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    }"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (XMLStreamException p) {\n       \n\n   \n   \n   \n\npublic\n\n\n       \n       \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (XMLStreamException ex) {\n       \n\n   \n   \n   \n\npublic\n\n       \n   \n   \n            sfactory.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    } catch"
+        },
+        {
+            "patch": "sproducer.setNamespaceAware(true); =\n    } catch (Exception p) {\n       \n\n   \n   \n   \n    public\n   \n\n\n       \n           \n\n\n            sproducer.setNamespaceAware(true);\n           \n\n\n\n    } catch (Exception p) {\n       \n   \n\n   \n   \n   \n\n} catch",
+            "correctness": "uncompilable",
+            "translated": "sfactory.setNamespaceAware(true); =\n    } catch (Exception ex) {\n       \n\n   \n   \n   \n\npublic\n\n           \n           \n           \n            sfactory.setNamespaceAware(true);\n\n\n           \n\n\n\n    } catch (Exception ex) {\n       \n   \n\n   \n   \n   \n\n    } catch"
+        }
+    ]
+}

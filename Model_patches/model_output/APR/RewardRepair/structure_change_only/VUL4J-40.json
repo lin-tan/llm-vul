@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (dbUserName!= null && dbUserName.equals(requestUserName)) {",
+        "if (dbUserName.equals(requestUserName.toLowerCase())) {",
+        "if (dbUserName == null || dbUserName.equals(requestUserName)) {",
+        "if ((dbUserName == null) || dbUserName.equals(requestUserName)) {",
+        "if (!dbUserName.equals(requestUserName)) {",
+        "if (dbUserName.equalsIgnoreCase(requestUserName)) {",
+        "if (dbUserName.equals(requestUserName.trim())) {",
+        "if (dbUserName == null || dbUserName.equals(requestUserName)) {",
+        "if (dbUserName.equals(scimUserFromRequest.getUserName())) {",
+        "if (scimUserFromDb.isVerified() == scimUserFromRequest.isVerified()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (dbUserName!= null && dbUserName.equals(requestUserName)) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName.toLowerCase())) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (dbUserName == null || dbUserName.equals(requestUserName)) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if ((dbUserName == null) || dbUserName.equals(requestUserName)) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (!dbUserName.equals(requestUserName)) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (dbUserName.equalsIgnoreCase(requestUserName)) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (dbUserName.equals(requestUserName.trim())) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (dbUserName == null || dbUserName.equals(requestUserName)) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (dbUserName.equals(scimUserFromRequest.getUserName())) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "if (scimUserFromDb.isVerified() == scimUserFromRequest.isVerified()) {",
+            "correctness": "test_timeout"
+        }
+    ]
+}

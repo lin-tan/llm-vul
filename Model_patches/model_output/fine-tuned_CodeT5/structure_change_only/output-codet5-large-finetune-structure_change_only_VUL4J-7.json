@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>                    throw new EOFException();\n</s></s>",
+        "<pad><s>                    return -1L;\n</s>",
+        "<pad><s>                    return -2;\n</s></s>",
+        "<pad><s>                    return 0;\n</s></s></s>",
+        "<pad><s>                    return -1;\n</s></s>",
+        "<pad><s>                    return length;\n</s></s></s>",
+        "<pad><s>                    buf.reset();\n</s></s>",
+        "<pad><s>                    break;\n</s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "                    throw new EOFException();\n",
+            "correctness": "compile_success",
+            "translated": "                    throw new EOFException();\n"
+        },
+        {
+            "patch": "                    return -1L;\n",
+            "correctness": "uncompilable",
+            "translated": "                    return -1L;\n"
+        },
+        {
+            "patch": "                    return -2;\n",
+            "correctness": "compile_success",
+            "translated": "                    return -2;\n"
+        },
+        {
+            "patch": "                    return 0;\n",
+            "correctness": "compile_success",
+            "translated": "                    return 0;\n"
+        },
+        {
+            "patch": "                    return -1;\n",
+            "correctness": "compile_success",
+            "translated": "                    return -1;\n"
+        },
+        {
+            "patch": "                    return length;\n",
+            "correctness": "compile_success",
+            "translated": "                    return length;\n"
+        },
+        {
+            "patch": "                    buf.reset();\n",
+            "correctness": "compile_success",
+            "translated": "                    buf.reset();\n"
+        },
+        {
+            "patch": "                    break;\n",
+            "correctness": "uncompilable",
+            "translated": "                    break;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

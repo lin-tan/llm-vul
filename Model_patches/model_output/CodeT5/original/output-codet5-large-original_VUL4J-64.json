@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    return factory;",
+        "\n    return factory;\n  }",
+        "\n\n    return factory;",
+        "\n    return factory;\n  }\n",
+        "\n  }",
+        "\n    return factory;\n}",
+        "\n  return factory;",
+        "\n\treturn factory;",
+        "\n    }",
+        "\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return factory;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory;\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory;\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return factory;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

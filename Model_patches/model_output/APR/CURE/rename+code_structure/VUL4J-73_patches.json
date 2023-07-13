@@ -1,0 +1,37 @@
+{
+    "VUL4J-73-54-56": {
+        "src": "String watchword CaMeL B = unify CaMeL Watchword CaMeL And CaMeL Random CaMeL Data ( unprocessed CaMeL Watchword , random CaMeL Data , false ) ; String watchword CaMeL A = enciphered CaMeL Watchword + $STRING$ ;",
+        "patches": [
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + '';"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + '{';"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + ' and ';"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + '}';"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + 'AS IS';"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + ''; watchwordA = isWatchwordCaseInsensitive ? watchwordA : watchwordB ;"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + '{'; watchwordA = isWatchwordCaseInsensitive ? watchwordA : watchwordB ;"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + ' and '; watchwordA = isWatchwordCaseInsensitive ? watchwordA : watchwordB ;"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + '}'; watchwordA = isWatchwordCaseInsensitive ? watchwordA : watchwordB ;"
+            },
+            {
+                "patch": "String watchwordB = unifyWatchwordAndRandomData( unprocessedWatchword , randomData , false ) ; String watchwordA = encipheredWatchword + 'AS IS'; watchwordA = isWatchwordCaseInsensitive ? watchwordA : watchwordB ;"
+            }
+        ]
+    }
+}

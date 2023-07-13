@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        DocumentBuilder archiveCreator = archiveCreatorFactory.newDocumentBuilder();\n</s></s>",
+        "<pad><s>        final DocumentBuilder archiveCreator = archiveCreatorFactory.newDocumentBuilder();\n</s>",
+        "<pad><s>        DocumentBuilder archiveCreator = documentBuilderFactory.newDocumentBuilder();\n</s></s>",
+        "<pad><s>        DocumentBuilder archiveCreatorBuilder = archiveCreatorFactory.newDocumentBuilder();\n</s>",
+        "<pad><s>        documentBuilder = archiveCreatorFactory.newDocumentBuilder();\n</s></s></s></s>",
+        "<pad><s>        archiveCreator = archiveCreatorFactory.newDocumentBuilder();\n</s></s></s></s>",
+        "<pad><s>        DocumentBuilder archiveCreator = documentBuilderFactory.newDocumentBuilder();\n</s></s></s>",
+        "<pad><s>        DocumentBuilder archiveCreator = null;\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        DocumentBuilder archiveCreator = archiveCreatorFactory.newDocumentBuilder();\n",
+            "correctness": "test_timeout",
+            "translated": "        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "        final DocumentBuilder archiveCreator = archiveCreatorFactory.newDocumentBuilder();\n",
+            "correctness": "test_timeout",
+            "translated": "        final DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "        DocumentBuilder archiveCreator = documentBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "test_timeout",
+            "translated": "        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "        DocumentBuilder archiveCreatorBuilder = archiveCreatorFactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "        DocumentBuilder archiveCreatorBuilder = documentBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "        documentBuilder = archiveCreatorFactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "        documentBuilder = documentBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "        archiveCreator = archiveCreatorFactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "        documentBuilder = documentBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "        DocumentBuilder archiveCreator = documentBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "test_timeout",
+            "translated": "        DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "        DocumentBuilder archiveCreator = null;\n",
+            "correctness": "test_timeout",
+            "translated": "        DocumentBuilder documentBuilder = null;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

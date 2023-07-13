@@ -1,0 +1,24 @@
+{
+    "method": {
+        "getNextReadableEntry": "acquireFollowingLegibleItem",
+        "expand": "enlarge",
+        "getName": "acquireTitle",
+        "writeEntryDataTo": "noteDownItemInformationTo",
+        "isDirectory": "whetherFolder"
+    },
+    "variable": {
+        "parent": "upperFolder",
+        "nextEntry": "followingItem",
+        "f": "a",
+        "supplier": "provider",
+        "targetDirectory": "objectiveFolder",
+        "targetDirPath": "objectiveDirectoryPath",
+        "writer": "noter",
+        "o": "u"
+    },
+    "class": {
+        "ArchiveEntrySupplier": "DocumentItemProvider",
+        "ArchiveEntry": "DocumentItem",
+        "EntryWriter": "ItemNoter"
+    }
+}

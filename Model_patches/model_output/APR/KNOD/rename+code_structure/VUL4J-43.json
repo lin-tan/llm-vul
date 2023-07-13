@@ -1,0 +1,65 @@
+{
+    "id": 21,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2572,
+            "fix_type": "general",
+            "patch": "!item.isDirectory()"
+        },
+        {
+            "rank": 2,
+            "score": -0.4421,
+            "fix_type": "insert",
+            "patch": "if (entryName == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5449,
+            "fix_type": "insert",
+            "patch": "if (outputFile == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.4626,
+            "fix_type": "general",
+            "patch": "item != null"
+        },
+        {
+            "rank": 5,
+            "score": -0.547,
+            "fix_type": "general",
+            "patch": "item.isDirectory() != null"
+        },
+        {
+            "rank": 6,
+            "score": -0.5566,
+            "fix_type": "general",
+            "patch": "item == null"
+        },
+        {
+            "rank": 7,
+            "score": -0.5594,
+            "fix_type": "general",
+            "patch": "item.isDirectory() == null"
+        },
+        {
+            "rank": 8,
+            "score": -0.5744,
+            "fix_type": "insert",
+            "patch": "if (targetFolder == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.7055,
+            "fix_type": "general",
+            "patch": "!item.isDirectory(item)"
+        },
+        {
+            "rank": 10,
+            "score": -0.8454,
+            "fix_type": "general",
+            "patch": "item.isDirectory()"
+        }
+    ]
+}

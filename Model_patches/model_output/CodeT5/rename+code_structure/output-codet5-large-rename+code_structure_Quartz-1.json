@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-58,5",
+    "output": [
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archiveCreator",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archive",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n\n    \n     \n     \n      };\n     \n     \n     \n\n    archiveCreator",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n    };\n   \n   \n   \n\n    archive",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n    };\n   \n   \n   \n\n    archiveCreator",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n    };\n   \n   \n     \n\n    archive",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n    };\n   \n   \n     \n\n    archiveCreator",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n      archiveCreator",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n\n    \n     \n     \n    };\n   \n   \n   \n\n    archiveCreator",
+        "\n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archiveAnalyzer"
+    ],
+    "validation_result": [
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archiveCreator",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    docBuilder"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archive",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archive"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n\n    \n     \n     \n      };\n     \n     \n     \n\n    archiveCreator",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    docBuilder"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n    };\n   \n   \n   \n\n    archive",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archive"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n    };\n   \n   \n   \n\n    archiveCreator",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    docBuilder"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n    };\n   \n   \n     \n\n    archive",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archive"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n    };\n   \n   \n     \n\n    archiveCreator",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    docBuilder"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n      archiveCreator",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    docBuilder"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n    \n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n\n    \n     \n     \n    };\n   \n   \n   \n\n    archiveCreator",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    docBuilder"
+        },
+        {
+            "patch": "archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archiveAnalyzer",
+            "correctness": "uncompilable",
+            "translated": "docBuilder = docBuilderFactory.newDocumentBuilder();\n   \n   \n\n   \n   \n     \n     \n     \n     \n    };\n   \n   \n    docBuilder = docBuilderFactory.newDocumentBuilder();\n\n    \n   \n    \n    \n    \n     \n     \n      };\n     \n     \n     \n\n    archiveAnalyzer"
+        }
+    ]
+}

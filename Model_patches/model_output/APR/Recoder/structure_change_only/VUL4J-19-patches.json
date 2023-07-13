@@ -1,0 +1,12 @@
+[
+  "setCurrentAccessPermission(new AccessPermission(dicPermissions));\n",
+  "validatePerms(new AccessPermission(dicPermissions));\n",
+  "",
+  "setCurrentAccessPermission(new AccessPermission(passwordByteArray));\n",
+  "isUserPassword(new AccessPermission(dicPermissions));\n",
+  "logIfStrongEncryptionMissing();\n",
+  "setCurrentAccessPermission(new AccessPermission(computedPassword));\n",
+  "return;\n",
+  "setCurrentAccessPermission(new AccessPermission(encryptionKey));\n",
+  "setCurrentAccessPermission(new AccessPermission());\n"
+]

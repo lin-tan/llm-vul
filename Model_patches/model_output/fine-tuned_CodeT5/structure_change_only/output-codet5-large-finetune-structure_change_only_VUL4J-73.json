@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\tString pass1 = mergePasswordAndSalt(rawPass, salt, false);\n</s></s></s>",
+        "<pad><s>\tString pass1 = mergePasswordAndSalt(rawPass, salt, true);\n</s></s></s>",
+        "<pad><s>\tString pass1 = mergePasswordAndSalt(rawPass, salt);\n</s></s></s></s></s>",
+        "<pad><s>\tString pass1 = mergePasswordAndSalt(rawPass, salt, false, false);\n</s>",
+        "<pad><s>\tString pass1 = mergePasswordAndSalt(rawPass, encPass, false);\n</s></s>",
+        "<pad><s>\tString pass1 = encPass + \"\";\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString pass1 = encPass;\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString pass2 = encPass;\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tString pass1 = mergePasswordAndSalt(rawPass, salt, false);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(rawPass, salt, false);\n"
+        },
+        {
+            "patch": "\tString pass1 = mergePasswordAndSalt(rawPass, salt, true);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(rawPass, salt, true);\n"
+        },
+        {
+            "patch": "\tString pass1 = mergePasswordAndSalt(rawPass, salt);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(rawPass, salt);\n"
+        },
+        {
+            "patch": "\tString pass1 = mergePasswordAndSalt(rawPass, salt, false, false);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(rawPass, salt, false, false);\n"
+        },
+        {
+            "patch": "\tString pass1 = mergePasswordAndSalt(rawPass, encPass, false);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(rawPass, encPass, false);\n"
+        },
+        {
+            "patch": "\tString pass1 = encPass + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass + \"\";\n"
+        },
+        {
+            "patch": "\tString pass1 = encPass;\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass;\n"
+        },
+        {
+            "patch": "\tString pass2 = encPass;\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass2 = encPass;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

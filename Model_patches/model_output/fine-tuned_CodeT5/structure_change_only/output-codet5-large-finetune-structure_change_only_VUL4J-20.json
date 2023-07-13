@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        retval[i] = (float) getObject( i );\n</s>",
+        "<pad><s>        retval[i] = getDouble( i );\n</s></s></s></s>",
+        "<pad><s>        retval[i] = (Float) getObject( i );\n</s>",
+        "<pad><s>        retval[i] = (float) getObject( i);\n</s>",
+        "<pad><s>        retval[i] = getFloat( i );\n</s></s></s></s>",
+        "<pad><s>        retval[i] = getNumber( i );\n</s></s></s></s>",
+        "<pad><s>        retval[i] = getAsNumber( i);\n</s></s></s>",
+        "<pad><s>        retval[i] = (Float) getObject( i);\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        retval[i] = (float) getObject( i );\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (float) getObject( i );\n"
+        },
+        {
+            "patch": "        retval[i] = getDouble( i );\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = getDouble( i );\n"
+        },
+        {
+            "patch": "        retval[i] = (Float) getObject( i );\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (Float) getObject( i );\n"
+        },
+        {
+            "patch": "        retval[i] = (float) getObject( i);\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (float) getObject( i );\n"
+        },
+        {
+            "patch": "        retval[i] = getFloat( i );\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = getFloat( i );\n"
+        },
+        {
+            "patch": "        retval[i] = getNumber( i );\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = getNumber( i );\n"
+        },
+        {
+            "patch": "        retval[i] = getAsNumber( i);\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = getAsNumber( i);\n"
+        },
+        {
+            "patch": "        retval[i] = (Float) getObject( i);\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (Float) getObject( i );\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

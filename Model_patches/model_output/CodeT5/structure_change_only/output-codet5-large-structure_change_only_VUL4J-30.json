@@ -1,0 +1,57 @@
+{
+    "function range": "3,5-17,5",
+    "output": [
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   ",
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   \n   \n  }",
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n   \n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n        String s = value.toString();\n       \n       \n   \n   \n   \n   \n   ",
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n        String s = value.toString();\n       \n       \n   \n   \n   \n   \n   ",
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n        String s = value.toString();\n       \n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   ",
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n   \n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n        String s = value.toString();\n       \n       \n   \n   \n   \n   \n   \n   \n  }",
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n        String s = value.toString();\n\n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   \n   \n  }",
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n        String s = value.toString();\n       \n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   \n   \n  }",
+        "\n        String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n        String s = value.toString();\n       \n       \n   \n   \n   \n   \n   \n   ",
+        "\n        String s = value.toString(); value_class.equals(String.class) &&\n       \n\n       \n       \n    if (\n       \n   \n\n\n        if (\n   \n\n        String s = value.toString();\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   \n   "
+    ],
+    "validation_result": [
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   \n   \n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n   \n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n        String s = value.toString();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n        String s = value.toString();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n        String s = value.toString();\n       \n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n   \n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n        String s = value.toString();\n       \n       \n   \n   \n   \n   \n   \n   \n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n        String s = value.toString();\n\n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   \n   \n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n        String s = value.toString();\n       \n        if (\n   \n\n\n\n        if (\n);\n        String s = value.toString();\n   \n   \n   \n   \n   \n   \n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value\n       \n        p.reset();\n       \n       \n    if (\n       \n    if (\n\n        String s = value.toString();\n        if (\n   \n\n\n\n        if (\n        String s = value.toString();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String s = value.toString(); value_class.equals(String.class) &&\n       \n\n       \n       \n    if (\n       \n   \n\n\n        if (\n   \n\n        String s = value.toString();\n\n        if (\n);\n        String s = value.toString();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

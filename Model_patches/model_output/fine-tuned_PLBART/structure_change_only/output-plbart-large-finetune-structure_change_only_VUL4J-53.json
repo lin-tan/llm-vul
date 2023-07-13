@@ -1,0 +1,66 @@
+{
+    "output": [
+        "c.set(field, i);",
+        "int n = i - offset; c.set(field, n);",
+        "c.set(field, i - offset);",
+        "c.set(i, field);",
+        ". c.set(field, i);",
+        "c.set(field, offset + i);",
+        "c.set(field, i + offset);",
+        "c.set(offset, i);",
+        ". c.set(field, i - offset);",
+        "c.set(i - offset, field);"
+    ],
+    "validation_result": [
+        {
+            "patch": "c.set(field, i);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i);"
+        },
+        {
+            "patch": "int n = i - offset; c.set(field, n);",
+            "correctness": "compile_success",
+            "translated": "int n = i - offset; c.set(field, n);"
+        },
+        {
+            "patch": "c.set(field, i - offset);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i - offset);"
+        },
+        {
+            "patch": "c.set(i, field);",
+            "correctness": "compile_success",
+            "translated": "c.set(i, field);"
+        },
+        {
+            "patch": ". c.set(field, i);",
+            "correctness": "uncompilable",
+            "translated": ". c.set(field, i);"
+        },
+        {
+            "patch": "c.set(field, offset + i);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, offset + i);"
+        },
+        {
+            "patch": "c.set(field, i + offset);",
+            "correctness": "compile_success",
+            "translated": "c.set(field, i + offset);"
+        },
+        {
+            "patch": "c.set(offset, i);",
+            "correctness": "test_timeout",
+            "translated": "c.set(offset, i);"
+        },
+        {
+            "patch": ". c.set(field, i - offset);",
+            "correctness": "uncompilable",
+            "translated": ". c.set(field, i - offset);"
+        },
+        {
+            "patch": "c.set(i - offset, field);",
+            "correctness": "compile_success",
+            "translated": "c.set(i - offset, field);"
+        }
+    ]
+}

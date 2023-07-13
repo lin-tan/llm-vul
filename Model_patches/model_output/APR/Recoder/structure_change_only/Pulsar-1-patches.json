@@ -1,0 +1,11 @@
+[
+  "validateAdminAndClientPermission();\n",
+  "validateClientVersion();\n",
+  "validateGlobalNamespaceOwnership(namespaceName);\n",
+  "return;\n",
+  "asyncResponse.resume(restException);\n",
+  "validateTopicOperation(topicName, TopicOperation.PEEK_MESSAGES);\n",
+  "entry.release();\n",
+  "validateTopicOwnership(topicName, authoritative);\n",
+  "asyncResponse.resume(response);\n"
+]

@@ -1,0 +1,57 @@
+{
+    "function range": "2,4-21,4",
+    "output": [
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!Character.isLetterOrDigit(c)) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))) {\n            return false;\n         }\n      }\n      return true;\n   } else {\n      return false;\n   }\n}\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_' || c == '-')) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))) {\n            return false;\n         }\n      }\n      return true;\n   } else {\n      return false;\n   }\n}\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_' || c == '-')) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}\n\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_' || c == '-')) {\n            return false;\n         }\n      }\n      return true;\n   } else {\n      return false;\n   }\n}\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_' || c == '-')) {\n            return false;\n         }\n      }\n      return true;\n   } else {\n      return false;\n   }\n}\n\n}\n",
+        "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}\n\npublic static void main(String[] args) {\n   Scanner in = new Scanner(System.in);\n   String str = in.next();\n   System.out.println(isValid(str));\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!Character.isLetterOrDigit(c)) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))) {\n            return false;\n         }\n      }\n      return true;\n   } else {\n      return false;\n   }\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_' || c == '-')) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= '0' && c <= '9') || (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))) {\n            return false;\n         }\n      }\n      return true;\n   } else {\n      return false;\n   }\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_' || c == '-')) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_' || c == '-')) {\n            return false;\n         }\n      }\n      return true;\n   } else {\n      return false;\n   }\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9') || c == '_' || c == '-')) {\n            return false;\n         }\n      }\n      return true;\n   } else {\n      return false;\n   }\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "protected static boolean isValid(String str)\n{\n   if (str!= null && str.length()!= 0){\n      int i =0;\n      while(i < str.length()) {\n         char c = str.charAt(i);\n         i++;\n         if (!((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') || (c >= '0' && c <= '9'))) {\n            return false;\n         }\n      }\n      return true;\n   }\n   return false;\n}",
+            "correctness": "compile_success"
+        }
+    ]
+}

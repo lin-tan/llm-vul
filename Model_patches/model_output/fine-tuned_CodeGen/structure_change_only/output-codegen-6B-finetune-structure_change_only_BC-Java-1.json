@@ -1,0 +1,66 @@
+{
+    "output": [
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = s.getObjectAt(1);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = s.getObjectAt(0).getObject();\n<|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Integer object0 = (ASN1Integer) s.getObjectAt(0);\n<|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = s.getObjectAt(0).getValue();\n<|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = s.getObjectAt(0).getEncoded();\n<|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Primitive object0 = s.getObjectAt(0);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Integer object0 = (ASN1Integer)s.getObjectAt(0);\n<|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    Object object0 = s.getObjectAt(0);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = s.getObjectAt(0).get(0);\n<|endoftext|>",
+        "private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    ASN1Encodable object0 = s.getObjectAt(0);\n// buggy lines end\n    ASN1Encodable object1 = s.getObjectAt(1);\n    BigInteger bigInteger0 = ((ASN1Integer) object0).getValue();\n    BigInteger bigInteger1 = ((ASN1Integer) object1).getValue();\n    return new BigInteger[]{\n        bigInteger0,\n        bigInteger1\n    };\n}\n// fixed lines:\n    ASN1Encodable object0 = s.getObjectAt(0).getSequence();\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(1);\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(1);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0).getObject();\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0).getObject();\n"
+        },
+        {
+            "patch": "    ASN1Integer object0 = (ASN1Integer) s.getObjectAt(0);\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Integer object0 = (ASN1Integer) s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0).getValue();\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0).getValue();\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0).getEncoded();\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0).getEncoded();\n"
+        },
+        {
+            "patch": "    ASN1Primitive object0 = s.getObjectAt(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Primitive object0 = s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1Integer object0 = (ASN1Integer)s.getObjectAt(0);\n",
+            "correctness": "compile_success",
+            "translated": "    ASN1Integer object0 = (ASN1Integer) s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    Object object0 = s.getObjectAt(0);\n",
+            "correctness": "compile_success",
+            "translated": "    Object object0 = s.getObjectAt(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0).get(0);\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0).get(0);\n"
+        },
+        {
+            "patch": "    ASN1Encodable object0 = s.getObjectAt(0).getSequence();\n",
+            "correctness": "uncompilable",
+            "translated": "    ASN1Encodable object0 = s.getObjectAt(0).getSequence();\n"
+        }
+    ]
+}

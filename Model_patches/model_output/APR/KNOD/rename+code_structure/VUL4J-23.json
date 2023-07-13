@@ -1,0 +1,65 @@
+{
+    "id": 14,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2307,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(source);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.307,
+            "fix_type": "general",
+            "patch": "return Encode.map(source);\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.307,
+            "fix_type": "general",
+            "patch": "return Encode.getString(source);\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.4941,
+            "fix_type": "insert",
+            "patch": "if (source == null )return null;\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.3171,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(source,factory);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.3171,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(source,URL);\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4965,
+            "fix_type": "insert",
+            "patch": "source = Status.value(source);\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4965,
+            "fix_type": "insert",
+            "patch": "source = JSONObject.quote(source);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4291,
+            "fix_type": "general",
+            "patch": "return Encode.forJavaScriptSource(source,false);\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5115,
+            "fix_type": "insert",
+            "patch": "source = null;\n"
+        }
+    ]
+}

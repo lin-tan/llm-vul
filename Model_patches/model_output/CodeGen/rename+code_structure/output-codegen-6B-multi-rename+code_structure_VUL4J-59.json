@@ -1,0 +1,66 @@
+{
+    "output": [
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }else{\n               s.retrieve(a);\n           }\n       }\n   }\n}\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }else{\n               s.retrieve(a);\n           }\n       }\n    }\n}\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }else{\n               s.retrieve(a);\n           }\n       }\n   }\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }\n   }\n}\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }\n    }\n}\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }\n   }\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n}\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }\n   }\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n}\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }\n   }\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n}\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }\n   }\n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n   \n}\n",
+        "      void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }\n   }\n   \n   \n   \n   \n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        },
+        {
+            "patch": "void retrieve(Lexer s, CharScanner m) {\n           char a = m.devour();\n           if(a== endOfFile){\n               s.endOfFileError(this);\n           }\n           else{\n               s.retrieve(a);\n           }\n       }",
+            "correctness": "uncompilable",
+            "translated": "void read(Tokeniser t, CharacterReader r) {\n           char c = r.consume();\n           if(c== eof){\n               t.eofError(this);\n           }else{\n               t.read(c);\n           }\n       }"
+        }
+    ]
+}

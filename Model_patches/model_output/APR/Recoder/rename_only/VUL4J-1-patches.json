@@ -1,0 +1,12 @@
+[
+  "analyzeBatch(constituentTemplate, batch, attributeTitile);\n",
+  "analyzer.inverseConvert(constituentTemplate, batch, attributeTitile);\n",
+  "analyzer.analyzeBatch(attributeTitile);\n",
+  "analyzer.analyzeBatch(constituentTemplate);\n",
+  "analyzer.debug(constituentTemplate, batch, attributeTitile);\n",
+  "analyzer.analyzeBatch();\n",
+  "analyzer.analyzeBatch(attributeTitile, attributeTitile);\n",
+  "analyzer.analyzeBatch(constituentTemplate, attributeTitile);\n",
+  "analyzer.analyzeBatch(constituentTemplate, batch, constituentTemplate);\n",
+  ""
+]

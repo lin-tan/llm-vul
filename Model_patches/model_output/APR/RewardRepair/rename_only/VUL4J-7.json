@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "x = input.read(x);",
+        "x = input.read();",
+        "x = 0;",
+        "x = input.read(0);",
+        "|| x == -1;",
+        "x += x;",
+        "x += 1;",
+        "x = input.position();",
+        "x++;",
+        "x = -1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "x = input.read(x);",
+            "correctness": "uncompilable",
+            "translated": "l = in.read(l);"
+        },
+        {
+            "patch": "x = input.read();",
+            "correctness": "uncompilable",
+            "translated": "l = in.read();"
+        },
+        {
+            "patch": "x = 0;",
+            "correctness": "uncompilable",
+            "translated": "l = 0;"
+        },
+        {
+            "patch": "x = input.read(0);",
+            "correctness": "uncompilable",
+            "translated": "l = in.read(0);"
+        },
+        {
+            "patch": "|| x == -1;",
+            "correctness": "uncompilable",
+            "translated": "|| l == -1;"
+        },
+        {
+            "patch": "x += x;",
+            "correctness": "uncompilable",
+            "translated": "l += l;"
+        },
+        {
+            "patch": "x += 1;",
+            "correctness": "uncompilable",
+            "translated": "l += 1;"
+        },
+        {
+            "patch": "x = input.position();",
+            "correctness": "uncompilable",
+            "translated": "l = in.position();"
+        },
+        {
+            "patch": "x++;",
+            "correctness": "uncompilable",
+            "translated": "l++;"
+        },
+        {
+            "patch": "x = -1;",
+            "correctness": "uncompilable",
+            "translated": "l = -1;"
+        }
+    ]
+}

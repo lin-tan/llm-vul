@@ -1,0 +1,66 @@
+{
+    "output": [
+        "reply = typeConverter.transformTo(content, interchange, content);",
+        "if (reply == null &&!(content instanceof WrappedFile)) {",
+        "if (reply == null ||!(content instanceof WrappedFile)) {",
+        "if (reply == null) {",
+        "reply = typeConverter.transformTo(content, interchange);",
+        "if (!(content instanceof WrappedFile)) {",
+        "if (reply == null && content instanceof WrappedFile) {",
+        "if (reply!= null) {",
+        "if (reply == null && content!= null) {",
+        "return reply;"
+    ],
+    "validation_result": [
+        {
+            "patch": "reply = typeConverter.transformTo(content, interchange, content);",
+            "correctness": "uncompilable",
+            "translated": "answer = typeConverter.convertTo(body, exchange, body);"
+        },
+        {
+            "patch": "if (reply == null &&!(content instanceof WrappedFile)) {",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null &&!(body instanceof WrappedFile)) {"
+        },
+        {
+            "patch": "if (reply == null ||!(content instanceof WrappedFile)) {",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null ||!(body instanceof WrappedFile)) {"
+        },
+        {
+            "patch": "if (reply == null) {",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null) {"
+        },
+        {
+            "patch": "reply = typeConverter.transformTo(content, interchange);",
+            "correctness": "uncompilable",
+            "translated": "answer = typeConverter.convertTo(body, exchange);"
+        },
+        {
+            "patch": "if (!(content instanceof WrappedFile)) {",
+            "correctness": "uncompilable",
+            "translated": "if (!(body instanceof WrappedFile)) {"
+        },
+        {
+            "patch": "if (reply == null && content instanceof WrappedFile) {",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null && body instanceof WrappedFile) {"
+        },
+        {
+            "patch": "if (reply!= null) {",
+            "correctness": "uncompilable",
+            "translated": "if (answer!= null) {"
+        },
+        {
+            "patch": "if (reply == null && content!= null) {",
+            "correctness": "uncompilable",
+            "translated": "if (answer == null && body!= null) {"
+        },
+        {
+            "patch": "return reply;",
+            "correctness": "uncompilable",
+            "translated": "return answer;"
+        }
+    ]
+}

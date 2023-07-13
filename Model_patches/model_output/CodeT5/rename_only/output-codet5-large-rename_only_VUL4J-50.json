@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-54,1",
+    "output": [
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n();\n\t(\"</td>\");\n(\"",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\t(\n();\n\t(\"</td>\");\n(\"",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n\t();\n\t(\"\");(\"</td>\"",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n();\n\tcompose(\"\");\n\t(\">\"",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n(\n\t\t+(\"\n\tcompose((\"",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n();\n\tcompose(\"\");\n\t\n(\"",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcompose(offSiteControlLocation);\n\n\n\t\tif ((\n\t((\n\t\tcompose(\"\");(\"</",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t\tif ((\n\t((\n\tcompose(\"\");(\"</",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n(\n\t\t+(\"\n\tcompose(\">\"",
+        "\n\t\tcomposeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcompose(offSiteControlLocation);\n\n\n\t\tif ((\n\t((\n\t\tcompose(\"\");(encode"
+    ],
+    "validation_result": [
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n();\n\t(\"</td>\");\n(\"",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twriteDirectly(remoteAddr);\n\n\n\t(\n();\n\t(\"</td>\");\n(\""
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\t(\n();\n\t(\"</td>\");\n(\"",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twriteDirectly(remoteAddr);\n\n\n\t(\n();\n\t(\"</td>\");\n(\""
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n\t();\n\t(\"\");(\"</td>\"",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twriteDirectly(remoteAddr);\n\n\n\t(\n\t();\n\t(\"\");(\"</td>\""
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n();\n\tcompose(\"\");\n\t(\">\"",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twriteDirectly(remoteAddr);\n\n\n\t(\n();\n\twrite(\"\");\n\t(\">\""
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n(\n\t\t+(\"\n\tcompose((\"",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twriteDirectly(remoteAddr);\n\n\n\t(\n(\n\t\t+(\"\n\twrite((\""
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n();\n\tcompose(\"\");\n\t\n(\"",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twriteDirectly(remoteAddr);\n\n\n\t(\n();\n\twrite(\"\");\n\t\n(\""
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcompose(offSiteControlLocation);\n\n\n\t\tif ((\n\t((\n\t\tcompose(\"\");(\"</",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twrite(remoteAddr);\n\n\n\t\tif ((\n\t((\n\t\twrite(\"\");(\"</"
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t\tif ((\n\t((\n\tcompose(\"\");(\"</",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twriteDirectly(remoteAddr);\n\n\n\t\tif ((\n\t((\n\twrite(\"\");(\"</"
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcomposeStraightly(offSiteControlLocation);\n\n\n\t(\n(\n\t\t+(\"\n\tcompose(\">\"",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twriteDirectly(remoteAddr);\n\n\n\t(\n(\n\t\t+(\"\n\twrite(\">\""
+        },
+        {
+            "patch": "composeStraightly(htmlEnocdeWithoutSpace(offSiteControlLocation));\n\t\n\tcompose(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\tcompose(\"\");\n\t((\n\n\n(\n\t\tcompose(offSiteControlLocation);\n\n\n\t\tif ((\n\t((\n\t\tcompose(\"\");(encode",
+            "correctness": "uncompilable",
+            "translated": "writeDirectly(htmlEncodeButNotSpace(remoteAddr));\n\t\n\twrite(\"</td><td>\");\n\t\n\n\t\n\t((\"\");\n\twrite(\"\");\n\t((\n\n\n(\n\t\twrite(remoteAddr);\n\n\n\t\tif ((\n\t((\n\t\twrite(\"\");(encode"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);\n</s></s></s></s>",
+        "<pad><s>        Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream, null);\n</s>",
+        "<pad><s>        Document doc = archiveCreatorFactory.newDocumentBuilder().build(inputStream);\n</s></s></s>",
+        "<pad><s>        Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream, true);\n</s>",
+        "<pad><s>        Document doc = documentBuilder.parse(inputStream);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>        Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);\n</s></s></s>",
+        "<pad><s>        Document doc = XMLConstants.newDocumentBuilder().parse(inputStream);\n</s></s></s></s>",
+        "<pad><s>        Document doc = XMLHelper.parse(inputStream);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);\n",
+            "correctness": "uncompilable",
+            "translated": "        doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n"
+        },
+        {
+            "patch": "        Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream, null);\n",
+            "correctness": "test_timeout",
+            "translated": "        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, null);\n"
+        },
+        {
+            "patch": "        Document doc = archiveCreatorFactory.newDocumentBuilder().build(inputStream);\n",
+            "correctness": "uncompilable",
+            "translated": "        Document doc = documentBuilderFactory.newDocumentBuilder().build(inputStream);\n"
+        },
+        {
+            "patch": "        Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream, true);\n",
+            "correctness": "uncompilable",
+            "translated": "        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream, true);\n"
+        },
+        {
+            "patch": "        Document doc = documentBuilder.parse(inputStream);\n",
+            "correctness": "uncompilable",
+            "translated": "        Document doc = documentBuilder.parse(inputStream);\n"
+        },
+        {
+            "patch": "        Document doc = archiveCreatorFactory.newDocumentBuilder().parse(inputStream);\n",
+            "correctness": "test_timeout",
+            "translated": "        Document doc = documentBuilderFactory.newDocumentBuilder().parse(inputStream);\n"
+        },
+        {
+            "patch": "        Document doc = XMLConstants.newDocumentBuilder().parse(inputStream);\n",
+            "correctness": "uncompilable",
+            "translated": "        Document doc = XMLConstants.newDocumentBuilder().parse(inputStream);\n"
+        },
+        {
+            "patch": "        Document doc = XMLHelper.parse(inputStream);\n",
+            "correctness": "uncompilable",
+            "translated": "        Document doc = XMLHelper.parse(inputStream);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

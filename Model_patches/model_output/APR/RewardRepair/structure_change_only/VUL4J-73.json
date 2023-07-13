@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "String pass2 = mergePasswordAndSalt(encPass, salt, false);",
+        "String pass2 = mergePasswordAndSalt(rawPass, salt, false);",
+        "String pass2 = mergePasswordAndSalt(rawPass, salt, true);",
+        "String pass2 = mergePasswordAndSalt(encPass, salt, true);",
+        "String pass2 = mergePasswordAndSalt(rawPass, salt, false, false);",
+        "String pass2 = mergePasswordAndSalt(rawPass, salt, false, true);",
+        "String pass2 = mergePasswordAndSalt(encPass, rawPass, false);",
+        "String pass2 = mergePasswordAndSalt(salt, encPass);",
+        "String pass2 = mergePasswordAndSalt(rawPass, salt, false, null);",
+        "String pass2 = mergePasswordAndSalt(encPass, salt, false, false);"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(encPass, salt, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(rawPass, salt, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(rawPass, salt, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(encPass, salt, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(rawPass, salt, false, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(rawPass, salt, false, true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(encPass, rawPass, false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(salt, encPass);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(rawPass, salt, false, null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pass2 = mergePasswordAndSalt(encPass, salt, false, false);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

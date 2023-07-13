@@ -1,0 +1,56 @@
+{
+    "output": [
+        "answer = new InputSource(new StringReader((String) body));",
+        "answer = unmarshal(exchange, body);",
+        "answer = new InputSource(new StringReader(body));",
+        "answer = unmarshal(exchange, body, type);",
+        "if (answer == null) {",
+        "answer = getDocument(exchange, body);",
+        "if (answer == null) { answer = body; }",
+        "if (answer == null) { answer = body;",
+        "answer = convert(exchange, body);",
+        "if (answer!= null) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "answer = new InputSource(new StringReader((String) body));",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "answer = unmarshal(exchange, body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "answer = new InputSource(new StringReader(body));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "answer = unmarshal(exchange, body, type);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "answer = getDocument(exchange, body);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (answer == null) { answer = body; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (answer == null) { answer = body;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "answer = convert(exchange, body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer!= null) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

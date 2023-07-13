@@ -1,0 +1,37 @@
+{
+    "VUL4J-10014-539-546": {
+        "src": "else if ( ch == $STRING$ ) { if ( i > start && i + $NUMBER$ < end && $STRING$ == jsonish . char CaMeL At ( i - 1 ) && $STRING$ == ( jsonish . char CaMeL At ( i + 1 ) | 32 ) && $STRING$ == ( jsonish . char CaMeL At ( i + $NUMBER$ ) | 32 ) ) { insert ( i , $STRING$ ) ; } }",
+        "patches": [
+            {
+                "patch": "else if( ch == 'a') { if( i > start && i +9< end && 'a'== jsonish.charAt( i -1) && 'a'==( jsonish.charAt( i +1) | 'a') && 'a'==( jsonish.charAt( i +1) | 'a') && 'a'==( jsonish.charAt( i +1) | 'a') ) { insert( i , 'a') ; } }"
+            },
+            {
+                "patch": "else if( ch == ', ') { if( i > start && i +9< end && ', '== jsonish.charAt( i -1) && ', '==( jsonish.charAt( i +1) | ', ') && ', '==( jsonish.charAt( i +1) | ', ') && ', '==( jsonish.charAt( i +1) | ', ') ) { insert( i , ', ') ; } }"
+            },
+            {
+                "patch": "else if( ch == '9') { if( i > start && i +9< end && '9'== jsonish.charAt( i -1) && '9'==( jsonish.charAt( i +1) | '9') && '9'==( jsonish.charAt( i +1) | '9') && '9'==( jsonish.charAt( i +1) | '9') ) { insert( i , '9') ; } }"
+            },
+            {
+                "patch": "else if( ch == 'c') { if( i > start && i +9< end && 'c'== jsonish.charAt( i -1) && 'c'==( jsonish.charAt( i +1) | 'c') && 'c'==( jsonish.charAt( i +1) | 'c') && 'c'==( jsonish.charAt( i +1) | 'c') ) { insert( i , 'c') ; } }"
+            },
+            {
+                "patch": "else if( ch == 'b') { if( i > start && i +9< end && 'b'== jsonish.charAt( i -1) && 'b'==( jsonish.charAt( i +1) | 'b') && 'b'==( jsonish.charAt( i +1) | 'b') && 'b'==( jsonish.charAt( i +1) | 'b') ) { insert( i , 'b') ; } }"
+            },
+            {
+                "patch": "public else if( ch == 'a') { if( i > start && i +9< end && 'a'== jsonish.charAt( i -1) && 'a'== jsonish.charAt( i +1) && 'a'== jsonish.charAt( i +1) && 'a'== jsonish.charAt( i +1) && 'a'== jsonish.charAt( i +1) && 'a'== jsonish.charAt"
+            },
+            {
+                "patch": "public else if( ch == ', ') { if( i > start && i +9< end && ', '== jsonish.charAt( i -1) && ', '== jsonish.charAt( i +1) && ', '== jsonish.charAt( i +1) && ', '== jsonish.charAt( i +1) && ', '== jsonish.charAt( i +1) && ', '== jsonish.charAt"
+            },
+            {
+                "patch": "public else if( ch == '9') { if( i > start && i +9< end && '9'== jsonish.charAt( i -1) && '9'== jsonish.charAt( i +1) && '9'== jsonish.charAt( i +1) && '9'== jsonish.charAt( i +1) && '9'== jsonish.charAt( i +1) && '9'== jsonish.charAt"
+            },
+            {
+                "patch": "public else if( ch == 'c') { if( i > start && i +9< end && 'c'== jsonish.charAt( i -1) && 'c'== jsonish.charAt( i +1) && 'c'== jsonish.charAt( i +1) && 'c'== jsonish.charAt( i +1) && 'c'== jsonish.charAt( i +1) && 'c'== jsonish.charAt"
+            },
+            {
+                "patch": "public else if( ch == 'b') { if( i > start && i +9< end && 'b'== jsonish.charAt( i -1) && 'b'== jsonish.charAt( i +1) && 'b'== jsonish.charAt( i +1) && 'b'== jsonish.charAt( i +1) && 'b'== jsonish.charAt( i +1) && 'b'== jsonish.charAt"
+            }
+        ]
+    }
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "else if (currentChar == '\\\\') {",
+        "else if (currentChar == '\\\\'){",
+        "else if (currentChar == '\\\\' || currentChar == '\"'){",
+        "else if(currentChar == '\\\\') {",
+        "else if(currentChar == '\\\\'){",
+        "else if (currentChar == '\"'){",
+        "else if (currentChar == '\\'') {",
+        "else if (currentChar == '\"') {",
+        "else if (currentChar == '\\\\' || currentChar == ')'){",
+        "else {"
+    ],
+    "validation_result": [
+        {
+            "patch": "else if (currentChar == '\\\\') {",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\\\\') {"
+        },
+        {
+            "patch": "else if (currentChar == '\\\\'){",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\\\\') {"
+        },
+        {
+            "patch": "else if (currentChar == '\\\\' || currentChar == '\"'){",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\\\\' || ch == '\"'){"
+        },
+        {
+            "patch": "else if(currentChar == '\\\\') {",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\\\\') {"
+        },
+        {
+            "patch": "else if(currentChar == '\\\\'){",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\\\\') {"
+        },
+        {
+            "patch": "else if (currentChar == '\"'){",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\"'){"
+        },
+        {
+            "patch": "else if (currentChar == '\\'') {",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\\'') {"
+        },
+        {
+            "patch": "else if (currentChar == '\"') {",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\"'){"
+        },
+        {
+            "patch": "else if (currentChar == '\\\\' || currentChar == ')'){",
+            "correctness": "uncompilable",
+            "translated": "else if (ch == '\\\\' || ch == ')'){"
+        },
+        {
+            "patch": "else {",
+            "correctness": "uncompilable",
+            "translated": "else {"
+        }
+    ]
+}

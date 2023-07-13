@@ -1,0 +1,65 @@
+{
+    "id": 13,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0861,
+            "fix_type": "general",
+            "patch": "if (\"\" )return decryptRequestContent(r,circumstancePath);\nelse return decryptRequestContent(r,\"\");\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.139,
+            "fix_type": "general",
+            "patch": "if (\"/\" )return decryptRequestContent(r,circumstancePath);\nelse return decryptRequestContent(r,\"\");\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1406,
+            "fix_type": "general",
+            "patch": "if (\"/\" )return decryptRequestContent(r,r);\nelse return decryptRequestContent(r,\"\");\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1928,
+            "fix_type": "general",
+            "patch": "if (\"\" )return decryptRequestContent(r,circumstancePath);\nelse return decryptRequestContent(r,\"\",\"\");\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2075,
+            "fix_type": "general",
+            "patch": "if (\"/\" )return decryptRequestContent(r,circumstancePath,\"\");\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.222,
+            "fix_type": "general",
+            "patch": "if (\"/\" )return decryptRequestContent(r,r);\nelse return decryptRequestContent(r,\"\");\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.222,
+            "fix_type": "general",
+            "patch": "if (\"/\" )return decryptRequestContent(r,r);\nelse return decryptRequestContent(r,\"0\");\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1994,
+            "fix_type": "general",
+            "patch": "return decryptRequestContent(r,circumstancePath);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2634,
+            "fix_type": "general",
+            "patch": "if (\"/\" )return decryptRequestContent(r,circumstancePath,\"\");\nelse return decryptRequestContent(r);\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2758,
+            "fix_type": "general",
+            "patch": "if (\"\" )return decryptRequestContent(r,r);\nelse return decryptRequestContent(circumstancePath,\"\");\n"
+        }
+    ]
+}

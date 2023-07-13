@@ -1,0 +1,65 @@
+{
+    "id": 20,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2086,
+            "fix_type": "general",
+            "patch": "xmlInput = XMLInputFactory.newInstance();\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.2191,
+            "fix_type": "general",
+            "patch": "xmlInput = XMLInputFactory.nextToken();\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2191,
+            "fix_type": "general",
+            "patch": "xmlInput = XMLInputFactory.close();\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.3084,
+            "fix_type": "general",
+            "patch": "xmlInput = Feature.collectDefaults();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.3817,
+            "fix_type": "general",
+            "patch": "xmlInput = new XMLInputFactory();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4058,
+            "fix_type": "general",
+            "patch": "xmlInput = new XmlMapper();\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.4058,
+            "fix_type": "general",
+            "patch": "xmlInput = new ToXmlGenerator();\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.534,
+            "fix_type": "general",
+            "patch": "xmlInput = newInstance();\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.5345,
+            "fix_type": "general",
+            "patch": "xmlInput = xmlOutput;\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.5168,
+            "fix_type": "general",
+            "patch": "xmlInput = XMLOutputFactory.newInstance();\n"
+        }
+    ]
+}

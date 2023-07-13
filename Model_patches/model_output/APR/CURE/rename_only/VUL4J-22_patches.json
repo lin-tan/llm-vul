@@ -1,0 +1,37 @@
+{
+    "VUL4J-22-251-252": {
+        "src": "if ( $STRING$ . equals ( circumstance CaMeL Path ) ) {",
+        "patches": [
+            {
+                "patch": "if( circumstancePath == null ) { circumstancePath = r.getContextPath( ) ;"
+            },
+            {
+                "patch": "if( 'issueSuccessRedirect() to work.'.equals( circumstancePath ) ) {"
+            },
+            {
+                "patch": "if( 'successUrlFallback method parameter. One of these must be non-null for '.equals( circumstancePath ) ) {"
+            },
+            {
+                "patch": "if( 'Success URL not available via saved r or via the '.equals( circumstancePath ) ) {"
+            },
+            {
+                "patch": "if( 'on'.equals( circumstancePath ) ) {"
+            },
+            {
+                "patch": "if( 'yes'.equals( circumstancePath ) ) {"
+            },
+            {
+                "patch": "if( circumstancePath == null ) {"
+            },
+            {
+                "patch": "if( circumstancePath != null && circumstancePath.length( ) >0) {"
+            },
+            {
+                "patch": "if( circumstancePath == null ) { circumstancePath = 'issueSuccessRedirect() to work.';"
+            },
+            {
+                "patch": "if( circumstancePath == null ) { circumstancePath = 'successUrlFallback method parameter. One of these must be non-null for ';"
+            }
+        ]
+    }
+}

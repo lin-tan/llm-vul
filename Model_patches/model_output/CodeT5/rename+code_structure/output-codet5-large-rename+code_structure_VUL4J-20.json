@@ -1,0 +1,67 @@
+{
+    "function range": "3,5-15,5",
+    "output": [
+        "\n        result[j] = get( j );\n   \n\n        result[j] = get( j );\n   \n       ",
+        "\n        result[j] = get( j );\n   \n\n        result[j] = get( j );\n   \n\n\n",
+        "\n        result[j] = get( j );\n\n\n        result[j] = get( j );\n   \n\n\n",
+        "\n        result[j] = get( j );\n\n\n        result[j] = get( j );\n   \n       ",
+        "\n        result[j] = get( j );\n   \n\n        result[j] = get( j );\n   \n",
+        "\n        result[j] = get( j );\n\n\n        result[j] = get( j );\n   \n",
+        "\n        result[j] = get( j );\n\n\n        result[j] = get( j );\n   \n       \n\n",
+        "\n        result[j] = get( j );\n",
+        "\n        result[j] = get( j );\n   ",
+        "\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "result[j] = get( j );\n   \n\n        result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );\n   \n\n        retval[i] = get( i );"
+        },
+        {
+            "patch": "result[j] = get( j );\n   \n\n        result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );\n   \n\n        retval[i] = get( i );"
+        },
+        {
+            "patch": "result[j] = get( j );\n\n\n        result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );\n   \n\n        retval[i] = get( i );"
+        },
+        {
+            "patch": "result[j] = get( j );\n\n\n        result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );\n   \n\n        retval[i] = get( i );"
+        },
+        {
+            "patch": "result[j] = get( j );\n   \n\n        result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );\n   \n\n        retval[i] = get( i );"
+        },
+        {
+            "patch": "result[j] = get( j );\n\n\n        result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );\n   \n\n        retval[i] = get( i );"
+        },
+        {
+            "patch": "result[j] = get( j );\n\n\n        result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );\n   \n\n        retval[i] = get( i );"
+        },
+        {
+            "patch": "result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );"
+        },
+        {
+            "patch": "result[j] = get( j );",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = get( i );"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        }
+    ]
+}

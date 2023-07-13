@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (entry.isDirectory())\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile()) {\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (entry.isDirectory())\n\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (entry.isDirectory())\n\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile()) {\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (entry.isDirectory())\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\t\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (entry.isDirectory())\n\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile()) {\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (!entry) {\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (!entry) {\t\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\t\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (entry.isDirectory())\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (!entry) {\t",
+        "\n\tif (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile()) {\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (!\n\t\t\t"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (entry.isDirectory())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile()) {\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (entry.isDirectory())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (entry.isDirectory())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile()) {\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (entry.isDirectory())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\t\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (entry.isDirectory())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile()) {\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (!entry) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (!entry) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\t\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (entry.isDirectory())",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile())\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\n\tif (!entry) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (entry.isDirectory()) {\n\t\n\t}\n\t\n\n\tif (entry.isDirectory()) {\n\n\tif (entry.isFile()) {\n\t\n\t else {\n\t\n\t\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\n\tif (entry.isDirectory()) {\t //\n\tif (!",
+            "correctness": "uncompilable"
+        }
+    ]
+}

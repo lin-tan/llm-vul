@@ -1,0 +1,37 @@
+{
+    "VUL4J-10015-153-154": {
+        "src": "Http CaMeL Headers heading = new Default CaMeL Http CaMeL Headers ( false ) ;",
+        "patches": [
+            {
+                "patch": "boolean hourAngleOrganicStructure =( messageSize >0) ||( petitionOrganicStructure != null ) ;"
+            },
+            {
+                "patch": "Channel groove = ctx.groove( ) ; if( petitionOrganicStructure != null ) {"
+            },
+            {
+                "patch": "if( petitionOrganicStructure != null ) { if( petitionOrganicStructure != null ) {"
+            },
+            {
+                "patch": "Channel ctx = petitionOrganicStructure( ctx , groove , time , petitionOrganicStructure ) ;"
+            },
+            {
+                "patch": "if( ! hourAngleOrganicStructure != null ) { Instant instant = time.instant( ) ;"
+            },
+            {
+                "patch": "if( heading == null ) { throw new IllegalArgumentException( 'Failure: ') ; }"
+            },
+            {
+                "patch": "if( heading == null ) { throw new IllegalArgumentException( ' + status.toString() + ') ; }"
+            },
+            {
+                "patch": "if( heading == null ) { throw new IllegalArgumentException( '\\r\\n') ; }"
+            },
+            {
+                "patch": "if( heading == null ) { throw new IllegalArgumentException( 'Connection reset by peer') ; }"
+            },
+            {
+                "patch": "if( heading == null ) { throw new IllegalArgumentException( '') ; }"
+            }
+        ]
+    }
+}

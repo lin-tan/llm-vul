@@ -1,0 +1,65 @@
+{
+    "id": 18,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.4294,
+            "fix_type": "general",
+            "patch": "entry.isDirectory()"
+        },
+        {
+            "rank": 2,
+            "score": -0.4801,
+            "fix_type": "insert",
+            "patch": "if (entry == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4826,
+            "fix_type": "insert",
+            "patch": "if (entry == null ){\nthrow new IOException(\"\");\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.4826,
+            "fix_type": "insert",
+            "patch": "if (entry == null ){\nthrow new IOException(\"0\");\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.612,
+            "fix_type": "general",
+            "patch": "entry && entry.isDirectory()"
+        },
+        {
+            "rank": 6,
+            "score": -0.528,
+            "fix_type": "insert",
+            "patch": "if (outFile == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.6687,
+            "fix_type": "general",
+            "patch": "entry == null"
+        },
+        {
+            "rank": 8,
+            "score": -0.5421,
+            "fix_type": "insert",
+            "patch": "if (destDir == null ){\nreturn;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.701,
+            "fix_type": "general",
+            "patch": "entry.isDirectory() && MAGIC_NUMBER"
+        },
+        {
+            "rank": 10,
+            "score": -0.5827,
+            "fix_type": "insert",
+            "patch": "if (entry == null )return;\n"
+        }
+    ]
+}

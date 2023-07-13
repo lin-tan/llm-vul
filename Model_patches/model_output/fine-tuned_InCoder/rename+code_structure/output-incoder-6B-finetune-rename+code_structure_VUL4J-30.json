@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        String s = content.toString();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        String s = String.valueOf(content.toString());\n<|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        String s = content;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        Object s = String.valueOf(content);\n<|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        String s = Objects.toString(content);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        String s = String.valueOf(content_class);\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        Object s = content;\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        String s = String.valueOf(attributeContent);\n<|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        StringBuilder s = new StringBuilder();\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>public void approve(Object item) throws ValidationException {\n    String attributeTitle = acquireAttributeTitle();\n    Object content = this.acquireAttributeContent(attributeTitle, item);\n    if (content!= null && content.toString().length()!= 0) {\n        Class content_class = content.getClass();\n        String urlRegex = acquireUrlRegularExpression();\n        Pattern p = Pattern.compile(urlRegex, Pattern.CASE_INSENSITIVE);\n// buggy lines start:\n        String s = String.valueOf(content);\n// buggy lines end\n        Matcher m = p.matcher(s);\n        if (content_class.equals(String.class) && m.matches()) {\n            return;\n        }\n        attachAttributeError(attributeTitle, item);\n    }\n}\n// fixed lines:\n        String s = String.valueOf(content).toString();\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        String s = content.toString();\n",
+            "correctness": "compile_success",
+            "translated": "        String s = value.toString();\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(content.toString());\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf(value.toString());\n"
+        },
+        {
+            "patch": "        String s = content;\n",
+            "correctness": "uncompilable",
+            "translated": "        String s = value;\n"
+        },
+        {
+            "patch": "        Object s = String.valueOf(content);\n",
+            "correctness": "uncompilable",
+            "translated": "        Object s = String.valueOf(value);\n"
+        },
+        {
+            "patch": "        String s = Objects.toString(content);\n",
+            "correctness": "uncompilable",
+            "translated": "        String s = Objects.toString(value);\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(content_class);\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf(value_class);\n"
+        },
+        {
+            "patch": "        Object s = content;\n",
+            "correctness": "uncompilable",
+            "translated": "        Object s = value;\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(attributeContent);\n",
+            "correctness": "uncompilable",
+            "translated": "        String s = String.valueOf(attributeContent);\n"
+        },
+        {
+            "patch": "        StringBuilder s = new StringBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "        StringBuilder s = new StringBuilder();\n"
+        },
+        {
+            "patch": "        String s = String.valueOf(content).toString();\n",
+            "correctness": "compile_success",
+            "translated": "        String s = String.valueOf(value).toString();\n"
+        }
+    ]
+}

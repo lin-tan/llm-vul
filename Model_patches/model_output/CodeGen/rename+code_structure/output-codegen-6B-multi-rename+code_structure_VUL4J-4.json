@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-56,1",
+    "output": [
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( &&\n           \n\n        return",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n       \n        \n        \n        \n           \n\n\n if\n       \n else if ( &&\n           \n\n        return",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n\n        \n           \n        \n\n if\n       \n else if ( &&\n           \n\n        return",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n        \n\n if }\n else if ( &&\n           \n\n        return",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n       \n        \n\n        \n           \n        \n\n if\n       \n else if ( &&\n           \n\n        return",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n       \n        \n        \n        \n           \n        \n\n if }\n else if ( &&\n           \n\n        return",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n        \n\n if\n       \n else if ( &&\n           \n\n       ",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n\n        \n            if (\n\n\n if }\n else if ( &&\n           \n\n        return",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( ||\n           \n\n        return",
+        "\n        \n       \n           \n        \n       \n        \n        }else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n       \n        \n        \n        \n           \n\n\n if\n       \n else if ( ||\n           \n\n        return"
+    ],
+    "validation_result": [
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( &&\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( &&\n           \n\n        return"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n       \n        \n        \n        \n           \n\n\n if\n       \n else if ( &&\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( &&\n           \n\n        return"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n\n        \n           \n        \n\n if\n       \n else if ( &&\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( &&\n           \n\n        return"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n        \n\n if }\n else if ( &&\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n        \n\n if }\n else if ( &&\n           \n\n        return"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n       \n        \n\n        \n           \n        \n\n if\n       \n else if ( &&\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( &&\n           \n\n        return"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n       \n        \n        \n        \n           \n        \n\n if }\n else if ( &&\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n        \n\n if }\n else if ( &&\n           \n\n        return"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n        \n\n if\n       \n else if ( &&",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n        \n\n if\n       \n else if ( &&"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n\n        \n            if (\n\n\n if }\n else if ( &&\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n\n        \n            if (\n\n\n if }\n else if ( &&\n           \n\n        return"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( ||\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( ||\n           \n\n        return"
+        },
+        {
+            "patch": "}else{\n            reply = content;\n        }\n        if (category!= null) {\n           \n        }\n        if (reply == null) {\n           \n        }\n        \n       \n       \n        \n        \n        \n           \n\n\n if\n       \n else if ( ||\n           \n\n        return",
+            "correctness": "uncompilable",
+            "translated": "}else{\n            answer = body;\n        }\n        if (type!= null) {\n           \n        }\n        if (answer == null) {\n           \n        }\n        \n       \n           \n        \n        \n        \n           \n\n\n if\n       \n else if ( ||\n           \n\n        return"
+        }
+    ]
+}

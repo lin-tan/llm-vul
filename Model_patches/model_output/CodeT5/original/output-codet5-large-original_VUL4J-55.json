@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }            \n   \n   \n   \n   \n\n\n\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f.lowerField) {\n                        }            \n   \n   \n\n\n\n\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f.upperField) {\n                        }            \n   \n   \n\n\n\n\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f.fields) {\n                        }            \n   \n   \n\n\n\n\n\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }            \n   \n   \n   \n\n\n       \n\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n            for (             }            \n   \n   \n\n\n\n\n\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f.lowerField) {\n                        }                            \n   \n   \n\n\n\n\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }            \n   \n   \n   \n\n\n   \n\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }            \n   \n   \n   \n   \n\n break\n",
+        "\n                if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }            \n   \n   \n   \n   \n\n     \n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f.lowerField) {\n                        }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f.upperField) {\n                        }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f.fields) {\n                        }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n            for (             }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f.lowerField) {\n                        }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }            \n   \n   \n   \n   \n\n break",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (next==f.first(this))\n\n   \n\n   \n   \n   \n       \n       \n            for (CalendarField f : f.lowerField)\n                if (next==f.first(this))\n       \n        for (CalendarField f : f) {\n                        }",
+            "correctness": "uncompilable"
+        }
+    ]
+}

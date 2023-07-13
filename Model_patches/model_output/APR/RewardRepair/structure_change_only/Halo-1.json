@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (pathToCheck!= null &&!pathToCheck.startsWith(normalizedParentPath)) {",
+        "if (!pathToCheck.startsWith(normalizedParentPath.getPath())) {",
+        "if (!pathToCheck.startsWith(normalizedParentPath.getName())) {",
+        "if (pathToCheck == null ||!pathToCheck.startsWith(normalizedParentPath)) {",
+        "if (!pathToCheck.startsWith(normalizedParentPath.toString())) {",
+        "if (!pathToCheck.equals(normalizedParentPath)) {",
+        "if (pathToCheck!= null &&!pathToCheck.startsWith(normalizedParentPath)) {",
+        "if (!pathToCheck.contains(normalizedParentPath)) {",
+        "if (!pathToCheck.startsWith(normalizedParentPath.getParentPath())) {",
+        "if (!pathToCheck.startsWith(normalizedParentPath.getAbsolutePath())) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (pathToCheck!= null &&!pathToCheck.startsWith(normalizedParentPath)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(normalizedParentPath.getPath())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(normalizedParentPath.getName())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (pathToCheck == null ||!pathToCheck.startsWith(normalizedParentPath)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(normalizedParentPath.toString())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!pathToCheck.equals(normalizedParentPath)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck!= null &&!pathToCheck.startsWith(normalizedParentPath)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!pathToCheck.contains(normalizedParentPath)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(normalizedParentPath.getParentPath())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(normalizedParentPath.getAbsolutePath())) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while (s <= h) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while (s > h) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    do {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while (s + 1 < h) {\n<|endoftext|><|endoftext|><|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while (s >= h) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while ((s + 1) < h) {\n<|endoftext|><|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while (h < s) {\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while (s > 0 && s < h) {\n<|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while (s < h && s > 0) {\n<|endoftext|>",
+        "private int enlarge(int s, final int z) {\n    int h = (1 << (z - 1));\n// buggy lines start:\n    while (s < h) {\n// buggy lines end\n        h = (-1 << z) + 1;\n        s += h;\n    }\n    return s;\n}\n// fixed lines:\n    while (s < h && s!= 0) {\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    while (s <= h) {\n",
+            "correctness": "test_timeout",
+            "translated": "    while (v <= vt) {\n"
+        },
+        {
+            "patch": "    while (s > h) {\n",
+            "correctness": "test_success",
+            "translated": "    while (v > vt) {\n"
+        },
+        {
+            "patch": "    do {\n",
+            "correctness": "uncompilable",
+            "translated": "    do {\n"
+        },
+        {
+            "patch": "    while (s + 1 < h) {\n",
+            "correctness": "compile_success",
+            "translated": "    while (v + 1 < vt) {\n"
+        },
+        {
+            "patch": "    while (s >= h) {\n",
+            "correctness": "test_timeout",
+            "translated": "    while (v >= vt) {\n"
+        },
+        {
+            "patch": "    while ((s + 1) < h) {\n",
+            "correctness": "compile_success",
+            "translated": "    while ((v + 1) < vt) {\n"
+        },
+        {
+            "patch": "    while (h < s) {\n",
+            "correctness": "test_success",
+            "translated": "    while (vt < v) {\n"
+        },
+        {
+            "patch": "    while (s > 0 && s < h) {\n",
+            "correctness": "test_success",
+            "translated": "    while (v > 0 && v < vt) {\n"
+        },
+        {
+            "patch": "    while (s < h && s > 0) {\n",
+            "correctness": "test_success",
+            "translated": "    while (v < vt && v > 0) {\n"
+        },
+        {
+            "patch": "    while (s < h && s!= 0) {\n",
+            "correctness": "compile_success",
+            "translated": "    while (v < vt && v!= 0) {\n"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "return;\n",
+  "Assert.notNull(basePath, \"null\");\n",
+  "Path normalizedBasePath = normalizedBasePath.normalize();\n",
+  "Path normalizedBasePath = basePath.normalize();\n",
+  "Path normalizedBasePath = examinePath.normalize();\n",
+  "final Path normalizedBasePath = basePath.normalize();\n",
+  "if((examinePath != null)){\n",
+  "basePath.normalize();\n",
+  "if((basePath != null)){\n",
+  "Assert.notNull(examinePath, \"null\");\n"
+]

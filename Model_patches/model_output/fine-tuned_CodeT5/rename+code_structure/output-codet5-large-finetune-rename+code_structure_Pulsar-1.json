@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())\n</s></s></s>",
+        "<pad><s>        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()))\n</s></s>",
+        "<pad><s>        ((AdministeredRecordsImpl) (((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()))\n</s>",
+        "<pad><s>        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(false))\n</s>",
+        "<pad><s>        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(true))\n</s>",
+        "<pad><s>        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(account))\n</s>",
+        "<pad><s>        ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords();\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>        ((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())\n",
+            "correctness": "compile_success",
+            "translated": "        ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())\n"
+        },
+        {
+            "patch": "        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()))\n",
+            "correctness": "uncompilable",
+            "translated": "        ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger()))\n"
+        },
+        {
+            "patch": "        ((AdministeredRecordsImpl) (((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()))\n",
+            "correctness": "compile_success",
+            "translated": "        ((ManagedLedgerImpl) (((PersistentTopic) getTopicReference(topicName)).getManagedLedger()))\n"
+        },
+        {
+            "patch": "        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(false))\n",
+            "correctness": "uncompilable",
+            "translated": "        ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger(false))\n"
+        },
+        {
+            "patch": "        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(true))\n",
+            "correctness": "uncompilable",
+            "translated": "        ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger(true))\n"
+        },
+        {
+            "patch": "        ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(account))\n",
+            "correctness": "uncompilable",
+            "translated": "        ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger(account))\n"
+        },
+        {
+            "patch": "        ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()\n",
+            "correctness": "uncompilable",
+            "translated": "        ((PersistentTopic) getTopicReference(topicName)).getManagedLedger()\n"
+        },
+        {
+            "patch": "        ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords();\n",
+            "correctness": "uncompilable",
+            "translated": "        ((PersistentTopic) getTopicReference(topicName)).getManagedLedger();\n"
+        },
+        {
+            "patch": "        ((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()\n",
+            "correctness": "uncompilable",
+            "translated": "        ((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger()\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

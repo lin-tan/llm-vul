@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-5,1",
+    "output": [
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r, false );\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,false);\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,true);\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r, true );\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,null );\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,true );\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,r );\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,false );\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r, null );\n",
+        "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,r);\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r, false );",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request, false );"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,false);",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request, false );"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,true);",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request,true);"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r, true );",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request,true);"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,null );",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request,null );"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,true );",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request,true);"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,r );",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request,request );"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,false );",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request, false );"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r, null );",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request,null );"
+        },
+        {
+            "patch": "return\n\treturn acquireSendOnPage( r,r.sendOn,r.useragent,r);\n\n\treturn\n\treturn\n\treturn acquireSendOnPage( r,r.sendOn );\n\n\n\n\n\n\n\n\treturn acquireSendOnPage( r,r);",
+            "correctness": "uncompilable",
+            "translated": "return\n\treturn getForwardPage( request,request.sendOn,request.useragent,request);\n\n\treturn\n\treturn\n\treturn getForwardPage( request,request.sendOn );\n\n\n\n\n\n\n\n\treturn getForwardPage( request,request );"
+        }
+    ]
+}

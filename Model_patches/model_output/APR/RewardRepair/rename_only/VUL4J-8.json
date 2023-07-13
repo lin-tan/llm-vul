@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);",
+        "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);",
+        "Result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);",
+        "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase, false);",
+        "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase, true);",
+        "result = CompressedFileEncodingAssistant.enlargeBufferWith(outcome, result, increase);",
+        "result = CompressedFileEncodingAssistant.enlargeBufferWith(result);",
+        "= CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);",
+        "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase + 1);",
+        "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, decrease);"
+    ],
+    "validation_result": [
+        {
+            "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);",
+            "correctness": "compile_success",
+            "translated": "out = ZipEncodingHelper.growBufferBy(out, increment);"
+        },
+        {
+            "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);",
+            "correctness": "compile_success",
+            "translated": "out = ZipEncodingHelper.growBufferBy(out, increment);"
+        },
+        {
+            "patch": "Result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);",
+            "correctness": "uncompilable",
+            "translated": "Result = ZipEncodingHelper.growBufferBy(out, increment);"
+        },
+        {
+            "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase, false);",
+            "correctness": "uncompilable",
+            "translated": "out = ZipEncodingHelper.growBufferBy(out, increment, false);"
+        },
+        {
+            "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase, true);",
+            "correctness": "uncompilable",
+            "translated": "out = ZipEncodingHelper.growBufferBy(out, increment, true);"
+        },
+        {
+            "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith(outcome, result, increase);",
+            "correctness": "uncompilable",
+            "translated": "out = ZipEncodingHelper.growBufferBy(res, out, increment);"
+        },
+        {
+            "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith(result);",
+            "correctness": "uncompilable",
+            "translated": "out = ZipEncodingHelper.growBufferBy(out);"
+        },
+        {
+            "patch": "= CompressedFileEncodingAssistant.enlargeBufferWith(result, increase);",
+            "correctness": "uncompilable",
+            "translated": "= ZipEncodingHelper.growBufferBy(out, increment);"
+        },
+        {
+            "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, increase + 1);",
+            "correctness": "compile_success",
+            "translated": "out = ZipEncodingHelper.growBufferBy(out, increment + 1);"
+        },
+        {
+            "patch": "result = CompressedFileEncodingAssistant.enlargeBufferWith(result, decrease);",
+            "correctness": "uncompilable",
+            "translated": "out = ZipEncodingHelper.growBufferBy(out, decrease);"
+        }
+    ]
+}

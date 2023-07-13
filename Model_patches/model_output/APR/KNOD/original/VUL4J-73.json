@@ -1,0 +1,65 @@
+{
+    "id": 32,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.2044,
+            "fix_type": "general",
+            "patch": "  String pass1 = demergePasswordAndSalt(encPass);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.2044,
+            "fix_type": "general",
+            "patch": "  String pass1 = obtainPasswordAndSalt(encPass);\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2326,
+            "fix_type": "general",
+            "patch": "  String pass1 = encPass + \"\";\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2471,
+            "fix_type": "general",
+            "patch": "  String pass1 = encPass + \"\";\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2471,
+            "fix_type": "general",
+            "patch": "  String pass1 = encPass + \"0\";\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.2565,
+            "fix_type": "insert",
+            "patch": "if (encPass == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2889,
+            "fix_type": "insert",
+            "patch": "if (rawPass == null ){\nreturn false;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.4547,
+            "fix_type": "general",
+            "patch": "  String pass1 = new String(encPass);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.3402,
+            "fix_type": "insert",
+            "patch": "if (encPass == null ){\nreturn true;\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2623,
+            "fix_type": "general",
+            "patch": "  PasswordEncoder pass1 = encPass + \"\";\n"
+        }
+    ]
+}

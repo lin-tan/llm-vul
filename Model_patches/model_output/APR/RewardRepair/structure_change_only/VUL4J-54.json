@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper());",
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getReflectionProvider());",
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper());",
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getReflectionProvider());",
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getMapper());",
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getReflectionProvider());",
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getConverter());",
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter();",
+        "robustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getReflectionProvider());",
+        "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(), getReflectionProvider());"
+    ],
+    "validation_result": [
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getReflectionProvider());",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getReflectionProvider());",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getMapper());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getReflectionProvider());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getConverter());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "robustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(),getReflectionProvider());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "RobustCollectionConverter robustCollectionConverter = new RobustCollectionConverter(getMapper(), getReflectionProvider());",
+            "correctness": "test_success"
+        }
+    ]
+}

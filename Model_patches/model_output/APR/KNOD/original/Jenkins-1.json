@@ -1,0 +1,65 @@
+{
+    "id": 35,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1343,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : User.getAll())\nr.put(monitor.data().getName(),monitor.data(this));\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1343,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : Permission.getAll())\nr.put(monitor.data().getName(),monitor.data(this));\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.1681,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : User.getAll())\nr.put(monitor.all(),monitor.data(this));\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1681,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : User.getAll())\nr.put(monitor.getDescriptor(),monitor.data(this));\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1763,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : NodeMonitor.getAll().getName())\nr.put(monitor.data().getName(this));\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1507,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : NodeMonitor.getAll())\nr.put(monitor.all(),monitor.data().getName());\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.1507,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : NodeMonitor.getAll())\nr.put(monitor.getDescriptor(),monitor.data().getName());\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1803,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : NodeMonitor.getAll())\nr.put(monitor.data().getDisplayName(),monitor.data(this));\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.1803,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : NodeMonitor.getAll())\nr.put(monitor.data().getUrl(),monitor.data(this));\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.1918,
+            "fix_type": "general",
+            "patch": "for (NodeMonitor monitor : User.getAll())\nr.put(monitor.data(this));\n"
+        }
+    ]
+}

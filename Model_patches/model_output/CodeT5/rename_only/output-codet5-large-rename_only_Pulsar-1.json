@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-37,1",
+    "output": [
+        "\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n    }\n}",
+        "\n        records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n\n    }",
+        "\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n}",
+        "\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n   \n       \n\n    }\n}",
+        "\n        records.retrieveItem(new AbstractRetrieveItemCallback() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItemCallback() {\n           \n           \n            public void\n           \n       \n\n    }\n   \n       \n\n    }\n}",
+        "\n        records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n    }\n\n    }",
+        "\n        records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n    }\n\n       \n       \n\n    }",
+        "\n        records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n\n\n       \n       \n\n    }",
+        "\n        records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n\n\n       \n       \n\n    }\n}",
+        "\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n\n   \n       \n\n    }\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "records.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n    }\n}"
+        },
+        {
+            "patch": "records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n\n    }",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(ledgerId, entryId, new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n\n    }"
+        },
+        {
+            "patch": "records.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n}"
+        },
+        {
+            "patch": "records.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n   \n       \n\n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n   \n       \n\n    }\n}"
+        },
+        {
+            "patch": "records.retrieveItem(new AbstractRetrieveItemCallback() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItemCallback() {\n           \n           \n            public void\n           \n       \n\n    }\n   \n       \n\n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(new AbstractRetrieveItemCallback() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItemCallback() {\n           \n           \n            public void\n           \n       \n\n    }\n   \n       \n\n    }\n}"
+        },
+        {
+            "patch": "records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n    }\n\n    }",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(ledgerId, entryId, new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n    }\n\n    }"
+        },
+        {
+            "patch": "records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n    }\n\n       \n       \n\n    }",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(ledgerId, entryId, new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n    }\n\n    }"
+        },
+        {
+            "patch": "records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n\n\n       \n       \n\n    }",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(ledgerId, entryId, new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n\n    }"
+        },
+        {
+            "patch": "records.retrieveItem(recordsNumber, itemNumber, new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n       \n\n\n       \n       \n\n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(ledgerId, entryId, new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n           \n    }\n\n    }"
+        },
+        {
+            "patch": "records.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        records.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n\n   \n       \n\n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n            public void\n        ledger.retrieveItem(new AbstractRetrieveItem() {\n           \n           \n            public void\n            public void\n       \n\n    }\n   \n       \n\n    }\n}"
+        }
+    ]
+}

@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-11,1",
+    "output": [
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String || value instanceof Number) { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof Number || value instanceof Boolean) { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String || value instanceof Boolean) { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String || value instanceof Number || value instanceof Boolean) { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String || value instanceof Integer) { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String) { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String) { addFieldError(fieldName, value); } else { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String) { addFieldError(fieldName, object); } else { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value.toString().equals(\"\")) { addFieldError(fieldName, object); } }",
+        "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value.toString().equals(\"\")) { addFieldError(fieldName, object); } else { addFieldError(fieldName, object); } }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String || value instanceof Number) { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof Number || value instanceof Boolean) { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String || value instanceof Boolean) { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String || value instanceof Number || value instanceof Boolean) { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String || value instanceof Integer) { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String) { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String) { addFieldError(fieldName, value); } else { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value instanceof String) { addFieldError(fieldName, object); } else { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value.toString().equals(\"\")) { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public void validate(Object object) throws ValidationException { String fieldName = getFieldName(); Object value = this.getFieldValue(fieldName, object); if (value == null || value.toString().length() == 0) { return; } if (value.toString().equals(\"\")) { addFieldError(fieldName, object); } else { addFieldError(fieldName, object); } }",
+            "correctness": "compile_success"
+        }
+    ]
+}

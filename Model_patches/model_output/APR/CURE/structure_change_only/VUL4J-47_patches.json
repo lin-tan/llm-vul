@@ -1,0 +1,37 @@
+{
+    "VUL4J-47-117-118": {
+        "src": "xml CaMeL In . set CaMeL Property ( XML CaMeL Input CaMeL Factory . IS _ SUPPORTING _ EXTERNAL _ ENTITIES , Boolean . FALSE ) ;",
+        "patches": [
+            {
+                "patch": "}_cfgNameForTextElement = nameForTextElem ;"
+            },
+            {
+                "patch": "}_xmlParserFeatures = xpFeatures ;_initFactories( xmlIn , xmlOut , xmlOut ) ;"
+            },
+            {
+                "patch": "xmlIn.setProperty( ' ', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlIn.setProperty( ' || ch == ', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlIn.setProperty( '\\r', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlIn.setProperty( '\\n', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlIn.setProperty( '\\t', Boolean.FALSE ) ;"
+            },
+            {
+                "patch": "xmlIn.setProperty( ' ', ' ') ; xmlIn.setProperty( ' ', ' ') ;"
+            },
+            {
+                "patch": "xmlIn.setProperty( ' || ch == ', ' || ch == ') ; xmlIn.setProperty( ' || ch == ', ' || ch == ') ;"
+            },
+            {
+                "patch": "xmlIn.setProperty( '\\r', '\\r') ; xmlIn.setProperty( '\\r', '\\r') ;"
+            }
+        ]
+    }
+}

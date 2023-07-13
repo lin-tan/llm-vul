@@ -1,0 +1,29 @@
+{
+    "method": {
+        "getValue": "acquireContent",
+        "getAlgorithmByCode": "acquireAlgorithmThroughCode",
+        "parseCentralDirectoryFormat": "analyzeCentralDirectoryScheme"
+    },
+    "variable": {
+        "bitlen": "bitlen",
+        "rcount": "rcount",
+        "data": "information",
+        "offset": "beginning",
+        "length": "duration",
+        "format": "formatting",
+        "flags": "flag",
+        "i": "iodine",
+        "j": "joule",
+        "hashSize": "hashishSizing",
+        "hashAlg": "hashish",
+        "algId": "Idaho",
+        "": ""
+    },
+    "class": {
+        "ZipLong": "ZipFourByteInteger",
+        "ZipShort": "ZipTwoByteInteger",
+        "EncryptionAlgorithm": "EncodingAlgorithm",
+        "HashAlgorithm": "AlgorithmForHash",
+        "": ""
+    }
+}

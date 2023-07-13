@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\t\trnd.nextBytes(new byte[1]);\n</s>",
+        "<pad><s>\t\trnd.nextBytes(new byte[0]);\n</s>",
+        "<pad><s>\t\trnd.nextBytes(seed);\n</s></s></s></s>",
+        "<pad><s>\t\trnd.setSeed(seed);\n</s></s></s></s>",
+        "<pad><s>\t\trnd.nextBytes(1);\n</s></s></s></s>",
+        "<pad><s>\t\trnd.nextBytes((byte[]) seed);\n</s>",
+        "<pad><s>\t\trnd.nextBytes(seed.getBytes());\n</s>",
+        "<pad><s>\t\trnd.nextBytes(new byte[2]);\n</s>",
+        "<pad><s>\t\trnd.nextBytes(getSeed());\n</s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\t\trnd.nextBytes(new byte[1]);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes(new rnd.nextBytes[1]);\n"
+        },
+        {
+            "patch": "\t\trnd.nextBytes(new byte[0]);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes(new rnd.nextBytes[0]);\n"
+        },
+        {
+            "patch": "\t\trnd.nextBytes(seed);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes(seed);\n"
+        },
+        {
+            "patch": "\t\trnd.setSeed(seed);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.setSeed(seed);\n"
+        },
+        {
+            "patch": "\t\trnd.nextBytes(1);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes(1);\n"
+        },
+        {
+            "patch": "\t\trnd.nextBytes((byte[]) seed);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes((rnd.nextBytes[]) seed);\n"
+        },
+        {
+            "patch": "\t\trnd.nextBytes(seed.getBytes());\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes(seed.getBytes());\n"
+        },
+        {
+            "patch": "\t\trnd.nextBytes(new byte[2]);\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes(new rnd.nextBytes[2]);\n"
+        },
+        {
+            "patch": "\t\trnd.nextBytes(getSeed());\n",
+            "correctness": "uncompilable",
+            "translated": "\t\trnd.nextBytes(getSeed());\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout",
+            "translated": ""
+        }
+    ]
+}

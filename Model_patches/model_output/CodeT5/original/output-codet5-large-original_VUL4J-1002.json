@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;, } //// } //\n",
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;, } // // } //\n",
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;,\n //// } //\n",
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;,\n //// } //\n",
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n           \n            nameEnd ++;,\n //// } //\n",
+        "\n        if (ch == ';') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;,\n //// } //\n",
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n            nameEnd ++;\n,\n // }\n    //\n",
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n            nameEnd ++;\n,\n // }\n   \n\n",
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;, } // // // //\n",
+        "\n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;, } //// // //\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;, } //// } //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;, } // // } //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;,\n //// } //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;,\n //// } //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n           \n            nameEnd ++;,\n //// } //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ';') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;,\n //// } //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n            nameEnd ++;\n,\n // }\n    //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n            nameEnd ++;\n,\n // }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;, } // // // //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (ch == ':') {\n   \n        if (ch == ':') {\n   \n    for (;\n       \n   \n   \n   \n   \n   \n        if (ch == ':') {\n   \n        if (ch!= ':') {\n   \n        if (ch == ':') {\n           \n            nameEnd ++;, } //// // //",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "output": [
+        "rnd.setSeed(FileCopyUtils.copyToByteArray(seed));",
+        "rnd.nextBytes(new byte[1]);",
+        "rnd.setSeed(seed);",
+        "rnd.nextBytes(seed.getBytes(StandardCharsets.UTF_8));",
+        "if (seed!= null) { rnd.nextBytes(new byte[1]); }",
+        "rnd.nextBytes(new byte[0]);",
+        "rnd.setSeed(seed.getInputStream());",
+        "rnd.nextBytes(seed.getBytes());",
+        "rnd.seed(seed);",
+        "rnd.reset();"
+    ],
+    "validation_result": [
+        {
+            "patch": "rnd.setSeed(FileCopyUtils.copyToByteArray(seed));",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(FileCopyUtils.copyToByteArray(seed));"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[1]);"
+        },
+        {
+            "patch": "rnd.setSeed(seed);",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed);"
+        },
+        {
+            "patch": "rnd.nextBytes(seed.getBytes(StandardCharsets.UTF_8));",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(seed.getBytes(StandardCharsets.UTF_8));"
+        },
+        {
+            "patch": "if (seed!= null) { rnd.nextBytes(new byte[1]); }",
+            "correctness": "uncompilable",
+            "translated": "if (seed!= null) { rnd.nextBytes(new rnd.nextBytes[1]); }"
+        },
+        {
+            "patch": "rnd.nextBytes(new byte[0]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new rnd.nextBytes[0]);"
+        },
+        {
+            "patch": "rnd.setSeed(seed.getInputStream());",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(seed.getInputStream());"
+        },
+        {
+            "patch": "rnd.nextBytes(seed.getBytes());",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(seed.getBytes());"
+        },
+        {
+            "patch": "rnd.seed(seed);",
+            "correctness": "uncompilable",
+            "translated": "rnd.seed(seed);"
+        },
+        {
+            "patch": "rnd.reset();",
+            "correctness": "uncompilable",
+            "translated": "rnd.reset();"
+        }
+    ]
+}

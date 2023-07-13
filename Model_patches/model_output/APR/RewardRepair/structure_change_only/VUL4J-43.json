@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (!entry.isDirectory() &&!outFile.exists()) {",
+        "if (!entry.isDirectory() &&!outFile.exists()) {",
+        "if (!entry.isDirectory() && outFile!= null) {",
+        "if (!entry.isDirectory() && outFile!= null) {",
+        "if (!entry.isDirectory() && outFile.isDirectory()) {",
+        "if (entry == null ||!entry.isDirectory()) {",
+        "if (entry!= null &&!entry.isDirectory()) {",
+        "if (!entry.isDirectory() &&!entry.isDirectory()) {",
+        "if (!entry.isDirectory() && outFile.isDirectory()) {",
+        "if (entry!= null &&!entry.isDirectory()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!entry.isDirectory() &&!outFile.exists()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!entry.isDirectory() &&!outFile.exists()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!entry.isDirectory() && outFile!= null) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!entry.isDirectory() && outFile!= null) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!entry.isDirectory() && outFile.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry == null ||!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry!= null &&!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!entry.isDirectory() &&!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!entry.isDirectory() && outFile.isDirectory()) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (entry!= null &&!entry.isDirectory()) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

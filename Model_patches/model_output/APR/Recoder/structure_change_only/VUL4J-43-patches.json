@@ -1,0 +1,12 @@
+[
+  "if(entry.isDirectory()){\n",
+  "if(!outFile.isDirectory()){",
+  "if((outFile != null)){\n",
+  "if(!entryName.isDirectory()){",
+  "if(!zipFile.isDirectory()){",
+  "if(!entry.isDirectory()){",
+  "if(!isDirectory()){\n",
+  "if(isDirectory()){\n",
+  "return;\n",
+  "if(((entry != null) && !entry.isDirectory())){\n"
+]

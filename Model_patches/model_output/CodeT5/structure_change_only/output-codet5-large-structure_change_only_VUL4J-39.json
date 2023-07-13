@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-20,5",
+    "output": [
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public public public public:\n    \n   ",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public public public public:\n\n    return",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public public public public:\n return sb.",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public } public public:\n    \n   ",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public } public public:\n return sb.",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public } public public:\n\n    return",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n\n\n?\n\n   \n\n\n\n    if (clientId!= null) {\n        sb =\n    }\n\n\n(\n\n\n: public public public return:\n return sb.",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n\n\n?\n\n   \n\n\n\n    if (clientId!= null) {\n        sb =\n    }\n\n\n(\n\n\n: public public public return:\n\n    return",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n\n\n?\n\n   \n\n\n\n    if (clientId!= null) {\n        sb =\n    }\n\n\n(\n\n\n: public public public return }\n\n    return",
+        " else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n\n\n?\n\n   \n\n\n\n    if (clientId!= null) {\n        sb =\n    }\n\n(\n\n\n: public public public return:origin!= null\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public public public public:",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public public public public:\n\n    return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public public public public:\n return sb.",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public } public public:",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public } public public:\n return sb.",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n\n\n\n?:sb;\n    if (clientId!= null) {\n        sb = sb.append(\", \");\n    }\n\n\n\n\n\n\n\n\n\n: public } public public:\n\n    return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n\n\n?\n\n   \n\n\n\n    if (clientId!= null) {\n        sb =\n    }\n\n\n(\n\n\n: public public public return:\n return sb.",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n\n\n?\n\n   \n\n\n\n    if (clientId!= null) {\n        sb =\n    }\n\n\n(\n\n\n: public public public return:\n\n    return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n\n\n?\n\n   \n\n\n\n    if (clientId!= null) {\n        sb =\n    }\n\n\n(\n\n\n: public public public return }\n\n    return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "else {\n        sb.append(\"clientId=\");\n        sb.append(clientId);\n    }\n}\npublic String toString() {\n    StringBuilder sb = new StringBuilder();\n\n\n?\n\n   \n\n\n\n    if (clientId!= null) {\n        sb =\n    }\n\n(\n\n\n: public public public return:origin!= null",
+            "correctness": "uncompilable"
+        }
+    ]
+}

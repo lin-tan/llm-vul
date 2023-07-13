@@ -1,0 +1,66 @@
+{
+    "output": [
+        "int iodine = 0;",
+        "int iodine = 1;",
+        "int iodine = -1;",
+        "int iodine;",
+        "int joule = 0;",
+        "final int iodine = 0;",
+        "long iodine = 0;",
+        "int iodine, joule;",
+        "int iodine = zv2;",
+        "int iodine = 2;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int iodine = 0;",
+            "correctness": "compile_success",
+            "translated": "int i = 0;"
+        },
+        {
+            "patch": "int iodine = 1;",
+            "correctness": "compile_success",
+            "translated": "int i = 1;"
+        },
+        {
+            "patch": "int iodine = -1;",
+            "correctness": "compile_success",
+            "translated": "int i = -1;"
+        },
+        {
+            "patch": "int iodine;",
+            "correctness": "uncompilable",
+            "translated": "int i;"
+        },
+        {
+            "patch": "int joule = 0;",
+            "correctness": "uncompilable",
+            "translated": "int j = 0;"
+        },
+        {
+            "patch": "final int iodine = 0;",
+            "correctness": "uncompilable",
+            "translated": "final int i = 0;"
+        },
+        {
+            "patch": "long iodine = 0;",
+            "correctness": "compile_success",
+            "translated": "long i = 0;"
+        },
+        {
+            "patch": "int iodine, joule;",
+            "correctness": "uncompilable",
+            "translated": "int i, j;"
+        },
+        {
+            "patch": "int iodine = zv2;",
+            "correctness": "compile_success",
+            "translated": "int i = zv2;"
+        },
+        {
+            "patch": "int iodine = 2;",
+            "correctness": "compile_success",
+            "translated": "int i = 2;"
+        }
+    ]
+}

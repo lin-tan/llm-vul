@@ -1,0 +1,37 @@
+{
+    "VUL4J-73-54-56": {
+        "src": "String pass $NUMBER$ = merge CaMeL Password CaMeL And CaMeL Salt ( raw CaMeL Pass , salt , false ) ; String pass 1 = enc CaMeL Pass + $STRING$ ;",
+        "patches": [
+            {
+                "patch": "String pass2= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= mergePasswordAndSalt( rawPass , salt , false ) ;"
+            },
+            {
+                "patch": "String pass5= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= mergePasswordAndSalt( rawPass , salt , false ) ;"
+            },
+            {
+                "patch": "String pass2004= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= mergePasswordAndSalt( rawPass , salt , false ) ;"
+            },
+            {
+                "patch": "String pass2005= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= mergePasswordAndSalt( rawPass , salt , false ) ;"
+            },
+            {
+                "patch": "String pass2006= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= mergePasswordAndSalt( rawPass , salt , false ) ;"
+            },
+            {
+                "patch": "String pass2= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= encPass + ''; String pass1= encPass + '';"
+            },
+            {
+                "patch": "String pass2= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= encPass + '{'; String pass1= encPass + '{';"
+            },
+            {
+                "patch": "String pass2= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= encPass + ' and '; String pass1= encPass + ' and ';"
+            },
+            {
+                "patch": "String pass2= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= encPass + '}'; String pass1= encPass + '}';"
+            },
+            {
+                "patch": "String pass2= mergePasswordAndSalt( rawPass , salt , false ) ; String pass1= encPass + 'AS IS'; String pass1= encPass + 'AS IS';"
+            }
+        ]
+    }
+}

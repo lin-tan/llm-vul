@@ -1,0 +1,56 @@
+{
+    "output": [
+        "retval[i] = (COSNumber) getObject(i);",
+        "retval[i] = ((COSNumber) getObject( i)).floatValue();",
+        "retval[i] = (COSNumber) getObject( i);",
+        "retval[i] = (COSNumber) getObject(i).floatValue();",
+        "retval[i] = (COSNumber) getObject( i).floatValue();",
+        "retval[i] = (COSNumber) getObject(i);",
+        "retval[i] = (COSNumber) getObject( i);",
+        "retval[i] = ((COSNumber) getObject( i));",
+        "retval[i] = getCoSNumber(i);",
+        "retval[i] = getCOSNumber(i);"
+    ],
+    "validation_result": [
+        {
+            "patch": "retval[i] = (COSNumber) getObject(i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber) getObject( i)).floatValue();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "retval[i] = (COSNumber) getObject( i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = (COSNumber) getObject(i).floatValue();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = (COSNumber) getObject( i).floatValue();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = (COSNumber) getObject(i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = (COSNumber) getObject( i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = ((COSNumber) getObject( i));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = getCoSNumber(i);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "retval[i] = getCOSNumber(i);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

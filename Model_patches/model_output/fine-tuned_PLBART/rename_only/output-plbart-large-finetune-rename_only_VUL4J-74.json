@@ -1,0 +1,66 @@
+{
+    "output": [
+        "secureRandomInstance.nextBytes(new byte[1]);",
+        "secureRandomInstance.nextBytes(new byte[0]);",
+        "if (source!= null) { secureRandomInstance.nextBytes(new byte[1]); }",
+        "secureRandomInstance.nextBytes(new byte[0]); secureRandomInstance.nextBytes(new byte[1]);",
+        "secureRandomInstance.nextBytes(byteArray);",
+        "if (source!= null) { secureRandomInstance.nextBytes(source.getInputStream()); }",
+        "secureRandomInstance.nextBytes(new byte[1]); secureRandomInstance.setSeed(new byte[0]);",
+        ". secureRandomInstance.nextBytes(new byte[1]);",
+        "secureRandomInstance.nextBytes(new byte[1]);",
+        "secureRandomInstance.nextBytes(sourceBytes);"
+    ],
+    "validation_result": [
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[1]);"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[0]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[0]);"
+        },
+        {
+            "patch": "if (source!= null) { secureRandomInstance.nextBytes(new byte[1]); }",
+            "correctness": "uncompilable",
+            "translated": "if (seed!= null) { rnd.nextBytes(new byte[1]); }"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[0]); secureRandomInstance.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[0]); rnd.nextBytes(new byte[1]);"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(byteArray);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(byteArray);"
+        },
+        {
+            "patch": "if (source!= null) { secureRandomInstance.nextBytes(source.getInputStream()); }",
+            "correctness": "uncompilable",
+            "translated": "if (seed!= null) { rnd.nextBytes(seed.getInputStream()); }"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[1]); secureRandomInstance.setSeed(new byte[0]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[1]); rnd.setSeed(new byte[0]);"
+        },
+        {
+            "patch": ". secureRandomInstance.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": ". rnd.nextBytes(new byte[1]);"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[1]);"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(sourceBytes);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(seedBytes);"
+        }
+    ]
+}

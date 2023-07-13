@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "if (pathToCheck!= null && pathToCheck.startsWith(parentPath.normalize())) {",
+        "if (pathToCheck == null || pathToCheck.startsWith(parentPath.normalize())) {",
+        "if (!pathToCheck.startsWith(parentPath.normalize())) {",
+        "if (parentPath == null || pathToCheck.startsWith(parentPath.normalize())) {",
+        "If (pathToCheck!= null && pathToCheck.startsWith(parentPath.normalize())) {",
+        "if (pathToCheck.equals(parentPath.normalize())) {",
+        "if (pathToCheck!=null && pathToCheck.startsWith(parentPath.normalize())) {",
+        "if (pathToCheck.startsWith(parentPath.getParentPath().normalize())) {",
+        "if (pathToCheck == null || pathToCheck.startsWith(parentPath.normalize())) {",
+        "If (pathToCheck!= null && pathToCheck.startsWith(parentPath.normalize())) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (pathToCheck!= null && pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck == null || pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (parentPath == null || pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "If (pathToCheck!= null && pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (pathToCheck.equals(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck!=null && pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck.startsWith(parentPath.getParentPath().normalize())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (pathToCheck == null || pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "If (pathToCheck!= null && pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

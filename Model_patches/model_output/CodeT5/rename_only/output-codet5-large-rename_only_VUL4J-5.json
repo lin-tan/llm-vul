@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-27,1",
+    "output": [
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n   \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n                + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n       \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n   \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n                + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n   \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n                + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n}",
+        "\n   \n   \n\n   \n    String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&!\n            + \" to \" + f);\n       \n\n       \n       \n       \n\n    }"
+    ],
+    "validation_result": [
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n   \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n                + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n       \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n   \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n                + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n       \n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n\n}"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n   \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n                + \" to \" + f);\n       \n\n       \n       \n       \n    }",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&\n            + \" to \" + f);\n       \n\n       \n       \n       \n    }\n}"
+        },
+        {
+            "patch": "String objectiveDirectoryPath = objectiveFolder.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&!\n            + \" to \" + f);\n       \n\n       \n       \n       \n\n    }",
+            "correctness": "uncompilable",
+            "translated": "String targetDirPath = targetDirectory.getCanonicalPath();\n       \n       \n        if (!f.exists()) {\n            f.mkdirs();\n        }\n       \n\n\n       \n       \n\n\n\n   \n\n\n\n        &&!\n            + \" to \" + f);\n       \n\n       \n       \n       \n\n    }"
+        }
+    ]
+}

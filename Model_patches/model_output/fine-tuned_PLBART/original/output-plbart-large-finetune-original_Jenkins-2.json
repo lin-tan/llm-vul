@@ -1,0 +1,56 @@
+{
+    "output": [
+        "return new ArrayList(items.values());",
+        "return new ArrayList<TopLevelItem>(items.values());",
+        "return new ArrayList<>(items.values());",
+        "List<TopLevelItem> items = new ArrayList<>(items.values());",
+        "return items.values();",
+        "List<TopLevelItem> viewableItems = new ArrayList<>();",
+        "return new ArrayList<TopLevelItem>();",
+        "return items;",
+        "return new ArrayList<>();",
+        "return getItems();"
+    ],
+    "validation_result": [
+        {
+            "patch": "return new ArrayList(items.values());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new ArrayList<TopLevelItem>(items.values());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new ArrayList<>(items.values());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "List<TopLevelItem> items = new ArrayList<>(items.values());",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return items.values();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "List<TopLevelItem> viewableItems = new ArrayList<>();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new ArrayList<TopLevelItem>();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return items;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return new ArrayList<>();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return getItems();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

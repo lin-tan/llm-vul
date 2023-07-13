@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>        if (fpath.startsWith(objectiveFolder.getAbsolutePath())) {\n</s>",
+        "<pad><s>        if (fpath.equals(objectiveFolder.getCanonicalPath())) {\n</s></s>",
+        "<pad><s>        if (fpath.startsWith(objectiveFolder)) {\n</s></s></s></s></s></s>",
+        "<pad><s>        if (fpath.startsWith(objectiveFolder.getCanonicalPath())) {\n</s>",
+        "<pad><s>        if (fpath.startsWith(folder.getCanonicalPath())) {\n</s></s>",
+        "<pad><s>        if (fpath.startsWith(objectiveFolder.getCanonicalPath()))\n</s></s>",
+        "<pad><s>        if (fpath.startsWith(path)) {\n</s></s></s></s></s></s></s>",
+        "<pad><s>        if (fpath.startsWith(folder)) {\n</s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        if (fpath.startsWith(objectiveFolder.getAbsolutePath())) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (fpath.startsWith(targetDirectory.getAbsolutePath())) {\n"
+        },
+        {
+            "patch": "        if (fpath.equals(objectiveFolder.getCanonicalPath())) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (fpath.equals(targetDirectory.getCanonicalPath())) {\n"
+        },
+        {
+            "patch": "        if (fpath.startsWith(objectiveFolder)) {\n",
+            "correctness": "uncompilable",
+            "translated": "        if (fpath.startsWith(targetDirectory)) {\n"
+        },
+        {
+            "patch": "        if (fpath.startsWith(objectiveFolder.getCanonicalPath())) {\n",
+            "correctness": "compile_success",
+            "translated": "        if (fpath.startsWith(targetDirectory.getCanonicalPath())) {\n"
+        },
+        {
+            "patch": "        if (fpath.startsWith(folder.getCanonicalPath())) {\n",
+            "correctness": "uncompilable",
+            "translated": "        if (fpath.startsWith(folder.getCanonicalPath())) {\n"
+        },
+        {
+            "patch": "        if (fpath.startsWith(objectiveFolder.getCanonicalPath()))\n",
+            "correctness": "uncompilable",
+            "translated": "        if (fpath.startsWith(targetDirectory.getCanonicalPath()))\n"
+        },
+        {
+            "patch": "        if (fpath.startsWith(path)) {\n",
+            "correctness": "uncompilable",
+            "translated": "        if (fpath.startsWith(path)) {\n"
+        },
+        {
+            "patch": "        if (fpath.startsWith(folder)) {\n",
+            "correctness": "uncompilable",
+            "translated": "        if (fpath.startsWith(folder)) {\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

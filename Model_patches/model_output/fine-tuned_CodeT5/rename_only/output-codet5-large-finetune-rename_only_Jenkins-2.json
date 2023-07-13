@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return new ArrayList<PeakDegreeElement>(elements.values());\n</s></s></s></s></s>",
+        "<pad><s>    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n</s>",
+        "<pad><s>    List<PeakDegreeElement> visibleElements = new ArrayList<>(elements.values());\n</s>",
+        "<pad><s>    List<PeakDegreeElement> ret = new ArrayList<PeakDegreeElement>();\n</s>",
+        "<pad><s>    List<PeakDegreeElement> elements = new ArrayList<PeakDegreeElement>();\n</s>",
+        "<pad><s>    return new ArrayList<>(elements.values());\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return elements.values();\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return elements;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return new ArrayList<PeakDegreeElement>(elements.values());\n",
+            "correctness": "uncompilable",
+            "translated": "    return new ArrayList<TopLevelItem>(items.values());\n"
+        },
+        {
+            "patch": "    List<PeakDegreeElement> result = new ArrayList<PeakDegreeElement>();\n",
+            "correctness": "test_success",
+            "translated": "    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n"
+        },
+        {
+            "patch": "    List<PeakDegreeElement> visibleElements = new ArrayList<>(elements.values());\n",
+            "correctness": "uncompilable",
+            "translated": "    List<TopLevelItem> viewableItems = new ArrayList<>(items.values());\n"
+        },
+        {
+            "patch": "    List<PeakDegreeElement> ret = new ArrayList<PeakDegreeElement>();\n",
+            "correctness": "test_success",
+            "translated": "    List<TopLevelItem> ret = new ArrayList<TopLevelItem>();\n"
+        },
+        {
+            "patch": "    List<PeakDegreeElement> elements = new ArrayList<PeakDegreeElement>();\n",
+            "correctness": "uncompilable",
+            "translated": "    List<TopLevelItem> items = new ArrayList<TopLevelItem>();\n"
+        },
+        {
+            "patch": "    return new ArrayList<>(elements.values());\n",
+            "correctness": "uncompilable",
+            "translated": "    return new ArrayList<>(items.values());\n"
+        },
+        {
+            "patch": "    return elements.values();\n",
+            "correctness": "uncompilable",
+            "translated": "    return items.values();\n"
+        },
+        {
+            "patch": "    return elements;\n",
+            "correctness": "uncompilable",
+            "translated": "    return items;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

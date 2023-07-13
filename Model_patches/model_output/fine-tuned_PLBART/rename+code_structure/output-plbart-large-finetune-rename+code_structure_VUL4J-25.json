@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return resourseAddress;",
+        "return StringEscapeUtils.unescapeXml(URLDecoder.decode(resourseAddress));",
+        "return mutilateReasonableHref(resourseAddress);",
+        "if (StringUtils.isNotEmpty(resourseAddress)) {",
+        "return mutilateTitleScope(resourseAddress);",
+        "return \"String_Node_Str\";",
+        "return StringEscapeUtils.unescapeXml(resourseAddress);",
+        "return null;",
+        "return reasonableHref;",
+        "String convertedResourseAddress = null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return resourseAddress;",
+            "correctness": "uncompilable",
+            "translated": "return url;"
+        },
+        {
+            "patch": "return StringEscapeUtils.unescapeXml(URLDecoder.decode(resourseAddress));",
+            "correctness": "uncompilable",
+            "translated": "return StringEscapeUtils.unescapeXml(URLDecoder.decode(url));"
+        },
+        {
+            "patch": "return mutilateReasonableHref(resourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "return mutilateReasonableHref(url);"
+        },
+        {
+            "patch": "if (StringUtils.isNotEmpty(resourseAddress)) {",
+            "correctness": "uncompilable",
+            "translated": "if (StringUtils.isNotEmpty(url)) {"
+        },
+        {
+            "patch": "return mutilateTitleScope(resourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "return mangleNamespaces(url);"
+        },
+        {
+            "patch": "return \"String_Node_Str\";",
+            "correctness": "uncompilable",
+            "translated": "return \"String_Node_Str\";"
+        },
+        {
+            "patch": "return StringEscapeUtils.unescapeXml(resourseAddress);",
+            "correctness": "uncompilable",
+            "translated": "return StringEscapeUtils.unescapeXml(url);"
+        },
+        {
+            "patch": "return null;",
+            "correctness": "uncompilable",
+            "translated": "return null;"
+        },
+        {
+            "patch": "return reasonableHref;",
+            "correctness": "uncompilable",
+            "translated": "return reasonableHref;"
+        },
+        {
+            "patch": "String convertedResourseAddress = null;",
+            "correctness": "compile_success",
+            "translated": "String encodedUrl = null;"
+        }
+    ]
+}

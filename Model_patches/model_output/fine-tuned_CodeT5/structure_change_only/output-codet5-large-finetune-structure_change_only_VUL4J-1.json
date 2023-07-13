@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    parser.parseArray(componentClass, array);\n</s></s></s></s></s>",
+        "<pad><s>    parser.parseArray(array, fieldName);\n</s></s></s></s></s></s>",
+        "<pad><s>    array = parser.parseArray(componentClass, array, fieldName);\n</s>",
+        "<pad><s>    parser.parseArray(componentClass, array, fieldName, true);\n</s>",
+        "<pad><s>    parser.parseArray(componentClass, array, fieldName, null);\n</s>",
+        "<pad><s>    parser.parseArray(componentClass, array, fieldName, false);\n</s>",
+        "<pad><s>    parser.parseArray(parser, componentClass, array, fieldName);\n</s>",
+        "<pad><s>    parser.parseArray(componentClass, array, fieldName, context);\n</s>",
+        "<pad><s>    parser.parseArray(componentClass, array, fieldName, type);\n</s>",
+        "<pad><s>    parser.parseArray(type, array, fieldName);\n</s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    parser.parseArray(componentClass, array);\n",
+            "correctness": "compile_success",
+            "translated": "    parser.parseArray(componentClass, array);\n"
+        },
+        {
+            "patch": "    parser.parseArray(array, fieldName);\n",
+            "correctness": "compile_success",
+            "translated": "    parser.parseArray(array, fieldName);\n"
+        },
+        {
+            "patch": "    array = parser.parseArray(componentClass, array, fieldName);\n",
+            "correctness": "uncompilable",
+            "translated": "    array = parser.parseArray(componentClass, array, fieldName);\n"
+        },
+        {
+            "patch": "    parser.parseArray(componentClass, array, fieldName, true);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, fieldName, true);\n"
+        },
+        {
+            "patch": "    parser.parseArray(componentClass, array, fieldName, null);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, fieldName, null);\n"
+        },
+        {
+            "patch": "    parser.parseArray(componentClass, array, fieldName, false);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, fieldName, false);\n"
+        },
+        {
+            "patch": "    parser.parseArray(parser, componentClass, array, fieldName);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(parser, componentClass, array, fieldName);\n"
+        },
+        {
+            "patch": "    parser.parseArray(componentClass, array, fieldName, context);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, fieldName, context);\n"
+        },
+        {
+            "patch": "    parser.parseArray(componentClass, array, fieldName, type);\n",
+            "correctness": "uncompilable",
+            "translated": "    parser.parseArray(componentClass, array, fieldName, type);\n"
+        },
+        {
+            "patch": "    parser.parseArray(type, array, fieldName);\n",
+            "correctness": "compile_success",
+            "translated": "    parser.parseArray(type, array, fieldName);\n"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+[
+  "return \"null\";",
+  "if((resourseAddress == null)){\nreturn \"null\";}",
+  "String name = StandardCharsets.UTF_8.name();\n",
+  "final String name = StandardCharsets.UTF_8.name();\n",
+  "String name = StringUtils.name();\n",
+  "encodeResourseAddress = encodeResourseAddress.replaceAll(\"null\", \"null\");\n",
+  "String name = name();\n",
+  "String name = resourseAddress.name();\n",
+  "encodeResourseAddress = encodeResourseAddress.replaceAll(\"null\", \"null\");\nreturn \"null\";",
+  "StandardCharsets.UTF_8.name();\n"
+]

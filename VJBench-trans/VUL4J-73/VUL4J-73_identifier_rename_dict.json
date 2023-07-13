@@ -1,0 +1,19 @@
+{
+    "method": {
+        "mergePasswordAndSalt": "unifyWatchwordAndRandomData",
+        "isPasswordValid": "isSoundWatchword",
+        "equals": "isEqualTo"
+    },
+    "variable": {
+        "salt": "randomData",
+        "rawPass": "unprocessedWatchword",
+        "encPass": "encipheredWatchword",
+        "pass1": "watchwordA",
+        "pass2": "watchwordB",
+        "ignorePasswordCase": "isWatchwordCaseInsensitive",
+        "": ""
+    },
+    "class": {
+        "PasswordEncoderUtils": "WatchwordEncipherTools"
+    }
+}

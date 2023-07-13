@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    if (template!= null) {\n        template = template.replace(\"{{path}}\", path);\n        template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n        String routes = getRoutes(event);\n        template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes): template;\n    }\n</s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", path.replace(\"String_Node_Str\", \"String_Node_Str\"));\n    template = template.contains(\"{{additionalInfo}}\")? template.replace(\"{{additionalInfo}}\", additionalInfo.replace(\"String_Node_Str\", \"String_Node_Str\")): template;\n</s></s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", Jsoup.clean(path, Whitelist.none()));\n    template = template.contains(\"{{additionalInfo}}\")? template.replace(\"{{additionalInfo}}\", Jsoup.clean(additionalInfo, Whitelist.none())): template;\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", \"String_Node_Str\");\n    template = template.replace(\"{{additionalInfo}}\", \"String_Node_Str\");\n    template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", getRoutes(event)): template;\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", Jsoup.clean(path, Whitelist.none()));\n    template = template.contains(\"{{additionalInfo}}\")? template.replace(\"{{additionalInfo}}\", Jsoup.clean(additionalInfo, Whitelist.none())) : template;\n</s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", Jsoup.clean(path, Whitelist.none()));\n    template = template.replace(\"{{additionalInfo}}\", Jsoup.clean(additionalInfo, Whitelist.none()));\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replaceAll(\"String_Node_Str\", \"String_Node_Str\");\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", path + \"String_Node_Str\" + additionalInfo);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (template!= null) {\n        template = template.replace(\"{{path}}\", path);\n        template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n        String routes = getRoutes(event);\n        template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", routes): template;\n    }\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", path.replace(\"String_Node_Str\", \"String_Node_Str\"));\n    template = template.contains(\"{{additionalInfo}}\")? template.replace(\"{{additionalInfo}}\", additionalInfo.replace(\"String_Node_Str\", \"String_Node_Str\")): template;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", Jsoup.clean(path, Whitelist.none()));\n    template = template.contains(\"{{additionalInfo}}\")? template.replace(\"{{additionalInfo}}\", Jsoup.clean(additionalInfo, Whitelist.none())): template;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", \"String_Node_Str\");\n    template = template.replace(\"{{additionalInfo}}\", \"String_Node_Str\");\n    template = template.contains(\"{{routes}}\")? template.replace(\"{{routes}}\", getRoutes(event)): template;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", Jsoup.clean(path, Whitelist.none()));\n    template = template.contains(\"{{additionalInfo}}\")? template.replace(\"{{additionalInfo}}\", Jsoup.clean(additionalInfo, Whitelist.none())) : template;\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", Jsoup.clean(path, Whitelist.none()));\n    template = template.replace(\"{{additionalInfo}}\", Jsoup.clean(additionalInfo, Whitelist.none()));\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replaceAll(\"String_Node_Str\", \"String_Node_Str\");\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", path + \"String_Node_Str\" + additionalInfo);\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

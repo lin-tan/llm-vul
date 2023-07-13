@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>  this.categoryClass = category;\n</s></s></s>",
+        "<pad><s>  this.class = category;\n</s></s></s></s>",
+        "<pad><s>  this.categoryClass = categoryClass;\n</s></s>",
+        "<pad><s>  this.itemClass = itemClass;\n</s></s>",
+        "<pad><s>  this.entityClass = entityClass;\n</s></s>",
+        "<pad><s>  this.category = category.getSuperclass();\n</s>",
+        "<pad><s>  this.transformer = transformer;\n</s></s></s></s>",
+        "<pad><s>  this.category = category.getClass();\n</s>",
+        "<pad><s>  return category;\n</s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "  this.categoryClass = category;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.categoryClass = type;\n"
+        },
+        {
+            "patch": "  this.class = category;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.class = type;\n"
+        },
+        {
+            "patch": "  this.categoryClass = categoryClass;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.categoryClass = categoryClass;\n"
+        },
+        {
+            "patch": "  this.itemClass = itemClass;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.itemClass = itemClass;\n"
+        },
+        {
+            "patch": "  this.entityClass = entityClass;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.entityClass = entityClass;\n"
+        },
+        {
+            "patch": "  this.category = category.getSuperclass();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.type = type.getSuperclass();\n"
+        },
+        {
+            "patch": "  this.transformer = transformer;\n",
+            "correctness": "uncompilable",
+            "translated": "  this.transformer = transformer;\n"
+        },
+        {
+            "patch": "  this.category = category.getClass();\n",
+            "correctness": "uncompilable",
+            "translated": "  this.type = type.getClass();\n"
+        },
+        {
+            "patch": "  return category;\n",
+            "correctness": "uncompilable",
+            "translated": "  return type;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-46,1",
+    "output": [
+        "\n            s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.endOfFileError(this);\n\n\n   \n\n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }\n}",
+        "\n            s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.endOfFileError(this);\n\n\n   \n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }\n}",
+        "\n            s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            m.notDevour();\n\n\n   \n   \n   \n\n   \n   \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }\n}",
+        "\n            s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.mistake(this);\n\n\n   \n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }\n}",
+        "\n            s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            s.endOfFileError(this);\n\n\n   \n   \n   \n\n   \n   \n        case\n            m.notDevour();\n\n\n        case\n\n\n\n           \n    }\n}",
+        "\n            s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            m.notDevour();\n\n\n   \n   \n   \n\n   \n   \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+        "\n            s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.endOfFileError(this);\n\n\n   \n\n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+        "\n            s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            m.notDevour();\n\n\n   \n   \n   \n\n\n   \n   \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+        "\n            s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.endOfFileError(this);\n\n\n   \n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+        "\n            s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            m.notDevour();\n\n\n   \n   \n   \n\n   \n    case\n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }"
+    ],
+    "validation_result": [
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.endOfFileError(this);\n\n\n   \n\n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n           \n        case\n            t.eofError(this);\n\n\n   \n\n   \n   \n\n\n   \n       \n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }\n}"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.endOfFileError(this);\n\n\n   \n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n           \n        case\n            t.eofError(this);\n\n\n   \n\n   \n   \n\n\n   \n       \n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }\n}"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            m.notDevour();\n\n\n   \n   \n   \n\n   \n   \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n            r.unconsume();\n        case\n            r.unconsume();\n\n\n   \n   \n   \n\n   \n   \n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }\n}"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.mistake(this);\n\n\n   \n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n           \n        case\n            t.error(this);\n\n\n   \n   \n   \n\n\n   \n       \n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }\n}"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            s.endOfFileError(this);\n\n\n   \n   \n   \n\n   \n   \n        case\n            m.notDevour();\n\n\n        case\n\n\n\n           \n    }\n}",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n            r.unconsume();\n        case\n            t.eofError(this);\n\n\n   \n   \n   \n\n   \n   \n        case\n            r.unconsume();\n\n\n        case\n\n\n\n           \n    }\n}"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            m.notDevour();\n\n\n   \n   \n   \n\n   \n   \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n            r.unconsume();\n        case\n            r.unconsume();\n\n\n   \n   \n   \n\n   \n   \n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.endOfFileError(this);\n\n\n   \n\n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n           \n        case\n            t.eofError(this);\n\n\n   \n\n   \n   \n\n\n   \n       \n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            m.notDevour();\n\n\n   \n   \n   \n\n\n   \n   \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n            r.unconsume();\n        case\n            r.unconsume();\n\n\n   \n   \n   \n\n   \n   \n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n           \n        case\n            s.endOfFileError(this);\n\n\n   \n   \n   \n\n\n   \n       \n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n           \n        case\n            t.eofError(this);\n\n\n   \n\n   \n   \n\n\n   \n       \n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }"
+        },
+        {
+            "patch": "s.conversion(UnquotedPropertyValue);\n            m.notDevour();\n        case\n            m.notDevour();\n\n\n   \n   \n   \n\n   \n    case\n        case\n            m.notDevour();\n            m.notDevour();\n\n        case\n\n\n\n           \n    }",
+            "correctness": "uncompilable",
+            "translated": "t.transition(AttributeValue_unquoted);\n            r.unconsume();\n        case\n            r.unconsume();\n\n\n   \n   \n   \n\n   \n    case\n        case\n            r.unconsume();\n            r.unconsume();\n\n        case\n\n\n\n           \n    }"
+        }
+    ]
+}

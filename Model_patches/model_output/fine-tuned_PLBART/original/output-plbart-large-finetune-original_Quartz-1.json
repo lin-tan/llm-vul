@@ -1,0 +1,56 @@
+{
+    "output": [
+        "docBuilder = docBuilderFactory.newDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newDocumentBuilder(true);",
+        "docBuilder = docBuilderFactory.newDocumentBuilder(false);",
+        "docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();",
+        "docBuilder = docBuilderFactory.getDocumentBuilder();",
+        "docBuilder = getDocumentBuilderFactory().newDocumentBuilder();",
+        "docBuilder = docBuilderFactory.newDocumentBuilder().reset();",
+        "docBuilder = docBuilderFactory.newDocumentBuilder(null);",
+        "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();",
+        "docBuilder = documentBuilderFactory.newDocumentBuilder();"
+    ],
+    "validation_result": [
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder(false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = DocumentBuilderFactory.newInstance().newDocumentBuilder();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.getDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = getDocumentBuilderFactory().newDocumentBuilder();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder().reset();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "docBuilder = docBuilderFactory.newDocumentBuilder(null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "DocumentBuilder docBuilder = docBuilderFactory.newDocumentBuilder();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "docBuilder = documentBuilderFactory.newDocumentBuilder();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

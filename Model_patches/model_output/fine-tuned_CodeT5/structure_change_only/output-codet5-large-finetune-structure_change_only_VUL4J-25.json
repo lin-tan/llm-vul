@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>       return mangleNamespaces(url);\n</s></s></s></s></s>",
+        "<pad><s>    } catch (UnsupportedEncodingException e) {\n</s></s></s></s>",
+        "<pad><s>    } catch (UnsupportedEncodingException e) {\n    }\n</s>",
+        "<pad><s>       return xssFilter.getValidHref(url);\n</s>",
+        "<pad><s>       return decode(url);\n</s></s></s></s></s></s></s>",
+        "<pad><s>    } catch (Exception e) {\n</s></s></s></s></s>",
+        "<pad><s>    }\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>       \n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "       return mangleNamespaces(url);\n",
+            "correctness": "uncompilable",
+            "translated": "       return mangleNamespaces(url);\n"
+        },
+        {
+            "patch": "    } catch (UnsupportedEncodingException e) {\n",
+            "correctness": "uncompilable",
+            "translated": "    } catch (UnsupportedEncodingException e) {\n"
+        },
+        {
+            "patch": "    } catch (UnsupportedEncodingException e) {\n    }\n",
+            "correctness": "uncompilable",
+            "translated": "    } catch (UnsupportedEncodingException e) {\n    }\n"
+        },
+        {
+            "patch": "       return xssFilter.getValidHref(url);\n",
+            "correctness": "uncompilable",
+            "translated": "       return xssFilter.getValidHref(url);\n"
+        },
+        {
+            "patch": "       return decode(url);\n",
+            "correctness": "uncompilable",
+            "translated": "       return decode(url);\n"
+        },
+        {
+            "patch": "    } catch (Exception e) {\n",
+            "correctness": "uncompilable",
+            "translated": "    } catch (Exception e) {\n"
+        },
+        {
+            "patch": "    }\n",
+            "correctness": "uncompilable",
+            "translated": "    }\n"
+        },
+        {
+            "patch": "       \n",
+            "correctness": "compile_success",
+            "translated": "       \n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": "       \n"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

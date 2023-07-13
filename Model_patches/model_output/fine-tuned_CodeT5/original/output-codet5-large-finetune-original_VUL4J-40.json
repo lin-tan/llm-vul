@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    if (!scimUserFromDb.getUserName().equalsIgnoreCase(scimUserFromRequest.getUserName())) {\n</s></s></s>",
+        "<pad><s>    if (scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {\n</s></s></s></s>",
+        "<pad><s>    if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {\n</s></s></s></s>",
+        "<pad><s>    if (!scimUserFromDb.getPrimaryEmail().equals(scimUserFromRequest.getPrimaryEmail())) {\n</s></s>",
+        "<pad><s>    if (!StringUtils.equals(scimUserFromDb.getUserName(), scimUserFromRequest.getUserName())) {\n</s>",
+        "<pad><s>    if (!scimUserFromDb.getUsername().equals(scimUserFromRequest.getUsername())) {\n</s></s></s></s>",
+        "<pad><s>    if (!scimUserFromDb.getUserId().equals(scimUserFromRequest.getUserId())) {\n</s></s></s></s>",
+        "<pad><s>    if (!scimUserFromDb.getName().equals(scimUserFromRequest.getName())) {\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    if (!scimUserFromDb.getUserName().equalsIgnoreCase(scimUserFromRequest.getUserName())) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (!scimUserFromDb.getPrimaryEmail().equals(scimUserFromRequest.getPrimaryEmail())) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    if (!StringUtils.equals(scimUserFromDb.getUserName(), scimUserFromRequest.getUserName())) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!scimUserFromDb.getUsername().equals(scimUserFromRequest.getUsername())) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!scimUserFromDb.getUserId().equals(scimUserFromRequest.getUserId())) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (!scimUserFromDb.getName().equals(scimUserFromRequest.getName())) {\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

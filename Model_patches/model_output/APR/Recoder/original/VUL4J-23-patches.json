@@ -1,0 +1,12 @@
+[
+  "return ((source == null))?null:Encode.encodeForJSString(source);",
+  "return source;",
+  "return (String)((source == null))?null:Encode.forJavaScriptSource(source);",
+  "return ((source == null))?source:Encode.forJavaScriptSource(source);",
+  "return Encode.forJavaScriptSource(source);",
+  "return ((source == null))?null:source;",
+  "return ((source == null))?null:Encode.forJavaScriptSource(source);",
+  "return ((source != null))?null:Encode.forJavaScriptSource(source);",
+  "return ((source == null))?\"null\":Encode.forJavaScriptSource(source);",
+  "return ((source == null))?(String)source:Encode.forJavaScriptSource(source);"
+]

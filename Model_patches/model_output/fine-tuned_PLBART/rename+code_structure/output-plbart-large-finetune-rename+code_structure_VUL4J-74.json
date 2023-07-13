@@ -1,0 +1,66 @@
+{
+    "output": [
+        "secureRandomInstance.nextBytes(new byte[1]); secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(source));",
+        "secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(source));",
+        "secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(source.getInputStream()));",
+        "secureRandomInstance.nextBytes(new byte[0]); secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(source));",
+        "secureRandomInstance.nextBytes(new byte[1]); secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));",
+        "secureRandomInstance.nextBytes(new byte[1]);",
+        "secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));",
+        "if (source!= null) { secureRandomInstance.nextBytes(new byte[1]); }",
+        "secureRandomInstance.nextBytes(new byte[0]);",
+        "secureRandomInstance.nextBytes(new byte[1]);"
+    ],
+    "validation_result": [
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[1]); secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(source));",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[1]); rnd.setSeed(FileCopyUtils.copyToByteArray(seed));"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(source));",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(FileCopyUtils.copyToByteArray(seed));"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(source.getInputStream()));",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(FileCopyUtils.copyToByteArray(seed.getInputStream()));"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[0]); secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(source));",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[0]); rnd.setSeed(FileCopyUtils.copyToByteArray(seed));"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[1]); secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[1]); rnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[1]);"
+        },
+        {
+            "patch": "secureRandomInstance.setSeed(FileCopyUtils.copyToByteArray(inputStream));",
+            "correctness": "uncompilable",
+            "translated": "rnd.setSeed(FileCopyUtils.copyToByteArray(inputStream));"
+        },
+        {
+            "patch": "if (source!= null) { secureRandomInstance.nextBytes(new byte[1]); }",
+            "correctness": "uncompilable",
+            "translated": "if (seed!= null) { rnd.nextBytes(new byte[1]); }"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[0]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[0]);"
+        },
+        {
+            "patch": "secureRandomInstance.nextBytes(new byte[1]);",
+            "correctness": "uncompilable",
+            "translated": "rnd.nextBytes(new byte[1]);"
+        }
+    ]
+}

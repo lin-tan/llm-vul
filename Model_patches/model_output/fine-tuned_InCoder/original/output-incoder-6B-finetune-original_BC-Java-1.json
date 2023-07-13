@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    return new BigInteger[]{\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    return new BigInteger[] {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    return new BigInteger[] { \n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s == null)\n        return null;\n    return new BigInteger[]{\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s == null) {\n        return null;\n    }\n    return new BigInteger[]{\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s == null) {\n        return null;\n    }\n    return new BigInteger[] {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s == null)\n        return null;\n    return new BigInteger[] {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s == null) {\n        return new BigInteger[0];\n    }\n    return new BigInteger[]{\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    BigInteger[] result = new BigInteger[2];\n    result[0] = new BigInteger(s.getObjectAt(0));\n    result[1] = new BigInteger(s.getObjectAt(1));\n    return result;\n<|endofmask|>",
+        "<|endoftext|>private BigInteger[] derDecode(\n    byte[]  encoding)\n    throws IOException\n{\n    ASN1Sequence s = (ASN1Sequence)ASN1Primitive.fromByteArray(encoding);\n// buggy lines start:\n    return new BigInteger[]{\n// buggy lines end\n        ((ASN1Integer)s.getObjectAt(0)).getValue(),\n        ((ASN1Integer)s.getObjectAt(1)).getValue()\n    };\n}\n// fixed lines:\n    if (s == null) {\n        return new BigInteger[0];\n    }\n    return new BigInteger[] {\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return new BigInteger[]{\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return new BigInteger[] {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    return new BigInteger[] { \n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (s == null)\n        return null;\n    return new BigInteger[]{\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (s == null) {\n        return null;\n    }\n    return new BigInteger[]{\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (s == null) {\n        return null;\n    }\n    return new BigInteger[] {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (s == null)\n        return null;\n    return new BigInteger[] {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    if (s == null) {\n        return new BigInteger[0];\n    }\n    return new BigInteger[]{\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    BigInteger[] result = new BigInteger[2];\n    result[0] = new BigInteger(s.getObjectAt(0));\n    result[1] = new BigInteger(s.getObjectAt(1));\n    return result;\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    if (s == null) {\n        return new BigInteger[0];\n    }\n    return new BigInteger[] {\n",
+            "correctness": "compile_success"
+        }
+    ]
+}

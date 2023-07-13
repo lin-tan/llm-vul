@@ -1,0 +1,940 @@
+{
+  "Halo-1": {
+    "buggy_file_path": "src/main/java/run/halo/app/utils/FileUtils.java",
+    "comment_buggy_method": [
+      [
+        289,
+        304
+      ]
+    ],
+    "buggy_method": [
+      [
+        289,
+        304
+      ]
+    ],
+    "buggy_line": [
+      [
+        299
+      ]
+    ],
+    "bug_type": "replace",
+    "compile_cmd": "./gradlew clean build -x test",
+    "test_cmd": "./gradlew clean test",
+    "CVE": "CVE-2020-21522",
+    "skip_compile_cmd": true,
+    "github_url": "https://github.com/halo-dev/halo",
+    "fix_commit": "https://github.com/halo-dev/halo/commit/d59877a9ce82b53ec27c7f012a5703280e2cfd4f",
+    "github_url_cve": "https://github.com/VJBench/Halo-1",
+    "github_url_cve_branch": "",
+    "introducing_files": [
+      "src/main/java/run/halo/app/utils/FileUtils.java"
+    ],
+    "build_gradle": "test {\n exclude '**/AttachmentTypeTest**'\n exclude '**/SheetRepositoryTest**'\n exclude '**/PostServiceImplTest**'\n}"
+  },
+  "Jenkins-3": {
+    "buggy_file_path": "core/src/main/java/jenkins/model/Jenkins.java",
+    "buggy_method": [
+      [
+        1869,
+        1892
+      ]
+    ],
+    "buggy_line": [
+      [
+        1890
+      ]
+    ],
+    "bug_type": "replace",
+    "compile_cmd": "mvn clean install -DskipTests",
+    "test_cmd": "mvn clean test -pl test -Dtest=SearchTest",
+    "CVE": "CVE-2017-2609",
+    "github_url": "https://github.com/jenkinsci/jenkins",
+    "github_url_cve": "https://github.com/VJBench/Jenkins-3",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/jenkinsci/jenkins/commit/13905d8224899ba7332fe9af4e330ea96a2ae319",
+    "introducing_files": [
+      "core/src/main/java/jenkins/model/Jenkins.java"
+    ]
+  },
+  "Jenkins-2": {
+    "buggy_file_path": "core/src/main/java/jenkins/model/Jenkins.java",
+    "buggy_method": [
+      [
+        1475,
+        1494
+      ]
+    ],
+    "buggy_line": [
+      [
+        1482,
+        1485
+      ]
+    ],
+    "bug_type": "deletion",
+    "compile_cmd": "mvn clean install -DskipTests",
+    "test_cmd": "mvn clean test -pl test -Dtest=Security380Test",
+    "CVE": "CVE-2017-2606",
+    "github_url": "https://github.com/jenkinsci/jenkins",
+    "github_url_cve": "https://github.com/VJBench/Jenkins-2",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/jenkinsci/jenkins/commit/09cfbc9cd5c9df7c763bc976b7f5c51266b63719",
+    "introducing_files": [
+      "core/src/main/java/jenkins/model/Jenkins.java"
+    ]
+  },
+  "Jenkins-1": {
+    "buggy_file_path": "core/src/main/java/hudson/model/Computer.java",
+    "buggy_method": [
+      [
+        1069,
+        1078
+      ]
+    ],
+    "buggy_line": [
+      [
+        1075,
+        1076
+      ]
+    ],
+    "bug_type": "replace",
+    "compile_cmd": "mvn clean install -DskipTests",
+    "test_cmd": "mvn clean test -pl test -Dtest=ComputerConfigDotXmlTest",
+    "CVE": "CVE-2017-2600",
+    "skip_compile_cmd": false,
+    "github_url": "https://github.com/jenkinsci/jenkins",
+    "github_url_cve": "https://github.com/VJBench/Jenkins-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/jenkinsci/jenkins/commit/0f92cd08a19207de2cceb6a2f4e3e9f92fdc0899",
+    "introducing_files": [
+      "core/src/main/java/hudson/model/Computer.java"
+    ]
+  },
+  "Jinjava-1": {
+    "buggy_file_path": "src/main/java/com/hubspot/jinjava/el/ext/JinjavaBeanELResolver.java",
+    "buggy_method": [
+      [
+        20,
+        26
+      ]
+    ],
+    "buggy_line": [
+      [
+        23
+      ]
+    ],
+    "bug_type": "insertion",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "CVE": "CVE-2018-18893",
+    "github_url": "https://github.com/HubSpot/jinjava",
+    "github_url_cve": "https://github.com/VJBench/Jinjava-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/HubSpot/jinjava/commit/4f28830ef9883e2c4e2a92a0d37b93c8620de2f7",
+    "introducing_files": [
+      "src/main/java/com/hubspot/jinjava/el/ext/JinjavaBeanELResolver.java"
+    ]
+  },
+  "Retrofit-1": {
+    "buggy_file_path": "retrofit-converters/jaxb/src/main/java/retrofit2/converter/jaxb/JaxbResponseConverter.java",
+    "buggy_method": [
+      [
+        33,
+        36
+      ]
+    ],
+    "buggy_line": [
+      [
+        35
+      ]
+    ],
+    "bug_type": "insertion",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "CVE": "CVE-2018-1000844",
+    "github_url": "https://github.com/square/retrofit",
+    "github_url_cve": "https://github.com/VJBench/Retrofit-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/square/retrofit/commit/4a693c5aeeef2be6c7ecf80e7b5ec79f6ab59437",
+    "introducing_files": [
+      "retrofit-converters/jaxb/src/main/java/retrofit2/converter/jaxb/JaxbResponseConverter.java"
+    ]
+  },
+  "Quartz-1": {
+    "buggy_file_path": "quartz-core/src/main/java/org/quartz/xml/XMLSchedulingDataProcessor.java",
+    "buggy_method": [
+      [
+        162,
+        214
+      ]
+    ],
+    "buggy_line": [
+      [
+        177
+      ]
+    ],
+    "bug_type": "insertion",
+    "compile_cmd": "./mvnw clean compile -pl quartz-core",
+    "test_cmd": "./mvnw clean test -pl quartz-core -Dtest=/XMLSchedulingDataProcessorTest",
+    "CVE": "CVE-2019-13990",
+    "github_url": "https://github.com/quartz-scheduler/quartz",
+    "github_url_cve": "https://github.com/VJBench/Quartz-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/quartz-scheduler/quartz/commit/c71ebec8ad17580a605d91acba6bc0a230144cc6",
+    "introducing_files": [
+      "quartz-core/src/main/java/org/quartz/xml/XMLSchedulingDataProcessor.java"
+    ]
+  },
+  "BC-Java-1": {
+    "buggy_file_path": "prov/src/main/java/org/bouncycastle/jcajce/provider/asymmetric/dsa/DSASigner.java",
+    "buggy_method": [
+      [
+        177,
+        186
+      ]
+    ],
+    "buggy_line": [
+      [
+        182
+      ]
+    ],
+    "bug_type": "insertion",
+    "compile_cmd": "./gradlew clean build -x test",
+    "test_cmd": "./gradlew :prov:test",
+    "CVE": "CVE-2016-1000338",
+    "skip_compile_cmd": true,
+    "github_url": "https://github.com/bcgit/bc-java",
+    "fix_commit": "https://github.com/bcgit/bc-java/commit/b0c3ce99d43d73a096268831d0d120ffc89eac7f",
+    "github_url_cve": "https://github.com/VJBench/BC-Java-1",
+    "github_url_cve_branch": "",
+    "introducing_files": [
+      "prov/src/main/java/org/bouncycastle/jcajce/provider/asymmetric/dsa/DSASigner.java"
+    ]
+  },
+  "Pulsar-1": {
+    "buggy_file_path": "pulsar-broker/src/main/java/org/apache/pulsar/broker/admin/impl/PersistentTopicsBase.java",
+    "buggy_method": [
+      [
+        2291,
+        2329
+      ]
+    ],
+    "buggy_line": [
+      [
+        2303
+      ]
+    ],
+    "bug_type": "insertion",
+    "compile_cmd": "mvn -pl pulsar-broker install -DskipTests",
+    "test_cmd": "mvn -pl pulsar-broker test -Dtest=PersistentTopicsTest",
+    "CVE": "CVE-2021-41571",
+    "github_url": "https://github.com/apache/pulsar",
+    "github_url_cve": "https://github.com/VJBench/Pulsar-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/apache/pulsar/commit/9bfb3dba7c13e8250e1002efdeb39eec56f7e2da#diff-66aeb65a64cbe7c541f013ae807c5bcbeab567bef77706c7ff2e0cbfe0d77eb1L2331",
+    "introducing_files": [
+      "pulsar-broker/src/main/java/org/apache/pulsar/broker/admin/impl/PersistentTopicsBase.java"
+    ]
+  },
+  "Ratpack-1": {
+    "buggy_file_path": "ratpack-core/src/main/java/ratpack/server/internal/NettyHandlerAdapter.java",
+    "buggy_method": [
+      [
+        117,
+        222
+      ]
+    ],
+    "buggy_line": [
+      [
+        159
+      ]
+    ],
+    "bug_type": "replace",
+    "compile_cmd": "./gradlew clean :ratpack-core:build -x test",
+    "test_cmd": "./gradlew clean :ratpack-core:test",
+    "CVE": "CVE-2019-17513",
+    "skip_compile_cmd": false,
+    "github_url": "https://github.com/ratpack/ratpack",
+    "github_url_cve": "https://github.com/VJBench/Ratpack-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/ratpack/ratpack/commit/efb910d38a96494256f36675ef0e5061097dd77d",
+    "introducing_files": [
+      "ratpack-core/src/main/java/ratpack/server/internal/NettyHandlerAdapter.java"
+    ]
+  },
+  "Json-sanitizer-1": {
+    "buggy_file_path": "src/main/java/com/google/json/JsonSanitizer.java",
+    "buggy_method": [
+      [
+        511,
+        645
+      ]
+    ],
+    "buggy_line": [
+      [
+        547,
+        553
+      ]
+    ],
+    "bug_type": "insertion",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "CVE": "CVE-2020-13973",
+    "skip_compile_cmd": false,
+    "github_url": "https://github.com/OWASP/json-sanitizer",
+    "github_url_cve": "https://github.com/VJBench/Json-sanitizer-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/OWASP/json-sanitizer/commit/f3512bab078af3f5c533dacc2d410add8c0c1124",
+    "introducing_files": [
+      "src/main/java/com/google/json/JsonSanitizer.java"
+    ]
+  },
+  "Flow-1": {
+    "buggy_file_path": "flow-server/src/main/java/com/vaadin/flow/server/DevModeHandler.java",
+    "buggy_method": [
+      [
+        296,
+        385
+      ]
+    ],
+    "buggy_line": [
+      [
+        324,
+        325
+      ]
+    ],
+    "bug_type": "replace",
+    "compile_cmd": "mvn clean compile -pl flow-server",
+    "test_cmd": "mvn clean test -pl flow-server -Dtest=DevModeHandlerTest",
+    "CVE": "CVE-2021-33604",
+    "github_url": "https://github.com/vaadin/flow",
+    "github_url_cve": "https://github.com/VJBench/Flow-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/vaadin/flow/commit/ca12a543f9edc5e18e0a7af3dd8ce2aa296a575c",
+    "introducing_files": [
+      "flow-server/src/main/java/com/vaadin/flow/server/DevModeHandler.java"
+    ]
+  },
+  "Flow-2": {
+    "buggy_file_path": "flow-server/src/main/java/com/vaadin/flow/router/RouteNotFoundError.java",
+    "buggy_method": [
+      [
+        46,
+        69
+      ]
+    ],
+    "buggy_line": [
+      [
+        61,
+        65
+      ]
+    ],
+    "bug_type": "insertion",
+    "compile_cmd": "mvn clean compile -pl flow-server",
+    "test_cmd": "mvn clean test -pl flow-server -Dtest=RouteNotFoundErrorTest",
+    "CVE": "CVE-2021-31412",
+    "github_url": "https://github.com/vaadin/flow",
+    "github_url_cve": "https://github.com/VJBench/Flow-2",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/vaadin/flow/commit/e4cf42f11ce79a309025611295ffafac252ed247",
+    "introducing_files": [
+      "flow-server/src/main/java/com/vaadin/flow/router/RouteNotFoundError.java"
+    ]
+  },
+  "Netty-1": {
+    "buggy_file_path": "codec-http/src/main/java/io/netty/handler/codec/http/HttpObjectDecoder.java",
+    "buggy_method": [
+      [
+        720,
+        751
+      ]
+    ],
+    "buggy_line": [
+      [
+        731
+      ]
+    ],
+    "bug_type": "replace",
+    "compile_cmd": "./mvnw clean compile -pl codec-http",
+    "test_cmd": "./mvnw clean test -pl codec-http",
+    "CVE": "CVE-2019-16869",
+    "github_url": "https://github.com/netty/netty",
+    "github_url_cve": "https://github.com/VJBench/Netty-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/netty/netty/commit/39cafcb05c99f2aa9fce7e6597664c9ed6a63a95",
+    "introducing_files": [
+      "codec-http/src/main/java/io/netty/handler/codec/http/HttpObjectDecoder.java"
+    ]
+  },
+  "Netty-2": {
+    "buggy_file_path": "codec-http/src/main/java/io/netty/handler/codec/http/HttpObjectDecoder.java",
+    "buggy_method": [
+      [
+        720,
+        765
+      ]
+    ],
+    "buggy_line": [
+      [
+        750
+      ]
+    ],
+    "bug_type": "replace",
+    "compile_cmd": "./mvnw clean compile -pl codec-http",
+    "test_cmd": "./mvnw clean test -pl codec-http",
+    "CVE": "CVE-2019-20444",
+    "github_url": "https://github.com/netty/netty",
+    "github_url_cve": "https://github.com/VJBench/Netty-2",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/netty/netty/commit/a7c18d44b46e02dadfe3da225a06e5091f5f328e",
+    "introducing_files": [
+      "codec-http/src/main/java/io/netty/handler/codec/http/HttpObjectDecoder.java"
+    ]
+  },
+  "Openfire-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2019-18394",
+    "github_url": "https://github.com/igniterealtime/Openfire",
+    "github_url_cve": "https://github.com/VJBench/Openfire-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/igniterealtime/Openfire/commit/e6a9db94f684056ced0d5e5a4291c89488fbeecc",
+    "introducing_files": ""
+  },
+  "Jooby-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile -pl jooby",
+    "test_cmd": "mvn clean test -pl jooby",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2019-15477",
+    "github_url": "https://github.com/jooby-project/jooby",
+    "github_url_cve": "https://github.com/VJBench/Jooby-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/jooby-project/jooby/commit/27b4af283de1a2c2a6b0530039b46eef75ddf655",
+    "introducing_files": ""
+  },
+  "Emissary-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2021-32634",
+    "github_url": "https://github.com/NationalSecurityAgency/emissary",
+    "github_url_cve": "https://github.com/VJBench/Emissary-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/NationalSecurityAgency/emissary/commit/40260b1ec1f76cc92361702cc14fa1e4388e19d7",
+    "introducing_files": ""
+  },
+  "Spark-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2019-18394",
+    "github_url": "https://github.com/perwendel/spark",
+    "github_url_cve": "https://github.com/VJBench/Spark-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/perwendel/spark/commit/efcb46c710e3f56805b9257a63d1306882f4faf9",
+    "introducing_files": ""
+  },
+  "Xwiki-commons-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2019-18394",
+    "github_url": "https://github.com/perwendel/spark",
+    "github_url_cve": "https://github.com/VJBench/Spark-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/perwendel/spark/commit/efcb46c710e3f56805b9257a63d1306882f4faf9",
+    "introducing_files": ""
+  },
+  "CometD-1": {
+    "buggy_file_path": [
+      "cometd-java/cometd-java-oort/src/main/java/org/cometd/oort/Seti.java",
+      "cometd-java/cometd-java-oort/src/main/java/org/cometd/oort/Oort.java"
+    ],
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "cd cometd-java; mvn clean test -pl cometd-java-oort",
+    "test_num": 197,
+    "test_fail_num": "",
+    "CVE": "CVE-2022-24721",
+    "github_url": "https://github.com/cometd/cometd",
+    "github_url_cve": "https://github.com/VJBench/CometD-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/cometd/cometd/commit/bb445a143fbf320f17c62e340455cd74acfb5929",
+    "introducing_files": [
+      "cometd-java/cometd-java-oort/src/main/java/org/cometd/oort/Seti.java",
+      "cometd-java/cometd-java-oort/src/main/java/org/cometd/oort/Oort.java"
+    ]
+  },
+  "TorpedoQuery-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2019-11343",
+    "github_url": "https://github.com/xjodoin/torpedoquery",
+    "github_url_cve": "https://github.com/VJBench/TorpedoQuery-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/xjodoin/torpedoquery/commit/3c20b874fba9cc2a78b9ace10208de1602b56c3f",
+    "introducing_files": ""
+  },
+  "Nmap4j-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2018-17228",
+    "github_url": "https://github.com/narkisr/nmap4j",
+    "github_url_cve": "https://github.com/VJBench/Nmap4j-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/narkisr/nmap4j/commit/06b58aa3345d2f977553685a026b93e61f0c491e",
+    "introducing_files": ""
+  },
+  "Pac4j-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2021-44878",
+    "github_url": "https://github.com/pac4j/pac4j",
+    "github_url_cve": "https://github.com/VJBench/Pac4j-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/pac4j/pac4j/commit/22b82ffd702a132d9f09da60362fc6264fc281ae",
+    "introducing_files": ""
+  },
+  "JAI-EXT-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2022-24816",
+    "github_url": "https://github.com/geosolutions-it/jai-ext",
+    "github_url_cve": "https://github.com/VJBench/JAI-EXT-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/geosolutions-it/jai-ext/commit/cb1d6565d38954676b0a366da4f965fef38da1cb",
+    "introducing_files": ""
+  },
+  "Jackson-Modules-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "./mvnw clean compile",
+    "test_cmd": "./mvnw clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2018-1000873",
+    "github_url": "https://github.com/FasterXML/jackson-modules-java8",
+    "github_url_cve": "https://github.com/VJBench/Jackson-Modules-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/FasterXML/jackson-modules-java8/commit/f29e03e21eb6ca0c11cda34cf511d245711a70ec",
+    "introducing_files": ""
+  },
+  "Apollo-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "./mvnw clean compile",
+    "test_cmd": "./mvnw clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2020-15170",
+    "github_url": "https://github.com/ctripcorp/apollo",
+    "github_url_cve": "https://github.com/VJBench/Apollo-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/apolloconfig/apollo/commit/6ff6ddd47f9be87ad77a6a169cc46996cc5d89dd",
+    "introducing_files": ""
+  },
+  "Elide-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2020-5289",
+    "github_url": "https://github.com/yahoo/elide",
+    "github_url_cve": "https://github.com/VJBench/Elide-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/yahoo/elide/commit/7239e47eca00226550300e5e67cdabbf12145ef0",
+    "introducing_files": ""
+  },
+  "GoCD-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "./gradlew clean build -x test",
+    "test_cmd": "./gradlew test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2022-24832",
+    "github_url": "https://github.com/gocd/gocd-ldap-authentication-plugin",
+    "github_url_cve": "https://github.com/VJBench/GoCD-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/gocd/gocd-ldap-authentication-plugin/commit/87fa7dac5d899b3960ab48e151881da4793cfcc3",
+    "introducing_files": ""
+  },
+  "BC-Java-2": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "gradle build -x test",
+    "test_cmd": "gradle prov:test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2016-1000344",
+    "github_url": "https://github.com/bcgit/bc-java",
+    "github_url_cve": "https://github.com/VJBench/BC-Java-2",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/bcgit/bc-java/commit/9385b0ebd277724b167fe1d1456e3c112112be1f",
+    "introducing_files": ""
+  },
+  "Flow-3": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn install -DskipTests -pl flow-server",
+    "test_cmd": "mvn clean test -pl flow-server",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2018-25007",
+    "github_url": "https://github.com/vaadin/flow",
+    "github_url_cve": "https://github.com/VJBench/Flow-3",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/vaadin/flow/commit/d58da92fb10d94217b720ec17b8dd0858ef726e7",
+    "introducing_files": ""
+  },
+  "XStream-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean install -Dmaven.test.skip",
+    "test_cmd": "mvn clean install",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2020-26217",
+    "github_url": "https://github.com/x-stream/xstream",
+    "github_url_cve": "https://github.com/VJBench/XStream-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/x-stream/xstream/commit/0fec095d534126931c99fd38e9c6d41f5c685c1a",
+    "introducing_files": ""
+  },
+  "XStream-2": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean install -Dmaven.test.skip",
+    "test_cmd": "mvn clean install",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2021-43859",
+    "github_url": "https://github.com/x-stream/xstream",
+    "github_url_cve": "https://github.com/VJBench/XStream-2",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/x-stream/xstream/commit/e8e88621ba1c85ac3b8620337dd672e0c0c3a846",
+    "introducing_files": ""
+  },
+  "Jackson-databind-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2017-15095",
+    "github_url": "https://github.com/FasterXML/jackson-databind",
+    "github_url_cve": "https://github.com/VJBench/Jackson-databind-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/FasterXML/jackson-databind/commit/ddfddfba6414adbecaff99684ef66eebd3a92e92",
+    "introducing_files": ""
+  },
+  "Jackson-databind-2": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile",
+    "test_cmd": "mvn clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2018-7489",
+    "github_url": "https://github.com/FasterXML/jackson-databind",
+    "github_url_cve": "https://github.com/VJBench/Jackson-databind-2",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/FasterXML/jackson-databind/commit/6799f8f10cc78e9af6d443ed6982d00a13f2e7d2",
+    "introducing_files": ""
+  },
+  "Flow-4": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "mvn clean compile -pl flow-server",
+    "test_cmd": "mvn clean test -pl flow-server -Dtest=DevModeHandlerTest; mvn clean test -pl flow-server -Dtest=StaticFileServerTest",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2020-36321",
+    "github_url": "https://github.com/vaadin/flow",
+    "github_url_cve": "https://github.com/VJBench/Flow-4",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/vaadin/flow/commit/19fe3864f9d1567c5ac7a211189986ac093e781f",
+    "introducing_files": ""
+  },
+  "Netty-3": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "./mvnw clean compile",
+    "test_cmd": "./mvnw clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2021-43797",
+    "github_url": "https://github.com/netty/netty",
+    "github_url_cve": "https://github.com/VJBench/Netty-3",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/netty/netty/commit/07aa6b5938a8b6ed7a6586e066400e2643897323",
+    "introducing_files": ""
+  },
+  "Lemminx-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "./mvnw clean compile",
+    "test_cmd": "./mvnw clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2022-0673",
+    "github_url": "https://github.com/eclipse/lemminx",
+    "github_url_cve": "https://github.com/VJBench/Lemminx-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/eclipse/lemminx/commit/48f23ab4dae19268027ede6c923d12e0b5e8d1fe",
+    "introducing_files": ""
+  },
+  "Jdom-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "ant compile",
+    "test_cmd": "ant junit",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2021-33813",
+    "github_url": "https://github.com/hunterhacker/jdom",
+    "github_url_cve": "https://github.com/VJBench/Jdom-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/hunterhacker/jdom/commit/2a25ee409d09fb3eed75a4272ab8540c5261f960",
+    "introducing_files": ""
+  },
+  "Lemminx-2": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "",
+    "test_cmd": "./mvnw clean compile",
+    "test_num": "./mvnw clean test",
+    "test_fail_num": "",
+    "CVE": "CVE-2022-0671",
+    "github_url": "https://github.com/eclipse/lemminx",
+    "github_url_cve": "https://github.com/VJBench/Lemminx-2",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/eclipse/lemminx/commit/b46cb1f283c70b85c22221b30a4aff62be495237",
+    "introducing_files": ""
+  },
+  "Lemminx-3": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "./mvnw clean compile",
+    "test_cmd": "./mvnw clean test",
+    "test_num": "",
+    "test_fail_num": "",
+    "CVE": "CVE-2022-0672",
+    "github_url": "https://github.com/eclipse/lemminx",
+    "github_url_cve": "https://github.com/VJBench/Lemminx-3",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/eclipse/lemminx/commit/076b88052c2a63f60a98ef4b45e3e38c217b70ae",
+    "introducing_files": ""
+  },
+  "TwelveMonkeys-1": {
+    "buggy_file_path": "",
+    "buggy_method": [
+      []
+    ],
+    "buggy_line": [
+      []
+    ],
+    "bug_type": "",
+    "compile_cmd": "",
+    "test_cmd": "mvn install -Dmaven.test.skip",
+    "test_num": "mvn install",
+    "test_fail_num": "",
+    "CVE": "CVE-2021-23792",
+    "github_url": "https://github.com/haraldk/TwelveMonkeys",
+    "github_url_cve": "https://github.com/VJBench/TwelveMonkeys-1",
+    "github_url_cve_branch": "",
+    "fix_commit": "https://github.com/haraldk/TwelveMonkeys/commit/da4efe98bf09e1cce91b7633cb251958a200fc80",
+    "introducing_files": ""
+  }
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (pathToCheck.startsWith(parentPath)) {",
+        "if (pathToCheck.endsWith(parentPath.normalize())) {",
+        "if (pathToCheck.equals(parentPath.normalize())) {",
+        "if (pathToCheck.equals(parentPath)) {",
+        "if (pathToCheck.endsWith(parentPath)) {",
+        "if (!pathToCheck.startsWith(parentPath.normalize())) {",
+        "if (pathToCheck.startsWith(parentPath.toFile())) {",
+        "if (pathToCheck.startsWith(pathToCheck.normalize())) {",
+        "if (pathToCheck.startsWith(parentPath.toAbsolutePath())) {",
+        "if (pathToCheck.startsWith(parentPath.normalize(File.separator))) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (pathToCheck.startsWith(parentPath)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck.endsWith(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck.equals(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck.equals(parentPath)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck.endsWith(parentPath)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!pathToCheck.startsWith(parentPath.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck.startsWith(parentPath.toFile())) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (pathToCheck.startsWith(pathToCheck.normalize())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck.startsWith(parentPath.toAbsolutePath())) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (pathToCheck.startsWith(parentPath.normalize(File.separator))) {",
+            "correctness": "uncompilable"
+        }
+    ]
+}

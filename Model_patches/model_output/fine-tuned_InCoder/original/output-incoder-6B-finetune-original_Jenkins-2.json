@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    return new ArrayList(items.values());\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    return items.values();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    return new ArrayList<TopLevelItem>(items.values());\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    return Collections.unmodifiableCollection(items.values());\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    return new ArrayList<>(items.values());\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n<|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    return Collections.unmodifiableList(items.values());\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    List<TopLevelItem> items = new ArrayList<TopLevelItem>(items.values());\n<|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>@Exported(name=\"jobs\")\npublic List<TopLevelItem> getItems() {\n// buggy lines start:\n    if (authorizationStrategy instanceof AuthorizationStrategy.Unsecured ||\n        authorizationStrategy instanceof FullControlOnceLoggedInAuthorizationStrategy) {\n        return new ArrayList(items.values());\n    }\n// buggy lines end\n\n    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n    for (TopLevelItem item : items.values()) {\n        if (item.hasPermission(Item.READ))\n            viewableItems.add(item);\n    }\n    return viewableItems;\n}\n// fixed lines:\n    List<TopLevelItem> viewableItems = new ArrayList<>(items.values());\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return new ArrayList(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return items.values();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return new ArrayList<TopLevelItem>(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return Collections.unmodifiableCollection(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return new ArrayList<>(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>();\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    return Collections.unmodifiableList(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    List<TopLevelItem> items = new ArrayList<TopLevelItem>(items.values());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    List<TopLevelItem> result = new ArrayList<TopLevelItem>();\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    List<TopLevelItem> viewableItems = new ArrayList<>(items.values());\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

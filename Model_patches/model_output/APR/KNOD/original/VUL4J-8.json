@@ -1,0 +1,65 @@
+{
+    "id": 6,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1106,
+            "fix_type": "general",
+            "patch": "out = ZipEncodingHelper.growBufferBy(out,increment);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.4723,
+            "fix_type": "insert",
+            "patch": "if (out == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2044,
+            "fix_type": "general",
+            "patch": "out = ZipEncodingHelper.growBufferBy(out,out);\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2434,
+            "fix_type": "general",
+            "patch": "out = ZipEncodingHelper.growBufferBy(out,HEX_CHARS);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2434,
+            "fix_type": "general",
+            "patch": "out = ZipEncodingHelper.growBufferBy(out,REPLACEMENT_BYTES);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.5744,
+            "fix_type": "insert",
+            "patch": "if (out == null ){\nout = new ZipArchiveEntry();\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.5744,
+            "fix_type": "insert",
+            "patch": "if (out == null ){\nout = new ZipShort();\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.5782,
+            "fix_type": "insert",
+            "patch": "if (out == null ){\nthrow new RuntimeException(\"\");\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.5782,
+            "fix_type": "insert",
+            "patch": "if (out == null ){\nthrow new RuntimeException(\"0\");\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.581,
+            "fix_type": "insert",
+            "patch": "if (out == null ){\nthrow new ZipArchiveEntry(\"\");\n}\n"
+        }
+    ]
+}

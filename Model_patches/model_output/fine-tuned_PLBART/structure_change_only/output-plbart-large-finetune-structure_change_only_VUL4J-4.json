@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (!(body instanceof WrappedFile)) { answer = new InputSource(typeConverter.convertTo(InputStream.class, exchange, body));",
+        "answer = typeConverter.convertTo(type, exchange, body);",
+        "if (answer == null) { if (!(body instanceof WrappedFile)) {",
+        "if (answer == null &&!(body instanceof WrappedFile)) {",
+        "if (answer == null ||!(body instanceof WrappedFile)) {",
+        "if (answer == null) {",
+        "if (answer!= null) {",
+        "if (answer == null && type!= null) {",
+        "if (!(body instanceof WrappedFile)) {",
+        "if (answer == null ||!(body instanceof WrappedFile))"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(body instanceof WrappedFile)) { answer = new InputSource(typeConverter.convertTo(InputStream.class, exchange, body));",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "answer = typeConverter.convertTo(type, exchange, body);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) { if (!(body instanceof WrappedFile)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null &&!(body instanceof WrappedFile)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null ||!(body instanceof WrappedFile)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer!= null) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null && type!= null) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(body instanceof WrappedFile)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (answer == null ||!(body instanceof WrappedFile))",
+            "correctness": "test_success"
+        }
+    ]
+}

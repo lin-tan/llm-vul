@@ -1,0 +1,66 @@
+{
+    "output": [
+        "protected Collection<UIComponent> whole() { return uiComponents.values(); }",
+        "protected Collection<UIComponent> whole() { return uiComponents.values();",
+        "protected Collection<UIComponent> whole() { return uiComponents; }",
+        "protected Collection<UIComponent> whole();",
+        "protected Collection<UIComponent>Whole() { return uiComponents; }",
+        "protected Collection<UIComponent> whole() { return new ArrayList<UIComponent>();",
+        "protected Collection<UIComponent> whole() { return getUIComponents(); }",
+        "protected Collection<UIComponent> whole(String clue) { return uiComponents;",
+        "public Collection<UIComponent> whole() { return uiComponents; }",
+        "Collection<UIComponent> whole = new ArrayList<UIComponent>();"
+    ],
+    "validation_result": [
+        {
+            "patch": "protected Collection<UIComponent> whole() { return uiComponents.values(); }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return views.values(); }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return uiComponents.values();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return views.values();"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return uiComponents; }",
+            "correctness": "compile_success",
+            "translated": "protected Collection<View> all() { return views; }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all();"
+        },
+        {
+            "patch": "protected Collection<UIComponent>Whole() { return uiComponents; }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View>Whole() { return views; }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return new ArrayList<UIComponent>();",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return new ArrayList<View>();"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole() { return getUIComponents(); }",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all() { return getUIComponents(); }"
+        },
+        {
+            "patch": "protected Collection<UIComponent> whole(String clue) { return uiComponents;",
+            "correctness": "uncompilable",
+            "translated": "protected Collection<View> all(String key) { return views;"
+        },
+        {
+            "patch": "public Collection<UIComponent> whole() { return uiComponents; }",
+            "correctness": "compile_success",
+            "translated": "public Collection<View> all() { return views; }"
+        },
+        {
+            "patch": "Collection<UIComponent> whole = new ArrayList<UIComponent>();",
+            "correctness": "uncompilable",
+            "translated": "Collection<View> all = new ArrayList<View>();"
+        }
+    ]
+}

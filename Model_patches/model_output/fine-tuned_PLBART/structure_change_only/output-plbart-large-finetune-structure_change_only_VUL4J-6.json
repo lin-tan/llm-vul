@@ -1,0 +1,66 @@
+{
+    "output": [
+        "int i = 0;",
+        "int j = 0;",
+        "int i;",
+        "int i = 1;",
+        "final int i = 0;",
+        "int i = -1;",
+        "int i = offset;",
+        "long i = 0;",
+        "int count = 0;",
+        "int i = 0; i++;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int i = 0;",
+            "correctness": "compile_success",
+            "translated": "int i = 0;"
+        },
+        {
+            "patch": "int j = 0;",
+            "correctness": "uncompilable",
+            "translated": "int j = 0;"
+        },
+        {
+            "patch": "int i;",
+            "correctness": "uncompilable",
+            "translated": "int i;"
+        },
+        {
+            "patch": "int i = 1;",
+            "correctness": "compile_success",
+            "translated": "int i = 1;"
+        },
+        {
+            "patch": "final int i = 0;",
+            "correctness": "uncompilable",
+            "translated": "final int i = 0;"
+        },
+        {
+            "patch": "int i = -1;",
+            "correctness": "compile_success",
+            "translated": "int i = -1;"
+        },
+        {
+            "patch": "int i = offset;",
+            "correctness": "compile_success",
+            "translated": "int i = offset;"
+        },
+        {
+            "patch": "long i = 0;",
+            "correctness": "compile_success",
+            "translated": "long i = 0;"
+        },
+        {
+            "patch": "int count = 0;",
+            "correctness": "uncompilable",
+            "translated": "int count = 0;"
+        },
+        {
+            "patch": "int i = 0; i++;",
+            "correctness": "compile_success",
+            "translated": "int i = 0; i++;"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,3-5,3",
+    "output": [
+        "\n  this.setting = setting;function,\n  return this;\n}",
+        "\n  this.setting = setting;public <T>,\n  return this;\n}",
+        "\n  return this;function,\n  return this;\n}",
+        "\n  return this;public <T>,\n  return this;\n}",
+        "\n  return this;function,\n  this.setting = setting;\n  return this;\nT\n\n  this.setting = setting;\n \n\n  return this;",
+        "\n  this.setting = setting;function,\n  return this;\n  return this;\nT\n\n  this.setting = setting;\n \n\n  return this;",
+        "\n  this.setting = setting;function,\n\n  return this;\nT\n\n  this.setting = setting;\n \n\n  return this;",
+        "\n  return this;function,\n  this.setting = setting;\n  return this;\nT\n\n  this.setting = setting;\n \n  return this;\n",
+        "\n  this.setting = setting;function,\n\n\nfunction\n\n  this.setting = setting;\n \n\n  return this;",
+        "\n  this.setting = setting;function,\n  return this;\n  return this;\nT\n\n  this.setting = setting;\n \n  return this;\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.setting = setting;function,\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "this.context = context;function,\n  return this;\n}"
+        },
+        {
+            "patch": "this.setting = setting;public <T>,\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "this.context = context;public <T>,\n  return this;\n}"
+        },
+        {
+            "patch": "return this;function,\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "return this;function,\n  return this;\n}"
+        },
+        {
+            "patch": "return this;public <T>,\n  return this;\n}",
+            "correctness": "uncompilable",
+            "translated": "return this;public <T>,\n  return this;\n}"
+        },
+        {
+            "patch": "return this;function,\n  this.setting = setting;\n  return this;\nT\n\n  this.setting = setting;\n \n\n  return this;",
+            "correctness": "uncompilable",
+            "translated": "return this;function,\n  this.context = context;\n  return this;\nT\n\n  this.context = context;\n \n\n  return this;"
+        },
+        {
+            "patch": "this.setting = setting;function,\n  return this;\n  return this;\nT\n\n  this.setting = setting;\n \n\n  return this;",
+            "correctness": "uncompilable",
+            "translated": "this.context = context;function,\n  return this;\n  return this;\nT\n\n  this.context = context;\n \n\n  return this;"
+        },
+        {
+            "patch": "this.setting = setting;function,\n\n  return this;\nT\n\n  this.setting = setting;\n \n\n  return this;",
+            "correctness": "uncompilable",
+            "translated": "this.context = context;function,\n\n  return this;\nT\n\n  this.context = context;\n \n\n  return this;"
+        },
+        {
+            "patch": "return this;function,\n  this.setting = setting;\n  return this;\nT\n\n  this.setting = setting;\n \n  return this;",
+            "correctness": "uncompilable",
+            "translated": "return this;function,\n  this.context = context;\n  return this;\nT\n\n  this.context = context;\n \n\n  return this;"
+        },
+        {
+            "patch": "this.setting = setting;function,\n\n\nfunction\n\n  this.setting = setting;\n \n\n  return this;",
+            "correctness": "uncompilable",
+            "translated": "this.context = context;function,\n\n\nfunction\n\n  this.context = context;\n \n\n  return this;"
+        },
+        {
+            "patch": "this.setting = setting;function,\n  return this;\n  return this;\nT\n\n  this.setting = setting;\n \n  return this;",
+            "correctness": "uncompilable",
+            "translated": "this.context = context;function,\n  return this;\n  return this;\nT\n\n  this.context = context;\n \n\n  return this;"
+        }
+    ]
+}

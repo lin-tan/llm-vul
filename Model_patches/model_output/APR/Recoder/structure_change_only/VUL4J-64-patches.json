@@ -1,0 +1,12 @@
+[
+  "InputStream in = wrapPrefixRemovingInputStream(inputStream);\n",
+  "wrapPrefixRemovingInputStream(inputStream);\n",
+  "InputStream in = wrapPrefixRemovingInputStream(factory);\n",
+  "InputStream in = wrapPrefixRemovingInputStream(inputStream, false);\n",
+  "InputStream in = wrapPrefixRemovingInputStream(inputStream, true);\n",
+  "final InputStream in = wrapPrefixRemovingInputStream(inputStream);\n",
+  "InputStream in = wrapPrefixRemovingInputStream(inputStream, null);\n",
+  "InputStream in = wrapPrefixRemovingInputStream();\n",
+  "InputStream in = wrapPrefixRemovingInputStream(XMLInputFactory.IS_COALESCING, true);\n",
+  "if((inputStream != null)){\n"
+]

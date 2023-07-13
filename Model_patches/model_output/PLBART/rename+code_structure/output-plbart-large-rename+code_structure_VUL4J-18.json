@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-6,5",
+    "output": [
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return null ; }",
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return \" \" ; }",
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return \" acquireSendOnPage \" ; }",
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return acquireSendOnPage ; }",
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return sendOnPage ; }",
+        "public String acquireSendOnPage ( final HttpServletRequest r ) { return null ; }",
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return \" true \" ; }",
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return acquireSendOnPage ( ) ; }",
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return SEND_ON_PAGE ; }",
+        "public String acquireSendOnPage ( HttpServletRequest r ) { return sendOnPage ( r ) ; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return null ; }",
+            "correctness": "compile_success",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return null ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return \" \" ; }",
+            "correctness": "compile_success",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return \" \" ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return \" acquireSendOnPage \" ; }",
+            "correctness": "compile_success",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return \" getForwardPage \" ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return acquireSendOnPage ; }",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return getForwardPage ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return sendOnPage ; }",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return sendOnPage ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( final HttpServletRequest r ) { return null ; }",
+            "correctness": "compile_success",
+            "translated": "public String getForwardPage ( final HttpServletRequest request ) { return null ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return \" true \" ; }",
+            "correctness": "compile_success",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return \" true \" ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return acquireSendOnPage ( ) ; }",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return getForwardPage ( ) ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return SEND_ON_PAGE ; }",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return SEND_ON_PAGE ; }"
+        },
+        {
+            "patch": "public String acquireSendOnPage ( HttpServletRequest r ) { return sendOnPage ( r ) ; }",
+            "correctness": "uncompilable",
+            "translated": "public String getForwardPage ( HttpServletRequest request ) { return sendOnPage ( request ) ; }"
+        }
+    ]
+}

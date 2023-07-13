@@ -1,0 +1,623 @@
+{
+    "id": "cmpl-8HOaEnNGxeM1nJPcVyoqJJYF3wv6k",
+    "object": "text_completion",
+    "created": 1699156766,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    }
+                ],
+                "text_offset": [
+                    1566
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "               s.conversion(EndOfFile);\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "              ",
+                    " s",
+                    ".",
+                    "con",
+                    "version",
+                    "(",
+                    "End",
+                    "Of",
+                    "File",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473,
+                    -0.6694232,
+                    -0.2004332,
+                    -0.00061502174,
+                    -0.94673175,
+                    -0.0031224536,
+                    -0.029172573,
+                    -1.8804415,
+                    -0.5428266,
+                    -0.06979445,
+                    -0.11890338,
+                    -0.04399993
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    },
+                    {
+                        "              ": -0.6694232
+                    },
+                    {
+                        " s": -0.2004332
+                    },
+                    {
+                        ".": -0.00061502174
+                    },
+                    {
+                        "con": -0.94673175
+                    },
+                    {
+                        "version": -0.0031224536
+                    },
+                    {
+                        "(": -0.029172573
+                    },
+                    {
+                        "End": -1.8804415
+                    },
+                    {
+                        "Of": -0.5428266
+                    },
+                    {
+                        "File": -0.06979445
+                    },
+                    {
+                        ");": -0.11890338
+                    },
+                    {
+                        "\n": -0.04399993
+                    }
+                ],
+                "text_offset": [
+                    1566,
+                    1566,
+                    1580,
+                    1582,
+                    1583,
+                    1586,
+                    1593,
+                    1594,
+                    1597,
+                    1599,
+                    1603,
+                    1605
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    }
+                ],
+                "text_offset": [
+                    1566
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    }
+                ],
+                "text_offset": [
+                    1566
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "               s.releaseLabelUndecided();\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "              ",
+                    " s",
+                    ".",
+                    "release",
+                    "Label",
+                    "Und",
+                    "ecided",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473,
+                    -0.6694232,
+                    -0.2004332,
+                    -0.00061502174,
+                    -0.9953062,
+                    -0.03695491,
+                    -0.0029682645,
+                    -0.00035180151,
+                    -0.0072155837,
+                    -0.03807246
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    },
+                    {
+                        "              ": -0.6694232
+                    },
+                    {
+                        " s": -0.2004332
+                    },
+                    {
+                        ".": -0.00061502174
+                    },
+                    {
+                        "con": -0.94673175
+                    },
+                    {
+                        "Label": -0.03695491
+                    },
+                    {
+                        "Und": -0.0029682645
+                    },
+                    {
+                        "ecided": -0.00035180151
+                    },
+                    {
+                        "();": -0.0072155837
+                    },
+                    {
+                        "\n": -0.03807246
+                    }
+                ],
+                "text_offset": [
+                    1566,
+                    1566,
+                    1580,
+                    1582,
+                    1583,
+                    1590,
+                    1595,
+                    1598,
+                    1604,
+                    1607
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "                s.conversion(Information);\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "               ",
+                    " s",
+                    ".",
+                    "con",
+                    "version",
+                    "(",
+                    "Information",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473,
+                    -2.9488258,
+                    -0.2834562,
+                    -0.0010033031,
+                    -0.8076479,
+                    -0.0045647095,
+                    -0.035016898,
+                    -1.8748987,
+                    -0.32621935,
+                    -0.06996933
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    },
+                    {
+                        "              ": -0.6694232
+                    },
+                    {
+                        " s": -0.2834562
+                    },
+                    {
+                        ".": -0.0010033031
+                    },
+                    {
+                        "con": -0.8076479
+                    },
+                    {
+                        "version": -0.0045647095
+                    },
+                    {
+                        "(": -0.035016898
+                    },
+                    {
+                        "Information": -1.8748987
+                    },
+                    {
+                        ");": -0.32621935
+                    },
+                    {
+                        "\n": -0.06996933
+                    }
+                ],
+                "text_offset": [
+                    1566,
+                    1566,
+                    1581,
+                    1583,
+                    1584,
+                    1587,
+                    1594,
+                    1595,
+                    1606,
+                    1608
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    }
+                ],
+                "text_offset": [
+                    1566
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    }
+                ],
+                "text_offset": [
+                    1566
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "               s.conversion(Information);\n               s.releaseLabelUndecided();\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "              ",
+                    " s",
+                    ".",
+                    "con",
+                    "version",
+                    "(",
+                    "Information",
+                    ");",
+                    "\n",
+                    "              ",
+                    " s",
+                    ".",
+                    "release",
+                    "Label",
+                    "Und",
+                    "ecided",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473,
+                    -0.6694232,
+                    -0.2004332,
+                    -0.00061502174,
+                    -0.94673175,
+                    -0.0031224536,
+                    -0.029172573,
+                    -2.0178125,
+                    -0.31802037,
+                    -0.051747452,
+                    -1.4165044,
+                    -1.3388222,
+                    -0.00035418657,
+                    -0.23999552,
+                    -0.030488934,
+                    -0.005404607,
+                    -0.00025383916,
+                    -0.0041942536,
+                    -0.030771391
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    },
+                    {
+                        "              ": -0.6694232
+                    },
+                    {
+                        " s": -0.2004332
+                    },
+                    {
+                        ".": -0.00061502174
+                    },
+                    {
+                        "con": -0.94673175
+                    },
+                    {
+                        "version": -0.0031224536
+                    },
+                    {
+                        "(": -0.029172573
+                    },
+                    {
+                        "End": -1.8804415
+                    },
+                    {
+                        ");": -0.31802037
+                    },
+                    {
+                        "\n": -0.051747452
+                    },
+                    {
+                        "<|endoftext|>": -0.31367555
+                    },
+                    {
+                        " return": -0.4329575
+                    },
+                    {
+                        ".": -0.00035418657
+                    },
+                    {
+                        "release": -0.23999552
+                    },
+                    {
+                        "Label": -0.030488934
+                    },
+                    {
+                        "Und": -0.005404607
+                    },
+                    {
+                        "ecided": -0.00025383916
+                    },
+                    {
+                        "();": -0.0041942536
+                    },
+                    {
+                        "\n": -0.030771391
+                    }
+                ],
+                "text_offset": [
+                    1566,
+                    1566,
+                    1580,
+                    1582,
+                    1583,
+                    1586,
+                    1593,
+                    1594,
+                    1605,
+                    1607,
+                    1608,
+                    1622,
+                    1624,
+                    1625,
+                    1632,
+                    1637,
+                    1640,
+                    1646,
+                    1649
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "               s.conversion(EndOfFile);\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "              ",
+                    " s",
+                    ".",
+                    "con",
+                    "version",
+                    "(",
+                    "End",
+                    "Of",
+                    "File",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0022616473,
+                    -0.6694232,
+                    -0.2004332,
+                    -0.00061502174,
+                    -0.94673175,
+                    -0.0031224536,
+                    -0.029172573,
+                    -1.8804415,
+                    -0.5428266,
+                    -0.06979445,
+                    -0.11890338,
+                    -0.04399993
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0022616473
+                    },
+                    {
+                        "              ": -0.6694232
+                    },
+                    {
+                        " s": -0.2004332
+                    },
+                    {
+                        ".": -0.00061502174
+                    },
+                    {
+                        "con": -0.94673175
+                    },
+                    {
+                        "version": -0.0031224536
+                    },
+                    {
+                        "(": -0.029172573
+                    },
+                    {
+                        "End": -1.8804415
+                    },
+                    {
+                        "Of": -0.5428266
+                    },
+                    {
+                        "File": -0.06979445
+                    },
+                    {
+                        ");": -0.11890338
+                    },
+                    {
+                        "\n": -0.04399993
+                    }
+                ],
+                "text_offset": [
+                    1566,
+                    1566,
+                    1580,
+                    1582,
+                    1583,
+                    1586,
+                    1593,
+                    1594,
+                    1597,
+                    1599,
+                    1603,
+                    1605
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 418,
+        "completion_tokens": 63,
+        "total_tokens": 481
+    },
+    "validation_result": [
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "               s.conversion(EndOfFile);\n",
+            "correctness": "uncompilable",
+            "translated": "               t.transition(EndOfFile);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "               s.releaseLabelUndecided();\n",
+            "correctness": "compile_success",
+            "translated": "               t.emitTagPending();\n"
+        },
+        {
+            "patch": "                s.conversion(Information);\n",
+            "correctness": "compile_success",
+            "translated": "                t.transition(Data);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "               s.conversion(Information);\n               s.releaseLabelUndecided();\n",
+            "correctness": "test_success",
+            "translated": "               t.transition(Data);\n               t.emitTagPending();\n"
+        },
+        {
+            "patch": "               s.conversion(EndOfFile);\n",
+            "correctness": "uncompilable",
+            "translated": "               t.transition(EndOfFile);\n"
+        }
+    ]
+}

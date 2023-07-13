@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "write(remoteAddr);",
+        "write(remoteAddr);",
+        "Write(remoteAddr);",
+        "write( \"&nbsp; \");",
+        "write(remoteAddr.toString());",
+        "write(nextColumnAlignCenter);",
+        "write( \"&nbsp; \" + remoteAddr);",
+        ".write(remoteAddr);",
+        "write( \"&nbsp; \" + remoteAddr);",
+        "write( \"&nbsp; \", remoteAddr);"
+    ],
+    "validation_result": [
+        {
+            "patch": "write(remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "Write(remoteAddr);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "write( \"&nbsp; \");",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "write(remoteAddr.toString());",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write(nextColumnAlignCenter);",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "write( \"&nbsp; \" + remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": ".write(remoteAddr);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "write( \"&nbsp; \" + remoteAddr);",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "write( \"&nbsp; \", remoteAddr);",
+            "correctness": "uncompilable"
+        }
+    ]
+}

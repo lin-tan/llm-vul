@@ -1,0 +1,56 @@
+{
+    "output": [
+        "for (int colonEnd = nameEnd; colonEnd < length; colonEnd++) {",
+        "for (colonEnd = nameEnd; colonEnd < length; colonEnd++) {",
+        "for (colonEnd = nameEnd; colonEnd < sb.length(); colonEnd++) {",
+        "for (colonEnd = nameStart; colonEnd < length; colonEnd++) {",
+        "for (colonEnd = nameEnd + 1; colonEnd < length; colonEnd++) {",
+        "for (colonEnd = nameEnd; colonEnd < length - 1; colonEnd++) {",
+        "int colonEnd; for (colonEnd = nameEnd; colonEnd < length; colonEnd++) {",
+        "for (colonEnd = nameEnd; colonEnd < length + 1; colonEnd++) {",
+        "for (colonEnd = nameEnd; colonEnd < sb.length(); colonEnd ++) {",
+        "for (colonEnd = nameEnd; colonEnd < sb.length(); colonEnd += 2) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "for (int colonEnd = nameEnd; colonEnd < length; colonEnd++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for (colonEnd = nameEnd; colonEnd < length; colonEnd++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (colonEnd = nameEnd; colonEnd < sb.length(); colonEnd++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (colonEnd = nameStart; colonEnd < length; colonEnd++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (colonEnd = nameEnd + 1; colonEnd < length; colonEnd++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (colonEnd = nameEnd; colonEnd < length - 1; colonEnd++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int colonEnd; for (colonEnd = nameEnd; colonEnd < length; colonEnd++) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "for (colonEnd = nameEnd; colonEnd < length + 1; colonEnd++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (colonEnd = nameEnd; colonEnd < sb.length(); colonEnd ++) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "for (colonEnd = nameEnd; colonEnd < sb.length(); colonEnd += 2) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

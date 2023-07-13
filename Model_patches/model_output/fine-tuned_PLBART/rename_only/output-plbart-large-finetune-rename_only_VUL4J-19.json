@@ -1,0 +1,66 @@
+{
+    "output": [
+        "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\" + \"String_Node_Str\" + \"String_Node_Str\");",
+        "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\", \"String_Node_Str\", \"String_Node_Str\"); } else {",
+        "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\", \"String_Node_Str\", \"String_Node_Str\");",
+        "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\", \"String_Node_Str\"); } else {",
+        "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\", \"String_Node_Str\");",
+        "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\" + \"String_Node_Str\");",
+        "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation;",
+        "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) {",
+        "if (lexiconAlteration == 6) {",
+        "if (lexiconAlteration == 3) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\" + \"String_Node_Str\" + \"String_Node_Str\");",
+            "correctness": "uncompilable",
+            "translated": "StandardDecryptionMaterial material = (StandardDecryptionMaterial) decryptionMaterial; if (formation == null) { throw new StandardDecryptionMaterial(\"String_Node_Str\" + \"String_Node_Str\" + \"String_Node_Str\");"
+        },
+        {
+            "patch": "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\", \"String_Node_Str\", \"String_Node_Str\"); } else {",
+            "correctness": "uncompilable",
+            "translated": "StandardDecryptionMaterial material = (StandardDecryptionMaterial) decryptionMaterial; if (formation == null) { throw new StandardDecryptionMaterial(\"String_Node_Str\", \"String_Node_Str\", \"String_Node_Str\"); } else {"
+        },
+        {
+            "patch": "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\", \"String_Node_Str\", \"String_Node_Str\");",
+            "correctness": "uncompilable",
+            "translated": "StandardDecryptionMaterial material = (StandardDecryptionMaterial) decryptionMaterial; if (formation == null) { throw new StandardDecryptionMaterial(\"String_Node_Str\", \"String_Node_Str\", \"String_Node_Str\");"
+        },
+        {
+            "patch": "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\", \"String_Node_Str\"); } else {",
+            "correctness": "uncompilable",
+            "translated": "StandardDecryptionMaterial material = (StandardDecryptionMaterial) decryptionMaterial; if (formation == null) { throw new StandardDecryptionMaterial(\"String_Node_Str\", \"String_Node_Str\"); } else {"
+        },
+        {
+            "patch": "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\", \"String_Node_Str\");",
+            "correctness": "uncompilable",
+            "translated": "StandardDecryptionMaterial material = (StandardDecryptionMaterial) decryptionMaterial; if (formation == null) { throw new StandardDecryptionMaterial(\"String_Node_Str\", \"String_Node_Str\");"
+        },
+        {
+            "patch": "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) { throw new CriterionDecodingInformation(\"String_Node_Str\" + \"String_Node_Str\");",
+            "correctness": "uncompilable",
+            "translated": "StandardDecryptionMaterial material = (StandardDecryptionMaterial) decryptionMaterial; if (formation == null) { throw new StandardDecryptionMaterial(\"String_Node_Str\" + \"String_Node_Str\");"
+        },
+        {
+            "patch": "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation;",
+            "correctness": "uncompilable",
+            "translated": "StandardDecryptionMaterial material = (StandardDecryptionMaterial) decryptionMaterial;"
+        },
+        {
+            "patch": "CriterionDecodingInformation information = (CriterionDecodingInformation) decipherInformation; if (formation == null) {",
+            "correctness": "uncompilable",
+            "translated": "StandardDecryptionMaterial material = (StandardDecryptionMaterial) decryptionMaterial; if (formation == null) {"
+        },
+        {
+            "patch": "if (lexiconAlteration == 6) {",
+            "correctness": "uncompilable",
+            "translated": "if (dicRevision == 6) {"
+        },
+        {
+            "patch": "if (lexiconAlteration == 3) {",
+            "correctness": "uncompilable",
+            "translated": "if (dicRevision == 3) {"
+        }
+    ]
+}

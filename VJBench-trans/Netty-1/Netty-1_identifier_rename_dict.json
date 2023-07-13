@@ -1,0 +1,26 @@
+{
+    "method": {
+        "splitHeader": "cutHeading",
+        "findNonWhitespace": "detectNotSpacing",
+        "charAtUnsafe": "insecureCharAt",
+        "findEndOfString": "detectTerminalOfString",
+        "subStringUnsafe": "partOfStringInsecure"
+    },
+    "variable": {
+        "valueStart": "contentBeginning",
+        "nameEnd": "titleTerminal",
+        "nameStart": "titleBeginning",
+        "ch": "z",
+        "length": "range",
+        "valueEnd": "contentTerminal",
+        "name": "title",
+        "value": "content",
+        "EMPTY_VALUE": "BLANK_CONTENT",
+        "colonEnd": "terminalColon",
+        "sb": "a"
+    },
+    "class": {
+        "AppendableCharSequence": "AttachableCharSuccession",
+        "": ""
+    }
+}

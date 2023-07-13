@@ -1,0 +1,66 @@
+{
+    "output": [
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    checkMandateScheme();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    checkMandateScheme(mandateScheme);\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    return new ArrayList<PeakDegreeElement>(elements.values());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    return new ArrayList(elements.values());\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    return new ArrayList<PeakDegreeElement>();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    checkMandate();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    checkMandates();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    List<PeakDegreeElement> visibleElements = new ArrayList<>();\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "@Exported(name=\"jobs\")\npublic List<PeakDegreeElement> acquireElements() {\n// buggy lines start:\n    if (mandateScheme instanceof MandateScheme.Unguarded ||\n        mandateScheme instanceof CompleteDominanceWhenLoggedInMandateScheme) {\n        return new ArrayList(elements.values());\n    }\n// buggy lines end\n\n    List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>();\n    for (PeakDegreeElement element : elements.values()) {\n        if (element.withAuthority(Item.RETRIEVE))\n            visibleElements.add(element);\n    }\n    return visibleElements;\n}\n// fixed lines:\n    if (mandateScheme instanceof mandateScheme.Unguarded)\n        return null;\n<|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    checkMandateScheme();\n",
+            "correctness": "uncompilable",
+            "translated": "    checkMandateScheme();\n"
+        },
+        {
+            "patch": "    checkMandateScheme(mandateScheme);\n",
+            "correctness": "uncompilable",
+            "translated": "    checkMandateScheme(authorizationStrategy);\n"
+        },
+        {
+            "patch": "    return new ArrayList<PeakDegreeElement>(elements.values());\n",
+            "correctness": "uncompilable",
+            "translated": "    return new ArrayList<TopLevelItem>(items.values());\n"
+        },
+        {
+            "patch": "    return new ArrayList(elements.values());\n",
+            "correctness": "uncompilable",
+            "translated": "    return new ArrayList(items.values());\n"
+        },
+        {
+            "patch": "    return new ArrayList<PeakDegreeElement>();\n",
+            "correctness": "uncompilable",
+            "translated": "    return new ArrayList<TopLevelItem>();\n"
+        },
+        {
+            "patch": "    checkMandate();\n",
+            "correctness": "uncompilable",
+            "translated": "    checkMandate();\n"
+        },
+        {
+            "patch": "    checkMandates();\n",
+            "correctness": "uncompilable",
+            "translated": "    checkMandates();\n"
+        },
+        {
+            "patch": "    List<PeakDegreeElement> visibleElements = new ArrayList<>();\n",
+            "correctness": "uncompilable",
+            "translated": "    List<TopLevelItem> viewableItems = new ArrayList<>();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success",
+            "translated": ""
+        },
+        {
+            "patch": "    if (mandateScheme instanceof mandateScheme.Unguarded)\n        return null;\n",
+            "correctness": "uncompilable",
+            "translated": "    if (authorizationStrategy instanceof authorizationStrategy.Unsecured)\n        return null;\n"
+        }
+    ]
+}

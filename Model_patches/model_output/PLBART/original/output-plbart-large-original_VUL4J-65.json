@@ -1,0 +1,57 @@
+{
+    "function range": "2,1-17,1",
+    "output": [
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); int dot = name.indexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.indexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.indexOf(\".\"); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf(\".\"); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file ; }",
+        "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdir(); return file; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); int dot = name.indexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.indexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.indexOf(\".\"); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf(\".\"); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdirs(); return file ; }",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "static public File allocateFile(File dir, String name) { int q = name.indexOf('?'); if (q > 0) { name = name.substring(0, q); } File file = new File(dir, name); if (file.exists()) { return file; } int dot = name.lastIndexOf('.'); String prefix = dot < 0? name : name.substring(0, dot); String suffix = dot < 0? \"\" : name.substring(dot); int index = 2; while (file.exists()) { file = new File(dir, prefix + \"-\" + index++ + suffix); } file.getParentFile().mkdir(); return file; }",
+            "correctness": "compile_success"
+        }
+    ]
+}

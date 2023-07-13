@@ -1,0 +1,67 @@
+{
+    "function range": "2,5-15,5",
+    "output": [
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.acquireItem();\n =",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.item;\n\n   ",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItem();\n =\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n    =",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.getObject();\n =",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.acquireItem();\n    =",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.item;\n =",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.acquireItem();\n =",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.acquireItem();\n    =",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n",
+        "\n    ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \nNumber\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.acquireItem();\n =",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = s.getObjectAt(0);\n =\n\n    ASN1Encodable object0 = s.acquireItem();\n ="
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.item;",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = s.getObjectAt(0);\n =\n\n    ASN1Encodable object0 = s.item;"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItem();\n =\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n    =",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = s.acquireItem();\n =\n\n    ASN1Encodable object0 = s.getObjectAt(0);\n    ="
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.getObject();\n =",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = s.getObjectAt(0);\n =\n\n    ASN1Encodable object0 = s.getObject();\n ="
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.acquireItem();\n    =",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = s.getObjectAt(0);\n =\n\n    ASN1Encodable object0 = s.acquireItem();\n ="
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.item;\n =",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = s.getObjectAt(0);\n =\n\n    ASN1Encodable object0 = s.item;\n ="
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.acquireItem();\n =",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = s.getObjectAt(0);\n =\n\n    ASN1Encodable object0 = s.acquireItem();\n ="
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = S.acquireItemAt(0);\n =\n\n    ASN1Encodable object0 = S.acquireItem();\n    =",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \nNumber\n\n\n   NumberNumber\n\n    ASN1Encodable object0 = s.getObjectAt(0);\n =\n\n    ASN1Encodable object0 = s.acquireItem();\n ="
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \n   Number",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \n   Number"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);\n   \n   \n\n   \nNumber",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);\n   \n   \n\n   \n   Number"
+        }
+    ]
+}

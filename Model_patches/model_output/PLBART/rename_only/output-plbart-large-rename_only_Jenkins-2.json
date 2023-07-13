@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-15,1",
+    "output": [
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { if (elements == null || elements.isEmpty()) return null; List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements ( ) ; List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = this.getElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String, List<PeakDegreeElement>> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { if (elements == null || elements.isEmpty()) return null; List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements ; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements ( ) ; List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements ; }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; } }",
+        "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String, List<PeakDegreeElement>> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements ; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { if (elements == null || elements.isEmpty()) return null; List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+            "correctness": "compile_success",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return null; List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String,TopLevelItem> items = getPeakDegreeElements(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements ( ) ; List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String,TopLevelItem> items = getPeakDegreeElements(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = this.getElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String,TopLevelItem> items = this.getElements(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String, List<PeakDegreeElement>> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String, List<TopLevelItem>> items = getPeakDegreeElements(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { if (elements == null || elements.isEmpty()) return null; List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+            "correctness": "compile_success",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { if (items == null || items.isEmpty()) return null; List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements ; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String,TopLevelItem> items = getPeakDegreeElements(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements ( ) ; List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements ; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String,TopLevelItem> items = getPeakDegreeElements(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String,PeakDegreeElement> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String,TopLevelItem> items = getPeakDegreeElements(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        },
+        {
+            "patch": "@Exported(name=\"jobs\") public List<PeakDegreeElement> acquireElements() { Map<String, List<PeakDegreeElement>> elements = getPeakDegreeElements(); List<PeakDegreeElement> visibleElements = new ArrayList<PeakDegreeElement>(); for (PeakDegreeElement element : elements.values()) { if (element.withAuthority(Item.RETRIEVE)) visibleElements.add(element); } return visibleElements ; }",
+            "correctness": "uncompilable",
+            "translated": "@Exported(name=\"jobs\") public List<TopLevelItem> getItems() { Map<String, List<TopLevelItem>> items = getPeakDegreeElements(); List<TopLevelItem> viewableItems = new ArrayList<TopLevelItem>(); for (TopLevelItem item : items.values()) { if (item.hasPermission(Item.READ)) viewableItems.add(item); } return viewableItems; }"
+        }
+    ]
+}

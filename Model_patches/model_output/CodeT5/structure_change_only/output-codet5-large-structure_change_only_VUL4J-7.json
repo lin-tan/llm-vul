@@ -1,0 +1,57 @@
+{
+    "function range": "2,5-45,5",
+    "output": [
+        "\n                    return -1;\n           \n           \n                    return -1;\n   \n        if (current.hasDataDescriptor) {\n            readStoredEntry();\n           \n           \n           \n           \n           \n           \n           \n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n\n           \n           \n           \n\n           ",
+        "\n                    return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n       \n       \n       \n\n\n",
+        "\n                    return -1;\n           \n           \n                    return -1;\n   \n        if (current.hasDataDescriptor) {\n            readStoredEntry();\n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n        }\n\n   \n\n\n",
+        "\n                    return -1;\n           \n           \n                    return -1;\n   \n        if (current.hasDataDescriptor) {\n            readStoredEntry();\n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n       \n       \n       \n\n\n",
+        "\n                    return -1;\n           \n           \n                    return -1;\n   \n        if (current.hasDataDescriptor) {\n            readStoredEntry();\n           \n           \n           \n           \n           \n           \n           \n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n\n           \n       \n       \n\n       ",
+        "\n                    return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; final\n\n\n\n               \n           \n       \n       \n       \n\n\n",
+        "\n                    return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n                   \n           \n       \n       \n       \n\n\n",
+        "\n                    return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n           \n           //\n           \n\n",
+        "\n                    return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n       \n       //\n       \n\n",
+        "\n                    return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n       \n       \n\n   \n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n   \n        if (current.hasDataDescriptor) {\n            readStoredEntry();\n           \n           \n           \n           \n           \n           \n           \n                    return -1;\n                    return -1;\n                    return -1; return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n   \n        if (current.hasDataDescriptor) {\n            readStoredEntry();\n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n        }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n   \n        if (current.hasDataDescriptor) {\n            readStoredEntry();\n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n   \n        if (current.hasDataDescriptor) {\n            readStoredEntry();\n           \n           \n           \n           \n           \n           \n           \n                    return -1;\n                    return -1;\n                    return -1; return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n           \n           //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return\n\n\n\n               \n           \n       \n       //",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n           \n           \n                    return -1;\n        return current.bytesReadFromStream;\n        }else{\n           \n           \n           \n           \n           \n           \n           \n           \n            return\n                    return -1;\n                    return -1;\n                    return -1; return",
+            "correctness": "uncompilable"
+        }
+    ]
+}

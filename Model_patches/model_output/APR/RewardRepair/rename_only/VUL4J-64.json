@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "result = mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence)); return result;",
+        "return new XMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+        ".createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+        "Result result = mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence)); return result;",
+        "init(); return mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+        "Factory.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+        "in.close(); return mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+        "XMLStreamReader result = new XMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence)); return result;",
+        "Helper.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+        "InputStream inputStream = new InputStream(inDataSequence); return inputStream!= null? mill.createXMLStreamReader(inputStream) : null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "result = mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence)); return result;",
+            "correctness": "uncompilable",
+            "translated": "result = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return result;"
+        },
+        {
+            "patch": "return new XMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "return new XMLStreamReader(wrapPrefixRemovingInputStream(inputStream));"
+        },
+        {
+            "patch": ".createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": ".createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));"
+        },
+        {
+            "patch": "Result result = mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence)); return result;",
+            "correctness": "uncompilable",
+            "translated": "Result result = factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return result;"
+        },
+        {
+            "patch": "init(); return mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "init(); return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));"
+        },
+        {
+            "patch": "Factory.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "Factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));"
+        },
+        {
+            "patch": "in.close(); return mill.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "in.close(); return factory.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));"
+        },
+        {
+            "patch": "XMLStreamReader result = new XMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence)); return result;",
+            "correctness": "uncompilable",
+            "translated": "XMLStreamReader result = new XMLStreamReader(wrapPrefixRemovingInputStream(inputStream)); return result;"
+        },
+        {
+            "patch": "Helper.createXMLStreamReader(swatheBeginingOfStringDetachingInDataSequence(inDataSequence));",
+            "correctness": "uncompilable",
+            "translated": "Helper.createXMLStreamReader(wrapPrefixRemovingInputStream(inputStream));"
+        },
+        {
+            "patch": "InputStream inputStream = new InputStream(inDataSequence); return inputStream!= null? mill.createXMLStreamReader(inputStream) : null;",
+            "correctness": "uncompilable",
+            "translated": "InputStream inputStream = new InputStream(inputStream); return inputStream!= null? factory.createXMLStreamReader(inputStream) : null;"
+        }
+    ]
+}

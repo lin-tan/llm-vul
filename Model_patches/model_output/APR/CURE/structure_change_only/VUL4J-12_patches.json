@@ -1,0 +1,37 @@
+{
+    "VUL4J-12-401-404": {
+        "src": "for ( int vt = ( 1 << ( t - 1 ) ) ; v < vt ; v += vt ) { vt = ( - 1 << t ) + 1 ; }",
+        "patches": [
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ) { vt =( -1<< t ) +1;"
+            },
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ) { vt =( -1<< t ) +1; }"
+            },
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ) { vt +=( -1<< t ) +1;"
+            },
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ) { vt =( -1<<( t -1) ) ; }"
+            },
+            {
+                "patch": "for( int vt =( t <<( t -1) ) ; v < vt ; v += vt ) { vt =( -1<< t ) +1;"
+            },
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ) { vt =( -1<<( t -1) ) +1;"
+            },
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ) { vt =( -1<< t ) +1+1;"
+            },
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ; v += vt ) { vt =( -1<< t ) +1;"
+            },
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ) { vt =( -1<<( t -1) ) ;"
+            },
+            {
+                "patch": "for( int vt =(1<<( t -1) ) ; v < vt ; v += vt ) { vt =( -1<< t ) ;"
+            }
+        ]
+    }
+}

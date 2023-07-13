@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "while (v <= vt) {",
+        "while (v < vt) {",
+        "while (v < t) {",
+        "while (v < vt) {",
+        "while (!v.equals(vt)) {",
+        "while (v < (t - 1)) {",
+        "while (v <= vt) {",
+        "while (v < vt && t > 1) {",
+        "whil (v <= vt) {",
+        "while (v <= vt) { t++;"
+    ],
+    "validation_result": [
+        {
+            "patch": "while (v <= vt) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "while (v < vt) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "while (v < t) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "while (v < vt) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "while (!v.equals(vt)) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "while (v < (t - 1)) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "while (v <= vt) {",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "while (v < vt && t > 1) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "whil (v <= vt) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "while (v <= vt) { t++;",
+            "correctness": "uncompilable"
+        }
+    ]
+}

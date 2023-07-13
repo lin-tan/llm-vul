@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i] = (Float)getObject(i);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i] = getObject(i).floatValue();\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i] = (Float)getObject(i).floatValue();\n<|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i] = (float)getObject(i);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i] = (Number)getObject(i).floatValue();\n<|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i++] = (Float)getObject(i);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i] = (Float) getObject(i);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i] = (Float)getObject(i).doubleValue();\n<|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i] = (Number)getObject(i).doubleValue();\n<|endofmask|>",
+        "<|endoftext|>public float[] toFloatArray()\n{\n    int size = size();\n    float[] retval = new float[size];\n    int i = 0;\n    while( i < size )\n    {\n// buggy lines start:\n        COSNumber cosNumber = (COSNumber)getObject( i );\n        retval[i] = cosNumber.floatValue();\n// buggy lines end\n        i++;\n    }\n    return retval;\n}\n// fixed lines:\n        retval[i++] = (COSNumber)getObject(i);\n<|endofmask|><|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "        retval[i] = (Float)getObject(i);\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (Float)getObject(i);\n"
+        },
+        {
+            "patch": "        retval[i] = getObject(i).floatValue();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = getObject(i).floatValue();\n"
+        },
+        {
+            "patch": "        retval[i] = (Float)getObject(i).floatValue();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (Float)getObject(i).floatValue();\n"
+        },
+        {
+            "patch": "        retval[i] = (float)getObject(i);\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (float)getObject(i);\n"
+        },
+        {
+            "patch": "        retval[i] = (Number)getObject(i).floatValue();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (Number)getObject(i).floatValue();\n"
+        },
+        {
+            "patch": "        retval[i++] = (Float)getObject(i);\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i++] = (Float)getObject(i);\n"
+        },
+        {
+            "patch": "        retval[i] = (Float) getObject(i);\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (Float)getObject(i);\n"
+        },
+        {
+            "patch": "        retval[i] = (Float)getObject(i).doubleValue();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (Float)getObject(i).doubleValue();\n"
+        },
+        {
+            "patch": "        retval[i] = (Number)getObject(i).doubleValue();\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i] = (Number)getObject(i).doubleValue();\n"
+        },
+        {
+            "patch": "        retval[i++] = (COSNumber)getObject(i);\n",
+            "correctness": "uncompilable",
+            "translated": "        retval[i++] = (COSNumber)getObject(i);\n"
+        }
+    ]
+}

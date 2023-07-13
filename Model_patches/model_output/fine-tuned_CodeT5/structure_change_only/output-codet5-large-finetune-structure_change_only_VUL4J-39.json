@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    sb.append(\"sessionId=\");\n    sb.append(sessionId);\n</s></s>",
+        "<pad><s>    sb.append(\"sessionId=\").append(sessionId);\n</s></s></s></s></s></s>",
+        "<pad><s>    sb = sb.length() > 0? sb.append(\", \"):sb;\n</s>",
+        "<pad><s>    sb = sb.length() > 0?sb.append(\", \"):sb;\n</s>",
+        "<pad><s>    sb.append(\"sessionId=\");\n    sb.append(getSessionId());\n</s></s>",
+        "<pad><s>    sb = sb.length() > 0? sb.append(\", \"):sb;\n</s>",
+        "<pad><s>    sb.append(\"sessionId=\");\n</s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    sb.append(\"sessionId = \").append(sessionId);\n</s></s></s></s></s>",
+        "<pad><s>    sb.append(\"sessionId\");\n</s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    appendSessionId(sb);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    sb.append(\"sessionId=\");\n    sb.append(sessionId);\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId=\");\n    sb.append(sessionId);\n"
+        },
+        {
+            "patch": "    sb.append(\"sessionId=\").append(sessionId);\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId=\").append(sessionId);\n"
+        },
+        {
+            "patch": "    sb = sb.length() > 0? sb.append(\", \"):sb;\n",
+            "correctness": "test_timeout",
+            "translated": "    sb = sb.length() > 0? sb.append(\", \"):sb;\n"
+        },
+        {
+            "patch": "    sb = sb.length() > 0?sb.append(\", \"):sb;\n",
+            "correctness": "test_timeout",
+            "translated": "    sb = sb.length() > 0? sb.append(\", \"):sb;\n"
+        },
+        {
+            "patch": "    sb.append(\"sessionId=\");\n    sb.append(getSessionId());\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId=\");\n    sb.append(getSessionId());\n"
+        },
+        {
+            "patch": "    sb = sb.length() > 0? sb.append(\", \"):sb;\n",
+            "correctness": "test_timeout",
+            "translated": "    sb = sb.length() > 0? sb.append(\", \"):sb;\n"
+        },
+        {
+            "patch": "    sb.append(\"sessionId=\");\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId=\");\n"
+        },
+        {
+            "patch": "    sb.append(\"sessionId = \").append(sessionId);\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId=\").append(sessionId);\n"
+        },
+        {
+            "patch": "    sb.append(\"sessionId\");\n",
+            "correctness": "test_timeout",
+            "translated": "    sb.append(\"sessionId\");\n"
+        },
+        {
+            "patch": "    appendSessionId(sb);\n",
+            "correctness": "uncompilable",
+            "translated": "    appendSessionId(sb);\n"
+        }
+    ]
+}

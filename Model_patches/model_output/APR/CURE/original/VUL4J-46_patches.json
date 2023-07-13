@@ -1,0 +1,37 @@
+{
+    "VUL4J-46-113-114": {
+        "src": "xml CaMeL In = XML CaMeL Input CaMeL Factory . new CaMeL Instance ( ) ;",
+        "patches": [
+            {
+                "patch": "xmlIn = ' '; } else { xmlIn = ' ';"
+            },
+            {
+                "patch": "xmlIn = ' || ch == '; } else { xmlIn = ' || ch == ';"
+            },
+            {
+                "patch": "xmlIn = '\\r'; } else { xmlIn = '\\r';"
+            },
+            {
+                "patch": "xmlIn = '\\n'; } else { xmlIn = '\\n';"
+            },
+            {
+                "patch": "xmlIn = '\\t'; } else { xmlIn = '\\t';"
+            },
+            {
+                "patch": "_initFactories( xmlIn , xmlOut ) ;"
+            },
+            {
+                "patch": "xmlIn = xmlIn ;"
+            },
+            {
+                "patch": "_initFactories( xmlIn , xmlOut , null , null ) ;"
+            },
+            {
+                "patch": "xmlIn = xmlIn.newInstance( ) ;"
+            },
+            {
+                "patch": "if( xmlIn == null || xmlOut == null ) {"
+            }
+        ]
+    }
+}

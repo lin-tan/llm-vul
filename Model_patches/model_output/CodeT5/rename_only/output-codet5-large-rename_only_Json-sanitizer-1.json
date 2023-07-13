@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-117,1",
+    "output": [
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n}\n\n",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n}\n \n \n \n\n ",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  for",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n}\n \n \n \n\n}",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n\n   \n \n \n}\n\n",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n  }\n\n   \n \n \n}\n\n",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n}\n",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n\n   \n \n \n\n  for",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  if",
+        "\n      case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  cleaned"
+    ],
+    "validation_result": [
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  for",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  for"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n}\n \n \n \n\n}",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n}\n \n \n \n\n}"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n\n   \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n  }\n\n   \n \n \n}",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n}",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n}"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n }\n \n \n\n   \n \n \n\n  for",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  for"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  if",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  if"
+        },
+        {
+            "patch": "case '>':\n        remove(h, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  cleaned",
+            "correctness": "uncompilable",
+            "translated": "case '>':\n        elide(i, \"\\\\\");\n        break;\n        break;\n      case ']':\n       \n      }\n      case '>':\n        break; }\n  }\n \n\n \n\n\n \n \n\n\n      case '>':\n       \n      }\n\n\n       \n \n}\n \n \n \n\n  cleaned"
+        }
+    ]
+}

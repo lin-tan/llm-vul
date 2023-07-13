@@ -1,0 +1,66 @@
+{
+    "output": [
+        "while (s <= h) {",
+        "while (h < s) {",
+        "while (s < h) {",
+        "while (s > h) {",
+        "while (s >= h) {",
+        "while (s + h > z) {",
+        "while ((s + h) < z) {",
+        "while (s < h && z > 0) {",
+        "while (s < h && z >= 0) {",
+        "while (s < h && z!= 0) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "while (s <= h) {",
+            "correctness": "test_timeout",
+            "translated": "while (v <= vt) {"
+        },
+        {
+            "patch": "while (h < s) {",
+            "correctness": "test_success",
+            "translated": "while (vt < v) {"
+        },
+        {
+            "patch": "while (s < h) {",
+            "correctness": "compile_success",
+            "translated": "while (v < vt) {"
+        },
+        {
+            "patch": "while (s > h) {",
+            "correctness": "test_success",
+            "translated": "while (v > vt) {"
+        },
+        {
+            "patch": "while (s >= h) {",
+            "correctness": "test_timeout",
+            "translated": "while (v >= vt) {"
+        },
+        {
+            "patch": "while (s + h > z) {",
+            "correctness": "compile_success",
+            "translated": "while (v + vt > t) {"
+        },
+        {
+            "patch": "while ((s + h) < z) {",
+            "correctness": "compile_success",
+            "translated": "while ((v + vt) < t) {"
+        },
+        {
+            "patch": "while (s < h && z > 0) {",
+            "correctness": "compile_success",
+            "translated": "while (v < vt && t > 0) {"
+        },
+        {
+            "patch": "while (s < h && z >= 0) {",
+            "correctness": "compile_success",
+            "translated": "while (v < vt && t >= 0) {"
+        },
+        {
+            "patch": "while (s < h && z!= 0) {",
+            "correctness": "compile_success",
+            "translated": "while (v < vt && t!= 0) {"
+        }
+    ]
+}

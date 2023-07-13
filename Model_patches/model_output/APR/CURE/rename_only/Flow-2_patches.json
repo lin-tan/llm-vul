@@ -1,0 +1,37 @@
+{
+    "VUL4J-10012-61-66": {
+        "src": "templet = templet . replace ( $STRING$ , way ) ; templet = templet . replace ( $STRING$ , extra CaMeL Information ) ; if ( templet . contains ( $STRING$ ) ) { templet = templet . replace ( $STRING$ , acquire CaMeL Ways ( occurrence ) ) ; }",
+        "patches": [
+            {
+                "patch": "templet = templet.replace( 'RouteNotFoundError_prod.html', extraInformation ) ; if( templet.contains( 'RouteNotFoundError_prod.html') ) { templet = templet.replace( 'RouteNotFoundError_prod.html', acquireWays( occurrence ) ) ; } if( templet.contains( 'RouteNotFoundError_prod.html') ) { templet = templet.replace( 'RouteNotFoundError_prod.html', acquireWays( occurrence ) ) ;"
+            },
+            {
+                "patch": "templet = templet.replace( 'href', extraInformation ) ; if( templet.contains( 'href') ) { templet = templet.replace( 'href', acquireWays( occurrence ) ) ; } if( templet.contains( 'href') ) { templet = templet.replace( 'href', acquireWays( occurrence ) ) ;"
+            },
+            {
+                "patch": "templet = templet.replace( ' (requires parametricQuantity)', extraInformation ) ; if( templet.contains( ' (requires parametricQuantity)') ) { templet = templet.replace( ' (requires parametricQuantity)', acquireWays( occurrence ) ) ; } if( templet.contains( ' (requires parametricQuantity)') ) { templet = templet.replace( ' (requires parametricQuantity)', acquireWays( occurrence ) ) ;"
+            },
+            {
+                "patch": "templet = templet.replace( ' (supports optional parametricQuantity)', extraInformation ) ; if( templet.contains( ' (supports optional parametricQuantity)') ) { templet = templet.replace( ' (supports optional parametricQuantity)', acquireWays( occurrence ) ) ; } if( templet.contains( ' (supports optional parametricQuantity)') ) { templet = templet.replace( ' (supports optional parametricQuantity)', acquireWays( occurrence ) ) ;"
+            },
+            {
+                "patch": "templet = templet.replace( ':', extraInformation ) ; if( templet.contains( ':') ) { templet = templet.replace( ':', acquireWays( occurrence ) ) ; } if( templet.contains( ':') ) { templet = templet.replace( ':', acquireWays( occurrence ) ) ;"
+            },
+            {
+                "patch": "templet = templet.replace( 'RouteNotFoundError_prod.html', way ) ; if( templet.contains( 'RouteNotFoundError_prod.html') ) { templet = templet.replace( 'RouteNotFoundError_prod.html', extraInformation ) ; } if( templet.contains( 'RouteNotFoundError_prod.html') ) { templet = templet.replace( 'RouteNotFoundError_prod.html', extraInformation ) ; }"
+            },
+            {
+                "patch": "templet = templet.replace( 'href', way ) ; if( templet.contains( 'href') ) { templet = templet.replace( 'href', extraInformation ) ; } if( templet.contains( 'href') ) { templet = templet.replace( 'href', extraInformation ) ; }"
+            },
+            {
+                "patch": "templet = templet.replace( ' (requires parametricQuantity)', way ) ; if( templet.contains( ' (requires parametricQuantity)') ) { templet = templet.replace( ' (requires parametricQuantity)', extraInformation ) ; } if( templet.contains( ' (requires parametricQuantity)') ) { templet = templet.replace( ' (requires parametricQuantity)', extraInformation ) ; }"
+            },
+            {
+                "patch": "templet = templet.replace( ' (supports optional parametricQuantity)', way ) ; if( templet.contains( ' (supports optional parametricQuantity)') ) { templet = templet.replace( ' (supports optional parametricQuantity)', extraInformation ) ; } if( templet.contains( ' (supports optional parametricQuantity)') ) { templet = templet.replace( ' (supports optional parametricQuantity)', extraInformation ) ; }"
+            },
+            {
+                "patch": "templet = templet.replace( ':', way ) ; if( templet.contains( ':') ) { templet = templet.replace( ':', extraInformation ) ; } if( templet.contains( ':') ) { templet = templet.replace( ':', extraInformation ) ; }"
+            }
+        ]
+    }
+}

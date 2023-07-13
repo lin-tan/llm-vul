@@ -1,0 +1,66 @@
+{
+    "output": [
+        "xmlIn = XMLInputFactory.newInstance();",
+        "xmlIn = new XMLInputFactory();",
+        "xmlIn = XmlInputFactory.newInstance();",
+        "xmlIn = XMLFactory.newInstance();",
+        "xmlIn = getXMLInputFactory();",
+        "xmlIn = null;",
+        "xmlIn = new XMLInputFactory();",
+        "xmlIn = _xmlInputFactory;",
+        "xmlIn = XMLInputFactory.getInstance();",
+        "xmlIn = new XMLInputFactoryImpl();"
+    ],
+    "validation_result": [
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();",
+            "correctness": "compile_success",
+            "translated": "xmlIn = XMLInputFactory.newInstance();"
+        },
+        {
+            "patch": "xmlIn = new XMLInputFactory();",
+            "correctness": "uncompilable",
+            "translated": "xmlIn = new XMLInputFactory();"
+        },
+        {
+            "patch": "xmlIn = XmlInputFactory.newInstance();",
+            "correctness": "uncompilable",
+            "translated": "xmlIn = XmlInputFactory.newInstance();"
+        },
+        {
+            "patch": "xmlIn = XMLFactory.newInstance();",
+            "correctness": "uncompilable",
+            "translated": "xmlIn = XMLFactory.newInstance();"
+        },
+        {
+            "patch": "xmlIn = getXMLInputFactory();",
+            "correctness": "compile_success",
+            "translated": "xmlIn = getXMLInputFactory();"
+        },
+        {
+            "patch": "xmlIn = null;",
+            "correctness": "compile_success",
+            "translated": "xmlIn = null;"
+        },
+        {
+            "patch": "xmlIn = new XMLInputFactory();",
+            "correctness": "uncompilable",
+            "translated": "xmlIn = new XMLInputFactory();"
+        },
+        {
+            "patch": "xmlIn = _xmlInputFactory;",
+            "correctness": "compile_success",
+            "translated": "xmlIn = _xmlInputFactory;"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.getInstance();",
+            "correctness": "uncompilable",
+            "translated": "xmlIn = XMLInputFactory.getInstance();"
+        },
+        {
+            "patch": "xmlIn = new XMLInputFactoryImpl();",
+            "correctness": "uncompilable",
+            "translated": "xmlIn = new XMLInputFactoryImpl();"
+        }
+    ]
+}

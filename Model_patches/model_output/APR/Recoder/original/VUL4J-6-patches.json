@@ -1,0 +1,12 @@
+[
+  "for(int i = 0;(i <= this.rcount);i++) {",
+  "for(int i = 0;(i >= this.rcount);i++) {",
+  "return;\n",
+  "for(int i = 0;(i < this.rcount);i++) {",
+  "this.hashAlg = HashAlgorithm.getAlgorithmByCode(ZipShort.getValue(data, (offset + 12)));\n",
+  "for(int i = 0;(i > this.rcount);i++) {",
+  "for(int i = 0;(i < this.hashSize);i++) {",
+  "this.bitlen = ZipShort.getValue(data, (offset + 4));\n",
+  "this.flags = ZipShort.getValue(data, (offset + 6));\n",
+  "this.rcount = ZipLong.getValue(data, (offset + 8));\n"
+]

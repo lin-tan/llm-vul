@@ -1,0 +1,629 @@
+{
+    "id": "cmpl-8HOwPUotdjrYuV3UAM9L8RTXszNMU",
+    "object": "text_completion",
+    "created": 1699158141,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  HttpHeaders heading = new DefaultHttpHeaders();\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " H",
+                    "ttp",
+                    "Head",
+                    "ers",
+                    " heading",
+                    " =",
+                    " new",
+                    " Default",
+                    "Http",
+                    "Head",
+                    "ers",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364,
+                    -0.9546872,
+                    -0.9473655,
+                    -0.00047929,
+                    -0.023079295,
+                    -0.043175038,
+                    -0.015314208,
+                    -0.002369426,
+                    -0.046423282,
+                    -0.060742937,
+                    -0.013409566,
+                    -0.00397389,
+                    -3.762558e-05,
+                    -0.5486105,
+                    -0.03628265
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    },
+                    {
+                        "<|endoftext|>": -0.51089287
+                    },
+                    {
+                        " H": -0.9473655
+                    },
+                    {
+                        "ttp": -0.00047929
+                    },
+                    {
+                        "Head": -0.023079295
+                    },
+                    {
+                        "ers": -0.043175038
+                    },
+                    {
+                        " heading": -0.015314208
+                    },
+                    {
+                        " =": -0.002369426
+                    },
+                    {
+                        " new": -0.046423282
+                    },
+                    {
+                        " Default": -0.060742937
+                    },
+                    {
+                        "Http": -0.013409566
+                    },
+                    {
+                        "Head": -0.00397389
+                    },
+                    {
+                        "ers": -3.762558e-05
+                    },
+                    {
+                        "();": -0.5486105
+                    },
+                    {
+                        "\n": -0.03628265
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3860,
+                    3863,
+                    3867,
+                    3870,
+                    3878,
+                    3880,
+                    3884,
+                    3892,
+                    3896,
+                    3900,
+                    3903,
+                    3906
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  HttpHeaders heading = new DefaultHttpHeaders();\n  heading.set(HttpHeaderNames.DATE, time.instant());\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " H",
+                    "ttp",
+                    "Head",
+                    "ers",
+                    " heading",
+                    " =",
+                    " new",
+                    " Default",
+                    "Http",
+                    "Head",
+                    "ers",
+                    "();",
+                    "\n",
+                    " ",
+                    " heading",
+                    ".",
+                    "set",
+                    "(",
+                    "Http",
+                    "Header",
+                    "Names",
+                    ".",
+                    "D",
+                    "ATE",
+                    ",",
+                    " time",
+                    ".",
+                    "inst",
+                    "ant",
+                    "());",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364,
+                    -0.9546872,
+                    -0.9473655,
+                    -0.00047929,
+                    -0.023079295,
+                    -0.043175038,
+                    -0.015314208,
+                    -0.002369426,
+                    -0.046423282,
+                    -0.060742937,
+                    -0.013409566,
+                    -0.00397389,
+                    -3.762558e-05,
+                    -0.5486105,
+                    -0.03628265,
+                    -0.937937,
+                    -0.60866994,
+                    -0.006431937,
+                    -0.40035573,
+                    -0.1407675,
+                    -0.1903746,
+                    -0.046097796,
+                    -0.00863264,
+                    -0.00023416693,
+                    -1.6626952,
+                    -0.0006476483,
+                    -0.0016766674,
+                    -1.17245,
+                    -0.03164896,
+                    -1.242493,
+                    -0.00071832864,
+                    -0.6611063,
+                    -0.0075572464
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    },
+                    {
+                        "<|endoftext|>": -0.51089287
+                    },
+                    {
+                        " H": -0.9473655
+                    },
+                    {
+                        "ttp": -0.00047929
+                    },
+                    {
+                        "Head": -0.023079295
+                    },
+                    {
+                        "ers": -0.043175038
+                    },
+                    {
+                        " heading": -0.015314208
+                    },
+                    {
+                        " =": -0.002369426
+                    },
+                    {
+                        " new": -0.046423282
+                    },
+                    {
+                        " Default": -0.060742937
+                    },
+                    {
+                        "Http": -0.013409566
+                    },
+                    {
+                        "Head": -0.00397389
+                    },
+                    {
+                        "ers": -3.762558e-05
+                    },
+                    {
+                        "();": -0.5486105
+                    },
+                    {
+                        "\n": -0.03628265
+                    },
+                    {
+                        "<|endoftext|>": -0.5030234
+                    },
+                    {
+                        " heading": -0.60866994
+                    },
+                    {
+                        ".": -0.006431937
+                    },
+                    {
+                        "set": -0.40035573
+                    },
+                    {
+                        "(": -0.1407675
+                    },
+                    {
+                        "Http": -0.1903746
+                    },
+                    {
+                        "Header": -0.046097796
+                    },
+                    {
+                        "Names": -0.00863264
+                    },
+                    {
+                        ".": -0.00023416693
+                    },
+                    {
+                        "SER": -0.87446237
+                    },
+                    {
+                        "ATE": -0.0006476483
+                    },
+                    {
+                        ",": -0.0016766674
+                    },
+                    {
+                        " time": -1.17245
+                    },
+                    {
+                        ".": -0.03164896
+                    },
+                    {
+                        "inst": -1.242493
+                    },
+                    {
+                        "ant": -0.00071832864
+                    },
+                    {
+                        "());": -0.6611063
+                    },
+                    {
+                        "\n": -0.0075572464
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3860,
+                    3863,
+                    3867,
+                    3870,
+                    3878,
+                    3880,
+                    3884,
+                    3892,
+                    3896,
+                    3900,
+                    3903,
+                    3906,
+                    3907,
+                    3908,
+                    3916,
+                    3917,
+                    3920,
+                    3921,
+                    3925,
+                    3931,
+                    3936,
+                    3937,
+                    3938,
+                    3941,
+                    3942,
+                    3947,
+                    3948,
+                    3952,
+                    3955,
+                    3959
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "  Headings heading = new DefaultHeadings(false);\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    " ",
+                    " Head",
+                    "ings",
+                    " heading",
+                    " =",
+                    " new",
+                    " Default",
+                    "Head",
+                    "ings",
+                    "(",
+                    "false",
+                    ");",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364,
+                    -0.9546872,
+                    -0.9798458,
+                    -0.012422659,
+                    -0.068538,
+                    -0.0039850785,
+                    -0.03000618,
+                    -1.5228381,
+                    -0.47673872,
+                    -0.05404317,
+                    -0.10436276,
+                    -0.035135426,
+                    -0.03505801,
+                    -0.018067135
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    },
+                    {
+                        "<|endoftext|>": -0.51089287
+                    },
+                    {
+                        " H": -0.9473655
+                    },
+                    {
+                        "ings": -0.012422659
+                    },
+                    {
+                        " heading": -0.068538
+                    },
+                    {
+                        " =": -0.0039850785
+                    },
+                    {
+                        " new": -0.03000618
+                    },
+                    {
+                        " Network": -0.3572592
+                    },
+                    {
+                        "Head": -0.47673872
+                    },
+                    {
+                        "ings": -0.05404317
+                    },
+                    {
+                        "(": -0.10436276
+                    },
+                    {
+                        "false": -0.035135426
+                    },
+                    {
+                        ");": -0.03505801
+                    },
+                    {
+                        "\n": -0.018067135
+                    }
+                ],
+                "text_offset": [
+                    3857,
+                    3857,
+                    3858,
+                    3863,
+                    3867,
+                    3875,
+                    3877,
+                    3881,
+                    3889,
+                    3893,
+                    3897,
+                    3898,
+                    3903,
+                    3905
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.008850364
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.008850364
+                    }
+                ],
+                "text_offset": [
+                    3857
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 1076,
+        "completion_tokens": 62,
+        "total_tokens": 1138
+    },
+    "validation_result": [
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  HttpHeaders heading = new DefaultHttpHeaders();\n",
+            "correctness": "test_success",
+            "translated": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  HttpHeaders heading = new DefaultHttpHeaders();\n  heading.set(HttpHeaderNames.DATE, time.instant());\n",
+            "correctness": "compile_success",
+            "translated": "  HttpHeaders nettyHeaders = new DefaultHttpHeaders();\n  nettyHeaders.set(HttpHeaderNames.DATE, clock.instant());\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "  Headings heading = new DefaultHeadings(false);\n",
+            "correctness": "uncompilable",
+            "translated": "  Headers nettyHeaders = new DefaultHeadings(false);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        }
+    ]
+}

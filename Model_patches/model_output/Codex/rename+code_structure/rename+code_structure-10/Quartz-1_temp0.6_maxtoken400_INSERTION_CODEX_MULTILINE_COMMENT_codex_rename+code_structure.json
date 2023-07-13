@@ -1,0 +1,1235 @@
+{
+    "id": "cmpl-8HOU5rhQwBgl2aSWSZMRE87S2pRnn",
+    "object": "text_completion",
+    "created": 1699156385,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "      ",
+                    " archive",
+                    "Creat",
+                    "or",
+                    " =",
+                    " archive",
+                    "Creat",
+                    "or",
+                    "Manufact",
+                    "ory",
+                    ".",
+                    "new",
+                    "Document",
+                    "Builder",
+                    "();",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.0054467386,
+                    -0.33181816,
+                    -0.3984218,
+                    -0.0043223533,
+                    -0.00016292612,
+                    -0.028569994,
+                    -0.095952064,
+                    -0.0028270683,
+                    -4.608659e-05,
+                    -0.0143505195,
+                    -3.529076e-06,
+                    -0.00084645924,
+                    -0.0024307882,
+                    -0.0026299527,
+                    -0.00045835716,
+                    -0.0127909845,
+                    -0.085641116
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.0054467386
+                    },
+                    {
+                        "      ": -0.33181816
+                    },
+                    {
+                        " archive": -0.3984218
+                    },
+                    {
+                        "Creat": -0.0043223533
+                    },
+                    {
+                        "or": -0.00016292612
+                    },
+                    {
+                        " =": -0.028569994
+                    },
+                    {
+                        " archive": -0.095952064
+                    },
+                    {
+                        "Creat": -0.0028270683
+                    },
+                    {
+                        "or": -4.608659e-05
+                    },
+                    {
+                        "Manufact": -0.0143505195
+                    },
+                    {
+                        "ory": -3.529076e-06
+                    },
+                    {
+                        ".": -0.00084645924
+                    },
+                    {
+                        "new": -0.0024307882
+                    },
+                    {
+                        "Document": -0.0026299527
+                    },
+                    {
+                        "Builder": -0.00045835716
+                    },
+                    {
+                        "();": -0.0127909845
+                    },
+                    {
+                        "\n": -0.085641116
+                    }
+                ],
+                "text_offset": [
+                    2169,
+                    2169,
+                    2175,
+                    2183,
+                    2188,
+                    2190,
+                    2192,
+                    2200,
+                    2205,
+                    2207,
+                    2215,
+                    2218,
+                    2219,
+                    2222,
+                    2230,
+                    2237,
+                    2240
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 524,
+        "completion_tokens": 170,
+        "total_tokens": 694
+    },
+    "validation_result": [
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "       archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "       docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "String pathInfo = request.getPathInfo(); return pathInfo == null? null : pathInfo;",
+        "String pathInfo = request.getPathInfo(); return pathInfo == null? \" \" : pathInfo;",
+        "return URLDecoder.decode(request.getPathInfo(), \"UTF-8 \");",
+        "URL url = request.getRequestURI(); return url.toString();",
+        "URL pathInfo = request.getPathInfo(); return pathInfo == null? null : pathInfo;",
+        "if ( request.getPathInfo()!= null ) return request.getPathInfo();",
+        "return URLDecoder.decode( request.getPathInfo(), \"UTF-8 \" );",
+        "URL pathInfo = request.getPathInfo(); return pathInfo == null? \" \" : pathInfo;",
+        "if ( request.getPathInfo()!= null ) return request.getPathInfo();",
+        "String pathInfo = request.getRequestURI(); return pathInfo == null? null : pathInfo;"
+    ],
+    "validation_result": [
+        {
+            "patch": "String pathInfo = request.getPathInfo(); return pathInfo == null? null : pathInfo;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "String pathInfo = request.getPathInfo(); return pathInfo == null? \" \" : pathInfo;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return URLDecoder.decode(request.getPathInfo(), \"UTF-8 \");",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "URL url = request.getRequestURI(); return url.toString();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "URL pathInfo = request.getPathInfo(); return pathInfo == null? null : pathInfo;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( request.getPathInfo()!= null ) return request.getPathInfo();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return URLDecoder.decode( request.getPathInfo(), \"UTF-8 \" );",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "URL pathInfo = request.getPathInfo(); return pathInfo == null? \" \" : pathInfo;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if ( request.getPathInfo()!= null ) return request.getPathInfo();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "String pathInfo = request.getRequestURI(); return pathInfo == null? null : pathInfo;",
+            "correctness": "compile_success"
+        }
+    ]
+}

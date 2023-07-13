@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "nativeSettings.set(setting);",
+        "this.setting = new JXBContext(setting);",
+        "this.setting = new JXBContext(setting);",
+        "nativeSettings.this.setting = setting;",
+        "this.setting = new JaxBContext(setting);",
+        "nativeSettings.setSettings(setting);",
+        "this.setting = new JSBContext(setting);",
+        "null = new JXBContext(setting);",
+        "Settings.set(setting);",
+        "this.setting = new JaxbSettings();"
+    ],
+    "validation_result": [
+        {
+            "patch": "nativeSettings.set(setting);",
+            "correctness": "uncompilable",
+            "translated": "nativeSettings.set(context);"
+        },
+        {
+            "patch": "this.setting = new JXBContext(setting);",
+            "correctness": "uncompilable",
+            "translated": "this.context = new JXBContext(context);"
+        },
+        {
+            "patch": "this.setting = new JXBContext(setting);",
+            "correctness": "uncompilable",
+            "translated": "this.context = new JXBContext(context);"
+        },
+        {
+            "patch": "nativeSettings.this.setting = setting;",
+            "correctness": "uncompilable",
+            "translated": "nativeSettings.this.context = context;"
+        },
+        {
+            "patch": "this.setting = new JaxBContext(setting);",
+            "correctness": "uncompilable",
+            "translated": "this.context = new JaxBContext(context);"
+        },
+        {
+            "patch": "nativeSettings.setSettings(setting);",
+            "correctness": "uncompilable",
+            "translated": "nativeSettings.setSettings(context);"
+        },
+        {
+            "patch": "this.setting = new JSBContext(setting);",
+            "correctness": "uncompilable",
+            "translated": "this.context = new JSBContext(context);"
+        },
+        {
+            "patch": "null = new JXBContext(setting);",
+            "correctness": "uncompilable",
+            "translated": "null = new JXBContext(context);"
+        },
+        {
+            "patch": "Settings.set(setting);",
+            "correctness": "uncompilable",
+            "translated": "Settings.set(context);"
+        },
+        {
+            "patch": "this.setting = new JaxbSettings();",
+            "correctness": "uncompilable",
+            "translated": "this.context = new JaxbSettings();"
+        }
+    ]
+}

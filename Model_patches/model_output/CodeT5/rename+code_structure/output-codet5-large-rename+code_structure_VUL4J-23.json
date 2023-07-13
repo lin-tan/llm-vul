@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-8,1",
+    "output": [
+        "\n        return source;\n\n      return source;\n     \n      return source;\n\n",
+        "\n        return source;\n\n      return source;\n\n      return source;\n\n",
+        "\n        return source;\n",
+        "\n      return source;\n\n      return source;\n     \n      return source;\n\n",
+        "\n        return source;\n\n      return source;\n     \n      return source;\n}",
+        "\n        return source;\n\n      return source;\n      return source;\n\n\n",
+        "\n      return source;\n",
+        "\n        return source.trim();\n",
+        "\n        return source.toString();\n",
+        "\n        return source;\n\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return source;\n\n      return source;\n     \n      return source;",
+            "correctness": "uncompilable",
+            "translated": "return source;\n\n      return source;\n     \n      return source;"
+        },
+        {
+            "patch": "return source;\n\n      return source;\n\n      return source;",
+            "correctness": "uncompilable",
+            "translated": "return source;\n\n      return source;\n     \n      return source;"
+        },
+        {
+            "patch": "return source;",
+            "correctness": "compile_success",
+            "translated": "return source;"
+        },
+        {
+            "patch": "return source;\n\n      return source;\n     \n      return source;",
+            "correctness": "uncompilable",
+            "translated": "return source;\n\n      return source;\n     \n      return source;"
+        },
+        {
+            "patch": "return source;\n\n      return source;\n     \n      return source;\n}",
+            "correctness": "uncompilable",
+            "translated": "return source;\n\n      return source;\n     \n      return source;\n}"
+        },
+        {
+            "patch": "return source;\n\n      return source;\n      return source;",
+            "correctness": "uncompilable",
+            "translated": "return source;\n\n      return source;\n     \n      return source;"
+        },
+        {
+            "patch": "return source;",
+            "correctness": "compile_success",
+            "translated": "return source;"
+        },
+        {
+            "patch": "return source.trim();",
+            "correctness": "compile_success",
+            "translated": "return source.trim();"
+        },
+        {
+            "patch": "return source.toString();",
+            "correctness": "compile_success",
+            "translated": "return source.toString();"
+        },
+        {
+            "patch": "return source;",
+            "correctness": "compile_success",
+            "translated": "return source;"
+        }
+    ]
+}

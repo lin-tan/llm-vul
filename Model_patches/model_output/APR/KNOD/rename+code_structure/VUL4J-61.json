@@ -1,0 +1,65 @@
+{
+    "id": 30,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1146,
+            "fix_type": "general",
+            "patch": "  Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.4097,
+            "fix_type": "insert",
+            "patch": "if (doctor == null ){\nthrow new Exception(\"failOnError\");\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.2363,
+            "fix_type": "general",
+            "patch": "  Document doctor = db.parse().parse(inputStream);\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.2363,
+            "fix_type": "general",
+            "patch": "  Document doctor = log.parse().parse(inputStream);\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.2412,
+            "fix_type": "general",
+            "patch": " final Document doctor = archiveCreatorMill.newDocumentBuilder().parse(inputStream);\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.4301,
+            "fix_type": "insert",
+            "patch": "if (xWayLook == null ){\nthrow new Exception(\"failOnError\");\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2301,
+            "fix_type": "general",
+            "patch": "  Document doctor = db.newDocumentBuilder().parse(inputStream);\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2301,
+            "fix_type": "general",
+            "patch": "  Document doctor = log.newDocumentBuilder().parse(inputStream);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.4846,
+            "fix_type": "insert",
+            "patch": "if (doctor == null ){\nreturn null;\n}\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2573,
+            "fix_type": "general",
+            "patch": "  Document doctor = archiveCreatorMill.newDocumentBuilder().parse(db);\n"
+        }
+    ]
+}

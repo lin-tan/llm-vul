@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n</s></s>",
+        "<pad><s>    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider.trim());\n</s>",
+        "<pad><s>    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, null);\n</s>",
+        "<pad><s>    return dataProvider == null? null : Encoding.forJavaScriptSource(dataProvider);\n</s></s></s>",
+        "<pad><s>    return dataProvider == null? null : Encode.forJavaScriptString(dataProvider);\n</s></s></s>",
+        "<pad><s>    return Encode.forJavaScriptSource(dataProvider);\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return null;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    return encode;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider);\n",
+            "correctness": "compile_success",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider.trim());\n",
+            "correctness": "compile_success",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source.trim());\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptSource(dataProvider, null);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encode.forJavaScriptSource(source, null);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encoding.forJavaScriptSource(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encoding.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "    return dataProvider == null? null : Encode.forJavaScriptString(dataProvider);\n",
+            "correctness": "uncompilable",
+            "translated": "    return source == null? null : Encode.forJavaScriptString(source);\n"
+        },
+        {
+            "patch": "    return Encode.forJavaScriptSource(dataProvider);\n",
+            "correctness": "compile_success",
+            "translated": "    return Encode.forJavaScriptSource(source);\n"
+        },
+        {
+            "patch": "    return null;\n",
+            "correctness": "compile_success",
+            "translated": "    return null;\n"
+        },
+        {
+            "patch": "    return encode;\n",
+            "correctness": "uncompilable",
+            "translated": "    return encode;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

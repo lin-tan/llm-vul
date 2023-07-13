@@ -1,0 +1,66 @@
+{
+    "output": [
+        "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords();",
+        "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords());",
+        "((AdministeredRecordsImpl) (acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())",
+        "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle).acquireAdministeredRecords())",
+        "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())",
+        "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(null);",
+        "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()) {",
+        "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(false);",
+        "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(true);",
+        "((AdministeredRecordsImpl) (acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords();",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger();"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords());",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger());"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) (acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) (getTopicReference(topicName)).getManagedLedger())"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle).acquireAdministeredRecords())",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) getTopicReference(topicName).getManagedLedger())"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger())"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(null);",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger(null);"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()) {",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger()) {"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(false);",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger(false);"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords(true);",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) getTopicReference(topicName)).getManagedLedger(true);"
+        },
+        {
+            "patch": "((AdministeredRecordsImpl) (acquireSubjectMention(subjectTitle)).acquireAdministeredRecords()) {",
+            "correctness": "uncompilable",
+            "translated": "((ManagedLedgerImpl) (getTopicReference(topicName)).getManagedLedger()) {"
+        }
+    ]
+}

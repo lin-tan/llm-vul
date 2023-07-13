@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    archiveCreator = archiveCreatorManufactory.newDocumentBuilder(null);\n</s>",
+        "<pad><s>    documentBuilder = archiveCreatorManufactory.newDocumentBuilder();\n</s></s></s>",
+        "<pad><s>    archiveCreator = archiveCreatorManufactory.newDocumentBuilder(true);\n</s>",
+        "<pad><s>    archiveCreator = archiveCreatorManufactory.newDocumentBuilder().build();\n</s>",
+        "<pad><s>    archiveCreatorBuilder = archiveCreatorManufactory.newDocumentBuilder();\n</s></s>",
+        "<pad><s>    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n</s></s></s>",
+        "<pad><s>    archiveCreator = documentBuilderFactory.newDocumentBuilder();\n</s></s></s></s></s></s>",
+        "<pad><s>    archiveCreator = XMLConstants.newDocumentBuilder();\n</s></s></s></s></s></s>",
+        "<pad><s>    archiveCreator = documentBuilder.newDocumentBuilder();\n</s></s></s></s></s></s>",
+        "<pad><s>    archiveCreator = new DocumentBuilder();\n</s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    archiveCreator = archiveCreatorManufactory.newDocumentBuilder(null);\n",
+            "correctness": "uncompilable",
+            "translated": "    docBuilder = docBuilderFactory.newDocumentBuilder(null);\n"
+        },
+        {
+            "patch": "    documentBuilder = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "    documentBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "    archiveCreator = archiveCreatorManufactory.newDocumentBuilder(true);\n",
+            "correctness": "uncompilable",
+            "translated": "    docBuilder = docBuilderFactory.newDocumentBuilder(true);\n"
+        },
+        {
+            "patch": "    archiveCreator = archiveCreatorManufactory.newDocumentBuilder().build();\n",
+            "correctness": "uncompilable",
+            "translated": "    docBuilder = docBuilderFactory.newDocumentBuilder().build();\n"
+        },
+        {
+            "patch": "    archiveCreatorBuilder = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "    archiveCreatorBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "    archiveCreator = archiveCreatorManufactory.newDocumentBuilder();\n",
+            "correctness": "compile_success",
+            "translated": "    docBuilder = docBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "    archiveCreator = documentBuilderFactory.newDocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "    docBuilder = documentBuilderFactory.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "    archiveCreator = XMLConstants.newDocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "    docBuilder = XMLConstants.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "    archiveCreator = documentBuilder.newDocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "    docBuilder = documentBuilder.newDocumentBuilder();\n"
+        },
+        {
+            "patch": "    archiveCreator = new DocumentBuilder();\n",
+            "correctness": "uncompilable",
+            "translated": "    docBuilder = new DocumentBuilder();\n"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(String.valueOf(value)).matches()) {",
+        "if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value).matches()) {",
+        "if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value)).matches()) {",
+        "if (!value.getClass().equals(String.class)) {",
+        "if (!(value instanceof String)) {",
+        "if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(value)).matches()) {",
+        "if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(value).matches()) {",
+        "if (value!= null &&!value.getClass().equals(String.class)) {",
+        "if (value!= null && value.getClass().equals(String.class)) {",
+        "if (value!= null &&!(value.getClass().equals(String.class))) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(String.valueOf(value)).matches()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value).matches()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(value instanceof String) ||!Pattern.compile(getUrlRegex(), Pattern.CASE_INSENSITIVE).matcher(value)).matches()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!value.getClass().equals(String.class)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(value instanceof String)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(value)).matches()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!(value.getClass().equals(String.class)) ||!getUrlRegex().matcher(value).matches()) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (value!= null &&!value.getClass().equals(String.class)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (value!= null && value.getClass().equals(String.class)) {",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (value!= null &&!(value.getClass().equals(String.class))) {",
+            "correctness": "compile_success"
+        }
+    ]
+}

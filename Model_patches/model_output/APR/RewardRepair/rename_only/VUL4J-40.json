@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (!CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+        "if (!CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+        "if (!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+        "if (!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+        "If (!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+        "if (!customerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+        "if (!CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle().toString())) {",
+        "If (!CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+        "if (CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+        "if (!customerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (!CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromRequest.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromRequest.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "If (!CustomerFromDatabase.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "uncompilable",
+            "translated": "If (!scimUserFromDb.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!customerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "uncompilable",
+            "translated": "if (!customerRequest.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle().toString())) {",
+            "correctness": "test_timeout",
+            "translated": "if (!scimUserFromRequest.getUserName().equals(scimUserFromRequest.getUserName().toString())) {"
+        },
+        {
+            "patch": "If (!CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "uncompilable",
+            "translated": "If (!scimUserFromRequest.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (CustomerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "test_timeout",
+            "translated": "if (scimUserFromRequest.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        },
+        {
+            "patch": "if (!customerRequest.acquireCustomerTitle().equals(CustomerRequest.acquireCustomerTitle())) {",
+            "correctness": "uncompilable",
+            "translated": "if (!customerRequest.getUserName().equals(scimUserFromRequest.getUserName())) {"
+        }
+    ]
+}

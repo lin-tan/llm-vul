@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field,i);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i - offset);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(getField(), i - offset);\n<|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field, i + offset);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field,i+offset);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field,offset);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(getField(), i - getOffset());\n<|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field,i-1);\n<|endofmask|><|endofmask|><|endofmask|><|endofmask|>",
+        "<|endoftext|>void setTo(Calendar c, int i) {\n// buggy lines start:\n    c.set(field,i-offset);\n// buggy lines end\n}\n// fixed lines:\n    c.set(field,getOffset()-i);\n<|endofmask|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    c.set(field,i);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field, i - offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field, i);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(getField(), i - offset);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    c.set(field, i + offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field,i+offset);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    c.set(field,offset);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    c.set(getField(), i - getOffset());\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    c.set(field,i-1);\n",
+            "correctness": "test_timeout"
+        },
+        {
+            "patch": "    c.set(field,getOffset()-i);\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

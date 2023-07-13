@@ -1,0 +1,56 @@
+{
+    "outputs": [
+        "xmlIn = XMLInputFactory.newInstance();",
+        "_xmlIn = XMLInputFactory.newInstance();",
+        "xmlIn = XMLInputFactory.newInstance();",
+        "_xmlIn = XMLInputFactory.newInstance();",
+        "xmlIn = XMLInputFactory.newInstance(false);",
+        "xmlIn = _xmlInputFactory.newInstance();",
+        "xmlIn = XMLInputFactory.newInstance(true);",
+        "xmlIn = XMLInputFactory.newInstance(null);",
+        "xmlIn = new XMLInputFactory();",
+        "xmlIn = xmlInputFactory.newInstance();"
+    ],
+    "validation_result": [
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "_xmlIn = XMLInputFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "_xmlIn = XMLInputFactory.newInstance();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance(false);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = _xmlInputFactory.newInstance();",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance(true);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = XMLInputFactory.newInstance(null);",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = new XMLInputFactory();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "xmlIn = xmlInputFactory.newInstance();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-7,1",
+    "output": [
+        "\n    return producer;",
+        "\n    return producer.createXMLStreamReader(in);",
+        "\n    return producer.createXMLStreamReader(is);",
+        "\n    return producer.createXMLStreamReader();",
+        "\n    return producer;\n  }",
+        "\n    return producer.createXMLStreamReader(reader);",
+        "\n    return producer.createXMLReader();",
+        "\n    return producer.createXMLStreamReader(input);",
+        "\n    return producer.createXMLReader(in);",
+        "\n\n    return producer;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return producer;",
+            "correctness": "uncompilable",
+            "translated": "return factory;"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(in);",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(in);"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(is);",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(is);"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader();",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader();"
+        },
+        {
+            "patch": "return producer;\n  }",
+            "correctness": "uncompilable",
+            "translated": "return factory;\n  }"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(reader);",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(reader);"
+        },
+        {
+            "patch": "return producer.createXMLReader();",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLReader();"
+        },
+        {
+            "patch": "return producer.createXMLStreamReader(input);",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLStreamReader(input);"
+        },
+        {
+            "patch": "return producer.createXMLReader(in);",
+            "correctness": "uncompilable",
+            "translated": "return factory.createXMLReader(in);"
+        },
+        {
+            "patch": "return producer;",
+            "correctness": "uncompilable",
+            "translated": "return factory;"
+        }
+    ]
+}

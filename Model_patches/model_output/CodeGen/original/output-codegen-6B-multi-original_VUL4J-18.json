@@ -1,0 +1,56 @@
+{
+    "output": [
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\npublic void setForwardPage( HttpServletRequest request, String forwardPage )\n{\n\trequest.setAttribute( \"forwardPage\", forwardPage );\n}\n\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\npublic void setForwardPage( HttpServletRequest request, String forwardPage )\n{\n\trequest.setAttribute( \"forwardPage\", forwardPage );\n}\n\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\npublic void setForwardPage( HttpServletRequest request, String forwardPage )\n{\n\trequest.setAttribute( \"forwardPage\", forwardPage );\n}\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\n/**\n * @param forwardPage the forwardPage to set\n */\npublic void setForwardPage( String forwardPage )\n{\n\tthis.forwardPage = forwardPage;\n}\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\npublic void setForwardPage( String forwardPage )\n{\n\tthis.forwardPage = forwardPage;\n}\n\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\npublic void setForwardPage( String forwardPage )\n{\n\tthis.forwardPage = forwardPage;\n}\n\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\npublic void setForwardPage( String forwardPage )\n{\n\tthis.forwardPage = forwardPage;\n}\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n}\n",
+        "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}\n\n}\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif ( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "public String getForwardPage( HttpServletRequest request )\n{\n\tString forwardPage = request.getParameter( \"forwardPage\" );\n\tif( forwardPage == null )\n\t{\n\t\tforwardPage = \"\";\n\t}\n\treturn forwardPage;\n}",
+            "correctness": "compile_success"
+        }
+    ]
+}

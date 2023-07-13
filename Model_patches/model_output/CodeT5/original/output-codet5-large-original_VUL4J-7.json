@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    // final final final final\n",
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\nvoid\n int\n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    // final final final final\n\n",
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return -1;\n       \n            return\n\n\n    // final final final final\n\n",
+        "\n            return -1;\n       \n    if (toRead == -1) {\n       \n        return -1;\n\n   \n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return -1;\n       \n            return -1;\n            return l;\n\n    // final final final final\n\n",
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return -1;\n       \n            return\n\n\n    // final final final\n   \n",
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\nvoid\n int\n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return -1;\n       \n            return l;\n\n\n    // final final final final\n",
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\nvoid\n int\n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    // final final final\n   \n",
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    // final final final\n\n",
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n   // final final final final\n",
+        "\n            return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    //// final final final\n"
+    ],
+    "validation_result": [
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    // final final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\nvoid\n int\n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    // final final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return -1;\n       \n            return\n\n\n    // final final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == -1) {\n       \n        return -1;\n\n   \n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return -1;\n       \n            return -1;\n            return l;\n\n    // final final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return -1;\n       \n            return\n\n\n    // final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\nvoid\n int\n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return -1;\n       \n            return l;\n\n\n    // final final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\nvoid\n int\n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    // final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    // final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n   // final final final final",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return -1;\n       \n    if (toRead == 0) {\n        return -1;\n    } else {\n       \n    }\npublic int\n   \n   \n   \n   \n   \n   \n   \n            return -1;\n            return -1;\n            return l;\n       \n            return l;\n\n\n    //// final final final",
+            "correctness": "uncompilable"
+        }
+    ]
+}

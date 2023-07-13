@@ -1,0 +1,66 @@
+{
+    "output": [
+        "this.setting = setting; this.category = category;",
+        "this.category = setting.getCategory();",
+        "this.category = category.getName();",
+        "this.setting = setting;",
+        "this.category = category.getCanonicalName();",
+        "this.category = category.getClass();",
+        "this.categoryClass = category;",
+        "this.category = getCategory(category);",
+        "this.category = category == null? null : category;",
+        "this.category = null;"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.setting = setting; this.category = category;",
+            "correctness": "uncompilable",
+            "translated": "this.context = context; this.type = type;"
+        },
+        {
+            "patch": "this.category = setting.getCategory();",
+            "correctness": "uncompilable",
+            "translated": "this.type = context.getCategory();"
+        },
+        {
+            "patch": "this.category = category.getName();",
+            "correctness": "uncompilable",
+            "translated": "this.type = type.getName();"
+        },
+        {
+            "patch": "this.setting = setting;",
+            "correctness": "uncompilable",
+            "translated": "this.context = context;"
+        },
+        {
+            "patch": "this.category = category.getCanonicalName();",
+            "correctness": "uncompilable",
+            "translated": "this.type = type.getCanonicalName();"
+        },
+        {
+            "patch": "this.category = category.getClass();",
+            "correctness": "uncompilable",
+            "translated": "this.type = type.getClass();"
+        },
+        {
+            "patch": "this.categoryClass = category;",
+            "correctness": "uncompilable",
+            "translated": "this.categoryClass = type;"
+        },
+        {
+            "patch": "this.category = getCategory(category);",
+            "correctness": "uncompilable",
+            "translated": "this.type = getCategory(type);"
+        },
+        {
+            "patch": "this.category = category == null? null : category;",
+            "correctness": "compile_success",
+            "translated": "this.type = type == null? null : type;"
+        },
+        {
+            "patch": "this.category = null;",
+            "correctness": "compile_success",
+            "translated": "this.type = null;"
+        }
+    ]
+}

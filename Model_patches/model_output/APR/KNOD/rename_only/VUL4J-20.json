@@ -1,0 +1,65 @@
+{
+    "id": 11,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0806,
+            "fix_type": "general",
+            "patch": "result[j] = (COSNumeral)acquireItem(j).floatContent();\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.1943,
+            "fix_type": "general",
+            "patch": "result[j] = (COSNumeral)acquireItem(j);\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.5007,
+            "fix_type": "insert",
+            "patch": "result[j][j] = (float)j;\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.1265,
+            "fix_type": "general",
+            "patch": "result[j] = (COSNumeral)get(j).floatContent();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1265,
+            "fix_type": "general",
+            "patch": "result[j] = (COSNumeral)getName(j).floatContent();\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.2707,
+            "fix_type": "general",
+            "patch": "result[j] = acquireItem(j).floatContent();\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.5013,
+            "fix_type": "insert",
+            "patch": "if (result[j] == null || result == null ){\ncontinue  ;\n}\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1782,
+            "fix_type": "general",
+            "patch": "result[objects] = (COSNumeral)acquireItem(j).floatContent();\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.1782,
+            "fix_type": "general",
+            "patch": "result[needToBeUpdated] = (COSNumeral)acquireItem(j).floatContent();\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.1825,
+            "fix_type": "general",
+            "patch": "result[j] = (COSNumeral)acquireItem(j).getCOSObject();\n"
+        }
+    ]
+}

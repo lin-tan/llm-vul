@@ -1,0 +1,37 @@
+{
+    "VUL4J-30-58-59": {
+        "src": "if ( ! ( value . get CaMeL Class ( ) . equals ( String . class ) ) || ! Pattern . compile ( get CaMeL Url CaMeL Regex ( ) , Pattern . CASE _ INSENSITIVE ) . matcher ( String . value CaMeL Of ( value ) ) . matches ( ) ) {",
+        "patches": [
+            {
+                "patch": "if( !( value.getClass( ).equals( String.class ) ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( value ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( value.equals( String.class ) ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( value ) ).matches( ) ) { addFieldError( fieldName , object ) ;"
+            },
+            {
+                "patch": "if( !( value.getClass( ).equals( String.class ) ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( value.toString( ) ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( value.getClass( ).equals( String.class ) ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( value ) ).matches( ) )"
+            },
+            {
+                "patch": "if( !( value.getClass( ).equals( String.class ) && ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( value ) ).matches( ) ) ) {"
+            },
+            {
+                "patch": "if( !( value.getClass( ).equals( String.class ) ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( value.getClass( ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( value instanceof String ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( value ) ).matches( ) ) {"
+            },
+            {
+                "patch": "if( !( value.getClass( ).equals( String.class ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( String.valueOf( value ) ).matches( ) ) ) {"
+            },
+            {
+                "patch": "if( !( value.getClass( ).equals( String.class ) ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( '$').matches( ) ) {"
+            },
+            {
+                "patch": "if( !( value.getClass( ).equals( String.class ) ) || ! Pattern.compile( getUrlRegex( ) , Pattern.CASE_INSENSITIVE ).matcher( \"(#([a-z0-9$_\\\\.\\\\+!\\\\*\\\\'\\\\(\\\\),;:@&=-]|%[0-9a-f]{2})*)?\").matches( ) ) {"
+            }
+        ]
+    }
+}

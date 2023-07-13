@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    template = template.replace(\"{{path}}\", Jsoup.clean(path));\n    template = template.replace(\"{{additionalInfo}}\", Jsoup.clean(additionalInfo));\n</s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", path).replace(\"{{additionalInfo}}\", additionalInfo).replace(\"{{routes}}\", getRoutes(event));\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", path).replace(\"{{additionalInfo}}\", additionalInfo);\n    template = template.replace(\"{{routes}}\", getRoutes(event));\n</s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", path + \"String_Node_Str\" + additionalInfo);\n    template = template.replace(\"{{routes}}\", getRoutes(event));\n</s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", path);\n    template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replace(\"{path}}\", path);\n    template = template.replace(\"{additionalInfo}}\", additionalInfo);\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", path + \"String_Node_Str\" + additionalInfo);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>    template = template.replace(\"{{path}}\", path).replace(\"{{additionalInfo}}\", additionalInfo);\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    template = template.replace(\"{{path}}\", Jsoup.clean(path));\n    template = template.replace(\"{{additionalInfo}}\", Jsoup.clean(additionalInfo));\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", path).replace(\"{{additionalInfo}}\", additionalInfo).replace(\"{{routes}}\", getRoutes(event));\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", path).replace(\"{{additionalInfo}}\", additionalInfo);\n    template = template.replace(\"{{routes}}\", getRoutes(event));\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", path + \"String_Node_Str\" + additionalInfo);\n    template = template.replace(\"{{routes}}\", getRoutes(event));\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", path);\n    template = template.replace(\"{{additionalInfo}}\", additionalInfo);\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{path}}\", path);\n    template = template.replace(\"{additionalInfo}}\", additionalInfo);\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", path + \"String_Node_Str\" + additionalInfo);\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "    template = template.replace(\"{{path}}\", path).replace(\"{{additionalInfo}}\", additionalInfo);\n",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable"
+        }
+    ]
+}

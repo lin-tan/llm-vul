@@ -1,0 +1,66 @@
+{
+    "output": [
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return true;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            break;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            continue;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return True;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            result = false;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return false;\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            throw new IllegalArgumentException();\n<|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return true;\n            break;\n<|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n<|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|><|endoftext|>",
+        "protected static boolean whetherReasonable(String a)\n{\n   if (a == null || a.length() == 0) return false;\n   for (int m = 0; m < a.length(); m++) {\n      switch (a.charAt(m))\n      {\n         case '/':\n         case '\\\\':\n         case '?':\n         case ':':\n         case '<':\n         case '>':\n         case ';':\n         case '(':\n         case ')':\n         case '@':\n         case ',':\n         case '[':\n         case ']':\n         case '=':\n// buggy lines start:\n            return false;\n// buggy lines end\n         default:\n            break;\n      }\n   }\n   return true;\n}\n// fixed lines:\n            return true;\n        }\n<|endoftext|><|endoftext|>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            return true;\n",
+            "correctness": "compile_success",
+            "translated": "            return true;\n"
+        },
+        {
+            "patch": "            break;\n",
+            "correctness": "compile_success",
+            "translated": "            break;\n"
+        },
+        {
+            "patch": "            continue;\n",
+            "correctness": "compile_success",
+            "translated": "            continue;\n"
+        },
+        {
+            "patch": "            return True;\n",
+            "correctness": "uncompilable",
+            "translated": "            return True;\n"
+        },
+        {
+            "patch": "            result = false;\n",
+            "correctness": "uncompilable",
+            "translated": "            result = false;\n"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            throw new IllegalArgumentException();\n",
+            "correctness": "compile_success",
+            "translated": "            throw new IllegalArgumentException();\n"
+        },
+        {
+            "patch": "            return true;\n            break;\n",
+            "correctness": "uncompilable",
+            "translated": "            return true;\n            break;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        },
+        {
+            "patch": "            return true;\n        }\n",
+            "correctness": "uncompilable",
+            "translated": "            return true;\n        }\n"
+        }
+    ]
+}

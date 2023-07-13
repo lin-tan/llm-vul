@@ -1,0 +1,66 @@
+{
+    "output": [
+        "ASN1Encodable object0 = S.acquireItemAt(0);",
+        "ASN1Encodable object0 = S.acquireItemAt(1);",
+        "ASN1Encodable object0 = S.acquireItemAt(2);",
+        "ASN1Encodable object0 = S.acquireFirst();",
+        "ASN1Encodable object0 = S.acquireFirstItem();",
+        "ASN1Encodable object0 = S.acquireItemAt(3);",
+        "ASN1Encodable object0 = S.acquireContent();",
+        "ASN1Encodable object0 = S[0];",
+        "ASN1Encodable object0 = S;",
+        "ASN1Encodable object0;"
+    ],
+    "validation_result": [
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(0);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(0);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(1);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(1);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(2);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(2);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireFirst();",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.acquireFirst();"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireFirstItem();",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.acquireFirstItem();"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireItemAt(3);",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s.getObjectAt(3);"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S.acquireContent();",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s.getValue();"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S[0];",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0 = s[0];"
+        },
+        {
+            "patch": "ASN1Encodable object0 = S;",
+            "correctness": "compile_success",
+            "translated": "ASN1Encodable object0 = s;"
+        },
+        {
+            "patch": "ASN1Encodable object0;",
+            "correctness": "uncompilable",
+            "translated": "ASN1Encodable object0;"
+        }
+    ]
+}

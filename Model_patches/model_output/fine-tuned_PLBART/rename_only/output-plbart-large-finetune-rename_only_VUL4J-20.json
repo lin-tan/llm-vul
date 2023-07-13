@@ -1,0 +1,66 @@
+{
+    "output": [
+        "result[j] = (COSNumeral) acquireItem( j);",
+        "result[j] = (COSNumeral)acquireItem( j);",
+        "result[j] = (COSNumeral)acquireItem(j);",
+        "result[j] = (COSNumeral)acquireItem( j).floatContent();",
+        "result[j] = (COSNumeral) acquireItem( j).floatContent();",
+        "result[j] = (COSNumeral)acquireItem(j).floatContent();",
+        "result[j] = (COSNumeral) acquireItem(j);",
+        "result[j] = ((COSNumeral) acquireItem( j)).floatValue();",
+        "result[j] = ((COSNumeral)acquireItem( j)).floatValue();",
+        "result[j] = ((COSNumeral) acquireItem( j)).floatContent();"
+    ],
+    "validation_result": [
+        {
+            "patch": "result[j] = (COSNumeral) acquireItem( j);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (COSNumber) getObject( i);"
+        },
+        {
+            "patch": "result[j] = (COSNumeral)acquireItem( j);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (COSNumber) getObject( i);"
+        },
+        {
+            "patch": "result[j] = (COSNumeral)acquireItem(j);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (COSNumber) getObject( i);"
+        },
+        {
+            "patch": "result[j] = (COSNumeral)acquireItem( j).floatContent();",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (COSNumber)getObject( i).floatValue();"
+        },
+        {
+            "patch": "result[j] = (COSNumeral) acquireItem( j).floatContent();",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (COSNumber)getObject( i).floatValue();"
+        },
+        {
+            "patch": "result[j] = (COSNumeral)acquireItem(j).floatContent();",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (COSNumber)getObject( i).floatValue();"
+        },
+        {
+            "patch": "result[j] = (COSNumeral) acquireItem(j);",
+            "correctness": "uncompilable",
+            "translated": "retval[i] = (COSNumber) getObject( i);"
+        },
+        {
+            "patch": "result[j] = ((COSNumeral) acquireItem( j)).floatValue();",
+            "correctness": "compile_success",
+            "translated": "retval[i] = ((COSNumber) getObject( i)).floatValue();"
+        },
+        {
+            "patch": "result[j] = ((COSNumeral)acquireItem( j)).floatValue();",
+            "correctness": "compile_success",
+            "translated": "retval[i] = ((COSNumber) getObject( i)).floatValue();"
+        },
+        {
+            "patch": "result[j] = ((COSNumeral) acquireItem( j)).floatContent();",
+            "correctness": "compile_success",
+            "translated": "retval[i] = ((COSNumber) getObject( i)).floatValue();"
+        }
+    ]
+}

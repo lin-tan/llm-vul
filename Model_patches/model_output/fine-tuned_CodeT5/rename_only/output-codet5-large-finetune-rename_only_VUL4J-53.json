@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>    z.set(attribute,m);\n</s></s></s>",
+        "<pad><s>    z.set(attribute,position);\n</s></s></s>",
+        "<pad><s>    set(z,attribute,m-position);\n</s>",
+        "<pad><s>    z.set(attribute,position-m);\n</s>",
+        "<pad><s>    set(z,m-position);\n</s></s></s>",
+        "<pad><s>    z.set(attribute, m);\n</s></s></s>",
+        "<pad><s>    z.set(attribute,m-position);\n</s>",
+        "<pad><s>    z.set(this.attribute,m);\n</s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    z.set(attribute,m);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field,i);\n"
+        },
+        {
+            "patch": "    z.set(attribute,position);\n",
+            "correctness": "test_timeout",
+            "translated": "    c.set(field,offset);\n"
+        },
+        {
+            "patch": "    set(z,attribute,m-position);\n",
+            "correctness": "uncompilable",
+            "translated": "    set(c,field,i-offset);\n"
+        },
+        {
+            "patch": "    z.set(attribute,position-m);\n",
+            "correctness": "test_timeout",
+            "translated": "    c.set(field,offset-i);\n"
+        },
+        {
+            "patch": "    set(z,m-position);\n",
+            "correctness": "uncompilable",
+            "translated": "    set(c,i-offset);\n"
+        },
+        {
+            "patch": "    z.set(attribute, m);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field,i);\n"
+        },
+        {
+            "patch": "    z.set(attribute,m-position);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(field,i-offset);\n"
+        },
+        {
+            "patch": "    z.set(this.attribute,m);\n",
+            "correctness": "compile_success",
+            "translated": "    c.set(this.field,i);\n"
+        },
+        {
+            "patch": "",
+            "correctness": "test_timeout",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

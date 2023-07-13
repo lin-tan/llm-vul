@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);",
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES);",
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);",
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);",
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, \"true \");",
+        "XMLInputFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);",
+        "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_ERROR_ENTITIES, Boolean.FALSE);"
+    ],
+    "validation_result": [
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+            "correctness": "compile_success",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);"
+        },
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);",
+            "correctness": "compile_success",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);"
+        },
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+            "correctness": "compile_success",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);"
+        },
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES);",
+            "correctness": "uncompilable",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES);"
+        },
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);",
+            "correctness": "compile_success",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);"
+        },
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);",
+            "correctness": "compile_success",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, true);"
+        },
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, \"true \");",
+            "correctness": "compile_success",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, \"true \");"
+        },
+        {
+            "patch": "XMLInputFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);",
+            "correctness": "uncompilable",
+            "translated": "XMLInputFactory.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, false);"
+        },
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);",
+            "correctness": "compile_success",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_EXTERNAL_ENTITIES, null);"
+        },
+        {
+            "patch": "xmlInput.setProperty(XMLInputFactory.IS_SUPPORTING_ERROR_ENTITIES, Boolean.FALSE);",
+            "correctness": "uncompilable",
+            "translated": "xmlIn.setProperty(XMLInputFactory.IS_SUPPORTING_ERROR_ENTITIES, Boolean.FALSE);"
+        }
+    ]
+}

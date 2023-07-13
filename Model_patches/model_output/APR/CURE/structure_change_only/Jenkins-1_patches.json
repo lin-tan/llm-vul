@@ -1,0 +1,37 @@
+{
+    "VUL4J-1004-1074-1081": {
+        "src": "while ( i < node CaMeL Monitor CaMeL List . size ( ) ) { Node CaMeL Monitor monitor = node CaMeL Monitor CaMeL List . get ( i ) ; Class monitor CaMeL Class = monitor . get CaMeL Class ( ) ; String name = monitor CaMeL Class . get CaMeL Name ( ) ; r . put ( name , monitor . data ( this ) ) ; i ++ ; }",
+        "patches": [
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; Class monitorClass = monitor.getClass( ) ; String name = monitorClass.getName( ) ; r.put( name , monitor.data( this ) ) ; i ++ ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; String name = monitorClass.getName( ) ; String name = monitorClass.getName( ) ; r.put( name , monitor.data( this ) ) ; i ++ ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; String name = monitorClass.getName( ) ; r.put( name , monitor.data( this ) ) ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; String name = monitorClass.getName( ) ; if( monitorClass != null ) { r.put( name , monitor.data( this ) ) ; i ++ ; } }"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; r.put( name , monitor.data( this ) ) ; i ++ ; } r.put( name , monitor.data( this ) ) ; i ++ ;"
+            },
+            {
+                "patch": "Map < String , Object > r = new HashMap < String , Object >( ) ; int i =0; while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; String name = monitorClass.getName( ) ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; String name = monitorClass.getName( ) ; r.put( name , monitor.data( this ) ) ; i ++ ; }"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; String name = monitorClass.getName( ) ; r.put( name , monitor.data( this ) ) ; i ++ ;"
+            },
+            {
+                "patch": "while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; String name = monitorClass.getName( ) ; r.put( name , monitor.data( this ) ) ; r.put( name , monitor.data( this ) ) ;"
+            },
+            {
+                "patch": "Map < String , Object > r = new HashMap < String , Object >( ) ; int i =0; while( i < nodeMonitorList.size( ) ) { NodeMonitor monitor = nodeMonitorList.get( i ) ; Class monitorClass = monitor.getClass( ) ; r.put( name , monitor.data( this ) ) ;"
+            }
+        ]
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n    return contextPath;",
+        "\n    return contextPath;\nprivate String getContextPath(HttpServletRequest request) {\n    return contextPath;",
+        "\n    return contextPath;\npublic static String getContextPath(ServletRequest request) {\n    return contextPath;",
+        "\n    return contextPath;\npublic String getContextPath(HttpServletRequest request) {\n    return contextPath;",
+        "\n\n    return contextPath;",
+        "\n    this.contextPath = contextPath;",
+        "\n    return contextPath;\n",
+        "\n    return contextPath;\n}",
+        "\n    \n    return contextPath;",
+        "\n\treturn contextPath;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return contextPath;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return contextPath;\nprivate String getContextPath(HttpServletRequest request) {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;\npublic static String getContextPath(ServletRequest request) {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;\npublic String getContextPath(HttpServletRequest request) {\n    return contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "this.contextPath = contextPath;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return contextPath;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "return contextPath;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "return contextPath;",
+            "correctness": "compile_success"
+        }
+    ]
+}

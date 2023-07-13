@@ -1,0 +1,67 @@
+{
+    "function range": "2,1-9,1",
+    "output": [
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h!= 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h >= 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h < 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h > 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while ( s < 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (s < 0 && h!= 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while ( s < 0 && h!= 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h >= 0 && s < z ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h >= 0 && z > 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+        "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (s < 0 && h!= 0 ) { h = (-1 << z) + 1; s += h; } return s ; }"
+    ],
+    "validation_result": [
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h!= 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "test_timeout",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h >= 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt >= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h < 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt < 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h > 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt > 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while ( s < 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "compile_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while ( v < 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (s < 0 && h!= 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "compile_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (v < 0 && vt!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while ( s < 0 && h!= 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "compile_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (v < 0 && vt!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h >= 0 && s < z ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt >= 0 && v < t ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (h >= 0 && z > 0 ) { h = (-1 << z) + 1; s += h; } return s; }",
+            "correctness": "test_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (vt >= 0 && t > 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        },
+        {
+            "patch": "private int enlarge(int s, final int z) { int h = (1 << (z - 1)); while (s < 0 && h!= 0 ) { h = (-1 << z) + 1; s += h; } return s ; }",
+            "correctness": "compile_success",
+            "translated": "private int extend(int v, final int t) { int vt = (1 << (t - 1)); while (v < 0 && vt!= 0 ) { vt = (-1 << t) + 1; v += vt; } return v; }"
+        }
+    ]
+}

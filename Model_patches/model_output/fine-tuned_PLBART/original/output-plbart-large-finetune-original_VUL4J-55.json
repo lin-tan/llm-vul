@@ -1,0 +1,56 @@
+{
+    "output": [
+        "if (f.redoAdjustmentIfModified) {",
+        "if (f.redoAdjustmentIfModified)",
+        "if (!f.redoAdjustmentIfModified)",
+        "if (f.redoAdjustmentIfModified!= null)",
+        "if (!f.redoAdjustmentIfModified) {",
+        ". if (f.redoAdjustmentIfModified) {",
+        "if (f.redoAdjustmentIfModified) { f.redoAdjustment();",
+        "if (f.redoAdjustmentIfModified || f.redoAdjustment)",
+        "if (f.redoAdjustment)",
+        "f.redoAdjustmentIfModified();"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (f.redoAdjustmentIfModified) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified)",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "if (!f.redoAdjustmentIfModified)",
+            "correctness": "test_success"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified!= null)",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (!f.redoAdjustmentIfModified) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": ". if (f.redoAdjustmentIfModified) {",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified) { f.redoAdjustment();",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f.redoAdjustmentIfModified || f.redoAdjustment)",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "if (f.redoAdjustment)",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "f.redoAdjustmentIfModified();",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "outputs": [
+        "if (fpath == null || fpath.startsWith(objectiveFolder.getCanonicalPath())) {",
+        "if (fpath.startsWith(objectiveFolder.getCanonicalFile())) {",
+        "if (fpath.equals(objectiveFolder.getCanonicalPath())) {",
+        "if (fpath.toLowerCase().startsWith(objectiveFolder.getCanonicalPath())) {",
+        "if (fpath.startsWith(objectiveFolder.getCanonicalPath().toLowerCase())) {",
+        "if (!fpath.startsWith(objectiveFolder.getCanonicalPath())) {",
+        "if (fpath.startsWith(objectiveFolder.getCanonicalFile().getAbsolutePath())) {",
+        "if (fpath.startsWith(objectiveFolder.getCanonicalPath().trim())) {",
+        "if (fpath.startsWith(objectiveFolder.getCanonicalPath()) &&!f.exists()) {",
+        "if (fpath.startsWith(objectiveFolder.getCanonicalPath()) && f.exists()) {"
+    ],
+    "validation_result": [
+        {
+            "patch": "if (fpath == null || fpath.startsWith(objectiveFolder.getCanonicalPath())) {",
+            "correctness": "compile_success",
+            "translated": "if (fpath == null || fpath.startsWith(targetDirectory.getCanonicalPath())) {"
+        },
+        {
+            "patch": "if (fpath.startsWith(objectiveFolder.getCanonicalFile())) {",
+            "correctness": "uncompilable",
+            "translated": "if (fpath.startsWith(targetDirectory.getCanonicalFile())) {"
+        },
+        {
+            "patch": "if (fpath.equals(objectiveFolder.getCanonicalPath())) {",
+            "correctness": "compile_success",
+            "translated": "if (fpath.equals(targetDirectory.getCanonicalPath())) {"
+        },
+        {
+            "patch": "if (fpath.toLowerCase().startsWith(objectiveFolder.getCanonicalPath())) {",
+            "correctness": "compile_success",
+            "translated": "if (fpath.toLowerCase().startsWith(targetDirectory.getCanonicalPath())) {"
+        },
+        {
+            "patch": "if (fpath.startsWith(objectiveFolder.getCanonicalPath().toLowerCase())) {",
+            "correctness": "compile_success",
+            "translated": "if (fpath.startsWith(targetDirectory.getCanonicalPath().toLowerCase())) {"
+        },
+        {
+            "patch": "if (!fpath.startsWith(objectiveFolder.getCanonicalPath())) {",
+            "correctness": "compile_success",
+            "translated": "if (!fpath.startsWith(targetDirectory.getCanonicalPath())) {"
+        },
+        {
+            "patch": "if (fpath.startsWith(objectiveFolder.getCanonicalFile().getAbsolutePath())) {",
+            "correctness": "compile_success",
+            "translated": "if (fpath.startsWith(targetDirectory.getCanonicalFile().getAbsolutePath())) {"
+        },
+        {
+            "patch": "if (fpath.startsWith(objectiveFolder.getCanonicalPath().trim())) {",
+            "correctness": "compile_success",
+            "translated": "if (fpath.startsWith(targetDirectory.getCanonicalPath().trim())) {"
+        },
+        {
+            "patch": "if (fpath.startsWith(objectiveFolder.getCanonicalPath()) &&!f.exists()) {",
+            "correctness": "compile_success",
+            "translated": "if (fpath.startsWith(targetDirectory.getCanonicalPath()) &&!f.exists()) {"
+        },
+        {
+            "patch": "if (fpath.startsWith(objectiveFolder.getCanonicalPath()) && f.exists()) {",
+            "correctness": "compile_success",
+            "translated": "if (fpath.startsWith(targetDirectory.getCanonicalPath()) && f.exists()) {"
+        }
+    ]
+}

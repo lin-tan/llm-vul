@@ -1,0 +1,56 @@
+{
+    "output": [
+        "int colonStart;",
+        "int colonEnd;",
+        "int colonEnd = 0;",
+        "int colonEnd = nameEnd;",
+        "int colonStart = nameEnd;",
+        "final int colonEnd;",
+        "int colonEnd = nameStart;",
+        "int colonEnd, valueEnd;",
+        "int colonStart = 0;",
+        "int colonEnd = -1;"
+    ],
+    "validation_result": [
+        {
+            "patch": "int colonStart;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int colonEnd;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int colonEnd = 0;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int colonEnd = nameEnd;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int colonStart = nameEnd;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "final int colonEnd;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int colonEnd = nameStart;",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "int colonEnd, valueEnd;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int colonStart = 0;",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "int colonEnd = -1;",
+            "correctness": "compile_success"
+        }
+    ]
+}

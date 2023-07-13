@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>            t.transition(AttributeValue_eof);\n</s>",
+        "<pad><s>            t.transition(EOF);\n</s></s></s>",
+        "<pad><s>            t.error(this);\n</s></s></s>",
+        "<pad><s>            t.transition(Data_eof);\n</s>",
+        "<pad><s>            t.transition(AttributeValue_empty);\n</s>",
+        "<pad><s>            t.transition(AttributeValue_end);\n</s>",
+        "<pad><s>            t.transition(Text);\n</s></s></s>",
+        "<pad><s>            t.transition(AttributeValue);\n</s></s></s>",
+        "<pad><s>            t.emitTagPending();\n</s></s></s>",
+        "<pad><s>            return;\n</s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            t.transition(AttributeValue_eof);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            t.transition(EOF);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            t.error(this);\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            t.transition(Data_eof);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            t.transition(AttributeValue_empty);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            t.transition(AttributeValue_end);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            t.transition(Text);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            t.transition(AttributeValue);\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "            t.emitTagPending();\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "            return;\n",
+            "correctness": "uncompilable"
+        }
+    ]
+}

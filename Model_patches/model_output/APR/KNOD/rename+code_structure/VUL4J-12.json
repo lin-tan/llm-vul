@@ -1,0 +1,65 @@
+{
+    "id": 9,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.0858,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << z - 1;s < h;s += h)\n "
+        },
+        {
+            "rank": 2,
+            "score": -0.1301,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << z;s < h;s += h)\n{\nh = (1 << z) + 1;\n}\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.18,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << 1;;s += h)\n{\ns += h;\n}\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.0968,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << z - 1;;)\n{\nh = (1 << z) + 1;\n}\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1397,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << 1 << z;;s += h)\n{\nh = (1 << z) + 1;\n}\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.1953,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << 1;;h += h)\n{\ns += h;\n}\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.1102,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << z - 1;;s += h)\nh = (1 << z) + 1;\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.1444,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << z << 1;;s += h)\n{\nh = (1 << z) + 1;\n}\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2023,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << z - 1;;s += h,s += h)\n "
+        },
+        {
+            "rank": 10,
+            "score": -0.1474,
+            "fix_type": "general",
+            "patch": "for (int h = 1 << 1 << h;;s += h)\n{\nh = (1 << z) + 1;\n}\n"
+        }
+    ]
+}

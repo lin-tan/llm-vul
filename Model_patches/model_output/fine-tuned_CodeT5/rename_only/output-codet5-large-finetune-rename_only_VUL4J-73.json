@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>\tString watchwordA = encipheredWatchword;\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString watchwordA = encipheredWatchword.toLowerCase(Locale.ENGLISH);\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString watchwordA = encipheredWatchword.replace(\"String_Node_Str\", \"String_Node_Str\");\n</s>",
+        "<pad><s>\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n</s></s></s>",
+        "<pad><s>\tString watchwordA = encipheredWatchword == null? null : encipheredWatchword + \"\";\n</s></s></s></s>",
+        "<pad><s>\tString watchwordA = encipheredWatchword.trim();\n</s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s>\tString watchwordA = encipheredWatchword!= null? encipheredWatchword + \"\" : null;\n</s></s></s></s>",
+        "<pad><s>\tString watchwordA = encipheredWatchword.trim() + \"String_Node_Str\";\n</s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "\tString watchwordA = encipheredWatchword;\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass;\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword.toLowerCase(Locale.ENGLISH);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass.toLowerCase(Locale.ENGLISH);\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword.replace(\"String_Node_Str\", \"String_Node_Str\");\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass.replace(\"String_Node_Str\", \"String_Node_Str\");\n"
+        },
+        {
+            "patch": "\tString watchwordA = unifyWatchwordAndRandomData(encipheredWatchword, randomData, false);\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = mergePasswordAndSalt(encPass, salt, false);\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword == null? null : encipheredWatchword + \"\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass == null? null : encPass + \"\";\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword.trim();\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass.trim();\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword!= null? encipheredWatchword + \"\" : null;\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass!= null? encPass + \"\" : null;\n"
+        },
+        {
+            "patch": "\tString watchwordA = encipheredWatchword.trim() + \"String_Node_Str\";\n",
+            "correctness": "uncompilable",
+            "translated": "\tString pass1 = encPass.trim() + \"String_Node_Str\";\n"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable",
+            "translated": ""
+        },
+        {
+            "patch": "<pad>",
+            "correctness": "uncompilable",
+            "translated": "<pad>"
+        }
+    ]
+}

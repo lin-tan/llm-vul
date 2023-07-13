@@ -1,0 +1,56 @@
+{
+    "output": [
+        "<pad><s>    for (colonEnd = nameEnd + 1; colonEnd < length; colonEnd++) {\n</s></s>",
+        "<pad><s>    for (colonEnd = nameEnd + 1; colonEnd < length; colonEnd ++) {\n</s>",
+        "<pad><s>    for (colonEnd = nameStart; colonEnd < length; colonEnd++) {\n</s></s></s></s>",
+        "<pad><s>    for (colonEnd = nameStart; colonEnd < length; colonEnd ++) {\n</s></s></s>",
+        "<pad><s>    for (colonEnd = nameEnd; colonEnd < length - 1; colonEnd++) {\n</s></s>",
+        "<pad><s>    for (colonEnd = nameEnd; colonEnd < length; colonEnd++) {\n</s></s></s></s>",
+        "<pad><s>    for (colonEnd = nameEnd + 1; colonEnd <= length; colonEnd++) {\n</s></s>",
+        "<pad><s>    for (colonEnd = nameEnd - 1; colonEnd >= 0; colonEnd--) {\n</s>",
+        "<pad><s>    while (colonEnd < length) {\n</s></s></s></s></s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "    for (colonEnd = nameEnd + 1; colonEnd < length; colonEnd++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    for (colonEnd = nameEnd + 1; colonEnd < length; colonEnd ++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    for (colonEnd = nameStart; colonEnd < length; colonEnd++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    for (colonEnd = nameStart; colonEnd < length; colonEnd ++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    for (colonEnd = nameEnd; colonEnd < length - 1; colonEnd++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    for (colonEnd = nameEnd; colonEnd < length; colonEnd++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    for (colonEnd = nameEnd + 1; colonEnd <= length; colonEnd++) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    for (colonEnd = nameEnd - 1; colonEnd >= 0; colonEnd--) {\n",
+            "correctness": "compile_success"
+        },
+        {
+            "patch": "    while (colonEnd < length) {\n",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "",
+            "correctness": "uncompilable"
+        }
+    ]
+}

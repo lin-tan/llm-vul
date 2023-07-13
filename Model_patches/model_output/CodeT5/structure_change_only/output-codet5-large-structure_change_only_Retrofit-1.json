@@ -1,0 +1,57 @@
+{
+    "function range": "2,3-5,3",
+    "output": [
+        "\n  this.context = context;functionfunction\n}",
+        "\n  this.context = context;functionfunction}function",
+        "\n  this.context = context;functionfunction}function",
+        "\n  this.context = context;functionfunction\nfunction",
+        "\n  this.context = context;function}function",
+        "\n  this.context = context;functionfunction\n}function",
+        "\n  this.context = context;functionfunction\n}function",
+        "\n  this.context = context;functionclass",
+        "\n  this.context = context;functionfunction}",
+        "\n  this.context = context;functionvar"
+    ],
+    "validation_result": [
+        {
+            "patch": "this.context = context;functionfunction\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;functionfunction}function",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;functionfunction}function",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;functionfunction\nfunction",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;function}function",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;functionfunction\n}function",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;functionfunction\n}function",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;functionclass",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;functionfunction}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "this.context = context;functionvar",
+            "correctness": "uncompilable"
+        }
+    ]
+}

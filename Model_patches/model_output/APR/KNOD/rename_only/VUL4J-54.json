@@ -1,0 +1,65 @@
+{
+    "id": 24,
+    "patches": [
+        {
+            "rank": 1,
+            "score": -0.1167,
+            "fix_type": "general",
+            "patch": "registryConvertor(new RobustCollectionConverter(acquirePlotter(),acquirePlotter()),10);\n"
+        },
+        {
+            "rank": 2,
+            "score": -0.182,
+            "fix_type": "general",
+            "patch": "registryConvertor(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()),10);\n"
+        },
+        {
+            "rank": 3,
+            "score": -0.4319,
+            "fix_type": "insert",
+            "patch": "getMapperInjectionPoint();\n"
+        },
+        {
+            "rank": 4,
+            "score": -0.4319,
+            "fix_type": "insert",
+            "patch": "createDefaultConverter();\n"
+        },
+        {
+            "rank": 5,
+            "score": -0.1866,
+            "fix_type": "general",
+            "patch": "registryConvertor(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier()));\n"
+        },
+        {
+            "rank": 6,
+            "score": -0.2098,
+            "fix_type": "general",
+            "patch": "registryConvertor(new RobustCollectionConverter(acquirePlotter(),acquireContemplationSupplier(),10));\n"
+        },
+        {
+            "rank": 7,
+            "score": -0.2338,
+            "fix_type": "general",
+            "patch": "registryConvertor(new RobustCollectionConverter(getMapperInjectionPoint(),acquireContemplationSupplier()),10);\n"
+        },
+        {
+            "rank": 8,
+            "score": -0.2338,
+            "fix_type": "general",
+            "patch": "registryConvertor(new RobustCollectionConverter(createDefaultConverter(),acquireContemplationSupplier()),10);\n"
+        },
+        {
+            "rank": 9,
+            "score": -0.2441,
+            "fix_type": "general",
+            "patch": "registryConvertor(new RobustCollectionConverter(acquirePlotter(),acquirePlotter()),null);\n"
+        },
+        {
+            "rank": 10,
+            "score": -0.2851,
+            "fix_type": "general",
+            "patch": "registryConvertor(new RobustCollectionConverter(acquireContemplationSupplier(),acquireContemplationSupplier(),10));\n"
+        }
+    ]
+}

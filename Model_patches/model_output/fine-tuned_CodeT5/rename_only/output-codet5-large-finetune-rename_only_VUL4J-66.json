@@ -1,0 +1,66 @@
+{
+    "output": [
+        "<pad><s>            break;\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>            return true;\n</s></s></s></s></s></s></s>",
+        "<pad><s>            {\n                return true;\n            }\n</s>",
+        "<pad><s>            {\n                return false;\n            }\n</s>",
+        "<pad><s>            continue;\n</s></s></s></s></s></s></s></s>",
+        "<pad><s>            return true;\n            break;\n</s></s></s>",
+        "<pad><s>            ;\n            break;\n</s></s></s></s></s>",
+        "<pad><s>            return false;\n</s></s></s></s></s></s></s>",
+        "<pad><s>            ;\n</s></s></s></s></s></s></s></s></s>",
+        "<pad><s></s></s></s></s></s></s></s></s></s></s></s></s>"
+    ],
+    "validation_result": [
+        {
+            "patch": "            break;\n",
+            "correctness": "compile_success",
+            "translated": "            break;\n"
+        },
+        {
+            "patch": "            return true;\n",
+            "correctness": "compile_success",
+            "translated": "            return true;\n"
+        },
+        {
+            "patch": "            {\n                return true;\n            }\n",
+            "correctness": "compile_success",
+            "translated": "            {\n                return true;\n            }\n"
+        },
+        {
+            "patch": "            {\n                return false;\n            }\n",
+            "correctness": "compile_success",
+            "translated": "            {\n                return false;\n            }\n"
+        },
+        {
+            "patch": "            continue;\n",
+            "correctness": "compile_success",
+            "translated": "            continue;\n"
+        },
+        {
+            "patch": "            return true;\n            break;\n",
+            "correctness": "uncompilable",
+            "translated": "            return true;\n            break;\n"
+        },
+        {
+            "patch": "            ;\n            break;\n",
+            "correctness": "compile_success",
+            "translated": "            ;\n            break;\n"
+        },
+        {
+            "patch": "            return false;\n",
+            "correctness": "compile_success",
+            "translated": "            return false;\n"
+        },
+        {
+            "patch": "            ;\n",
+            "correctness": "compile_success",
+            "translated": "            ;\n"
+        },
+        {
+            "patch": "",
+            "correctness": "compile_success",
+            "translated": ""
+        }
+    ]
+}

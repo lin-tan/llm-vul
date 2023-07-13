@@ -1,0 +1,66 @@
+{
+    "output": [
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     ",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n     .add(\"notify\")\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     ",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     ",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n     .add(\"notify\")\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     ",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n  static \n\n     ",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n  final \n\n     ",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n  private static final Set<String>_ \n\n",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     ",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     ",
+        "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n     .add(\"notify\")\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     "
+    ],
+    "validation_result": [
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     "
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n     .add(\"notify\")\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n     .add(\"notify\")\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     "
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n     .add(\"notify\")\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     "
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n     .add(\"notify\")\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n     .add(\"notify\")\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      final \n\n     "
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n  static \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n  static \n\n     "
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n  final \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n  final \n\n     "
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n  private static final Set<String>_ \n\n",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n  private static final Set<String>_ \n\n"
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n     .add(\"notify\")\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     "
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     "
+        },
+        {
+            "patch": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n     .add(\"notify\")\n\n\n\n\n     .add(\"notify\")\n\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     ",
+            "correctness": "uncompilable",
+            "translated": "\n     .add(\"notify\")\n     .\n\n     .add(\"notifyAll\")\n     .add(\"notify\")\n     .add(\"notify\")\n   \n\n\n\n\n\n\n\n     .add(\"notify\")\n     .add(\"notify\")\n     .add(\"\n\n     .add(\"notify\")\n final \n     .add(\"notify\")      static \n\n     "
+        }
+    ]
+}

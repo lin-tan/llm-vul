@@ -1,0 +1,4895 @@
+{
+    "id": "cmpl-8HOotAd6zg9TVzaTO5jdy9MmhFdeY",
+    "object": "text_completion",
+    "created": 1699157675,
+    "model": "code-davinci-002",
+    "choices": [
+        {
+            "text": "           ((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle).acquireAdministeredRecords())\n    ",
+            "index": 0,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " acquire",
+                    "Subject",
+                    "M",
+                    "ention",
+                    "(",
+                    "subject",
+                    "Title",
+                    ").",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "())",
+                    "\n",
+                    "    "
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -0.46880832,
+                    -0.1724792,
+                    -0.0025366095,
+                    -0.010467365,
+                    -5.6102934e-05,
+                    -0.035500355,
+                    -0.02456478,
+                    -1.120772,
+                    -0.3016288,
+                    -0.1370395,
+                    -0.0007684329,
+                    -0.015841769,
+                    -0.0036844728,
+                    -0.00047326574,
+                    -0.087994054,
+                    -0.10088151,
+                    -3.941184e-05,
+                    -0.006322764,
+                    -0.0004084472,
+                    -0.0007933672,
+                    -1.855031e-05,
+                    -0.035305463,
+                    -0.012687633,
+                    -0.95232224
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Administ": -0.1724792
+                    },
+                    {
+                        "ered": -0.0025366095
+                    },
+                    {
+                        "Rec": -0.010467365
+                    },
+                    {
+                        "ords": -5.6102934e-05
+                    },
+                    {
+                        "Impl": -0.035500355
+                    },
+                    {
+                        ")": -0.02456478
+                    },
+                    {
+                        " ((": -0.8154398
+                    },
+                    {
+                        "Subject": -0.3016288
+                    },
+                    {
+                        "M": -0.1370395
+                    },
+                    {
+                        "ention": -0.0007684329
+                    },
+                    {
+                        "(": -0.015841769
+                    },
+                    {
+                        "subject": -0.0036844728
+                    },
+                    {
+                        "Title": -0.00047326574
+                    },
+                    {
+                        ").": -0.087994054
+                    },
+                    {
+                        "ac": -0.10088151
+                    },
+                    {
+                        "quire": -3.941184e-05
+                    },
+                    {
+                        "Administ": -0.006322764
+                    },
+                    {
+                        "ered": -0.0004084472
+                    },
+                    {
+                        "Rec": -0.0007933672
+                    },
+                    {
+                        "ords": -1.855031e-05
+                    },
+                    {
+                        "())": -0.035305463
+                    },
+                    {
+                        "\n": -0.012687633
+                    },
+                    {
+                        "    ": -0.95232224
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2533,
+                    2541,
+                    2545,
+                    2548,
+                    2552,
+                    2556,
+                    2557,
+                    2565,
+                    2572,
+                    2573,
+                    2579,
+                    2580,
+                    2587,
+                    2592,
+                    2594,
+                    2596,
+                    2601,
+                    2609,
+                    2613,
+                    2616,
+                    2620,
+                    2623,
+                    2624
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "           ((AdministeredRecordsImpl) acquireAdministeredRecords(subjectTitle)).acquireRecords()\n    ",
+            "index": 1,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " acquire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "(",
+                    "subject",
+                    "Title",
+                    ")).",
+                    "ac",
+                    "quire",
+                    "Rec",
+                    "ords",
+                    "()",
+                    "\n",
+                    "    "
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -0.46880832,
+                    -0.1724792,
+                    -0.0025366095,
+                    -0.010467365,
+                    -5.6102934e-05,
+                    -0.035500355,
+                    -0.02456478,
+                    -1.120772,
+                    -1.6911312,
+                    -0.04484183,
+                    -0.021749066,
+                    -0.00041095246,
+                    -0.74579585,
+                    -0.06394428,
+                    -0.0066745053,
+                    -0.45071226,
+                    -1.0421711,
+                    -0.00029283168,
+                    -1.9064212,
+                    -0.014154751,
+                    -1.0350928,
+                    -0.009547926,
+                    -0.6150284
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Administ": -0.1724792
+                    },
+                    {
+                        "ered": -0.0025366095
+                    },
+                    {
+                        "Rec": -0.010467365
+                    },
+                    {
+                        "ords": -5.6102934e-05
+                    },
+                    {
+                        "Impl": -0.035500355
+                    },
+                    {
+                        ")": -0.02456478
+                    },
+                    {
+                        " ((": -0.8154398
+                    },
+                    {
+                        "Subject": -0.3016288
+                    },
+                    {
+                        "ered": -0.04484183
+                    },
+                    {
+                        "Rec": -0.021749066
+                    },
+                    {
+                        "ords": -0.00041095246
+                    },
+                    {
+                        "(": -0.74579585
+                    },
+                    {
+                        "subject": -0.06394428
+                    },
+                    {
+                        "Title": -0.0066745053
+                    },
+                    {
+                        ")).": -0.45071226
+                    },
+                    {
+                        "\n": -0.8346058
+                    },
+                    {
+                        "quire": -0.00029283168
+                    },
+                    {
+                        "Rec": -1.9064212
+                    },
+                    {
+                        "ords": -0.014154751
+                    },
+                    {
+                        "()": -1.0350928
+                    },
+                    {
+                        "\n": -0.009547926
+                    },
+                    {
+                        "    ": -0.6150284
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2533,
+                    2541,
+                    2545,
+                    2548,
+                    2552,
+                    2556,
+                    2557,
+                    2565,
+                    2573,
+                    2577,
+                    2580,
+                    2584,
+                    2585,
+                    2592,
+                    2597,
+                    2600,
+                    2602,
+                    2607,
+                    2610,
+                    2614,
+                    2616,
+                    2617
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "           ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())\n",
+            "index": 2,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " ((",
+                    "Ten",
+                    "acious",
+                    "Subject",
+                    ")",
+                    " acquire",
+                    "Subject",
+                    "M",
+                    "ention",
+                    "(",
+                    "subject",
+                    "Title",
+                    ")).",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "())",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -0.46880832,
+                    -0.1724792,
+                    -0.0025366095,
+                    -0.010467365,
+                    -5.6102934e-05,
+                    -0.035500355,
+                    -0.02456478,
+                    -0.8154398,
+                    -0.21355924,
+                    -0.001982702,
+                    -0.018411376,
+                    -0.08036277,
+                    -0.36693695,
+                    -0.15830337,
+                    -0.28939897,
+                    -6.6829845e-05,
+                    -0.072058946,
+                    -0.026457505,
+                    -0.001941913,
+                    -0.5469016,
+                    -0.48502788,
+                    -0.00021479129,
+                    -0.16279756,
+                    -0.0072226073,
+                    -0.016153982,
+                    -0.00010355082,
+                    -0.56838584,
+                    -0.014205412
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Administ": -0.1724792
+                    },
+                    {
+                        "ered": -0.0025366095
+                    },
+                    {
+                        "Rec": -0.010467365
+                    },
+                    {
+                        "ords": -5.6102934e-05
+                    },
+                    {
+                        "Impl": -0.035500355
+                    },
+                    {
+                        ")": -0.02456478
+                    },
+                    {
+                        " ((": -0.8154398
+                    },
+                    {
+                        "Ten": -0.21355924
+                    },
+                    {
+                        "acious": -0.001982702
+                    },
+                    {
+                        "Subject": -0.018411376
+                    },
+                    {
+                        ")": -0.08036277
+                    },
+                    {
+                        " acquire": -0.36693695
+                    },
+                    {
+                        "Subject": -0.15830337
+                    },
+                    {
+                        "M": -0.28939897
+                    },
+                    {
+                        "ention": -6.6829845e-05
+                    },
+                    {
+                        "(": -0.072058946
+                    },
+                    {
+                        "subject": -0.026457505
+                    },
+                    {
+                        "Title": -0.001941913
+                    },
+                    {
+                        ")).": -0.5469016
+                    },
+                    {
+                        "ac": -0.48502788
+                    },
+                    {
+                        "quire": -0.00021479129
+                    },
+                    {
+                        "Administ": -0.16279756
+                    },
+                    {
+                        "ered": -0.0072226073
+                    },
+                    {
+                        "Rec": -0.016153982
+                    },
+                    {
+                        "ords": -0.00010355082
+                    },
+                    {
+                        "())": -0.56838584
+                    },
+                    {
+                        "\n": -0.014205412
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2533,
+                    2541,
+                    2545,
+                    2548,
+                    2552,
+                    2556,
+                    2557,
+                    2560,
+                    2563,
+                    2569,
+                    2576,
+                    2577,
+                    2585,
+                    2592,
+                    2593,
+                    2599,
+                    2600,
+                    2607,
+                    2612,
+                    2615,
+                    2617,
+                    2622,
+                    2630,
+                    2634,
+                    2637,
+                    2641,
+                    2644
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "           ((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle).acquireAdministeredRecords())\n                   .asyncRetrieveItem(positionImpl,readEntryCallback , null);\n       } catch (NullPointerException nullPointerException) {\n           RestException restException =  new RestException(Status.NOT_FOUND, \"Message not found\");\n           asyncReply.resume(restException);\n       } catch (Exception exception) {\n           String id = customerAppNumber();\n           log.error(\"[{}] Failed to get message with ledgerId {} entryId {} from {}\",\n                   id , recordsNumber, itemNumber, subjectTitle, exception);\n           RestException restException =  new RestException(exception);\n           asyncReply.resume(restException);\n       }\n   }\n// Kotlin \n   protected fun innerAcquireNewsThroughNumber(asyncReply: AsyncResponse, recordsNumber: Long, itemNumber: Long,\n                                             reliable: Boolean) {\n       try {\n           confirmSubjectPossession(subjectTitle, reliable)\n           confirmSubjectAction(subjectTitle, SubjectAction.PEEK_MESSAGES)\n           if (subjectTitle.whetherUniversal()) {\n               confirmUniversalTitleScopePossession(titleScopeTitle)\n           }\n           val readEntryCallback = object : AsyncCallbacks.ReadEntryCallback {\n               override fun retrieveItemFinish(item: Item, obj: Any) {\n                   try {\n                       val response = produceReplyWithItem(item)\n                       asyncReply.resume(response)\n                   } catch (exception: IOException) {\n                       val restException = RestException(exception)\n                       asyncReply.resume(restException)\n                   } finally {\n                       if (item == null) {\n                           return\n                       }else{\n                           item.free()\n                       }\n                   }\n               }\n               override fun retrieveItemUnsuccess(exception: AdministeredRecordsException, obj: Any) {\n                   val restException = RestException(exception)\n                   asyncReply.resume(restException)\n               }\n           }\n           val positionImpl = PlaceImpl(recordsNumber, itemNumber)\n           /* BUG: \n            * ((AdministeredRecordsImpl) ((TenaciousSubject)",
+            "index": 3,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " acquire",
+                    "Subject",
+                    "M",
+                    "ention",
+                    "(",
+                    "subject",
+                    "Title",
+                    ").",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "())",
+                    "\n",
+                    "                  ",
+                    " .",
+                    "as",
+                    "ync",
+                    "Ret",
+                    "rieve",
+                    "Item",
+                    "(",
+                    "position",
+                    "Impl",
+                    ",",
+                    "read",
+                    "Entry",
+                    "Callback",
+                    " ,",
+                    " null",
+                    ");",
+                    "\n",
+                    "      ",
+                    " }",
+                    " catch",
+                    " (",
+                    "Null",
+                    "Po",
+                    "inter",
+                    "Exception",
+                    " null",
+                    "Po",
+                    "inter",
+                    "Exception",
+                    ")",
+                    " {",
+                    "\n",
+                    "          ",
+                    " Rest",
+                    "Exception",
+                    " rest",
+                    "Exception",
+                    " =",
+                    " ",
+                    " new",
+                    " Rest",
+                    "Exception",
+                    "(",
+                    "Status",
+                    ".",
+                    "NOT",
+                    "_",
+                    "F",
+                    "OUND",
+                    ",",
+                    " \"",
+                    "Message",
+                    " not",
+                    " found",
+                    "\");",
+                    "\n",
+                    "          ",
+                    " async",
+                    "Reply",
+                    ".",
+                    "res",
+                    "ume",
+                    "(",
+                    "rest",
+                    "Exception",
+                    ");",
+                    "\n",
+                    "      ",
+                    " }",
+                    " catch",
+                    " (",
+                    "Exception",
+                    " exception",
+                    ")",
+                    " {",
+                    "\n",
+                    "          ",
+                    " String",
+                    " id",
+                    " =",
+                    " customer",
+                    "App",
+                    "Number",
+                    "();",
+                    "\n",
+                    "          ",
+                    " log",
+                    ".",
+                    "error",
+                    "(\"",
+                    "[",
+                    "{",
+                    "}",
+                    "]",
+                    " Failed",
+                    " to",
+                    " get",
+                    " message",
+                    " with",
+                    " ledger",
+                    "Id",
+                    " {}",
+                    " entry",
+                    "Id",
+                    " {}",
+                    " from",
+                    " {}",
+                    "\",",
+                    "\n",
+                    "                  ",
+                    " id",
+                    " ,",
+                    " records",
+                    "Number",
+                    ",",
+                    " item",
+                    "Number",
+                    ",",
+                    " subject",
+                    "Title",
+                    ",",
+                    " exception",
+                    ");",
+                    "\n",
+                    "          ",
+                    " Rest",
+                    "Exception",
+                    " rest",
+                    "Exception",
+                    " =",
+                    " ",
+                    " new",
+                    " Rest",
+                    "Exception",
+                    "(",
+                    "ex",
+                    "ception",
+                    ");",
+                    "\n",
+                    "          ",
+                    " async",
+                    "Reply",
+                    ".",
+                    "res",
+                    "ume",
+                    "(",
+                    "rest",
+                    "Exception",
+                    ");",
+                    "\n",
+                    "      ",
+                    " }",
+                    "\n",
+                    "  ",
+                    " }",
+                    "\n",
+                    "//",
+                    " Kot",
+                    "lin",
+                    " ",
+                    "\n",
+                    "  ",
+                    " protected",
+                    " fun",
+                    " inner",
+                    "Ac",
+                    "quire",
+                    "News",
+                    "Through",
+                    "Number",
+                    "(",
+                    "as",
+                    "ync",
+                    "Reply",
+                    ":",
+                    " As",
+                    "ync",
+                    "Response",
+                    ",",
+                    " records",
+                    "Number",
+                    ":",
+                    " Long",
+                    ",",
+                    " item",
+                    "Number",
+                    ":",
+                    " Long",
+                    ",",
+                    "\n",
+                    "                ",
+                    "                ",
+                    "            ",
+                    " reliable",
+                    ":",
+                    " Boolean",
+                    ")",
+                    " {",
+                    "\n",
+                    "      ",
+                    " try",
+                    " {",
+                    "\n",
+                    "          ",
+                    " confirm",
+                    "Subject",
+                    "P",
+                    "ossession",
+                    "(",
+                    "subject",
+                    "Title",
+                    ",",
+                    " reliable",
+                    ")",
+                    "\n",
+                    "          ",
+                    " confirm",
+                    "Subject",
+                    "Action",
+                    "(",
+                    "subject",
+                    "Title",
+                    ",",
+                    " Subject",
+                    "Action",
+                    ".",
+                    "P",
+                    "EEK",
+                    "_",
+                    "M",
+                    "ES",
+                    "SA",
+                    "GES",
+                    ")",
+                    "\n",
+                    "          ",
+                    " if",
+                    " (",
+                    "subject",
+                    "Title",
+                    ".",
+                    "whether",
+                    "Universal",
+                    "())",
+                    " {",
+                    "\n",
+                    "              ",
+                    " confirm",
+                    "Universal",
+                    "Title",
+                    "Scope",
+                    "P",
+                    "ossession",
+                    "(",
+                    "title",
+                    "Scope",
+                    "Title",
+                    ")",
+                    "\n",
+                    "          ",
+                    " }",
+                    "\n",
+                    "          ",
+                    " val",
+                    " read",
+                    "Entry",
+                    "Callback",
+                    " =",
+                    " object",
+                    " :",
+                    " As",
+                    "ync",
+                    "Call",
+                    "backs",
+                    ".",
+                    "Read",
+                    "Entry",
+                    "Callback",
+                    " {",
+                    "\n",
+                    "              ",
+                    " override",
+                    " fun",
+                    " retrieve",
+                    "Item",
+                    "Finish",
+                    "(",
+                    "item",
+                    ":",
+                    " Item",
+                    ",",
+                    " obj",
+                    ":",
+                    " Any",
+                    ")",
+                    " {",
+                    "\n",
+                    "                  ",
+                    " try",
+                    " {",
+                    "\n",
+                    "                      ",
+                    " val",
+                    " response",
+                    " =",
+                    " produce",
+                    "Reply",
+                    "With",
+                    "Item",
+                    "(",
+                    "item",
+                    ")",
+                    "\n",
+                    "                      ",
+                    " async",
+                    "Reply",
+                    ".",
+                    "res",
+                    "ume",
+                    "(",
+                    "response",
+                    ")",
+                    "\n",
+                    "                  ",
+                    " }",
+                    " catch",
+                    " (",
+                    "ex",
+                    "ception",
+                    ":",
+                    " IO",
+                    "Exception",
+                    ")",
+                    " {",
+                    "\n",
+                    "                      ",
+                    " val",
+                    " rest",
+                    "Exception",
+                    " =",
+                    " Rest",
+                    "Exception",
+                    "(",
+                    "ex",
+                    "ception",
+                    ")",
+                    "\n",
+                    "                      ",
+                    " async",
+                    "Reply",
+                    ".",
+                    "res",
+                    "ume",
+                    "(",
+                    "rest",
+                    "Exception",
+                    ")",
+                    "\n",
+                    "                  ",
+                    " }",
+                    " finally",
+                    " {",
+                    "\n",
+                    "                      ",
+                    " if",
+                    " (",
+                    "item",
+                    " ==",
+                    " null",
+                    ")",
+                    " {",
+                    "\n",
+                    "                ",
+                    "          ",
+                    " return",
+                    "\n",
+                    "                      ",
+                    " }",
+                    "else",
+                    "{",
+                    "\n",
+                    "                ",
+                    "          ",
+                    " item",
+                    ".",
+                    "free",
+                    "()",
+                    "\n",
+                    "                      ",
+                    " }",
+                    "\n",
+                    "                  ",
+                    " }",
+                    "\n",
+                    "              ",
+                    " }",
+                    "\n",
+                    "              ",
+                    " override",
+                    " fun",
+                    " retrieve",
+                    "Item",
+                    "Un",
+                    "success",
+                    "(",
+                    "ex",
+                    "ception",
+                    ":",
+                    " Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Exception",
+                    ",",
+                    " obj",
+                    ":",
+                    " Any",
+                    ")",
+                    " {",
+                    "\n",
+                    "                  ",
+                    " val",
+                    " rest",
+                    "Exception",
+                    " =",
+                    " Rest",
+                    "Exception",
+                    "(",
+                    "ex",
+                    "ception",
+                    ")",
+                    "\n",
+                    "                  ",
+                    " async",
+                    "Reply",
+                    ".",
+                    "res",
+                    "ume",
+                    "(",
+                    "rest",
+                    "Exception",
+                    ")",
+                    "\n",
+                    "              ",
+                    " }",
+                    "\n",
+                    "          ",
+                    " }",
+                    "\n",
+                    "          ",
+                    " val",
+                    " position",
+                    "Impl",
+                    " =",
+                    " Place",
+                    "Impl",
+                    "(",
+                    "rec",
+                    "ords",
+                    "Number",
+                    ",",
+                    " item",
+                    "Number",
+                    ")",
+                    "\n",
+                    "          ",
+                    " /*",
+                    " B",
+                    "UG",
+                    ":",
+                    " ",
+                    "\n",
+                    "           ",
+                    " *",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " ((",
+                    "Ten",
+                    "acious",
+                    "Subject",
+                    ")"
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -0.46880832,
+                    -0.1724792,
+                    -0.0025366095,
+                    -0.010467365,
+                    -5.6102934e-05,
+                    -0.035500355,
+                    -0.02456478,
+                    -1.120772,
+                    -0.3016288,
+                    -0.1370395,
+                    -0.0007684329,
+                    -0.015841769,
+                    -0.0036844728,
+                    -0.00047326574,
+                    -0.087994054,
+                    -0.1008817,
+                    -3.941184e-05,
+                    -0.006322764,
+                    -0.0004084472,
+                    -0.0007933672,
+                    -1.855031e-05,
+                    -0.03530534,
+                    -0.012687633,
+                    -2.408467,
+                    -0.05851037,
+                    -0.89972633,
+                    -0.0055377767,
+                    -0.091402,
+                    -0.00035227832,
+                    -0.034385677,
+                    -0.011228446,
+                    -0.019504733,
+                    -0.00034762823,
+                    -0.0072223684,
+                    -0.1562299,
+                    -0.00021121504,
+                    -6.373136e-05,
+                    -0.03896442,
+                    -0.018340586,
+                    -0.001989508,
+                    -0.0095923375,
+                    -0.05201954,
+                    -0.00065122644,
+                    -0.0068290266,
+                    -0.00096983457,
+                    -0.06226376,
+                    -0.00011285097,
+                    -1.8601542e-06,
+                    -2.0696069e-05,
+                    -0.0038196887,
+                    -0.00030928716,
+                    -6.3900848e-06,
+                    -8.8410365e-05,
+                    -0.00051626156,
+                    -8.232979e-05,
+                    -0.0008769419,
+                    -0.0023003009,
+                    -0.006331881,
+                    -4.7279616e-05,
+                    -0.00024728084,
+                    -4.5135734e-05,
+                    -0.0001270368,
+                    -0.0023452875,
+                    -0.00020894819,
+                    -6.206056e-05,
+                    -1.1159372e-05,
+                    -0.00021896455,
+                    -0.0028650872,
+                    -1.9263687e-05,
+                    -0.0026649165,
+                    -2.0935424e-05,
+                    -0.00016829051,
+                    -3.6482897e-06,
+                    -0.0022278964,
+                    -0.0031908576,
+                    -0.06305656,
+                    -0.0009046837,
+                    -0.00021586417,
+                    -0.0015880108,
+                    -0.00027613778,
+                    -0.00041458878,
+                    -0.00082933734,
+                    -2.141132e-05,
+                    -5.4314798e-05,
+                    -3.6195077e-05,
+                    -2.3360508e-06,
+                    -4.2511267e-05,
+                    -0.0002170572,
+                    -1.0204763e-05,
+                    -3.6074933e-05,
+                    -0.00054554467,
+                    -0.0011592205,
+                    -4.048565e-05,
+                    -0.0030255981,
+                    -0.00016197246,
+                    -0.01071242,
+                    -0.0005745265,
+                    -0.00017759066,
+                    -4.9782993e-05,
+                    -0.0005867533,
+                    -0.0022533438,
+                    -0.033317473,
+                    -0.0038174153,
+                    -0.00029187708,
+                    -0.0065919426,
+                    -0.00259069,
+                    -0.0013479257,
+                    -0.00035645344,
+                    -0.0005641506,
+                    -0.0006123982,
+                    -0.0020192522,
+                    -8.6025255e-05,
+                    -0.0012920629,
+                    -0.0004558547,
+                    -0.0024367617,
+                    -0.00023416693,
+                    -0.00025932747,
+                    -0.00018808198,
+                    -0.0024418416,
+                    -0.00016340296,
+                    -0.019494826,
+                    -0.013987368,
+                    -0.012354587,
+                    -0.019862296,
+                    -0.00087682175,
+                    -0.001491957,
+                    -0.0072617517,
+                    -0.0003296803,
+                    -0.0009037291,
+                    -0.0062287757,
+                    -0.002549577,
+                    -0.0029434543,
+                    -0.007097141,
+                    -0.0037268922,
+                    -0.0004434504,
+                    -0.010213099,
+                    -0.002825036,
+                    -6.122609e-05,
+                    -0.00043891673,
+                    -0.0010033031,
+                    -9.130952e-06,
+                    -0.0015018062,
+                    -0.0015357721,
+                    -0.00044810143,
+                    -0.001463604,
+                    -0.0009726983,
+                    -0.00019869342,
+                    -0.00033689477,
+                    -0.0013593257,
+                    -0.0018061167,
+                    -1.9503042e-05,
+                    -9.65175e-05,
+                    -1.6282536e-05,
+                    -3.6670972e-05,
+                    -0.001130754,
+                    -7.529741e-05,
+                    -5.1215375e-05,
+                    -8.296486e-06,
+                    -4.394177e-05,
+                    -0.0015608473,
+                    -3.076318e-07,
+                    -9.198663e-05,
+                    -0.00017341838,
+                    -0.0008569562,
+                    -0.00022111216,
+                    -1.843017e-05,
+                    -1.0444119e-05,
+                    -1.5214344e-05,
+                    -1.0920954e-05,
+                    -1.1398727e-05,
+                    -0.00020298682,
+                    -9.130952e-06,
+                    -4.5135734e-05,
+                    -0.00047749997,
+                    -0.00068241963,
+                    -0.0001314494,
+                    -0.0047613084,
+                    -0.0058186743,
+                    -0.0004746981,
+                    -0.21907637,
+                    -1.4252508,
+                    -1.3371434,
+                    -0.0006704322,
+                    -0.473265,
+                    -0.010670369,
+                    -0.11697522,
+                    -0.5618984,
+                    -0.21772668,
+                    -0.03392459,
+                    -0.011684733,
+                    -0.00025634444,
+                    -0.015675357,
+                    -0.0038108928,
+                    -0.0047275894,
+                    -0.018475188,
+                    -0.10796737,
+                    -0.00025789507,
+                    -0.0016264562,
+                    -0.041078553,
+                    -0.03728759,
+                    -0.00013538517,
+                    -0.0009709074,
+                    -0.06226281,
+                    -0.09439183,
+                    -0.0012478994,
+                    -0.0065638623,
+                    -0.020336896,
+                    -0.020535704,
+                    -0.04787185,
+                    -0.000263022,
+                    -0.0016134427,
+                    -0.0046790834,
+                    -0.00996064,
+                    -0.15385012,
+                    -0.034562,
+                    -0.057709053,
+                    -0.5407329,
+                    -0.0054515908,
+                    -0.0023292159,
+                    -0.0061719185,
+                    -0.06126853,
+                    -0.008270358,
+                    -0.0028567775,
+                    -0.004120156,
+                    -0.0030562095,
+                    -0.0003162041,
+                    -0.000792652,
+                    -0.0019434665,
+                    -0.0060149166,
+                    -0.0009934576,
+                    -0.0012012316,
+                    -7.005035e-05,
+                    -0.0008418054,
+                    -0.0009106507,
+                    -0.00044547606,
+                    -0.006753831,
+                    -0.00068671495,
+                    -0.064329796,
+                    -0.004737951,
+                    -0.0009556938,
+                    -0.0012781577,
+                    -0.00014217819,
+                    -0.0005074364,
+                    -0.00023333247,
+                    -0.0003721918,
+                    -4.4181128e-05,
+                    -0.0013189797,
+                    -0.0060789036,
+                    -0.0015900383,
+                    -0.0009907138,
+                    -0.0034258813,
+                    -0.00011308939,
+                    -0.00030082333,
+                    -0.0004737435,
+                    -0.00019797911,
+                    -2.693682e-06,
+                    -0.00021622273,
+                    -0.012736773,
+                    -0.0016378589,
+                    -0.0029599548,
+                    -0.0047944267,
+                    -0.0034851541,
+                    -0.0007383088,
+                    -0.0001947586,
+                    -0.004329836,
+                    -0.0068318467,
+                    -0.0007612757,
+                    -0.008299687,
+                    -0.0033754054,
+                    -0.000841566,
+                    -0.0018865532,
+                    -0.00054387294,
+                    -0.00015469792,
+                    -0.00027530332,
+                    -0.00010927377,
+                    -0.00010259808,
+                    -1.306671e-05,
+                    -0.00013478725,
+                    -0.00052127114,
+                    -4.5967376e-05,
+                    -4.501652e-05,
+                    -0.0065862434,
+                    -0.000740218,
+                    -0.00066971505,
+                    -2.558363e-05,
+                    -0.0018859563,
+                    -0.009931865,
+                    -0.16552977,
+                    -0.006634962,
+                    -0.0007006726,
+                    -0.00056104746,
+                    -0.20875861,
+                    -0.07096557,
+                    -0.17033543,
+                    -0.08145708,
+                    -2.2365928e-05,
+                    -0.0023586105,
+                    -7.422359e-05,
+                    -0.0024130421,
+                    -0.0026279243,
+                    -0.00021800993,
+                    -0.00016268677,
+                    -0.14131005,
+                    -0.0028771001,
+                    -0.0050756573,
+                    -0.024423745,
+                    -0.0024956178,
+                    -0.0031977943,
+                    -0.0009905946,
+                    -0.016796766,
+                    -0.00096189824,
+                    -0.017923731,
+                    -0.0035203272,
+                    -0.0052911704,
+                    -0.8590584,
+                    -0.031599745,
+                    -0.001428505,
+                    -0.035929423,
+                    -1.6617824,
+                    -0.0067990785,
+                    -0.0015766684,
+                    -0.002586925,
+                    -0.008430654,
+                    -0.0013805147,
+                    -0.0007716535,
+                    -0.0021480876,
+                    -0.021991903,
+                    -0.001332409,
+                    -0.0580945,
+                    -0.0044016163,
+                    -0.0003525167,
+                    -0.00049908616,
+                    -0.0012395435,
+                    -0.0007950352,
+                    -0.00035657262,
+                    -0.017081331,
+                    -0.0033549515,
+                    -0.001204454,
+                    -0.003644931,
+                    -8.161453e-05,
+                    -0.0012967177,
+                    -0.00044666906,
+                    -2.4510746e-05,
+                    -0.0006147833,
+                    -0.0004889459,
+                    -0.005266123,
+                    -0.0010489478,
+                    -0.0014498152,
+                    -3.7386224e-05,
+                    -0.008162305,
+                    -0.0026661125,
+                    -0.06650614,
+                    -0.0006257599,
+                    -0.003211309,
+                    -0.011534645,
+                    -2.7728449e-05,
+                    -0.0023347125,
+                    -9.115311e-05,
+                    -0.0004009333,
+                    -0.00073675625,
+                    -0.0377022,
+                    -0.00095020543,
+                    -9.449002e-05,
+                    -0.006743269,
+                    -0.7483171,
+                    -3.023464e-05,
+                    -0.0018073115,
+                    -0.0021968326,
+                    -1.3542607e-05,
+                    -0.0046677026,
+                    -0.0008171667,
+                    -0.00028055036,
+                    -0.0006698352,
+                    -1.676031e-05,
+                    -8.423619e-05,
+                    -3.7028603e-05,
+                    -1.42597355e-05,
+                    -0.00029605313,
+                    -0.0003103619,
+                    -1.3900239e-05,
+                    -0.0008396568,
+                    -0.00065230025,
+                    -0.0017867702,
+                    -6.838237e-05,
+                    -0.0054942635,
+                    -0.0009222224,
+                    -0.00050302286,
+                    -0.0012430045,
+                    -0.043115545,
+                    -0.0046240506,
+                    -0.0028831987,
+                    -0.037213285,
+                    -0.00030785665,
+                    -0.0028376486,
+                    -0.007153928,
+                    -0.0024119655,
+                    -0.013419535,
+                    -0.0025632617,
+                    -0.007048696,
+                    -0.017618181,
+                    -0.0014930316,
+                    -0.000116070536,
+                    -0.66964257,
+                    -0.016942251,
+                    -0.0009290248,
+                    -0.0014988222,
+                    -0.0010527672,
+                    -0.0022232358,
+                    -0.020208068,
+                    -0.0016920124,
+                    -0.013291534,
+                    -0.0011270556,
+                    -0.00041983582,
+                    -4.5135734e-05,
+                    -0.0006382224,
+                    -0.00045251404,
+                    -9.890355e-05,
+                    -0.001117747,
+                    -0.00097580056,
+                    -3.1901687e-05,
+                    -0.10529562,
+                    -0.014490571,
+                    -0.0016674724,
+                    -0.0005112539,
+                    -0.00036813872,
+                    -0.00017139182,
+                    -0.0024373606,
+                    -0.000464082,
+                    -0.0004054651,
+                    -0.007048816,
+                    -5.979934e-05,
+                    -0.00056486396,
+                    -0.0023964318,
+                    -0.000114518014,
+                    -0.00022266187,
+                    -9.490449e-06,
+                    -0.0003591943,
+                    -0.012303054,
+                    -0.0050199414,
+                    -0.00016721859,
+                    -0.0029891888,
+                    -0.006563323,
+                    -0.00037457785,
+                    -0.0002981989,
+                    -0.0032529288,
+                    -0.0022492833,
+                    -0.00037433943,
+                    -3.762558e-05,
+                    -0.00077069976,
+                    -0.0329215,
+                    -5.79217e-06,
+                    -0.0003891288,
+                    -0.00074248295,
+                    -7.8540467e-07,
+                    -0.0019065579,
+                    -0.0003527561,
+                    -0.00016292612,
+                    -0.00031489186,
+                    -8.7696986e-05,
+                    -5.3363005e-05,
+                    -2.3317722e-05,
+                    -4.1232483e-06,
+                    -3.237946e-05,
+                    -0.00028341232,
+                    -1.0561456e-05,
+                    -0.0004287793,
+                    -0.0003726696,
+                    -0.00050039747,
+                    -5.848711e-05,
+                    -0.0010970423,
+                    -0.0011987245,
+                    -0.036537144,
+                    -0.0030383917,
+                    -0.0016208449,
+                    -0.005423005,
+                    -0.0021872171,
+                    -0.0008257573,
+                    -0.006498647,
+                    -0.011388739,
+                    -0.00015493727,
+                    -0.00095080055,
+                    -0.0007085461,
+                    -6.5092986e-06,
+                    -3.655083e-05,
+                    -0.0050219186,
+                    -0.002491913,
+                    -2.0575926e-05,
+                    -0.0076876977,
+                    -0.0055311234,
+                    -0.017778045,
+                    -0.1052133,
+                    -0.006870315,
+                    -3.01145e-05,
+                    -0.0032920984,
+                    -0.21324925,
+                    -0.00023047146,
+                    -0.0067322906,
+                    -0.00025980148,
+                    -0.05059363,
+                    -0.003688063,
+                    -6.9690854e-05,
+                    -0.00011106284,
+                    -5.3162735e-06,
+                    -0.00012536882,
+                    -0.0007585893,
+                    -0.002404856,
+                    -0.0006651823,
+                    -1.2351458e-05,
+                    -7.6605895e-05,
+                    -0.00015577173
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Administ": -0.1724792
+                    },
+                    {
+                        "ered": -0.0025366095
+                    },
+                    {
+                        "Rec": -0.010467365
+                    },
+                    {
+                        "ords": -5.6102934e-05
+                    },
+                    {
+                        "Impl": -0.035500355
+                    },
+                    {
+                        ")": -0.02456478
+                    },
+                    {
+                        " ((": -0.8154398
+                    },
+                    {
+                        "Subject": -0.3016288
+                    },
+                    {
+                        "M": -0.1370395
+                    },
+                    {
+                        "ention": -0.0007684329
+                    },
+                    {
+                        "(": -0.015841769
+                    },
+                    {
+                        "subject": -0.0036844728
+                    },
+                    {
+                        "Title": -0.00047326574
+                    },
+                    {
+                        ").": -0.087994054
+                    },
+                    {
+                        "ac": -0.1008817
+                    },
+                    {
+                        "quire": -3.941184e-05
+                    },
+                    {
+                        "Administ": -0.006322764
+                    },
+                    {
+                        "ered": -0.0004084472
+                    },
+                    {
+                        "Rec": -0.0007933672
+                    },
+                    {
+                        "ords": -1.855031e-05
+                    },
+                    {
+                        "())": -0.03530534
+                    },
+                    {
+                        "\n": -0.012687633
+                    },
+                    {
+                        "    ": -0.9523218
+                    },
+                    {
+                        " .": -0.05851037
+                    },
+                    {
+                        "as": -0.89972633
+                    },
+                    {
+                        "ync": -0.0055377767
+                    },
+                    {
+                        "Ret": -0.091402
+                    },
+                    {
+                        "rieve": -0.00035227832
+                    },
+                    {
+                        "Item": -0.034385677
+                    },
+                    {
+                        "(": -0.011228446
+                    },
+                    {
+                        "position": -0.019504733
+                    },
+                    {
+                        "Impl": -0.00034762823
+                    },
+                    {
+                        ",": -0.0072223684
+                    },
+                    {
+                        "read": -0.1562299
+                    },
+                    {
+                        "Entry": -0.00021121504
+                    },
+                    {
+                        "Callback": -6.373136e-05
+                    },
+                    {
+                        " ,": -0.03896442
+                    },
+                    {
+                        " null": -0.018340586
+                    },
+                    {
+                        ");": -0.001989508
+                    },
+                    {
+                        "\n": -0.0095923375
+                    },
+                    {
+                        "      ": -0.05201954
+                    },
+                    {
+                        " }": -0.00065122644
+                    },
+                    {
+                        " catch": -0.0068290266
+                    },
+                    {
+                        " (": -0.00096983457
+                    },
+                    {
+                        "Null": -0.06226376
+                    },
+                    {
+                        "Po": -0.00011285097
+                    },
+                    {
+                        "inter": -1.8601542e-06
+                    },
+                    {
+                        "Exception": -2.0696069e-05
+                    },
+                    {
+                        " null": -0.0038196887
+                    },
+                    {
+                        "Po": -0.00030928716
+                    },
+                    {
+                        "inter": -6.3900848e-06
+                    },
+                    {
+                        "Exception": -8.8410365e-05
+                    },
+                    {
+                        ")": -0.00051626156
+                    },
+                    {
+                        " {": -8.232979e-05
+                    },
+                    {
+                        "\n": -0.0008769419
+                    },
+                    {
+                        "          ": -0.0023003009
+                    },
+                    {
+                        " Rest": -0.006331881
+                    },
+                    {
+                        "Exception": -4.7279616e-05
+                    },
+                    {
+                        " rest": -0.00024728084
+                    },
+                    {
+                        "Exception": -4.5135734e-05
+                    },
+                    {
+                        " =": -0.0001270368
+                    },
+                    {
+                        " ": -0.0023452875
+                    },
+                    {
+                        " new": -0.00020894819
+                    },
+                    {
+                        " Rest": -6.206056e-05
+                    },
+                    {
+                        "Exception": -1.1159372e-05
+                    },
+                    {
+                        "(": -0.00021896455
+                    },
+                    {
+                        "Status": -0.0028650872
+                    },
+                    {
+                        ".": -1.9263687e-05
+                    },
+                    {
+                        "NOT": -0.0026649165
+                    },
+                    {
+                        "_": -2.0935424e-05
+                    },
+                    {
+                        "F": -0.00016829051
+                    },
+                    {
+                        "OUND": -3.6482897e-06
+                    },
+                    {
+                        ",": -0.0022278964
+                    },
+                    {
+                        " \"": -0.0031908576
+                    },
+                    {
+                        "Message": -0.06305656
+                    },
+                    {
+                        " not": -0.0009046837
+                    },
+                    {
+                        " found": -0.00021586417
+                    },
+                    {
+                        "\");": -0.0015880108
+                    },
+                    {
+                        "\n": -0.00027613778
+                    },
+                    {
+                        "          ": -0.00041458878
+                    },
+                    {
+                        " async": -0.00082933734
+                    },
+                    {
+                        "Reply": -2.141132e-05
+                    },
+                    {
+                        ".": -5.4314798e-05
+                    },
+                    {
+                        "res": -3.6195077e-05
+                    },
+                    {
+                        "ume": -2.3360508e-06
+                    },
+                    {
+                        "(": -4.2511267e-05
+                    },
+                    {
+                        "rest": -0.0002170572
+                    },
+                    {
+                        "Exception": -1.0204763e-05
+                    },
+                    {
+                        ");": -3.6074933e-05
+                    },
+                    {
+                        "\n": -0.00054554467
+                    },
+                    {
+                        "      ": -0.0011592205
+                    },
+                    {
+                        " }": -4.048565e-05
+                    },
+                    {
+                        " catch": -0.0030255981
+                    },
+                    {
+                        " (": -0.00016197246
+                    },
+                    {
+                        "Exception": -0.01071242
+                    },
+                    {
+                        " exception": -0.0005745265
+                    },
+                    {
+                        ")": -0.00017759066
+                    },
+                    {
+                        " {": -4.9782993e-05
+                    },
+                    {
+                        "\n": -0.0005867533
+                    },
+                    {
+                        "          ": -0.0022533438
+                    },
+                    {
+                        " String": -0.033317473
+                    },
+                    {
+                        " id": -0.0038174153
+                    },
+                    {
+                        " =": -0.00029187708
+                    },
+                    {
+                        " customer": -0.0065919426
+                    },
+                    {
+                        "App": -0.00259069
+                    },
+                    {
+                        "Number": -0.0013479257
+                    },
+                    {
+                        "();": -0.00035645344
+                    },
+                    {
+                        "\n": -0.0005641506
+                    },
+                    {
+                        "          ": -0.0006123982
+                    },
+                    {
+                        " log": -0.0020192522
+                    },
+                    {
+                        ".": -8.6025255e-05
+                    },
+                    {
+                        "error": -0.0012920629
+                    },
+                    {
+                        "(\"": -0.0004558547
+                    },
+                    {
+                        "[": -0.0024367617
+                    },
+                    {
+                        "{": -0.00023416693
+                    },
+                    {
+                        "}": -0.00025932747
+                    },
+                    {
+                        "]": -0.00018808198
+                    },
+                    {
+                        " Failed": -0.0024418416
+                    },
+                    {
+                        " to": -0.00016340296
+                    },
+                    {
+                        " get": -0.019494826
+                    },
+                    {
+                        " message": -0.013987368
+                    },
+                    {
+                        " with": -0.012354587
+                    },
+                    {
+                        " ledger": -0.019862296
+                    },
+                    {
+                        "Id": -0.00087682175
+                    },
+                    {
+                        " {}": -0.001491957
+                    },
+                    {
+                        " entry": -0.0072617517
+                    },
+                    {
+                        "Id": -0.0003296803
+                    },
+                    {
+                        " {}": -0.0009037291
+                    },
+                    {
+                        " from": -0.0062287757
+                    },
+                    {
+                        " {}": -0.002549577
+                    },
+                    {
+                        "\",": -0.0029434543
+                    },
+                    {
+                        "\n": -0.007097141
+                    },
+                    {
+                        "                  ": -0.0037268922
+                    },
+                    {
+                        " id": -0.0004434504
+                    },
+                    {
+                        " ,": -0.010213099
+                    },
+                    {
+                        " records": -0.002825036
+                    },
+                    {
+                        "Number": -6.122609e-05
+                    },
+                    {
+                        ",": -0.00043891673
+                    },
+                    {
+                        " item": -0.0010033031
+                    },
+                    {
+                        "Number": -9.130952e-06
+                    },
+                    {
+                        ",": -0.0015018062
+                    },
+                    {
+                        " subject": -0.0015357721
+                    },
+                    {
+                        "Title": -0.00044810143
+                    },
+                    {
+                        ",": -0.001463604
+                    },
+                    {
+                        " exception": -0.0009726983
+                    },
+                    {
+                        ");": -0.00019869342
+                    },
+                    {
+                        "\n": -0.00033689477
+                    },
+                    {
+                        "          ": -0.0013593257
+                    },
+                    {
+                        " Rest": -0.0018061167
+                    },
+                    {
+                        "Exception": -1.9503042e-05
+                    },
+                    {
+                        " rest": -9.65175e-05
+                    },
+                    {
+                        "Exception": -1.6282536e-05
+                    },
+                    {
+                        " =": -3.6670972e-05
+                    },
+                    {
+                        " ": -0.001130754
+                    },
+                    {
+                        " new": -7.529741e-05
+                    },
+                    {
+                        " Rest": -5.1215375e-05
+                    },
+                    {
+                        "Exception": -8.296486e-06
+                    },
+                    {
+                        "(": -4.394177e-05
+                    },
+                    {
+                        "ex": -0.0015608473
+                    },
+                    {
+                        "ception": -3.076318e-07
+                    },
+                    {
+                        ");": -9.198663e-05
+                    },
+                    {
+                        "\n": -0.00017341838
+                    },
+                    {
+                        "          ": -0.0008569562
+                    },
+                    {
+                        " async": -0.00022111216
+                    },
+                    {
+                        "Reply": -1.843017e-05
+                    },
+                    {
+                        ".": -1.0444119e-05
+                    },
+                    {
+                        "res": -1.5214344e-05
+                    },
+                    {
+                        "ume": -1.0920954e-05
+                    },
+                    {
+                        "(": -1.1398727e-05
+                    },
+                    {
+                        "rest": -0.00020298682
+                    },
+                    {
+                        "Exception": -9.130952e-06
+                    },
+                    {
+                        ");": -4.5135734e-05
+                    },
+                    {
+                        "\n": -0.00047749997
+                    },
+                    {
+                        "      ": -0.00068241963
+                    },
+                    {
+                        " }": -0.0001314494
+                    },
+                    {
+                        "\n": -0.0047613084
+                    },
+                    {
+                        "  ": -0.0058186743
+                    },
+                    {
+                        " }": -0.0004746981
+                    },
+                    {
+                        "\n": -0.21907637
+                    },
+                    {
+                        "\n": -1.3019245
+                    },
+                    {
+                        " Java": -1.0140929
+                    },
+                    {
+                        "lin": -0.0006704322
+                    },
+                    {
+                        " ": -0.473265
+                    },
+                    {
+                        "\n": -0.010670369
+                    },
+                    {
+                        "  ": -0.11697522
+                    },
+                    {
+                        " protected": -0.5618984
+                    },
+                    {
+                        " fun": -0.21772668
+                    },
+                    {
+                        " inner": -0.03392459
+                    },
+                    {
+                        "Ac": -0.011684733
+                    },
+                    {
+                        "quire": -0.00025634444
+                    },
+                    {
+                        "News": -0.015675357
+                    },
+                    {
+                        "Through": -0.0038108928
+                    },
+                    {
+                        "Number": -0.0047275894
+                    },
+                    {
+                        "(": -0.018475188
+                    },
+                    {
+                        "as": -0.10796737
+                    },
+                    {
+                        "ync": -0.00025789507
+                    },
+                    {
+                        "Reply": -0.0016264562
+                    },
+                    {
+                        ":": -0.041078553
+                    },
+                    {
+                        " As": -0.03728759
+                    },
+                    {
+                        "ync": -0.00013538517
+                    },
+                    {
+                        "Response": -0.0009709074
+                    },
+                    {
+                        ",": -0.06226281
+                    },
+                    {
+                        " records": -0.09439183
+                    },
+                    {
+                        "Number": -0.0012478994
+                    },
+                    {
+                        ":": -0.0065638623
+                    },
+                    {
+                        " Long": -0.020336896
+                    },
+                    {
+                        ",": -0.020535704
+                    },
+                    {
+                        " item": -0.04787185
+                    },
+                    {
+                        "Number": -0.000263022
+                    },
+                    {
+                        ":": -0.0016134427
+                    },
+                    {
+                        " Long": -0.0046790834
+                    },
+                    {
+                        ",": -0.00996064
+                    },
+                    {
+                        "\n": -0.15385012
+                    },
+                    {
+                        "                ": -0.034562
+                    },
+                    {
+                        "                ": -0.057709053
+                    },
+                    {
+                        "            ": -0.5407329
+                    },
+                    {
+                        " reliable": -0.0054515908
+                    },
+                    {
+                        ":": -0.0023292159
+                    },
+                    {
+                        " Boolean": -0.0061719185
+                    },
+                    {
+                        ")": -0.06126853
+                    },
+                    {
+                        " {": -0.008270358
+                    },
+                    {
+                        "\n": -0.0028567775
+                    },
+                    {
+                        "      ": -0.004120156
+                    },
+                    {
+                        " try": -0.0030562095
+                    },
+                    {
+                        " {": -0.0003162041
+                    },
+                    {
+                        "\n": -0.000792652
+                    },
+                    {
+                        "          ": -0.0019434665
+                    },
+                    {
+                        " confirm": -0.0060149166
+                    },
+                    {
+                        "Subject": -0.0009934576
+                    },
+                    {
+                        "P": -0.0012012316
+                    },
+                    {
+                        "ossession": -7.005035e-05
+                    },
+                    {
+                        "(": -0.0008418054
+                    },
+                    {
+                        "subject": -0.0009106507
+                    },
+                    {
+                        "Title": -0.00044547606
+                    },
+                    {
+                        ",": -0.006753831
+                    },
+                    {
+                        " reliable": -0.00068671495
+                    },
+                    {
+                        ")": -0.064329796
+                    },
+                    {
+                        "\n": -0.004737951
+                    },
+                    {
+                        "          ": -0.0009556938
+                    },
+                    {
+                        " confirm": -0.0012781577
+                    },
+                    {
+                        "Subject": -0.00014217819
+                    },
+                    {
+                        "Action": -0.0005074364
+                    },
+                    {
+                        "(": -0.00023333247
+                    },
+                    {
+                        "subject": -0.0003721918
+                    },
+                    {
+                        "Title": -4.4181128e-05
+                    },
+                    {
+                        ",": -0.0013189797
+                    },
+                    {
+                        " Subject": -0.0060789036
+                    },
+                    {
+                        "Action": -0.0015900383
+                    },
+                    {
+                        ".": -0.0009907138
+                    },
+                    {
+                        "P": -0.0034258813
+                    },
+                    {
+                        "EEK": -0.00011308939
+                    },
+                    {
+                        "_": -0.00030082333
+                    },
+                    {
+                        "M": -0.0004737435
+                    },
+                    {
+                        "ES": -0.00019797911
+                    },
+                    {
+                        "SA": -2.693682e-06
+                    },
+                    {
+                        "GES": -0.00021622273
+                    },
+                    {
+                        ")": -0.012736773
+                    },
+                    {
+                        "\n": -0.0016378589
+                    },
+                    {
+                        "          ": -0.0029599548
+                    },
+                    {
+                        " if": -0.0047944267
+                    },
+                    {
+                        " (": -0.0034851541
+                    },
+                    {
+                        "subject": -0.0007383088
+                    },
+                    {
+                        "Title": -0.0001947586
+                    },
+                    {
+                        ".": -0.004329836
+                    },
+                    {
+                        "whether": -0.0068318467
+                    },
+                    {
+                        "Universal": -0.0007612757
+                    },
+                    {
+                        "())": -0.008299687
+                    },
+                    {
+                        " {": -0.0033754054
+                    },
+                    {
+                        "\n": -0.000841566
+                    },
+                    {
+                        "              ": -0.0018865532
+                    },
+                    {
+                        " confirm": -0.00054387294
+                    },
+                    {
+                        "Universal": -0.00015469792
+                    },
+                    {
+                        "Title": -0.00027530332
+                    },
+                    {
+                        "Scope": -0.00010927377
+                    },
+                    {
+                        "P": -0.00010259808
+                    },
+                    {
+                        "ossession": -1.306671e-05
+                    },
+                    {
+                        "(": -0.00013478725
+                    },
+                    {
+                        "title": -0.00052127114
+                    },
+                    {
+                        "Scope": -4.5967376e-05
+                    },
+                    {
+                        "Title": -4.501652e-05
+                    },
+                    {
+                        ")": -0.0065862434
+                    },
+                    {
+                        "\n": -0.000740218
+                    },
+                    {
+                        "          ": -0.00066971505
+                    },
+                    {
+                        " }": -2.558363e-05
+                    },
+                    {
+                        "\n": -0.0018859563
+                    },
+                    {
+                        "          ": -0.009931865
+                    },
+                    {
+                        " val": -0.16552977
+                    },
+                    {
+                        " read": -0.006634962
+                    },
+                    {
+                        "Entry": -0.0007006726
+                    },
+                    {
+                        "Callback": -0.00056104746
+                    },
+                    {
+                        " =": -0.20875861
+                    },
+                    {
+                        " object": -0.07096557
+                    },
+                    {
+                        " :": -0.17033543
+                    },
+                    {
+                        " As": -0.08145708
+                    },
+                    {
+                        "ync": -2.2365928e-05
+                    },
+                    {
+                        "Call": -0.0023586105
+                    },
+                    {
+                        "backs": -7.422359e-05
+                    },
+                    {
+                        ".": -0.0024130421
+                    },
+                    {
+                        "Read": -0.0026279243
+                    },
+                    {
+                        "Entry": -0.00021800993
+                    },
+                    {
+                        "Callback": -0.00016268677
+                    },
+                    {
+                        " {": -0.14131005
+                    },
+                    {
+                        "\n": -0.0028771001
+                    },
+                    {
+                        "              ": -0.0050756573
+                    },
+                    {
+                        " override": -0.024423745
+                    },
+                    {
+                        " fun": -0.0024956178
+                    },
+                    {
+                        " retrieve": -0.0031977943
+                    },
+                    {
+                        "Item": -0.0009905946
+                    },
+                    {
+                        "Finish": -0.016796766
+                    },
+                    {
+                        "(": -0.00096189824
+                    },
+                    {
+                        "item": -0.017923731
+                    },
+                    {
+                        ":": -0.0035203272
+                    },
+                    {
+                        " Item": -0.0052911704
+                    },
+                    {
+                        "?,": -0.55817795
+                    },
+                    {
+                        " obj": -0.031599745
+                    },
+                    {
+                        ":": -0.001428505
+                    },
+                    {
+                        " Any": -0.035929423
+                    },
+                    {
+                        "?)": -0.21430993
+                    },
+                    {
+                        " {": -0.0067990785
+                    },
+                    {
+                        "\n": -0.0015766684
+                    },
+                    {
+                        "                  ": -0.002586925
+                    },
+                    {
+                        " try": -0.008430654
+                    },
+                    {
+                        " {": -0.0013805147
+                    },
+                    {
+                        "\n": -0.0007716535
+                    },
+                    {
+                        "                      ": -0.0021480876
+                    },
+                    {
+                        " val": -0.021991903
+                    },
+                    {
+                        " response": -0.001332409
+                    },
+                    {
+                        " =": -0.0580945
+                    },
+                    {
+                        " produce": -0.0044016163
+                    },
+                    {
+                        "Reply": -0.0003525167
+                    },
+                    {
+                        "With": -0.00049908616
+                    },
+                    {
+                        "Item": -0.0012395435
+                    },
+                    {
+                        "(": -0.0007950352
+                    },
+                    {
+                        "item": -0.00035657262
+                    },
+                    {
+                        ")": -0.017081331
+                    },
+                    {
+                        "\n": -0.0033549515
+                    },
+                    {
+                        "                      ": -0.001204454
+                    },
+                    {
+                        " async": -0.003644931
+                    },
+                    {
+                        "Reply": -8.161453e-05
+                    },
+                    {
+                        ".": -0.0012967177
+                    },
+                    {
+                        "res": -0.00044666906
+                    },
+                    {
+                        "ume": -2.4510746e-05
+                    },
+                    {
+                        "(": -0.0006147833
+                    },
+                    {
+                        "response": -0.0004889459
+                    },
+                    {
+                        ")": -0.005266123
+                    },
+                    {
+                        "\n": -0.0010489478
+                    },
+                    {
+                        "                  ": -0.0014498152
+                    },
+                    {
+                        " }": -3.7386224e-05
+                    },
+                    {
+                        " catch": -0.008162305
+                    },
+                    {
+                        " (": -0.0026661125
+                    },
+                    {
+                        "ex": -0.06650614
+                    },
+                    {
+                        "ception": -0.0006257599
+                    },
+                    {
+                        ":": -0.003211309
+                    },
+                    {
+                        " IO": -0.011534645
+                    },
+                    {
+                        "Exception": -2.7728449e-05
+                    },
+                    {
+                        ")": -0.0023347125
+                    },
+                    {
+                        " {": -9.115311e-05
+                    },
+                    {
+                        "\n": -0.0004009333
+                    },
+                    {
+                        "                      ": -0.00073675625
+                    },
+                    {
+                        " val": -0.0377022
+                    },
+                    {
+                        " rest": -0.00095020543
+                    },
+                    {
+                        "Exception": -9.449002e-05
+                    },
+                    {
+                        " =": -0.006743269
+                    },
+                    {
+                        " ": -0.6510098
+                    },
+                    {
+                        "Exception": -3.023464e-05
+                    },
+                    {
+                        "(": -0.0018073115
+                    },
+                    {
+                        "ex": -0.0021968326
+                    },
+                    {
+                        "ception": -1.3542607e-05
+                    },
+                    {
+                        ")": -0.0046677026
+                    },
+                    {
+                        "\n": -0.0008171667
+                    },
+                    {
+                        "                      ": -0.00028055036
+                    },
+                    {
+                        " async": -0.0006698352
+                    },
+                    {
+                        "Reply": -1.676031e-05
+                    },
+                    {
+                        ".": -8.423619e-05
+                    },
+                    {
+                        "res": -3.7028603e-05
+                    },
+                    {
+                        "ume": -1.42597355e-05
+                    },
+                    {
+                        "(": -0.00029605313
+                    },
+                    {
+                        "rest": -0.0003103619
+                    },
+                    {
+                        "Exception": -1.3900239e-05
+                    },
+                    {
+                        ")": -0.0008396568
+                    },
+                    {
+                        "\n": -0.00065230025
+                    },
+                    {
+                        "                  ": -0.0017867702
+                    },
+                    {
+                        " }": -6.838237e-05
+                    },
+                    {
+                        " finally": -0.0054942635
+                    },
+                    {
+                        " {": -0.0009222224
+                    },
+                    {
+                        "\n": -0.00050302286
+                    },
+                    {
+                        "                      ": -0.0012430045
+                    },
+                    {
+                        " if": -0.043115545
+                    },
+                    {
+                        " (": -0.0046240506
+                    },
+                    {
+                        "item": -0.0028831987
+                    },
+                    {
+                        " ==": -0.037213285
+                    },
+                    {
+                        " null": -0.00030785665
+                    },
+                    {
+                        ")": -0.0028376486
+                    },
+                    {
+                        " {": -0.007153928
+                    },
+                    {
+                        "\n": -0.0024119655
+                    },
+                    {
+                        "                ": -0.013419535
+                    },
+                    {
+                        "          ": -0.0025632617
+                    },
+                    {
+                        " return": -0.007048696
+                    },
+                    {
+                        "\n": -0.017618181
+                    },
+                    {
+                        "                      ": -0.0014930316
+                    },
+                    {
+                        " }": -0.000116070536
+                    },
+                    {
+                        "else": -0.66964257
+                    },
+                    {
+                        "{": -0.016942251
+                    },
+                    {
+                        "\n": -0.0009290248
+                    },
+                    {
+                        "                ": -0.0014988222
+                    },
+                    {
+                        "          ": -0.0010527672
+                    },
+                    {
+                        " item": -0.0022232358
+                    },
+                    {
+                        ".": -0.020208068
+                    },
+                    {
+                        "free": -0.0016920124
+                    },
+                    {
+                        "()": -0.013291534
+                    },
+                    {
+                        "\n": -0.0011270556
+                    },
+                    {
+                        "                      ": -0.00041983582
+                    },
+                    {
+                        " }": -4.5135734e-05
+                    },
+                    {
+                        "\n": -0.0006382224
+                    },
+                    {
+                        "                  ": -0.00045251404
+                    },
+                    {
+                        " }": -9.890355e-05
+                    },
+                    {
+                        "\n": -0.001117747
+                    },
+                    {
+                        "              ": -0.00097580056
+                    },
+                    {
+                        " }": -3.1901687e-05
+                    },
+                    {
+                        "\n": -0.10529562
+                    },
+                    {
+                        "              ": -0.014490571
+                    },
+                    {
+                        " override": -0.0016674724
+                    },
+                    {
+                        " fun": -0.0005112539
+                    },
+                    {
+                        " retrieve": -0.00036813872
+                    },
+                    {
+                        "Item": -0.00017139182
+                    },
+                    {
+                        "Un": -0.0024373606
+                    },
+                    {
+                        "success": -0.000464082
+                    },
+                    {
+                        "(": -0.0004054651
+                    },
+                    {
+                        "ex": -0.007048816
+                    },
+                    {
+                        "ception": -5.979934e-05
+                    },
+                    {
+                        ":": -0.00056486396
+                    },
+                    {
+                        " Administ": -0.0023964318
+                    },
+                    {
+                        "ered": -0.000114518014
+                    },
+                    {
+                        "Rec": -0.00022266187
+                    },
+                    {
+                        "ords": -9.490449e-06
+                    },
+                    {
+                        "Exception": -0.0003591943
+                    },
+                    {
+                        ",": -0.012303054
+                    },
+                    {
+                        " obj": -0.0050199414
+                    },
+                    {
+                        ":": -0.00016721859
+                    },
+                    {
+                        " Any": -0.0029891888
+                    },
+                    {
+                        ")": -0.006563323
+                    },
+                    {
+                        " {": -0.00037457785
+                    },
+                    {
+                        "\n": -0.0002981989
+                    },
+                    {
+                        "                  ": -0.0032529288
+                    },
+                    {
+                        " val": -0.0022492833
+                    },
+                    {
+                        " rest": -0.00037433943
+                    },
+                    {
+                        "Exception": -3.762558e-05
+                    },
+                    {
+                        " =": -0.00077069976
+                    },
+                    {
+                        " Rest": -0.0329215
+                    },
+                    {
+                        "Exception": -5.79217e-06
+                    },
+                    {
+                        "(": -0.0003891288
+                    },
+                    {
+                        "ex": -0.00074248295
+                    },
+                    {
+                        "ception": -7.8540467e-07
+                    },
+                    {
+                        ")": -0.0019065579
+                    },
+                    {
+                        "\n": -0.0003527561
+                    },
+                    {
+                        "                  ": -0.00016292612
+                    },
+                    {
+                        " async": -0.00031489186
+                    },
+                    {
+                        "Reply": -8.7696986e-05
+                    },
+                    {
+                        ".": -5.3363005e-05
+                    },
+                    {
+                        "res": -2.3317722e-05
+                    },
+                    {
+                        "ume": -4.1232483e-06
+                    },
+                    {
+                        "(": -3.237946e-05
+                    },
+                    {
+                        "rest": -0.00028341232
+                    },
+                    {
+                        "Exception": -1.0561456e-05
+                    },
+                    {
+                        ")": -0.0004287793
+                    },
+                    {
+                        "\n": -0.0003726696
+                    },
+                    {
+                        "              ": -0.00050039747
+                    },
+                    {
+                        " }": -5.848711e-05
+                    },
+                    {
+                        "\n": -0.0010970423
+                    },
+                    {
+                        "          ": -0.0011987245
+                    },
+                    {
+                        " }": -0.036537144
+                    },
+                    {
+                        "\n": -0.0030383917
+                    },
+                    {
+                        "          ": -0.0016208449
+                    },
+                    {
+                        " val": -0.005423005
+                    },
+                    {
+                        " position": -0.0021872171
+                    },
+                    {
+                        "Impl": -0.0008257573
+                    },
+                    {
+                        " =": -0.006498647
+                    },
+                    {
+                        " Place": -0.011388739
+                    },
+                    {
+                        "Impl": -0.00015493727
+                    },
+                    {
+                        "(": -0.00095080055
+                    },
+                    {
+                        "rec": -0.0007085461
+                    },
+                    {
+                        "ords": -6.5092986e-06
+                    },
+                    {
+                        "Number": -3.655083e-05
+                    },
+                    {
+                        ",": -0.0050219186
+                    },
+                    {
+                        " item": -0.002491913
+                    },
+                    {
+                        "Number": -2.0575926e-05
+                    },
+                    {
+                        ")": -0.0076876977
+                    },
+                    {
+                        "\n": -0.0055311234
+                    },
+                    {
+                        "          ": -0.017778045
+                    },
+                    {
+                        " /*": -0.1052133
+                    },
+                    {
+                        " B": -0.006870315
+                    },
+                    {
+                        "UG": -3.01145e-05
+                    },
+                    {
+                        ":": -0.0032920984
+                    },
+                    {
+                        " ": -0.21324925
+                    },
+                    {
+                        "\n": -0.00023047146
+                    },
+                    {
+                        "           ": -0.0067322906
+                    },
+                    {
+                        " *": -0.00025980148
+                    },
+                    {
+                        " ((": -0.05059363
+                    },
+                    {
+                        "Administ": -0.003688063
+                    },
+                    {
+                        "ered": -6.9690854e-05
+                    },
+                    {
+                        "Rec": -0.00011106284
+                    },
+                    {
+                        "ords": -5.3162735e-06
+                    },
+                    {
+                        "Impl": -0.00012536882
+                    },
+                    {
+                        ")": -0.0007585893
+                    },
+                    {
+                        " ((": -0.002404856
+                    },
+                    {
+                        "Ten": -0.0006651823
+                    },
+                    {
+                        "acious": -1.2351458e-05
+                    },
+                    {
+                        "Subject": -7.6605895e-05
+                    },
+                    {
+                        ")": -0.00015577173
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2533,
+                    2541,
+                    2545,
+                    2548,
+                    2552,
+                    2556,
+                    2557,
+                    2565,
+                    2572,
+                    2573,
+                    2579,
+                    2580,
+                    2587,
+                    2592,
+                    2594,
+                    2596,
+                    2601,
+                    2609,
+                    2613,
+                    2616,
+                    2620,
+                    2623,
+                    2624,
+                    2642,
+                    2644,
+                    2646,
+                    2649,
+                    2652,
+                    2657,
+                    2661,
+                    2662,
+                    2670,
+                    2674,
+                    2675,
+                    2679,
+                    2684,
+                    2692,
+                    2694,
+                    2699,
+                    2701,
+                    2702,
+                    2708,
+                    2710,
+                    2716,
+                    2718,
+                    2722,
+                    2724,
+                    2729,
+                    2738,
+                    2743,
+                    2745,
+                    2750,
+                    2759,
+                    2760,
+                    2762,
+                    2763,
+                    2773,
+                    2778,
+                    2787,
+                    2792,
+                    2801,
+                    2803,
+                    2804,
+                    2808,
+                    2813,
+                    2822,
+                    2823,
+                    2829,
+                    2830,
+                    2833,
+                    2834,
+                    2835,
+                    2839,
+                    2840,
+                    2842,
+                    2849,
+                    2853,
+                    2859,
+                    2862,
+                    2863,
+                    2873,
+                    2879,
+                    2884,
+                    2885,
+                    2888,
+                    2891,
+                    2892,
+                    2896,
+                    2905,
+                    2907,
+                    2908,
+                    2914,
+                    2916,
+                    2922,
+                    2924,
+                    2933,
+                    2943,
+                    2944,
+                    2946,
+                    2947,
+                    2957,
+                    2964,
+                    2967,
+                    2969,
+                    2978,
+                    2981,
+                    2987,
+                    2990,
+                    2991,
+                    3001,
+                    3005,
+                    3006,
+                    3011,
+                    3013,
+                    3014,
+                    3015,
+                    3016,
+                    3017,
+                    3024,
+                    3027,
+                    3031,
+                    3039,
+                    3044,
+                    3051,
+                    3053,
+                    3056,
+                    3062,
+                    3064,
+                    3067,
+                    3072,
+                    3075,
+                    3077,
+                    3078,
+                    3096,
+                    3099,
+                    3101,
+                    3109,
+                    3115,
+                    3116,
+                    3121,
+                    3127,
+                    3128,
+                    3136,
+                    3141,
+                    3142,
+                    3152,
+                    3154,
+                    3155,
+                    3165,
+                    3170,
+                    3179,
+                    3184,
+                    3193,
+                    3195,
+                    3196,
+                    3200,
+                    3205,
+                    3214,
+                    3215,
+                    3217,
+                    3224,
+                    3226,
+                    3227,
+                    3237,
+                    3243,
+                    3248,
+                    3249,
+                    3252,
+                    3255,
+                    3256,
+                    3260,
+                    3269,
+                    3271,
+                    3272,
+                    3278,
+                    3280,
+                    3281,
+                    3283,
+                    3285,
+                    3286,
+                    3288,
+                    3292,
+                    3295,
+                    3296,
+                    3297,
+                    3299,
+                    3309,
+                    3313,
+                    3319,
+                    3321,
+                    3326,
+                    3330,
+                    3337,
+                    3343,
+                    3344,
+                    3346,
+                    3349,
+                    3354,
+                    3355,
+                    3358,
+                    3361,
+                    3369,
+                    3370,
+                    3378,
+                    3384,
+                    3385,
+                    3390,
+                    3391,
+                    3396,
+                    3402,
+                    3403,
+                    3408,
+                    3409,
+                    3410,
+                    3426,
+                    3442,
+                    3454,
+                    3463,
+                    3464,
+                    3472,
+                    3473,
+                    3475,
+                    3476,
+                    3482,
+                    3486,
+                    3488,
+                    3489,
+                    3499,
+                    3507,
+                    3514,
+                    3515,
+                    3524,
+                    3525,
+                    3532,
+                    3537,
+                    3538,
+                    3547,
+                    3548,
+                    3549,
+                    3559,
+                    3567,
+                    3574,
+                    3580,
+                    3581,
+                    3588,
+                    3593,
+                    3594,
+                    3602,
+                    3608,
+                    3609,
+                    3610,
+                    3613,
+                    3614,
+                    3615,
+                    3617,
+                    3619,
+                    3622,
+                    3623,
+                    3624,
+                    3634,
+                    3637,
+                    3639,
+                    3646,
+                    3651,
+                    3652,
+                    3659,
+                    3668,
+                    3671,
+                    3673,
+                    3674,
+                    3688,
+                    3696,
+                    3705,
+                    3710,
+                    3715,
+                    3716,
+                    3725,
+                    3726,
+                    3731,
+                    3736,
+                    3741,
+                    3742,
+                    3743,
+                    3753,
+                    3755,
+                    3756,
+                    3766,
+                    3770,
+                    3775,
+                    3780,
+                    3788,
+                    3790,
+                    3797,
+                    3799,
+                    3802,
+                    3805,
+                    3809,
+                    3814,
+                    3815,
+                    3819,
+                    3824,
+                    3832,
+                    3834,
+                    3835,
+                    3849,
+                    3858,
+                    3862,
+                    3871,
+                    3875,
+                    3881,
+                    3882,
+                    3886,
+                    3887,
+                    3892,
+                    3893,
+                    3897,
+                    3898,
+                    3902,
+                    3903,
+                    3905,
+                    3906,
+                    3924,
+                    3928,
+                    3930,
+                    3931,
+                    3953,
+                    3957,
+                    3966,
+                    3968,
+                    3976,
+                    3981,
+                    3985,
+                    3989,
+                    3990,
+                    3994,
+                    3995,
+                    3996,
+                    4018,
+                    4024,
+                    4029,
+                    4030,
+                    4033,
+                    4036,
+                    4037,
+                    4045,
+                    4046,
+                    4047,
+                    4065,
+                    4067,
+                    4073,
+                    4075,
+                    4077,
+                    4084,
+                    4085,
+                    4088,
+                    4097,
+                    4098,
+                    4100,
+                    4101,
+                    4123,
+                    4127,
+                    4132,
+                    4141,
+                    4143,
+                    4148,
+                    4157,
+                    4158,
+                    4160,
+                    4167,
+                    4168,
+                    4169,
+                    4191,
+                    4197,
+                    4202,
+                    4203,
+                    4206,
+                    4209,
+                    4210,
+                    4214,
+                    4223,
+                    4224,
+                    4225,
+                    4243,
+                    4245,
+                    4253,
+                    4255,
+                    4256,
+                    4278,
+                    4281,
+                    4283,
+                    4287,
+                    4290,
+                    4295,
+                    4296,
+                    4298,
+                    4299,
+                    4315,
+                    4325,
+                    4332,
+                    4333,
+                    4355,
+                    4357,
+                    4361,
+                    4362,
+                    4363,
+                    4379,
+                    4389,
+                    4394,
+                    4395,
+                    4399,
+                    4401,
+                    4402,
+                    4424,
+                    4426,
+                    4427,
+                    4445,
+                    4447,
+                    4448,
+                    4462,
+                    4464,
+                    4465,
+                    4479,
+                    4488,
+                    4492,
+                    4501,
+                    4505,
+                    4507,
+                    4514,
+                    4515,
+                    4517,
+                    4524,
+                    4525,
+                    4534,
+                    4538,
+                    4541,
+                    4545,
+                    4554,
+                    4555,
+                    4559,
+                    4560,
+                    4564,
+                    4565,
+                    4567,
+                    4568,
+                    4586,
+                    4590,
+                    4595,
+                    4604,
+                    4606,
+                    4611,
+                    4620,
+                    4621,
+                    4623,
+                    4630,
+                    4631,
+                    4632,
+                    4650,
+                    4656,
+                    4661,
+                    4662,
+                    4665,
+                    4668,
+                    4669,
+                    4673,
+                    4682,
+                    4683,
+                    4684,
+                    4698,
+                    4700,
+                    4701,
+                    4711,
+                    4713,
+                    4714,
+                    4724,
+                    4728,
+                    4737,
+                    4741,
+                    4743,
+                    4749,
+                    4753,
+                    4754,
+                    4757,
+                    4761,
+                    4767,
+                    4768,
+                    4773,
+                    4779,
+                    4780,
+                    4781,
+                    4791,
+                    4794,
+                    4796,
+                    4798,
+                    4799,
+                    4800,
+                    4801,
+                    4812,
+                    4814,
+                    4817,
+                    4825,
+                    4829,
+                    4832,
+                    4836,
+                    4840,
+                    4841,
+                    4844,
+                    4847,
+                    4853,
+                    4860
+                ]
+            },
+            "finish_reason": "length"
+        },
+        {
+            "text": "           acquireSubjectMention(subjectTitle).acquireAdministeredRecords()\n    ",
+            "index": 4,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " acquire",
+                    "Subject",
+                    "M",
+                    "ention",
+                    "(",
+                    "subject",
+                    "Title",
+                    ").",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "()",
+                    "\n",
+                    "    "
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -2.1840954,
+                    -0.45159918,
+                    -0.13410188,
+                    -0.00043796306,
+                    -0.015763292,
+                    -0.003586486,
+                    -0.00043999054,
+                    -0.3772938,
+                    -0.21609695,
+                    -3.8935006e-05,
+                    -0.019761555,
+                    -0.000696139,
+                    -0.0020270767,
+                    -5.6340414e-05,
+                    -0.11455169,
+                    -0.019391933,
+                    -0.42092985
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Subject": -0.45159918
+                    },
+                    {
+                        "M": -0.13410188
+                    },
+                    {
+                        "ention": -0.00043796306
+                    },
+                    {
+                        "(": -0.015763292
+                    },
+                    {
+                        "subject": -0.003586486
+                    },
+                    {
+                        "Title": -0.00043999054
+                    },
+                    {
+                        ").": -0.3772938
+                    },
+                    {
+                        "ac": -0.21609695
+                    },
+                    {
+                        "quire": -3.8935006e-05
+                    },
+                    {
+                        "Administ": -0.019761555
+                    },
+                    {
+                        "ered": -0.000696139
+                    },
+                    {
+                        "Rec": -0.0020270767
+                    },
+                    {
+                        "ords": -5.6340414e-05
+                    },
+                    {
+                        "()": -0.11455169
+                    },
+                    {
+                        "\n": -0.019391933
+                    },
+                    {
+                        "    ": -0.42092985
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2538,
+                    2545,
+                    2546,
+                    2552,
+                    2553,
+                    2560,
+                    2565,
+                    2567,
+                    2569,
+                    2574,
+                    2582,
+                    2586,
+                    2589,
+                    2593,
+                    2595,
+                    2596
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "           AdministeredRecordsImpl administeredRecords = (AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords();\n           administeredRecords\n",
+            "index": 5,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    " administered",
+                    "Rec",
+                    "ords",
+                    " =",
+                    " (",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " ((",
+                    "Ten",
+                    "acious",
+                    "Subject",
+                    ")",
+                    " acquire",
+                    "Subject",
+                    "M",
+                    "ention",
+                    "(",
+                    "subject",
+                    "Title",
+                    ")).",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "();",
+                    "\n",
+                    "          ",
+                    " administered",
+                    "Rec",
+                    "ords",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -3.8908656,
+                    -0.0035099194,
+                    -0.01972356,
+                    -8.495144e-05,
+                    -0.33147177,
+                    -0.34670877,
+                    -0.018881764,
+                    -0.0004266345,
+                    -0.6026255,
+                    -0.8783613,
+                    -0.008631258,
+                    -8.0580685e-06,
+                    -5.0140625e-05,
+                    -2.2159093e-06,
+                    -0.0010788419,
+                    -0.037418637,
+                    -0.9529319,
+                    -0.10434926,
+                    -0.00031060036,
+                    -0.0048392853,
+                    -0.026754808,
+                    -0.24798639,
+                    -0.03528873,
+                    -0.08231222,
+                    -7.20769e-05,
+                    -0.014407542,
+                    -0.015988687,
+                    -0.00067377003,
+                    -0.15380007,
+                    -0.04848841,
+                    -1.0323977e-05,
+                    -0.00440018,
+                    -2.0696069e-05,
+                    -0.0007691482,
+                    -3.154219e-05,
+                    -0.026218662,
+                    -0.03366275,
+                    -0.0717747,
+                    -0.31670132,
+                    -0.00010259808,
+                    0,
+                    -0.42130423
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "ered": -0.0035099194
+                    },
+                    {
+                        "Rec": -0.01972356
+                    },
+                    {
+                        "ords": -8.495144e-05
+                    },
+                    {
+                        "Impl": -0.33147177
+                    },
+                    {
+                        " administered": -0.34670877
+                    },
+                    {
+                        "Rec": -0.018881764
+                    },
+                    {
+                        "ords": -0.0004266345
+                    },
+                    {
+                        " =": -0.6026255
+                    },
+                    {
+                        " (": -0.8783613
+                    },
+                    {
+                        "Administ": -0.008631258
+                    },
+                    {
+                        "ered": -8.0580685e-06
+                    },
+                    {
+                        "Rec": -5.0140625e-05
+                    },
+                    {
+                        "ords": -2.2159093e-06
+                    },
+                    {
+                        "Impl": -0.0010788419
+                    },
+                    {
+                        ")": -0.037418637
+                    },
+                    {
+                        " ((": -0.9529319
+                    },
+                    {
+                        "Ten": -0.10434926
+                    },
+                    {
+                        "acious": -0.00031060036
+                    },
+                    {
+                        "Subject": -0.0048392853
+                    },
+                    {
+                        ")": -0.026754808
+                    },
+                    {
+                        " acquire": -0.24798639
+                    },
+                    {
+                        "Subject": -0.03528873
+                    },
+                    {
+                        "M": -0.08231222
+                    },
+                    {
+                        "ention": -7.20769e-05
+                    },
+                    {
+                        "(": -0.014407542
+                    },
+                    {
+                        "subject": -0.015988687
+                    },
+                    {
+                        "Title": -0.00067377003
+                    },
+                    {
+                        ")).": -0.15380007
+                    },
+                    {
+                        "ac": -0.04848841
+                    },
+                    {
+                        "quire": -1.0323977e-05
+                    },
+                    {
+                        "Administ": -0.00440018
+                    },
+                    {
+                        "ered": -2.0696069e-05
+                    },
+                    {
+                        "Rec": -0.0007691482
+                    },
+                    {
+                        "ords": -3.154219e-05
+                    },
+                    {
+                        "();": -0.026218662
+                    },
+                    {
+                        "\n": -0.03366275
+                    },
+                    {
+                        "          ": -0.0717747
+                    },
+                    {
+                        " administered": -0.31670132
+                    },
+                    {
+                        "Rec": -0.00010259808
+                    },
+                    {
+                        "ords": 0
+                    },
+                    {
+                        "\n": -0.42130423
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2539,
+                    2543,
+                    2546,
+                    2550,
+                    2554,
+                    2567,
+                    2570,
+                    2574,
+                    2576,
+                    2578,
+                    2586,
+                    2590,
+                    2593,
+                    2597,
+                    2601,
+                    2602,
+                    2605,
+                    2608,
+                    2614,
+                    2621,
+                    2622,
+                    2630,
+                    2637,
+                    2638,
+                    2644,
+                    2645,
+                    2652,
+                    2657,
+                    2660,
+                    2662,
+                    2667,
+                    2675,
+                    2679,
+                    2682,
+                    2686,
+                    2689,
+                    2690,
+                    2700,
+                    2713,
+                    2716,
+                    2720
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "           ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle, reliable)).acquireAdministeredRecords())\n    ",
+            "index": 6,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " ((",
+                    "Ten",
+                    "acious",
+                    "Subject",
+                    ")",
+                    " acquire",
+                    "Subject",
+                    "M",
+                    "ention",
+                    "(",
+                    "subject",
+                    "Title",
+                    ",",
+                    " reliable",
+                    ")).",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "())",
+                    "\n",
+                    "    "
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -0.46880832,
+                    -0.1724792,
+                    -0.0025366095,
+                    -0.010467365,
+                    -5.6102934e-05,
+                    -0.035500355,
+                    -0.02456478,
+                    -0.8154398,
+                    -0.21355937,
+                    -0.001982702,
+                    -0.018411376,
+                    -0.08036263,
+                    -0.36693758,
+                    -0.15830308,
+                    -0.28939906,
+                    -6.6829845e-05,
+                    -0.07205907,
+                    -0.026457505,
+                    -0.001941913,
+                    -1.1309549,
+                    -0.3801355,
+                    -0.17103532,
+                    -0.13387366,
+                    -3.7983213e-05,
+                    -0.011988479,
+                    -0.000111301255,
+                    -0.0024281582,
+                    -1.3542607e-05,
+                    -0.25240925,
+                    -0.012154685,
+                    -0.7294245
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Administ": -0.1724792
+                    },
+                    {
+                        "ered": -0.0025366095
+                    },
+                    {
+                        "Rec": -0.010467365
+                    },
+                    {
+                        "ords": -5.6102934e-05
+                    },
+                    {
+                        "Impl": -0.035500355
+                    },
+                    {
+                        ")": -0.02456478
+                    },
+                    {
+                        " ((": -0.8154398
+                    },
+                    {
+                        "Ten": -0.21355937
+                    },
+                    {
+                        "acious": -0.001982702
+                    },
+                    {
+                        "Subject": -0.018411376
+                    },
+                    {
+                        ")": -0.08036263
+                    },
+                    {
+                        " acquire": -0.36693758
+                    },
+                    {
+                        "Subject": -0.15830308
+                    },
+                    {
+                        "M": -0.28939906
+                    },
+                    {
+                        "ention": -6.6829845e-05
+                    },
+                    {
+                        "(": -0.07205907
+                    },
+                    {
+                        "subject": -0.026457505
+                    },
+                    {
+                        "Title": -0.001941913
+                    },
+                    {
+                        ")).": -0.54690176
+                    },
+                    {
+                        " reliable": -0.3801355
+                    },
+                    {
+                        ")).": -0.17103532
+                    },
+                    {
+                        "ac": -0.13387366
+                    },
+                    {
+                        "quire": -3.7983213e-05
+                    },
+                    {
+                        "Administ": -0.011988479
+                    },
+                    {
+                        "ered": -0.000111301255
+                    },
+                    {
+                        "Rec": -0.0024281582
+                    },
+                    {
+                        "ords": -1.3542607e-05
+                    },
+                    {
+                        "())": -0.25240925
+                    },
+                    {
+                        "\n": -0.012154685
+                    },
+                    {
+                        "    ": -0.7294245
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2533,
+                    2541,
+                    2545,
+                    2548,
+                    2552,
+                    2556,
+                    2557,
+                    2560,
+                    2563,
+                    2569,
+                    2576,
+                    2577,
+                    2585,
+                    2592,
+                    2593,
+                    2599,
+                    2600,
+                    2607,
+                    2612,
+                    2613,
+                    2622,
+                    2625,
+                    2627,
+                    2632,
+                    2640,
+                    2644,
+                    2647,
+                    2651,
+                    2654,
+                    2655
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "           ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())\n      ",
+            "index": 7,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " ((",
+                    "Ten",
+                    "acious",
+                    "Subject",
+                    ")",
+                    " acquire",
+                    "Subject",
+                    "M",
+                    "ention",
+                    "(",
+                    "subject",
+                    "Title",
+                    ")).",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "())",
+                    "\n",
+                    "      "
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -0.46880832,
+                    -0.1724792,
+                    -0.0025366095,
+                    -0.010467365,
+                    -5.6102934e-05,
+                    -0.035500355,
+                    -0.02456478,
+                    -0.8154398,
+                    -0.21355937,
+                    -0.001982702,
+                    -0.018411376,
+                    -0.08036263,
+                    -0.36693758,
+                    -0.15830308,
+                    -0.28939906,
+                    -6.6829845e-05,
+                    -0.07205907,
+                    -0.026457505,
+                    -0.001941913,
+                    -0.54690176,
+                    -0.4850273,
+                    -0.00021479129,
+                    -0.16279748,
+                    -0.0072226073,
+                    -0.01615386,
+                    -0.00010355082,
+                    -0.56838673,
+                    -0.014205412,
+                    -4.1582084
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Administ": -0.1724792
+                    },
+                    {
+                        "ered": -0.0025366095
+                    },
+                    {
+                        "Rec": -0.010467365
+                    },
+                    {
+                        "ords": -5.6102934e-05
+                    },
+                    {
+                        "Impl": -0.035500355
+                    },
+                    {
+                        ")": -0.02456478
+                    },
+                    {
+                        " ((": -0.8154398
+                    },
+                    {
+                        "Ten": -0.21355937
+                    },
+                    {
+                        "acious": -0.001982702
+                    },
+                    {
+                        "Subject": -0.018411376
+                    },
+                    {
+                        ")": -0.08036263
+                    },
+                    {
+                        " acquire": -0.36693758
+                    },
+                    {
+                        "Subject": -0.15830308
+                    },
+                    {
+                        "M": -0.28939906
+                    },
+                    {
+                        "ention": -6.6829845e-05
+                    },
+                    {
+                        "(": -0.07205907
+                    },
+                    {
+                        "subject": -0.026457505
+                    },
+                    {
+                        "Title": -0.001941913
+                    },
+                    {
+                        ")).": -0.54690176
+                    },
+                    {
+                        "ac": -0.4850273
+                    },
+                    {
+                        "quire": -0.00021479129
+                    },
+                    {
+                        "Administ": -0.16279748
+                    },
+                    {
+                        "ered": -0.0072226073
+                    },
+                    {
+                        "Rec": -0.01615386
+                    },
+                    {
+                        "ords": -0.00010355082
+                    },
+                    {
+                        "())": -0.56838673
+                    },
+                    {
+                        "\n": -0.014205412
+                    },
+                    {
+                        "    ": -1.0110533
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2533,
+                    2541,
+                    2545,
+                    2548,
+                    2552,
+                    2556,
+                    2557,
+                    2560,
+                    2563,
+                    2569,
+                    2576,
+                    2577,
+                    2585,
+                    2592,
+                    2593,
+                    2599,
+                    2600,
+                    2607,
+                    2612,
+                    2615,
+                    2617,
+                    2622,
+                    2630,
+                    2634,
+                    2637,
+                    2641,
+                    2644,
+                    2645
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "           ((AdministeredRecordsImpl) subjectMentions.get(subjectTitle).acquireAdministeredRecords())\n",
+            "index": 8,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " subject",
+                    "M",
+                    "ent",
+                    "ions",
+                    ".",
+                    "get",
+                    "(",
+                    "subject",
+                    "Title",
+                    ").",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "())",
+                    "\n"
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -0.46880832,
+                    -0.1724792,
+                    -0.0025366095,
+                    -0.010467365,
+                    -5.6102934e-05,
+                    -0.035500355,
+                    -0.02456478,
+                    -3.5057237,
+                    -1.0135396,
+                    -2.2867072,
+                    -0.0032119057,
+                    -0.2995213,
+                    -0.71740425,
+                    -0.0888408,
+                    -0.030590452,
+                    -0.0089106215,
+                    -0.15387376,
+                    -0.09331106,
+                    -6.766711e-05,
+                    -0.010157159,
+                    -0.00018999024,
+                    -0.0021673234,
+                    -5.0022347e-05,
+                    -0.03827409,
+                    -0.013526707
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Administ": -0.1724792
+                    },
+                    {
+                        "ered": -0.0025366095
+                    },
+                    {
+                        "Rec": -0.010467365
+                    },
+                    {
+                        "ords": -5.6102934e-05
+                    },
+                    {
+                        "Impl": -0.035500355
+                    },
+                    {
+                        ")": -0.02456478
+                    },
+                    {
+                        " ((": -0.8154391
+                    },
+                    {
+                        "M": -1.0135396
+                    },
+                    {
+                        "ention": -0.11322235
+                    },
+                    {
+                        "ions": -0.0032119057
+                    },
+                    {
+                        ".": -0.2995213
+                    },
+                    {
+                        "get": -0.71740425
+                    },
+                    {
+                        "(": -0.0888408
+                    },
+                    {
+                        "subject": -0.030590452
+                    },
+                    {
+                        "Title": -0.0089106215
+                    },
+                    {
+                        ").": -0.15387376
+                    },
+                    {
+                        "ac": -0.09331106
+                    },
+                    {
+                        "quire": -6.766711e-05
+                    },
+                    {
+                        "Administ": -0.010157159
+                    },
+                    {
+                        "ered": -0.00018999024
+                    },
+                    {
+                        "Rec": -0.0021673234
+                    },
+                    {
+                        "ords": -5.0022347e-05
+                    },
+                    {
+                        "())": -0.03827409
+                    },
+                    {
+                        "\n": -0.013526707
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2533,
+                    2541,
+                    2545,
+                    2548,
+                    2552,
+                    2556,
+                    2557,
+                    2565,
+                    2566,
+                    2569,
+                    2573,
+                    2574,
+                    2577,
+                    2578,
+                    2585,
+                    2590,
+                    2592,
+                    2594,
+                    2599,
+                    2607,
+                    2611,
+                    2614,
+                    2618,
+                    2621
+                ]
+            },
+            "finish_reason": "stop"
+        },
+        {
+            "text": "           ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle, reliable)).acquireAdministeredRecords())\n    ",
+            "index": 9,
+            "logprobs": {
+                "tokens": [
+                    "\n",
+                    "          ",
+                    " ((",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "Impl",
+                    ")",
+                    " ((",
+                    "Ten",
+                    "acious",
+                    "Subject",
+                    ")",
+                    " acquire",
+                    "Subject",
+                    "M",
+                    "ention",
+                    "(",
+                    "subject",
+                    "Title",
+                    ",",
+                    " reliable",
+                    ")).",
+                    "ac",
+                    "quire",
+                    "Administ",
+                    "ered",
+                    "Rec",
+                    "ords",
+                    "())",
+                    "\n",
+                    "    "
+                ],
+                "token_logprobs": [
+                    -0.002245816,
+                    -0.040808495,
+                    -0.46880832,
+                    -0.1724792,
+                    -0.0025366095,
+                    -0.010467365,
+                    -5.6102934e-05,
+                    -0.035500355,
+                    -0.02456478,
+                    -0.8154391,
+                    -0.21355924,
+                    -0.001982702,
+                    -0.018411376,
+                    -0.08036263,
+                    -0.36693758,
+                    -0.15830308,
+                    -0.28939906,
+                    -6.6829845e-05,
+                    -0.07205907,
+                    -0.026457505,
+                    -0.001941913,
+                    -1.1309549,
+                    -0.3801355,
+                    -0.17103532,
+                    -0.13387366,
+                    -3.7983213e-05,
+                    -0.011988479,
+                    -0.000111301255,
+                    -0.0024281582,
+                    -1.3542607e-05,
+                    -0.25240925,
+                    -0.012154685,
+                    -0.7294245
+                ],
+                "top_logprobs": [
+                    {
+                        "\n": -0.002245816
+                    },
+                    {
+                        "          ": -0.040808495
+                    },
+                    {
+                        " ((": -0.46880832
+                    },
+                    {
+                        "Administ": -0.1724792
+                    },
+                    {
+                        "ered": -0.0025366095
+                    },
+                    {
+                        "Rec": -0.010467365
+                    },
+                    {
+                        "ords": -5.6102934e-05
+                    },
+                    {
+                        "Impl": -0.035500355
+                    },
+                    {
+                        ")": -0.02456478
+                    },
+                    {
+                        " ((": -0.8154391
+                    },
+                    {
+                        "Ten": -0.21355924
+                    },
+                    {
+                        "acious": -0.001982702
+                    },
+                    {
+                        "Subject": -0.018411376
+                    },
+                    {
+                        ")": -0.08036263
+                    },
+                    {
+                        " acquire": -0.36693758
+                    },
+                    {
+                        "Subject": -0.15830308
+                    },
+                    {
+                        "M": -0.28939906
+                    },
+                    {
+                        "ention": -6.6829845e-05
+                    },
+                    {
+                        "(": -0.07205907
+                    },
+                    {
+                        "subject": -0.026457505
+                    },
+                    {
+                        "Title": -0.001941913
+                    },
+                    {
+                        ")).": -0.54690176
+                    },
+                    {
+                        " reliable": -0.3801355
+                    },
+                    {
+                        ")).": -0.17103532
+                    },
+                    {
+                        "ac": -0.13387366
+                    },
+                    {
+                        "quire": -3.7983213e-05
+                    },
+                    {
+                        "Administ": -0.011988479
+                    },
+                    {
+                        "ered": -0.000111301255
+                    },
+                    {
+                        "Rec": -0.0024281582
+                    },
+                    {
+                        "ords": -1.3542607e-05
+                    },
+                    {
+                        "())": -0.25240925
+                    },
+                    {
+                        "\n": -0.012154685
+                    },
+                    {
+                        "    ": -0.7294245
+                    }
+                ],
+                "text_offset": [
+                    2520,
+                    2520,
+                    2530,
+                    2533,
+                    2541,
+                    2545,
+                    2548,
+                    2552,
+                    2556,
+                    2557,
+                    2560,
+                    2563,
+                    2569,
+                    2576,
+                    2577,
+                    2585,
+                    2592,
+                    2593,
+                    2599,
+                    2600,
+                    2607,
+                    2612,
+                    2613,
+                    2622,
+                    2625,
+                    2627,
+                    2632,
+                    2640,
+                    2644,
+                    2647,
+                    2651,
+                    2654,
+                    2655
+                ]
+            },
+            "finish_reason": "stop"
+        }
+    ],
+    "usage": {
+        "prompt_tokens": 521,
+        "completion_tokens": 780,
+        "total_tokens": 1301
+    },
+    "validation_result": [
+        {
+            "patch": "           ((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle).acquireAdministeredRecords())\n    ",
+            "correctness": "uncompilable",
+            "translated": "           ((ManagedLedgerImpl) getTopicReference(topicName).getManagedLedger())\n    "
+        },
+        {
+            "patch": "           ((AdministeredRecordsImpl) acquireAdministeredRecords(subjectTitle)).acquireRecords()\n    ",
+            "correctness": "uncompilable",
+            "translated": "           ((ManagedLedgerImpl) getManagedLedger(topicName)).acquireRecords()\n    "
+        },
+        {
+            "patch": "           ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())\n",
+            "correctness": "compile_success",
+            "translated": "           ((ManagedLedgerImpl)\n           ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())\n"
+        },
+        {
+            "patch": "           ((AdministeredRecordsImpl) acquireSubjectMention(subjectTitle).acquireAdministeredRecords())\n                   .asyncRetrieveItem(positionImpl,readEntryCallback , null);\n       } catch (NullPointerException nullPointerException) {\n           RestException restException =  new RestException(Status.NOT_FOUND, \"Message not found\");\n           asyncReply.resume(restException);\n       } catch (Exception exception) {\n           String id = customerAppNumber();\n           log.error(\"[{}] Failed to get message with ledgerId {} entryId {} from {}\",\n                   id , recordsNumber, itemNumber, subjectTitle, exception);\n           RestException restException =  new RestException(exception);\n           asyncReply.resume(restException);\n       }\n   }\n// Kotlin \n   protected fun innerAcquireNewsThroughNumber(asyncReply: AsyncResponse, recordsNumber: Long, itemNumber: Long,\n                                             reliable: Boolean) {\n       try {\n           confirmSubjectPossession(subjectTitle, reliable)\n           confirmSubjectAction(subjectTitle, SubjectAction.PEEK_MESSAGES)\n           if (subjectTitle.whetherUniversal()) {\n               confirmUniversalTitleScopePossession(titleScopeTitle)\n           }\n           val readEntryCallback = object : AsyncCallbacks.ReadEntryCallback {\n               override fun retrieveItemFinish(item: Item, obj: Any) {\n                   try {\n                       val response = produceReplyWithItem(item)\n                       asyncReply.resume(response)\n                   } catch (exception: IOException) {\n                       val restException = RestException(exception)\n                       asyncReply.resume(restException)\n                   } finally {\n                       if (item == null) {\n                           return\n                       }else{\n                           item.free()\n                       }\n                   }\n               }\n               override fun retrieveItemUnsuccess(exception: AdministeredRecordsException, obj: Any) {\n                   val restException = RestException(exception)\n                   asyncReply.resume(restException)\n               }\n           }\n           val positionImpl = PlaceImpl(recordsNumber, itemNumber)\n           /* BUG: \n            * ((AdministeredRecordsImpl) ((TenaciousSubject)",
+            "correctness": "uncompilable",
+            "translated": "           ((ManagedLedgerImpl) getTopicReference(topicName).getManagedLedger())\n                   .asyncReadEntry(positionImpl,readEntryCallback , null);\n       } catch (NullPointerException npe) {\n           RestException restException =  new RestException(Status.NOT_FOUND, \"Message not found\");\n           asyncResponse.resume(restException);\n       } catch (Exception exception) {\n           String id = clientAppId();\n           log.error(\"[{}] Failed to get message with ledgerId {} entryId {} from {}\",\n                   id , ledgerId, entryId, topicName, exception);\n           RestException restException =  new RestException(exception);\n           asyncResponse.resume(restException);\n       }\n   }\n// Kotlin \n   protected fun internalGetMessageById(asyncResponse: AsyncResponse, ledgerId: Long, entryId: Long,\n                                             authoritative: Boolean) {\n       try {\n           validateTopicOwnership(topicName, authoritative)\n           validateTopicOperation(topicName, TopicOperation.PEEK_MESSAGES)\n           if (topicName.isGlobal()) {\n               validateGlobalNamespaceOwnership(namespaceName)\n           }\n           val readEntryCallback = object : AsyncCallbacks.ReadEntryCallback {\n               override fun readEntryComplete(entry: Entry, ctx: Any) {\n                   try {\n                       val response = generateResponseWithEntry(entry)\n                       asyncResponse.resume(response)\n                   } catch (exception: IOException) {\n                       val restException = RestException(exception)\n                       asyncResponse.resume(restException)\n                   } finally {\n                       if (entry == null) {\n                           return\n                       }else{\n                           entry.release()\n                       }\n                   }\n               }\n               override fun readEntryFailed(exception: ManagedLedgerException, ctx: Any) {\n                   val restException = RestException(exception)\n                   asyncResponse.resume(restException)\n               }\n           }\n           val positionImpl = PositionImpl(ledgerId, entryId)\n           /* BUG: \n            * ((ManagedLedgerImpl) ((PersistentTopic)"
+        },
+        {
+            "patch": "           acquireSubjectMention(subjectTitle).acquireAdministeredRecords()\n    ",
+            "correctness": "uncompilable",
+            "translated": "           getTopicReference(topicName).getManagedLedger()\n    "
+        },
+        {
+            "patch": "           AdministeredRecordsImpl administeredRecords = (AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords();\n           administeredRecords\n",
+            "correctness": "compile_success",
+            "translated": "           ManagedLedgerImpl administeredRecords = (ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName)).getManagedLedger();\n           administeredRecords\n"
+        },
+        {
+            "patch": "           ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle, reliable)).acquireAdministeredRecords())\n    ",
+            "correctness": "uncompilable",
+            "translated": "           ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName, authoritative)).getManagedLedger())\n    "
+        },
+        {
+            "patch": "           ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle)).acquireAdministeredRecords())\n      ",
+            "correctness": "compile_success",
+            "translated": "           ((ManagedLedgerImpl)\n           ((PersistentTopic) getTopicReference(topicName)).getManagedLedger())\n"
+        },
+        {
+            "patch": "           ((AdministeredRecordsImpl) subjectMentions.get(subjectTitle).acquireAdministeredRecords())\n",
+            "correctness": "uncompilable",
+            "translated": "           ((ManagedLedgerImpl) subjectMentions.get(topicName).getManagedLedger())\n"
+        },
+        {
+            "patch": "           ((AdministeredRecordsImpl) ((TenaciousSubject) acquireSubjectMention(subjectTitle, reliable)).acquireAdministeredRecords())\n    ",
+            "correctness": "uncompilable",
+            "translated": "           ((ManagedLedgerImpl) ((PersistentTopic) getTopicReference(topicName, authoritative)).getManagedLedger())\n    "
+        }
+    ]
+}

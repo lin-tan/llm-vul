@@ -1,0 +1,12 @@
+[
+  "ZipEncodingHelper.growBufferBy(out, increment);\n",
+  "",
+  "out = ZipEncodingHelper.growBufferBy(out, increment);\n",
+  "out = ZipEncodingHelper.growBufferBy(increment, increment);\n",
+  "if((increment != null)){\n",
+  "out = ZipEncodingHelper.encode(out, increment);\n",
+  "return;\n",
+  "if((6 * res.length())){\n",
+  "out = ZipEncodingHelper.estimateIncrementalEncodingSize(out, increment);\n",
+  "out = ZipEncodingHelper.encodeSurrogate(out, increment);\n"
+]

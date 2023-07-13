@@ -1,0 +1,66 @@
+{
+    "output": [
+        "return 0;",
+        "throw new EOFException();",
+        "return -1;",
+        "throw new IOException();",
+        "return x;",
+        "return -1L;",
+        "return 0L;",
+        "return false;",
+        "return 1;",
+        "return;"
+    ],
+    "validation_result": [
+        {
+            "patch": "return 0;",
+            "correctness": "compile_success",
+            "translated": "return 0;"
+        },
+        {
+            "patch": "throw new EOFException();",
+            "correctness": "compile_success",
+            "translated": "throw new EOFException();"
+        },
+        {
+            "patch": "return -1;",
+            "correctness": "compile_success",
+            "translated": "return -1;"
+        },
+        {
+            "patch": "throw new IOException();",
+            "correctness": "compile_success",
+            "translated": "throw new IOException();"
+        },
+        {
+            "patch": "return x;",
+            "correctness": "compile_success",
+            "translated": "return l;"
+        },
+        {
+            "patch": "return -1L;",
+            "correctness": "uncompilable",
+            "translated": "return -1L;"
+        },
+        {
+            "patch": "return 0L;",
+            "correctness": "uncompilable",
+            "translated": "return 0L;"
+        },
+        {
+            "patch": "return false;",
+            "correctness": "uncompilable",
+            "translated": "return false;"
+        },
+        {
+            "patch": "return 1;",
+            "correctness": "compile_success",
+            "translated": "return 1;"
+        },
+        {
+            "patch": "return;",
+            "correctness": "uncompilable",
+            "translated": "return;"
+        }
+    ]
+}

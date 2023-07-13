@@ -1,0 +1,56 @@
+{
+    "output": [
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this);\npublic Map<String,Object>\n    return r;\n}",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"name\", \"monitor\");\npublic Map<String,Object>\n    return r;\n}",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this);\npublic Map<String,Object>\n    return r;\n  }",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this.data);\npublic Map<String,Object>\n  }",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n\n    r.put(\"data\", this.data);\npublic Map<String,Object>\n  }",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this.data);\npublic static Map<String,Object>\n  }",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this);\npublic Map<String,Object>\n  }",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"name\", \"monitor\");\npublic Map<String,Object>\n  }",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this.data);\npublic Map<String,Object>\n}",
+        "\n }\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this.data);\n\n    return r;\n}"
+    ],
+    "validation_result": [
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this);\npublic Map<String,Object>\n    return r;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"name\", \"monitor\");\npublic Map<String,Object>\n    return r;\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this);\npublic Map<String,Object>\n    return r;\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this.data);\npublic Map<String,Object>\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n\n    r.put(\"data\", this.data);\npublic Map<String,Object>\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this.data);\npublic static Map<String,Object>\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this);\npublic Map<String,Object>\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"name\", \"monitor\");\npublic Map<String,Object>\n  }",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this.data);\npublic Map<String,Object>\n}",
+            "correctness": "uncompilable"
+        },
+        {
+            "patch": "}\n\npublic Map<String, Object>\n\n\n\n\n\n\n\n\n\n\n\n\n\npublic Map<String,Object>\n\n    r.put(\"type\", \"monitor\");\n    r.put(\"data\", this.data);\n\n    return r;\n}",
+            "correctness": "uncompilable"
+        }
+    ]
+}

@@ -1,0 +1,37 @@
+{
+    "VUL4J-10016-2330-2331": {
+        "src": "( ( Managed CaMeL Ledger CaMeL Impl ) ( ( Persistent CaMeL Topic ) get CaMeL Topic CaMeL Reference ( topic CaMeL Name ) ) . get CaMeL Managed CaMeL Ledger ( ) )",
+        "patches": [
+            {
+                "patch": "(( PersistentTopic ) getTopicReference( topicName ) ).asyncReadEntry( positionImpl , readEntryCallback , null ) ;"
+            },
+            {
+                "patch": "(( PersistentTopic ) getTopicReference( topicName ) ).getManagedLedger( ).asyncReadEntry( positionImpl ) ;"
+            },
+            {
+                "patch": "(( PersistentTopic ) getTopicReference( topicName ) ).getManagedLedger( ) ;"
+            },
+            {
+                "patch": "(( PersistentTopic )(( PersistentTopic ) getTopicReference( topicName ) ).getManagedLedger( ) ).getManagedLedger( ).getManagedLedger( ) ;"
+            },
+            {
+                "patch": "getTopicReference( topicName ).getManagedLedger( ).getManagedLedger( ).getManagedLedger( ).getManagedLedger( )"
+            },
+            {
+                "patch": "(( PersistentTopic ) getTopicReference( topicName ) ).getManagedLedger( ) ).getManagedLedger( )"
+            },
+            {
+                "patch": "(( PersistentTopic ) getTopicReference( topicName ) ).asyncReadEntry( positionImpl , readEntryCallback , null ,"
+            },
+            {
+                "patch": "(( PersistentTopic )(( PersistentTopic ) getTopicReference( topicName ) ).getManagedLedger( ) )"
+            },
+            {
+                "patch": "(( PersistentTopic ) getTopicReference( topicName ) ).getManagedLedger( ).asyncReadEntry( positionImpl , null ) ;"
+            },
+            {
+                "patch": "(( PersistentTopic ) getTopicReference( topicName ) ).getManagedLedger( ).getManagedLedger( ).getManagedLedger( ).getManagedLedger( )"
+            }
+        ]
+    }
+}
