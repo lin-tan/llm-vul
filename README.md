@@ -20,7 +20,7 @@ A script to help checkout Vul4J vulnerabilities is available at [`./scripts/VUL4
 
 
 ## VJBench
-VJBench consists of 42 reproducible vulnerabilities, which are listed in [`VJBench_dataset.csv`](./VJBench_dataset.csv). More details are provided in [`VJBench_data.json`](./scripts/VJBench_data.json) including the compile and test commands for reproducing each vulnerability. The first 15 vulnerabilities listed in [`VJBench_dataset.csv`](./VJBench_dataset.csv) are used in our study: Netty-1, Netty-2, Jenkins-1, Jenkins-2, Jenkins-3, Jinjava-1, Halo-1, Retrofit-1, Quartz-1, Flow-1, Flow-2, BC-Java-1, Json-sanitizer-1, Ratpack-1, Pulsar-1. 
+VJBench consists of 42 reproducible vulnerabilities, which are listed in [`VJBench_dataset.csv`](./VJBench_dataset.csv). More details are provided in [`VJBench_data.json`](./scripts/VJBench_data.json) including the compile and test commands for reproducing each vulnerability. The first 15 vulnerabilities listed in [`VJBench_dataset.csv`](./VJBench_dataset.csv) have single hunk fixes, and thus are used in our study: Netty-1, Netty-2, Jenkins-1, Jenkins-2, Jenkins-3, Jinjava-1, Halo-1, Retrofit-1, Quartz-1, Flow-1, Flow-2, BC-Java-1, Json-sanitizer-1, Ratpack-1, Pulsar-1. 
 
 ### Dependency
 
